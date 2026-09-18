@@ -20,27 +20,51 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 /* Sizes chosen from the layout: a sight card is never wider than ~190 CSS px,
    a hero is full-bleed. Doubled for retina, then compressed hard. */
-const SIZES = { place: { w: 720, q: 56 }, sight: { w: 380, q: 54 } };
+/* Two widths each: what we ask Wikimedia for (a size it actually serves) and
+   what we keep (what the layout displays, doubled for retina). Downloading
+   bigger and shrinking locally gives a visibly cleaner result than asking for
+   the small one, and costs nothing in the page. */
+const SIZES = { place: { dl: 800, w: 700, q: 52 }, sight: { dl: 500, w: 340, q: 50 } };
+
+/* Wikimedia only serves thumbnails at a fixed set of widths, and only up to the
+   size of the original — ask for 720 and it answers "use the listed sizes", ask
+   for 800 of a 600px photo and it says the same. So candidates are tried
+   largest first and the first width that exists wins. */
+const STANDARD = [1280, 1024, 800, 640, 500, 320, 250, 200];
+function candidates(url, want) {
+  const m = /^(.*\/)(\d+)px-([^/?]+)$/.exec(url);
+  if (!m) return [url];
+  const [, base, native, file] = m;
+  return [...new Set([...STANDARD.filter((w) => w <= want), +native])]
+    .filter((w) => w > 0).sort((a, b) => b - a)
+    .map((w) => `${base}${w}px-${file}`);
+}
 
 /* The API hands back thumbnails with campaign tracking glued on; upstream
    then refuses them. */
 const clean = (u) => String(u).split("?")[0].replace("//thumb.wikimedia.org/", "//upload.wikimedia.org/");
 
-async function grab(rawUrl) {
+async function grab(rawUrl, want) {
   const url = clean(rawUrl);
-  const name = Buffer.from(url).toString("base64url").slice(-60) + ".bin";
-  const p = CACHE + name;
+  const p = CACHE + Buffer.from(url + "|" + want).toString("base64url").slice(-60) + ".bin";
   if (existsSync(p)) return readFileSync(p);
-  for (let i = 0; i < 4; i++) {
-    const r = await fetch(url, { headers: { "User-Agent": "MittenwaldToBerlin/1.0 (family trip page)" } });
-    if (r.ok) { const b = Buffer.from(await r.arrayBuffer()); writeFileSync(p, b); return b; }
-    await sleep(1000 * (i + 1));
+  const H = { headers: { "User-Agent": "MittenwaldToBerlin/1.0 (family trip page)" } };
+  let last = "no candidates";
+  for (const u of candidates(url, want)) {
+    for (let i = 0; i < 3; i++) {
+      let r;
+      try { r = await fetch(u, H); } catch (e) { last = e.message; await sleep(700 * (i + 1)); continue; }
+      if (r.ok) { const b = Buffer.from(await r.arrayBuffer()); writeFileSync(p, b); return b; }
+      last = "HTTP " + r.status;
+      if (r.status === 400 || r.status === 404) break; // wrong width — try the next size down
+      await sleep(900 * (i + 1));
+    }
   }
-  throw new Error("could not fetch " + url);
+  throw new Error(last + " \u00b7 " + url.slice(-64));
 }
 
-async function encode(url, { w, q }) {
-  const raw = await grab(url);
+async function encode(url, { dl, w, q }) {
+  const raw = await grab(url, dl);
   return sharp(raw, { failOn: "none" })
     .rotate()
     .resize({ width: w, height: Math.round(w * 0.72), fit: "cover", position: "attention" })

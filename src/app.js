@@ -75,6 +75,9 @@
     return raw;
   }
 
+  const isBus = (m) => !!m && (m.bus || (m.legs && m.legs[0] && m.legs[0].mode === "BUS"));
+  const vehicle = (m) => (isBus(m) ? "bus" : "train");
+
   const KIND = { church: "Church", museum: "Museum", palace: "Palace", view: "Viewpoint", nature: "Outdoors", street: "Streets", square: "Square", food: "Food", shop: "Shops", sight: "Sight" };
 
   /* ================= live ================= */
@@ -98,11 +101,17 @@
 
   function moveId(m) { return m.from + ">" + m.to + "@" + m.depIso; }
 
-  /* Look up one move and return only what differs from the plan. */
+  /* Look up one move and return only what differs from the plan.
+
+     The search starts twenty minutes before the departure on purpose: asked for
+     trains from exactly 08:38, the planner allows for the walk to the platform
+     and answers with the 09:05. The train we are asking about has to be inside
+     the window or there is nothing to compare against. */
   async function checkMove(m) {
+    const from = new Date(new Date(m.depIso).getTime() - 20 * 60000).toISOString();
     const res = await motis("/plan", {
       fromPlace: m.fromLL.join(","), toPlace: m.toLL.join(","),
-      time: m.depIso, numItineraries: 4, transitModes: MODES, arriveBy: "false",
+      time: from, numItineraries: 6, transitModes: MODES, arriveBy: "false",
       maxPreTransitTime: 1200, pedestrianProfile: "FOOT",
     });
     const want = m.legs[0];
@@ -272,7 +281,7 @@
     if (riding) {
       const l = liveFor(riding);
       const left = mins(t, realArr(riding));
-      head = `<div class="what">On the train</div>
+      head = `<div class="what">On the ${vehicle(riding)}</div>
         <div class="big">${esc(place(riding.to).n)}</div>
         <p class="why">Arriving ${hhmm(realArr(riding))}${l && l.arrDelay > 2 ? ` — ${l.arrDelay} min late` : ""}.</p>`;
       count = pill(left, "until you arrive", left < 6 ? "now" : "go");
@@ -281,17 +290,21 @@
       const go = leaveBy(nextMove, at);
       const toGo = mins(t, go);
       const l = liveFor(nextMove);
+      const gone = l && l.cancelled;
       head = `<div class="what">${at ? "You are in " + esc(place(at.place).n) : "Next"}</div>
-        <div class="big">${toGo > 0 ? "Next train at " + hhmm(realDep(nextMove)) : "Head for the station"}</div>
-        <p class="why">${esc(place(nextMove.to).n)}, arriving ${hhmm(realArr(nextMove))}.${at && at.stn ? " " + esc(at.stn) : ""}</p>`;
-      count = toGo > 0
-        ? pill(toGo, "until you should set off", toGo > 45 ? "go" : toGo > 12 ? "soon" : "now")
+        <div class="big">${gone ? `The ${vehicle(nextMove)} is cancelled`
+          : toGo > 0 ? `Next ${vehicle(nextMove)} at ` + hhmm(realDep(nextMove))
+          : "Head for the " + (isBus(nextMove) ? "bus stop" : "station")}</div>
+        <p class="why">${gone ? `The ${esc(nextMove.legs[0].line)} to ${esc(place(nextMove.to).n)} is not running. There is another way below.`
+          : `${esc(place(nextMove.to).n)}, arriving ${hhmm(realArr(nextMove))}.${at && at.stn ? " " + esc(at.stn) : ""}`}</p>`;
+      count = gone ? ""
+        : toGo > 0 ? pill(toGo, "until you should set off", toGo > 45 ? "go" : toGo > 12 ? "soon" : "now")
         : pill(Math.max(0, mins(t, realDep(nextMove))), "until it leaves", "now");
       strip = legStrip(nextMove, l);
     } else if (at) {
       head = `<div class="what">Tonight</div>
         <div class="big">${esc(place(at.place).n)}</div>
-        <p class="why">No more trains today. ${esc(day.intro)}</p>`;
+        <p class="why">Nothing more to catch today. ${esc(day.intro)}</p>`;
       count = "";
       strip = "";
     }
@@ -305,7 +318,7 @@
         <div class="headline">${head}${count}</div>
         ${strip}
         <div class="btns two">
-          ${nextMove ? `<a class="btn accent" href="${gdir("my location", (at && place(at.place).name) || nextMove.fromStop, "walking")}" target="_blank" rel="noopener">${svg("walk")} Walk me to the station</a>` : ""}
+          ${nextMove ? `<a class="btn accent" href="${gdir("my location", (at && place(at.place).name) || nextMove.fromStop, "walking")}" target="_blank" rel="noopener">${svg("walk")} Walk me to the ${isBus(nextMove) ? "bus stop" : "station"}</a>` : ""}
           <button class="btn ghost" data-goday="${day.n}">The whole day</button>
         </div>
       </div>
@@ -327,7 +340,7 @@
         <span class="t">${late ? `<s>${esc(f.dep)}</s><em>${hhmm(l.realDep)}</em>` : esc(f.dep)} → ${esc(m.arr)}</span>
         <span class="d">towards ${esc(towards(f, m.to))}${m.changes ? ` · ${m.changes} change${m.changes > 1 ? "s" : ""}` : " · direct"}</span>
       </span>
-      ${(l && l.track) || f.track ? `<span class="plat${l && l.trackChanged ? " changed" : ""}"><b>${esc((l && l.track) || f.track)}</b><span>${l && l.trackChanged ? "new plat" : "platform"}</span></span>` : ""}
+      ${(l && l.track) || f.track ? `<span class="plat${l && l.trackChanged ? " changed" : ""}"><b>${esc((l && l.track) || f.track)}</b><span>${l && l.trackChanged ? (isBus(m) ? "new stop" : "new plat") : isBus(m) ? "stop" : "platform"}</span></span>` : ""}
     </div>`;
   }
 
@@ -338,9 +351,9 @@
       ? note("calm", "You are offline, so these are the planned times. They were right when the page was built.")
       : "";
     const out = [];
-    if (l.cancelled) out.push(note("bad", `This train is cancelled. Tap "Find me another way" below — it will only suggest trains your ticket covers.`));
+    if (l.cancelled) out.push(note("bad", `This ${vehicle(m)} is cancelled.`.slice(0, -1) + `. Tap "Find me another way" below — it only ever suggests trains and buses your ticket covers.`));
     else if (l.depDelay >= 5) out.push(note("warn", `Running ${l.depDelay} minutes late. It now leaves at ${hhmm(l.realDep)} and gets in at ${hhmm(l.realArr)}.`));
-    if (l.trackChanged) out.push(note("warn", `Platform changed to ${l.track}. Check the board when you get there.`));
+    if (l.trackChanged) out.push(note("warn", `${isBus(m) ? "Stop" : "Platform"} changed to ${l.track}. Check the board when you get there.`));
     const tight = (l.gaps || []).filter((g) => g < 6);
     if (tight.length) out.push(note("warn", `One of your changes is down to ${Math.min.apply(null, tight)} minutes. If you miss it, the next connection is below.`));
     if ((l.depDelay >= 5 || l.cancelled) && m.later && m.later.length) {
