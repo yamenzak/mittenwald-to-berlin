@@ -2,3 +2,4 @@ node_modules/
 .imgcache/
 data/.plan-cache.json
 shots/
+out/
