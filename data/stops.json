@@ -1,0 +1,177 @@
+{
+ "mittenwald": {
+  "lat": 47.44,
+  "lon": 11.2655,
+  "name": "Bahnhof Mittenwald",
+  "src": "pinned",
+  "km": 0.45
+ },
+ "seefeld": {
+  "lat": 47.32887,
+  "lon": 11.18933,
+  "name": "Bahnhof Seefeld in Tirol",
+  "src": "pinned",
+  "km": 0.1
+ },
+ "garmisch": {
+  "lat": 47.49145,
+  "lon": 11.09701,
+  "name": "Bahnhof Garmisch-Partenkirchen",
+  "src": "pinned",
+  "km": 0.68
+ },
+ "oberau": {
+  "lat": 47.5616,
+  "lon": 11.1318,
+  "name": "Bahnhof Oberau",
+  "src": "pinned",
+  "km": 0.36
+ },
+ "ettal": {
+  "lat": 47.5695,
+  "lon": 11.0949,
+  "name": "Ettal, Kloster (bus)",
+  "src": "pinned",
+  "km": 0.04
+ },
+ "oberammergau": {
+  "lat": 47.5983,
+  "lon": 11.0663,
+  "name": "Bahnhof Oberammergau",
+  "src": "pinned",
+  "km": 0.15
+ },
+ "murnau": {
+  "lat": 47.6823,
+  "lon": 11.193,
+  "name": "Bahnhof Murnau",
+  "src": "pinned",
+  "km": 1.11
+ },
+ "fussen": {
+  "lat": 47.57026,
+  "lon": 10.69782,
+  "name": "Bahnhof Füssen",
+  "src": "pinned",
+  "km": 0.43
+ },
+ "munich": {
+  "lat": 48.14044,
+  "lon": 11.55772,
+  "name": "München Hauptbahnhof",
+  "src": "pinned",
+  "km": 1.24
+ },
+ "augsburg": {
+  "lat": 48.36556,
+  "lon": 10.88639,
+  "name": "Augsburg Hauptbahnhof",
+  "src": "pinned",
+  "km": 1.11
+ },
+ "landsberg": {
+  "lat": 48.04727,
+  "lon": 10.8717,
+  "name": "Bahnhof Landsberg (Lech)",
+  "src": "pinned",
+  "km": 0.51
+ },
+ "donauworth": {
+  "lat": 48.7155,
+  "lon": 10.7713,
+  "name": "Bahnhof Donauwörth",
+  "src": "pinned",
+  "km": 0.61
+ },
+ "nuremberg": {
+  "lat": 49.4455,
+  "lon": 11.0823,
+  "name": "Nürnberg Hauptbahnhof",
+  "src": "pinned",
+  "km": 1.15
+ },
+ "bamberg": {
+  "lat": 49.9007,
+  "lon": 10.9019,
+  "name": "Bahnhof Bamberg",
+  "src": "pinned",
+  "km": 1.24
+ },
+ "rothenburg": {
+  "lat": 49.376,
+  "lon": 10.1934,
+  "name": "Bahnhof Rothenburg ob der Tauber",
+  "src": "pinned",
+  "km": 1.06
+ },
+ "wurzburg": {
+  "lat": 49.8017,
+  "lon": 9.9356,
+  "name": "Würzburg Hauptbahnhof",
+  "src": "pinned",
+  "km": 0.93
+ },
+ "heidelberg": {
+  "lat": 49.4037,
+  "lon": 8.6754,
+  "name": "Heidelberg Hauptbahnhof",
+  "src": "pinned",
+  "km": 1.73
+ },
+ "fulda": {
+  "lat": 50.5544,
+  "lon": 9.6836,
+  "name": "Bahnhof Fulda",
+  "src": "pinned",
+  "km": 0.23
+ },
+ "eisenach": {
+  "lat": 50.9744,
+  "lon": 10.3268,
+  "name": "Eisenach Hauptbahnhof",
+  "src": "pinned",
+  "km": 1.24
+ },
+ "erfurt": {
+  "lat": 50.9723,
+  "lon": 11.038,
+  "name": "Erfurt Hauptbahnhof",
+  "src": "pinned",
+  "km": 0.89
+ },
+ "weimar": {
+  "lat": 50.993,
+  "lon": 11.3253,
+  "name": "Bahnhof Weimar",
+  "src": "pinned",
+  "km": 1.54
+ },
+ "naumburg": {
+  "lat": 51.162,
+  "lon": 11.7962,
+  "name": "Naumburg (Saale) Hauptbahnhof",
+  "src": "pinned",
+  "km": 1.43
+ },
+ "quedlinburg": {
+  "lat": 51.7903,
+  "lon": 11.1444,
+  "name": "Bahnhof Quedlinburg",
+  "src": "pinned",
+  "km": 0.52
+ },
+ "magdeburg": {
+  "lat": 52.1301,
+  "lon": 11.627,
+  "name": "Magdeburg Hauptbahnhof",
+  "src": "pinned",
+  "km": 0.79
+ },
+ "berlin": {
+  "lat": 52.525,
+  "lon": 13.3694,
+  "name": "Berlin Hauptbahnhof",
+  "src": "pinned",
+  "km": 2.73
+ }
+}

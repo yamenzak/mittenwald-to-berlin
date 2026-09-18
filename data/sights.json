@@ -1,0 +1,3404 @@
+{
+ "sights": {
+  "mittenwald/Obermarkt": {
+   "ok": true,
+   "w": "Mittenwald",
+   "ct": null,
+   "lang": "de",
+   "title": "Mittenwald",
+   "url": "https://de.wikipedia.org/wiki/Mittenwald",
+   "lat": 47.44194444,
+   "lon": 11.26027778,
+   "wd": "Q127553",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Obermarkt_16_Mittenwald_-_1.jpg/640px-Obermarkt_16_Mittenwald_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Obermarkt_16_Mittenwald_-_1.jpg/1000px-Obermarkt_16_Mittenwald_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Obermarkt 16 Mittenwald - 1.jpg",
+   "extract": ""
+  },
+  "mittenwald/St Peter and Paul": {
+   "ok": true,
+   "w": "St. Peter und Paul (Mittenwald)",
+   "ct": null,
+   "lang": "de",
+   "title": "St. Peter und Paul (Mittenwald)",
+   "url": "https://de.wikipedia.org/wiki/St._Peter_und_Paul_(Mittenwald)",
+   "lat": 47.44223,
+   "lon": 11.26021,
+   "wd": "Q70449762",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Mittenwald_St_Peter_u_Paul.JPG/640px-Mittenwald_St_Peter_u_Paul.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Mittenwald_St_Peter_u_Paul.JPG/1000px-Mittenwald_St_Peter_u_Paul.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Mittenwald_St_Peter_u_Paul.JPG",
+   "extract": "Die römisch-katholische Pfarrkirche St. Peter und Paul in Mittenwald im oberbayerischen Landkreis Garmisch-Partenkirchen gehört als Teil der gleichnamigen Pfarrei zum Dekanat Werdenfels des Erzbistums München und Freising."
+  },
+  "mittenwald/Violin Making Museum": {
+   "ok": true,
+   "w": "Geigenbaumuseum Mittenwald",
+   "ct": null,
+   "lang": "de",
+   "title": "Geigenbaumuseum Mittenwald",
+   "url": "https://de.wikipedia.org/wiki/Geigenbaumuseum_Mittenwald",
+   "lat": null,
+   "lon": null,
+   "wd": "Q29413558",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Geigenbaumuseum_in_%28Mittenwald%29_Garmisch-Partenkirchen.jpg/640px-Geigenbaumuseum_in_%28Mittenwald%29_Garmisch-Partenkirchen.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Geigenbaumuseum_in_%28Mittenwald%29_Garmisch-Partenkirchen.jpg/1000px-Geigenbaumuseum_in_%28Mittenwald%29_Garmisch-Partenkirchen.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Geigenbaumuseum_in_(Mittenwald)_Garmisch-Partenkirchen.jpg",
+   "extract": "Das Geigenbaumuseum Mittenwald ist ein Museum im Markt Mittenwald im oberbayrischen Landkreis Garmisch-Partenkirchen. Die Ausstellung zeigt das Geigenbauhandwerk und seine über 300-jährige Entwicklung verknüpft mit der Mittenwalder Ortsgeschichte."
+  },
+  "mittenwald/Lautersee": {
+   "ok": true,
+   "w": "Lautersee",
+   "ct": null,
+   "lang": "de",
+   "title": "Lautersee",
+   "url": "https://de.wikipedia.org/wiki/Lautersee",
+   "lat": 47.43861111,
+   "lon": 11.23527778,
+   "wd": "Q871535",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Lautersee%2C_Mittenwald_04.jpg/640px-Lautersee%2C_Mittenwald_04.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Lautersee%2C_Mittenwald_04.jpg/1000px-Lautersee%2C_Mittenwald_04.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Lautersee,_Mittenwald_04.jpg",
+   "extract": "Der Lautersee ist ein kleiner Bergsee westlich von Mittenwald in Oberbayern."
+  },
+  "mittenwald/Ferchensee": {
+   "ok": true,
+   "w": "Ferchensee",
+   "ct": null,
+   "lang": "de",
+   "title": "Ferchensee",
+   "url": "https://de.wikipedia.org/wiki/Ferchensee",
+   "lat": 47.43916667,
+   "lon": 11.21472222,
+   "wd": "Q1255560",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Ferchensee_Lautersee_Mittenwald.jpg/640px-Ferchensee_Lautersee_Mittenwald.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Ferchensee_Lautersee_Mittenwald.jpg/1000px-Ferchensee_Lautersee_Mittenwald.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Ferchensee_Lautersee_Mittenwald.jpg",
+   "extract": "Der Ferchensee ist ein kleiner Bergsee im Gemeindegebiet von Mittenwald, Oberbayern, rund drei Kilometer westlich des Ortskerns."
+  },
+  "mittenwald/Karwendel cable car": {
+   "ok": true,
+   "w": "Karwendelbahn (Seilbahn)",
+   "ct": "Karwendelbahn Mittenwald",
+   "lang": "de",
+   "title": "Karwendelbahn (Seilbahn)",
+   "url": "https://de.wikipedia.org/wiki/Karwendelbahn_(Seilbahn)",
+   "lat": 47.43825,
+   "lon": 11.27044444,
+   "wd": "Q1734716",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/N%C3%B6rdliche_Karwendelkette%2C_Blick_von_Mittenwald_05.jpg/640px-N%C3%B6rdliche_Karwendelkette%2C_Blick_von_Mittenwald_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/N%C3%B6rdliche_Karwendelkette%2C_Blick_von_Mittenwald_05.jpg/1000px-N%C3%B6rdliche_Karwendelkette%2C_Blick_von_Mittenwald_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Nördliche Karwendelkette, Blick von Mittenwald 05.jpg",
+   "extract": "Die Karwendelbahn ist eine Luftseilbahn von Mittenwald zur Karwendelgrube an der Westlichen Karwendelspitze, einem Gipfel in der Nördlichen Karwendelkette im Karwendel."
+  },
+  "mittenwald/Leutaschklamm": {
+   "ok": true,
+   "w": "Leutaschklamm",
+   "ct": null,
+   "lang": "de",
+   "title": "Leutaschklamm",
+   "url": "https://de.wikipedia.org/wiki/Leutaschklamm",
+   "lat": 47.42825,
+   "lon": 11.24642,
+   "wd": "Q1647633",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Leutaschklamm_%28Marius_Hoch%29_27.JPG/640px-Leutaschklamm_%28Marius_Hoch%29_27.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Leutaschklamm_%28Marius_Hoch%29_27.JPG/1000px-Leutaschklamm_%28Marius_Hoch%29_27.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Leutaschklamm_(Marius_Hoch)_27.JPG",
+   "extract": "Die Leutaschklamm, auch Leutascher Geisterklamm, ist eine Klamm bei Mittenwald und Unterleutasch im bayerisch-tirolischen Grenzgebiet, durch die die Leutascher Ache fließt."
+  },
+  "mittenwald/Isar source valley": {
+   "ok": true,
+   "w": "Isar",
+   "ct": null,
+   "lang": "de",
+   "title": "Isar",
+   "url": "https://de.wikipedia.org/wiki/Isar",
+   "lat": 48.80361111,
+   "lon": 12.975,
+   "wd": "Q106588",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Georgenstein_Ostufer.jpg/640px-Georgenstein_Ostufer.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Georgenstein_Ostufer.jpg/1000px-Georgenstein_Ostufer.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Georgenstein_Ostufer.jpg",
+   "extract": "Die Isar ist ein für Wasserfahrzeuge über Floßgröße nicht schiffbarer Fluss in Tirol (Österreich) und Bayern (Deutschland), der nach einem 292 km langen Lauf südlich von Deggendorf von rechts in die Donau mündet."
+  },
+  "seefeld/Seefeld centre": {
+   "ok": true,
+   "w": "Seefeld in Tirol",
+   "ct": null,
+   "lang": "de",
+   "title": "Seefeld in Tirol",
+   "url": "https://de.wikipedia.org/wiki/Seefeld_in_Tirol",
+   "lat": 47.32944444,
+   "lon": 11.18916667,
+   "wd": "Q660035",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Seefeld_in_Tirol_im_Bezirk_IL.png/640px-Seefeld_in_Tirol_im_Bezirk_IL.png?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Seefeld_in_Tirol_im_Bezirk_IL.png/1000px-Seefeld_in_Tirol_im_Bezirk_IL.png?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Seefeld_in_Tirol_im_Bezirk_IL.png",
+   "extract": "Seefeld in Tirol ist eine Gemeinde mit 3648 Einwohnern und deren Hauptort im Bezirk Innsbruck-Land in Tirol (Österreich). Die Gemeinde liegt auf einer Hochebene zwischen Wettersteingebirge und Karwendel an einer seit dem Mittelalter bedeutenden Altstraße von M"
+  },
+  "seefeld/Wildsee": {
+   "ok": true,
+   "w": "Wildsee (Seefeld)",
+   "ct": null,
+   "lang": "de",
+   "title": "Wildsee (Seefeld)",
+   "url": "https://de.wikipedia.org/wiki/Wildsee_(Seefeld)",
+   "lat": 47.32222222,
+   "lon": 11.19083333,
+   "wd": "Q2570885",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Wildsee_%2846303%29.jpg/640px-Wildsee_%2846303%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Wildsee_%2846303%29.jpg/1000px-Wildsee_%2846303%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Wildsee_(46303).jpg",
+   "extract": "Der Wildsee, gelegentlich auch Seefelder See oder Seefelder Wildsee genannt, ist ein See bei Seefeld in Tirol. Er hat eine Fläche von 6,1 ha und eine maximale Tiefe von 5,1 m."
+  },
+  "seefeld/Pfarrkirche St Oswald": {
+   "ok": true,
+   "w": "Pfarr- und Wallfahrtskirche Seefeld in Tirol",
+   "ct": null,
+   "lang": "de",
+   "title": "Pfarr- und Wallfahrtskirche Seefeld in Tirol",
+   "url": "https://de.wikipedia.org/wiki/Pfarr-_und_Wallfahrtskirche_Seefeld_in_Tirol",
+   "lat": 47.328743,
+   "lon": 11.18648,
+   "wd": "Q38068482",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Sankt_Oswald_%28Seefeld_in_Tirol%29_v_NO.jpg/640px-Sankt_Oswald_%28Seefeld_in_Tirol%29_v_NO.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Sankt_Oswald_%28Seefeld_in_Tirol%29_v_NO.jpg/1000px-Sankt_Oswald_%28Seefeld_in_Tirol%29_v_NO.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Sankt_Oswald_(Seefeld_in_Tirol)_v_NO.jpg",
+   "extract": "Die Pfarr- und Wallfahrtskirche Seefeld in Tirol steht im Ortszentrum der Gemeinde Seefeld in Tirol im Bezirk Innsbruck-Land in Bundesland Tirol. Die dem Patrozinium hl."
+  },
+  "seefeld/Seekirchl": {
+   "ok": true,
+   "w": "Seekirche (Seefeld)",
+   "ct": null,
+   "lang": "de",
+   "title": "Seekirche (Seefeld)",
+   "url": "https://de.wikipedia.org/wiki/Seekirche_(Seefeld)",
+   "lat": 47.327021,
+   "lon": 11.180574,
+   "wd": "Q2265110",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Seefeld_chiesa_barocca.jpg/640px-Seefeld_chiesa_barocca.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Seefeld_chiesa_barocca.jpg/1000px-Seefeld_chiesa_barocca.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Seefeld_chiesa_barocca.jpg",
+   "extract": "Die Seekirche Heiliges Kreuz, hierorts Seekirchl oder Heiligkreuzkirche, steht, als Wahrzeichen bei Seefeld in Tirol, am Ortsrand des Ortsteils Kirchwald."
+  },
+  "garmisch/Ludwigstraße": {
+   "ok": true,
+   "w": "Partenkirchen",
+   "ct": null,
+   "lang": "de",
+   "title": "Garmisch-Partenkirchen",
+   "url": "https://de.wikipedia.org/wiki/Garmisch-Partenkirchen",
+   "lat": 47.49388889,
+   "lon": 11.10527778,
+   "wd": "Q127043",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/20230608_Ludwigstra%C3%9Fe_Garmisch-Partenkirchen_01.jpg/640px-20230608_Ludwigstra%C3%9Fe_Garmisch-Partenkirchen_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/20230608_Ludwigstra%C3%9Fe_Garmisch-Partenkirchen_01.jpg/1000px-20230608_Ludwigstra%C3%9Fe_Garmisch-Partenkirchen_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "20230608 Ludwigstraße Garmisch-Partenkirchen 01.jpg",
+   "extract": ""
+  },
+  "garmisch/Old St Martin": {
+   "ok": true,
+   "w": "Alte Pfarrkirche St. Martin (Garmisch-Partenkirchen)",
+   "ct": null,
+   "lang": "de",
+   "title": "Alte Pfarrkirche St. Martin (Garmisch-Partenkirchen)",
+   "url": "https://de.wikipedia.org/wiki/Alte_Pfarrkirche_St._Martin_(Garmisch-Partenkirchen)",
+   "lat": 47.4977,
+   "lon": 11.0873,
+   "wd": "Q436089",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/AltePfarrkircheStMartinGarmischPartenkirchenTurmL1050993_%283%29.jpg/640px-AltePfarrkircheStMartinGarmischPartenkirchenTurmL1050993_%283%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/AltePfarrkircheStMartinGarmischPartenkirchenTurmL1050993_%283%29.jpg/1000px-AltePfarrkircheStMartinGarmischPartenkirchenTurmL1050993_%283%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "AltePfarrkircheStMartinGarmischPartenkirchenTurmL1050993_(3).jpg",
+   "extract": "Die Alte Pfarrkirche St. Martin in Garmisch war einst die einzige Pfarrkirche und damit die Mutterkirche für das ganze obere Loisach- und Isartal."
+  },
+  "garmisch/Partnachklamm": {
+   "ok": true,
+   "w": "Partnachklamm",
+   "ct": null,
+   "lang": "de",
+   "title": "Partnachklamm",
+   "url": "https://de.wikipedia.org/wiki/Partnachklamm",
+   "lat": 47.46916667,
+   "lon": 11.11861111,
+   "wd": "Q453805",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Partnachklamm_2014a.JPG/640px-Partnachklamm_2014a.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Partnachklamm_2014a.JPG/1000px-Partnachklamm_2014a.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Partnachklamm_2014a.JPG",
+   "extract": "Die Partnachklamm ist eine 700 Meter lange und vom Wildbach Partnach teilweise über 80 Meter tief eingeschnittene Klamm im Reintal nahe Garmisch-Partenkirchen. Die Talsohle befindet sich bei ungefähr 800 m ü."
+  },
+  "garmisch/Zugspitze": {
+   "ok": true,
+   "w": "Zugspitze",
+   "ct": null,
+   "lang": "de",
+   "title": "Zugspitze",
+   "url": "https://de.wikipedia.org/wiki/Zugspitze",
+   "lat": 47.42122,
+   "lon": 10.9863,
+   "wd": "Q3375",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Zugspitzmassiv-von-Almkopf-2024.jpg/640px-Zugspitzmassiv-von-Almkopf-2024.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Zugspitzmassiv-von-Almkopf-2024.jpg/1000px-Zugspitzmassiv-von-Almkopf-2024.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Zugspitzmassiv-von-Almkopf-2024.jpg",
+   "extract": "Die Zugspitze ist mit 2962 m ü. NHN der höchste Gipfel des Wettersteingebirges und gleichzeitig Deutschlands höchster Berg."
+  },
+  "garmisch/Olympic ski stadium": {
+   "ok": true,
+   "w": "Olympiaschanze",
+   "ct": null,
+   "lang": "en",
+   "title": "Olympiaschanze",
+   "url": "https://en.wikipedia.org/wiki/Olympiaschanze",
+   "lat": 46.475182,
+   "lon": 9.824156,
+   "wd": "Q666520",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Olympiaschanze_St._Moritz.jpg/640px-Olympiaschanze_St._Moritz.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Olympiaschanze_St._Moritz.jpg/1000px-Olympiaschanze_St._Moritz.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Olympiaschanze_St._Moritz.jpg",
+   "extract": "Olympiaschanze was a ski jumping venue in St. Moritz, Switzerland, it was built in 1926 and closed in 2006."
+  },
+  "garmisch/Eibsee": {
+   "ok": true,
+   "w": "Eibsee",
+   "ct": null,
+   "lang": "de",
+   "title": "Eibsee",
+   "url": "https://de.wikipedia.org/wiki/Eibsee",
+   "lat": 47.45777778,
+   "lon": 10.97305556,
+   "wd": "Q259699",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Eibsee_und_Ammergauer_Alpen.jpg/640px-Eibsee_und_Ammergauer_Alpen.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Eibsee_und_Ammergauer_Alpen.jpg/1000px-Eibsee_und_Ammergauer_Alpen.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Eibsee_und_Ammergauer_Alpen.jpg",
+   "extract": "Der Eibsee ist ein See, neun Kilometer südwestlich von Garmisch-Partenkirchen und dreieinhalb Kilometer unterhalb bzw. nördlich der Zugspitze gelegen, im Wettersteingebirge in Bayern."
+  },
+  "ettal/Ettal Abbey church": {
+   "ok": true,
+   "w": "Kloster Ettal",
+   "ct": null,
+   "lang": "de",
+   "title": "Kloster Ettal",
+   "url": "https://de.wikipedia.org/wiki/Kloster_Ettal",
+   "lat": 47.56925833,
+   "lon": 11.09456111,
+   "wd": "Q253359",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Kloster_Ettal_Klosteranlage.JPG/640px-Kloster_Ettal_Klosteranlage.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Kloster_Ettal_Klosteranlage.JPG/1000px-Kloster_Ettal_Klosteranlage.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Kloster_Ettal_Klosteranlage.JPG",
+   "extract": "Das Kloster Ettal ist eine Benediktinerabtei im Dorf Ettal in Oberbayern und gehört der Bayerischen Benediktinerkongregation an."
+  },
+  "ettal/Abbey shop and distillery": {
+   "ok": true,
+   "w": "Kloster Ettal",
+   "ct": null,
+   "lang": "de",
+   "title": "Kloster Ettal",
+   "url": "https://de.wikipedia.org/wiki/Kloster_Ettal",
+   "lat": 47.56925833,
+   "lon": 11.09456111,
+   "wd": "Q253359",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Kloster_Ettal_Klosteranlage.JPG/640px-Kloster_Ettal_Klosteranlage.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Kloster_Ettal_Klosteranlage.JPG/1000px-Kloster_Ettal_Klosteranlage.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Kloster_Ettal_Klosteranlage.JPG",
+   "extract": "Das Kloster Ettal ist eine Benediktinerabtei im Dorf Ettal in Oberbayern und gehört der Bayerischen Benediktinerkongregation an."
+  },
+  "ettal/Schloss Linderhof": {
+   "ok": true,
+   "w": "Schloss Linderhof",
+   "ct": null,
+   "lang": "de",
+   "title": "Schloss Linderhof",
+   "url": "https://de.wikipedia.org/wiki/Schloss_Linderhof",
+   "lat": 47.57033,
+   "lon": 10.95817611,
+   "wd": "Q162052",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Ettal%2C_Linderhof_21.jpg/640px-Ettal%2C_Linderhof_21.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Ettal%2C_Linderhof_21.jpg/1000px-Ettal%2C_Linderhof_21.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Ettal,_Linderhof_21.jpg",
+   "extract": "Schloss Linderhof ist ein Baudenkmal in der bayerischen Gemeinde Ettal. Die Einflügelanlage wurde von 1870 bis 1886 durch König Ludwig II."
+  },
+  "oberammergau/Pilatushaus": {
+   "ok": true,
+   "w": "Pilatushaus",
+   "ct": "Pilatushaus Oberammergau",
+   "lang": "de",
+   "title": "Pilatushaus",
+   "url": "https://de.wikipedia.org/wiki/Pilatushaus",
+   "lat": null,
+   "lon": null,
+   "wd": "Q1480062",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Oberammergau_Pilatushaus_Gartenfassade.jpg/640px-Oberammergau_Pilatushaus_Gartenfassade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Oberammergau_Pilatushaus_Gartenfassade.jpg/1000px-Oberammergau_Pilatushaus_Gartenfassade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Oberammergau Pilatushaus Gartenfassade.jpg",
+   "extract": "Pilatushaus steht fürPilatushaus (Nürnberg)\nPilatushaus (Oberammergau)"
+  },
+  "oberammergau/Passion Play Theatre": {
+   "ok": true,
+   "w": "Passionsspiele Oberammergau",
+   "ct": null,
+   "lang": "de",
+   "title": "Oberammergauer Passionsspiele",
+   "url": "https://de.wikipedia.org/wiki/Oberammergauer_Passionsspiele",
+   "lat": 47.59972222,
+   "lon": 11.06166667,
+   "wd": "Q2008913",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Oberammergau_B%C3%BChne_c1860.jpg/640px-Oberammergau_B%C3%BChne_c1860.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Oberammergau_B%C3%BChne_c1860.jpg/1000px-Oberammergau_B%C3%BChne_c1860.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Oberammergau_Bühne_c1860.jpg",
+   "extract": "Die Oberammergauer Passionsspiele sind die weltweit bekanntesten Passionsspiele. In einer mehrere Stunden dauernden Aufführung stellen die Dorfbewohner Oberammergaus die letzten fünf Tage im Leben Jesu nach."
+  },
+  "oberammergau/Woodcarving workshops": {
+   "ok": true,
+   "w": "Oberammergau",
+   "ct": null,
+   "lang": "de",
+   "title": "Oberammergau",
+   "url": "https://de.wikipedia.org/wiki/Oberammergau",
+   "lat": 47.59859,
+   "lon": 11.06434,
+   "wd": "Q503757",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/20180810_xl_P1020841-Werkstatt-des-Holzschnitzers-Hans-Schmid.jpg/640px-20180810_xl_P1020841-Werkstatt-des-Holzschnitzers-Hans-Schmid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/20180810_xl_P1020841-Werkstatt-des-Holzschnitzers-Hans-Schmid.jpg/1000px-20180810_xl_P1020841-Werkstatt-des-Holzschnitzers-Hans-Schmid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "20180810 xl P1020841-Werkstatt-des-Holzschnitzers-Hans-Schmid.jpg",
+   "extract": ""
+  },
+  "oberammergau/Ettaler Straße houses": {
+   "ok": true,
+   "w": "Lüftlmalerei",
+   "ct": null,
+   "lang": "en",
+   "title": "Lüftlmalerei",
+   "url": "https://en.wikipedia.org/wiki/L%C3%BCftlmalerei",
+   "lat": null,
+   "lon": null,
+   "wd": "Q1880270",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Mittenwald_5_-_26.05.2006.JPG/640px-Mittenwald_5_-_26.05.2006.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Mittenwald_5_-_26.05.2006.JPG/1000px-Mittenwald_5_-_26.05.2006.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Mittenwald_5_-_26.05.2006.JPG",
+   "extract": "Lüftlmalerei is a form of mural art that is native to villages and towns of southern Germany and Austria, especially in Upper Bavaria and in the Tyrol."
+  },
+  "oberammergau/Pfarrkirche St Peter und Paul": {
+   "ok": true,
+   "w": "St. Peter und Paul (Oberammergau)",
+   "ct": null,
+   "lang": "de",
+   "title": "St. Peter und Paul (Oberammergau)",
+   "url": "https://de.wikipedia.org/wiki/St._Peter_und_Paul_(Oberammergau)",
+   "lat": 47.5962,
+   "lon": 11.0661,
+   "wd": "Q2322702",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Oberammergau%2C_Peter_und_Paul_von_S%C3%BCdosten%2C_1.jpeg/640px-Oberammergau%2C_Peter_und_Paul_von_S%C3%BCdosten%2C_1.jpeg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Oberammergau%2C_Peter_und_Paul_von_S%C3%BCdosten%2C_1.jpeg/1000px-Oberammergau%2C_Peter_und_Paul_von_S%C3%BCdosten%2C_1.jpeg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Oberammergau,_Peter_und_Paul_von_Südosten,_1.jpeg",
+   "extract": "St. Peter und Paul, die katholische Pfarrkirche von Oberammergau im Landkreis Garmisch-Partenkirchen (Bayern), ist ein bedeutendes Beispiel des süddeutschen Barock."
+  },
+  "oberammergau/Laber cable car": {
+   "ok": true,
+   "w": "Laber (Berg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Laber (Berg)",
+   "url": "https://de.wikipedia.org/wiki/Laber_(Berg)",
+   "lat": 47.58555556,
+   "lon": 11.10138889,
+   "wd": "Q1799411",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Laber_Graswangtal.JPG/640px-Laber_Graswangtal.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Laber_Graswangtal.JPG/1000px-Laber_Graswangtal.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Laber_Graswangtal.JPG",
+   "extract": "Der Laber ist ein Berg in den Ammergauer Alpen nördlich von Ettal und östlich von Oberammergau. Von Oberammergau führt auch die Laber Bergbahn auf den Laber."
+  },
+  "murnau/Obermarkt": {
+   "ok": true,
+   "w": "Murnau am Staffelsee",
+   "ct": null,
+   "lang": "de",
+   "title": "Murnau am Staffelsee",
+   "url": "https://de.wikipedia.org/wiki/Murnau_am_Staffelsee",
+   "lat": 47.67416667,
+   "lon": 11.20166667,
+   "wd": "Q254356",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Cafe_sign%2C_Murnau%2C_Bavaria%2C_Germany.jpg/640px-Cafe_sign%2C_Murnau%2C_Bavaria%2C_Germany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Cafe_sign%2C_Murnau%2C_Bavaria%2C_Germany.jpg/1000px-Cafe_sign%2C_Murnau%2C_Bavaria%2C_Germany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Cafe sign, Murnau, Bavaria, Germany.jpg",
+   "extract": ""
+  },
+  "murnau/Münter House": {
+   "ok": true,
+   "w": "Münter-Haus",
+   "ct": null,
+   "lang": "de",
+   "title": "Münter-Haus",
+   "url": "https://de.wikipedia.org/wiki/M%C3%BCnter-Haus",
+   "lat": 47.67468,
+   "lon": 11.19662,
+   "wd": "Q1503997",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Muenter-Haus-Murnau.JPG/640px-Muenter-Haus-Murnau.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Muenter-Haus-Murnau.JPG/1000px-Muenter-Haus-Murnau.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Muenter-Haus-Murnau.JPG",
+   "extract": "Das Münter-Haus in Murnau am Staffelsee war von 1909 bis 1914 und ab 1931 bis zu ihrem Tode das Zuhause der Künstlerin Gabriele Münter (1877–1962). Bei den Murnauern wurde das Haus aufgrund Kandinskys russischer Herkunft auch „Russenhaus“ genannt."
+  },
+  "murnau/Staffelsee": {
+   "ok": true,
+   "w": "Staffelsee",
+   "ct": null,
+   "lang": "de",
+   "title": "Staffelsee",
+   "url": "https://de.wikipedia.org/wiki/Staffelsee",
+   "lat": 47.69083333,
+   "lon": 11.16083333,
+   "wd": "Q278982",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Aerial_image_of_the_Staffelsee_%28view_from_the_southeast%29.jpg/640px-Aerial_image_of_the_Staffelsee_%28view_from_the_southeast%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Aerial_image_of_the_Staffelsee_%28view_from_the_southeast%29.jpg/1000px-Aerial_image_of_the_Staffelsee_%28view_from_the_southeast%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Aerial_image_of_the_Staffelsee_(view_from_the_southeast).jpg",
+   "extract": "Der Staffelsee ist ein 4,6 km langer und 3,7 km breiter See im Ammer-Loisach-Hügelland im südlichsten Landkreis Oberbayerns, dem Landkreis Garmisch-Partenkirchen. Er ist knapp acht Quadratkilometer groß mit einer Tiefe von bis nahezu 40 Meter."
+  },
+  "murnau/Murnauer Moos": {
+   "ok": true,
+   "w": "Murnauer Moos",
+   "ct": null,
+   "lang": "de",
+   "title": "Murnauer Moos",
+   "url": "https://de.wikipedia.org/wiki/Murnauer_Moos",
+   "lat": 47.648043,
+   "lon": 11.153183,
+   "wd": "Q1953772",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Murnauer_Moos.jpg/640px-Murnauer_Moos.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Murnauer_Moos.jpg/1000px-Murnauer_Moos.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Murnauer_Moos.jpg",
+   "extract": "Das Murnauer Moos liegt im Landkreis Garmisch-Partenkirchen am Nordrand der bayerischen Alpen und südlich von Murnau und Staffelsee. Es ist mit 32 km² Fläche das größte zusammenhängende, naturnah erhaltene Moorgebiet Mitteleuropas."
+  },
+  "murnau/Schlossmuseum Murnau": {
+   "ok": true,
+   "w": "Schlossmuseum Murnau",
+   "ct": null,
+   "lang": "de",
+   "title": "Schloßmuseum Murnau",
+   "url": "https://de.wikipedia.org/wiki/Schlo%C3%9Fmuseum_Murnau",
+   "lat": 47.67743,
+   "lon": 11.20245,
+   "wd": "Q2244929",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Schlo%C3%9Fmuseum_Murnau_Eingangsseite_August_2022.jpg/640px-Schlo%C3%9Fmuseum_Murnau_Eingangsseite_August_2022.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Schlo%C3%9Fmuseum_Murnau_Eingangsseite_August_2022.jpg/1000px-Schlo%C3%9Fmuseum_Murnau_Eingangsseite_August_2022.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Schloßmuseum_Murnau_Eingangsseite_August_2022.jpg",
+   "extract": "Das Schloßmuseum Murnau ist ein Museum im bayerischen Markt Murnau am Staffelsee. Es ist im Murnauer Schloss untergebracht."
+  },
+  "fussen/Neuschwanstein": {
+   "ok": true,
+   "w": "Schloss Neuschwanstein",
+   "ct": null,
+   "lang": "de",
+   "title": "Schloss Neuschwanstein",
+   "url": "https://de.wikipedia.org/wiki/Schloss_Neuschwanstein",
+   "lat": 47.557579,
+   "lon": 10.749704,
+   "wd": "Q4152",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Neuschwanstein_Castle_2024-02.jpg/640px-Neuschwanstein_Castle_2024-02.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Neuschwanstein_Castle_2024-02.jpg/1000px-Neuschwanstein_Castle_2024-02.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Neuschwanstein_Castle_2024-02.jpg",
+   "extract": "Schloss Neuschwanstein ist ein Baudenkmal in der bayerischen Gemeinde Schwangau. Die Dreiflügelanlage wurde in den Jahren 1869 bis 1892 im Auftrag des Königs Ludwig II."
+  },
+  "fussen/Marienbrücke": {
+   "ok": true,
+   "w": "Marienbrücke (Neuschwanstein)",
+   "ct": null,
+   "lang": "de",
+   "title": "Marienbrücke (Neuschwanstein)",
+   "url": "https://de.wikipedia.org/wiki/Marienbr%C3%BCcke_(Neuschwanstein)",
+   "lat": 47.554938,
+   "lon": 10.749425,
+   "wd": "Q830803",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/20050619_130750_Marienbruecke_Neuschwanstein.jpg/640px-20050619_130750_Marienbruecke_Neuschwanstein.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/20050619_130750_Marienbruecke_Neuschwanstein.jpg/1000px-20050619_130750_Marienbruecke_Neuschwanstein.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "20050619_130750_Marienbruecke_Neuschwanstein.jpg",
+   "extract": "Die Marienbrücke in der Gemeinde Schwangau bei Füssen ist eine Brücke über die Pöllatschlucht unmittelbar hinter und direkt sichtbar vom Schloss Neuschwanstein. Die Brücke wurde benannt nach Königin Marie."
+  },
+  "fussen/Hohenschwangau": {
+   "ok": true,
+   "w": "Schloss Hohenschwangau",
+   "ct": null,
+   "lang": "de",
+   "title": "Schloss Hohenschwangau",
+   "url": "https://de.wikipedia.org/wiki/Schloss_Hohenschwangau",
+   "lat": 47.555654,
+   "lon": 10.736702,
+   "wd": "Q161988",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Hohenschwangau_%283383608894%29.jpg/640px-Hohenschwangau_%283383608894%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Hohenschwangau_%283383608894%29.jpg/1000px-Hohenschwangau_%283383608894%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Hohenschwangau_(3383608894).jpg",
+   "extract": "Schloss Hohenschwangau ist der Neugotik zuzuordnen. Ein Vorgängerbau „Schwanstein“ wurde 1397 erstmals urkundlich erwähnt."
+  },
+  "fussen/Hohes Schloss": {
+   "ok": true,
+   "w": "Hohes Schloss Füssen",
+   "ct": null,
+   "lang": "de",
+   "title": "Hohes Schloss Füssen",
+   "url": "https://de.wikipedia.org/wiki/Hohes_Schloss_F%C3%BCssen",
+   "lat": 47.567164,
+   "lon": 10.698151,
+   "wd": "Q1623988",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Fuessen_hohes_schloss.jpg/640px-Fuessen_hohes_schloss.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Fuessen_hohes_schloss.jpg/1000px-Fuessen_hohes_schloss.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Fuessen_hohes_schloss.jpg",
+   "extract": "Das gotische Hohe Schloss der Bischöfe von Augsburg liegt auf einem Hügel über der Altstadt von Füssen in Schwaben. Das große Burgschloss gilt als eine der am besten erhaltenen mittelalterlichen Burganlagen Bayerns."
+  },
+  "fussen/Füssen old town": {
+   "ok": true,
+   "w": "Füssen",
+   "ct": null,
+   "lang": "de",
+   "title": "Füssen",
+   "url": "https://de.wikipedia.org/wiki/F%C3%BCssen",
+   "lat": 47.56666667,
+   "lon": 10.7,
+   "wd": "Q262684",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/F%C3%BCssen_-_Altstadt.JPG/640px-F%C3%BCssen_-_Altstadt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/F%C3%BCssen_-_Altstadt.JPG/1000px-F%C3%BCssen_-_Altstadt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Füssen - Altstadt.JPG",
+   "extract": ""
+  },
+  "fussen/Lechfall": {
+   "ok": true,
+   "w": "Lechfall",
+   "ct": null,
+   "lang": "de",
+   "title": "Lechfall",
+   "url": "https://de.wikipedia.org/wiki/Lechfall",
+   "lat": 47.561815,
+   "lon": 10.694809,
+   "wd": "Q1811316",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/F%C3%BCssen_-_Lechfall.jpg/640px-F%C3%BCssen_-_Lechfall.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/F%C3%BCssen_-_Lechfall.jpg/1000px-F%C3%BCssen_-_Lechfall.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Füssen_-_Lechfall.jpg",
+   "extract": "Der Lechfall ist ein knapp 8 Meter hohes, in ganzer Breite überströmtes Stauwehr, über das der Lech beim Verlassen der Nördlichen Kalkalpen am südlichen Stadtrand von Füssen in eine kurze Klamm stürzt."
+  },
+  "fussen/St Mang's Abbey": {
+   "ok": true,
+   "w": "Kloster St. Mang",
+   "ct": null,
+   "lang": "de",
+   "title": "Kloster St. Mang",
+   "url": "https://de.wikipedia.org/wiki/Kloster_St._Mang",
+   "lat": 47.56658611,
+   "lon": 10.6995,
+   "wd": "Q1527304",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg/640px-Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg/1000px-Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Aerial_image_of_the_Abbey_of_Saint_Mang_(view_from_the_southwest).jpg",
+   "extract": "Das Kloster St. Mang ist ein ehemaliges Kloster der Benediktiner in Füssen in Bayern in der Diözese Augsburg."
+  },
+  "munich/Marienplatz": {
+   "ok": true,
+   "w": "Marienplatz",
+   "ct": null,
+   "lang": "en",
+   "title": "Marienplatz",
+   "url": "https://en.wikipedia.org/wiki/Marienplatz",
+   "lat": 48.1373,
+   "lon": 11.5755,
+   "wd": "Q252648",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Rathaus_and_Marienplatz_from_Peterskirche_-_August_2006.jpg/640px-Rathaus_and_Marienplatz_from_Peterskirche_-_August_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Rathaus_and_Marienplatz_from_Peterskirche_-_August_2006.jpg/1000px-Rathaus_and_Marienplatz_from_Peterskirche_-_August_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Rathaus_and_Marienplatz_from_Peterskirche_-_August_2006.jpg",
+   "extract": "Marienplatz is a central square in the city centre of Munich, Germany. It has been the city's main square since 1158."
+  },
+  "munich/St Peter's tower": {
+   "ok": true,
+   "w": "Alter Peter",
+   "ct": null,
+   "lang": "de",
+   "title": "St. Peter (München)",
+   "url": "https://de.wikipedia.org/wiki/St._Peter_(M%C3%BCnchen)",
+   "lat": 48.13645,
+   "lon": 11.575933,
+   "wd": "Q707645",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Munich_-_The_Alter_Peter_tower_-_7411.jpg/640px-Munich_-_The_Alter_Peter_tower_-_7411.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Munich_-_The_Alter_Peter_tower_-_7411.jpg/1000px-Munich_-_The_Alter_Peter_tower_-_7411.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Munich_-_The_Alter_Peter_tower_-_7411.jpg",
+   "extract": "Die Pfarrkirche St. Peter, auch Peterskirche, ist die älteste Pfarrkirche Münchens."
+  },
+  "munich/Viktualienmarkt": {
+   "ok": true,
+   "w": "Viktualienmarkt",
+   "ct": null,
+   "lang": "de",
+   "title": "Viktualienmarkt",
+   "url": "https://de.wikipedia.org/wiki/Viktualienmarkt",
+   "lat": 48.13527778,
+   "lon": 11.57611111,
+   "wd": "Q686629",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Viktualienmarkt_2016.jpg/640px-Viktualienmarkt_2016.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Viktualienmarkt_2016.jpg/1000px-Viktualienmarkt_2016.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Viktualienmarkt_2016.jpg",
+   "extract": "Der Viktualienmarkt ist ein ständiger Markt für Lebensmittel in der Altstadt von München. Er findet seit 1807 täglich, außer an Sonn- und Feiertagen, statt."
+  },
+  "munich/Frauenkirche": {
+   "ok": true,
+   "w": "Frauenkirche (München)",
+   "ct": null,
+   "lang": "de",
+   "title": "Frauenkirche (München)",
+   "url": "https://de.wikipedia.org/wiki/Frauenkirche_(M%C3%BCnchen)",
+   "lat": 48.138611,
+   "lon": 11.573889,
+   "wd": "Q167193",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Frauenkirche_Munich_-_View_from_Peterskirche_Tower.jpg/640px-Frauenkirche_Munich_-_View_from_Peterskirche_Tower.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Frauenkirche_Munich_-_View_from_Peterskirche_Tower.jpg/1000px-Frauenkirche_Munich_-_View_from_Peterskirche_Tower.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Frauenkirche_Munich_-_View_from_Peterskirche_Tower.jpg",
+   "extract": "Die Frauenkirche, offiziell der Dom zu Unserer Lieben Frau, kurz auch der Münchner Dom, ist ein spätgotisches Kirchengebäude in der Münchner Altstadt und zählt zu den Wahrzeichen der bayerischen Landeshauptstadt München. Seit 1821 dient das Bauwerk als Kathedr"
+  },
+  "munich/Residenz": {
+   "ok": true,
+   "w": "Münchner Residenz",
+   "ct": null,
+   "lang": "de",
+   "title": "Münchner Residenz",
+   "url": "https://de.wikipedia.org/wiki/M%C3%BCnchner_Residenz",
+   "lat": 48.14111111,
+   "lon": 11.57805556,
+   "wd": "Q686548",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Aerial_image_of_Munich_Residenz.jpg/640px-Aerial_image_of_Munich_Residenz.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Aerial_image_of_Munich_Residenz.jpg/1000px-Aerial_image_of_Munich_Residenz.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Aerial_image_of_Munich_Residenz.jpg",
+   "extract": "Die Münchner Residenz ist ein Baudenkmal im Bezirk Altstadt-Lehel der bayerischen Landeshauptstadt München. Sie war von 1508 bis 1918 Sitz der Herzöge, Kurfürsten und Könige von Bayern aus dem Haus Wittelsbach."
+  },
+  "munich/Hofgarten": {
+   "ok": true,
+   "w": "Hofgarten (München)",
+   "ct": null,
+   "lang": "de",
+   "title": "Hofgarten (München)",
+   "url": "https://de.wikipedia.org/wiki/Hofgarten_(M%C3%BCnchen)",
+   "lat": 48.14277778,
+   "lon": 11.58,
+   "wd": "Q707673",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/M%C3%BCnchen_Hofgartentempel.jpg/640px-M%C3%BCnchen_Hofgartentempel.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/M%C3%BCnchen_Hofgartentempel.jpg/1000px-M%C3%BCnchen_Hofgartentempel.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "München_Hofgartentempel.jpg",
+   "extract": "Der Hofgarten ist eine historische Parkanlage am nördlichen Rand der Münchner Altstadt. Er entstand ab 1613 zusammen mit der nördlichen Erweiterung der Münchner Residenz unter Herzog Maximilian I."
+  },
+  "munich/English Garden": {
+   "ok": true,
+   "w": "Englischer Garten",
+   "ct": null,
+   "lang": "de",
+   "title": "Englischer Landschaftsgarten",
+   "url": "https://de.wikipedia.org/wiki/Englischer_Landschaftsgarten",
+   "lat": null,
+   "lon": null,
+   "wd": "Q12783",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Prior_Park_Bath_Palladian_Bridge.jpg/640px-Prior_Park_Bath_Palladian_Bridge.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Prior_Park_Bath_Palladian_Bridge.jpg/1000px-Prior_Park_Bath_Palladian_Bridge.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Prior_Park_Bath_Palladian_Bridge.jpg",
+   "extract": "Der englische Landschaftsgarten ist ein Landschaftsgarten (Landschaftspark), dessen Form und Stil sich in England im 18. Jahrhundert entwickelte."
+  },
+  "munich/Chinesischer Turm": {
+   "ok": true,
+   "w": "Chinesischer Turm (München)",
+   "ct": null,
+   "lang": "de",
+   "title": "Chinesischer Turm (München)",
+   "url": "https://de.wikipedia.org/wiki/Chinesischer_Turm_(M%C3%BCnchen)",
+   "lat": 48.1525,
+   "lon": 11.5921,
+   "wd": "Q3995164",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Munich_English_Gardens_-_Chinese_Tower_Beer_Garden_-_August_2006.jpg/640px-Munich_English_Gardens_-_Chinese_Tower_Beer_Garden_-_August_2006.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Munich_English_Gardens_-_Chinese_Tower_Beer_Garden_-_August_2006.jpg/1000px-Munich_English_Gardens_-_Chinese_Tower_Beer_Garden_-_August_2006.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Munich_English_Gardens_-_Chinese_Tower_Beer_Garden_-_August_2006.jpg",
+   "extract": "Der Chinesische Turm, auch als Chinaturm und zu Beginn als Große Pagode bekannt, ist ein 25 Meter hoher Holzbau im Stile einer Pagode, der im Englischen Garten in München steht. Das Bauwerk wurde in den Jahren 1789 bis 1790 erbaut und 1792 mit der Eröffnung de"
+  },
+  "munich/Hofbräuhaus": {
+   "ok": true,
+   "w": "Hofbräuhaus am Platzl",
+   "ct": null,
+   "lang": "de",
+   "title": "Hofbräuhaus am Platzl",
+   "url": "https://de.wikipedia.org/wiki/Hofbr%C3%A4uhaus_am_Platzl",
+   "lat": 48.13777,
+   "lon": 11.58016,
+   "wd": "Q152971",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Hofbrauhaus.JPG/640px-Hofbrauhaus.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Hofbrauhaus.JPG/1000px-Hofbrauhaus.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Hofbrauhaus.JPG",
+   "extract": "Das Hofbräuhaus am Platzl, offizielle Bezeichnung Staatliches Hofbräuhaus am Platzl ist ein Bierpalast in München. Es war lange Zeit der Sitz der Brauerei Hofbräu München."
+  },
+  "munich/Asamkirche": {
+   "ok": true,
+   "w": "Asamkirche (München)",
+   "ct": null,
+   "lang": "de",
+   "title": "Asamkirche (München)",
+   "url": "https://de.wikipedia.org/wiki/Asamkirche_(M%C3%BCnchen)",
+   "lat": 48.13511667,
+   "lon": 11.56953056,
+   "wd": "Q152973",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/St._Nepomuk_retusche.jpg/640px-St._Nepomuk_retusche.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/St._Nepomuk_retusche.jpg/1000px-St._Nepomuk_retusche.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "St._Nepomuk_retusche.jpg",
+   "extract": "Die Asamkirche in der Sendlinger Straße in Münchens Altstadt wurde von 1733 bis 1746 von den Brüdern Asam errichtet. Sie gilt als eines der bedeutendsten Bauwerke der beiden Hauptvertreter des süddeutschen Spätbarocks."
+  },
+  "munich/Nymphenburg Palace": {
+   "ok": true,
+   "w": "Schloss Nymphenburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Schloss Nymphenburg",
+   "url": "https://de.wikipedia.org/wiki/Schloss_Nymphenburg",
+   "lat": 48.15805556,
+   "lon": 11.50361111,
+   "wd": "Q131631",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Exterior_del_Palacio_de_Nymphenburg%2C_M%C3%BAnich%2C_Alemania61.JPG/640px-Exterior_del_Palacio_de_Nymphenburg%2C_M%C3%BAnich%2C_Alemania61.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Exterior_del_Palacio_de_Nymphenburg%2C_M%C3%BAnich%2C_Alemania61.JPG/1000px-Exterior_del_Palacio_de_Nymphenburg%2C_M%C3%BAnich%2C_Alemania61.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Exterior_del_Palacio_de_Nymphenburg,_Múnich,_Alemania61.JPG",
+   "extract": "Schloss Nymphenburg ist ein Baudenkmal im Bezirk Neuhausen-Nymphenburg der bayerischen Landeshauptstadt München. Es war von 1715 bis 1918 Sommersitz der Kurfürsten und Könige von Bayern aus dem Haus Wittelsbach."
+  },
+  "munich/Deutsches Museum": {
+   "ok": true,
+   "w": "Deutsches Museum",
+   "ct": null,
+   "lang": "de",
+   "title": "Deutsches Museum",
+   "url": "https://de.wikipedia.org/wiki/Deutsches_Museum",
+   "lat": 48.1301,
+   "lon": 11.5838,
+   "wd": "Q131617",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Deutsches_Museum_Portrait_4.jpg/640px-Deutsches_Museum_Portrait_4.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Deutsches_Museum_Portrait_4.jpg/1000px-Deutsches_Museum_Portrait_4.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Deutsches_Museum_Portrait_4.jpg",
+   "extract": "Das Deutsche Museum von Meisterwerken der Naturwissenschaft und Technik in München ist nach Ausstellungsfläche eines der größten Wissenschafts- und Technikmuseen der Welt. Es betreibt als Anstalt des öffentlichen Rechts neben dem Stammhaus auf der Münchner Mus"
+  },
+  "munich/Oktoberfest": {
+   "ok": true,
+   "w": "Oktoberfest",
+   "ct": null,
+   "lang": "de",
+   "title": "Oktoberfest",
+   "url": "https://de.wikipedia.org/wiki/Oktoberfest",
+   "lat": 48.1325,
+   "lon": 11.54916667,
+   "wd": "Q102400",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Wiesn2006_Luftaufnahme.jpg/640px-Wiesn2006_Luftaufnahme.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Wiesn2006_Luftaufnahme.jpg/1000px-Wiesn2006_Luftaufnahme.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Wiesn2006_Luftaufnahme.jpg",
+   "extract": "Das Oktoberfest in München, mundartlich d’Wiesn, ist das weltweit größte Volksfest. Es wird seit 1810 jährlich auf der Theresienwiese in der bayerischen Landeshauptstadt ausgerichtet und ist ein bedeutender Wirtschaftsfaktor für die Stadt."
+  },
+  "augsburg/Rathausplatz": {
+   "ok": true,
+   "w": "Rathausplatz (Augsburg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Rathausplatz (Augsburg)",
+   "url": "https://de.wikipedia.org/wiki/Rathausplatz_(Augsburg)",
+   "lat": 48.36862,
+   "lon": 10.89858,
+   "wd": "Q579178",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Plaza_del_Ayuntamiento%2C_Augsburgo%2C_Alemania%2C_2021-06-04%2C_DD_32-34_HDR.jpg/640px-Plaza_del_Ayuntamiento%2C_Augsburgo%2C_Alemania%2C_2021-06-04%2C_DD_32-34_HDR.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Plaza_del_Ayuntamiento%2C_Augsburgo%2C_Alemania%2C_2021-06-04%2C_DD_32-34_HDR.jpg/1000px-Plaza_del_Ayuntamiento%2C_Augsburgo%2C_Alemania%2C_2021-06-04%2C_DD_32-34_HDR.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Plaza_del_Ayuntamiento,_Augsburgo,_Alemania,_2021-06-04,_DD_32-34_HDR.jpg",
+   "extract": "Der Augsburger Rathausplatz ist der Platz vor dem Rathaus im Zentrum Augsburgs. Hier werden häufig Kundgebungen, Demonstrationen oder andere Veranstaltungen durchgeführt."
+  },
+  "augsburg/Golden Hall": {
+   "ok": true,
+   "w": "Rathaus (Augsburg)",
+   "ct": "Goldener Saal Augsburg Rathaus",
+   "lang": "de",
+   "title": "Rathaus (Augsburg)",
+   "url": "https://de.wikipedia.org/wiki/Rathaus_(Augsburg)",
+   "lat": 48.36869444,
+   "lon": 10.89869444,
+   "wd": "Q695117",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Augsburg.-_Town_Hall_%28Goldener_Saal%29_%281%29.jpg/640px-Augsburg.-_Town_Hall_%28Goldener_Saal%29_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Augsburg.-_Town_Hall_%28Goldener_Saal%29_%281%29.jpg/1000px-Augsburg.-_Town_Hall_%28Goldener_Saal%29_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Augsburg.- Town Hall (Goldener Saal) (1).jpg",
+   "extract": "Das Augsburger Rathaus wurde von 1615 bis 1624 an der Ostseite des Rathausplatzes von Augsburg errichtet. Der 57 Meter hohe Profanbau gilt als einer der bedeutendsten der Renaissancearchitektur nördlich der Alpen und stellt zusammen mit dem Perlachturm das Wah"
+  },
+  "augsburg/Fuggerei": {
+   "ok": true,
+   "w": "Fuggerei",
+   "ct": null,
+   "lang": "de",
+   "title": "Fuggerei",
+   "url": "https://de.wikipedia.org/wiki/Fuggerei",
+   "lat": 48.36878333,
+   "lon": 10.90405556,
+   "wd": "Q835406",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Augsburg_Fuggerei_Eingang_220326.JPG/640px-Augsburg_Fuggerei_Eingang_220326.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Augsburg_Fuggerei_Eingang_220326.JPG/1000px-Augsburg_Fuggerei_Eingang_220326.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Augsburg_Fuggerei_Eingang_220326.JPG",
+   "extract": "Die Fuggerei in Augsburg ist eine der ältesten bestehenden Sozialsiedlungen der Welt. Die Reihenhaussiedlung stiftete Jakob Fugger „der Reiche“ im Jahr 1521."
+  },
+  "augsburg/Maximilianstraße": {
+   "ok": true,
+   "w": "Maximilianstraße (Augsburg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Maximilianstraße (Augsburg)",
+   "url": "https://de.wikipedia.org/wiki/Maximilianstra%C3%9Fe_(Augsburg)",
+   "lat": 48.36527778,
+   "lon": 10.89944444,
+   "wd": "Q875929",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Rathaus-maximilianstrasse-Augsburg-Blick-vom-Perlachturm.jpg/640px-Rathaus-maximilianstrasse-Augsburg-Blick-vom-Perlachturm.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Rathaus-maximilianstrasse-Augsburg-Blick-vom-Perlachturm.jpg/1000px-Rathaus-maximilianstrasse-Augsburg-Blick-vom-Perlachturm.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Rathaus-maximilianstrasse-Augsburg-Blick-vom-Perlachturm.jpg",
+   "extract": "Die Maximilianstraße in der Altstadt von Augsburg ist eine der kunsthistorisch bedeutsamsten Straßen Deutschlands mit Bauten der Gotik, der Renaissance, des Rokoko, Neoklassizismus und der Nachkriegsmoderne. Sie entstand 1809 durch den Abriss von Gebäuden, wod"
+  },
+  "augsburg/Augsburg Cathedral": {
+   "ok": true,
+   "w": "Augsburger Dom",
+   "ct": null,
+   "lang": "de",
+   "title": "Augsburger Dom",
+   "url": "https://de.wikipedia.org/wiki/Augsburger_Dom",
+   "lat": 48.37277778,
+   "lon": 10.89666667,
+   "wd": "Q279089",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Der_Hohe_Dom_zu_AugsburgDSC_2136.jpg/640px-Der_Hohe_Dom_zu_AugsburgDSC_2136.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Der_Hohe_Dom_zu_AugsburgDSC_2136.jpg/1000px-Der_Hohe_Dom_zu_AugsburgDSC_2136.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Der_Hohe_Dom_zu_AugsburgDSC_2136.jpg",
+   "extract": "Der Hohe Dom Mariä Heimsuchung zu Augsburg, kurz Augsburger Dom, ist die Kathedrale des Bistums Augsburg und Stadtpfarrkirche der Dompfarrei Zum Heiligsten Herzen Jesu. Er gilt als einer der bedeutendsten Kirchenbauten Bayerns und eine der meistbesuchten Sehen"
+  },
+  "augsburg/Lechviertel canals": {
+   "ok": true,
+   "w": "Lechviertel",
+   "ct": null,
+   "lang": "de",
+   "title": "Augsburg-Lechviertel",
+   "url": "https://de.wikipedia.org/wiki/Augsburg-Lechviertel",
+   "lat": 48.37,
+   "lon": 10.90111111,
+   "wd": "Q760492",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/030904_augsburg-alte-silberschmiede_1-480x640.jpg/640px-030904_augsburg-alte-silberschmiede_1-480x640.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/030904_augsburg-alte-silberschmiede_1-480x640.jpg/1000px-030904_augsburg-alte-silberschmiede_1-480x640.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "030904_augsburg-alte-silberschmiede_1-480x640.jpg",
+   "extract": "Das Lechviertel ist ein Stadtteil von Augsburg. Mit seinen etwa 4.000 Einwohnern ist es Teil des Stadtbezirks Lechviertel, östliches Ulrichsviertel und gehört zum Planungsraum Augsburg-Innenstadt."
+  },
+  "augsburg/St Ulrich and St Afra": {
+   "ok": true,
+   "w": "St. Ulrich und Afra (Augsburg)",
+   "ct": null,
+   "lang": "de",
+   "title": "St. Ulrich und Afra (Augsburg)",
+   "url": "https://de.wikipedia.org/wiki/St._Ulrich_und_Afra_(Augsburg)",
+   "lat": 48.361511,
+   "lon": 10.90026,
+   "wd": "Q14524013",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Bas%C3%ADlica_de_San_Ulrico_y_Santa_Afra%2C_Augsburgo%2C_Alemania%2C_2021-06-04%2C_DD_26-28_HDR.jpg/640px-Bas%C3%ADlica_de_San_Ulrico_y_Santa_Afra%2C_Augsburgo%2C_Alemania%2C_2021-06-04%2C_DD_26-28_HDR.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Bas%C3%ADlica_de_San_Ulrico_y_Santa_Afra%2C_Augsburgo%2C_Alemania%2C_2021-06-04%2C_DD_26-28_HDR.jpg/1000px-Bas%C3%ADlica_de_San_Ulrico_y_Santa_Afra%2C_Augsburgo%2C_Alemania%2C_2021-06-04%2C_DD_26-28_HDR.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Basílica_de_San_Ulrico_y_Santa_Afra,_Augsburgo,_Alemania,_2021-06-04,_DD_26-28_HDR.jpg",
+   "extract": "St. Ulrich und Afra ist eine römisch-katholische Stadtpfarrkirche und seit 1937 Päpstliche Basilika in Augsburg."
+  },
+  "augsburg/Schaezlerpalais": {
+   "ok": true,
+   "w": "Schaezlerpalais",
+   "ct": null,
+   "lang": "de",
+   "title": "Schaezlerpalais",
+   "url": "https://de.wikipedia.org/wiki/Schaezlerpalais",
+   "lat": 48.365,
+   "lon": 10.89916667,
+   "wd": "Q205540",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Innenstadt_-_St._Ulrich-Dom%2C_Augsburg%2C_Germany_-_panoramio.jpg/640px-Innenstadt_-_St._Ulrich-Dom%2C_Augsburg%2C_Germany_-_panoramio.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Innenstadt_-_St._Ulrich-Dom%2C_Augsburg%2C_Germany_-_panoramio.jpg/1000px-Innenstadt_-_St._Ulrich-Dom%2C_Augsburg%2C_Germany_-_panoramio.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Innenstadt_-_St._Ulrich-Dom,_Augsburg,_Germany_-_panoramio.jpg",
+   "extract": "Das Augsburger Schaezlerpalais beherbergt städtische und staatliche Kunstsammlungen. Es liegt am Herkulesbrunnen und war früher das Stadtpalais des Bankiers Benedikt Adam Freiherr von Liebert, Edler von Liebenhofen."
+  },
+  "augsburg/Augsburg water management": {
+   "ok": true,
+   "w": "Historische Wasserwirtschaft Augsburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Augsburgs historische Wasserwirtschaft",
+   "url": "https://de.wikipedia.org/wiki/Augsburgs_historische_Wasserwirtschaft",
+   "lat": null,
+   "lon": null,
+   "wd": "Q99852739",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Am_Roten_Tor_1_Augsburg.JPG/640px-Am_Roten_Tor_1_Augsburg.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Am_Roten_Tor_1_Augsburg.JPG/1000px-Am_Roten_Tor_1_Augsburg.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Am_Roten_Tor_1_Augsburg.JPG",
+   "extract": "Augsburgs historische Wasserwirtschaft gilt als herausragendes Zeugnis der Geschichte der Wassernutzung und der Wasserwirtschaft. Eine Auswahl 22 historischer baulicher Anlagen zur Fließgewässernutzung und zur Trinkwasserversorgung Augsburgs vom 15."
+  },
+  "landsberg/Lech weir": {
+   "ok": true,
+   "w": "Landsberg am Lech",
+   "ct": "Lechwehr Landsberg",
+   "lang": "de",
+   "title": "Landsberg am Lech",
+   "url": "https://de.wikipedia.org/wiki/Landsberg_am_Lech",
+   "lat": 48.04944444,
+   "lon": 10.87777778,
+   "wd": "Q494299",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Lechwehr_Landsberg-1.jpg/640px-Lechwehr_Landsberg-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Lechwehr_Landsberg-1.jpg/1000px-Lechwehr_Landsberg-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Lechwehr Landsberg-1.jpg",
+   "extract": "Landsberg am Lech ist eine Große Kreisstadt und der Verwaltungssitz des gleichnamigen Landkreises im Regierungsbezirk Oberbayern. Das Mittelzentrum liegt an der Romantischen Straße und zählt laut Deutschem Wetterdienst zu den sonnigsten Städten Deutschlands."
+  },
+  "landsberg/Hauptplatz": {
+   "ok": true,
+   "w": "Landsberg am Lech",
+   "ct": null,
+   "lang": "de",
+   "title": "Landsberg am Lech",
+   "url": "https://de.wikipedia.org/wiki/Landsberg_am_Lech",
+   "lat": 48.04944444,
+   "lon": 10.87777778,
+   "wd": "Q494299",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Hauptplatz_147%2C_Landsberg_am_Lech.jpg/640px-Hauptplatz_147%2C_Landsberg_am_Lech.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Hauptplatz_147%2C_Landsberg_am_Lech.jpg/1000px-Hauptplatz_147%2C_Landsberg_am_Lech.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Hauptplatz 147, Landsberg am Lech.jpg",
+   "extract": ""
+  },
+  "landsberg/Bayertor": {
+   "ok": true,
+   "w": "Bayertor",
+   "ct": null,
+   "lang": "de",
+   "title": "Bayertor",
+   "url": "https://de.wikipedia.org/wiki/Bayertor",
+   "lat": 48.04858889,
+   "lon": 10.88219722,
+   "wd": "Q812523",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Landsberg-bayertor.jpg/640px-Landsberg-bayertor.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Landsberg-bayertor.jpg/1000px-Landsberg-bayertor.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Landsberg-bayertor.jpg",
+   "extract": "Das Bayertor in Landsberg am Lech ist Teil der erweiterten Stadtbefestigung und wurde von 1419 bis 1425 als Abschluss des dritten Stadtmauerringes und als Tor gen Osten – gen Bayern – erbaut. Als Grenzstadt zu Schwaben kam Landsberg am Lech eine wichtige strat"
+  },
+  "landsberg/Mother of God church": {
+   "ok": true,
+   "w": "Stadtpfarrkirche Mariä Himmelfahrt (Landsberg am Lech)",
+   "ct": null,
+   "lang": "de",
+   "title": "Stadtpfarrkirche Mariä Himmelfahrt (Landsberg am Lech)",
+   "url": "https://de.wikipedia.org/wiki/Stadtpfarrkirche_Mari%C3%A4_Himmelfahrt_(Landsberg_am_Lech)",
+   "lat": 48.05086111,
+   "lon": 10.87708333,
+   "wd": "Q2327814",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Aerial_image_of_Stadtpfarrkirche_Mari%C3%A4_Himmelfahrt%2C_Landsberg_am_Lech_%28view_from_the_south%29.jpg/640px-Aerial_image_of_Stadtpfarrkirche_Mari%C3%A4_Himmelfahrt%2C_Landsberg_am_Lech_%28view_from_the_south%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Aerial_image_of_Stadtpfarrkirche_Mari%C3%A4_Himmelfahrt%2C_Landsberg_am_Lech_%28view_from_the_south%29.jpg/1000px-Aerial_image_of_Stadtpfarrkirche_Mari%C3%A4_Himmelfahrt%2C_Landsberg_am_Lech_%28view_from_the_south%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Aerial_image_of_Stadtpfarrkirche_Mariä_Himmelfahrt,_Landsberg_am_Lech_(view_from_the_south).jpg",
+   "extract": "Die katholische Stadtpfarrkirche Mariä Himmelfahrt ist die Hauptkirche der Stadt Landsberg am Lech. Sie befindet sich am Georg-Hellmair-Platz."
+  },
+  "donauworth/Reichsstraße": {
+   "ok": true,
+   "w": "Donauwörth",
+   "ct": "Reichsstraße Donauwörth",
+   "lang": "de",
+   "title": "Donauwörth",
+   "url": "https://de.wikipedia.org/wiki/Donauw%C3%B6rth",
+   "lat": 48.71888889,
+   "lon": 10.77777778,
+   "wd": "Q53742",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg/640px-Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg/1000px-Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Donauwörth, Reichsstraße 1, 001.jpg",
+   "extract": "Donauwörth ist eine Große Kreisstadt im schwäbischen Landkreis Donau-Ries und der Sitz des Landratsamts. Im späten Mittelalter und in der frühen Neuzeit war Schwäbischwerd eine selbstständige Reichsstadt im Heiligen Römischen Reich, was sich im Wappen der heut"
+  },
+  "donauworth/Ried island": {
+   "ok": true,
+   "w": "Donauwörth",
+   "ct": null,
+   "lang": "de",
+   "title": "Donauwörth",
+   "url": "https://de.wikipedia.org/wiki/Donauw%C3%B6rth",
+   "lat": 48.71888889,
+   "lon": 10.77777778,
+   "wd": "Q53742",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/9/96/Insel_Ried_-_geo.hlipp.de_-_22193.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imgBig": "https://upload.wikimedia.org/wikipedia/commons/9/96/Insel_Ried_-_geo.hlipp.de_-_22193.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "file": "Insel Ried - geo.hlipp.de - 22193.jpg",
+   "extract": ""
+  },
+  "donauworth/Liebfrauenmünster": {
+   "ok": true,
+   "w": "Liebfrauenmünster (Donauwörth)",
+   "ct": null,
+   "lang": "de",
+   "title": "Liebfrauenmünster (Donauwörth)",
+   "url": "https://de.wikipedia.org/wiki/Liebfrauenm%C3%BCnster_(Donauw%C3%B6rth)",
+   "lat": 48.719222,
+   "lon": 10.777094,
+   "wd": "Q1434810",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Donauw%C3%B6rth%2C_M%C3%BCnster_zu_Unserer_Lieben_Frau%2C_005.jpg/640px-Donauw%C3%B6rth%2C_M%C3%BCnster_zu_Unserer_Lieben_Frau%2C_005.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Donauw%C3%B6rth%2C_M%C3%BCnster_zu_Unserer_Lieben_Frau%2C_005.jpg/1000px-Donauw%C3%B6rth%2C_M%C3%BCnster_zu_Unserer_Lieben_Frau%2C_005.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Donauwörth,_Münster_zu_Unserer_Lieben_Frau,_005.jpg",
+   "extract": "Das Münster zu Unserer Lieben Frau ist eine römisch-katholische Pfarrkirche in Donauwörth. Sie gehört zur Pfarreiengemeinschaft Donauwörth im Dekanat Donauwörth des Bistums Augsburg."
+  },
+  "donauworth/Käthe Kruse Doll Museum": {
+   "ok": true,
+   "w": "Käthe-Kruse-Puppen-Museum",
+   "ct": null,
+   "lang": "de",
+   "title": "Käthe-Kruse-Puppen-Museum",
+   "url": "https://de.wikipedia.org/wiki/K%C3%A4the-Kruse-Puppen-Museum",
+   "lat": 48.72137222,
+   "lon": 10.77835278,
+   "wd": "Q19963734",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Donauw%C3%B6rth-K%C3%A4theKrusePuppenMuseum1-Asio.JPG/640px-Donauw%C3%B6rth-K%C3%A4theKrusePuppenMuseum1-Asio.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Donauw%C3%B6rth-K%C3%A4theKrusePuppenMuseum1-Asio.JPG/1000px-Donauw%C3%B6rth-K%C3%A4theKrusePuppenMuseum1-Asio.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Donauwörth-KätheKrusePuppenMuseum1-Asio.JPG",
+   "extract": "Das Käthe-Kruse-Puppen-Museum befindet sich im ehemaligen Kapuzinerkloster in Donauwörth. Es zeigt Puppen der Puppenmacherin Käthe Kruse (1883–1968)."
+  },
+  "nuremberg/Imperial Castle": {
+   "ok": true,
+   "w": "Nürnberger Burg",
+   "ct": null,
+   "lang": "de",
+   "title": "Nürnberger Burg",
+   "url": "https://de.wikipedia.org/wiki/N%C3%BCrnberger_Burg",
+   "lat": 49.45786667,
+   "lon": 11.07592222,
+   "wd": "Q707396",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/N%C3%BCrnberg_Burg_ArM.jpg/640px-N%C3%BCrnberg_Burg_ArM.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/N%C3%BCrnberg_Burg_ArM.jpg/1000px-N%C3%BCrnberg_Burg_ArM.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Nürnberg_Burg_ArM.jpg",
+   "extract": "Die Nürnberger Burg ist das Wahrzeichen der Stadt Nürnberg. Sie ist eine Doppelburg und besteht aus der Kaiserburg und der Burggrafenburg."
+  },
+  "nuremberg/Hauptmarkt": {
+   "ok": true,
+   "w": "Hauptmarkt (Nürnberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Hauptmarkt (Nürnberg)",
+   "url": "https://de.wikipedia.org/wiki/Hauptmarkt_(N%C3%BCrnberg)",
+   "lat": 49.45388889,
+   "lon": 11.07694444,
+   "wd": "Q1589543",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Nuremberg_Aerial_Hauptmarkt.JPG/640px-Nuremberg_Aerial_Hauptmarkt.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Nuremberg_Aerial_Hauptmarkt.JPG/1000px-Nuremberg_Aerial_Hauptmarkt.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Nuremberg_Aerial_Hauptmarkt.JPG",
+   "extract": "Der Hauptmarkt ist der zentrale Platz in der Altstadt von Nürnberg."
+  },
+  "nuremberg/Albrecht Dürer's House": {
+   "ok": true,
+   "w": "Albrecht-Dürer-Haus",
+   "ct": null,
+   "lang": "de",
+   "title": "Albrecht-Dürer-Haus",
+   "url": "https://de.wikipedia.org/wiki/Albrecht-D%C3%BCrer-Haus",
+   "lat": 49.45717778,
+   "lon": 11.07387778,
+   "wd": "Q523148",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Albrecht-D%C3%BCrer-Haus_-_Tierg%C3%A4rtnerplatz_-_Nuremberg%2C_Germany_-_DSC02033.jpg/640px-Albrecht-D%C3%BCrer-Haus_-_Tierg%C3%A4rtnerplatz_-_Nuremberg%2C_Germany_-_DSC02033.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Albrecht-D%C3%BCrer-Haus_-_Tierg%C3%A4rtnerplatz_-_Nuremberg%2C_Germany_-_DSC02033.jpg/1000px-Albrecht-D%C3%BCrer-Haus_-_Tierg%C3%A4rtnerplatz_-_Nuremberg%2C_Germany_-_DSC02033.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Albrecht-Dürer-Haus_-_Tiergärtnerplatz_-_Nuremberg,_Germany_-_DSC02033.jpg",
+   "extract": "Das Albrecht-Dürer-Haus in der Nürnberger Altstadt ist ein mittelalterliches Wohnhaus, das gegen 1420 errichtet wurde und sein heutiges Aussehen durch die Modernisierung, die Bernhard Walther nach 1500 vornehmen ließ, erhielt. Ab 1509 diente es Albrecht Dürer "
+  },
+  "nuremberg/Weißgerbergasse": {
+   "ok": true,
+   "w": "Weißgerbergasse",
+   "ct": null,
+   "lang": "de",
+   "title": "Weißgerbergasse (Nürnberg)",
+   "url": "https://de.wikipedia.org/wiki/Wei%C3%9Fgerbergasse_(N%C3%BCrnberg)",
+   "lat": 49.45519444,
+   "lon": 11.07302778,
+   "wd": "Q1772161",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Nuremberg_Wei%C3%9Fgerbergasse.jpg/640px-Nuremberg_Wei%C3%9Fgerbergasse.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Nuremberg_Wei%C3%9Fgerbergasse.jpg/1000px-Nuremberg_Wei%C3%9Fgerbergasse.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Nuremberg_Weißgerbergasse.jpg",
+   "extract": "Die Weißgerbergasse ist eine Straße in Nürnberg. Sie gehört zu den wenigen überwiegend erhaltenen Baudenkmalensembles der Nürnberger Altstadt."
+  },
+  "nuremberg/Henkersteg": {
+   "ok": true,
+   "w": "Henkersteg",
+   "ct": null,
+   "lang": "de",
+   "title": "Henkersteg",
+   "url": "https://de.wikipedia.org/wiki/Henkersteg",
+   "lat": 49.45308333,
+   "lon": 11.07308333,
+   "wd": "Q1605293",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Henkersteg_in_N%C3%BCrnberg.JPG/640px-Henkersteg_in_N%C3%BCrnberg.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Henkersteg_in_N%C3%BCrnberg.JPG/1000px-Henkersteg_in_N%C3%BCrnberg.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Henkersteg_in_Nürnberg.JPG",
+   "extract": "Der Henkersteg, auch Langer Steg, ist ein Holzsteg über die Pegnitz in Nürnberg."
+  },
+  "nuremberg/Frauenkirche": {
+   "ok": true,
+   "w": "Frauenkirche (Nürnberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Frauenkirche (Nürnberg)",
+   "url": "https://de.wikipedia.org/wiki/Frauenkirche_(N%C3%BCrnberg)",
+   "lat": 49.454,
+   "lon": 11.078,
+   "wd": "Q695069",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Nuernberg-Frauenkirche-gp.jpg/640px-Nuernberg-Frauenkirche-gp.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Nuernberg-Frauenkirche-gp.jpg/1000px-Nuernberg-Frauenkirche-gp.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Nuernberg-Frauenkirche-gp.jpg",
+   "extract": "Die Frauenkirche, heute römisch-katholische Stadtpfarrkirche Unserer Lieben Frau, steht als eine der bedeutenden Kirchen Nürnbergs an der Ostseite des Hauptmarkts. Sie wurde auf Veranlassung von Kaiser Karl in der Parlerzeit von 1352 bis 1362 als Hallenkirche "
+  },
+  "nuremberg/St Lorenz": {
+   "ok": true,
+   "w": "St. Lorenz (Nürnberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "St. Lorenz (Nürnberg)",
+   "url": "https://de.wikipedia.org/wiki/St._Lorenz_(N%C3%BCrnberg)",
+   "lat": 49.451,
+   "lon": 11.07805556,
+   "wd": "Q707357",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/N%C3%BCrnberg_St._Lorenz_T%C3%BCrme_Totale.jpg/640px-N%C3%BCrnberg_St._Lorenz_T%C3%BCrme_Totale.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/N%C3%BCrnberg_St._Lorenz_T%C3%BCrme_Totale.jpg/1000px-N%C3%BCrnberg_St._Lorenz_T%C3%BCrme_Totale.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Nürnberg_St._Lorenz_Türme_Totale.jpg",
+   "extract": "St. Lorenz ist ein gotischer Kirchenbau in Nürnberg."
+  },
+  "nuremberg/Germanisches Nationalmuseum": {
+   "ok": true,
+   "w": "Germanisches Nationalmuseum",
+   "ct": null,
+   "lang": "de",
+   "title": "Germanisches Nationalmuseum",
+   "url": "https://de.wikipedia.org/wiki/Germanisches_Nationalmuseum",
+   "lat": 49.448249,
+   "lon": 11.075511,
+   "wd": "Q478695",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Germanisches-Nationalmuseum-Nuernberg-2012.jpg/640px-Germanisches-Nationalmuseum-Nuernberg-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Germanisches-Nationalmuseum-Nuernberg-2012.jpg/1000px-Germanisches-Nationalmuseum-Nuernberg-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Germanisches-Nationalmuseum-Nuernberg-2012.jpg",
+   "extract": ""
+  },
+  "nuremberg/Documentation Centre": {
+   "ok": true,
+   "w": "Dokumentationszentrum Reichsparteitagsgelände",
+   "ct": null,
+   "lang": "de",
+   "title": "Dokumentationszentrum Reichsparteitagsgelände",
+   "url": "https://de.wikipedia.org/wiki/Dokumentationszentrum_Reichsparteitagsgel%C3%A4nde",
+   "lat": 49.43388889,
+   "lon": 11.11277778,
+   "wd": "Q877333",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Documentation_center_entrance_nuernberg_may2011.jpg/640px-Documentation_center_entrance_nuernberg_may2011.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Documentation_center_entrance_nuernberg_may2011.jpg/1000px-Documentation_center_entrance_nuernberg_may2011.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Documentation_center_entrance_nuernberg_may2011.jpg",
+   "extract": "Das Dokumentationszentrum Reichsparteitagsgelände ist ein Museum in Nürnberg. Es gehört zum Verbund der Museen der Stadt Nürnberg und befindet sich im Nordflügel der von den Nationalsozialisten konzipierten, unvollendet gebliebenen Kongresshalle des ehemaligen"
+  },
+  "nuremberg/Nuremberg sausages": {
+   "ok": true,
+   "w": "Nürnberger Rostbratwurst",
+   "ct": null,
+   "lang": "de",
+   "title": "Bratwurst",
+   "url": "https://de.wikipedia.org/wiki/Bratwurst",
+   "lat": null,
+   "lon": null,
+   "wd": "Q899882",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/German_Bratw%C3%BCrste.jpg/640px-German_Bratw%C3%BCrste.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/German_Bratw%C3%BCrste.jpg/1000px-German_Bratw%C3%BCrste.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "German_Bratwürste.jpg",
+   "extract": "Als Bratwurst werden verschiedene Wurstsorten aus Fleisch bezeichnet. Man versteht darunter Würste, die zum Braten bestimmt sind oder gebraten wurden."
+  },
+  "nuremberg/Handwerkerhof": {
+   "ok": true,
+   "w": "Handwerkerhof",
+   "ct": null,
+   "lang": "de",
+   "title": "Handwerkerhof Nürnberg",
+   "url": "https://de.wikipedia.org/wiki/Handwerkerhof_N%C3%BCrnberg",
+   "lat": 49.44736111,
+   "lon": 11.08111111,
+   "wd": "Q1575248",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Handwerkerhof_an_Weihnachten.jpg/640px-Handwerkerhof_an_Weihnachten.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Handwerkerhof_an_Weihnachten.jpg/1000px-Handwerkerhof_an_Weihnachten.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Handwerkerhof_an_Weihnachten.jpg",
+   "extract": "Der Handwerkerhof Nürnberg wurde 1971 als Touristenattraktion im sogenannten „Waffenhof“ des Frauentors der letzten Nürnberger Stadtbefestigung angelegt. Er liegt am Altstadteingang „Königstor“ und damit am Fußweg vom Nürnberger Hauptbahnhof zu den traditionel"
+  },
+  "bamberg/Old Town Hall": {
+   "ok": true,
+   "w": "Altes Rathaus (Bamberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Altes Rathaus (Bamberg)",
+   "url": "https://de.wikipedia.org/wiki/Altes_Rathaus_(Bamberg)",
+   "lat": 49.89166667,
+   "lon": 10.88694444,
+   "wd": "Q439335",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Bamberg_Altes_Rathaus_17RM1565-PSD.jpg/640px-Bamberg_Altes_Rathaus_17RM1565-PSD.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Bamberg_Altes_Rathaus_17RM1565-PSD.jpg/1000px-Bamberg_Altes_Rathaus_17RM1565-PSD.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Bamberg_Altes_Rathaus_17RM1565-PSD.jpg",
+   "extract": "Das Alte Rathaus in Bamberg ist eines der bedeutendsten Bauwerke, die die historische Innenstadt prägen. Es befindet sich zwischen Berg- und Inselstadt im linken Regnitzarm."
+  },
+  "bamberg/Little Venice": {
+   "ok": true,
+   "w": "Klein-Venedig (Bamberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Klein-Venedig (Bamberg)",
+   "url": "https://de.wikipedia.org/wiki/Klein-Venedig_(Bamberg)",
+   "lat": 49.89333333,
+   "lon": 10.88416667,
+   "wd": "Q1655955",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Bamberg_Klein_Venedig.png/640px-Bamberg_Klein_Venedig.png?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Bamberg_Klein_Venedig.png/1000px-Bamberg_Klein_Venedig.png?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Bamberg_Klein_Venedig.png",
+   "extract": "Klein-Venedig ist die Bezeichnung einer ehemaligen Fischersiedlung von Bamberg."
+  },
+  "bamberg/Bamberg Cathedral": {
+   "ok": true,
+   "w": "Bamberger Dom",
+   "ct": null,
+   "lang": "de",
+   "title": "Bamberger Dom",
+   "url": "https://de.wikipedia.org/wiki/Bamberger_Dom",
+   "lat": 49.89083333,
+   "lon": 10.8825,
+   "wd": "Q5924",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Bamberger_Dom_BW_6h.JPG/640px-Bamberger_Dom_BW_6h.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Bamberger_Dom_BW_6h.JPG/1000px-Bamberger_Dom_BW_6h.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Bamberger_Dom_BW_6h.JPG",
+   "extract": "Der Hohe Dom St. Peter und St."
+  },
+  "bamberg/Schlenkerla": {
+   "ok": true,
+   "w": "Schlenkerla",
+   "ct": null,
+   "lang": "de",
+   "title": "Heller-Bräu Trum",
+   "url": "https://de.wikipedia.org/wiki/Heller-Br%C3%A4u_Trum",
+   "lat": 49.89166667,
+   "lon": 10.88472222,
+   "wd": "Q566990",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Bamberg-Schlenkerla1-Asio.JPG/640px-Bamberg-Schlenkerla1-Asio.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Bamberg-Schlenkerla1-Asio.JPG/1000px-Bamberg-Schlenkerla1-Asio.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Bamberg-Schlenkerla1-Asio.JPG",
+   "extract": "Die Heller-Bräu Trum GmbH ist eine Brauerei in Bamberg."
+  },
+  "bamberg/New Residence rose garden": {
+   "ok": true,
+   "w": "Neue Residenz (Bamberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Neue Residenz (Bamberg)",
+   "url": "https://de.wikipedia.org/wiki/Neue_Residenz_(Bamberg)",
+   "lat": 49.89166667,
+   "lon": 10.8825,
+   "wd": "Q430550",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Neue_Residenz_auf_domberg_in_Bamberg.png/640px-Neue_Residenz_auf_domberg_in_Bamberg.png?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Neue_Residenz_auf_domberg_in_Bamberg.png/1000px-Neue_Residenz_auf_domberg_in_Bamberg.png?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Neue_Residenz_auf_domberg_in_Bamberg.png",
+   "extract": "Die Neue Residenz ist ein mehrflügeliges denkmalgeschütztes Gebäude am Domplatz im oberfränkischen Bamberg. Es war ab 1604 die Bischofsresidenz der Bamberger Fürstbischöfe und löste die Alte Hofhaltung auf der anderen Seite des Platzes in dieser Funktion ab."
+  },
+  "bamberg/Michaelsberg Abbey": {
+   "ok": true,
+   "w": "Kloster Michelsberg",
+   "ct": null,
+   "lang": "de",
+   "title": "Kloster Michelsberg",
+   "url": "https://de.wikipedia.org/wiki/Kloster_Michelsberg",
+   "lat": 49.89361111,
+   "lon": 10.87722222,
+   "wd": "Q555168",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Bamberg_Sankt_Michael_BW_12.JPG/640px-Bamberg_Sankt_Michael_BW_12.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Bamberg_Sankt_Michael_BW_12.JPG/1000px-Bamberg_Sankt_Michael_BW_12.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Bamberg_Sankt_Michael_BW_12.JPG",
+   "extract": "Kloster Michelsberg ist eine ehemalige Benediktinerabtei in Bamberg in Bayern in der Erzdiözese Bamberg. Nach seiner Auflösung 1803 wurden die Räumlichkeiten für das dorthin verlegte Vereinigte Katharinen- und Elisabethen-Spital verwendet."
+  },
+  "rothenburg/Marktplatz": {
+   "ok": true,
+   "w": "Rothenburg ob der Tauber",
+   "ct": null,
+   "lang": "de",
+   "title": "Rothenburg ob der Tauber",
+   "url": "https://de.wikipedia.org/wiki/Rothenburg_ob_der_Tauber",
+   "lat": 49.3775,
+   "lon": 10.17888889,
+   "wd": "Q153494",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Rothenburg_BW_25.JPG/640px-Rothenburg_BW_25.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Rothenburg_BW_25.JPG/1000px-Rothenburg_BW_25.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Rothenburg BW 25.JPG",
+   "extract": ""
+  },
+  "rothenburg/Plönlein": {
+   "ok": true,
+   "w": "Plönlein",
+   "ct": null,
+   "lang": "de",
+   "title": "Rothenburg ob der Tauber",
+   "url": "https://de.wikipedia.org/wiki/Rothenburg_ob_der_Tauber",
+   "lat": 49.3775,
+   "lon": 10.17888889,
+   "wd": "Q153494",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Rothenburg_BW_4.JPG/640px-Rothenburg_BW_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Rothenburg_BW_4.JPG/1000px-Rothenburg_BW_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Rothenburg BW 4.JPG",
+   "extract": ""
+  },
+  "rothenburg/Town wall walk": {
+   "ok": true,
+   "w": "Rothenburg ob der Tauber",
+   "ct": "Stadtmauer Rothenburg Wehrgang",
+   "lang": "de",
+   "title": "Rothenburg ob der Tauber",
+   "url": "https://de.wikipedia.org/wiki/Rothenburg_ob_der_Tauber",
+   "lat": 49.3775,
+   "lon": 10.17888889,
+   "wd": "Q153494",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Stadtmauer-Rothenburg-JR-E-7738-2024-08-29.jpg/640px-Stadtmauer-Rothenburg-JR-E-7738-2024-08-29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Stadtmauer-Rothenburg-JR-E-7738-2024-08-29.jpg/1000px-Stadtmauer-Rothenburg-JR-E-7738-2024-08-29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Stadtmauer-Rothenburg-JR-E-7738-2024-08-29.jpg",
+   "extract": "Rothenburg ob der Tauber ist eine Große Kreisstadt im mittelfränkischen Landkreis Ansbach in Bayern, die an der Grenze zu Baden-Württemberg liegt. Sie ist Teil der Metropolregion Nürnberg."
+  },
+  "rothenburg/Burggarten": {
+   "ok": true,
+   "w": "Burg Rothenburg ob der Tauber",
+   "ct": "Burggarten Rothenburg ob der Tauber",
+   "lang": "de",
+   "title": "Burg Rothenburg ob der Tauber",
+   "url": "https://de.wikipedia.org/wiki/Burg_Rothenburg_ob_der_Tauber",
+   "lat": 49.375451,
+   "lon": 10.172534,
+   "wd": "Q19946417",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Skulpturen_im_Burggarten_Rothenburg_ob_der_Tauber_20231030_0047.jpg/640px-Skulpturen_im_Burggarten_Rothenburg_ob_der_Tauber_20231030_0047.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Skulpturen_im_Burggarten_Rothenburg_ob_der_Tauber_20231030_0047.jpg/1000px-Skulpturen_im_Burggarten_Rothenburg_ob_der_Tauber_20231030_0047.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Skulpturen im Burggarten Rothenburg ob der Tauber 20231030 0047.jpg",
+   "extract": "Die Burg Rothenburg ob der Tauber, auch Alte Burg genannt, sind die Reste einer mittelalterlichen Reichsburg auf einem vorgelagerten Bergsporn oberhalb des Taubertals westlich von Rothenburg ob der Tauber im Landkreis Ansbach in Bayern."
+  },
+  "rothenburg/St Jakob's": {
+   "ok": true,
+   "w": "St. Jakob (Rothenburg ob der Tauber)",
+   "ct": null,
+   "lang": "en",
+   "title": "St. James's Church, Rothenburg ob der Tauber",
+   "url": "https://en.wikipedia.org/wiki/St._James's_Church%2C_Rothenburg_ob_der_Tauber",
+   "lat": 49.37777778,
+   "lon": 10.1775,
+   "wd": "Q880354",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/St._Jakob_Kirche_Rothenburg_2014.jpg/640px-St._Jakob_Kirche_Rothenburg_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/St._Jakob_Kirche_Rothenburg_2014.jpg/1000px-St._Jakob_Kirche_Rothenburg_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "St._Jakob_Kirche_Rothenburg_2014.jpg",
+   "extract": "St. James Church is a Gothic church in Rothenburg ob der Tauber, Germany."
+  },
+  "rothenburg/Medieval Crime Museum": {
+   "ok": true,
+   "w": "Mittelalterliches Kriminalmuseum",
+   "ct": null,
+   "lang": "de",
+   "title": "Mittelalterliches Kriminalmuseum Rothenburg ob der Tauber",
+   "url": "https://de.wikipedia.org/wiki/Mittelalterliches_Kriminalmuseum_Rothenburg_ob_der_Tauber",
+   "lat": 49.37566,
+   "lon": 10.17923,
+   "wd": "Q23787389",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/50_000_Exponate_aus_1000_Jahren_Kriminalgeschichte_zeigt_das_Kriminalmuseum_Rothenburg_ob_der_Tauber._42.jpg/640px-50_000_Exponate_aus_1000_Jahren_Kriminalgeschichte_zeigt_das_Kriminalmuseum_Rothenburg_ob_der_Tauber._42.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/50_000_Exponate_aus_1000_Jahren_Kriminalgeschichte_zeigt_das_Kriminalmuseum_Rothenburg_ob_der_Tauber._42.jpg/1000px-50_000_Exponate_aus_1000_Jahren_Kriminalgeschichte_zeigt_das_Kriminalmuseum_Rothenburg_ob_der_Tauber._42.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "50_000_Exponate_aus_1000_Jahren_Kriminalgeschichte_zeigt_das_Kriminalmuseum_Rothenburg_ob_der_Tauber._42.jpg",
+   "extract": "Das Mittelalterliche Kriminalmuseum Rothenburg ob der Tauber ist ein deutsches Rechtskundemuseum und gibt einen Einblick in das Rechtsgeschehen der letzten 1000 Jahre. Es befindet sich seit 1977 in der Burggasse 3 in Rothenburg ob der Tauber in Mittelfranken."
+  },
+  "rothenburg/Käthe Wohlfahrt": {
+   "ok": true,
+   "w": "Käthe Wohlfahrt",
+   "ct": null,
+   "lang": "de",
+   "title": "Käthe Wohlfahrt",
+   "url": "https://de.wikipedia.org/wiki/K%C3%A4the_Wohlfahrt",
+   "lat": null,
+   "lon": null,
+   "wd": "Q883957",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Bamberg_K%C3%A4the_Wohlfahrt_Schaufenster_Weihnachten.jpg/640px-Bamberg_K%C3%A4the_Wohlfahrt_Schaufenster_Weihnachten.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Bamberg_K%C3%A4the_Wohlfahrt_Schaufenster_Weihnachten.jpg/1000px-Bamberg_K%C3%A4the_Wohlfahrt_Schaufenster_Weihnachten.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Bamberg_Käthe_Wohlfahrt_Schaufenster_Weihnachten.jpg",
+   "extract": "Käthe Wohlfahrt ist ein Unternehmen mit Sitz in Rothenburg ob der Tauber, das mit Artikeln rund um Weihnachten handelt."
+  },
+  "wurzburg/Würzburg Residence": {
+   "ok": true,
+   "w": "Würzburger Residenz",
+   "ct": null,
+   "lang": "de",
+   "title": "Würzburger Residenz",
+   "url": "https://de.wikipedia.org/wiki/W%C3%BCrzburger_Residenz",
+   "lat": null,
+   "lon": null,
+   "wd": "Q156316",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aerial_image_of_W%C3%BCrzburg_Residence_%28view_from_the_east%29.jpg/640px-Aerial_image_of_W%C3%BCrzburg_Residence_%28view_from_the_east%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aerial_image_of_W%C3%BCrzburg_Residence_%28view_from_the_east%29.jpg/1000px-Aerial_image_of_W%C3%BCrzburg_Residence_%28view_from_the_east%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Aerial_image_of_Würzburg_Residence_(view_from_the_east).jpg",
+   "extract": "Die Würzburger Residenz ist der ehemalige Sitz der Fürstbischöfe in der bayerischen Stadt Würzburg. Die barocke Dreiflügelanlage wurde in den Jahren 1720 bis 1780 im Auftrag von Johann Philipp Franz und Friedrich Karl von Schönborn nach Entwurf von Balthasar N"
+  },
+  "wurzburg/Old Main Bridge": {
+   "ok": true,
+   "w": "Alte Mainbrücke",
+   "ct": null,
+   "lang": "de",
+   "title": "Alte Mainbrücke",
+   "url": "https://de.wikipedia.org/wiki/Alte_Mainbr%C3%BCcke",
+   "lat": 49.79305556,
+   "lon": 9.92611111,
+   "wd": "Q211304",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Panorama_Alte_Mainbr%C3%BCcke_W%C3%BCrzburg.jpg/640px-Panorama_Alte_Mainbr%C3%BCcke_W%C3%BCrzburg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Panorama_Alte_Mainbr%C3%BCcke_W%C3%BCrzburg.jpg/1000px-Panorama_Alte_Mainbr%C3%BCcke_W%C3%BCrzburg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Panorama_Alte_Mainbrücke_Würzburg.jpg",
+   "extract": "Die Alte Mainbrücke ist die älteste Brücke über den Main in Würzburg und ein Wahrzeichen der Stadt. Das im 15."
+  },
+  "wurzburg/Marienberg Fortress": {
+   "ok": true,
+   "w": "Festung Marienberg",
+   "ct": null,
+   "lang": "de",
+   "title": "Festung Marienberg",
+   "url": "https://de.wikipedia.org/wiki/Festung_Marienberg",
+   "lat": 49.78972222,
+   "lon": 9.92138889,
+   "wd": "Q328352",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Festung_Marienberg_-_W%C3%BCrzburg_-_2013.jpg/640px-Festung_Marienberg_-_W%C3%BCrzburg_-_2013.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Festung_Marienberg_-_W%C3%BCrzburg_-_2013.jpg/1000px-Festung_Marienberg_-_W%C3%BCrzburg_-_2013.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Festung_Marienberg_-_Würzburg_-_2013.jpg",
+   "extract": "Die Festung Marienberg ist eine ehemalige Befestigung und ein ehemaliges fürstbischöfliches Schloss auf dem auch Frauenberg genannten Marienberg 100 Meter oberhalb des Mains in Würzburg in Unterfranken. Sie trägt auch den Namen Festung Unser Frauen Berg."
+  },
+  "wurzburg/Würzburg Cathedral": {
+   "ok": true,
+   "w": "Würzburger Dom",
+   "ct": null,
+   "lang": "de",
+   "title": "Würzburger Dom",
+   "url": "https://de.wikipedia.org/wiki/W%C3%BCrzburger_Dom",
+   "lat": 49.79337778,
+   "lon": 9.93239722,
+   "wd": "Q252166",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Lange_St%C3%A4dte_in_Deutschland_Band_1_Nr._11.jpg/640px-Lange_St%C3%A4dte_in_Deutschland_Band_1_Nr._11.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Lange_St%C3%A4dte_in_Deutschland_Band_1_Nr._11.jpg/1000px-Lange_St%C3%A4dte_in_Deutschland_Band_1_Nr._11.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Lange_Städte_in_Deutschland_Band_1_Nr._11.jpg",
+   "extract": "Der Dom St. Kilian zu Würzburg, kurz Würzburger Dom, ist eine römisch-katholische Kirche in Würzburg, die seit 1967 dem Heiligen Kilian geweiht ist."
+  },
+  "wurzburg/Marktplatz and Marienkapelle": {
+   "ok": true,
+   "w": "Marienkapelle (Würzburg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Marienkapelle (Würzburg)",
+   "url": "https://de.wikipedia.org/wiki/Marienkapelle_(W%C3%BCrzburg)",
+   "lat": 49.79477778,
+   "lon": 9.92958333,
+   "wd": "Q220038",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Marienkapelle_W%C3%BCrzburg%2C_South-West_View_20140107_15.jpg/640px-Marienkapelle_W%C3%BCrzburg%2C_South-West_View_20140107_15.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Marienkapelle_W%C3%BCrzburg%2C_South-West_View_20140107_15.jpg/1000px-Marienkapelle_W%C3%BCrzburg%2C_South-West_View_20140107_15.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Marienkapelle_Würzburg,_South-West_View_20140107_15.jpg",
+   "extract": "Die Marienkapelle in Würzburg ist ein gotischer Kirchenbau aus dem 14. Jahrhundert an der Nordseite des Unteren Marktes."
+  },
+  "wurzburg/Court Garden": {
+   "ok": true,
+   "w": "Würzburger Residenz",
+   "ct": "Hofgarten Würzburg",
+   "lang": "de",
+   "title": "Würzburger Residenz",
+   "url": "https://de.wikipedia.org/wiki/W%C3%BCrzburger_Residenz",
+   "lat": null,
+   "lon": null,
+   "wd": "Q156316",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/W%C3%BCrzburg%2C_Residenz%2C_Hofgarten_--_2018_--_0181.jpg/640px-W%C3%BCrzburg%2C_Residenz%2C_Hofgarten_--_2018_--_0181.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/W%C3%BCrzburg%2C_Residenz%2C_Hofgarten_--_2018_--_0181.jpg/1000px-W%C3%BCrzburg%2C_Residenz%2C_Hofgarten_--_2018_--_0181.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Würzburg, Residenz, Hofgarten -- 2018 -- 0181.jpg",
+   "extract": "Die Würzburger Residenz ist der ehemalige Sitz der Fürstbischöfe in der bayerischen Stadt Würzburg. Die barocke Dreiflügelanlage wurde in den Jahren 1720 bis 1780 im Auftrag von Johann Philipp Franz und Friedrich Karl von Schönborn nach Entwurf von Balthasar N"
+  },
+  "wurzburg/Franconian wine": {
+   "ok": true,
+   "w": "Bocksbeutel",
+   "ct": null,
+   "lang": "de",
+   "title": "Bocksbeutel",
+   "url": "https://de.wikipedia.org/wiki/Bocksbeutel",
+   "lat": null,
+   "lon": null,
+   "wd": "Q651344",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Bocksbeutels.jpg/640px-Bocksbeutels.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Bocksbeutels.jpg/1000px-Bocksbeutels.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Bocksbeutels.jpg",
+   "extract": "Ein Bocksbeutel ist eine Flasche in angenäherter Form eines flach gedrückten Ellipsoids für Weine aus dem Anbaugebiet Franken. Der Inhalt beträgt normalerweise 0,75 l."
+  },
+  "heidelberg/Heidelberg Castle": {
+   "ok": true,
+   "w": "Heidelberger Schloss",
+   "ct": null,
+   "lang": "de",
+   "title": "Heidelberger Schloss",
+   "url": "https://de.wikipedia.org/wiki/Heidelberger_Schloss",
+   "lat": 49.41,
+   "lon": 8.716,
+   "wd": "Q327265",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Heidelberg-2726936.jpg/640px-Heidelberg-2726936.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Heidelberg-2726936.jpg/1000px-Heidelberg-2726936.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Heidelberg-2726936.jpg",
+   "extract": "Das Heidelberger Schloss ist eine der berühmtesten Ruinen Deutschlands und das Wahrzeichen der Stadt Heidelberg. Die Schlossruine aus rotem Neckartäler Sandstein erhebt sich am Nordhang des Königstuhls oberhalb der Heidelberger Altstadt, die am Neckar liegt, d"
+  },
+  "heidelberg/Philosophers' Walk": {
+   "ok": true,
+   "w": "Philosophenweg (Heidelberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Philosophenweg (Heidelberg)",
+   "url": "https://de.wikipedia.org/wiki/Philosophenweg_(Heidelberg)",
+   "lat": 49.415,
+   "lon": 8.70027778,
+   "wd": "Q897016",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/HeidelbergPhilosophenweg.JPG/640px-HeidelbergPhilosophenweg.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/HeidelbergPhilosophenweg.JPG/1000px-HeidelbergPhilosophenweg.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "HeidelbergPhilosophenweg.JPG",
+   "extract": "Der Philosophenweg ist ein circa zwei Kilometer langer, vor allem zu Beginn sehr steiler Weg, der vom Heidelberger Stadtteil Neuenheim auf den Heiligenberg führt. Er liegt damit dem Heidelberger Schloss am Königstuhl direkt gegenüber und ist eine der Sehenswür"
+  },
+  "heidelberg/Old Bridge": {
+   "ok": true,
+   "w": "Alte Brücke (Heidelberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Alte Brücke (Heidelberg)",
+   "url": "https://de.wikipedia.org/wiki/Alte_Br%C3%BCcke_(Heidelberg)",
+   "lat": 49.41425278,
+   "lon": 8.70954722,
+   "wd": "Q435416",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Alte_Br%C3%BCcke_Heidelberg.JPG/640px-Alte_Br%C3%BCcke_Heidelberg.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Alte_Br%C3%BCcke_Heidelberg.JPG/1000px-Alte_Br%C3%BCcke_Heidelberg.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Alte_Brücke_Heidelberg.JPG",
+   "extract": "Die Karl-Theodor-Brücke in Heidelberg, besser bekannt als die Alte Brücke, ist eine Brücke über den Neckar. Sie verbindet die Altstadt mit dem gegenüberliegenden Neckarufer am östlichen Ende des Stadtteils Neuenheim."
+  },
+  "heidelberg/Hauptstraße": {
+   "ok": true,
+   "w": "Hauptstraße (Heidelberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Hauptstraße (Heidelberg)",
+   "url": "https://de.wikipedia.org/wiki/Hauptstra%C3%9Fe_(Heidelberg)",
+   "lat": 49.4116,
+   "lon": 8.7055,
+   "wd": "Q17142036",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Heidelberg_Fussgaengerzone.JPG/640px-Heidelberg_Fussgaengerzone.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Heidelberg_Fussgaengerzone.JPG/1000px-Heidelberg_Fussgaengerzone.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Heidelberg_Fussgaengerzone.JPG",
+   "extract": "Die Hauptstraße ist die zentrale Verkehrsachse in der Heidelberger Altstadt, die sie in voller Länge durchquert. Heute ist sie eine Fußgängerzone und eine beliebte Einkaufsstraße."
+  },
+  "heidelberg/Marktplatz and Church of the Holy Spirit": {
+   "ok": true,
+   "w": "Heiliggeistkirche (Heidelberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Heiliggeistkirche (Heidelberg)",
+   "url": "https://de.wikipedia.org/wiki/Heiliggeistkirche_(Heidelberg)",
+   "lat": 49.41222222,
+   "lon": 8.70944444,
+   "wd": "Q574702",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Heidelberg_20060420_021.jpg/640px-Heidelberg_20060420_021.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Heidelberg_20060420_021.jpg/1000px-Heidelberg_20060420_021.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Heidelberg_20060420_021.jpg",
+   "extract": "Die Heiliggeistkirche ist die größte und bedeutendste Kirche in Heidelberg. Mit der Apsis zum Marktplatz steht sie mitten in der Heidelberger Altstadt."
+  },
+  "heidelberg/Student Prison": {
+   "ok": true,
+   "w": "Studentenkarzer",
+   "ct": null,
+   "lang": "de",
+   "title": "Karzer",
+   "url": "https://de.wikipedia.org/wiki/Karzer",
+   "lat": null,
+   "lon": null,
+   "wd": "Q315583",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Heidelberg_Karzer_01.JPG/640px-Heidelberg_Karzer_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Heidelberg_Karzer_01.JPG/1000px-Heidelberg_Karzer_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Heidelberg Karzer 01.JPG",
+   "extract": ""
+  },
+  "heidelberg/Königstuhl funicular": {
+   "ok": true,
+   "w": "Heidelberger Bergbahn",
+   "ct": null,
+   "lang": "de",
+   "title": "Heidelberger Bergbahn",
+   "url": "https://de.wikipedia.org/wiki/Heidelberger_Bergbahn",
+   "lat": null,
+   "lon": null,
+   "wd": "Q1594020",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg/640px-Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg/1000px-Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg",
+   "extract": "Die Heidelberger Bergbahn, auch Heidelberger Bergbahnen, ist eine Kombination von zwei Standseilbahnen in Heidelberg. Die „Molkenkurbahn“ führt vom Kornmarkt am Rand der Altstadt vorbei am Heidelberger Schloss zur Molkenkur."
+  },
+  "fulda/Fulda Cathedral": {
+   "ok": true,
+   "w": "Fuldaer Dom",
+   "ct": null,
+   "lang": "de",
+   "title": "Fuldaer Dom",
+   "url": "https://de.wikipedia.org/wiki/Fuldaer_Dom",
+   "lat": 50.55416667,
+   "lon": 9.67175,
+   "wd": "Q314517",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/140519_Dom_Fulda_Frontansicht.jpg/640px-140519_Dom_Fulda_Frontansicht.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/140519_Dom_Fulda_Frontansicht.jpg/1000px-140519_Dom_Fulda_Frontansicht.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "140519_Dom_Fulda_Frontansicht.jpg",
+   "extract": "Der Dom St. Salvator zu Fulda ist die Kathedralkirche des römisch-katholischen Bistums Fulda und als Grabeskirche des heiligen Bonifatius Ziel der Bonifatiuswallfahrt."
+  },
+  "fulda/St Michael's": {
+   "ok": true,
+   "w": "Michaelskirche (Fulda)",
+   "ct": null,
+   "lang": "de",
+   "title": "Michaelskirche (Fulda)",
+   "url": "https://de.wikipedia.org/wiki/Michaelskirche_(Fulda)",
+   "lat": 50.5548,
+   "lon": 9.6721,
+   "wd": "Q762910",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/MK56776_Michaelskirche_%28Fulda%29_.jpg/640px-MK56776_Michaelskirche_%28Fulda%29_.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/MK56776_Michaelskirche_%28Fulda%29_.jpg/1000px-MK56776_Michaelskirche_%28Fulda%29_.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "MK56776_Michaelskirche_(Fulda)_.jpg",
+   "extract": "Die Michaelskirche in Fulda wurde im vorromanischen karolingischen Baustil im Auftrag von Abt Eigil in den Jahren von 820 bis 822 erbaut. Sie galt lange unumstritten als ältestes Beispiel eines Nachbaus der Grabeskirche in Deutschland, ein Bezug, der von Teile"
+  },
+  "fulda/City Palace": {
+   "ok": true,
+   "w": "Stadtschloss Fulda",
+   "ct": null,
+   "lang": "de",
+   "title": "Fuldaer Stadtschloss",
+   "url": "https://de.wikipedia.org/wiki/Fuldaer_Stadtschloss",
+   "lat": 50.55388889,
+   "lon": 9.67555556,
+   "wd": "Q1473497",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Stadtschloss_Fulda_%28S%C3%BCdwestansicht%29.jpg/640px-Stadtschloss_Fulda_%28S%C3%BCdwestansicht%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Stadtschloss_Fulda_%28S%C3%BCdwestansicht%29.jpg/1000px-Stadtschloss_Fulda_%28S%C3%BCdwestansicht%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Stadtschloss_Fulda_(Südwestansicht).jpg",
+   "extract": "Das barocke Fuldaer Stadtschloss wurde 1706 bis 1714 von Johann Dientzenhofer als Residenz der Fuldaer Fürstäbte und später der Fürstbischöfe erbaut."
+  },
+  "fulda/Palace gardens and Orangery": {
+   "ok": true,
+   "w": "Stadtschloss Fulda",
+   "ct": "Orangerie Fulda",
+   "lang": "de",
+   "title": "Fuldaer Stadtschloss",
+   "url": "https://de.wikipedia.org/wiki/Fuldaer_Stadtschloss",
+   "lat": 50.55388889,
+   "lon": 9.67555556,
+   "wd": "Q1473497",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fulda%2C_Schlossgarten%2C_Orangerie%2C_2019-10_CN-02.jpg/640px-Fulda%2C_Schlossgarten%2C_Orangerie%2C_2019-10_CN-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fulda%2C_Schlossgarten%2C_Orangerie%2C_2019-10_CN-02.jpg/1000px-Fulda%2C_Schlossgarten%2C_Orangerie%2C_2019-10_CN-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg",
+   "extract": "Das barocke Fuldaer Stadtschloss wurde 1706 bis 1714 von Johann Dientzenhofer als Residenz der Fuldaer Fürstäbte und später der Fürstbischöfe erbaut."
+  },
+  "eisenach/Wartburg": {
+   "ok": true,
+   "w": "Wartburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Wartburg",
+   "url": "https://de.wikipedia.org/wiki/Wartburg",
+   "lat": 50.96611111,
+   "lon": 10.30642222,
+   "wd": "Q151545",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Thuringia_Eisenach_asv2020-07_img23_Wartburg_Castle.jpg/640px-Thuringia_Eisenach_asv2020-07_img23_Wartburg_Castle.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Thuringia_Eisenach_asv2020-07_img23_Wartburg_Castle.jpg/1000px-Thuringia_Eisenach_asv2020-07_img23_Wartburg_Castle.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Thuringia_Eisenach_asv2020-07_img23_Wartburg_Castle.jpg",
+   "extract": "Die Wartburg ist eine Burg bei Eisenach, im nordwestlichen Thüringer Wald in Thüringen. Ihr Name ist wahrscheinlich von Warte, also Wach(t)-, Wächterburg abgeleitet."
+  },
+  "eisenach/Bach House": {
+   "ok": true,
+   "w": "Bachhaus Eisenach",
+   "ct": null,
+   "lang": "de",
+   "title": "Bachhaus Eisenach",
+   "url": "https://de.wikipedia.org/wiki/Bachhaus_Eisenach",
+   "lat": 50.97149167,
+   "lon": 10.32261111,
+   "wd": "Q798175",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Thuringia_Eisenach_asv2020-07_img14_Bach_Museum.jpg/640px-Thuringia_Eisenach_asv2020-07_img14_Bach_Museum.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Thuringia_Eisenach_asv2020-07_img14_Bach_Museum.jpg/1000px-Thuringia_Eisenach_asv2020-07_img14_Bach_Museum.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Thuringia_Eisenach_asv2020-07_img14_Bach_Museum.jpg",
+   "extract": "Das Bachhaus Eisenach ist ein Museum im thüringischen Eisenach, das dem dort geborenen Komponisten Johann Sebastian Bach gewidmet ist. In ihm werden auf 600 m² Ausstellungsfläche ca."
+  },
+  "eisenach/Market square": {
+   "ok": true,
+   "w": "Eisenach",
+   "ct": null,
+   "lang": "de",
+   "title": "Eisenach",
+   "url": "https://de.wikipedia.org/wiki/Eisenach",
+   "lat": 50.98321,
+   "lon": 10.31586,
+   "wd": "Q7070",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Thuringia_Eisenach_asv2020-07_img28_Market_Square.jpg/640px-Thuringia_Eisenach_asv2020-07_img28_Market_Square.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Thuringia_Eisenach_asv2020-07_img28_Market_Square.jpg/1000px-Thuringia_Eisenach_asv2020-07_img28_Market_Square.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Thuringia Eisenach asv2020-07 img28 Market Square.jpg",
+   "extract": ""
+  },
+  "eisenach/Luther House": {
+   "ok": true,
+   "w": "Lutherhaus Eisenach",
+   "ct": null,
+   "lang": "de",
+   "title": "Lutherhaus Eisenach",
+   "url": "https://de.wikipedia.org/wiki/Lutherhaus_Eisenach",
+   "lat": 50.97305556,
+   "lon": 10.32027778,
+   "wd": "Q1877893",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Thuringia_Eisenach_asv2020-07_img17_Luther%27s_House.jpg/640px-Thuringia_Eisenach_asv2020-07_img17_Luther%27s_House.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Thuringia_Eisenach_asv2020-07_img17_Luther%27s_House.jpg/1000px-Thuringia_Eisenach_asv2020-07_img17_Luther%27s_House.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Thuringia_Eisenach_asv2020-07_img17_Luther's_House.jpg",
+   "extract": "Das Lutherhaus in Eisenach ist eines der ältesten erhaltenen Fachwerkhäuser Thüringens. Hier wohnte Martin Luther nach der Überlieferung bei der Familie Cotta während seiner Schulzeit von 1498 bis 1501."
+  },
+  "erfurt/Krämerbrücke": {
+   "ok": true,
+   "w": "Krämerbrücke",
+   "ct": null,
+   "lang": "de",
+   "title": "Krämerbrücke",
+   "url": "https://de.wikipedia.org/wiki/Kr%C3%A4merbr%C3%BCcke",
+   "lat": 50.9787455,
+   "lon": 11.0307747,
+   "wd": "Q896890",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/2013-04-20_Kr%C3%A4merbr%C3%BCcke.jpg/640px-2013-04-20_Kr%C3%A4merbr%C3%BCcke.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/2013-04-20_Kr%C3%A4merbr%C3%BCcke.jpg/1000px-2013-04-20_Kr%C3%A4merbr%C3%BCcke.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "2013-04-20_Krämerbrücke.jpg",
+   "extract": "Die Krämerbrücke ist das älteste profane Bauwerk Erfurts und zählt zu den bekanntesten Wahrzeichen der Stadt mit einer beidseitigen, geschlossenen Brückenbebauung mit Fachwerkhäusern. Sie ist die längste durchgehend mit Häusern bebaute Brücke Europas."
+  },
+  "erfurt/Domplatz": {
+   "ok": true,
+   "w": "Domplatz (Erfurt)",
+   "ct": null,
+   "lang": "de",
+   "title": "Domplatz (Erfurt)",
+   "url": "https://de.wikipedia.org/wiki/Domplatz_(Erfurt)",
+   "lat": 50.97694444,
+   "lon": 11.02388889,
+   "wd": "Q1238638",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/ErfurterDom.jpg/640px-ErfurterDom.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/ErfurterDom.jpg/1000px-ErfurterDom.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "ErfurterDom.jpg",
+   "extract": "Der Domplatz in Erfurt ist ein mehr als 14.000 m² großer Marktplatz mit intakter bzw. restaurierter Randbebauung."
+  },
+  "erfurt/Erfurt Cathedral": {
+   "ok": true,
+   "w": "Erfurter Dom",
+   "ct": null,
+   "lang": "de",
+   "title": "Erfurter Dom",
+   "url": "https://de.wikipedia.org/wiki/Erfurter_Dom",
+   "lat": 50.97583,
+   "lon": 11.02317,
+   "wd": "Q701567",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Erfurter_Dom_von_Oben_01.jpg/640px-Erfurter_Dom_von_Oben_01.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Erfurter_Dom_von_Oben_01.jpg/1000px-Erfurter_Dom_von_Oben_01.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Erfurter_Dom_von_Oben_01.jpg",
+   "extract": "Die Hohe Domkirche St. Marien zu Erfurt, kurz Erfurter Dom, ist der wichtigste und älteste Kirchenbau in Erfurt."
+  },
+  "erfurt/Petersberg Citadel": {
+   "ok": true,
+   "w": "Zitadelle Petersberg",
+   "ct": null,
+   "lang": "de",
+   "title": "Zitadelle Petersberg",
+   "url": "https://de.wikipedia.org/wiki/Zitadelle_Petersberg",
+   "lat": 50.97861111,
+   "lon": 11.01833333,
+   "wd": "Q206200",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/LuftbildPetersberg.jpg/640px-LuftbildPetersberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/LuftbildPetersberg.jpg/1000px-LuftbildPetersberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "LuftbildPetersberg.jpg",
+   "extract": "Die Zitadelle Petersberg ist eine ursprünglich kurmainzische, später preußische Stadtfestung des 17. bis 19."
+  },
+  "erfurt/Fischmarkt": {
+   "ok": true,
+   "w": "Fischmarkt (Erfurt)",
+   "ct": null,
+   "lang": "de",
+   "title": "Fischmarkt (Erfurt)",
+   "url": "https://de.wikipedia.org/wiki/Fischmarkt_(Erfurt)",
+   "lat": 50.97777778,
+   "lon": 11.02888889,
+   "wd": "Q119584",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/MK38365-69_Fischmarkt_%28Erfurt%29.jpg/640px-MK38365-69_Fischmarkt_%28Erfurt%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/MK38365-69_Fischmarkt_%28Erfurt%29.jpg/1000px-MK38365-69_Fischmarkt_%28Erfurt%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "MK38365-69_Fischmarkt_(Erfurt).jpg",
+   "extract": "Der Fischmarkt ist ein zentraler Platz in der thüringischen Landeshauptstadt Erfurt. Er liegt in der Altstadt zwischen Domplatz im Westen und Anger im Südosten."
+  },
+  "erfurt/Augustinian Monastery": {
+   "ok": true,
+   "w": "Augustinerkloster (Erfurt)",
+   "ct": null,
+   "lang": "de",
+   "title": "Augustinerkloster Erfurt",
+   "url": "https://de.wikipedia.org/wiki/Augustinerkloster_Erfurt",
+   "lat": 50.98138889,
+   "lon": 11.03,
+   "wd": "Q123347667",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Augustinerkirche_Erfurt.jpg/640px-Augustinerkirche_Erfurt.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Augustinerkirche_Erfurt.jpg/1000px-Augustinerkirche_Erfurt.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Augustinerkirche_Erfurt.jpg",
+   "extract": "Das Augustinerkloster in Erfurt ist ein ab 1277 erbautes ehemaliges Kloster der Augustiner-Eremiten, in dem Martin Luther zwischen 1505 und 1511 als Mönch lebte. Nach der Reformation ging das Kloster 1525 in den Besitz der Evangelischen Kirche über; 1559 wurde"
+  },
+  "erfurt/Old Synagogue": {
+   "ok": true,
+   "w": "Alte Synagoge (Erfurt)",
+   "ct": null,
+   "lang": "de",
+   "title": "Alte Synagoge (Erfurt)",
+   "url": "https://de.wikipedia.org/wiki/Alte_Synagoge_(Erfurt)",
+   "lat": 50.97862778,
+   "lon": 11.02928611,
+   "wd": "Q436286",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Alte_Synagoge_Erfurt.JPG/640px-Alte_Synagoge_Erfurt.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Alte_Synagoge_Erfurt.JPG/1000px-Alte_Synagoge_Erfurt.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Alte_Synagoge_Erfurt.JPG",
+   "extract": "Die Alte Synagoge in Erfurt ist eine ehemalige Synagoge und mit einem Alter von über 900 Jahren die älteste erhaltene Synagoge Europas. Sie befindet sich in der Erfurter Altstadt im Innenhof des Häuserblocks Fischmarkt – Michaelisstraße – Waagegasse."
+  },
+  "erfurt/egapark": {
+   "ok": true,
+   "w": "Egapark",
+   "ct": null,
+   "lang": "de",
+   "title": "Egapark",
+   "url": "https://de.wikipedia.org/wiki/Egapark",
+   "lat": 50.9675,
+   "lon": 11.00777778,
+   "wd": "Q1296736",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Egapark_Erfurt_Festplatz.jpg/640px-Egapark_Erfurt_Festplatz.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Egapark_Erfurt_Festplatz.jpg/1000px-Egapark_Erfurt_Festplatz.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Egapark_Erfurt_Festplatz.jpg",
+   "extract": "Der egapark in Erfurt gehört mit einer Fläche von 36 Hektar zu den großen Garten- und Freizeitparks Deutschlands. Das Parkgelände liegt im Südwesten der Stadt auf dem 265 Meter hohen Cyriaksberg."
+  },
+  "weimar/Goethe's House": {
+   "ok": true,
+   "w": "Goethes Wohnhaus",
+   "ct": null,
+   "lang": "de",
+   "title": "Goethes Wohnhaus",
+   "url": "https://de.wikipedia.org/wiki/Goethes_Wohnhaus",
+   "lat": 50.9775,
+   "lon": 11.32861111,
+   "wd": "Q882721",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Weimar_Dom_Goethego.jpg/640px-Weimar_Dom_Goethego.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Weimar_Dom_Goethego.jpg/1000px-Weimar_Dom_Goethego.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Weimar_Dom_Goethego.jpg",
+   "extract": "Goethes Wohnhaus, auch bekannt als Goethehaus, ist ein von der Klassik Stiftung Weimar betriebenes Museum im Wohn- und Sterbehaus des deutschen Nationaldichters Johann Wolfgang von Goethe (1749–1832) am Frauenplan in Weimar. Seit 1998 gehört es als Teil des En"
+  },
+  "weimar/Marktplatz": {
+   "ok": true,
+   "w": "Weimar",
+   "ct": null,
+   "lang": "de",
+   "title": "Weimar",
+   "url": "https://de.wikipedia.org/wiki/Weimar",
+   "lat": 50.97944444,
+   "lon": 11.32972222,
+   "wd": "Q3955",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Marktplatz_in_Weimar_04.jpg/640px-Marktplatz_in_Weimar_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Marktplatz_in_Weimar_04.jpg/1000px-Marktplatz_in_Weimar_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Marktplatz in Weimar 04.jpg",
+   "extract": ""
+  },
+  "weimar/Park an der Ilm": {
+   "ok": true,
+   "w": "Park an der Ilm",
+   "ct": null,
+   "lang": "de",
+   "title": "Park an der Ilm",
+   "url": "https://de.wikipedia.org/wiki/Park_an_der_Ilm",
+   "lat": 50.97472222,
+   "lon": 11.33444444,
+   "wd": "Q2052596",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Ilmpark_in_Weimar_-_Blick_zum_Stern.jpg/640px-Ilmpark_in_Weimar_-_Blick_zum_Stern.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Ilmpark_in_Weimar_-_Blick_zum_Stern.jpg/1000px-Ilmpark_in_Weimar_-_Blick_zum_Stern.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Ilmpark_in_Weimar_-_Blick_zum_Stern.jpg",
+   "extract": "Der Park an der Ilm ist der größte und bekannteste Landschaftspark in Weimar (Thüringen). Er wurde seit seiner Errichtung im 18."
+  },
+  "weimar/Schiller's House": {
+   "ok": true,
+   "w": "Schillers Wohnhaus",
+   "ct": null,
+   "lang": "de",
+   "title": "Schillers Wohnhaus",
+   "url": "https://de.wikipedia.org/wiki/Schillers_Wohnhaus",
+   "lat": 50.97893611,
+   "lon": 11.32776667,
+   "wd": "Q1325723",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Schiller_Weimar.jpg/640px-Schiller_Weimar.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Schiller_Weimar.jpg/1000px-Schiller_Weimar.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Schiller_Weimar.jpg",
+   "extract": "Schillers Wohnhaus, auch bekannt als Schillerhaus, ist ein von der Klassik Stiftung Weimar betriebenes Museum im Wohn- und Sterbehaus des deutschen Nationaldichters Friedrich Schiller (1759–1805) in der Schillerstraße in Weimar. Seit 1998 gehört es als Teil de"
+  },
+  "weimar/Bauhaus Museum": {
+   "ok": true,
+   "w": "Bauhaus-Museum",
+   "ct": "Bauhaus-Museum Weimar",
+   "lang": "de",
+   "title": "Bauhaus-Museum",
+   "url": "https://de.wikipedia.org/wiki/Bauhaus-Museum",
+   "lat": 50.984799,
+   "lon": 11.3244,
+   "wd": "Q811381",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Weimar%2C_Bauhaus-Museum%2C_2019-09_CN-01.jpg/640px-Weimar%2C_Bauhaus-Museum%2C_2019-09_CN-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Weimar%2C_Bauhaus-Museum%2C_2019-09_CN-01.jpg/1000px-Weimar%2C_Bauhaus-Museum%2C_2019-09_CN-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg",
+   "extract": "Das Bauhaus-Museum Weimar stellt die Arbeit des 1919 in Weimar gegründeten Bauhauses und der dort tätigen Künstler, Gestalter und Architekten dar. Das 1995 entstandene Weimarer Bauhaus-Museum befand sich zunächst in der wesentlich kleineren ehemaligen Wagenrem"
+  },
+  "weimar/Duchess Anna Amalia Library": {
+   "ok": true,
+   "w": "Herzogin Anna Amalia Bibliothek",
+   "ct": null,
+   "lang": "de",
+   "title": "Herzogin-Anna-Amalia-Bibliothek",
+   "url": "https://de.wikipedia.org/wiki/Herzogin-Anna-Amalia-Bibliothek",
+   "lat": 50.97861111,
+   "lon": 11.33222222,
+   "wd": "Q50711",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Weimar%2C_Herzogin_Anna_Amalia_Bibliothek%2C_2019-09_CN-02.jpg/640px-Weimar%2C_Herzogin_Anna_Amalia_Bibliothek%2C_2019-09_CN-02.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Weimar%2C_Herzogin_Anna_Amalia_Bibliothek%2C_2019-09_CN-02.jpg/1000px-Weimar%2C_Herzogin_Anna_Amalia_Bibliothek%2C_2019-09_CN-02.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Weimar,_Herzogin_Anna_Amalia_Bibliothek,_2019-09_CN-02.jpg",
+   "extract": "Die Herzogin-Anna-Amalia-Bibliothek, kurz HAAB, wurde 1691 von Herzog Wilhelm Ernst in Weimar gegründet. Anlässlich des dreihundertjährigen Jubiläums im Jahr 1991 erhielt sie den Namen der Herzogin Anna Amalia, die ihre größte Förderin war."
+  },
+  "weimar/Theaterplatz": {
+   "ok": true,
+   "w": "Deutsches Nationaltheater Weimar",
+   "ct": null,
+   "lang": "de",
+   "title": "Deutsches Nationaltheater und Staatskapelle Weimar",
+   "url": "https://de.wikipedia.org/wiki/Deutsches_Nationaltheater_und_Staatskapelle_Weimar",
+   "lat": 50.97956111,
+   "lon": 11.32468333,
+   "wd": "Q600939",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Goethe-Schiller-Denkmal_01.jpg/640px-Goethe-Schiller-Denkmal_01.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Goethe-Schiller-Denkmal_01.jpg/1000px-Goethe-Schiller-Denkmal_01.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Goethe-Schiller-Denkmal_01.jpg",
+   "extract": "Das Deutsche Nationaltheater und die Staatskapelle Weimar ist der bedeutendste Bühnenbetrieb Weimars. Die Institution vereint die Sparten Musiktheater und Schauspiel sowie das Orchester Staatskapelle Weimar."
+  },
+  "naumburg/Naumburg Cathedral": {
+   "ok": true,
+   "w": "Naumburger Dom",
+   "ct": null,
+   "lang": "de",
+   "title": "Naumburger Dom",
+   "url": "https://de.wikipedia.org/wiki/Naumburger_Dom",
+   "lat": 51.15472222,
+   "lon": 11.80388889,
+   "wd": "Q5938",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Naumburger_Dom_Ostseite.jpg/640px-Naumburger_Dom_Ostseite.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Naumburger_Dom_Ostseite.jpg/1000px-Naumburger_Dom_Ostseite.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Naumburger_Dom_Ostseite.jpg",
+   "extract": "Der heute evangelische Naumburger Dom St. Peter und Paul in Naumburg (Saale) ist die ehemalige Kathedrale des Bistums Naumburg und stammt größtenteils aus der ersten Hälfte des 13."
+  },
+  "naumburg/Marktplatz": {
+   "ok": true,
+   "w": "Naumburg (Saale)",
+   "ct": null,
+   "lang": "de",
+   "title": "Naumburg (Saale)",
+   "url": "https://de.wikipedia.org/wiki/Naumburg_(Saale)",
+   "lat": 51.1525,
+   "lon": 11.80999,
+   "wd": "Q15986",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Marktplatz_in_Naumburg_01.jpg/640px-Marktplatz_in_Naumburg_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Marktplatz_in_Naumburg_01.jpg/1000px-Marktplatz_in_Naumburg_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Marktplatz in Naumburg 01.jpg",
+   "extract": ""
+  },
+  "naumburg/St Wenceslas": {
+   "ok": true,
+   "w": "Stadtkirche St. Wenzel (Naumburg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Stadtkirche St. Wenzel (Naumburg)",
+   "url": "https://de.wikipedia.org/wiki/Stadtkirche_St._Wenzel_(Naumburg)",
+   "lat": 51.15173233,
+   "lon": 11.80974483,
+   "wd": "Q670913",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Naumburg_stwenzel.jpg/640px-Naumburg_stwenzel.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Naumburg_stwenzel.jpg/1000px-Naumburg_stwenzel.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Naumburg_stwenzel.jpg",
+   "extract": "Die evangelisch-lutherische Stadtkirche St. Wenzel am Marktplatz von Naumburg ist die Hauptkirche der Stadt außerhalb des geistlichen Bezirks der ehemaligen Domfreiheit."
+  },
+  "naumburg/Saale-Unstrut wine": {
+   "ok": true,
+   "w": "Saale-Unstrut (Weinanbaugebiet)",
+   "ct": null,
+   "lang": "de",
+   "title": "Saale-Unstrut (Weinanbaugebiet)",
+   "url": "https://de.wikipedia.org/wiki/Saale-Unstrut_(Weinanbaugebiet)",
+   "lat": null,
+   "lon": null,
+   "wd": "Q683582",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Weinstrasse_Unstrut.jpg/640px-Weinstrasse_Unstrut.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Weinstrasse_Unstrut.jpg/1000px-Weinstrasse_Unstrut.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Weinstrasse_Unstrut.jpg",
+   "extract": "Die Saale-Unstrut-Region ist eine Weinbauregion in Mitteldeutschland, die sich überwiegend im sachsen-anhaltischen Burgenlandkreis und dort wiederum überwiegend entlang der Flüsse Saale und Unstrut erstreckt. In der Region befindet sich das nördlichste der 13 "
+  },
+  "quedlinburg/Old town": {
+   "ok": true,
+   "w": "Quedlinburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Quedlinburg",
+   "url": "https://de.wikipedia.org/wiki/Quedlinburg",
+   "lat": 51.79277778,
+   "lon": 11.15083333,
+   "wd": "Q40623",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Quedlinburg_asv2018-10_img04_pano_from_Muenzenberg.jpg/640px-Quedlinburg_asv2018-10_img04_pano_from_Muenzenberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Quedlinburg_asv2018-10_img04_pano_from_Muenzenberg.jpg/1000px-Quedlinburg_asv2018-10_img04_pano_from_Muenzenberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Quedlinburg asv2018-10 img04 pano from Muenzenberg.jpg",
+   "extract": ""
+  },
+  "quedlinburg/Schlossberg and collegiate church": {
+   "ok": true,
+   "w": "Stiftskirche St. Servatii",
+   "ct": null,
+   "lang": "de",
+   "title": "Stiftskirche St. Servatius",
+   "url": "https://de.wikipedia.org/wiki/Stiftskirche_St._Servatius",
+   "lat": 51.78581389,
+   "lon": 11.13683056,
+   "wd": "Q882413",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Quedlinburg_asv2018-10_img03_Castle.jpg/640px-Quedlinburg_asv2018-10_img03_Castle.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Quedlinburg_asv2018-10_img03_Castle.jpg/1000px-Quedlinburg_asv2018-10_img03_Castle.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Quedlinburg_asv2018-10_img03_Castle.jpg",
+   "extract": "Die Stiftskirche St. Servatii zu Quedlinburg, kurz der Quedlinburger Dom, früher auch Schlosskirche St."
+  },
+  "quedlinburg/Marktplatz": {
+   "ok": true,
+   "w": "Quedlinburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Quedlinburg",
+   "url": "https://de.wikipedia.org/wiki/Quedlinburg",
+   "lat": 51.79277778,
+   "lon": 11.15083333,
+   "wd": "Q40623",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Quedlinburg_Marktplatz_2018a.jpg/640px-Quedlinburg_Marktplatz_2018a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Quedlinburg_Marktplatz_2018a.jpg/1000px-Quedlinburg_Marktplatz_2018a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Quedlinburg Marktplatz 2018a.jpg",
+   "extract": ""
+  },
+  "quedlinburg/Finkenherd": {
+   "ok": true,
+   "w": "Quedlinburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Quedlinburg",
+   "url": "https://de.wikipedia.org/wiki/Quedlinburg",
+   "lat": 51.79277778,
+   "lon": 11.15083333,
+   "wd": "Q40623",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Finkenherd_1_in_Quedlinburg_%282%29.jpg/640px-Finkenherd_1_in_Quedlinburg_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Finkenherd_1_in_Quedlinburg_%282%29.jpg/1000px-Finkenherd_1_in_Quedlinburg_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Finkenherd 1 in Quedlinburg (2).jpg",
+   "extract": ""
+  },
+  "quedlinburg/Half-timbered museum": {
+   "ok": true,
+   "w": "Fachwerkmuseum (Quedlinburg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Fachwerkmuseum (Quedlinburg)",
+   "url": "https://de.wikipedia.org/wiki/Fachwerkmuseum_(Quedlinburg)",
+   "lat": 51.788302,
+   "lon": 11.140501,
+   "wd": "Q1391590",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Quedlinburg_St%C3%A4nderbau.JPG/640px-Quedlinburg_St%C3%A4nderbau.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Quedlinburg_St%C3%A4nderbau.JPG/1000px-Quedlinburg_St%C3%A4nderbau.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Quedlinburg_Ständerbau.JPG",
+   "extract": "Das Fachwerkmuseum Ständerbau der Städtischen Museen Quedlinburg ist ein Fachwerkmuseum und denkmalgeschütztes Fachwerkhaus in Quedlinburg."
+  },
+  "magdeburg/Magdeburg Cathedral": {
+   "ok": true,
+   "w": "Magdeburger Dom",
+   "ct": null,
+   "lang": "de",
+   "title": "Magdeburger Dom",
+   "url": "https://de.wikipedia.org/wiki/Magdeburger_Dom",
+   "lat": 52.1247,
+   "lon": 11.6345,
+   "wd": "Q668341",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Magdeburger_Dom_Luftbild.jpg/640px-Magdeburger_Dom_Luftbild.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Magdeburger_Dom_Luftbild.jpg/1000px-Magdeburger_Dom_Luftbild.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Magdeburger_Dom_Luftbild.jpg",
+   "extract": "Der Dom St. Mauritius und St."
+  },
+  "magdeburg/Green Citadel": {
+   "ok": true,
+   "w": "Grüne Zitadelle von Magdeburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Grüne Zitadelle von Magdeburg",
+   "url": "https://de.wikipedia.org/wiki/Gr%C3%BCne_Zitadelle_von_Magdeburg",
+   "lat": 52.12694,
+   "lon": 11.63428,
+   "wd": "Q480271",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Magdeburg_asv2022-08_img26_Gr%C3%BCne_Zitadelle.jpg/640px-Magdeburg_asv2022-08_img26_Gr%C3%BCne_Zitadelle.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Magdeburg_asv2022-08_img26_Gr%C3%BCne_Zitadelle.jpg/1000px-Magdeburg_asv2022-08_img26_Gr%C3%BCne_Zitadelle.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Magdeburg_asv2022-08_img26_Grüne_Zitadelle.jpg",
+   "extract": "Die Grüne Zitadelle ist ein von Friedensreich Hundertwasser entworfenes Gebäude in Magdeburg. Fertiggestellt wurde es im Jahr 2005."
+  },
+  "magdeburg/Elbe promenade": {
+   "ok": true,
+   "w": "Elbe",
+   "ct": null,
+   "lang": "de",
+   "title": "Elbe",
+   "url": "https://de.wikipedia.org/wiki/Elbe",
+   "lat": 53.89333333,
+   "lon": 8.70555556,
+   "wd": "Q1644",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Damnatz_Elbe.jpg/640px-Damnatz_Elbe.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Damnatz_Elbe.jpg/1000px-Damnatz_Elbe.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Damnatz_Elbe.jpg",
+   "extract": "Die Elbe ist ein mitteleuropäischer Strom, der in Tschechien entspringt, durch Deutschland fließt und in die Nordsee mündet. Sie entwässert unter anderem einen großen Teil Ostdeutschlands sowie nahezu das ganze von Mittelgebirgen umschlossene Böhmen."
+  },
+  "magdeburg/Monastery of Our Lady": {
+   "ok": true,
+   "w": "Kloster Unser Lieben Frauen",
+   "ct": null,
+   "lang": "de",
+   "title": "Kloster Unser Lieben Frauen",
+   "url": "https://de.wikipedia.org/wiki/Kloster_Unser_Lieben_Frauen",
+   "lat": 52.12777,
+   "lon": 11.63702,
+   "wd": "Q882013",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/S%C3%BCdostansicht_Unser_Lieben_Frauen_mit_Skulpturenpark.jpg/640px-S%C3%BCdostansicht_Unser_Lieben_Frauen_mit_Skulpturenpark.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/S%C3%BCdostansicht_Unser_Lieben_Frauen_mit_Skulpturenpark.jpg/1000px-S%C3%BCdostansicht_Unser_Lieben_Frauen_mit_Skulpturenpark.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Südostansicht_Unser_Lieben_Frauen_mit_Skulpturenpark.jpg",
+   "extract": "Das Kloster Unser Lieben Frauen ist eine Klosteranlage in der Magdeburger Altstadt. Das Gebäudeensemble, zu dem auch die 1977 säkularisierte Liebfrauenkirche gehört, zählt zu den bedeutendsten romanischen Anlagen in Deutschland."
+  },
+  "berlin/Brandenburg Gate": {
+   "ok": true,
+   "w": "Brandenburger Tor",
+   "ct": null,
+   "lang": "de",
+   "title": "Brandenburger Tor",
+   "url": "https://de.wikipedia.org/wiki/Brandenburger_Tor",
+   "lat": 52.51638889,
+   "lon": 13.37777778,
+   "wd": "Q82425",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/BerlinBrandenburgerTor1985.jpg/640px-BerlinBrandenburgerTor1985.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/BerlinBrandenburgerTor1985.jpg/1000px-BerlinBrandenburgerTor1985.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "BerlinBrandenburgerTor1985.jpg",
+   "extract": "Das Brandenburger Tor in Berlin ist ein frühklassizistisches Triumphtor, das an der Westflanke des quadratischen Pariser Platzes im Berliner Ortsteil Mitte steht. Es wurde als Abschluss der zentralen Prachtstraße der Dorotheenstadt, des Boulevards Unter den Li"
+  },
+  "berlin/Gendarmenmarkt": {
+   "ok": true,
+   "w": "Gendarmenmarkt",
+   "ct": null,
+   "lang": "de",
+   "title": "Gendarmenmarkt",
+   "url": "https://de.wikipedia.org/wiki/Gendarmenmarkt",
+   "lat": 52.51333333,
+   "lon": 13.39305556,
+   "wd": "Q170103",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/150418_Konzerthaus_Berlin_Gendarmenmarkt.jpg/640px-150418_Konzerthaus_Berlin_Gendarmenmarkt.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/150418_Konzerthaus_Berlin_Gendarmenmarkt.jpg/1000px-150418_Konzerthaus_Berlin_Gendarmenmarkt.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "150418_Konzerthaus_Berlin_Gendarmenmarkt.jpg",
+   "extract": "Der Gendarmenmarkt ist ein – nach dem ursprünglich hier angesiedelten Kürassierregiment Gens d’armes benannter – Platz im Berliner Ortsteil Mitte des gleichnamigen Bezirks. Im Jahr 1688 bei der damaligen kurfürstlichen Stadterweiterung angelegt, wurde er im Zw"
+  },
+  "berlin/Museum Island": {
+   "ok": true,
+   "w": "Museumsinsel",
+   "ct": null,
+   "lang": "en",
+   "title": "Museum Island",
+   "url": "https://en.wikipedia.org/wiki/Museum_Island",
+   "lat": 52.52138889,
+   "lon": 13.39555556,
+   "wd": "Q151963",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Berlin_Museumsinsel_Fernsehturm.jpg/640px-Berlin_Museumsinsel_Fernsehturm.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Berlin_Museumsinsel_Fernsehturm.jpg/1000px-Berlin_Museumsinsel_Fernsehturm.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Berlin_Museumsinsel_Fernsehturm.jpg",
+   "extract": "The Museum Island is a museum complex on the northern part of Spree Island in the historic heart of Berlin, Germany. It is one of the capital's most visited sights and one of the most important museum sites in Europe."
+  },
+  "berlin/Reichstag dome": {
+   "ok": true,
+   "w": "Reichstagsgebäude",
+   "ct": null,
+   "lang": "de",
+   "title": "Reichstagsgebäude",
+   "url": "https://de.wikipedia.org/wiki/Reichstagsgeb%C3%A4ude",
+   "lat": null,
+   "lon": null,
+   "wd": "Q151897",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Reichstagsgeb%C3%A4ude_von_Westen.jpg/640px-Reichstagsgeb%C3%A4ude_von_Westen.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Reichstagsgeb%C3%A4ude_von_Westen.jpg/1000px-Reichstagsgeb%C3%A4ude_von_Westen.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Reichstagsgebäude_von_Westen.jpg",
+   "extract": "Das Reichstagsgebäude am Platz der Republik in Berlin ist seit 1999 Sitz des Deutschen Bundestages. Seit 1994 tritt hier auch die Bundesversammlung zur Wahl des deutschen Bundespräsidenten zusammen."
+  },
+  "berlin/East Side Gallery": {
+   "ok": true,
+   "w": "East Side Gallery",
+   "ct": null,
+   "lang": "de",
+   "title": "East Side Gallery",
+   "url": "https://de.wikipedia.org/wiki/East_Side_Gallery",
+   "lat": 52.505113,
+   "lon": 13.439424,
+   "wd": "Q313746",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Bundesarchiv_B_145_Bild-F088809-0038%2C_Berlin%2C_East_Side_Gallery.jpg/640px-Bundesarchiv_B_145_Bild-F088809-0038%2C_Berlin%2C_East_Side_Gallery.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Bundesarchiv_B_145_Bild-F088809-0038%2C_Berlin%2C_East_Side_Gallery.jpg/1000px-Bundesarchiv_B_145_Bild-F088809-0038%2C_Berlin%2C_East_Side_Gallery.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Bundesarchiv_B_145_Bild-F088809-0038,_Berlin,_East_Side_Gallery.jpg",
+   "extract": "Das Denkmal East Side Gallery im Berliner Ortsteil Friedrichshain ist eine dauerhafte Open-Air-Galerie auf dem längsten noch erhaltenen Teilstück der Berliner Mauer in der Mühlenstraße zwischen dem Berliner Ostbahnhof und der Oberbaumbrücke entlang der Spree."
+  },
+  "berlin/Berlin Cathedral": {
+   "ok": true,
+   "w": "Berliner Dom",
+   "ct": null,
+   "lang": "de",
+   "title": "Berliner Dom",
+   "url": "https://de.wikipedia.org/wiki/Berliner_Dom",
+   "lat": 52.51916667,
+   "lon": 13.40111111,
+   "wd": "Q154563",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/2023_Berliner_Dom_-_Westfassade_--_01.jpg/640px-2023_Berliner_Dom_-_Westfassade_--_01.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/2023_Berliner_Dom_-_Westfassade_--_01.jpg/1000px-2023_Berliner_Dom_-_Westfassade_--_01.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "2023_Berliner_Dom_-_Westfassade_--_01.jpg",
+   "extract": "Der Berliner Dom ist eine evangelische Kirche am Lustgarten auf der Museumsinsel in Berlin-Mitte. Der Neorenaissancebau wurde 1894 bis 1905 im Auftrag von Wilhelm II."
+  },
+  "berlin/Memorial to the Murdered Jews of Europe": {
+   "ok": true,
+   "w": "Denkmal für die ermordeten Juden Europas",
+   "ct": null,
+   "lang": "de",
+   "title": "Denkmal für die ermordeten Juden Europas",
+   "url": "https://de.wikipedia.org/wiki/Denkmal_f%C3%BCr_die_ermordeten_Juden_Europas",
+   "lat": 52.51388889,
+   "lon": 13.37888889,
+   "wd": "Q160700",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Memorial_to_the_Murdered_Jews_of_Europeabove.jpg/640px-Memorial_to_the_Murdered_Jews_of_Europeabove.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Memorial_to_the_Murdered_Jews_of_Europeabove.jpg/1000px-Memorial_to_the_Murdered_Jews_of_Europeabove.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Memorial_to_the_Murdered_Jews_of_Europeabove.jpg",
+   "extract": "Das Denkmal für die ermordeten Juden Europas, kurz Holocaust-Mahnmal, in der historischen Mitte Berlins erinnert an die rund sechs Millionen Juden, die unter der Herrschaft Adolf Hitlers und der Nationalsozialisten ermordet wurden."
+  },
+  "berlin/Tiergarten": {
+   "ok": true,
+   "w": "Großer Tiergarten",
+   "ct": null,
+   "lang": "de",
+   "title": "Großer Tiergarten",
+   "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fer_Tiergarten",
+   "lat": 52.51333333,
+   "lon": 13.35833333,
+   "wd": "Q694020",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Berlin_Tiergarten_Siegess%C3%A4ule_Luftansicht.jpg/640px-Berlin_Tiergarten_Siegess%C3%A4ule_Luftansicht.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Berlin_Tiergarten_Siegess%C3%A4ule_Luftansicht.jpg/1000px-Berlin_Tiergarten_Siegess%C3%A4ule_Luftansicht.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Berlin_Tiergarten_Siegessäule_Luftansicht.jpg",
+   "extract": "Der Große Tiergarten in Berlin ist eine zentral im Ortsteil Tiergarten des Bezirks Mitte gelegene Parkanlage, die sich auf 210 Hektar (2,1 km²) erstreckt. Einige breite Straßen durchschneiden den Park, darunter die Straße des 17."
+  },
+  "berlin/Alexanderplatz TV Tower": {
+   "ok": true,
+   "w": "Berliner Fernsehturm",
+   "ct": null,
+   "lang": "en",
+   "title": "Fernsehturm Berlin",
+   "url": "https://en.wikipedia.org/wiki/Fernsehturm_Berlin",
+   "lat": 52.52083333,
+   "lon": 13.40944444,
+   "wd": "Q151356",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Berlin_-_Berliner_Fernsehturm_-_Fensterreinigung.jpg/640px-Berlin_-_Berliner_Fernsehturm_-_Fensterreinigung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Berlin_-_Berliner_Fernsehturm_-_Fensterreinigung.jpg/1000px-Berlin_-_Berliner_Fernsehturm_-_Fensterreinigung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Berlin - Berliner Fernsehturm - Fensterreinigung.jpg",
+   "extract": "The Fernsehturm in central Berlin was constructed between 1965 and 1969 by the government of the German Democratic Republic as both a functional broadcasting facility and a symbol of communist power."
+  },
+  "berlin/Checkpoint Charlie": {
+   "ok": true,
+   "w": "Checkpoint Charlie",
+   "ct": null,
+   "lang": "de",
+   "title": "Checkpoint Charlie",
+   "url": "https://de.wikipedia.org/wiki/Checkpoint_Charlie",
+   "lat": 52.50744629,
+   "lon": 13.39038883,
+   "wd": "Q68689",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Checkpoint_Charlie1.jpg/640px-Checkpoint_Charlie1.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Checkpoint_Charlie1.jpg/1000px-Checkpoint_Charlie1.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Checkpoint_Charlie1.jpg",
+   "extract": "Der Checkpoint Charlie war einer der Berliner Grenzübergänge durch die Berliner Mauer zwischen 1961 und 1990. Er verband in der Friedrichstraße zwischen Zimmerstraße und Kochstraße den sowjetischen mit dem amerikanischen Sektor und damit den Ost-Berliner Bezir"
+  },
+  "berlin/Charlottenburg Palace": {
+   "ok": true,
+   "w": "Schloss Charlottenburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Schloss Charlottenburg",
+   "url": "https://de.wikipedia.org/wiki/Schloss_Charlottenburg",
+   "lat": 52.52111111,
+   "lon": 13.29583333,
+   "wd": "Q154996",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Berlin_Charlottenburger_Schloss_Strassenseite.jpg/640px-Berlin_Charlottenburger_Schloss_Strassenseite.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Berlin_Charlottenburger_Schloss_Strassenseite.jpg/1000px-Berlin_Charlottenburger_Schloss_Strassenseite.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Berlin_Charlottenburger_Schloss_Strassenseite.jpg",
+   "extract": "Das Schloss Charlottenburg diente von 1701 bis 1888 als Sommerresidenz der preußischen Könige und ist heute ein Museum. Das Schloss ist ein Baudenkmal und liegt am Spandauer Damm im Berliner Ortsteil Charlottenburg."
+  },
+  "berlin/Hackesche Höfe": {
+   "ok": true,
+   "w": "Hackesche Höfe",
+   "ct": null,
+   "lang": "de",
+   "title": "Hackesche Höfe",
+   "url": "https://de.wikipedia.org/wiki/Hackesche_H%C3%B6fe",
+   "lat": 52.52416667,
+   "lon": 13.40222222,
+   "wd": "Q736425",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Hackesche_h%C3%B6fe_berlin.jpg/640px-Hackesche_h%C3%B6fe_berlin.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Hackesche_h%C3%B6fe_berlin.jpg/1000px-Hackesche_h%C3%B6fe_berlin.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Hackesche_höfe_berlin.jpg",
+   "extract": "Die Hackeschen Höfe sind ein Gebäudeensemble in der Spandauer Vorstadt im Ortsteil Mitte von Berlin, unweit des sogenannten Scheunenviertels. Namensgebend sind acht Gewerbehöfe, um die herum sich die Gebäude gruppieren."
+  }
+ },
+ "places": {
+  "mittenwald": {
+   "ok": true,
+   "w": "Mittenwald",
+   "ct": null,
+   "lang": "de",
+   "title": "Mittenwald",
+   "url": "https://de.wikipedia.org/wiki/Mittenwald",
+   "lat": 47.44194444,
+   "lon": 11.26027778,
+   "wd": "Q127553",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Mittenwald_-_Ortsmitte_%2838%29_-_Flickr_-_Pixelteufel.jpg/1200px-Mittenwald_-_Ortsmitte_%2838%29_-_Flickr_-_Pixelteufel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Mittenwald_-_Ortsmitte_%2838%29_-_Flickr_-_Pixelteufel.jpg/1200px-Mittenwald_-_Ortsmitte_%2838%29_-_Flickr_-_Pixelteufel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Mittenwald - Ortsmitte (38) - Flickr - Pixelteufel.jpg",
+   "extract": ""
+  },
+  "seefeld": {
+   "ok": true,
+   "w": "Seefeld in Tirol",
+   "ct": null,
+   "lang": "de",
+   "title": "Seefeld in Tirol",
+   "url": "https://de.wikipedia.org/wiki/Seefeld_in_Tirol",
+   "lat": 47.32944444,
+   "lon": 11.18916667,
+   "wd": "Q660035",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Seefeld_in_Tirol_im_Bezirk_IL.png/1200px-Seefeld_in_Tirol_im_Bezirk_IL.png?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Seefeld_in_Tirol_im_Bezirk_IL.png/1200px-Seefeld_in_Tirol_im_Bezirk_IL.png?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Seefeld_in_Tirol_im_Bezirk_IL.png",
+   "extract": ""
+  },
+  "garmisch": {
+   "ok": true,
+   "w": "Garmisch-Partenkirchen",
+   "ct": null,
+   "lang": "de",
+   "title": "Garmisch-Partenkirchen",
+   "url": "https://de.wikipedia.org/wiki/Garmisch-Partenkirchen",
+   "lat": 47.49388889,
+   "lon": 11.10527778,
+   "wd": "Q127043",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Garmisch_-_Altstadt_%28Fu%C3%9Fg%C3%A4ngerzone%29_%2813%29_-_Flickr_-_Pixelteufel.jpg/1200px-Garmisch_-_Altstadt_%28Fu%C3%9Fg%C3%A4ngerzone%29_%2813%29_-_Flickr_-_Pixelteufel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Garmisch_-_Altstadt_%28Fu%C3%9Fg%C3%A4ngerzone%29_%2813%29_-_Flickr_-_Pixelteufel.jpg/1200px-Garmisch_-_Altstadt_%28Fu%C3%9Fg%C3%A4ngerzone%29_%2813%29_-_Flickr_-_Pixelteufel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Garmisch - Altstadt (Fußgängerzone) (13) - Flickr - Pixelteufel.jpg",
+   "extract": ""
+  },
+  "oberau": {
+   "ok": true,
+   "w": "Oberau",
+   "ct": null,
+   "lang": "de",
+   "title": "Oberau",
+   "url": "https://de.wikipedia.org/wiki/Oberau",
+   "lat": 47.55916667,
+   "lon": 11.13888889,
+   "wd": "Q505979",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Luftbild-_Film_54_Bildnr._81_-_LABW_-_Staatsarchiv_Ludwigsburg_EL_68_IX_Nr_13553.jpg/1200px-Luftbild-_Film_54_Bildnr._81_-_LABW_-_Staatsarchiv_Ludwigsburg_EL_68_IX_Nr_13553.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Luftbild-_Film_54_Bildnr._81_-_LABW_-_Staatsarchiv_Ludwigsburg_EL_68_IX_Nr_13553.jpg/1200px-Luftbild-_Film_54_Bildnr._81_-_LABW_-_Staatsarchiv_Ludwigsburg_EL_68_IX_Nr_13553.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Luftbild- Film 54 Bildnr. 81 - LABW - Staatsarchiv Ludwigsburg EL 68 IX Nr 13553.jpg",
+   "extract": ""
+  },
+  "ettal": {
+   "ok": true,
+   "w": "Kloster Ettal",
+   "ct": null,
+   "lang": "de",
+   "title": "Kloster Ettal",
+   "url": "https://de.wikipedia.org/wiki/Kloster_Ettal",
+   "lat": 47.56925833,
+   "lon": 11.09456111,
+   "wd": "Q253359",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Kloster_Ettal_Klosteranlage.JPG/1200px-Kloster_Ettal_Klosteranlage.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Kloster_Ettal_Klosteranlage.JPG/1200px-Kloster_Ettal_Klosteranlage.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Kloster_Ettal_Klosteranlage.JPG",
+   "extract": ""
+  },
+  "oberammergau": {
+   "ok": true,
+   "w": "Oberammergau",
+   "ct": null,
+   "lang": "de",
+   "title": "Oberammergau",
+   "url": "https://de.wikipedia.org/wiki/Oberammergau",
+   "lat": 47.59859,
+   "lon": 11.06434,
+   "wd": "Q503757",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Oberammergau_L%C3%BCftlmalerei_Marienkr%C3%B6nung.jpg/1200px-Oberammergau_L%C3%BCftlmalerei_Marienkr%C3%B6nung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Oberammergau_L%C3%BCftlmalerei_Marienkr%C3%B6nung.jpg/1200px-Oberammergau_L%C3%BCftlmalerei_Marienkr%C3%B6nung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Oberammergau Lüftlmalerei Marienkrönung.jpg",
+   "extract": ""
+  },
+  "murnau": {
+   "ok": true,
+   "w": "Murnau am Staffelsee",
+   "ct": null,
+   "lang": "de",
+   "title": "Murnau am Staffelsee",
+   "url": "https://de.wikipedia.org/wiki/Murnau_am_Staffelsee",
+   "lat": 47.67416667,
+   "lon": 11.20166667,
+   "wd": "Q254356",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Cafe_sign%2C_Murnau%2C_Bavaria%2C_Germany.jpg/1200px-Cafe_sign%2C_Murnau%2C_Bavaria%2C_Germany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Cafe_sign%2C_Murnau%2C_Bavaria%2C_Germany.jpg/1200px-Cafe_sign%2C_Murnau%2C_Bavaria%2C_Germany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Cafe sign, Murnau, Bavaria, Germany.jpg",
+   "extract": ""
+  },
+  "fussen": {
+   "ok": true,
+   "w": "Füssen",
+   "ct": null,
+   "lang": "de",
+   "title": "Füssen",
+   "url": "https://de.wikipedia.org/wiki/F%C3%BCssen",
+   "lat": 47.56666667,
+   "lon": 10.7,
+   "wd": "Q262684",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Altstadt-Fuessen-JR-G6-6650-2020-06-21.jpg/1200px-Altstadt-Fuessen-JR-G6-6650-2020-06-21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Altstadt-Fuessen-JR-G6-6650-2020-06-21.jpg/1200px-Altstadt-Fuessen-JR-G6-6650-2020-06-21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Altstadt-Fuessen-JR-G6-6650-2020-06-21.jpg",
+   "extract": ""
+  },
+  "munich": {
+   "ok": true,
+   "w": "München",
+   "ct": null,
+   "lang": "de",
+   "title": "München",
+   "url": "https://de.wikipedia.org/wiki/M%C3%BCnchen",
+   "lat": 48.13972222,
+   "lon": 11.57444444,
+   "wd": "Q1726",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/M%C3%BCnchen_Marienplatz_station.jpg/1200px-M%C3%BCnchen_Marienplatz_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/M%C3%BCnchen_Marienplatz_station.jpg/1200px-M%C3%BCnchen_Marienplatz_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "München Marienplatz station.jpg",
+   "extract": ""
+  },
+  "augsburg": {
+   "ok": true,
+   "w": "Augsburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Augsburg",
+   "url": "https://de.wikipedia.org/wiki/Augsburg",
+   "lat": 48.37166667,
+   "lon": 10.89833333,
+   "wd": "Q2749",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Augsburg_F%C3%BCrstbisch%C3%B6fliche_Residenz_Rokokosaal.jpg/1200px-Augsburg_F%C3%BCrstbisch%C3%B6fliche_Residenz_Rokokosaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Augsburg_F%C3%BCrstbisch%C3%B6fliche_Residenz_Rokokosaal.jpg/1200px-Augsburg_F%C3%BCrstbisch%C3%B6fliche_Residenz_Rokokosaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Augsburg Fürstbischöfliche Residenz Rokokosaal.jpg",
+   "extract": ""
+  },
+  "landsberg": {
+   "ok": true,
+   "w": "Landsberg am Lech",
+   "ct": null,
+   "lang": "de",
+   "title": "Landsberg am Lech",
+   "url": "https://de.wikipedia.org/wiki/Landsberg_am_Lech",
+   "lat": 48.04944444,
+   "lon": 10.87777778,
+   "wd": "Q494299",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Landsberg_am_Lech_Altstadt_2.jpg/1200px-Landsberg_am_Lech_Altstadt_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Landsberg_am_Lech_Altstadt_2.jpg/1200px-Landsberg_am_Lech_Altstadt_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Landsberg am Lech Altstadt 2.jpg",
+   "extract": ""
+  },
+  "donauworth": {
+   "ok": true,
+   "w": "Donauwörth",
+   "ct": null,
+   "lang": "de",
+   "title": "Donauwörth",
+   "url": "https://de.wikipedia.org/wiki/Donauw%C3%B6rth",
+   "lat": 48.71888889,
+   "lon": 10.77777778,
+   "wd": "Q53742",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg/1200px-Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg/1200px-Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Donauwörth, Reichsstraße 1, 001.jpg",
+   "extract": ""
+  },
+  "nuremberg": {
+   "ok": true,
+   "w": "Nürnberg",
+   "ct": null,
+   "lang": "de",
+   "title": "Nürnberg",
+   "url": "https://de.wikipedia.org/wiki/N%C3%BCrnberg",
+   "lat": 49.45555556,
+   "lon": 11.07861111,
+   "wd": "Q2090",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Altstadt%2C_Altdorf_bei_Nuernberg_%28P1180270%29.jpg/1200px-Altstadt%2C_Altdorf_bei_Nuernberg_%28P1180270%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Altstadt%2C_Altdorf_bei_Nuernberg_%28P1180270%29.jpg/1200px-Altstadt%2C_Altdorf_bei_Nuernberg_%28P1180270%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Altstadt, Altdorf bei Nuernberg (P1180270).jpg",
+   "extract": ""
+  },
+  "bamberg": {
+   "ok": true,
+   "w": "Bamberg",
+   "ct": null,
+   "lang": "de",
+   "title": "Bamberg",
+   "url": "https://de.wikipedia.org/wiki/Bamberg",
+   "lat": 49.89166667,
+   "lon": 10.89166667,
+   "wd": "Q3936",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Bamberg_Altstadt_20061115-057-Pano.jpg/1200px-Bamberg_Altstadt_20061115-057-Pano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Bamberg_Altstadt_20061115-057-Pano.jpg/1200px-Bamberg_Altstadt_20061115-057-Pano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Bamberg Altstadt 20061115-057-Pano.jpg",
+   "extract": ""
+  },
+  "rothenburg": {
+   "ok": true,
+   "w": "Rothenburg ob der Tauber",
+   "ct": null,
+   "lang": "de",
+   "title": "Rothenburg ob der Tauber",
+   "url": "https://de.wikipedia.org/wiki/Rothenburg_ob_der_Tauber",
+   "lat": 49.3775,
+   "lon": 10.17888889,
+   "wd": "Q153494",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Altstadt%2C_von_S%C3%BCdwesten_Rothenburg_ob_der_Tauber_20230518_0273.jpg/1200px-Altstadt%2C_von_S%C3%BCdwesten_Rothenburg_ob_der_Tauber_20230518_0273.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Altstadt%2C_von_S%C3%BCdwesten_Rothenburg_ob_der_Tauber_20230518_0273.jpg/1200px-Altstadt%2C_von_S%C3%BCdwesten_Rothenburg_ob_der_Tauber_20230518_0273.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Altstadt, von Südwesten Rothenburg ob der Tauber 20230518 0273.jpg",
+   "extract": ""
+  },
+  "wurzburg": {
+   "ok": true,
+   "w": "Würzburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Würzburg",
+   "url": "https://de.wikipedia.org/wiki/W%C3%BCrzburg",
+   "lat": 49.79441,
+   "lon": 9.92937,
+   "wd": "Q2999",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/W%C3%BCrzburg%2C_Festung_Marienberg%2C_Blick_auf_die_Altstadt_--_2018_--_0317-22.jpg/1200px-W%C3%BCrzburg%2C_Festung_Marienberg%2C_Blick_auf_die_Altstadt_--_2018_--_0317-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/W%C3%BCrzburg%2C_Festung_Marienberg%2C_Blick_auf_die_Altstadt_--_2018_--_0317-22.jpg/1200px-W%C3%BCrzburg%2C_Festung_Marienberg%2C_Blick_auf_die_Altstadt_--_2018_--_0317-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Würzburg, Festung Marienberg, Blick auf die Altstadt -- 2018 -- 0317-22.jpg",
+   "extract": ""
+  },
+  "heidelberg": {
+   "ok": true,
+   "w": "Heidelberg",
+   "ct": null,
+   "lang": "de",
+   "title": "Heidelberg",
+   "url": "https://de.wikipedia.org/wiki/Heidelberg",
+   "lat": 49.41032,
+   "lon": 8.69707,
+   "wd": "Q2966",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Heidelberg_Altstadt_Schloss_Luftbild.JPG/1200px-Heidelberg_Altstadt_Schloss_Luftbild.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Heidelberg_Altstadt_Schloss_Luftbild.JPG/1200px-Heidelberg_Altstadt_Schloss_Luftbild.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Heidelberg Altstadt Schloss Luftbild.JPG",
+   "extract": ""
+  },
+  "fulda": {
+   "ok": true,
+   "w": "Fulda",
+   "ct": null,
+   "lang": "de",
+   "title": "Fulda",
+   "url": "https://de.wikipedia.org/wiki/Fulda",
+   "lat": 50.555894,
+   "lon": 9.681372,
+   "wd": "Q3963",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Tchibo_Altstadt_Fulda_Juni_2012.JPG/1200px-Tchibo_Altstadt_Fulda_Juni_2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Tchibo_Altstadt_Fulda_Juni_2012.JPG/1200px-Tchibo_Altstadt_Fulda_Juni_2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Tchibo Altstadt Fulda Juni 2012.JPG",
+   "extract": ""
+  },
+  "eisenach": {
+   "ok": true,
+   "w": "Eisenach",
+   "ct": null,
+   "lang": "de",
+   "title": "Eisenach",
+   "url": "https://de.wikipedia.org/wiki/Eisenach",
+   "lat": 50.98321,
+   "lon": 10.31586,
+   "wd": "Q7070",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Residenzhaus_in_Eisenach_03.jpg/1200px-Residenzhaus_in_Eisenach_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Residenzhaus_in_Eisenach_03.jpg/1200px-Residenzhaus_in_Eisenach_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Residenzhaus in Eisenach 03.jpg",
+   "extract": ""
+  },
+  "erfurt": {
+   "ok": true,
+   "w": "Erfurt",
+   "ct": null,
+   "lang": "de",
+   "title": "Erfurt",
+   "url": "https://de.wikipedia.org/wiki/Erfurt",
+   "lat": 50.97805556,
+   "lon": 11.02916667,
+   "wd": "Q1729",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/2021-09-16_Erfurt_bei_Nacht_1DX_3958_by_Stepro.jpg/1200px-2021-09-16_Erfurt_bei_Nacht_1DX_3958_by_Stepro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/2021-09-16_Erfurt_bei_Nacht_1DX_3958_by_Stepro.jpg/1200px-2021-09-16_Erfurt_bei_Nacht_1DX_3958_by_Stepro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "2021-09-16 Erfurt bei Nacht 1DX 3958 by Stepro.jpg",
+   "extract": ""
+  },
+  "weimar": {
+   "ok": true,
+   "w": "Weimar",
+   "ct": null,
+   "lang": "de",
+   "title": "Weimar",
+   "url": "https://de.wikipedia.org/wiki/Weimar",
+   "lat": 50.97944444,
+   "lon": 11.32972222,
+   "wd": "Q3955",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Weimar%2C_Vorwerksgasse%2C_2019-09_CN-01.jpg/1200px-Weimar%2C_Vorwerksgasse%2C_2019-09_CN-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Weimar%2C_Vorwerksgasse%2C_2019-09_CN-01.jpg/1200px-Weimar%2C_Vorwerksgasse%2C_2019-09_CN-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Weimar, Vorwerksgasse, 2019-09 CN-01.jpg",
+   "extract": ""
+  },
+  "naumburg": {
+   "ok": true,
+   "w": "Naumburg (Saale)",
+   "ct": null,
+   "lang": "de",
+   "title": "Naumburg (Saale)",
+   "url": "https://de.wikipedia.org/wiki/Naumburg_(Saale)",
+   "lat": 51.1525,
+   "lon": 11.80999,
+   "wd": "Q15986",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Naumburg_%28Saale%29_07.jpg/1200px-Naumburg_%28Saale%29_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Naumburg_%28Saale%29_07.jpg/1200px-Naumburg_%28Saale%29_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Naumburg (Saale) 07.jpg",
+   "extract": ""
+  },
+  "quedlinburg": {
+   "ok": true,
+   "w": "Quedlinburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Quedlinburg",
+   "url": "https://de.wikipedia.org/wiki/Quedlinburg",
+   "lat": 51.79277778,
+   "lon": 11.15083333,
+   "wd": "Q40623",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Quedlinburg_asv2018-10_img04_pano_from_Muenzenberg.jpg/1200px-Quedlinburg_asv2018-10_img04_pano_from_Muenzenberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Quedlinburg_asv2018-10_img04_pano_from_Muenzenberg.jpg/1200px-Quedlinburg_asv2018-10_img04_pano_from_Muenzenberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Quedlinburg asv2018-10 img04 pano from Muenzenberg.jpg",
+   "extract": ""
+  },
+  "magdeburg": {
+   "ok": true,
+   "w": "Magdeburg",
+   "ct": null,
+   "lang": "de",
+   "title": "Magdeburg",
+   "url": "https://de.wikipedia.org/wiki/Magdeburg",
+   "lat": 52.13333333,
+   "lon": 11.61666667,
+   "wd": "Q1733",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/St._Petri_%28Magdeburg-Altstadt%29.Vorhalle.ajb.jpg/1200px-St._Petri_%28Magdeburg-Altstadt%29.Vorhalle.ajb.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/St._Petri_%28Magdeburg-Altstadt%29.Vorhalle.ajb.jpg/1200px-St._Petri_%28Magdeburg-Altstadt%29.Vorhalle.ajb.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "St. Petri (Magdeburg-Altstadt).Vorhalle.ajb.jpg",
+   "extract": ""
+  },
+  "berlin": {
+   "ok": true,
+   "w": "Berlin",
+   "ct": null,
+   "lang": "de",
+   "title": "Berlin",
+   "url": "https://de.wikipedia.org/wiki/Berlin",
+   "lat": 52.51861111,
+   "lon": 13.40833333,
+   "wd": "Q64",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Brandenburger_Tor_nachts.jpg/1200px-Brandenburger_Tor_nachts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Brandenburger_Tor_nachts.jpg/1200px-Brandenburger_Tor_nachts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Brandenburger Tor nachts.jpg",
+   "extract": ""
+  }
+ },
+ "credits": {
+  "Seefeld chiesa barocca.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "unknown"
+  },
+  "Ferchensee Lautersee Mittenwald.jpg": {
+   "lic": "GFDL",
+   "by": "Kogo"
+  },
+  "Seefeld in Tirol im Bezirk IL.png": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joschi Täubler"
+  },
+  "Oberammergau Lüftlmalerei Marienkrönung.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Photo: Andreas Praefcke"
+  },
+  "Brandenburger Tor nachts.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Thomas Wolf, www.foto-tw.de"
+  },
+  "Tchibo Altstadt Fulda Juni 2012.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "4028mdk09"
+  },
+  "Georgenstein Ostufer.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Richard Bartz"
+  },
+  "Kloster Ettal Klosteranlage.JPG": {
+   "lic": "CC BY-SA 1.0",
+   "by": "Bbb"
+  },
+  "Mittenwald St Peter u Paul.JPG": {
+   "lic": "CC BY-SA 1.0",
+   "by": "Bbb"
+  },
+  "St. Petri (Magdeburg-Altstadt).Vorhalle.ajb.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Ajepbah"
+  },
+  "Leutaschklamm (Marius Hoch) 27.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Marius Hoch"
+  },
+  "München Marienplatz station.jpg": {
+   "lic": "CC BY 2.0",
+   "by": "https://www.flickr.com/photos/derekskey/9484658651/ derek skey"
+  },
+  "Cafe sign, Murnau, Bavaria, Germany.jpg": {
+   "lic": "CC0",
+   "by": "Jebulon"
+  },
+  "Donauwörth, Reichsstraße 1, 001.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Tilman2007"
+  },
+  "Partnachklamm 2014a.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Wikiolo"
+  },
+  "Heidelberg Altstadt Schloss Luftbild.JPG": {
+   "lic": "CC BY 4.0",
+   "by": "Schlurcher"
+  },
+  "Landsberg am Lech Altstadt 2.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Drclausoberloher"
+  },
+  "AltePfarrkircheStMartinGarmischPartenkirchenTurmL1050993 (3).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Oktobersonne"
+  },
+  "Augsburg Fürstbischöfliche Residenz Rokokosaal.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Neitram"
+  },
+  "Würzburg, Festung Marienberg, Blick auf die Altstadt -- 2018 -- 0317-22.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Dietmar Rabich"
+  },
+  "Obermarkt 16 Mittenwald - 1.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Ricardalovesmonuments"
+  },
+  "Residenzhaus in Eisenach 03.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Krzysztof Golik"
+  },
+  "Bamberg Altstadt 20061115-057-Pano.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Ermell"
+  },
+  "Quedlinburg asv2018-10 img04 pano from Muenzenberg.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Weimar, Vorwerksgasse, 2019-09 CN-01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
+  "Mittenwald - Ortsmitte (38) - Flickr - Pixelteufel.jpg": {
+   "lic": "CC BY 2.0",
+   "by": "Pixelteufel"
+  },
+  "Garmisch - Altstadt (Fußgängerzone) (13) - Flickr - Pixelteufel.jpg": {
+   "lic": "CC BY 2.0",
+   "by": "Pixelteufel"
+  },
+  "Altstadt-Fuessen-JR-G6-6650-2020-06-21.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Johannes Robalotoff"
+  },
+  "Nördliche Karwendelkette, Blick von Mittenwald 05.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kritzolina"
+  },
+  "Lautersee, Mittenwald 04.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kritzolina"
+  },
+  "2021-09-16 Erfurt bei Nacht 1DX 3958 by Stepro.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Prößdorf"
+  },
+  "Sankt Oswald (Seefeld in Tirol) v NO.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Ricardalovesmonuments"
+  },
+  "Naumburg (Saale) 07.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Thomas Hummel"
+  },
+  "Altstadt, von Südwesten Rothenburg ob der Tauber 20230518 0273.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Tilman2007"
+  },
+  "20230608 Ludwigstraße Garmisch-Partenkirchen 01.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Flocci Nivis"
+  },
+  "Zugspitzmassiv-von-Almkopf-2024.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Tuxyso"
+  },
+  "Altstadt, Altdorf bei Nuernberg (P1180270).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Matti Blume"
+  },
+  "Luftbild- Film 54 Bildnr. 81 - LABW - Staatsarchiv Ludwigsburg EL 68 IX Nr 13553.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Land Baden-Württemberg"
+  },
+  "Geigenbaumuseum in (Mittenwald) Garmisch-Partenkirchen.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Ursula Jaeger"
+  },
+  "Wildsee (46303).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Reustli"
+  },
+  "München Hofgartentempel.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Oliver Kurmis"
+  },
+  "20050619 130750 Marienbruecke Neuschwanstein.jpg": {
+   "lic": "CC BY-SA 2.0 de",
+   "by": "Robert Böck"
+  },
+  "Muenter-Haus-Murnau.JPG": {
+   "lic": "CC BY-SA 2.5",
+   "by": "No machine-readable author provided. Elian assumed (based on copyright claims)."
+  },
+  "Prior Park Bath Palladian Bridge.jpg": {
+   "lic": "Public domain",
+   "by": "No machine-readable author provided. Infilms assumed (based on copyright claims)."
+  },
+  "Mittenwald 5 - 26.05.2006.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Hesse1309"
+  },
+  "Frauenkirche Munich - View from Peterskirche Tower.jpg": {
+   "lic": "CC BY 2.5",
+   "by": "Diliff"
+  },
+  "Munich English Gardens - Chinese Tower Beer Garden - August 2006.jpg": {
+   "lic": "CC BY 2.5",
+   "by": "Diliff"
+  },
+  "Wiesn2006 Luftaufnahme.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "Stefan Weigel"
+  },
+  "Rathaus and Marienplatz from Peterskirche - August 2006.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Diliff"
+  },
+  "Hofbrauhaus.JPG": {
+   "lic": "Public domain",
+   "by": "Kiban"
+  },
+  "Murnauer Moos.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "No machine-readable author provided. Dark Avenger~commonswiki assumed (based on copyright "
+  },
+  "Fuessen hohes schloss.jpg": {
+   "lic": "Public domain",
+   "by": "Patrick Huebgen"
+  },
+  "030904 augsburg-alte-silberschmiede 1-480x640.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "The original uploader was Wolpertinger at German Wikipedia."
+  },
+  "Rathaus-maximilianstrasse-Augsburg-Blick-vom-Perlachturm.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Peter Bubenik"
+  },
+  "Olympiaschanze St. Moritz.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Garry Furrer"
+  },
+  "Oberammergau Pilatushaus Gartenfassade.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Photo: Andreas Praefcke"
+  },
+  "Oberammergau Bühne c1860.jpg": {
+   "lic": "Public domain",
+   "by": "Engraving after Carl Emil Doepler († 1905)"
+  },
+  "Eibsee und Ammergauer Alpen.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Octagon"
+  },
+  "Laber Graswangtal.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Jensibua"
+  },
+  "Der Hohe Dom zu AugsburgDSC 2136.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Otto Schemmel"
+  },
+  "Füssen - Lechfall.jpg": {
+   "lic": "FAL",
+   "by": "Taxiarchos228"
+  },
+  "Exterior del Palacio de Nymphenburg, Múnich, Alemania61.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Diego Delso"
+  },
+  "Munich - The Alter Peter tower - 7411.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Jorge Royan"
+  },
+  "Viktualienmarkt 2016.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Wikiolo"
+  },
+  "St. Nepomuk retusche.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Wikiolo, derivative work Lämpel"
+  },
+  "Oberammergau, Peter und Paul von Südosten, 1.jpeg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Renardo la vulpo"
+  },
+  "Augsburg.- Town Hall (Goldener Saal) (1).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "© Pierre André"
+  },
+  "Hohenschwangau (3383608894).jpg": {
+   "lic": "CC BY 2.0",
+   "by": "Pedro from Maia (Porto), Portugal"
+  },
+  "20180810 xl P1020841-Werkstatt-des-Holzschnitzers-Hans-Schmid.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Molgreen"
+  },
+  "Ettal, Linderhof 21.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "LBM1948"
+  },
+  "Aerial image of Munich Residenz.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Carsten Steger"
+  },
+  "Plaza del Ayuntamiento, Augsburgo, Alemania, 2021-06-04, DD 32-34 HDR.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Diego Delso"
+  },
+  "Basílica de San Ulrico y Santa Afra, Augsburgo, Alemania, 2021-06-04, DD 26-28 HDR.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Diego Delso"
+  },
+  "Aerial image of the Abbey of Saint Mang (view from the southwest).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Carsten Steger"
+  },
+  "Augsburg Fuggerei Eingang 220326.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Hajotthu"
+  },
+  "Deutsches Museum Portrait 4.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Burkhard Mücke"
+  },
+  "Schloßmuseum Murnau Eingangsseite August 2022.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Karl432"
+  },
+  "Aerial image of the Staffelsee (view from the southeast).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Carsten Steger"
+  },
+  "Neuschwanstein Castle 2024-02.jpg": {
+   "lic": "CC0",
+   "by": "Wilfredor"
+  },
+  "Füssen - Altstadt.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "C.Stadler/Bwag (talk / email)"
+  },
+  "Bocksbeutels.jpg": {
+   "lic": "CC BY-SA 2.0",
+   "by": "User:Justinc"
+  },
+  "Landsberg-bayertor.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "unknown"
+  },
+  "Nürnberg St. Lorenz Türme Totale.jpg": {
+   "lic": "CC BY-SA 2.0 de",
+   "by": "jailbird"
+  },
+  "Bamberg-Schlenkerla1-Asio.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "No machine-readable author provided. Asio otus assumed (based on copyright claims)."
+  },
+  "Bamberg Klein Venedig.png": {
+   "lic": "Public domain",
+   "by": "Immanuel Giel"
+  },
+  "Neue Residenz auf domberg in Bamberg.png": {
+   "lic": "Public domain",
+   "by": "Immanuel Giel"
+  },
+  "Nürnberg Burg ArM.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "ArtMechanic"
+  },
+  "Rothenburg BW 4.JPG": {
+   "lic": "Public domain",
+   "by": "Berthold Werner"
+  },
+  "Rothenburg BW 25.JPG": {
+   "lic": "Public domain",
+   "by": "Berthold Werner"
+  },
+  "Bamberg Sankt Michael BW 12.JPG": {
+   "lic": "Public domain",
+   "by": "Berthold Werner"
+  },
+  "Nuernberg-Frauenkirche-gp.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "User:Kolossos"
+  },
+  "Panorama Alte Mainbrücke Würzburg.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Tors"
+  },
+  "Bamberg Käthe Wohlfahrt Schaufenster Weihnachten.jpg": {
+   "lic": "Public domain",
+   "by": "Photo: Andreas Praefcke"
+  },
+  "Nuremberg Aerial Hauptmarkt.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Nicohofmann"
+  },
+  "Nuremberg Weißgerbergasse.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "UlrichAAB"
+  },
+  "Henkersteg in Nürnberg.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Schlaier"
+  },
+  "German Bratwürste.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Gerbis"
+  },
+  "Documentation center entrance nuernberg may2011.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "KaterBegemot"
+  },
+  "Lechwehr Landsberg-1.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Rufus46"
+  },
+  "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Tuxyso"
+  },
+  "Am Roten Tor 1 Augsburg.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Gliwi"
+  },
+  "Festung Marienberg - Würzburg - 2013.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Avda"
+  },
+  "Marienkapelle Würzburg, South-West View 20140107 15.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "DXR"
+  },
+  "Donauwörth, Münster zu Unserer Lieben Frau, 005.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Tilman2007"
+  },
+  "St. Jakob Kirche Rothenburg 2014.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Tuxyso"
+  },
+  "Innenstadt - St. Ulrich-Dom, Augsburg, Germany - panoramio.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Dewi König"
+  },
+  "Handwerkerhof an Weihnachten.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Dumbo1401"
+  },
+  "Donauwörth-KätheKrusePuppenMuseum1-Asio.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Asio otus"
+  },
+  "Bamberg Altes Rathaus 17RM1565-PSD.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Ermell"
+  },
+  "Albrecht-Dürer-Haus - Tiergärtnerplatz - Nuremberg, Germany - DSC02033.jpg": {
+   "lic": "CC0",
+   "by": "Daderot"
+  },
+  "Insel Ried - geo.hlipp.de - 22193.jpg": {
+   "lic": "CC BY-SA 2.0",
+   "by": "Colin Smith on geo.hlipp.de"
+  },
+  "Würzburg, Residenz, Hofgarten -- 2018 -- 0181.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Dietmar Rabich"
+  },
+  "50 000 Exponate aus 1000 Jahren Kriminalgeschichte zeigt das Kriminalmuseum Rothenburg ob der Tauber. 42.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Holger Uwe Schmitt"
+  },
+  "Bamberger Dom BW 6h.JPG": {
+   "lic": "Public domain",
+   "by": "Berthold Werner"
+  },
+  "Hauptplatz 147, Landsberg am Lech.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "H.Helmlechner"
+  },
+  "Skulpturen im Burggarten Rothenburg ob der Tauber 20231030 0047.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Tilman2007"
+  },
+  "Aerial image of Würzburg Residence (view from the east).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Carsten Steger"
+  },
+  "Stadtmauer-Rothenburg-JR-E-7738-2024-08-29.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Johannes Robalotoff"
+  },
+  "Aerial image of Stadtpfarrkirche Mariä Himmelfahrt, Landsberg am Lech (view from the south).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Carsten Steger"
+  },
+  "Lange Städte in Deutschland Band 1 Nr. 11.jpg": {
+   "lic": "Public domain",
+   "by": "Ludwig Lange / Ernst Rauch"
+  },
+  "ErfurterDom.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "unknown"
+  },
+  "Quedlinburg Ständerbau.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "unknown"
+  },
+  "Schiller Weimar.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "Andreas Trepte"
+  },
+  "Heidelberg 20060420 021.jpg": {
+   "lic": "CC BY 2.5",
+   "by": "No machine-readable author provided. Hlohning assumed (based on copyright claims)."
+  },
+  "Heidelberg Fussgaengerzone.JPG": {
+   "lic": "Public domain",
+   "by": "Rudolf Stricker"
+  },
+  "LuftbildPetersberg.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "TomKidd"
+  },
+  "Alte Brücke Heidelberg.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "BishkekRocks"
+  },
+  "Augustinerkirche Erfurt.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Lukas Götz"
+  },
+  "Naumburg stwenzel.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Christian Bier"
+  },
+  "Ilmpark in Weimar - Blick zum Stern.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "© R.Möhler"
+  },
+  "Alte Synagoge Erfurt.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Michael Sander"
+  },
+  "HeidelbergPhilosophenweg.JPG": {
+   "lic": "CC BY 4.0",
+   "by": "Schlurcher"
+  },
+  "Weinstrasse Unstrut.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Denkhenk"
+  },
+  "Egapark Erfurt Festplatz.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Grimba-Photo"
+  },
+  "Heidelberg Karzer 01.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Llez"
+  },
+  "2013-04-20 Krämerbrücke.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "J. Strauß"
+  },
+  "140519 Dom Fulda Frontansicht.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Ansgar Koreng"
+  },
+  "Erfurter Dom von Oben 01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Eremeev"
+  },
+  "MK38365-69 Fischmarkt (Erfurt).jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Martin Kraft"
+  },
+  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Alexander Hoernigk"
+  },
+  "Quedlinburg Marktplatz 2018a.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Olaf Meister"
+  },
+  "Weimar Dom Goethego.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Andrzej Otrębski"
+  },
+  "MK56776 Michaelskirche (Fulda) .jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Martin Kraft"
+  },
+  "Naumburger Dom Ostseite.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kirschgaertner"
+  },
+  "Marktplatz in Naumburg 01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Krzysztof Golik"
+  },
+  "Marktplatz in Weimar 04.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Krzysztof Golik"
+  },
+  "Quedlinburg asv2018-10 img03 Castle.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
+  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
+  "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
+  "Stadtschloss Fulda (Südwestansicht).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Jörg Braukmann"
+  },
+  "Goethe-Schiller-Denkmal 01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "H.Helmlechner"
+  },
+  "Thuringia Eisenach asv2020-07 img14 Bach Museum.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Thuringia Eisenach asv2020-07 img17 Luther's House.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Thuringia Eisenach asv2020-07 img23 Wartburg Castle.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Thuringia Eisenach asv2020-07 img28 Market Square.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Magdeburger Dom Luftbild.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gregor Rom"
+  },
+  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Heidelberg-2726936.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Motatcho"
+  },
+  "Finkenherd 1 in Quedlinburg (2).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Tournasol7"
+  },
+  "Berlin Tiergarten Siegessäule Luftansicht.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "beedubz"
+  },
+  "Berlin Charlottenburger Schloss Strassenseite.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Times"
+  },
+  "Checkpoint Charlie1.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Lyricmac at en.wikipedia"
+  },
+  "Bundesarchiv B 145 Bild-F088809-0038, Berlin, East Side Gallery.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Joachim F. Thurn"
+  },
+  "Berlin Museumsinsel Fernsehturm.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Thomas Wolf, www.foto-tw.de"
+  },
+  "BerlinBrandenburgerTor1985.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joergsam"
+  },
+  "Berlin - Berliner Fernsehturm - Fensterreinigung.jpg": {
+   "lic": "FAL",
+   "by": "Taxiarchos228"
+  },
+  "Damnatz Elbe.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Christian Fischer"
+  },
+  "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
+   "lic": "CC BY 3.0 de",
+   "by": "Ansgar Koreng"
+  },
+  "Memorial to the Murdered Jews of Europeabove.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Alexander Blum"
+  },
+  "Hackesche höfe berlin.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Arne Müseler"
+  },
+  "Reichstagsgebäude von Westen.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Jörg Braukmann"
+  },
+  "2023 Berliner Dom - Westfassade -- 01.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Chainwit."
+  },
+  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Barnos"
+  }
+ }
+}

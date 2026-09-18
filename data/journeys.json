@@ -1,0 +1,6396 @@
+{
+ "1B-1": {
+  "target": "15:40",
+  "from": "mittenwald",
+  "to": "seefeld",
+  "fromStop": "Bahnhof Mittenwald",
+  "toStop": "Bahnhof Seefeld in Tirol",
+  "fromLL": [
+   47.44,
+   11.2655
+  ],
+  "toLL": [
+   47.32887,
+   11.18933
+  ],
+  "best": {
+   "dep": "16:25",
+   "arr": "16:45",
+   "depIso": "2026-09-29T14:25:00Z",
+   "arrIso": "2026-09-29T14:45:00Z",
+   "dur": 20,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 5,
+   "legs": [
+    {
+     "mode": "METRO",
+     "line": "S6",
+     "headsign": "Innsbruck Hauptbahnhof",
+     "from": "Mittenwald Bahnhof",
+     "to": "Seefeld i. T. Bahnhof",
+     "dep": "16:25",
+     "arr": "16:45",
+     "depIso": "2026-09-29T14:25:00Z",
+     "arrIso": "2026-09-29T14:45:00Z",
+     "track": null,
+     "tripId": "20260929_16:25_at-Railway-Current-Reference-Data-2026_142.TA.1-S6-T-j26-1.16.H",
+     "dur": 20
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "18:25",
+    "arr": "18:45",
+    "depIso": "2026-09-29T16:25:00Z",
+    "arrIso": "2026-09-29T16:45:00Z",
+    "dur": 20,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "R 5431",
+      "headsign": "Innsbruck Hauptbahnhof",
+      "from": "Mittenwald Bahnhof",
+      "to": "Seefeld i. T. Bahnhof",
+      "dep": "18:25",
+      "arr": "18:45",
+      "depIso": "2026-09-29T16:25:00Z",
+      "arrIso": "2026-09-29T16:45:00Z",
+      "track": null,
+      "tripId": "20260929_18:25_at-Railway-Current-Reference-Data-2026_3.TA.3-R6-T-j26-1.1.H",
+      "dur": 20
+     }
+    ]
+   },
+   {
+    "dep": "19:36",
+    "arr": "19:56",
+    "depIso": "2026-09-29T17:36:00Z",
+    "arrIso": "2026-09-29T17:56:00Z",
+    "dur": 20,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 7,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (5433)",
+      "headsign": "Seefeld in Tirol",
+      "from": "Mittenwald",
+      "to": "Seefeld in Tirol",
+      "dep": "19:36",
+      "arr": "19:56",
+      "depIso": "2026-09-29T17:36:00Z",
+      "arrIso": "2026-09-29T17:56:00Z",
+      "track": "1",
+      "tripId": "20260929_17:29_de-DELFI_3412766945",
+      "dur": 20
+     }
+    ]
+   },
+   {
+    "dep": "20:25",
+    "arr": "20:45",
+    "depIso": "2026-09-29T18:25:00Z",
+    "arrIso": "2026-09-29T18:45:00Z",
+    "dur": 20,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "METRO",
+      "line": "S6",
+      "headsign": "Innsbruck Hauptbahnhof",
+      "from": "Mittenwald Bahnhof",
+      "to": "Seefeld i. T. Bahnhof",
+      "dep": "20:25",
+      "arr": "20:45",
+      "depIso": "2026-09-29T18:25:00Z",
+      "arrIso": "2026-09-29T18:45:00Z",
+      "track": null,
+      "tripId": "20260929_20:25_at-Railway-Current-Reference-Data-2026_139.TA.1-S6-T-j26-1.16.H",
+      "dur": 20
+     }
+    ]
+   }
+  ]
+ },
+ "1B-3": {
+  "target": "18:40",
+  "from": "seefeld",
+  "to": "mittenwald",
+  "fromStop": "Bahnhof Seefeld in Tirol",
+  "toStop": "Bahnhof Mittenwald",
+  "fromLL": [
+   47.32887,
+   11.18933
+  ],
+  "toLL": [
+   47.44,
+   11.2655
+  ],
+  "best": {
+   "dep": "19:15",
+   "arr": "19:35",
+   "depIso": "2026-09-29T17:15:00Z",
+   "arrIso": "2026-09-29T17:35:00Z",
+   "dur": 20,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 8,
+   "legs": [
+    {
+     "mode": "METRO",
+     "line": "6",
+     "headsign": "Mittenwald",
+     "from": "Seefeld in Tirol",
+     "to": "Mittenwald",
+     "dep": "19:15",
+     "arr": "19:35",
+     "depIso": "2026-09-29T17:15:00Z",
+     "arrIso": "2026-09-29T17:35:00Z",
+     "track": null,
+     "tripId": "20260929_18:38_de-DELFI_3412493882",
+     "dur": 20
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "20:04",
+    "arr": "20:25",
+    "depIso": "2026-09-29T18:04:00Z",
+    "arrIso": "2026-09-29T18:25:00Z",
+    "dur": 21,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 8,
+    "legs": [
+     {
+      "mode": "METRO",
+      "line": "S6",
+      "headsign": "München Hbf",
+      "from": "Seefeld in Tirol",
+      "to": "Mittenwald",
+      "dep": "20:04",
+      "arr": "20:25",
+      "depIso": "2026-09-29T18:04:00Z",
+      "arrIso": "2026-09-29T18:25:00Z",
+      "track": null,
+      "tripId": "20260929_20:04_de-DELFI_3412769726",
+      "dur": 21
+     }
+    ]
+   },
+   {
+    "dep": "21:15",
+    "arr": "21:35",
+    "depIso": "2026-09-29T19:15:00Z",
+    "arrIso": "2026-09-29T19:35:00Z",
+    "dur": 20,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 8,
+    "legs": [
+     {
+      "mode": "METRO",
+      "line": "6",
+      "headsign": "Mittenwald",
+      "from": "Seefeld in Tirol",
+      "to": "Mittenwald",
+      "dep": "21:15",
+      "arr": "21:35",
+      "depIso": "2026-09-29T19:15:00Z",
+      "arrIso": "2026-09-29T19:35:00Z",
+      "track": null,
+      "tripId": "20260929_20:38_de-DELFI_3412493876",
+      "dur": 20
+     }
+    ]
+   }
+  ]
+ },
+ "2A-0": {
+  "target": "08:30",
+  "from": "mittenwald",
+  "to": "garmisch",
+  "fromStop": "Bahnhof Mittenwald",
+  "toStop": "Bahnhof Garmisch-Partenkirchen",
+  "fromLL": [
+   47.44,
+   11.2655
+  ],
+  "toLL": [
+   47.49145,
+   11.09701
+  ],
+  "best": {
+   "dep": "08:36",
+   "arr": "09:00",
+   "depIso": "2026-09-30T06:36:00Z",
+   "arrIso": "2026-09-30T07:00:00Z",
+   "dur": 24,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 3,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB6 (59456)",
+     "headsign": "München Hbf",
+     "from": "Mittenwald",
+     "to": "Garmisch-Partenkirchen",
+     "dep": "08:36",
+     "arr": "09:00",
+     "depIso": "2026-09-30T06:36:00Z",
+     "arrIso": "2026-09-30T07:00:00Z",
+     "track": "3",
+     "tripId": "20260930_08:36_de-DELFI_3412766595",
+     "dur": 24
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "09:16",
+    "arr": "09:47",
+    "depIso": "2026-09-30T07:16:00Z",
+    "arrIso": "2026-09-30T07:47:00Z",
+    "dur": 31,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "328",
+      "headsign": "Garmisch-Partenkirchen",
+      "from": "Mittenwald",
+      "to": "Garmisch-Partenkirchen",
+      "dep": "09:16",
+      "arr": "09:47",
+      "depIso": "2026-09-30T07:16:00Z",
+      "arrIso": "2026-09-30T07:47:00Z",
+      "track": "3",
+      "tripId": "20260930_08:52_de-DELFI_3380887448",
+      "dur": 31
+     }
+    ]
+   },
+   {
+    "dep": "09:36",
+    "arr": "10:00",
+    "depIso": "2026-09-30T07:36:00Z",
+    "arrIso": "2026-09-30T08:00:00Z",
+    "dur": 24,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 3,
+    "legs": [
+     {
+      "mode": "METRO",
+      "line": "RB6 (5408)",
+      "headsign": "München Hbf",
+      "from": "Mittenwald",
+      "to": "Garmisch-Partenkirchen",
+      "dep": "09:36",
+      "arr": "10:00",
+      "depIso": "2026-09-30T07:36:00Z",
+      "arrIso": "2026-09-30T08:00:00Z",
+      "track": "3",
+      "tripId": "20260930_09:36_de-DELFI_3412766587",
+      "dur": 24
+     }
+    ]
+   },
+   {
+    "dep": "10:16",
+    "arr": "10:46",
+    "depIso": "2026-09-30T08:16:00Z",
+    "arrIso": "2026-09-30T08:46:00Z",
+    "dur": 30,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "328",
+      "headsign": "Garmisch-Partenkirchen",
+      "from": "Mittenwald",
+      "to": "Garmisch-Partenkirchen",
+      "dep": "10:16",
+      "arr": "10:46",
+      "depIso": "2026-09-30T08:16:00Z",
+      "arrIso": "2026-09-30T08:46:00Z",
+      "track": "3",
+      "tripId": "20260930_09:18_de-DELFI_3380887444",
+      "dur": 30
+     }
+    ]
+   }
+  ]
+ },
+ "2A-2": {
+  "target": "10:40",
+  "from": "garmisch",
+  "to": "ettal",
+  "fromStop": "Bahnhof Garmisch-Partenkirchen",
+  "toStop": "Ettal, Kloster (bus)",
+  "fromLL": [
+   47.49145,
+   11.09701
+  ],
+  "toLL": [
+   47.5695,
+   11.0949
+  ],
+  "best": {
+   "dep": "12:00",
+   "arr": "12:24",
+   "depIso": "2026-09-30T10:00:00Z",
+   "arrIso": "2026-09-30T10:24:00Z",
+   "dur": 24,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 9,
+   "legs": [
+    {
+     "mode": "BUS",
+     "line": "326",
+     "headsign": "Oberammergau",
+     "from": "Garmisch-Partenkirchen",
+     "to": "Ettal, Klostergasthof",
+     "dep": "12:00",
+     "arr": "12:24",
+     "depIso": "2026-09-30T10:00:00Z",
+     "arrIso": "2026-09-30T10:24:00Z",
+     "track": "2",
+     "tripId": "20260930_12:00_de-DELFI_3412839248",
+     "dur": 24
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "12:05",
+    "arr": "12:30",
+    "depIso": "2026-09-30T10:05:00Z",
+    "arrIso": "2026-09-30T10:30:00Z",
+    "dur": 25,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "326",
+      "headsign": "Echelsbacher Brücke",
+      "from": "Garmisch-Partenkirchen",
+      "to": "Ettal, Klostergasthof",
+      "dep": "12:05",
+      "arr": "12:30",
+      "depIso": "2026-09-30T10:05:00Z",
+      "arrIso": "2026-09-30T10:30:00Z",
+      "track": "1",
+      "tripId": "20260930_12:05_de-DELFI_3401762227",
+      "dur": 25
+     }
+    ]
+   },
+   {
+    "dep": "12:07",
+    "arr": "12:30",
+    "depIso": "2026-09-30T10:07:00Z",
+    "arrIso": "2026-09-30T10:30:00Z",
+    "dur": 23,
+    "changes": 1,
+    "gaps": [
+     6
+    ],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (59450)",
+      "headsign": "München Hbf",
+      "from": "Garmisch-Partenkirchen",
+      "to": "Oberau",
+      "dep": "12:07",
+      "arr": "12:14",
+      "depIso": "2026-09-30T10:07:00Z",
+      "arrIso": "2026-09-30T10:14:00Z",
+      "track": "3",
+      "tripId": "20260930_12:07_de-DELFI_3412766807",
+      "dur": 7
+     },
+     {
+      "mode": "BUS",
+      "line": "326",
+      "headsign": "Echelsbacher Brücke",
+      "from": "Oberau",
+      "to": "Ettal, Klostergasthof",
+      "dep": "12:20",
+      "arr": "12:30",
+      "depIso": "2026-09-30T10:20:00Z",
+      "arrIso": "2026-09-30T10:30:00Z",
+      "track": "2",
+      "tripId": "20260930_12:05_de-DELFI_3401762227",
+      "dur": 10
+     }
+    ]
+   },
+   {
+    "dep": "12:55",
+    "arr": "13:19",
+    "depIso": "2026-09-30T10:55:00Z",
+    "arrIso": "2026-09-30T11:19:00Z",
+    "dur": 24,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "326",
+      "headsign": "Oberammergau",
+      "from": "Garmisch-Partenkirchen",
+      "to": "Ettal, Klostergasthof",
+      "dep": "12:55",
+      "arr": "13:19",
+      "depIso": "2026-09-30T10:55:00Z",
+      "arrIso": "2026-09-30T11:19:00Z",
+      "track": "2",
+      "tripId": "20260930_12:55_de-DELFI_3412839247",
+      "dur": 24
+     }
+    ]
+   }
+  ]
+ },
+ "2A-4": {
+  "target": "12:00",
+  "from": "ettal",
+  "to": "oberammergau",
+  "fromStop": "Ettal, Kloster (bus)",
+  "toStop": "Bahnhof Oberammergau",
+  "fromLL": [
+   47.5695,
+   11.0949
+  ],
+  "toLL": [
+   47.5983,
+   11.0663
+  ],
+  "best": {
+   "dep": "12:15",
+   "arr": "12:23",
+   "depIso": "2026-09-30T10:15:00Z",
+   "arrIso": "2026-09-30T10:23:00Z",
+   "dur": 8,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 11,
+   "legs": [
+    {
+     "mode": "BUS",
+     "line": "326",
+     "headsign": "Unterammergau, Ammerbrücke",
+     "from": "Ettal, Klostergasthof",
+     "to": "Oberammergau, Tiroler Gasse",
+     "dep": "12:15",
+     "arr": "12:23",
+     "depIso": "2026-09-30T10:15:00Z",
+     "arrIso": "2026-09-30T10:23:00Z",
+     "track": null,
+     "tripId": "20260930_12:15_de-DELFI_3412839275",
+     "dur": 8
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "12:24",
+    "arr": "12:35",
+    "depIso": "2026-09-30T10:24:00Z",
+    "arrIso": "2026-09-30T10:35:00Z",
+    "dur": 11,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 11,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "326",
+      "headsign": "Oberammergau",
+      "from": "Ettal, Klostergasthof",
+      "to": "Oberammergau, Tiroler Gasse",
+      "dep": "12:24",
+      "arr": "12:35",
+      "depIso": "2026-09-30T10:24:00Z",
+      "arrIso": "2026-09-30T10:35:00Z",
+      "track": null,
+      "tripId": "20260930_12:00_de-DELFI_3412839248",
+      "dur": 11
+     }
+    ]
+   },
+   {
+    "dep": "12:30",
+    "arr": "12:41",
+    "depIso": "2026-09-30T10:30:00Z",
+    "arrIso": "2026-09-30T10:41:00Z",
+    "dur": 11,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 11,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "326",
+      "headsign": "Echelsbacher Brücke",
+      "from": "Ettal, Klostergasthof",
+      "to": "Oberammergau, Tiroler Gasse",
+      "dep": "12:30",
+      "arr": "12:41",
+      "depIso": "2026-09-30T10:30:00Z",
+      "arrIso": "2026-09-30T10:41:00Z",
+      "track": null,
+      "tripId": "20260930_12:05_de-DELFI_3401762227",
+      "dur": 11
+     }
+    ]
+   },
+   {
+    "dep": "13:00",
+    "arr": "13:08",
+    "depIso": "2026-09-30T11:00:00Z",
+    "arrIso": "2026-09-30T11:08:00Z",
+    "dur": 8,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 14,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "326",
+      "headsign": "Oberammergau",
+      "from": "Ettal, Klostergasthof",
+      "to": "Oberammergau, Eugen-Papst-Str.",
+      "dep": "13:00",
+      "arr": "13:08",
+      "depIso": "2026-09-30T11:00:00Z",
+      "arrIso": "2026-09-30T11:08:00Z",
+      "track": null,
+      "tripId": "20260930_13:00_de-DELFI_3412839258",
+      "dur": 8
+     }
+    ]
+   }
+  ]
+ },
+ "2A-6": {
+  "target": "14:15",
+  "from": "oberammergau",
+  "to": "murnau",
+  "fromStop": "Bahnhof Oberammergau",
+  "toStop": "Bahnhof Murnau",
+  "fromLL": [
+   47.5983,
+   11.0663
+  ],
+  "toLL": [
+   47.6823,
+   11.193
+  ],
+  "best": {
+   "dep": "14:40",
+   "arr": "15:22",
+   "depIso": "2026-09-30T12:40:00Z",
+   "arrIso": "2026-09-30T13:22:00Z",
+   "dur": 42,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 14,
+   "legs": [
+    {
+     "mode": "BUS",
+     "line": "RB63",
+     "headsign": "Bahnhof, Murnau a. Staffelsee",
+     "from": "Oberammergau",
+     "to": "Murnau",
+     "dep": "14:40",
+     "arr": "15:22",
+     "depIso": "2026-09-30T12:40:00Z",
+     "arrIso": "2026-09-30T13:22:00Z",
+     "track": null,
+     "tripId": "20260930_14:40_de-DELFI_3412718577",
+     "dur": 42
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "14:44",
+    "arr": "15:31",
+    "depIso": "2026-09-30T12:44:00Z",
+    "arrIso": "2026-09-30T13:31:00Z",
+    "dur": 47,
+    "changes": 1,
+    "gaps": [
+     10
+    ],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "326",
+      "headsign": "Garmisch-Partenkirchen",
+      "from": "Oberammergau, Tiroler Gasse",
+      "to": "Oberau",
+      "dep": "14:44",
+      "arr": "15:05",
+      "depIso": "2026-09-30T12:44:00Z",
+      "arrIso": "2026-09-30T13:05:00Z",
+      "track": null,
+      "tripId": "20260930_13:05_de-DELFI_3401762192",
+      "dur": 21
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (5418)",
+      "headsign": "München Hbf",
+      "from": "Oberau",
+      "to": "Murnau",
+      "dep": "15:15",
+      "arr": "15:31",
+      "depIso": "2026-09-30T13:15:00Z",
+      "arrIso": "2026-09-30T13:31:00Z",
+      "track": "1",
+      "tripId": "20260930_14:36_de-DELFI_3412766590",
+      "dur": 16
+     }
+    ]
+   },
+   {
+    "dep": "15:40",
+    "arr": "16:22",
+    "depIso": "2026-09-30T13:40:00Z",
+    "arrIso": "2026-09-30T14:22:00Z",
+    "dur": 42,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 14,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "RB63",
+      "headsign": "Bahnhof, Murnau a. Staffelsee",
+      "from": "Oberammergau",
+      "to": "Murnau",
+      "dep": "15:40",
+      "arr": "16:22",
+      "depIso": "2026-09-30T13:40:00Z",
+      "arrIso": "2026-09-30T14:22:00Z",
+      "track": null,
+      "tripId": "20260930_15:40_de-DELFI_3412718576",
+      "dur": 42
+     }
+    ]
+   },
+   {
+    "dep": "15:44",
+    "arr": "16:31",
+    "depIso": "2026-09-30T13:44:00Z",
+    "arrIso": "2026-09-30T14:31:00Z",
+    "dur": 47,
+    "changes": 1,
+    "gaps": [
+     10
+    ],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "326",
+      "headsign": "Garmisch-Partenkirchen",
+      "from": "Oberammergau, Tiroler Gasse",
+      "to": "Oberau",
+      "dep": "15:44",
+      "arr": "16:05",
+      "depIso": "2026-09-30T13:44:00Z",
+      "arrIso": "2026-09-30T14:05:00Z",
+      "track": null,
+      "tripId": "20260930_15:02_de-DELFI_3401762180",
+      "dur": 21
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (59452)",
+      "headsign": "München Hbf",
+      "from": "Oberau",
+      "to": "Murnau",
+      "dep": "16:15",
+      "arr": "16:31",
+      "depIso": "2026-09-30T14:15:00Z",
+      "arrIso": "2026-09-30T14:31:00Z",
+      "track": "1",
+      "tripId": "20260930_16:07_de-DELFI_3412766798",
+      "dur": 16
+     }
+    ]
+   }
+  ]
+ },
+ "2A-8": {
+  "target": "16:05",
+  "from": "murnau",
+  "to": "augsburg",
+  "fromStop": "Bahnhof Murnau",
+  "toStop": "Augsburg Hauptbahnhof",
+  "fromLL": [
+   47.6823,
+   11.193
+  ],
+  "toLL": [
+   48.36556,
+   10.88639
+  ],
+  "best": {
+   "dep": "16:32",
+   "arr": "18:06",
+   "depIso": "2026-09-30T14:32:00Z",
+   "arrIso": "2026-09-30T16:06:00Z",
+   "dur": 94,
+   "changes": 1,
+   "gaps": [
+    12
+   ],
+   "walkMins": 5,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB6 (59452)",
+     "headsign": "München Hbf",
+     "from": "Murnau",
+     "to": "Pasing",
+     "dep": "16:32",
+     "arr": "17:19",
+     "depIso": "2026-09-30T14:32:00Z",
+     "arrIso": "2026-09-30T15:19:00Z",
+     "track": "1",
+     "tripId": "20260930_16:07_de-DELFI_3412766798",
+     "dur": 47
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB87 (57062)",
+     "headsign": "Augsburg Hbf",
+     "from": "Pasing",
+     "to": "Augsburg Hbf",
+     "dep": "17:31",
+     "arr": "18:06",
+     "depIso": "2026-09-30T15:31:00Z",
+     "arrIso": "2026-09-30T16:06:00Z",
+     "track": "10",
+     "tripId": "20260930_17:24_de-DELFI_3412574634",
+     "dur": 35
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "17:32",
+    "arr": "18:59",
+    "depIso": "2026-09-30T15:32:00Z",
+    "arrIso": "2026-09-30T16:59:00Z",
+    "dur": 87,
+    "changes": 1,
+    "gaps": [
+     3
+    ],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "METRO",
+      "line": "RB6 (5422)",
+      "headsign": "München Hbf",
+      "from": "Murnau",
+      "to": "Pasing",
+      "dep": "17:32",
+      "arr": "18:19",
+      "depIso": "2026-09-30T15:32:00Z",
+      "arrIso": "2026-09-30T16:19:00Z",
+      "track": "1",
+      "tripId": "20260930_16:16_de-DELFI_3412766503",
+      "dur": 47
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB87 (57072)",
+      "headsign": "Augsburg Hbf",
+      "from": "Pasing",
+      "to": "Augsburg Hbf",
+      "dep": "18:22",
+      "arr": "18:59",
+      "depIso": "2026-09-30T16:22:00Z",
+      "arrIso": "2026-09-30T16:59:00Z",
+      "track": "10",
+      "tripId": "20260930_18:14_de-DELFI_3412574629",
+      "dur": 37
+     }
+    ]
+   },
+   {
+    "dep": "18:32",
+    "arr": "20:20",
+    "depIso": "2026-09-30T16:32:00Z",
+    "arrIso": "2026-09-30T18:20:00Z",
+    "dur": 108,
+    "changes": 1,
+    "gaps": [
+     24
+    ],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "METRO",
+      "line": "RB6 (5426)",
+      "headsign": "München Hbf",
+      "from": "Murnau",
+      "to": "Pasing",
+      "dep": "18:32",
+      "arr": "19:19",
+      "depIso": "2026-09-30T16:32:00Z",
+      "arrIso": "2026-09-30T17:19:00Z",
+      "track": "1",
+      "tripId": "20260930_17:36_de-DELFI_3412766499",
+      "dur": 47
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB89 (57178)",
+      "headsign": "Aalen, Hauptbahnhof",
+      "from": "Pasing",
+      "to": "Augsburg Hbf",
+      "dep": "19:43",
+      "arr": "20:20",
+      "depIso": "2026-09-30T17:43:00Z",
+      "arrIso": "2026-09-30T18:20:00Z",
+      "track": "10",
+      "tripId": "20260930_19:35_de-DELFI_3412574800",
+      "dur": 37
+     }
+    ]
+   },
+   {
+    "dep": "19:32",
+    "arr": "20:59",
+    "depIso": "2026-09-30T17:32:00Z",
+    "arrIso": "2026-09-30T18:59:00Z",
+    "dur": 87,
+    "changes": 1,
+    "gaps": [
+     18
+    ],
+    "walkMins": 4,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (5428)",
+      "headsign": "München Hbf",
+      "from": "Murnau",
+      "to": "Pasing",
+      "dep": "19:32",
+      "arr": "20:19",
+      "depIso": "2026-09-30T17:32:00Z",
+      "arrIso": "2026-09-30T18:19:00Z",
+      "track": "1",
+      "tripId": "20260930_18:36_de-DELFI_3412766494",
+      "dur": 47
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "WB 966",
+      "headsign": "Stuttgart Hauptbahnhof",
+      "from": "München Pasing",
+      "to": "Augsburg Hauptbahnhof",
+      "dep": "20:37",
+      "arr": "20:59",
+      "depIso": "2026-09-30T18:37:00Z",
+      "arrIso": "2026-09-30T18:59:00Z",
+      "track": null,
+      "tripId": "20260930_18:44_at-Railway-Current-Reference-Data-2026_34.TA.9-WBD-E-j26-1.21.H",
+      "dur": 22
+     }
+    ]
+   }
+  ]
+ },
+ "2B-0": {
+  "target": "07:30",
+  "from": "mittenwald",
+  "to": "garmisch",
+  "fromStop": "Bahnhof Mittenwald",
+  "toStop": "Bahnhof Garmisch-Partenkirchen",
+  "fromLL": [
+   47.44,
+   11.2655
+  ],
+  "toLL": [
+   47.49145,
+   11.09701
+  ],
+  "best": {
+   "dep": "07:36",
+   "arr": "07:57",
+   "depIso": "2026-09-30T05:36:00Z",
+   "arrIso": "2026-09-30T05:57:00Z",
+   "dur": 21,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 3,
+   "legs": [
+    {
+     "mode": "METRO",
+     "line": "S6",
+     "headsign": "Garmisch-Partenkirchen",
+     "from": "Mittenwald",
+     "to": "Garmisch-Partenkirchen",
+     "dep": "07:36",
+     "arr": "07:57",
+     "depIso": "2026-09-30T05:36:00Z",
+     "arrIso": "2026-09-30T05:57:00Z",
+     "track": "3",
+     "tripId": "20260930_07:36_de-DELFI_3412767379",
+     "dur": 21
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "07:46",
+    "arr": "08:17",
+    "depIso": "2026-09-30T05:46:00Z",
+    "arrIso": "2026-09-30T06:17:00Z",
+    "dur": 31,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "328",
+      "headsign": "Garmisch-Partenkirchen",
+      "from": "Mittenwald",
+      "to": "Garmisch-Partenkirchen",
+      "dep": "07:46",
+      "arr": "08:17",
+      "depIso": "2026-09-30T05:46:00Z",
+      "arrIso": "2026-09-30T06:17:00Z",
+      "track": "3",
+      "tripId": "20260930_07:09_de-DELFI_3380887450",
+      "dur": 31
+     }
+    ]
+   },
+   {
+    "dep": "08:05",
+    "arr": "08:31",
+    "depIso": "2026-09-30T06:05:00Z",
+    "arrIso": "2026-09-30T06:31:00Z",
+    "dur": 26,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 4,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (59426)",
+      "headsign": "Garmisch-Partenkirchen",
+      "from": "Mittenwald",
+      "to": "Garmisch-Partenkirchen",
+      "dep": "08:05",
+      "arr": "08:31",
+      "depIso": "2026-09-30T06:05:00Z",
+      "arrIso": "2026-09-30T06:31:00Z",
+      "track": "2",
+      "tripId": "20260930_08:05_de-DELFI_3412766850",
+      "dur": 26
+     }
+    ]
+   },
+   {
+    "dep": "08:36",
+    "arr": "09:00",
+    "depIso": "2026-09-30T06:36:00Z",
+    "arrIso": "2026-09-30T07:00:00Z",
+    "dur": 24,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 3,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (59456)",
+      "headsign": "München Hbf",
+      "from": "Mittenwald",
+      "to": "Garmisch-Partenkirchen",
+      "dep": "08:36",
+      "arr": "09:00",
+      "depIso": "2026-09-30T06:36:00Z",
+      "arrIso": "2026-09-30T07:00:00Z",
+      "track": "3",
+      "tripId": "20260930_08:36_de-DELFI_3412766595",
+      "dur": 24
+     }
+    ]
+   }
+  ]
+ },
+ "2B-1": {
+  "target": "08:05",
+  "from": "garmisch",
+  "to": "fussen",
+  "fromStop": "Bahnhof Garmisch-Partenkirchen",
+  "toStop": "Bahnhof Füssen",
+  "fromLL": [
+   47.49145,
+   11.09701
+  ],
+  "toLL": [
+   47.57026,
+   10.69782
+  ],
+  "best": {
+   "dep": "09:04",
+   "arr": "10:30",
+   "depIso": "2026-09-30T07:04:00Z",
+   "arrIso": "2026-09-30T08:30:00Z",
+   "dur": 86,
+   "changes": 1,
+   "gaps": [
+    5
+   ],
+   "walkMins": 7,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB60 (5510)",
+     "headsign": "Pfronten-Steinach",
+     "from": "Garmisch-Partenkirchen",
+     "to": "Reutte Bahnhof",
+     "dep": "09:04",
+     "arr": "10:00",
+     "depIso": "2026-09-30T07:04:00Z",
+     "arrIso": "2026-09-30T08:00:00Z",
+     "track": "3",
+     "tripId": "20260930_07:29_de-DELFI_3412767542",
+     "dur": 56
+    },
+    {
+     "mode": "BUS",
+     "line": "100",
+     "headsign": "Füssen",
+     "from": "Reutte Bahnhof",
+     "to": "Füssen",
+     "dep": "10:05",
+     "arr": "10:30",
+     "depIso": "2026-09-30T08:05:00Z",
+     "arrIso": "2026-09-30T08:30:00Z",
+     "track": null,
+     "tripId": "20260930_09:50_de-DELFI_3374605724",
+     "dur": 25
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "09:40",
+    "arr": "12:00",
+    "depIso": "2026-09-30T07:40:00Z",
+    "arrIso": "2026-09-30T10:00:00Z",
+    "dur": 140,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 4,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "326",
+      "headsign": "Füssen",
+      "from": "Garmisch-Partenkirchen",
+      "to": "Füssen",
+      "dep": "09:40",
+      "arr": "12:00",
+      "depIso": "2026-09-30T07:40:00Z",
+      "arrIso": "2026-09-30T10:00:00Z",
+      "track": "1",
+      "tripId": "20260930_09:40_de-DELFI_3401762211",
+      "dur": 140
+     }
+    ]
+   },
+   {
+    "dep": "10:04",
+    "arr": "12:50",
+    "depIso": "2026-09-30T08:04:00Z",
+    "arrIso": "2026-09-30T10:50:00Z",
+    "dur": 166,
+    "changes": 1,
+    "gaps": [
+     65
+    ],
+    "walkMins": 7,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB60 (5512)",
+      "headsign": "Pfronten-Steinach",
+      "from": "Garmisch-Partenkirchen",
+      "to": "Reutte Bahnhof",
+      "dep": "10:04",
+      "arr": "11:00",
+      "depIso": "2026-09-30T08:04:00Z",
+      "arrIso": "2026-09-30T09:00:00Z",
+      "track": "3",
+      "tripId": "20260930_08:28_de-DELFI_3412767508",
+      "dur": 56
+     },
+     {
+      "mode": "BUS",
+      "line": "100",
+      "headsign": "Füssen",
+      "from": "Reutte Bahnhof",
+      "to": "Füssen",
+      "dep": "12:05",
+      "arr": "12:50",
+      "depIso": "2026-09-30T10:05:00Z",
+      "arrIso": "2026-09-30T10:50:00Z",
+      "track": null,
+      "tripId": "20260930_11:57_de-DELFI_3374605492",
+      "dur": 45
+     }
+    ]
+   },
+   {
+    "dep": "13:04",
+    "arr": "14:37",
+    "depIso": "2026-09-30T11:04:00Z",
+    "arrIso": "2026-09-30T12:37:00Z",
+    "dur": 93,
+    "changes": 1,
+    "gaps": [
+     5
+    ],
+    "walkMins": 7,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB60 (5516)",
+      "headsign": "Pfronten-Steinach",
+      "from": "Garmisch-Partenkirchen",
+      "to": "Reutte Bahnhof",
+      "dep": "13:04",
+      "arr": "14:00",
+      "depIso": "2026-09-30T11:04:00Z",
+      "arrIso": "2026-09-30T12:00:00Z",
+      "track": "3",
+      "tripId": "20260930_11:28_de-DELFI_3412767488",
+      "dur": 56
+     },
+     {
+      "mode": "BUS",
+      "line": "100",
+      "headsign": "Füssen",
+      "from": "Reutte Bahnhof",
+      "to": "Füssen",
+      "dep": "14:05",
+      "arr": "14:37",
+      "depIso": "2026-09-30T12:05:00Z",
+      "arrIso": "2026-09-30T12:37:00Z",
+      "track": null,
+      "tripId": "20260930_13:52_de-DELFI_3374605532",
+      "dur": 32
+     }
+    ]
+   }
+  ]
+ },
+ "2B-3": {
+  "target": "15:05",
+  "from": "fussen",
+  "to": "augsburg",
+  "fromStop": "Bahnhof Füssen",
+  "toStop": "Augsburg Hauptbahnhof",
+  "fromLL": [
+   47.57026,
+   10.69782
+  ],
+  "toLL": [
+   48.36556,
+   10.88639
+  ],
+  "best": {
+   "dep": "15:20",
+   "arr": "17:08",
+   "depIso": "2026-09-30T13:20:00Z",
+   "arrIso": "2026-09-30T15:08:00Z",
+   "dur": 108,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 4,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB77 (62767)",
+     "headsign": "Augsburg Hbf",
+     "from": "Füssen",
+     "to": "Augsburg Hbf",
+     "dep": "15:20",
+     "arr": "17:08",
+     "depIso": "2026-09-30T13:20:00Z",
+     "arrIso": "2026-09-30T15:08:00Z",
+     "track": "3",
+     "tripId": "20260930_15:20_de-DELFI_3412386152",
+     "dur": 108
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "16:20",
+    "arr": "18:09",
+    "depIso": "2026-09-30T14:20:00Z",
+    "arrIso": "2026-09-30T16:09:00Z",
+    "dur": 109,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 4,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB77 (62777)",
+      "headsign": "Augsburg Hbf",
+      "from": "Füssen",
+      "to": "Augsburg Hbf",
+      "dep": "16:20",
+      "arr": "18:09",
+      "depIso": "2026-09-30T14:20:00Z",
+      "arrIso": "2026-09-30T16:09:00Z",
+      "track": "3",
+      "tripId": "20260930_16:20_de-DELFI_3412386142",
+      "dur": 109
+     }
+    ]
+   },
+   {
+    "dep": "17:20",
+    "arr": "19:09",
+    "depIso": "2026-09-30T15:20:00Z",
+    "arrIso": "2026-09-30T17:09:00Z",
+    "dur": 109,
+    "changes": 1,
+    "gaps": [
+     8
+    ],
+    "walkMins": 6,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB68 (62709)",
+      "headsign": "Pasing",
+      "from": "Füssen",
+      "to": "Buchloe",
+      "dep": "17:20",
+      "arr": "18:30",
+      "depIso": "2026-09-30T15:20:00Z",
+      "arrIso": "2026-09-30T16:30:00Z",
+      "track": "3",
+      "tripId": "20260930_17:20_de-DELFI_3412384877",
+      "dur": 70
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB77 (62785)",
+      "headsign": "Augsburg Hbf",
+      "from": "Buchloe",
+      "to": "Augsburg Hbf",
+      "dep": "18:38",
+      "arr": "19:09",
+      "depIso": "2026-09-30T16:38:00Z",
+      "arrIso": "2026-09-30T17:09:00Z",
+      "track": "1",
+      "tripId": "20260930_18:38_de-DELFI_3412386334",
+      "dur": 31
+     }
+    ]
+   },
+   {
+    "dep": "18:20",
+    "arr": "20:09",
+    "depIso": "2026-09-30T16:20:00Z",
+    "arrIso": "2026-09-30T18:09:00Z",
+    "dur": 109,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 4,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB77 (62791)",
+      "headsign": "Augsburg Hbf",
+      "from": "Füssen",
+      "to": "Augsburg Hbf",
+      "dep": "18:20",
+      "arr": "20:09",
+      "depIso": "2026-09-30T16:20:00Z",
+      "arrIso": "2026-09-30T18:09:00Z",
+      "track": "3",
+      "tripId": "20260930_18:20_de-DELFI_3412386188",
+      "dur": 109
+     }
+    ]
+   }
+  ]
+ },
+ "3A-0": {
+  "target": "08:30",
+  "from": "augsburg",
+  "to": "munich",
+  "fromStop": "Augsburg Hauptbahnhof",
+  "toStop": "München Hauptbahnhof",
+  "fromLL": [
+   48.36556,
+   10.88639
+  ],
+  "toLL": [
+   48.14044,
+   11.55772
+  ],
+  "best": {
+   "dep": "08:38",
+   "arr": "09:23",
+   "depIso": "2026-10-01T06:38:00Z",
+   "arrIso": "2026-10-01T07:23:00Z",
+   "dur": 45,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 6,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE9 (57033)",
+     "headsign": "München Hbf",
+     "from": "Augsburg Hbf",
+     "to": "München Hbf",
+     "dep": "08:38",
+     "arr": "09:23",
+     "depIso": "2026-10-01T06:38:00Z",
+     "arrIso": "2026-10-01T07:23:00Z",
+     "track": "6",
+     "tripId": "20261001_07:19_de-DELFI_3412577470",
+     "dur": 45
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "09:05",
+    "arr": "09:39",
+    "depIso": "2026-10-01T07:05:00Z",
+    "arrIso": "2026-10-01T07:39:00Z",
+    "dur": 34,
+    "changes": 1,
+    "gaps": [
+     3
+    ],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "WB 963",
+      "headsign": "Wien Westbahnhof",
+      "from": "Augsburg Hauptbahnhof",
+      "to": "München Pasing",
+      "dep": "09:05",
+      "arr": "09:26",
+      "depIso": "2026-10-01T07:05:00Z",
+      "arrIso": "2026-10-01T07:26:00Z",
+      "track": null,
+      "tripId": "20261001_07:12_at-Railway-Current-Reference-Data-2026_17.TA.9-WBD-E-j26-1.8.R",
+      "dur": 21
+     },
+     {
+      "mode": "METRO",
+      "line": "S3",
+      "headsign": "Holzkirchen",
+      "from": "Pasing",
+      "to": "Hauptbahnhof (U, Tram)",
+      "dep": "09:29",
+      "arr": "09:39",
+      "depIso": "2026-10-01T07:29:00Z",
+      "arrIso": "2026-10-01T07:39:00Z",
+      "track": "6",
+      "tripId": "20261001_09:04_de-DELFI_3412526021",
+      "dur": 10
+     }
+    ]
+   },
+   {
+    "dep": "09:08",
+    "arr": "09:56",
+    "depIso": "2026-10-01T07:08:00Z",
+    "arrIso": "2026-10-01T07:56:00Z",
+    "dur": 48,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB86 (57135)",
+      "headsign": "München Hbf",
+      "from": "Augsburg Hbf",
+      "to": "München Hbf",
+      "dep": "09:08",
+      "arr": "09:56",
+      "depIso": "2026-10-01T07:08:00Z",
+      "arrIso": "2026-10-01T07:56:00Z",
+      "track": "6",
+      "tripId": "20261001_08:34_de-DELFI_3412574525",
+      "dur": 48
+     }
+    ]
+   },
+   {
+    "dep": "09:38",
+    "arr": "10:20",
+    "depIso": "2026-10-01T07:38:00Z",
+    "arrIso": "2026-10-01T08:20:00Z",
+    "dur": 42,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57137)",
+      "headsign": "München Hbf",
+      "from": "Augsburg Hbf",
+      "to": "München Hbf",
+      "dep": "09:38",
+      "arr": "10:20",
+      "depIso": "2026-10-01T07:38:00Z",
+      "arrIso": "2026-10-01T08:20:00Z",
+      "track": "9",
+      "tripId": "20261001_06:41_de-DELFI_3412576916",
+      "dur": 42
+     }
+    ]
+   }
+  ]
+ },
+ "3A-2": {
+  "target": "18:40",
+  "from": "munich",
+  "to": "augsburg",
+  "fromStop": "München Hauptbahnhof",
+  "toStop": "Augsburg Hauptbahnhof",
+  "fromLL": [
+   48.14044,
+   11.55772
+  ],
+  "toLL": [
+   48.36556,
+   10.88639
+  ],
+  "best": {
+   "dep": "18:57",
+   "arr": "19:46",
+   "depIso": "2026-10-01T16:57:00Z",
+   "arrIso": "2026-10-01T17:46:00Z",
+   "dur": 49,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 6,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB86 (57076)",
+     "headsign": "Dinkelscherben",
+     "from": "München Hbf",
+     "to": "Augsburg Hbf",
+     "dep": "18:57",
+     "arr": "19:46",
+     "depIso": "2026-10-01T16:57:00Z",
+     "arrIso": "2026-10-01T17:46:00Z",
+     "track": "12",
+     "tripId": "20261001_18:57_de-DELFI_3412574460",
+     "dur": 49
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "19:35",
+    "arr": "20:20",
+    "depIso": "2026-10-01T17:35:00Z",
+    "arrIso": "2026-10-01T18:20:00Z",
+    "dur": 45,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 6,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB89 (57178)",
+      "headsign": "Aalen, Hauptbahnhof",
+      "from": "München Hbf",
+      "to": "Augsburg Hbf",
+      "dep": "19:35",
+      "arr": "20:20",
+      "depIso": "2026-10-01T17:35:00Z",
+      "arrIso": "2026-10-01T18:20:00Z",
+      "track": "12",
+      "tripId": "20261001_19:35_de-DELFI_3412574800",
+      "dur": 45
+     }
+    ]
+   },
+   {
+    "dep": "20:03",
+    "arr": "20:46",
+    "depIso": "2026-10-01T18:03:00Z",
+    "arrIso": "2026-10-01T18:46:00Z",
+    "dur": 43,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB86 (57080)",
+      "headsign": "Dinkelscherben",
+      "from": "München Hbf",
+      "to": "Augsburg Hbf",
+      "dep": "20:03",
+      "arr": "20:46",
+      "depIso": "2026-10-01T18:03:00Z",
+      "arrIso": "2026-10-01T18:46:00Z",
+      "track": "10",
+      "tripId": "20261001_20:03_de-DELFI_3412574456",
+      "dur": 43
+     }
+    ]
+   },
+   {
+    "dep": "20:21",
+    "arr": "21:16",
+    "depIso": "2026-10-01T18:21:00Z",
+    "arrIso": "2026-10-01T19:16:00Z",
+    "dur": 55,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB87 (57082)",
+      "headsign": "Augsburg Hbf",
+      "from": "München Hbf",
+      "to": "Augsburg Hbf",
+      "dep": "20:21",
+      "arr": "21:16",
+      "depIso": "2026-10-01T18:21:00Z",
+      "arrIso": "2026-10-01T19:16:00Z",
+      "track": "17",
+      "tripId": "20261001_20:21_de-DELFI_3412574624",
+      "dur": 55
+     }
+    ]
+   }
+  ]
+ },
+ "3B-0": {
+  "target": "08:00",
+  "from": "augsburg",
+  "to": "landsberg",
+  "fromStop": "Augsburg Hauptbahnhof",
+  "toStop": "Bahnhof Landsberg (Lech)",
+  "fromLL": [
+   48.36556,
+   10.88639
+  ],
+  "toLL": [
+   48.04727,
+   10.8717
+  ],
+  "best": {
+   "dep": "08:13",
+   "arr": "09:18",
+   "depIso": "2026-10-01T06:13:00Z",
+   "arrIso": "2026-10-01T07:18:00Z",
+   "dur": 65,
+   "changes": 1,
+   "gaps": [
+    20
+   ],
+   "walkMins": 8,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB69 (62914)",
+     "headsign": "Kaufering",
+     "from": "Augsburg Hbf",
+     "to": "Kaufering",
+     "dep": "08:13",
+     "arr": "08:52",
+     "depIso": "2026-10-01T06:13:00Z",
+     "arrIso": "2026-10-01T06:52:00Z",
+     "track": null,
+     "tripId": "20261001_08:13_de-DELFI_3412385149",
+     "dur": 39
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB69 (28156)",
+     "headsign": "Landsberg (Lech)",
+     "from": "Kaufering",
+     "to": "Landsberg (Lech)",
+     "dep": "09:12",
+     "arr": "09:18",
+     "depIso": "2026-10-01T07:12:00Z",
+     "arrIso": "2026-10-01T07:18:00Z",
+     "track": null,
+     "tripId": "20261001_09:12_de-DELFI_3412384971",
+     "dur": 6
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "09:13",
+    "arr": "10:13",
+    "depIso": "2026-10-01T07:13:00Z",
+    "arrIso": "2026-10-01T08:13:00Z",
+    "dur": 60,
+    "changes": 1,
+    "gaps": [
+     15
+    ],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB69 (62916)",
+      "headsign": "Kaufering",
+      "from": "Augsburg Hbf",
+      "to": "Kaufering",
+      "dep": "09:13",
+      "arr": "09:52",
+      "depIso": "2026-10-01T07:13:00Z",
+      "arrIso": "2026-10-01T07:52:00Z",
+      "track": "12",
+      "tripId": "20261001_09:13_de-DELFI_3412385144",
+      "dur": 39
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB69 (28158)",
+      "headsign": "Landsberg (Lech)",
+      "from": "Kaufering",
+      "to": "Landsberg (Lech)",
+      "dep": "10:07",
+      "arr": "10:13",
+      "depIso": "2026-10-01T08:07:00Z",
+      "arrIso": "2026-10-01T08:13:00Z",
+      "track": null,
+      "tripId": "20261001_10:07_de-DELFI_3412384970",
+      "dur": 6
+     }
+    ]
+   },
+   {
+    "dep": "09:18",
+    "arr": "10:30",
+    "depIso": "2026-10-01T07:18:00Z",
+    "arrIso": "2026-10-01T08:30:00Z",
+    "dur": 72,
+    "changes": 1,
+    "gaps": [
+     4
+    ],
+    "walkMins": 7,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB67 (86525)",
+      "headsign": "Weilheim (Oberbay)",
+      "from": "Augsburg Hbf",
+      "to": "Geltendorf",
+      "dep": "09:18",
+      "arr": "09:58",
+      "depIso": "2026-10-01T07:18:00Z",
+      "arrIso": "2026-10-01T07:58:00Z",
+      "track": "9",
+      "tripId": "20261001_09:13_de-DELFI_3412384412",
+      "dur": 40
+     },
+     {
+      "mode": "BUS",
+      "line": "817",
+      "headsign": "Landsberg (Lech)",
+      "from": "Geltendorf",
+      "to": "Landsberg (Lech)",
+      "dep": "10:02",
+      "arr": "10:30",
+      "depIso": "2026-10-01T08:02:00Z",
+      "arrIso": "2026-10-01T08:30:00Z",
+      "track": "1",
+      "tripId": "20261001_10:02_de-DELFI_3412835936",
+      "dur": 28
+     }
+    ]
+   },
+   {
+    "dep": "10:13",
+    "arr": "11:13",
+    "depIso": "2026-10-01T08:13:00Z",
+    "arrIso": "2026-10-01T09:13:00Z",
+    "dur": 60,
+    "changes": 1,
+    "gaps": [
+     15
+    ],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB69 (62918)",
+      "headsign": "Kaufering",
+      "from": "Augsburg Hbf",
+      "to": "Kaufering",
+      "dep": "10:13",
+      "arr": "10:52",
+      "depIso": "2026-10-01T08:13:00Z",
+      "arrIso": "2026-10-01T08:52:00Z",
+      "track": "901",
+      "tripId": "20261001_10:13_de-DELFI_3412385124",
+      "dur": 39
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB69 (28160)",
+      "headsign": "Landsberg (Lech)",
+      "from": "Kaufering",
+      "to": "Landsberg (Lech)",
+      "dep": "11:07",
+      "arr": "11:13",
+      "depIso": "2026-10-01T09:07:00Z",
+      "arrIso": "2026-10-01T09:13:00Z",
+      "track": null,
+      "tripId": "20261001_11:07_de-DELFI_3412384969",
+      "dur": 6
+     }
+    ]
+   }
+  ]
+ },
+ "3B-2": {
+  "target": "11:10",
+  "from": "landsberg",
+  "to": "munich",
+  "fromStop": "Bahnhof Landsberg (Lech)",
+  "toStop": "München Hauptbahnhof",
+  "fromLL": [
+   48.04727,
+   10.8717
+  ],
+  "toLL": [
+   48.14044,
+   11.55772
+  ],
+  "best": {
+   "dep": "11:30",
+   "arr": "12:57",
+   "depIso": "2026-10-01T09:30:00Z",
+   "arrIso": "2026-10-01T10:57:00Z",
+   "dur": 87,
+   "changes": 1,
+   "gaps": [
+    10
+   ],
+   "walkMins": 10,
+   "legs": [
+    {
+     "mode": "BUS",
+     "line": "817",
+     "headsign": "Geltendorf",
+     "from": "Landsberg (Lech)",
+     "to": "Geltendorf",
+     "dep": "11:30",
+     "arr": "11:58",
+     "depIso": "2026-10-01T09:30:00Z",
+     "arrIso": "2026-10-01T09:58:00Z",
+     "track": "7",
+     "tripId": "20261001_11:30_de-DELFI_3412835950",
+     "dur": 28
+    },
+    {
+     "mode": "METRO",
+     "line": "S4",
+     "headsign": "Haar",
+     "from": "Geltendorf",
+     "to": "Hauptbahnhof (U, Tram)",
+     "dep": "12:08",
+     "arr": "12:57",
+     "depIso": "2026-10-01T10:08:00Z",
+     "arrIso": "2026-10-01T10:57:00Z",
+     "track": "3",
+     "tripId": "20261001_12:08_de-DELFI_3412522139",
+     "dur": 49
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "11:46",
+    "arr": "12:58",
+    "depIso": "2026-10-01T09:46:00Z",
+    "arrIso": "2026-10-01T10:58:00Z",
+    "dur": 72,
+    "changes": 1,
+    "gaps": [
+     17
+    ],
+    "walkMins": 14,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB69 (28167)",
+      "headsign": "Kaufering",
+      "from": "Landsberg (Lech)",
+      "to": "Kaufering",
+      "dep": "11:46",
+      "arr": "11:52",
+      "depIso": "2026-10-01T09:46:00Z",
+      "arrIso": "2026-10-01T09:52:00Z",
+      "track": "1",
+      "tripId": "20261001_11:46_de-DELFI_3412385374",
+      "dur": 6
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE70 (3879)",
+      "headsign": "München Hbf",
+      "from": "Kaufering",
+      "to": "München Hbf",
+      "dep": "12:09",
+      "arr": "12:58",
+      "depIso": "2026-10-01T10:09:00Z",
+      "arrIso": "2026-10-01T10:58:00Z",
+      "track": "3",
+      "tripId": "20261001_11:13_de-DELFI_3412765105",
+      "dur": 49
+     }
+    ]
+   },
+   {
+    "dep": "11:50",
+    "arr": "13:32",
+    "depIso": "2026-10-01T09:50:00Z",
+    "arrIso": "2026-10-01T11:32:00Z",
+    "dur": 102,
+    "changes": 2,
+    "gaps": [
+     5,
+     4
+    ],
+    "walkMins": 14,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "894",
+      "headsign": "Schondorf (Bay)",
+      "from": "Landsberg (Lech)",
+      "to": "Neugreifenberg, Brücke",
+      "dep": "11:50",
+      "arr": "12:21",
+      "depIso": "2026-10-01T09:50:00Z",
+      "arrIso": "2026-10-01T10:21:00Z",
+      "track": "8",
+      "tripId": "20261001_11:50_de-DELFI_3412836932",
+      "dur": 31
+     },
+     {
+      "mode": "BUS",
+      "line": "X910",
+      "headsign": "Klinikum Großhadern (U)",
+      "from": "Neugreifenberg, Brücke",
+      "to": "Weßling",
+      "dep": "12:26",
+      "arr": "12:53",
+      "depIso": "2026-10-01T10:26:00Z",
+      "arrIso": "2026-10-01T10:53:00Z",
+      "track": null,
+      "tripId": "20261001_12:07_de-DELFI_3380886797",
+      "dur": 27
+     },
+     {
+      "mode": "METRO",
+      "line": "S8",
+      "headsign": "Flughafen München",
+      "from": "Weßling",
+      "to": "Hauptbahnhof (U, Tram)",
+      "dep": "12:57",
+      "arr": "13:32",
+      "depIso": "2026-10-01T10:57:00Z",
+      "arrIso": "2026-10-01T11:32:00Z",
+      "track": "1",
+      "tripId": "20261001_12:45_de-DELFI_3412529327",
+      "dur": 35
+     }
+    ]
+   },
+   {
+    "dep": "12:25",
+    "arr": "13:56",
+    "depIso": "2026-10-01T10:25:00Z",
+    "arrIso": "2026-10-01T11:56:00Z",
+    "dur": 91,
+    "changes": 1,
+    "gaps": [
+     17
+    ],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "897",
+      "headsign": "Mering",
+      "from": "Landsberg (Lech)",
+      "to": "Mering",
+      "dep": "12:25",
+      "arr": "13:08",
+      "depIso": "2026-10-01T10:25:00Z",
+      "arrIso": "2026-10-01T11:08:00Z",
+      "track": "9",
+      "tripId": "20261001_12:20_de-DELFI_3412837012",
+      "dur": 43
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB87 (57051)",
+      "headsign": "München Hbf",
+      "from": "Mering",
+      "to": "München Hbf",
+      "dep": "13:25",
+      "arr": "13:56",
+      "depIso": "2026-10-01T11:25:00Z",
+      "arrIso": "2026-10-01T11:56:00Z",
+      "track": "4",
+      "tripId": "20261001_12:20_de-DELFI_3412574690",
+      "dur": 31
+     }
+    ]
+   }
+  ]
+ },
+ "3B-4": {
+  "target": "19:10",
+  "from": "munich",
+  "to": "augsburg",
+  "fromStop": "München Hauptbahnhof",
+  "toStop": "Augsburg Hauptbahnhof",
+  "fromLL": [
+   48.14044,
+   11.55772
+  ],
+  "toLL": [
+   48.36556,
+   10.88639
+  ],
+  "best": {
+   "dep": "19:35",
+   "arr": "20:20",
+   "depIso": "2026-10-01T17:35:00Z",
+   "arrIso": "2026-10-01T18:20:00Z",
+   "dur": 45,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 6,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB89 (57178)",
+     "headsign": "Aalen, Hauptbahnhof",
+     "from": "München Hbf",
+     "to": "Augsburg Hbf",
+     "dep": "19:35",
+     "arr": "20:20",
+     "depIso": "2026-10-01T17:35:00Z",
+     "arrIso": "2026-10-01T18:20:00Z",
+     "track": "12",
+     "tripId": "20261001_19:35_de-DELFI_3412574800",
+     "dur": 45
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "20:03",
+    "arr": "20:46",
+    "depIso": "2026-10-01T18:03:00Z",
+    "arrIso": "2026-10-01T18:46:00Z",
+    "dur": 43,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB86 (57080)",
+      "headsign": "Dinkelscherben",
+      "from": "München Hbf",
+      "to": "Augsburg Hbf",
+      "dep": "20:03",
+      "arr": "20:46",
+      "depIso": "2026-10-01T18:03:00Z",
+      "arrIso": "2026-10-01T18:46:00Z",
+      "track": "10",
+      "tripId": "20261001_20:03_de-DELFI_3412574456",
+      "dur": 43
+     }
+    ]
+   },
+   {
+    "dep": "20:21",
+    "arr": "21:16",
+    "depIso": "2026-10-01T18:21:00Z",
+    "arrIso": "2026-10-01T19:16:00Z",
+    "dur": 55,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB87 (57082)",
+      "headsign": "Augsburg Hbf",
+      "from": "München Hbf",
+      "to": "Augsburg Hbf",
+      "dep": "20:21",
+      "arr": "21:16",
+      "depIso": "2026-10-01T18:21:00Z",
+      "arrIso": "2026-10-01T19:16:00Z",
+      "track": "17",
+      "tripId": "20261001_20:21_de-DELFI_3412574624",
+      "dur": 55
+     }
+    ]
+   },
+   {
+    "dep": "20:27",
+    "arr": "20:59",
+    "depIso": "2026-10-01T18:27:00Z",
+    "arrIso": "2026-10-01T18:59:00Z",
+    "dur": 32,
+    "changes": 1,
+    "gaps": [
+     4
+    ],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (59465)",
+      "headsign": "Mittenwald",
+      "from": "München Hbf",
+      "to": "Pasing",
+      "dep": "20:27",
+      "arr": "20:33",
+      "depIso": "2026-10-01T18:27:00Z",
+      "arrIso": "2026-10-01T18:33:00Z",
+      "track": "27",
+      "tripId": "20261001_20:27_de-DELFI_3412767246",
+      "dur": 6
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "DRF (966)",
+      "headsign": "Hauptbahnhof (oben)",
+      "from": "Pasing",
+      "to": "Augsburg Hbf",
+      "dep": "20:37",
+      "arr": "20:59",
+      "depIso": "2026-10-01T18:37:00Z",
+      "arrIso": "2026-10-01T18:59:00Z",
+      "track": "10",
+      "tripId": "20261001_16:08_de-DELFI_3412787618",
+      "dur": 22
+     }
+    ]
+   }
+  ]
+ },
+ "3C-1": {
+  "target": "15:40",
+  "from": "augsburg",
+  "to": "munich",
+  "fromStop": "Augsburg Hauptbahnhof",
+  "toStop": "München Hauptbahnhof",
+  "fromLL": [
+   48.36556,
+   10.88639
+  ],
+  "toLL": [
+   48.14044,
+   11.55772
+  ],
+  "best": {
+   "dep": "16:08",
+   "arr": "16:53",
+   "depIso": "2026-10-01T14:08:00Z",
+   "arrIso": "2026-10-01T14:53:00Z",
+   "dur": 45,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 5,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB86 (57163)",
+     "headsign": "München Hbf",
+     "from": "Augsburg Hbf",
+     "to": "München Hbf",
+     "dep": "16:08",
+     "arr": "16:53",
+     "depIso": "2026-10-01T14:08:00Z",
+     "arrIso": "2026-10-01T14:53:00Z",
+     "track": "8",
+     "tripId": "20261001_15:30_de-DELFI_3412574504",
+     "dur": 45
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "16:38",
+    "arr": "17:21",
+    "depIso": "2026-10-01T14:38:00Z",
+    "arrIso": "2026-10-01T15:21:00Z",
+    "dur": 43,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE9 (57065)",
+      "headsign": "München Hbf",
+      "from": "Augsburg Hbf",
+      "to": "München Hbf",
+      "dep": "16:38",
+      "arr": "17:21",
+      "depIso": "2026-10-01T14:38:00Z",
+      "arrIso": "2026-10-01T15:21:00Z",
+      "track": "6",
+      "tripId": "20261001_15:19_de-DELFI_3412577457",
+      "dur": 43
+     }
+    ]
+   },
+   {
+    "dep": "17:05",
+    "arr": "17:39",
+    "depIso": "2026-10-01T15:05:00Z",
+    "arrIso": "2026-10-01T15:39:00Z",
+    "dur": 34,
+    "changes": 1,
+    "gaps": [
+     3
+    ],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "WB 969",
+      "headsign": "Wien Westbahnhof",
+      "from": "Augsburg Hauptbahnhof",
+      "to": "München Pasing",
+      "dep": "17:05",
+      "arr": "17:26",
+      "depIso": "2026-10-01T15:05:00Z",
+      "arrIso": "2026-10-01T15:26:00Z",
+      "track": null,
+      "tripId": "20261001_15:12_at-Railway-Current-Reference-Data-2026_9.TA.9-WBD-E-j26-1.3.R",
+      "dur": 21
+     },
+     {
+      "mode": "METRO",
+      "line": "S3",
+      "headsign": "Holzkirchen",
+      "from": "Pasing",
+      "to": "Hauptbahnhof (U, Tram)",
+      "dep": "17:29",
+      "arr": "17:39",
+      "depIso": "2026-10-01T15:29:00Z",
+      "arrIso": "2026-10-01T15:39:00Z",
+      "track": "6",
+      "tripId": "20261001_17:04_de-DELFI_3412525989",
+      "dur": 10
+     }
+    ]
+   },
+   {
+    "dep": "17:08",
+    "arr": "17:56",
+    "depIso": "2026-10-01T15:08:00Z",
+    "arrIso": "2026-10-01T15:56:00Z",
+    "dur": 48,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB86 (57167)",
+      "headsign": "München Hbf",
+      "from": "Augsburg Hbf",
+      "to": "München Hbf",
+      "dep": "17:08",
+      "arr": "17:56",
+      "depIso": "2026-10-01T15:08:00Z",
+      "arrIso": "2026-10-01T15:56:00Z",
+      "track": "6",
+      "tripId": "20261001_16:33_de-DELFI_3412574498",
+      "dur": 48
+     }
+    ]
+   }
+  ]
+ },
+ "3C-3": {
+  "target": "21:40",
+  "from": "munich",
+  "to": "augsburg",
+  "fromStop": "München Hauptbahnhof",
+  "toStop": "Augsburg Hauptbahnhof",
+  "fromLL": [
+   48.14044,
+   11.55772
+  ],
+  "toLL": [
+   48.36556,
+   10.88639
+  ],
+  "best": {
+   "dep": "21:59",
+   "arr": "22:46",
+   "depIso": "2026-10-01T19:59:00Z",
+   "arrIso": "2026-10-01T20:46:00Z",
+   "dur": 47,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 5,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE89 (57186)",
+     "headsign": "Aalen, Hauptbahnhof",
+     "from": "München Hbf",
+     "to": "Augsburg Hbf",
+     "dep": "21:59",
+     "arr": "22:46",
+     "depIso": "2026-10-01T19:59:00Z",
+     "arrIso": "2026-10-01T20:46:00Z",
+     "track": "15",
+     "tripId": "20261001_21:59_de-DELFI_3412577000",
+     "dur": 47
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "22:10",
+    "arr": "23:38",
+    "depIso": "2026-10-01T20:10:00Z",
+    "arrIso": "2026-10-01T21:38:00Z",
+    "dur": 88,
+    "changes": 1,
+    "gaps": [
+     13
+    ],
+    "walkMins": 8,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE72 (78971)",
+      "headsign": "Memmingen, Bahnhof ZOB",
+      "from": "München Hbf",
+      "to": "Geltendorf",
+      "dep": "22:10",
+      "arr": "22:46",
+      "depIso": "2026-10-01T20:10:00Z",
+      "arrIso": "2026-10-01T20:46:00Z",
+      "track": "12",
+      "tripId": "20261001_22:10_de-DELFI_3412576531",
+      "dur": 36
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB67 (86598)",
+      "headsign": "Augsburg-Oberhausen",
+      "from": "Geltendorf",
+      "to": "Augsburg Hbf",
+      "dep": "22:59",
+      "arr": "23:38",
+      "depIso": "2026-10-01T20:59:00Z",
+      "arrIso": "2026-10-01T21:38:00Z",
+      "track": "5",
+      "tripId": "20261001_22:15_de-DELFI_3412383930",
+      "dur": 39
+     }
+    ]
+   },
+   {
+    "dep": "22:58",
+    "arr": "23:46",
+    "depIso": "2026-10-01T20:58:00Z",
+    "arrIso": "2026-10-01T21:46:00Z",
+    "dur": 48,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE9 (57088)",
+      "headsign": "Ulm Hauptbahnhof",
+      "from": "München Hbf",
+      "to": "Augsburg Hbf",
+      "dep": "22:58",
+      "arr": "23:46",
+      "depIso": "2026-10-01T20:58:00Z",
+      "arrIso": "2026-10-01T21:46:00Z",
+      "track": "16",
+      "tripId": "20261001_22:58_de-DELFI_3412577224",
+      "dur": 48
+     }
+    ]
+   },
+   {
+    "dep": "23:10",
+    "arr": "00:39",
+    "depIso": "2026-10-01T21:10:00Z",
+    "arrIso": "2026-10-01T22:39:00Z",
+    "dur": 89,
+    "changes": 1,
+    "gaps": [
+     13
+    ],
+    "walkMins": 12,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE70 (3896)",
+      "headsign": "Kempten (Allgäu) Hbf",
+      "from": "München Hbf",
+      "to": "Geltendorf",
+      "dep": "23:10",
+      "arr": "23:46",
+      "depIso": "2026-10-01T21:10:00Z",
+      "arrIso": "2026-10-01T21:46:00Z",
+      "track": "30",
+      "tripId": "20261001_23:10_de-DELFI_3412765240",
+      "dur": 36
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB67 (86602)",
+      "headsign": "Augsburg-Oberhausen",
+      "from": "Geltendorf",
+      "to": "Augsburg Hbf",
+      "dep": "23:59",
+      "arr": "00:39",
+      "depIso": "2026-10-01T21:59:00Z",
+      "arrIso": "2026-10-01T22:39:00Z",
+      "track": "5",
+      "tripId": "20261001_23:15_de-DELFI_3412383920",
+      "dur": 40
+     }
+    ]
+   }
+  ]
+ },
+ "4A-1": {
+  "target": "09:05",
+  "from": "augsburg",
+  "to": "nuremberg",
+  "fromStop": "Augsburg Hauptbahnhof",
+  "toStop": "Nürnberg Hauptbahnhof",
+  "fromLL": [
+   48.36556,
+   10.88639
+  ],
+  "toLL": [
+   49.4455,
+   11.0823
+  ],
+  "best": {
+   "dep": "09:31",
+   "arr": "11:17",
+   "depIso": "2026-10-02T07:31:00Z",
+   "arrIso": "2026-10-02T09:17:00Z",
+   "dur": 106,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 3,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE16 (59122)",
+     "headsign": "Nürnberg Hbf",
+     "from": "Augsburg Hbf",
+     "to": "Nürnberg Hbf",
+     "dep": "09:31",
+     "arr": "11:17",
+     "depIso": "2026-10-02T07:31:00Z",
+     "arrIso": "2026-10-02T09:17:00Z",
+     "track": "8",
+     "tripId": "20261002_09:31_de-DELFI_3412723314",
+     "dur": 106
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "10:28",
+    "arr": "12:17",
+    "depIso": "2026-10-02T08:28:00Z",
+    "arrIso": "2026-10-02T10:17:00Z",
+    "dur": 109,
+    "changes": 1,
+    "gaps": [
+     7
+    ],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57026)",
+      "headsign": "Würzburg Hbf",
+      "from": "Augsburg Hbf",
+      "to": "Treuchtlingen",
+      "dep": "10:28",
+      "arr": "11:20",
+      "depIso": "2026-10-02T08:28:00Z",
+      "arrIso": "2026-10-02T09:20:00Z",
+      "track": "3",
+      "tripId": "20261002_09:35_de-DELFI_3412576741",
+      "dur": 52
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB16 (59092)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Treuchtlingen",
+      "to": "Nürnberg Hbf",
+      "dep": "11:27",
+      "arr": "12:17",
+      "depIso": "2026-10-02T09:27:00Z",
+      "arrIso": "2026-10-02T10:17:00Z",
+      "track": "3",
+      "tripId": "20261002_09:28_de-DELFI_3412723185",
+      "dur": 50
+     }
+    ]
+   },
+   {
+    "dep": "11:26",
+    "arr": "13:28",
+    "depIso": "2026-10-02T09:26:00Z",
+    "arrIso": "2026-10-02T11:28:00Z",
+    "dur": 122,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 3,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE16 (59126)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Augsburg Hbf",
+      "to": "Nürnberg Hbf",
+      "dep": "11:26",
+      "arr": "13:28",
+      "depIso": "2026-10-02T09:26:00Z",
+      "arrIso": "2026-10-02T11:28:00Z",
+      "track": null,
+      "tripId": "20261002_11:26_de-DELFI_3412723311",
+      "dur": 122
+     }
+    ]
+   },
+   {
+    "dep": "12:26",
+    "arr": "14:19",
+    "depIso": "2026-10-02T10:26:00Z",
+    "arrIso": "2026-10-02T12:19:00Z",
+    "dur": 113,
+    "changes": 1,
+    "gaps": [
+     8
+    ],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57034)",
+      "headsign": "Würzburg Hbf",
+      "from": "Augsburg Hbf",
+      "to": "Treuchtlingen",
+      "dep": "12:26",
+      "arr": "13:20",
+      "depIso": "2026-10-02T10:26:00Z",
+      "arrIso": "2026-10-02T11:20:00Z",
+      "track": "5",
+      "tripId": "20261002_11:35_de-DELFI_3412576724",
+      "dur": 54
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB16 (59094)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Treuchtlingen",
+      "to": "Nürnberg Hbf",
+      "dep": "13:28",
+      "arr": "14:19",
+      "depIso": "2026-10-02T11:28:00Z",
+      "arrIso": "2026-10-02T12:19:00Z",
+      "track": "3",
+      "tripId": "20261002_11:29_de-DELFI_3412723183",
+      "dur": 51
+     }
+    ]
+   }
+  ]
+ },
+ "4B-0": {
+  "target": "08:30",
+  "from": "augsburg",
+  "to": "donauworth",
+  "fromStop": "Augsburg Hauptbahnhof",
+  "toStop": "Bahnhof Donauwörth",
+  "fromLL": [
+   48.36556,
+   10.88639
+  ],
+  "toLL": [
+   48.7155,
+   10.7713
+  ],
+  "best": {
+   "dep": "08:53",
+   "arr": "09:33",
+   "depIso": "2026-10-02T06:53:00Z",
+   "arrIso": "2026-10-02T07:33:00Z",
+   "dur": 40,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 9,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB87 (57120)",
+     "headsign": "Donauwörth",
+     "from": "Augsburg Hbf",
+     "to": "Donauwörth",
+     "dep": "08:53",
+     "arr": "09:33",
+     "depIso": "2026-10-02T06:53:00Z",
+     "arrIso": "2026-10-02T07:33:00Z",
+     "track": "5",
+     "tripId": "20261002_07:59_de-DELFI_3412574614",
+     "dur": 40
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "09:31",
+    "arr": "09:59",
+    "depIso": "2026-10-02T07:31:00Z",
+    "arrIso": "2026-10-02T07:59:00Z",
+    "dur": 28,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE16 (59122)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Augsburg Hbf",
+      "to": "Donauwörth",
+      "dep": "09:31",
+      "arr": "09:59",
+      "depIso": "2026-10-02T07:31:00Z",
+      "arrIso": "2026-10-02T07:59:00Z",
+      "track": "8",
+      "tripId": "20261002_09:31_de-DELFI_3412723314",
+      "dur": 28
+     }
+    ]
+   },
+   {
+    "dep": "09:54",
+    "arr": "10:34",
+    "depIso": "2026-10-02T07:54:00Z",
+    "arrIso": "2026-10-02T08:34:00Z",
+    "dur": 40,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB87 (57124)",
+      "headsign": "Donauwörth",
+      "from": "Augsburg Hbf",
+      "to": "Donauwörth",
+      "dep": "09:54",
+      "arr": "10:34",
+      "depIso": "2026-10-02T07:54:00Z",
+      "arrIso": "2026-10-02T08:34:00Z",
+      "track": "5",
+      "tripId": "20261002_08:57_de-DELFI_3412574609",
+      "dur": 40
+     }
+    ]
+   },
+   {
+    "dep": "10:28",
+    "arr": "10:56",
+    "depIso": "2026-10-02T08:28:00Z",
+    "arrIso": "2026-10-02T08:56:00Z",
+    "dur": 28,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE89 (57126)",
+      "headsign": "Aalen, Hauptbahnhof",
+      "from": "Augsburg Hbf",
+      "to": "Donauwörth",
+      "dep": "10:28",
+      "arr": "10:56",
+      "depIso": "2026-10-02T08:28:00Z",
+      "arrIso": "2026-10-02T08:56:00Z",
+      "track": "3",
+      "tripId": "20261002_09:35_de-DELFI_3412577035",
+      "dur": 28
+     }
+    ]
+   }
+  ]
+ },
+ "4B-2": {
+  "target": "11:10",
+  "from": "donauworth",
+  "to": "nuremberg",
+  "fromStop": "Bahnhof Donauwörth",
+  "toStop": "Nürnberg Hauptbahnhof",
+  "fromLL": [
+   48.7155,
+   10.7713
+  ],
+  "toLL": [
+   49.4455,
+   11.0823
+  ],
+  "best": {
+   "dep": "11:59",
+   "arr": "13:28",
+   "depIso": "2026-10-02T09:59:00Z",
+   "arrIso": "2026-10-02T11:28:00Z",
+   "dur": 89,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 9,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE16 (59126)",
+     "headsign": "Nürnberg Hbf",
+     "from": "Donauwörth",
+     "to": "Nürnberg Hbf",
+     "dep": "11:59",
+     "arr": "13:28",
+     "depIso": "2026-10-02T09:59:00Z",
+     "arrIso": "2026-10-02T11:28:00Z",
+     "track": "3",
+     "tripId": "20261002_11:26_de-DELFI_3412723311",
+     "dur": 89
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "12:59",
+    "arr": "14:19",
+    "depIso": "2026-10-02T10:59:00Z",
+    "arrIso": "2026-10-02T12:19:00Z",
+    "dur": 80,
+    "changes": 1,
+    "gaps": [
+     8
+    ],
+    "walkMins": 11,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57034)",
+      "headsign": "Würzburg Hbf",
+      "from": "Donauwörth",
+      "to": "Treuchtlingen",
+      "dep": "12:59",
+      "arr": "13:20",
+      "depIso": "2026-10-02T10:59:00Z",
+      "arrIso": "2026-10-02T11:20:00Z",
+      "track": "2",
+      "tripId": "20261002_11:35_de-DELFI_3412576724",
+      "dur": 21
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB16 (59094)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Treuchtlingen",
+      "to": "Nürnberg Hbf",
+      "dep": "13:28",
+      "arr": "14:19",
+      "depIso": "2026-10-02T11:28:00Z",
+      "arrIso": "2026-10-02T12:19:00Z",
+      "track": "3",
+      "tripId": "20261002_11:29_de-DELFI_3412723183",
+      "dur": 51
+     }
+    ]
+   },
+   {
+    "dep": "13:02",
+    "arr": "14:53",
+    "depIso": "2026-10-02T11:02:00Z",
+    "arrIso": "2026-10-02T12:53:00Z",
+    "dur": 111,
+    "changes": 1,
+    "gaps": [
+     20
+    ],
+    "walkMins": 13,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB15 (84281)",
+      "headsign": "Ingolstadt Hbf",
+      "from": "Donauwörth",
+      "to": "Ingolstadt Hbf",
+      "dep": "13:02",
+      "arr": "13:48",
+      "depIso": "2026-10-02T11:02:00Z",
+      "arrIso": "2026-10-02T11:48:00Z",
+      "track": "7",
+      "tripId": "20261002_12:23_de-DELFI_3412311102",
+      "dur": 46
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE1 (4020)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Ingolstadt Hbf",
+      "to": "Nürnberg Hbf",
+      "dep": "14:08",
+      "arr": "14:53",
+      "depIso": "2026-10-02T12:08:00Z",
+      "arrIso": "2026-10-02T12:53:00Z",
+      "track": "7",
+      "tripId": "20261002_13:04_de-DELFI_3412722937",
+      "dur": 45
+     }
+    ]
+   },
+   {
+    "dep": "13:59",
+    "arr": "15:17",
+    "depIso": "2026-10-02T11:59:00Z",
+    "arrIso": "2026-10-02T13:17:00Z",
+    "dur": 78,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE16 (59128)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Donauwörth",
+      "to": "Nürnberg Hbf",
+      "dep": "13:59",
+      "arr": "15:17",
+      "depIso": "2026-10-02T11:59:00Z",
+      "arrIso": "2026-10-02T13:17:00Z",
+      "track": "3",
+      "tripId": "20261002_13:26_de-DELFI_3412723309",
+      "dur": 78
+     }
+    ]
+   }
+  ]
+ },
+ "4C-0": {
+  "target": "08:30",
+  "from": "augsburg",
+  "to": "nuremberg",
+  "fromStop": "Augsburg Hauptbahnhof",
+  "toStop": "Nürnberg Hauptbahnhof",
+  "fromLL": [
+   48.36556,
+   10.88639
+  ],
+  "toLL": [
+   49.4455,
+   11.0823
+  ],
+  "best": {
+   "dep": "08:41",
+   "arr": "10:53",
+   "depIso": "2026-10-02T06:41:00Z",
+   "arrIso": "2026-10-02T08:53:00Z",
+   "dur": 132,
+   "changes": 1,
+   "gaps": [
+    22
+   ],
+   "walkMins": 6,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB13 (86654)",
+     "headsign": "Ingolstadt Hbf",
+     "from": "Augsburg Hbf",
+     "to": "Ingolstadt Hbf",
+     "dep": "08:41",
+     "arr": "09:46",
+     "depIso": "2026-10-02T06:41:00Z",
+     "arrIso": "2026-10-02T07:46:00Z",
+     "track": "2",
+     "tripId": "20261002_08:41_de-DELFI_3412382802",
+     "dur": 65
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE1 (4010)",
+     "headsign": "Nürnberg Hbf",
+     "from": "Ingolstadt Hbf",
+     "to": "Nürnberg Hbf",
+     "dep": "10:08",
+     "arr": "10:53",
+     "depIso": "2026-10-02T08:08:00Z",
+     "arrIso": "2026-10-02T08:53:00Z",
+     "track": "7",
+     "tripId": "20261002_09:04_de-DELFI_3412722944",
+     "dur": 45
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "09:31",
+    "arr": "11:17",
+    "depIso": "2026-10-02T07:31:00Z",
+    "arrIso": "2026-10-02T09:17:00Z",
+    "dur": 106,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 3,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE16 (59122)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Augsburg Hbf",
+      "to": "Nürnberg Hbf",
+      "dep": "09:31",
+      "arr": "11:17",
+      "depIso": "2026-10-02T07:31:00Z",
+      "arrIso": "2026-10-02T09:17:00Z",
+      "track": "8",
+      "tripId": "20261002_09:31_de-DELFI_3412723314",
+      "dur": 106
+     }
+    ]
+   },
+   {
+    "dep": "10:28",
+    "arr": "12:17",
+    "depIso": "2026-10-02T08:28:00Z",
+    "arrIso": "2026-10-02T10:17:00Z",
+    "dur": 109,
+    "changes": 1,
+    "gaps": [
+     7
+    ],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57026)",
+      "headsign": "Würzburg Hbf",
+      "from": "Augsburg Hbf",
+      "to": "Treuchtlingen",
+      "dep": "10:28",
+      "arr": "11:20",
+      "depIso": "2026-10-02T08:28:00Z",
+      "arrIso": "2026-10-02T09:20:00Z",
+      "track": "3",
+      "tripId": "20261002_09:35_de-DELFI_3412576741",
+      "dur": 52
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB16 (59092)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Treuchtlingen",
+      "to": "Nürnberg Hbf",
+      "dep": "11:27",
+      "arr": "12:17",
+      "depIso": "2026-10-02T09:27:00Z",
+      "arrIso": "2026-10-02T10:17:00Z",
+      "track": "3",
+      "tripId": "20261002_09:28_de-DELFI_3412723185",
+      "dur": 50
+     }
+    ]
+   },
+   {
+    "dep": "11:26",
+    "arr": "13:28",
+    "depIso": "2026-10-02T09:26:00Z",
+    "arrIso": "2026-10-02T11:28:00Z",
+    "dur": 122,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 3,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE16 (59126)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Augsburg Hbf",
+      "to": "Nürnberg Hbf",
+      "dep": "11:26",
+      "arr": "13:28",
+      "depIso": "2026-10-02T09:26:00Z",
+      "arrIso": "2026-10-02T11:28:00Z",
+      "track": null,
+      "tripId": "20261002_11:26_de-DELFI_3412723311",
+      "dur": 122
+     }
+    ]
+   }
+  ]
+ },
+ "4C-2": {
+  "target": "15:40",
+  "from": "nuremberg",
+  "to": "bamberg",
+  "fromStop": "Nürnberg Hauptbahnhof",
+  "toStop": "Bahnhof Bamberg",
+  "fromLL": [
+   49.4455,
+   11.0823
+  ],
+  "toLL": [
+   49.9007,
+   10.9019
+  ],
+  "best": {
+   "dep": "16:11",
+   "arr": "16:52",
+   "depIso": "2026-10-02T14:11:00Z",
+   "arrIso": "2026-10-02T14:52:00Z",
+   "dur": 41,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 5,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE19 (4920)",
+     "headsign": "Sonneberg (Thüringen) Hbf",
+     "from": "Nürnberg Hbf",
+     "to": "Bamberg",
+     "dep": "16:11",
+     "arr": "16:52",
+     "depIso": "2026-10-02T14:11:00Z",
+     "arrIso": "2026-10-02T14:52:00Z",
+     "track": null,
+     "tripId": "20261002_16:11_de-DELFI_3412753222",
+     "dur": 41
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "16:40",
+    "arr": "17:20",
+    "depIso": "2026-10-02T14:40:00Z",
+    "arrIso": "2026-10-02T15:20:00Z",
+    "dur": 40,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE14 (4972)",
+      "headsign": "Saalfeld (Saale)",
+      "from": "Nürnberg Hbf",
+      "to": "Bamberg",
+      "dep": "16:40",
+      "arr": "17:20",
+      "depIso": "2026-10-02T14:40:00Z",
+      "arrIso": "2026-10-02T15:20:00Z",
+      "track": null,
+      "tripId": "20261002_16:40_de-DELFI_3412752976",
+      "dur": 40
+     }
+    ]
+   },
+   {
+    "dep": "17:11",
+    "arr": "17:52",
+    "depIso": "2026-10-02T15:11:00Z",
+    "arrIso": "2026-10-02T15:52:00Z",
+    "dur": 41,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE19 (4922)",
+      "headsign": "Sonneberg (Thüringen) Hbf",
+      "from": "Nürnberg Hbf",
+      "to": "Bamberg",
+      "dep": "17:11",
+      "arr": "17:52",
+      "depIso": "2026-10-02T15:11:00Z",
+      "arrIso": "2026-10-02T15:52:00Z",
+      "track": null,
+      "tripId": "20261002_17:11_de-DELFI_3412753270",
+      "dur": 41
+     }
+    ]
+   },
+   {
+    "dep": "17:40",
+    "arr": "18:20",
+    "depIso": "2026-10-02T15:40:00Z",
+    "arrIso": "2026-10-02T16:20:00Z",
+    "dur": 40,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE14 (4994)",
+      "headsign": "Saalfeld (Saale)",
+      "from": "Nürnberg Hbf",
+      "to": "Bamberg",
+      "dep": "17:40",
+      "arr": "18:20",
+      "depIso": "2026-10-02T15:40:00Z",
+      "arrIso": "2026-10-02T16:20:00Z",
+      "track": null,
+      "tripId": "20261002_17:40_de-DELFI_3412752951",
+      "dur": 40
+     }
+    ]
+   }
+  ]
+ },
+ "4C-4": {
+  "target": "21:35",
+  "from": "bamberg",
+  "to": "nuremberg",
+  "fromStop": "Bahnhof Bamberg",
+  "toStop": "Nürnberg Hauptbahnhof",
+  "fromLL": [
+   49.9007,
+   10.9019
+  ],
+  "toLL": [
+   49.4455,
+   11.0823
+  ],
+  "best": {
+   "dep": "21:39",
+   "arr": "22:19",
+   "depIso": "2026-10-02T19:39:00Z",
+   "arrIso": "2026-10-02T20:19:00Z",
+   "dur": 40,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 5,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE14 (4995)",
+     "headsign": "Nürnberg Hbf",
+     "from": "Bamberg",
+     "to": "Nürnberg Hbf",
+     "dep": "21:39",
+     "arr": "22:19",
+     "depIso": "2026-10-02T19:39:00Z",
+     "arrIso": "2026-10-02T20:19:00Z",
+     "track": "3",
+     "tripId": "20261002_19:47_de-DELFI_3412753031",
+     "dur": 40
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "22:39",
+    "arr": "23:19",
+    "depIso": "2026-10-02T20:39:00Z",
+    "arrIso": "2026-10-02T21:19:00Z",
+    "dur": 40,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE14 (4935)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Bamberg",
+      "to": "Nürnberg Hbf",
+      "dep": "22:39",
+      "arr": "23:19",
+      "depIso": "2026-10-02T20:39:00Z",
+      "arrIso": "2026-10-02T21:19:00Z",
+      "track": "3",
+      "tripId": "20261002_20:47_de-DELFI_3412753075",
+      "dur": 40
+     }
+    ]
+   },
+   {
+    "dep": "23:39",
+    "arr": "00:19",
+    "depIso": "2026-10-02T21:39:00Z",
+    "arrIso": "2026-10-02T22:19:00Z",
+    "dur": 40,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 5,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE14 (4997)",
+      "headsign": "Nürnberg Hbf",
+      "from": "Bamberg",
+      "to": "Nürnberg Hbf",
+      "dep": "23:39",
+      "arr": "00:19",
+      "depIso": "2026-10-02T21:39:00Z",
+      "arrIso": "2026-10-02T22:19:00Z",
+      "track": "3",
+      "tripId": "20261002_21:47_de-DELFI_3412753027",
+      "dur": 40
+     }
+    ]
+   }
+  ]
+ },
+ "5A-0": {
+  "target": "08:00",
+  "from": "nuremberg",
+  "to": "wurzburg",
+  "fromStop": "Nürnberg Hauptbahnhof",
+  "toStop": "Würzburg Hauptbahnhof",
+  "fromLL": [
+   49.4455,
+   11.0823
+  ],
+  "toLL": [
+   49.8017,
+   9.9356
+  ],
+  "best": {
+   "dep": "08:05",
+   "arr": "09:16",
+   "depIso": "2026-10-03T06:05:00Z",
+   "arrIso": "2026-10-03T07:16:00Z",
+   "dur": 71,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 7,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE10 (58208)",
+     "headsign": "Würzburg Hbf",
+     "from": "Nürnberg Hbf",
+     "to": "Würzburg Hbf",
+     "dep": "08:05",
+     "arr": "09:16",
+     "depIso": "2026-10-03T06:05:00Z",
+     "arrIso": "2026-10-03T07:16:00Z",
+     "track": "17",
+     "tripId": "20261003_08:05_de-DELFI_3412742969",
+     "dur": 71
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "09:05",
+    "arr": "10:16",
+    "depIso": "2026-10-03T07:05:00Z",
+    "arrIso": "2026-10-03T08:16:00Z",
+    "dur": 71,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 8,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE10 (58210)",
+      "headsign": "Würzburg Hbf",
+      "from": "Nürnberg Hbf",
+      "to": "Würzburg Hbf",
+      "dep": "09:05",
+      "arr": "10:16",
+      "depIso": "2026-10-03T07:05:00Z",
+      "arrIso": "2026-10-03T08:16:00Z",
+      "track": "18",
+      "tripId": "20261003_09:05_de-DELFI_3412742968",
+      "dur": 71
+     }
+    ]
+   },
+   {
+    "dep": "10:05",
+    "arr": "11:16",
+    "depIso": "2026-10-03T08:05:00Z",
+    "arrIso": "2026-10-03T09:16:00Z",
+    "dur": 71,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 6,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE10 (58212)",
+      "headsign": "Würzburg Hbf",
+      "from": "Nürnberg Hbf",
+      "to": "Würzburg Hbf",
+      "dep": "10:05",
+      "arr": "11:16",
+      "depIso": "2026-10-03T08:05:00Z",
+      "arrIso": "2026-10-03T09:16:00Z",
+      "track": null,
+      "tripId": "20261003_10:05_de-DELFI_3412742967",
+      "dur": 71
+     }
+    ]
+   },
+   {
+    "dep": "11:05",
+    "arr": "12:16",
+    "depIso": "2026-10-03T09:05:00Z",
+    "arrIso": "2026-10-03T10:16:00Z",
+    "dur": 71,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 11,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE10 (58214)",
+      "headsign": "Würzburg Hbf",
+      "from": "Nürnberg Hbf",
+      "to": "Würzburg Hbf",
+      "dep": "11:05",
+      "arr": "12:16",
+      "depIso": "2026-10-03T09:05:00Z",
+      "arrIso": "2026-10-03T10:16:00Z",
+      "track": "15",
+      "tripId": "20261003_11:05_de-DELFI_3412742965",
+      "dur": 71
+     }
+    ]
+   }
+  ]
+ },
+ "5A-2": {
+  "target": "12:10",
+  "from": "wurzburg",
+  "to": "rothenburg",
+  "fromStop": "Würzburg Hauptbahnhof",
+  "toStop": "Bahnhof Rothenburg ob der Tauber",
+  "fromLL": [
+   49.8017,
+   9.9356
+  ],
+  "toLL": [
+   49.376,
+   10.1934
+  ],
+  "best": {
+   "dep": "12:42",
+   "arr": "13:51",
+   "depIso": "2026-10-03T10:42:00Z",
+   "arrIso": "2026-10-03T11:51:00Z",
+   "dur": 69,
+   "changes": 1,
+   "gaps": [
+    11
+   ],
+   "walkMins": 16,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE80 (57161)",
+     "headsign": "München Hbf",
+     "from": "Würzburg Hbf",
+     "to": "Steinach (bei Rothenburg ob der Tauber)",
+     "dep": "12:42",
+     "arr": "13:25",
+     "depIso": "2026-10-03T10:42:00Z",
+     "arrIso": "2026-10-03T11:25:00Z",
+     "track": "3",
+     "tripId": "20261003_12:42_de-DELFI_3412576898",
+     "dur": 43
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB82 (58901)",
+     "headsign": "Rothenburg ob der Tauber",
+     "from": "Steinach (bei Rothenburg ob der Tauber)",
+     "to": "Rothenburg ob der Tauber",
+     "dep": "13:36",
+     "arr": "13:51",
+     "depIso": "2026-10-03T11:36:00Z",
+     "arrIso": "2026-10-03T11:51:00Z",
+     "track": "5",
+     "tripId": "20261003_13:36_de-DELFI_3412725492",
+     "dur": 15
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "13:41",
+    "arr": "14:51",
+    "depIso": "2026-10-03T11:41:00Z",
+    "arrIso": "2026-10-03T12:51:00Z",
+    "dur": 70,
+    "changes": 1,
+    "gaps": [
+     13
+    ],
+    "walkMins": 16,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57217)",
+      "headsign": "Treuchtlingen",
+      "from": "Würzburg Hbf",
+      "to": "Steinach (bei Rothenburg ob der Tauber)",
+      "dep": "13:41",
+      "arr": "14:23",
+      "depIso": "2026-10-03T11:41:00Z",
+      "arrIso": "2026-10-03T12:23:00Z",
+      "track": "3",
+      "tripId": "20261003_13:41_de-DELFI_3412576836",
+      "dur": 42
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB82 (58903)",
+      "headsign": "Rothenburg ob der Tauber",
+      "from": "Steinach (bei Rothenburg ob der Tauber)",
+      "to": "Rothenburg ob der Tauber",
+      "dep": "14:36",
+      "arr": "14:51",
+      "depIso": "2026-10-03T12:36:00Z",
+      "arrIso": "2026-10-03T12:51:00Z",
+      "track": "5",
+      "tripId": "20261003_14:36_de-DELFI_3412725491",
+      "dur": 15
+     }
+    ]
+   },
+   {
+    "dep": "14:41",
+    "arr": "15:51",
+    "depIso": "2026-10-03T12:41:00Z",
+    "arrIso": "2026-10-03T13:51:00Z",
+    "dur": 70,
+    "changes": 1,
+    "gaps": [
+     13
+    ],
+    "walkMins": 16,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57171)",
+      "headsign": "München Hbf",
+      "from": "Würzburg Hbf",
+      "to": "Steinach (bei Rothenburg ob der Tauber)",
+      "dep": "14:41",
+      "arr": "15:23",
+      "depIso": "2026-10-03T12:41:00Z",
+      "arrIso": "2026-10-03T13:23:00Z",
+      "track": "3",
+      "tripId": "20261003_14:41_de-DELFI_3412576890",
+      "dur": 42
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB82 (58905)",
+      "headsign": "Rothenburg ob der Tauber",
+      "from": "Steinach (bei Rothenburg ob der Tauber)",
+      "to": "Rothenburg ob der Tauber",
+      "dep": "15:36",
+      "arr": "15:51",
+      "depIso": "2026-10-03T13:36:00Z",
+      "arrIso": "2026-10-03T13:51:00Z",
+      "track": "5",
+      "tripId": "20261003_15:36_de-DELFI_3412725490",
+      "dur": 15
+     }
+    ]
+   },
+   {
+    "dep": "15:41",
+    "arr": "16:51",
+    "depIso": "2026-10-03T13:41:00Z",
+    "arrIso": "2026-10-03T14:51:00Z",
+    "dur": 70,
+    "changes": 1,
+    "gaps": [
+     11
+    ],
+    "walkMins": 16,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57221)",
+      "headsign": "Treuchtlingen",
+      "from": "Würzburg Hbf",
+      "to": "Steinach (bei Rothenburg ob der Tauber)",
+      "dep": "15:41",
+      "arr": "16:25",
+      "depIso": "2026-10-03T13:41:00Z",
+      "arrIso": "2026-10-03T14:25:00Z",
+      "track": "2",
+      "tripId": "20261003_15:41_de-DELFI_3412576825",
+      "dur": 44
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB82 (58907)",
+      "headsign": "Rothenburg ob der Tauber",
+      "from": "Steinach (bei Rothenburg ob der Tauber)",
+      "to": "Rothenburg ob der Tauber",
+      "dep": "16:36",
+      "arr": "16:51",
+      "depIso": "2026-10-03T14:36:00Z",
+      "arrIso": "2026-10-03T14:51:00Z",
+      "track": "5",
+      "tripId": "20261003_16:36_de-DELFI_3412725489",
+      "dur": 15
+     }
+    ]
+   }
+  ]
+ },
+ "5A-4": {
+  "target": "16:20",
+  "from": "rothenburg",
+  "to": "heidelberg",
+  "fromStop": "Bahnhof Rothenburg ob der Tauber",
+  "toStop": "Heidelberg Hauptbahnhof",
+  "fromLL": [
+   49.376,
+   10.1934
+  ],
+  "toLL": [
+   49.4037,
+   8.6754
+  ],
+  "best": {
+   "dep": "17:05",
+   "arr": "21:05",
+   "depIso": "2026-10-03T15:05:00Z",
+   "arrIso": "2026-10-03T19:05:00Z",
+   "dur": 240,
+   "changes": 3,
+   "gaps": [
+    16,
+    18,
+    8
+   ],
+   "walkMins": 17,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB82 (58908)",
+     "headsign": "Steinach (bei Rothenburg ob der Tauber)",
+     "from": "Rothenburg ob der Tauber",
+     "to": "Steinach (bei Rothenburg ob der Tauber)",
+     "dep": "17:05",
+     "arr": "17:20",
+     "depIso": "2026-10-03T15:05:00Z",
+     "arrIso": "2026-10-03T15:20:00Z",
+     "track": "1",
+     "tripId": "20261003_17:05_de-DELFI_3412725470",
+     "dur": 15
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE80 (57328)",
+     "headsign": "Würzburg Hbf",
+     "from": "Steinach (bei Rothenburg ob der Tauber)",
+     "to": "Würzburg Hbf",
+     "dep": "17:36",
+     "arr": "18:19",
+     "depIso": "2026-10-03T15:36:00Z",
+     "arrIso": "2026-10-03T16:19:00Z",
+     "track": "2",
+     "tripId": "20261003_16:25_de-DELFI_3412576584",
+     "dur": 43
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE8 (19081)",
+     "headsign": "Bad Friedrichshall Hbf",
+     "from": "Würzburg Hbf",
+     "to": "Osterburken, Bahnhof",
+     "dep": "18:37",
+     "arr": "19:30",
+     "depIso": "2026-10-03T16:37:00Z",
+     "arrIso": "2026-10-03T17:30:00Z",
+     "track": "2",
+     "tripId": "20261003_18:37_de-DELFI_3412581269",
+     "dur": 53
+    },
+    {
+     "mode": "METRO",
+     "line": "S1",
+     "headsign": "Homburg (Saar) Hbf",
+     "from": "Osterburken, Bahnhof",
+     "to": "Heidelberg, Hauptbahnhof",
+     "dep": "19:38",
+     "arr": "21:05",
+     "depIso": "2026-10-03T17:38:00Z",
+     "arrIso": "2026-10-03T19:05:00Z",
+     "track": "1",
+     "tripId": "20261003_19:38_de-DELFI_3412763214",
+     "dur": 87
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "18:05",
+    "arr": "22:05",
+    "depIso": "2026-10-03T16:05:00Z",
+    "arrIso": "2026-10-03T20:05:00Z",
+    "dur": 240,
+    "changes": 3,
+    "gaps": [
+     13,
+     21,
+     8
+    ],
+    "walkMins": 17,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB82 (58910)",
+      "headsign": "Steinach (bei Rothenburg ob der Tauber)",
+      "from": "Rothenburg ob der Tauber",
+      "to": "Steinach (bei Rothenburg ob der Tauber)",
+      "dep": "18:05",
+      "arr": "18:20",
+      "depIso": "2026-10-03T16:05:00Z",
+      "arrIso": "2026-10-03T16:20:00Z",
+      "track": "1",
+      "tripId": "20261003_18:05_de-DELFI_3412725469",
+      "dur": 15
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57050)",
+      "headsign": "Würzburg Hbf",
+      "from": "Steinach (bei Rothenburg ob der Tauber)",
+      "to": "Würzburg Hbf",
+      "dep": "18:33",
+      "arr": "19:16",
+      "depIso": "2026-10-03T16:33:00Z",
+      "arrIso": "2026-10-03T17:16:00Z",
+      "track": "2",
+      "tripId": "20261003_15:36_de-DELFI_3412576698",
+      "dur": 43
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE8 (19083)",
+      "headsign": "Bad Friedrichshall Hbf",
+      "from": "Würzburg Hbf",
+      "to": "Osterburken, Bahnhof",
+      "dep": "19:37",
+      "arr": "20:30",
+      "depIso": "2026-10-03T17:37:00Z",
+      "arrIso": "2026-10-03T18:30:00Z",
+      "track": "2",
+      "tripId": "20261003_19:37_de-DELFI_3412581267",
+      "dur": 53
+     },
+     {
+      "mode": "METRO",
+      "line": "S4",
+      "headsign": "Mannheim Hbf",
+      "from": "Osterburken, Bahnhof",
+      "to": "Heidelberg, Hauptbahnhof",
+      "dep": "20:38",
+      "arr": "22:05",
+      "depIso": "2026-10-03T18:38:00Z",
+      "arrIso": "2026-10-03T20:05:00Z",
+      "track": "1",
+      "tripId": "20261003_20:38_de-DELFI_3412762996",
+      "dur": 87
+     }
+    ]
+   },
+   {
+    "dep": "18:31",
+    "arr": "22:49",
+    "depIso": "2026-10-03T16:31:00Z",
+    "arrIso": "2026-10-03T20:49:00Z",
+    "dur": 258,
+    "changes": 3,
+    "gaps": [
+     6,
+     9,
+     3
+    ],
+    "walkMins": 16,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "807",
+      "headsign": "Dombühl",
+      "from": "Rothenburg Schlachthof",
+      "to": "Dombühl",
+      "dep": "18:31",
+      "arr": "19:15",
+      "depIso": "2026-10-03T16:31:00Z",
+      "arrIso": "2026-10-03T17:15:00Z",
+      "track": null,
+      "tripId": "20261003_18:30_de-DELFI_3381773877",
+      "dur": 44
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE90 (88626)",
+      "headsign": "Hauptbahnhof (oben)",
+      "from": "Dombühl",
+      "to": "Hauptbahnhof (oben)",
+      "dep": "19:21",
+      "arr": "21:23",
+      "depIso": "2026-10-03T17:21:00Z",
+      "arrIso": "2026-10-03T19:23:00Z",
+      "track": "1",
+      "tripId": "20261003_18:38_de-DELFI_3412581683",
+      "dur": 122
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE1 (19032)",
+      "headsign": "Karlsruhe Hauptbahnhof",
+      "from": "Hauptbahnhof (oben)",
+      "to": "Karlsruhe-Durlach",
+      "dep": "21:32",
+      "arr": "22:19",
+      "depIso": "2026-10-03T19:32:00Z",
+      "arrIso": "2026-10-03T20:19:00Z",
+      "track": "10",
+      "tripId": "20261003_21:32_de-DELFI_3412579824",
+      "dur": 47
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE73 (15996)",
+      "headsign": "Mannheim, Hauptbahnhof",
+      "from": "Karlsruhe-Durlach",
+      "to": "Heidelberg, Hauptbahnhof",
+      "dep": "22:22",
+      "arr": "22:49",
+      "depIso": "2026-10-03T20:22:00Z",
+      "arrIso": "2026-10-03T20:49:00Z",
+      "track": "5a",
+      "tripId": "20261003_22:18_de-DELFI_3412696025",
+      "dur": 27
+     }
+    ]
+   },
+   {
+    "dep": "19:05",
+    "arr": "23:05",
+    "depIso": "2026-10-03T17:05:00Z",
+    "arrIso": "2026-10-03T21:05:00Z",
+    "dur": 240,
+    "changes": 3,
+    "gaps": [
+     13,
+     21,
+     8
+    ],
+    "walkMins": 17,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB82 (58914)",
+      "headsign": "Steinach (bei Rothenburg ob der Tauber)",
+      "from": "Rothenburg ob der Tauber",
+      "to": "Steinach (bei Rothenburg ob der Tauber)",
+      "dep": "19:05",
+      "arr": "19:20",
+      "depIso": "2026-10-03T17:05:00Z",
+      "arrIso": "2026-10-03T17:20:00Z",
+      "track": "1",
+      "tripId": "20261003_19:05_de-DELFI_3412725468",
+      "dur": 15
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57230)",
+      "headsign": "Würzburg Hbf",
+      "from": "Steinach (bei Rothenburg ob der Tauber)",
+      "to": "Würzburg Hbf",
+      "dep": "19:33",
+      "arr": "20:16",
+      "depIso": "2026-10-03T17:33:00Z",
+      "arrIso": "2026-10-03T18:16:00Z",
+      "track": "2",
+      "tripId": "20261003_18:25_de-DELFI_3412576605",
+      "dur": 43
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE8 (19085)",
+      "headsign": "Bad Friedrichshall Hbf",
+      "from": "Würzburg Hbf",
+      "to": "Osterburken, Bahnhof",
+      "dep": "20:37",
+      "arr": "21:30",
+      "depIso": "2026-10-03T18:37:00Z",
+      "arrIso": "2026-10-03T19:30:00Z",
+      "track": "2",
+      "tripId": "20261003_20:37_de-DELFI_3412581266",
+      "dur": 53
+     },
+     {
+      "mode": "METRO",
+      "line": "S3",
+      "headsign": "Mannheim Hbf",
+      "from": "Osterburken, Bahnhof",
+      "to": "Heidelberg, Hauptbahnhof",
+      "dep": "21:38",
+      "arr": "23:05",
+      "depIso": "2026-10-03T19:38:00Z",
+      "arrIso": "2026-10-03T21:05:00Z",
+      "track": "1",
+      "tripId": "20261003_21:38_de-DELFI_3412762305",
+      "dur": 87
+     }
+    ]
+   }
+  ]
+ },
+ "5B-0": {
+  "target": "07:45",
+  "from": "nuremberg",
+  "to": "rothenburg",
+  "fromStop": "Nürnberg Hauptbahnhof",
+  "toStop": "Bahnhof Rothenburg ob der Tauber",
+  "fromLL": [
+   49.4455,
+   11.0823
+  ],
+  "toLL": [
+   49.376,
+   10.1934
+  ],
+  "best": {
+   "dep": "08:37",
+   "arr": "10:02",
+   "depIso": "2026-10-03T06:37:00Z",
+   "arrIso": "2026-10-03T08:02:00Z",
+   "dur": 85,
+   "changes": 1,
+   "gaps": [
+    10
+   ],
+   "walkMins": 15,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE90 (88612)",
+     "headsign": "Hauptbahnhof (oben)",
+     "from": "Nürnberg Hbf",
+     "to": "Dombühl",
+     "dep": "08:37",
+     "arr": "09:21",
+     "depIso": "2026-10-03T06:37:00Z",
+     "arrIso": "2026-10-03T07:21:00Z",
+     "track": "19",
+     "tripId": "20261003_08:37_de-DELFI_3412581752",
+     "dur": 44
+    },
+    {
+     "mode": "BUS",
+     "line": "807",
+     "headsign": "Rothenburg ob der Tauber",
+     "from": "Dombühl",
+     "to": "Rothenburg ob der Tauber",
+     "dep": "09:31",
+     "arr": "10:02",
+     "depIso": "2026-10-03T07:31:00Z",
+     "arrIso": "2026-10-03T08:02:00Z",
+     "track": "1",
+     "tripId": "20261003_09:31_de-DELFI_3381773846",
+     "dur": 31
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "09:21",
+    "arr": "11:25",
+    "depIso": "2026-10-03T07:21:00Z",
+    "arrIso": "2026-10-03T09:25:00Z",
+    "dur": 124,
+    "changes": 1,
+    "gaps": [
+     11
+    ],
+    "walkMins": 14,
+    "legs": [
+     {
+      "mode": "METRO",
+      "line": "S4",
+      "headsign": "Crailsheim Bahnhof",
+      "from": "Nürnberg Hbf",
+      "to": "Dombühl",
+      "dep": "09:21",
+      "arr": "10:27",
+      "depIso": "2026-10-03T07:21:00Z",
+      "arrIso": "2026-10-03T08:27:00Z",
+      "track": "22",
+      "tripId": "20261003_09:21_de-DELFI_3412744805",
+      "dur": 66
+     },
+     {
+      "mode": "BUS",
+      "line": "807",
+      "headsign": "Rothenburg ob der Tauber",
+      "from": "Dombühl",
+      "to": "Rothenburg Schlachthof",
+      "dep": "10:38",
+      "arr": "11:25",
+      "depIso": "2026-10-03T08:38:00Z",
+      "arrIso": "2026-10-03T09:25:00Z",
+      "track": "1",
+      "tripId": "20261003_10:38_de-DELFI_3381773842",
+      "dur": 47
+     }
+    ]
+   },
+   {
+    "dep": "09:21",
+    "arr": "10:51",
+    "depIso": "2026-10-03T07:21:00Z",
+    "arrIso": "2026-10-03T08:51:00Z",
+    "dur": 90,
+    "changes": 2,
+    "gaps": [
+     9,
+     4
+    ],
+    "walkMins": 17,
+    "legs": [
+     {
+      "mode": "METRO",
+      "line": "S4",
+      "headsign": "Crailsheim Bahnhof",
+      "from": "Nürnberg Hbf",
+      "to": "Ansbach",
+      "dep": "09:21",
+      "arr": "10:02",
+      "depIso": "2026-10-03T07:21:00Z",
+      "arrIso": "2026-10-03T08:02:00Z",
+      "track": "22",
+      "tripId": "20261003_09:21_de-DELFI_3412744805",
+      "dur": 41
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57118)",
+      "headsign": "Würzburg Hbf",
+      "from": "Ansbach",
+      "to": "Steinach (bei Rothenburg ob der Tauber)",
+      "dep": "10:11",
+      "arr": "10:32",
+      "depIso": "2026-10-03T08:11:00Z",
+      "arrIso": "2026-10-03T08:32:00Z",
+      "track": "3",
+      "tripId": "20261003_07:36_de-DELFI_3412576658",
+      "dur": 21
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB82 (58895)",
+      "headsign": "Rothenburg ob der Tauber",
+      "from": "Steinach (bei Rothenburg ob der Tauber)",
+      "to": "Rothenburg ob der Tauber",
+      "dep": "10:36",
+      "arr": "10:51",
+      "depIso": "2026-10-03T08:36:00Z",
+      "arrIso": "2026-10-03T08:51:00Z",
+      "track": "5",
+      "tripId": "20261003_10:36_de-DELFI_3412725495",
+      "dur": 15
+     }
+    ]
+   },
+   {
+    "dep": "10:38",
+    "arr": "12:02",
+    "depIso": "2026-10-03T08:38:00Z",
+    "arrIso": "2026-10-03T10:02:00Z",
+    "dur": 84,
+    "changes": 1,
+    "gaps": [
+     11
+    ],
+    "walkMins": 15,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE90 (88614)",
+      "headsign": "Hauptbahnhof (oben)",
+      "from": "Nürnberg Hbf",
+      "to": "Dombühl",
+      "dep": "10:38",
+      "arr": "11:20",
+      "depIso": "2026-10-03T08:38:00Z",
+      "arrIso": "2026-10-03T09:20:00Z",
+      "track": "18",
+      "tripId": "20261003_10:38_de-DELFI_3412581733",
+      "dur": 42
+     },
+     {
+      "mode": "BUS",
+      "line": "807",
+      "headsign": "Rothenburg ob der Tauber",
+      "from": "Dombühl",
+      "to": "Rothenburg ob der Tauber",
+      "dep": "11:31",
+      "arr": "12:02",
+      "depIso": "2026-10-03T09:31:00Z",
+      "arrIso": "2026-10-03T10:02:00Z",
+      "track": "1",
+      "tripId": "20261003_11:31_de-DELFI_3381773851",
+      "dur": 31
+     }
+    ]
+   }
+  ]
+ },
+ "5B-2": {
+  "target": "12:40",
+  "from": "rothenburg",
+  "to": "wurzburg",
+  "fromStop": "Bahnhof Rothenburg ob der Tauber",
+  "toStop": "Würzburg Hauptbahnhof",
+  "fromLL": [
+   49.376,
+   10.1934
+  ],
+  "toLL": [
+   49.8017,
+   9.9356
+  ],
+  "best": {
+   "dep": "13:09",
+   "arr": "14:16",
+   "depIso": "2026-10-03T11:09:00Z",
+   "arrIso": "2026-10-03T12:16:00Z",
+   "dur": 67,
+   "changes": 1,
+   "gaps": [
+    10
+   ],
+   "walkMins": 16,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB82 (58900)",
+     "headsign": "Steinach (bei Rothenburg ob der Tauber)",
+     "from": "Rothenburg ob der Tauber",
+     "to": "Steinach (bei Rothenburg ob der Tauber)",
+     "dep": "13:09",
+     "arr": "13:23",
+     "depIso": "2026-10-03T11:09:00Z",
+     "arrIso": "2026-10-03T11:23:00Z",
+     "track": "1",
+     "tripId": "20261003_13:09_de-DELFI_3412725463",
+     "dur": 14
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE80 (57222)",
+     "headsign": "Würzburg Hbf",
+     "from": "Steinach (bei Rothenburg ob der Tauber)",
+     "to": "Würzburg Hbf",
+     "dep": "13:33",
+     "arr": "14:16",
+     "depIso": "2026-10-03T11:33:00Z",
+     "arrIso": "2026-10-03T12:16:00Z",
+     "track": "2",
+     "tripId": "20261003_12:25_de-DELFI_3412576608",
+     "dur": 43
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "14:05",
+    "arr": "15:16",
+    "depIso": "2026-10-03T12:05:00Z",
+    "arrIso": "2026-10-03T13:16:00Z",
+    "dur": 71,
+    "changes": 1,
+    "gaps": [
+     13
+    ],
+    "walkMins": 16,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB82 (58902)",
+      "headsign": "Steinach (bei Rothenburg ob der Tauber)",
+      "from": "Rothenburg ob der Tauber",
+      "to": "Steinach (bei Rothenburg ob der Tauber)",
+      "dep": "14:05",
+      "arr": "14:20",
+      "depIso": "2026-10-03T12:05:00Z",
+      "arrIso": "2026-10-03T12:20:00Z",
+      "track": "1",
+      "tripId": "20261003_14:05_de-DELFI_3412725473",
+      "dur": 15
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57034)",
+      "headsign": "Würzburg Hbf",
+      "from": "Steinach (bei Rothenburg ob der Tauber)",
+      "to": "Würzburg Hbf",
+      "dep": "14:33",
+      "arr": "15:16",
+      "depIso": "2026-10-03T12:33:00Z",
+      "arrIso": "2026-10-03T13:16:00Z",
+      "track": "2",
+      "tripId": "20261003_11:35_de-DELFI_3412576724",
+      "dur": 43
+     }
+    ]
+   },
+   {
+    "dep": "15:05",
+    "arr": "16:17",
+    "depIso": "2026-10-03T13:05:00Z",
+    "arrIso": "2026-10-03T14:17:00Z",
+    "dur": 72,
+    "changes": 1,
+    "gaps": [
+     13
+    ],
+    "walkMins": 16,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB82 (58904)",
+      "headsign": "Steinach (bei Rothenburg ob der Tauber)",
+      "from": "Rothenburg ob der Tauber",
+      "to": "Steinach (bei Rothenburg ob der Tauber)",
+      "dep": "15:05",
+      "arr": "15:20",
+      "depIso": "2026-10-03T13:05:00Z",
+      "arrIso": "2026-10-03T13:20:00Z",
+      "track": "1",
+      "tripId": "20261003_15:05_de-DELFI_3412725472",
+      "dur": 15
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57226)",
+      "headsign": "Würzburg Hbf",
+      "from": "Steinach (bei Rothenburg ob der Tauber)",
+      "to": "Würzburg Hbf",
+      "dep": "15:33",
+      "arr": "16:17",
+      "depIso": "2026-10-03T13:33:00Z",
+      "arrIso": "2026-10-03T14:17:00Z",
+      "track": "2",
+      "tripId": "20261003_14:25_de-DELFI_3412576601",
+      "dur": 44
+     }
+    ]
+   },
+   {
+    "dep": "16:05",
+    "arr": "17:12",
+    "depIso": "2026-10-03T14:05:00Z",
+    "arrIso": "2026-10-03T15:12:00Z",
+    "dur": 67,
+    "changes": 1,
+    "gaps": [
+     9
+    ],
+    "walkMins": 16,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB82 (58906)",
+      "headsign": "Steinach (bei Rothenburg ob der Tauber)",
+      "from": "Rothenburg ob der Tauber",
+      "to": "Steinach (bei Rothenburg ob der Tauber)",
+      "dep": "16:05",
+      "arr": "16:20",
+      "depIso": "2026-10-03T14:05:00Z",
+      "arrIso": "2026-10-03T14:20:00Z",
+      "track": "1",
+      "tripId": "20261003_16:05_de-DELFI_3412725471",
+      "dur": 15
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE80 (57042)",
+      "headsign": "Würzburg Hbf",
+      "from": "Steinach (bei Rothenburg ob der Tauber)",
+      "to": "Würzburg Hbf",
+      "dep": "16:29",
+      "arr": "17:12",
+      "depIso": "2026-10-03T14:29:00Z",
+      "arrIso": "2026-10-03T15:12:00Z",
+      "track": "2",
+      "tripId": "20261003_13:35_de-DELFI_3412576714",
+      "dur": 43
+     }
+    ]
+   }
+  ]
+ },
+ "5B-4": {
+  "target": "16:25",
+  "from": "wurzburg",
+  "to": "heidelberg",
+  "fromStop": "Würzburg Hauptbahnhof",
+  "toStop": "Heidelberg Hauptbahnhof",
+  "fromLL": [
+   49.8017,
+   9.9356
+  ],
+  "toLL": [
+   49.4037,
+   8.6754
+  ],
+  "best": {
+   "dep": "16:37",
+   "arr": "19:02",
+   "depIso": "2026-10-03T14:37:00Z",
+   "arrIso": "2026-10-03T17:02:00Z",
+   "dur": 145,
+   "changes": 1,
+   "gaps": [
+    6
+   ],
+   "walkMins": 9,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE8 (19077)",
+     "headsign": "Bad Friedrichshall Hbf",
+     "from": "Würzburg Hbf",
+     "to": "Osterburken, Bahnhof",
+     "dep": "16:37",
+     "arr": "17:30",
+     "depIso": "2026-10-03T14:37:00Z",
+     "arrIso": "2026-10-03T15:30:00Z",
+     "track": "2",
+     "tripId": "20261003_16:37_de-DELFI_3412581273",
+     "dur": 53
+    },
+    {
+     "mode": "METRO",
+     "line": "S1",
+     "headsign": "Homburg (Saar) Hbf",
+     "from": "Osterburken, Bahnhof",
+     "to": "Heidelberg, Hauptbahnhof",
+     "dep": "17:36",
+     "arr": "19:02",
+     "depIso": "2026-10-03T15:36:00Z",
+     "arrIso": "2026-10-03T17:02:00Z",
+     "track": "1",
+     "tripId": "20261003_17:36_de-DELFI_3412763231",
+     "dur": 86
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "17:37",
+    "arr": "20:02",
+    "depIso": "2026-10-03T15:37:00Z",
+    "arrIso": "2026-10-03T18:02:00Z",
+    "dur": 145,
+    "changes": 1,
+    "gaps": [
+     6
+    ],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE8 (19079)",
+      "headsign": "Bad Friedrichshall Hbf",
+      "from": "Würzburg Hbf",
+      "to": "Osterburken, Bahnhof",
+      "dep": "17:37",
+      "arr": "18:30",
+      "depIso": "2026-10-03T15:37:00Z",
+      "arrIso": "2026-10-03T16:30:00Z",
+      "track": "3",
+      "tripId": "20261003_17:37_de-DELFI_3412581271",
+      "dur": 53
+     },
+     {
+      "mode": "METRO",
+      "line": "S2",
+      "headsign": "Kaiserslautern, Hbf",
+      "from": "Osterburken, Bahnhof",
+      "to": "Heidelberg, Hauptbahnhof",
+      "dep": "18:36",
+      "arr": "20:02",
+      "depIso": "2026-10-03T16:36:00Z",
+      "arrIso": "2026-10-03T18:02:00Z",
+      "track": "1",
+      "tripId": "20261003_18:36_de-DELFI_3412762770",
+      "dur": 86
+     }
+    ]
+   },
+   {
+    "dep": "18:37",
+    "arr": "21:05",
+    "depIso": "2026-10-03T16:37:00Z",
+    "arrIso": "2026-10-03T19:05:00Z",
+    "dur": 148,
+    "changes": 1,
+    "gaps": [
+     8
+    ],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE8 (19081)",
+      "headsign": "Bad Friedrichshall Hbf",
+      "from": "Würzburg Hbf",
+      "to": "Osterburken, Bahnhof",
+      "dep": "18:37",
+      "arr": "19:30",
+      "depIso": "2026-10-03T16:37:00Z",
+      "arrIso": "2026-10-03T17:30:00Z",
+      "track": "2",
+      "tripId": "20261003_18:37_de-DELFI_3412581269",
+      "dur": 53
+     },
+     {
+      "mode": "METRO",
+      "line": "S1",
+      "headsign": "Homburg (Saar) Hbf",
+      "from": "Osterburken, Bahnhof",
+      "to": "Heidelberg, Hauptbahnhof",
+      "dep": "19:38",
+      "arr": "21:05",
+      "depIso": "2026-10-03T17:38:00Z",
+      "arrIso": "2026-10-03T19:05:00Z",
+      "track": "1",
+      "tripId": "20261003_19:38_de-DELFI_3412763214",
+      "dur": 87
+     }
+    ]
+   },
+   {
+    "dep": "19:37",
+    "arr": "22:05",
+    "depIso": "2026-10-03T17:37:00Z",
+    "arrIso": "2026-10-03T20:05:00Z",
+    "dur": 148,
+    "changes": 1,
+    "gaps": [
+     8
+    ],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE8 (19083)",
+      "headsign": "Bad Friedrichshall Hbf",
+      "from": "Würzburg Hbf",
+      "to": "Osterburken, Bahnhof",
+      "dep": "19:37",
+      "arr": "20:30",
+      "depIso": "2026-10-03T17:37:00Z",
+      "arrIso": "2026-10-03T18:30:00Z",
+      "track": "2",
+      "tripId": "20261003_19:37_de-DELFI_3412581267",
+      "dur": 53
+     },
+     {
+      "mode": "METRO",
+      "line": "S4",
+      "headsign": "Mannheim Hbf",
+      "from": "Osterburken, Bahnhof",
+      "to": "Heidelberg, Hauptbahnhof",
+      "dep": "20:38",
+      "arr": "22:05",
+      "depIso": "2026-10-03T18:38:00Z",
+      "arrIso": "2026-10-03T20:05:00Z",
+      "track": "1",
+      "tripId": "20261003_20:38_de-DELFI_3412762996",
+      "dur": 87
+     }
+    ]
+   }
+  ]
+ },
+ "6A-1": {
+  "target": "11:40",
+  "from": "heidelberg",
+  "to": "fulda",
+  "fromStop": "Heidelberg Hauptbahnhof",
+  "toStop": "Bahnhof Fulda",
+  "fromLL": [
+   49.4037,
+   8.6754
+  ],
+  "toLL": [
+   50.5544,
+   9.6836
+  ],
+  "best": {
+   "dep": "12:18",
+   "arr": "15:48",
+   "depIso": "2026-10-04T10:18:00Z",
+   "arrIso": "2026-10-04T13:48:00Z",
+   "dur": 210,
+   "changes": 1,
+   "gaps": [
+    37
+   ],
+   "walkMins": 10,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB68 (15316)",
+     "headsign": "Frankfurt (Main) Hauptbahnhof",
+     "from": "Heidelberg, Hauptbahnhof",
+     "to": "Frankfurt (Main) Hauptbahnhof",
+     "dep": "12:18",
+     "arr": "13:47",
+     "depIso": "2026-10-04T10:18:00Z",
+     "arrIso": "2026-10-04T11:47:00Z",
+     "track": "2",
+     "tripId": "20261004_12:18_de-DELFI_3412739994",
+     "dur": 89
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE50 (4518)",
+     "headsign": "Fulda Bahnhof",
+     "from": "Frankfurt (Main) Hauptbahnhof",
+     "to": "Fulda Bahnhof",
+     "dep": "14:24",
+     "arr": "15:48",
+     "depIso": "2026-10-04T12:24:00Z",
+     "arrIso": "2026-10-04T13:48:00Z",
+     "track": "8",
+     "tripId": "20261004_14:24_de-DELFI_3412710819",
+     "dur": 84
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "13:26",
+    "arr": "16:48",
+    "depIso": "2026-10-04T11:26:00Z",
+    "arrIso": "2026-10-04T14:48:00Z",
+    "dur": 202,
+    "changes": 1,
+    "gaps": [
+     37
+    ],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB68 (15318)",
+      "headsign": "Frankfurt (Main) Hauptbahnhof",
+      "from": "Heidelberg, Hauptbahnhof",
+      "to": "Frankfurt (Main) Hauptbahnhof",
+      "dep": "13:26",
+      "arr": "14:47",
+      "depIso": "2026-10-04T11:26:00Z",
+      "arrIso": "2026-10-04T12:47:00Z",
+      "track": "2",
+      "tripId": "20261004_13:26_de-DELFI_3412740014",
+      "dur": 81
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE50 (4520)",
+      "headsign": "Bad Hersfeld Bahnhof",
+      "from": "Frankfurt (Main) Hauptbahnhof",
+      "to": "Fulda Bahnhof",
+      "dep": "15:24",
+      "arr": "16:48",
+      "depIso": "2026-10-04T13:24:00Z",
+      "arrIso": "2026-10-04T14:48:00Z",
+      "track": "5",
+      "tripId": "20261004_15:24_de-DELFI_3412710812",
+      "dur": 84
+     }
+    ]
+   },
+   {
+    "dep": "14:18",
+    "arr": "17:48",
+    "depIso": "2026-10-04T12:18:00Z",
+    "arrIso": "2026-10-04T15:48:00Z",
+    "dur": 210,
+    "changes": 1,
+    "gaps": [
+     37
+    ],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB68 (15320)",
+      "headsign": "Frankfurt (Main) Hauptbahnhof",
+      "from": "Heidelberg, Hauptbahnhof",
+      "to": "Frankfurt (Main) Hauptbahnhof",
+      "dep": "14:18",
+      "arr": "15:47",
+      "depIso": "2026-10-04T12:18:00Z",
+      "arrIso": "2026-10-04T13:47:00Z",
+      "track": "2",
+      "tripId": "20261004_14:18_de-DELFI_3412739992",
+      "dur": 89
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE50 (4524)",
+      "headsign": "Fulda Bahnhof",
+      "from": "Frankfurt (Main) Hauptbahnhof",
+      "to": "Fulda Bahnhof",
+      "dep": "16:24",
+      "arr": "17:48",
+      "depIso": "2026-10-04T14:24:00Z",
+      "arrIso": "2026-10-04T15:48:00Z",
+      "track": "8",
+      "tripId": "20261004_16:24_de-DELFI_3412710808",
+      "dur": 84
+     }
+    ]
+   },
+   {
+    "dep": "15:26",
+    "arr": "18:48",
+    "depIso": "2026-10-04T13:26:00Z",
+    "arrIso": "2026-10-04T16:48:00Z",
+    "dur": 202,
+    "changes": 1,
+    "gaps": [
+     37
+    ],
+    "walkMins": 9,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB68 (15322)",
+      "headsign": "Frankfurt (Main) Hauptbahnhof",
+      "from": "Heidelberg, Hauptbahnhof",
+      "to": "Frankfurt (Main) Hauptbahnhof",
+      "dep": "15:26",
+      "arr": "16:47",
+      "depIso": "2026-10-04T13:26:00Z",
+      "arrIso": "2026-10-04T14:47:00Z",
+      "track": "3",
+      "tripId": "20261004_15:26_de-DELFI_3412740012",
+      "dur": 81
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE50 (4528)",
+      "headsign": "Bad Hersfeld Bahnhof",
+      "from": "Frankfurt (Main) Hauptbahnhof",
+      "to": "Fulda Bahnhof",
+      "dep": "17:24",
+      "arr": "18:48",
+      "depIso": "2026-10-04T15:24:00Z",
+      "arrIso": "2026-10-04T16:48:00Z",
+      "track": "5",
+      "tripId": "20261004_17:24_de-DELFI_3412710867",
+      "dur": 84
+     }
+    ]
+   }
+  ]
+ },
+ "6A-3": {
+  "target": "16:10",
+  "from": "fulda",
+  "to": "erfurt",
+  "fromStop": "Bahnhof Fulda",
+  "toStop": "Erfurt Hauptbahnhof",
+  "fromLL": [
+   50.5544,
+   9.6836
+  ],
+  "toLL": [
+   50.9723,
+   11.038
+  ],
+  "best": {
+   "dep": "16:54",
+   "arr": "18:42",
+   "depIso": "2026-10-04T14:54:00Z",
+   "arrIso": "2026-10-04T16:42:00Z",
+   "dur": 108,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 6,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "DRF (235)",
+     "headsign": "Bohumin",
+     "from": "Fulda Bahnhof",
+     "to": "Erfurt Hbf",
+     "dep": "16:54",
+     "arr": "18:42",
+     "depIso": "2026-10-04T14:54:00Z",
+     "arrIso": "2026-10-04T16:42:00Z",
+     "track": "6",
+     "tripId": "20261004_15:03_de-DELFI_3412785333",
+     "dur": 108
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "17:20",
+    "arr": "19:58",
+    "depIso": "2026-10-04T15:20:00Z",
+    "arrIso": "2026-10-04T17:58:00Z",
+    "dur": 158,
+    "changes": 2,
+    "gaps": [
+     6,
+     33
+    ],
+    "walkMins": 15,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB5 (24234)",
+      "headsign": "Kassel Hauptbahnhof",
+      "from": "Fulda Bahnhof",
+      "to": "Bebra Bahnhof",
+      "dep": "17:20",
+      "arr": "17:58",
+      "depIso": "2026-10-04T15:20:00Z",
+      "arrIso": "2026-10-04T15:58:00Z",
+      "track": "8",
+      "tripId": "20261004_17:20_de-DELFI_3412363424",
+      "dur": 38
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (24131)",
+      "headsign": "Eisenach Hbf",
+      "from": "Bebra Bahnhof",
+      "to": "Eisenach Hbf",
+      "dep": "18:04",
+      "arr": "18:40",
+      "depIso": "2026-10-04T16:04:00Z",
+      "arrIso": "2026-10-04T16:40:00Z",
+      "track": null,
+      "tripId": "20261004_18:04_de-DELFI_3412363750",
+      "dur": 36
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB20 (74635)",
+      "headsign": "Naumburg (Saale) Hbf",
+      "from": "Eisenach Hbf",
+      "to": "Erfurt Hbf",
+      "dep": "19:13",
+      "arr": "19:58",
+      "depIso": "2026-10-04T17:13:00Z",
+      "arrIso": "2026-10-04T17:58:00Z",
+      "track": null,
+      "tripId": "20261004_19:13_de-DELFI_3412420268",
+      "dur": 45
+     }
+    ]
+   },
+   {
+    "dep": "19:20",
+    "arr": "21:58",
+    "depIso": "2026-10-04T17:20:00Z",
+    "arrIso": "2026-10-04T19:58:00Z",
+    "dur": 158,
+    "changes": 2,
+    "gaps": [
+     6,
+     33
+    ],
+    "walkMins": 15,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB5 (24240)",
+      "headsign": "Kassel Hauptbahnhof",
+      "from": "Fulda Bahnhof",
+      "to": "Bebra Bahnhof",
+      "dep": "19:20",
+      "arr": "19:58",
+      "depIso": "2026-10-04T17:20:00Z",
+      "arrIso": "2026-10-04T17:58:00Z",
+      "track": "8",
+      "tripId": "20261004_19:20_de-DELFI_3412363419",
+      "dur": 38
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (24135)",
+      "headsign": "Eisenach Hbf",
+      "from": "Bebra Bahnhof",
+      "to": "Eisenach Hbf",
+      "dep": "20:04",
+      "arr": "20:40",
+      "depIso": "2026-10-04T18:04:00Z",
+      "arrIso": "2026-10-04T18:40:00Z",
+      "track": null,
+      "tripId": "20261004_20:04_de-DELFI_3412363772",
+      "dur": 36
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB20 (74639)",
+      "headsign": "Naumburg (Saale) Hbf",
+      "from": "Eisenach Hbf",
+      "to": "Erfurt Hbf",
+      "dep": "21:13",
+      "arr": "21:58",
+      "depIso": "2026-10-04T19:13:00Z",
+      "arrIso": "2026-10-04T19:58:00Z",
+      "track": null,
+      "tripId": "20261004_21:13_de-DELFI_3412420259",
+      "dur": 45
+     }
+    ]
+   },
+   {
+    "dep": "21:22",
+    "arr": "04:56",
+    "depIso": "2026-10-04T19:22:00Z",
+    "arrIso": "2026-10-05T02:56:00Z",
+    "dur": 454,
+    "changes": 2,
+    "gaps": [
+     5,
+     331
+    ],
+    "walkMins": 15,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB5 (24244)",
+      "headsign": "Kassel Hauptbahnhof",
+      "from": "Fulda Bahnhof",
+      "to": "Bebra Bahnhof",
+      "dep": "21:22",
+      "arr": "21:59",
+      "depIso": "2026-10-04T19:22:00Z",
+      "arrIso": "2026-10-04T19:59:00Z",
+      "track": "8",
+      "tripId": "20261004_21:22_de-DELFI_3412363372",
+      "dur": 37
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (24139)",
+      "headsign": "Eisenach Hbf",
+      "from": "Bebra Bahnhof",
+      "to": "Eisenach Hbf",
+      "dep": "22:04",
+      "arr": "22:40",
+      "depIso": "2026-10-04T20:04:00Z",
+      "arrIso": "2026-10-04T20:40:00Z",
+      "track": null,
+      "tripId": "20261004_22:04_de-DELFI_3412363770",
+      "dur": 36
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB20 (74605)",
+      "headsign": "Naumburg (Saale) Hbf",
+      "from": "Eisenach Hbf",
+      "to": "Erfurt Hbf",
+      "dep": "04:11",
+      "arr": "04:56",
+      "depIso": "2026-10-05T02:11:00Z",
+      "arrIso": "2026-10-05T02:56:00Z",
+      "track": null,
+      "tripId": "20261005_04:11_de-DELFI_3412420317",
+      "dur": 45
+     }
+    ]
+   }
+  ]
+ },
+ "6B-0": {
+  "target": "06:50",
+  "from": "heidelberg",
+  "to": "eisenach",
+  "fromStop": "Heidelberg Hauptbahnhof",
+  "toStop": "Eisenach Hauptbahnhof",
+  "fromLL": [
+   49.4037,
+   8.6754
+  ],
+  "toLL": [
+   50.9744,
+   10.3268
+  ],
+  "best": {
+   "dep": "07:25",
+   "arr": "12:40",
+   "depIso": "2026-10-04T05:25:00Z",
+   "arrIso": "2026-10-04T10:40:00Z",
+   "dur": 315,
+   "changes": 3,
+   "gaps": [
+    37,
+    32,
+    6
+   ],
+   "walkMins": 20,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB68 (15306)",
+     "headsign": "Frankfurt (Main) Hauptbahnhof",
+     "from": "Heidelberg, Hauptbahnhof",
+     "to": "Frankfurt (Main) Hauptbahnhof",
+     "dep": "07:25",
+     "arr": "08:47",
+     "depIso": "2026-10-04T05:25:00Z",
+     "arrIso": "2026-10-04T06:47:00Z",
+     "track": "5",
+     "tripId": "20261004_07:25_de-DELFI_3412740027",
+     "dur": 82
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE50 (4508)",
+     "headsign": "Bad Hersfeld Bahnhof",
+     "from": "Frankfurt (Main) Hauptbahnhof",
+     "to": "Fulda Bahnhof",
+     "dep": "09:24",
+     "arr": "10:48",
+     "depIso": "2026-10-04T07:24:00Z",
+     "arrIso": "2026-10-04T08:48:00Z",
+     "track": "8",
+     "tripId": "20261004_09:24_de-DELFI_3412710869",
+     "dur": 84
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB5 (24222)",
+     "headsign": "Kassel Hauptbahnhof",
+     "from": "Fulda Bahnhof",
+     "to": "Bebra Bahnhof",
+     "dep": "11:20",
+     "arr": "11:58",
+     "depIso": "2026-10-04T09:20:00Z",
+     "arrIso": "2026-10-04T09:58:00Z",
+     "track": "8",
+     "tripId": "20261004_11:20_de-DELFI_3412363437",
+     "dur": 38
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB6 (24117)",
+     "headsign": "Eisenach Hbf",
+     "from": "Bebra Bahnhof",
+     "to": "Eisenach Hbf",
+     "dep": "12:04",
+     "arr": "12:40",
+     "depIso": "2026-10-04T10:04:00Z",
+     "arrIso": "2026-10-04T10:40:00Z",
+     "track": null,
+     "tripId": "20261004_12:04_de-DELFI_3412363747",
+     "dur": 36
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "09:26",
+    "arr": "14:40",
+    "depIso": "2026-10-04T07:26:00Z",
+    "arrIso": "2026-10-04T12:40:00Z",
+    "dur": 314,
+    "changes": 3,
+    "gaps": [
+     37,
+     32,
+     6
+    ],
+    "walkMins": 21,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB68 (15310)",
+      "headsign": "Frankfurt (Main) Hauptbahnhof",
+      "from": "Heidelberg, Hauptbahnhof",
+      "to": "Frankfurt (Main) Hauptbahnhof",
+      "dep": "09:26",
+      "arr": "10:47",
+      "depIso": "2026-10-04T07:26:00Z",
+      "arrIso": "2026-10-04T08:47:00Z",
+      "track": "3",
+      "tripId": "20261004_09:26_de-DELFI_3412740016",
+      "dur": 81
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE50 (4512)",
+      "headsign": "Bad Hersfeld Bahnhof",
+      "from": "Frankfurt (Main) Hauptbahnhof",
+      "to": "Fulda Bahnhof",
+      "dep": "11:24",
+      "arr": "12:48",
+      "depIso": "2026-10-04T09:24:00Z",
+      "arrIso": "2026-10-04T10:48:00Z",
+      "track": "8",
+      "tripId": "20261004_11:24_de-DELFI_3412710855",
+      "dur": 84
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB5 (24226)",
+      "headsign": "Kassel Hauptbahnhof",
+      "from": "Fulda Bahnhof",
+      "to": "Bebra Bahnhof",
+      "dep": "13:20",
+      "arr": "13:58",
+      "depIso": "2026-10-04T11:20:00Z",
+      "arrIso": "2026-10-04T11:58:00Z",
+      "track": "8",
+      "tripId": "20261004_13:20_de-DELFI_3412363431",
+      "dur": 38
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (24121)",
+      "headsign": "Eisenach Hbf",
+      "from": "Bebra Bahnhof",
+      "to": "Eisenach Hbf",
+      "dep": "14:04",
+      "arr": "14:40",
+      "depIso": "2026-10-04T12:04:00Z",
+      "arrIso": "2026-10-04T12:40:00Z",
+      "track": null,
+      "tripId": "20261004_14:04_de-DELFI_3412363753",
+      "dur": 36
+     }
+    ]
+   },
+   {
+    "dep": "11:26",
+    "arr": "16:40",
+    "depIso": "2026-10-04T09:26:00Z",
+    "arrIso": "2026-10-04T14:40:00Z",
+    "dur": 314,
+    "changes": 3,
+    "gaps": [
+     37,
+     32,
+     6
+    ],
+    "walkMins": 20,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB68 (15314)",
+      "headsign": "Frankfurt (Main) Hauptbahnhof",
+      "from": "Heidelberg, Hauptbahnhof",
+      "to": "Frankfurt (Main) Hauptbahnhof",
+      "dep": "11:26",
+      "arr": "12:47",
+      "depIso": "2026-10-04T09:26:00Z",
+      "arrIso": "2026-10-04T10:47:00Z",
+      "track": "5",
+      "tripId": "20261004_11:26_de-DELFI_3412739999",
+      "dur": 81
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE50 (4516)",
+      "headsign": "Bad Hersfeld Bahnhof",
+      "from": "Frankfurt (Main) Hauptbahnhof",
+      "to": "Fulda Bahnhof",
+      "dep": "13:24",
+      "arr": "14:48",
+      "depIso": "2026-10-04T11:24:00Z",
+      "arrIso": "2026-10-04T12:48:00Z",
+      "track": "8",
+      "tripId": "20261004_13:24_de-DELFI_3412710868",
+      "dur": 84
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB5 (24230)",
+      "headsign": "Kassel Hauptbahnhof",
+      "from": "Fulda Bahnhof",
+      "to": "Bebra Bahnhof",
+      "dep": "15:20",
+      "arr": "15:58",
+      "depIso": "2026-10-04T13:20:00Z",
+      "arrIso": "2026-10-04T13:58:00Z",
+      "track": "8",
+      "tripId": "20261004_15:20_de-DELFI_3412363392",
+      "dur": 38
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB6 (24127)",
+      "headsign": "Eisenach Hbf",
+      "from": "Bebra Bahnhof",
+      "to": "Eisenach Hbf",
+      "dep": "16:04",
+      "arr": "16:40",
+      "depIso": "2026-10-04T14:04:00Z",
+      "arrIso": "2026-10-04T14:40:00Z",
+      "track": null,
+      "tripId": "20261004_16:04_de-DELFI_3412363752",
+      "dur": 36
+     }
+    ]
+   },
+   {
+    "dep": "13:26",
+    "arr": "18:09",
+    "depIso": "2026-10-04T11:26:00Z",
+    "arrIso": "2026-10-04T16:09:00Z",
+    "dur": 283,
+    "changes": 2,
+    "gaps": [
+     37,
+     6
+    ],
+    "walkMins": 16,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB68 (15318)",
+      "headsign": "Frankfurt (Main) Hauptbahnhof",
+      "from": "Heidelberg, Hauptbahnhof",
+      "to": "Frankfurt (Main) Hauptbahnhof",
+      "dep": "13:26",
+      "arr": "14:47",
+      "depIso": "2026-10-04T11:26:00Z",
+      "arrIso": "2026-10-04T12:47:00Z",
+      "track": "2",
+      "tripId": "20261004_13:26_de-DELFI_3412740014",
+      "dur": 81
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE50 (4520)",
+      "headsign": "Bad Hersfeld Bahnhof",
+      "from": "Frankfurt (Main) Hauptbahnhof",
+      "to": "Fulda Bahnhof",
+      "dep": "15:24",
+      "arr": "16:48",
+      "depIso": "2026-10-04T13:24:00Z",
+      "arrIso": "2026-10-04T14:48:00Z",
+      "track": "5",
+      "tripId": "20261004_15:24_de-DELFI_3412710812",
+      "dur": 84
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "DRF (235)",
+      "headsign": "Bohumin",
+      "from": "Fulda Bahnhof",
+      "to": "Eisenach Hbf",
+      "dep": "16:54",
+      "arr": "18:09",
+      "depIso": "2026-10-04T14:54:00Z",
+      "arrIso": "2026-10-04T16:09:00Z",
+      "track": "6",
+      "tripId": "20261004_15:03_de-DELFI_3412785333",
+      "dur": 75
+     }
+    ]
+   }
+  ]
+ },
+ "6B-2": {
+  "target": "15:35",
+  "from": "eisenach",
+  "to": "erfurt",
+  "fromStop": "Eisenach Hauptbahnhof",
+  "toStop": "Erfurt Hauptbahnhof",
+  "fromLL": [
+   50.9744,
+   10.3268
+  ],
+  "toLL": [
+   50.9723,
+   11.038
+  ],
+  "best": {
+   "dep": "16:13",
+   "arr": "16:58",
+   "depIso": "2026-10-04T14:13:00Z",
+   "arrIso": "2026-10-04T14:58:00Z",
+   "dur": 45,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 11,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB20 (74629)",
+     "headsign": "Naumburg (Saale) Hbf",
+     "from": "Eisenach Hbf",
+     "to": "Erfurt Hbf",
+     "dep": "16:13",
+     "arr": "16:58",
+     "depIso": "2026-10-04T14:13:00Z",
+     "arrIso": "2026-10-04T14:58:00Z",
+     "track": null,
+     "tripId": "20261004_16:13_de-DELFI_3412420277",
+     "dur": 45
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "16:54",
+    "arr": "17:38",
+    "depIso": "2026-10-04T14:54:00Z",
+    "arrIso": "2026-10-04T15:38:00Z",
+    "dur": 44,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 11,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE16 (22525)",
+      "headsign": "Erfurt Hbf",
+      "from": "Eisenach Hbf",
+      "to": "Erfurt Hbf",
+      "dep": "16:54",
+      "arr": "17:38",
+      "depIso": "2026-10-04T14:54:00Z",
+      "arrIso": "2026-10-04T15:38:00Z",
+      "track": null,
+      "tripId": "20261004_16:54_de-DELFI_3412419026",
+      "dur": 44
+     }
+    ]
+   },
+   {
+    "dep": "17:13",
+    "arr": "17:58",
+    "depIso": "2026-10-04T15:13:00Z",
+    "arrIso": "2026-10-04T15:58:00Z",
+    "dur": 45,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 11,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB20 (74631)",
+      "headsign": "Naumburg (Saale) Hbf",
+      "from": "Eisenach Hbf",
+      "to": "Erfurt Hbf",
+      "dep": "17:13",
+      "arr": "17:58",
+      "depIso": "2026-10-04T15:13:00Z",
+      "arrIso": "2026-10-04T15:58:00Z",
+      "track": null,
+      "tripId": "20261004_17:13_de-DELFI_3412420274",
+      "dur": 45
+     }
+    ]
+   },
+   {
+    "dep": "18:10",
+    "arr": "18:42",
+    "depIso": "2026-10-04T16:10:00Z",
+    "arrIso": "2026-10-04T16:42:00Z",
+    "dur": 32,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 11,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "DRF (235)",
+      "headsign": "Bohumin",
+      "from": "Eisenach Hbf",
+      "to": "Erfurt Hbf",
+      "dep": "18:10",
+      "arr": "18:42",
+      "depIso": "2026-10-04T16:10:00Z",
+      "arrIso": "2026-10-04T16:42:00Z",
+      "track": null,
+      "tripId": "20261004_15:03_de-DELFI_3412785333",
+      "dur": 32
+     }
+    ]
+   }
+  ]
+ },
+ "7A-1": {
+  "target": "10:35",
+  "from": "erfurt",
+  "to": "weimar",
+  "fromStop": "Erfurt Hauptbahnhof",
+  "toStop": "Bahnhof Weimar",
+  "fromLL": [
+   50.9723,
+   11.038
+  ],
+  "toLL": [
+   50.993,
+   11.3253
+  ],
+  "best": {
+   "dep": "10:36",
+   "arr": "10:50",
+   "depIso": "2026-10-05T08:36:00Z",
+   "arrIso": "2026-10-05T08:50:00Z",
+   "dur": 14,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 10,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE16 (74511)",
+     "headsign": "Halle (Saale) Hbf",
+     "from": "Erfurt Hbf",
+     "to": "Weimar",
+     "dep": "10:36",
+     "arr": "10:50",
+     "depIso": "2026-10-05T08:36:00Z",
+     "arrIso": "2026-10-05T08:50:00Z",
+     "track": null,
+     "tripId": "20261005_10:36_de-DELFI_3412418973",
+     "dur": 14
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "10:51",
+    "arr": "11:04",
+    "depIso": "2026-10-05T08:51:00Z",
+    "arrIso": "2026-10-05T09:04:00Z",
+    "dur": 13,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE3 (3907)",
+      "headsign": "Altenburg",
+      "from": "Erfurt Hbf",
+      "to": "Weimar",
+      "dep": "10:51",
+      "arr": "11:04",
+      "depIso": "2026-10-05T08:51:00Z",
+      "arrIso": "2026-10-05T09:04:00Z",
+      "track": null,
+      "tripId": "20261005_10:51_de-DELFI_3412657806",
+      "dur": 13
+     }
+    ]
+   },
+   {
+    "dep": "11:01",
+    "arr": "11:16",
+    "depIso": "2026-10-05T09:01:00Z",
+    "arrIso": "2026-10-05T09:16:00Z",
+    "dur": 15,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB20 (74617)",
+      "headsign": "Naumburg (Saale) Hbf",
+      "from": "Erfurt Hbf",
+      "to": "Weimar",
+      "dep": "11:01",
+      "arr": "11:16",
+      "depIso": "2026-10-05T09:01:00Z",
+      "arrIso": "2026-10-05T09:16:00Z",
+      "track": null,
+      "tripId": "20261005_10:13_de-DELFI_3412420231",
+      "dur": 15
+     }
+    ]
+   },
+   {
+    "dep": "11:17",
+    "arr": "11:32",
+    "depIso": "2026-10-05T09:17:00Z",
+    "arrIso": "2026-10-05T09:32:00Z",
+    "dur": 15,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 10,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB21 (80889)",
+      "headsign": "Gera Hbf",
+      "from": "Erfurt Hbf",
+      "to": "Weimar",
+      "dep": "11:17",
+      "arr": "11:32",
+      "depIso": "2026-10-05T09:17:00Z",
+      "arrIso": "2026-10-05T09:32:00Z",
+      "track": null,
+      "tripId": "20261005_11:17_de-DELFI_3412207493",
+      "dur": 15
+     }
+    ]
+   }
+  ]
+ },
+ "7A-3": {
+  "target": "13:20",
+  "from": "weimar",
+  "to": "naumburg",
+  "fromStop": "Bahnhof Weimar",
+  "toStop": "Naumburg (Saale) Hauptbahnhof",
+  "fromLL": [
+   50.993,
+   11.3253
+  ],
+  "toLL": [
+   51.162,
+   11.7962
+  ],
+  "best": {
+   "dep": "13:52",
+   "arr": "14:21",
+   "depIso": "2026-10-05T11:52:00Z",
+   "arrIso": "2026-10-05T12:21:00Z",
+   "dur": 29,
+   "changes": 0,
+   "gaps": [],
+   "walkMins": 13,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE16 (74517)",
+     "headsign": "Halle (Saale) Hbf",
+     "from": "Weimar",
+     "to": "Naumburg (Saale) Hbf",
+     "dep": "13:52",
+     "arr": "14:21",
+     "depIso": "2026-10-05T11:52:00Z",
+     "arrIso": "2026-10-05T12:21:00Z",
+     "track": null,
+     "tripId": "20261005_13:35_de-DELFI_3412418897",
+     "dur": 29
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "14:17",
+    "arr": "14:50",
+    "depIso": "2026-10-05T12:17:00Z",
+    "arrIso": "2026-10-05T12:50:00Z",
+    "dur": 33,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 13,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB20 (74623)",
+      "headsign": "Naumburg (Saale) Hbf",
+      "from": "Weimar",
+      "to": "Naumburg (Saale) Hbf",
+      "dep": "14:17",
+      "arr": "14:50",
+      "depIso": "2026-10-05T12:17:00Z",
+      "arrIso": "2026-10-05T12:50:00Z",
+      "track": null,
+      "tripId": "20261005_13:13_de-DELFI_3412420285",
+      "dur": 33
+     }
+    ]
+   },
+   {
+    "dep": "14:52",
+    "arr": "15:21",
+    "depIso": "2026-10-05T12:52:00Z",
+    "arrIso": "2026-10-05T13:21:00Z",
+    "dur": 29,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 13,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE16 (74519)",
+      "headsign": "Halle (Saale) Hbf",
+      "from": "Weimar",
+      "to": "Naumburg (Saale) Hbf",
+      "dep": "14:52",
+      "arr": "15:21",
+      "depIso": "2026-10-05T12:52:00Z",
+      "arrIso": "2026-10-05T13:21:00Z",
+      "track": null,
+      "tripId": "20261005_14:36_de-DELFI_3412418966",
+      "dur": 29
+     }
+    ]
+   },
+   {
+    "dep": "15:17",
+    "arr": "15:50",
+    "depIso": "2026-10-05T13:17:00Z",
+    "arrIso": "2026-10-05T13:50:00Z",
+    "dur": 33,
+    "changes": 0,
+    "gaps": [],
+    "walkMins": 13,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB20 (74625)",
+      "headsign": "Naumburg (Saale) Hbf",
+      "from": "Weimar",
+      "to": "Naumburg (Saale) Hbf",
+      "dep": "15:17",
+      "arr": "15:50",
+      "depIso": "2026-10-05T13:17:00Z",
+      "arrIso": "2026-10-05T13:50:00Z",
+      "track": null,
+      "tripId": "20261005_14:13_de-DELFI_3412420282",
+      "dur": 33
+     }
+    ]
+   }
+  ]
+ },
+ "7A-5": {
+  "target": "16:10",
+  "from": "naumburg",
+  "to": "berlin",
+  "fromStop": "Naumburg (Saale) Hauptbahnhof",
+  "toStop": "Berlin Hauptbahnhof",
+  "fromLL": [
+   51.162,
+   11.7962
+  ],
+  "toLL": [
+   52.525,
+   13.3694
+  ],
+  "best": {
+   "dep": "16:15",
+   "arr": "20:14",
+   "depIso": "2026-10-05T14:15:00Z",
+   "arrIso": "2026-10-05T18:14:00Z",
+   "dur": 239,
+   "changes": 2,
+   "gaps": [
+    17,
+    36
+   ],
+   "walkMins": 15,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE15 (74829)",
+     "headsign": "Leipzig Hbf",
+     "from": "Naumburg (Saale) Hbf",
+     "to": "Leipzig Hbf",
+     "dep": "16:15",
+     "arr": "16:55",
+     "depIso": "2026-10-05T14:15:00Z",
+     "arrIso": "2026-10-05T14:55:00Z",
+     "track": null,
+     "tripId": "20261005_15:09_de-DELFI_3412418451",
+     "dur": 40
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE10 (18392)",
+     "headsign": "Frankfurt (Oder), Bahnhof",
+     "from": "Leipzig Hbf",
+     "to": "Doberlug-Kirchhain, Bahnhof",
+     "dep": "17:12",
+     "arr": "18:15",
+     "depIso": "2026-10-05T15:12:00Z",
+     "arrIso": "2026-10-05T16:15:00Z",
+     "track": null,
+     "tripId": "20261005_17:12_de-DELFI_3412618834",
+     "dur": 63
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE8 (62033)",
+     "headsign": "Schwerin Hauptbahnhof",
+     "from": "Doberlug-Kirchhain, Bahnhof",
+     "to": "S+U Berlin Hauptbahnhof",
+     "dep": "18:51",
+     "arr": "20:14",
+     "depIso": "2026-10-05T16:51:00Z",
+     "arrIso": "2026-10-05T18:14:00Z",
+     "track": "2",
+     "tripId": "20261005_18:41_de-DELFI_3412203828",
+     "dur": 83
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "16:22",
+    "arr": "20:19",
+    "depIso": "2026-10-05T14:22:00Z",
+    "arrIso": "2026-10-05T18:19:00Z",
+    "dur": 237,
+    "changes": 3,
+    "gaps": [
+     29,
+     5,
+     24
+    ],
+    "walkMins": 22,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE16 (74521)",
+      "headsign": "Halle (Saale) Hbf",
+      "from": "Naumburg (Saale) Hbf",
+      "to": "Halle (Saale) Hbf",
+      "dep": "16:22",
+      "arr": "16:57",
+      "depIso": "2026-10-05T14:22:00Z",
+      "arrIso": "2026-10-05T14:57:00Z",
+      "track": null,
+      "tripId": "20261005_15:36_de-DELFI_3412418910",
+      "dur": 35
+     },
+     {
+      "mode": "METRO",
+      "line": "S8",
+      "headsign": "Dessau Hbf",
+      "from": "Halle (Saale) Hbf",
+      "to": "Bitterfeld",
+      "dep": "17:26",
+      "arr": "17:47",
+      "depIso": "2026-10-05T15:26:00Z",
+      "arrIso": "2026-10-05T15:47:00Z",
+      "track": null,
+      "tripId": "20261005_17:26_de-DELFI_3412697791",
+      "dur": 21
+     },
+     {
+      "mode": "METRO",
+      "line": "S2",
+      "headsign": "Lutherstadt Wittenberg Hbf",
+      "from": "Bitterfeld",
+      "to": "Lutherstadt Wittenberg Hbf",
+      "dep": "17:52",
+      "arr": "18:28",
+      "depIso": "2026-10-05T15:52:00Z",
+      "arrIso": "2026-10-05T16:28:00Z",
+      "track": null,
+      "tripId": "20261005_17:10_de-DELFI_3412698045",
+      "dur": 36
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE3",
+      "headsign": "Schwedt, Bahnhof",
+      "from": "Lutherstadt Wittenberg, Hauptbahnhof",
+      "to": "S+U Berlin Hauptbahnhof",
+      "dep": "18:52",
+      "arr": "20:19",
+      "depIso": "2026-10-05T16:52:00Z",
+      "arrIso": "2026-10-05T18:19:00Z",
+      "track": null,
+      "tripId": "20261005_18:52_de-VBB_306070952",
+      "dur": 87
+     }
+    ]
+   },
+   {
+    "dep": "17:22",
+    "arr": "21:17",
+    "depIso": "2026-10-05T15:22:00Z",
+    "arrIso": "2026-10-05T19:17:00Z",
+    "dur": 235,
+    "changes": 2,
+    "gaps": [
+     24,
+     34
+    ],
+    "walkMins": 17,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE16 (74523)",
+      "headsign": "Halle (Saale) Hbf",
+      "from": "Naumburg (Saale) Hbf",
+      "to": "Halle (Saale) Hbf",
+      "dep": "17:22",
+      "arr": "17:55",
+      "depIso": "2026-10-05T15:22:00Z",
+      "arrIso": "2026-10-05T15:55:00Z",
+      "track": null,
+      "tripId": "20261005_16:36_de-DELFI_3412418961",
+      "dur": 33
+     },
+     {
+      "mode": "METRO",
+      "line": "S8",
+      "headsign": "Lutherstadt Wittenberg Hbf",
+      "from": "Halle (Saale) Hbf",
+      "to": "Lutherstadt Wittenberg Hbf",
+      "dep": "18:19",
+      "arr": "19:17",
+      "depIso": "2026-10-05T16:19:00Z",
+      "arrIso": "2026-10-05T17:17:00Z",
+      "track": null,
+      "tripId": "20261005_18:19_de-DELFI_3412697779",
+      "dur": 58
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE3",
+      "headsign": "Pasewalk, Bahnhof",
+      "from": "Lutherstadt Wittenberg, Hauptbahnhof",
+      "to": "S+U Berlin Hauptbahnhof",
+      "dep": "19:51",
+      "arr": "21:17",
+      "depIso": "2026-10-05T17:51:00Z",
+      "arrIso": "2026-10-05T19:17:00Z",
+      "track": null,
+      "tripId": "20261005_19:51_de-VBB_306071074",
+      "dur": 86
+     }
+    ]
+   },
+   {
+    "dep": "18:15",
+    "arr": "22:18",
+    "depIso": "2026-10-05T16:15:00Z",
+    "arrIso": "2026-10-05T20:18:00Z",
+    "dur": 243,
+    "changes": 2,
+    "gaps": [
+     27,
+     24
+    ],
+    "walkMins": 17,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE15 (74831)",
+      "headsign": "Leipzig Hbf",
+      "from": "Naumburg (Saale) Hbf",
+      "to": "Leipzig Hbf",
+      "dep": "18:15",
+      "arr": "18:55",
+      "depIso": "2026-10-05T16:15:00Z",
+      "arrIso": "2026-10-05T16:55:00Z",
+      "track": null,
+      "tripId": "20261005_17:09_de-DELFI_3412418449",
+      "dur": 40
+     },
+     {
+      "mode": "METRO",
+      "line": "S2",
+      "headsign": "Lutherstadt Wittenberg Hbf",
+      "from": "Leipzig Hbf",
+      "to": "Lutherstadt Wittenberg Hbf",
+      "dep": "19:22",
+      "arr": "20:28",
+      "depIso": "2026-10-05T17:22:00Z",
+      "arrIso": "2026-10-05T18:28:00Z",
+      "track": null,
+      "tripId": "20261005_19:10_de-DELFI_3412698044",
+      "dur": 66
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE3 (3358)",
+      "headsign": "Schwedt, Bahnhof",
+      "from": "Lutherstadt Wittenberg Hbf",
+      "to": "S+U Berlin Hauptbahnhof",
+      "dep": "20:52",
+      "arr": "22:18",
+      "depIso": "2026-10-05T18:52:00Z",
+      "arrIso": "2026-10-05T20:18:00Z",
+      "track": null,
+      "tripId": "20261005_20:52_de-DELFI_3412620295",
+      "dur": 86
+     }
+    ]
+   }
+  ]
+ },
+ "7B-0": {
+  "target": "07:30",
+  "from": "erfurt",
+  "to": "quedlinburg",
+  "fromStop": "Erfurt Hauptbahnhof",
+  "toStop": "Bahnhof Quedlinburg",
+  "fromLL": [
+   50.9723,
+   11.038
+  ],
+  "toLL": [
+   51.7903,
+   11.1444
+  ],
+  "best": {
+   "dep": "07:36",
+   "arr": "11:17",
+   "depIso": "2026-10-05T05:36:00Z",
+   "arrIso": "2026-10-05T09:17:00Z",
+   "dur": 221,
+   "changes": 2,
+   "gaps": [
+    52,
+    12
+   ],
+   "walkMins": 26,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE16 (74505)",
+     "headsign": "Halle (Saale) Hbf",
+     "from": "Erfurt Hbf",
+     "to": "Halle (Saale) Hbf",
+     "dep": "07:36",
+     "arr": "08:57",
+     "depIso": "2026-10-05T05:36:00Z",
+     "arrIso": "2026-10-05T06:57:00Z",
+     "track": null,
+     "tripId": "20261005_07:36_de-DELFI_3412418946",
+     "dur": 81
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE4 (75710)",
+     "headsign": "Goslar, Bahnhof",
+     "from": "Halle (Saale) Hbf",
+     "to": "Aschersleben",
+     "dep": "09:49",
+     "arr": "10:34",
+     "depIso": "2026-10-05T07:49:00Z",
+     "arrIso": "2026-10-05T08:34:00Z",
+     "track": null,
+     "tripId": "20261005_09:49_de-DELFI_3412691970",
+     "dur": 45
+    },
+    {
+     "mode": "BUS",
+     "line": "140",
+     "headsign": "Quedlinburg Bf",
+     "from": "Aschersleben, Busbahnhof",
+     "to": "Quedlinburg, Voßbrücke",
+     "dep": "10:46",
+     "arr": "11:17",
+     "depIso": "2026-10-05T08:46:00Z",
+     "arrIso": "2026-10-05T09:17:00Z",
+     "track": null,
+     "tripId": "20261005_10:46_de-DELFI_3397432845",
+     "dur": 31
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "08:00",
+    "arr": "11:17",
+    "depIso": "2026-10-05T06:00:00Z",
+    "arrIso": "2026-10-05T09:17:00Z",
+    "dur": 197,
+    "changes": 3,
+    "gaps": [
+     5,
+     14,
+     12
+    ],
+    "walkMins": 31,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB20 (74611)",
+      "headsign": "Naumburg (Saale) Hbf",
+      "from": "Erfurt Hbf",
+      "to": "Naumburg (Saale) Hbf",
+      "dep": "08:00",
+      "arr": "08:50",
+      "depIso": "2026-10-05T06:00:00Z",
+      "arrIso": "2026-10-05T06:50:00Z",
+      "track": null,
+      "tripId": "20261005_07:13_de-DELFI_3412420303",
+      "dur": 50
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB25 (74661)",
+      "headsign": "Halle (Saale) Hbf",
+      "from": "Naumburg (Saale) Hbf",
+      "to": "Halle (Saale) Hbf",
+      "dep": "08:55",
+      "arr": "09:35",
+      "depIso": "2026-10-05T06:55:00Z",
+      "arrIso": "2026-10-05T07:35:00Z",
+      "track": null,
+      "tripId": "20261005_07:41_de-DELFI_3412420974",
+      "dur": 40
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE4 (75710)",
+      "headsign": "Goslar, Bahnhof",
+      "from": "Halle (Saale) Hbf",
+      "to": "Aschersleben",
+      "dep": "09:49",
+      "arr": "10:34",
+      "depIso": "2026-10-05T07:49:00Z",
+      "arrIso": "2026-10-05T08:34:00Z",
+      "track": null,
+      "tripId": "20261005_09:49_de-DELFI_3412691970",
+      "dur": 45
+     },
+     {
+      "mode": "BUS",
+      "line": "140",
+      "headsign": "Quedlinburg Bf",
+      "from": "Aschersleben, Busbahnhof",
+      "to": "Quedlinburg, Voßbrücke",
+      "dep": "10:46",
+      "arr": "11:17",
+      "depIso": "2026-10-05T08:46:00Z",
+      "arrIso": "2026-10-05T09:17:00Z",
+      "track": null,
+      "tripId": "20261005_10:46_de-DELFI_3397432845",
+      "dur": 31
+     }
+    ]
+   },
+   {
+    "dep": "08:02",
+    "arr": "12:11",
+    "depIso": "2026-10-05T06:02:00Z",
+    "arrIso": "2026-10-05T10:11:00Z",
+    "dur": 249,
+    "changes": 3,
+    "gaps": [
+     12,
+     5,
+     12
+    ],
+    "walkMins": 23,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE55 (16554)",
+      "headsign": "Nordhausen",
+      "from": "Erfurt Hbf",
+      "to": "Nordhausen",
+      "dep": "08:02",
+      "arr": "09:13",
+      "depIso": "2026-10-05T06:02:00Z",
+      "arrIso": "2026-10-05T07:13:00Z",
+      "track": null,
+      "tripId": "20261005_08:02_de-DELFI_3412690296",
+      "dur": 71
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "HSB (8970)",
+      "headsign": "Hasselfelde",
+      "from": "Nordhausen Nord",
+      "to": "Hasselfelde",
+      "dep": "09:25",
+      "arr": "10:35",
+      "depIso": "2026-10-05T07:25:00Z",
+      "arrIso": "2026-10-05T08:35:00Z",
+      "track": null,
+      "tripId": "20261005_09:25_de-DELFI_3412323649",
+      "dur": 70
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "HSB (8972)",
+      "headsign": "Quedlinburg",
+      "from": "Hasselfelde",
+      "to": "Friedrichshöhe",
+      "dep": "10:40",
+      "arr": "11:03",
+      "depIso": "2026-10-05T08:40:00Z",
+      "arrIso": "2026-10-05T09:03:00Z",
+      "track": null,
+      "tripId": "20261005_10:40_de-DELFI_3412323412",
+      "dur": 23
+     },
+     {
+      "mode": "BUS",
+      "line": "255",
+      "headsign": "Quedlinburg Busbahnhof",
+      "from": "Friedrichshöhe(Güntersberge) Bahnhof",
+      "to": "Quedlinburg Busbahnhof",
+      "dep": "11:15",
+      "arr": "12:11",
+      "depIso": "2026-10-05T09:15:00Z",
+      "arrIso": "2026-10-05T10:11:00Z",
+      "track": null,
+      "tripId": "20261005_10:57_de-VBN_507326245",
+      "dur": 56
+     }
+    ]
+   },
+   {
+    "dep": "08:36",
+    "arr": "12:52",
+    "depIso": "2026-10-05T06:36:00Z",
+    "arrIso": "2026-10-05T10:52:00Z",
+    "dur": 256,
+    "changes": 2,
+    "gaps": [
+     54,
+     35
+    ],
+    "walkMins": 23,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE16 (74507)",
+      "headsign": "Halle (Saale) Hbf",
+      "from": "Erfurt Hbf",
+      "to": "Halle (Saale) Hbf",
+      "dep": "08:36",
+      "arr": "09:55",
+      "depIso": "2026-10-05T06:36:00Z",
+      "arrIso": "2026-10-05T07:55:00Z",
+      "track": null,
+      "tripId": "20261005_08:36_de-DELFI_3412418978",
+      "dur": 79
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE24 (75726)",
+      "headsign": "Halberstadt Hbf",
+      "from": "Halle (Saale) Hbf",
+      "to": "Halberstadt Hbf",
+      "dep": "10:49",
+      "arr": "11:57",
+      "depIso": "2026-10-05T08:49:00Z",
+      "arrIso": "2026-10-05T09:57:00Z",
+      "track": null,
+      "tripId": "20261005_10:49_de-DELFI_3412692016",
+      "dur": 68
+     },
+     {
+      "mode": "BUS",
+      "line": "233",
+      "headsign": "Quedlinburg Busbahnhof",
+      "from": "Halberstadt Hbf",
+      "to": "Quedlinburg Goethestraße",
+      "dep": "12:32",
+      "arr": "12:52",
+      "depIso": "2026-10-05T10:32:00Z",
+      "arrIso": "2026-10-05T10:52:00Z",
+      "track": null,
+      "tripId": "20261005_12:32_de-VBN_507324727",
+      "dur": 20
+     }
+    ]
+   }
+  ]
+ },
+ "7B-2": {
+  "target": "13:30",
+  "from": "quedlinburg",
+  "to": "magdeburg",
+  "fromStop": "Bahnhof Quedlinburg",
+  "toStop": "Magdeburg Hauptbahnhof",
+  "fromLL": [
+   51.7903,
+   11.1444
+  ],
+  "toLL": [
+   52.1301,
+   11.627
+  ],
+  "best": {
+   "dep": "13:41",
+   "arr": "15:43",
+   "depIso": "2026-10-05T11:41:00Z",
+   "arrIso": "2026-10-05T13:43:00Z",
+   "dur": 122,
+   "changes": 2,
+   "gaps": [
+    16,
+    7
+   ],
+   "walkMins": 18,
+   "legs": [
+    {
+     "mode": "BUS",
+     "line": "235",
+     "headsign": "Heteborn",
+     "from": "Quedlinburg, Steinweg",
+     "to": "Hedersleben (am Hakel)-Wedderstedt, Bahnhof (Bus)",
+     "dep": "13:41",
+     "arr": "14:07",
+     "depIso": "2026-10-05T11:41:00Z",
+     "arrIso": "2026-10-05T12:07:00Z",
+     "track": null,
+     "tripId": "20261005_13:35_de-DELFI_3397484384",
+     "dur": 26
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RB44 (81339)",
+     "headsign": "Aschersleben",
+     "from": "Hedersleben-Wedderstedt",
+     "to": "Güsten",
+     "dep": "14:23",
+     "arr": "15:00",
+     "depIso": "2026-10-05T12:23:00Z",
+     "arrIso": "2026-10-05T13:00:00Z",
+     "track": null,
+     "tripId": "20261005_14:11_de-DELFI_3412692729",
+     "dur": 37
+    },
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE10 (74848)",
+     "headsign": "Magdeburg Hbf",
+     "from": "Güsten",
+     "to": "Magdeburg Hbf",
+     "dep": "15:07",
+     "arr": "15:43",
+     "depIso": "2026-10-05T13:07:00Z",
+     "arrIso": "2026-10-05T13:43:00Z",
+     "track": null,
+     "tripId": "20261005_14:37_de-DELFI_3412691709",
+     "dur": 36
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "14:23",
+    "arr": "15:47",
+    "depIso": "2026-10-05T12:23:00Z",
+    "arrIso": "2026-10-05T13:47:00Z",
+    "dur": 84,
+    "changes": 1,
+    "gaps": [
+     9
+    ],
+    "walkMins": 14,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "230",
+      "headsign": "Quedlinburg Bf",
+      "from": "Quedlinburg, Bildungshaus",
+      "to": "Quedlinburg, Bahnhofspark",
+      "dep": "14:23",
+      "arr": "14:24",
+      "depIso": "2026-10-05T12:23:00Z",
+      "arrIso": "2026-10-05T12:24:00Z",
+      "track": null,
+      "tripId": "20261005_13:30_de-DELFI_3397477357",
+      "dur": 1
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE11 (80515)",
+      "headsign": "Magdeburg Hbf",
+      "from": "Quedlinburg",
+      "to": "Magdeburg Hbf",
+      "dep": "14:33",
+      "arr": "15:47",
+      "depIso": "2026-10-05T12:33:00Z",
+      "arrIso": "2026-10-05T13:47:00Z",
+      "track": null,
+      "tripId": "20261005_14:17_de-DELFI_3412692699",
+      "dur": 74
+     }
+    ]
+   },
+   {
+    "dep": "15:23",
+    "arr": "16:47",
+    "depIso": "2026-10-05T13:23:00Z",
+    "arrIso": "2026-10-05T14:47:00Z",
+    "dur": 84,
+    "changes": 1,
+    "gaps": [
+     8
+    ],
+    "walkMins": 14,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "230",
+      "headsign": "Quedlinburg Bf",
+      "from": "Quedlinburg, Bildungshaus",
+      "to": "Quedlinburg, Bahnhofspark",
+      "dep": "15:23",
+      "arr": "15:24",
+      "depIso": "2026-10-05T13:23:00Z",
+      "arrIso": "2026-10-05T13:24:00Z",
+      "track": null,
+      "tripId": "20261005_14:30_de-DELFI_3397477358",
+      "dur": 1
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE11 (80517)",
+      "headsign": "Magdeburg Hbf",
+      "from": "Quedlinburg",
+      "to": "Magdeburg Hbf",
+      "dep": "15:32",
+      "arr": "16:47",
+      "depIso": "2026-10-05T13:32:00Z",
+      "arrIso": "2026-10-05T14:47:00Z",
+      "track": null,
+      "tripId": "20261005_15:17_de-DELFI_3412692685",
+      "dur": 75
+     }
+    ]
+   },
+   {
+    "dep": "15:36",
+    "arr": "17:43",
+    "depIso": "2026-10-05T13:36:00Z",
+    "arrIso": "2026-10-05T15:43:00Z",
+    "dur": 127,
+    "changes": 2,
+    "gaps": [
+     21,
+     7
+    ],
+    "walkMins": 18,
+    "legs": [
+     {
+      "mode": "BUS",
+      "line": "235",
+      "headsign": "Gatersleben, Bahnhof (Bus)",
+      "from": "Quedlinburg, Steinweg",
+      "to": "Hedersleben (am Hakel)-Wedderstedt, Bahnhof (Bus)",
+      "dep": "15:36",
+      "arr": "16:02",
+      "depIso": "2026-10-05T13:36:00Z",
+      "arrIso": "2026-10-05T14:02:00Z",
+      "track": null,
+      "tripId": "20261005_15:33_de-DELFI_3397484386",
+      "dur": 26
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RB44 (81341)",
+      "headsign": "Aschersleben",
+      "from": "Hedersleben-Wedderstedt",
+      "to": "Güsten",
+      "dep": "16:23",
+      "arr": "17:00",
+      "depIso": "2026-10-05T14:23:00Z",
+      "arrIso": "2026-10-05T15:00:00Z",
+      "track": null,
+      "tripId": "20261005_16:11_de-DELFI_3412692728",
+      "dur": 37
+     },
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE10 (74850)",
+      "headsign": "Magdeburg Hbf",
+      "from": "Güsten",
+      "to": "Magdeburg Hbf",
+      "dep": "17:07",
+      "arr": "17:43",
+      "depIso": "2026-10-05T15:07:00Z",
+      "arrIso": "2026-10-05T15:43:00Z",
+      "track": null,
+      "tripId": "20261005_16:37_de-DELFI_3412691708",
+      "dur": 36
+     }
+    ]
+   }
+  ]
+ },
+ "7B-4": {
+  "target": "16:25",
+  "from": "magdeburg",
+  "to": "berlin",
+  "fromStop": "Magdeburg Hauptbahnhof",
+  "toStop": "Berlin Hauptbahnhof",
+  "fromLL": [
+   52.1301,
+   11.627
+  ],
+  "toLL": [
+   52.525,
+   13.3694
+  ],
+  "best": {
+   "dep": "17:13",
+   "arr": "19:00",
+   "depIso": "2026-10-05T15:13:00Z",
+   "arrIso": "2026-10-05T17:00:00Z",
+   "dur": 107,
+   "changes": 1,
+   "gaps": [
+    2
+   ],
+   "walkMins": 7,
+   "legs": [
+    {
+     "mode": "REGIONAL_RAIL",
+     "line": "RE1 (73739)",
+     "headsign": "S Charlottenburg Bhf (Berlin)",
+     "from": "Magdeburg Hbf",
+     "to": "S Charlottenburg Bhf (Berlin)",
+     "dep": "17:13",
+     "arr": "18:48",
+     "depIso": "2026-10-05T15:13:00Z",
+     "arrIso": "2026-10-05T16:48:00Z",
+     "track": null,
+     "tripId": "20261005_17:13_de-DELFI_3412201882",
+     "dur": 95
+    },
+    {
+     "mode": "METRO",
+     "line": "S5",
+     "headsign": "S Strausberg Nord",
+     "from": "S Charlottenburg Bhf (Berlin)",
+     "to": "S+U Berlin Hauptbahnhof",
+     "dep": "18:50",
+     "arr": "19:00",
+     "depIso": "2026-10-05T16:50:00Z",
+     "arrIso": "2026-10-05T17:00:00Z",
+     "track": "5",
+     "tripId": "20261005_18:47_de-VBB_295936845",
+     "dur": 10
+    }
+   ]
+  },
+  "later": [
+   {
+    "dep": "18:12",
+    "arr": "20:05",
+    "depIso": "2026-10-05T16:12:00Z",
+    "arrIso": "2026-10-05T18:05:00Z",
+    "dur": 113,
+    "changes": 1,
+    "gaps": [
+     6
+    ],
+    "walkMins": 7,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE1 (73741)",
+      "headsign": "S Charlottenburg Bhf (Berlin)",
+      "from": "Magdeburg Hbf",
+      "to": "S Charlottenburg Bhf (Berlin)",
+      "dep": "18:12",
+      "arr": "19:49",
+      "depIso": "2026-10-05T16:12:00Z",
+      "arrIso": "2026-10-05T17:49:00Z",
+      "track": null,
+      "tripId": "20261005_18:12_de-DELFI_3412202043",
+      "dur": 97
+     },
+     {
+      "mode": "METRO",
+      "line": "S3",
+      "headsign": "S Erkner Bhf",
+      "from": "S Charlottenburg Bhf (Berlin)",
+      "to": "S+U Berlin Hauptbahnhof",
+      "dep": "19:55",
+      "arr": "20:05",
+      "depIso": "2026-10-05T17:55:00Z",
+      "arrIso": "2026-10-05T18:05:00Z",
+      "track": "6",
+      "tripId": "20261005_19:37_de-VBB_295906913",
+      "dur": 10
+     }
+    ]
+   },
+   {
+    "dep": "19:12",
+    "arr": "21:00",
+    "depIso": "2026-10-05T17:12:00Z",
+    "arrIso": "2026-10-05T19:00:00Z",
+    "dur": 108,
+    "changes": 1,
+    "gaps": [
+     2
+    ],
+    "walkMins": 7,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE1 (73743)",
+      "headsign": "S Charlottenburg Bhf (Berlin)",
+      "from": "Magdeburg Hbf",
+      "to": "S Charlottenburg Bhf (Berlin)",
+      "dep": "19:12",
+      "arr": "20:48",
+      "depIso": "2026-10-05T17:12:00Z",
+      "arrIso": "2026-10-05T18:48:00Z",
+      "track": null,
+      "tripId": "20261005_19:12_de-DELFI_3412201934",
+      "dur": 96
+     },
+     {
+      "mode": "METRO",
+      "line": "S5",
+      "headsign": "S Strausberg Bhf",
+      "from": "S Charlottenburg Bhf (Berlin)",
+      "to": "S+U Berlin Hauptbahnhof",
+      "dep": "20:50",
+      "arr": "21:00",
+      "depIso": "2026-10-05T18:50:00Z",
+      "arrIso": "2026-10-05T19:00:00Z",
+      "track": "5",
+      "tripId": "20261005_20:47_de-VBB_295936822",
+      "dur": 10
+     }
+    ]
+   },
+   {
+    "dep": "20:12",
+    "arr": "22:06",
+    "depIso": "2026-10-05T18:12:00Z",
+    "arrIso": "2026-10-05T20:06:00Z",
+    "dur": 114,
+    "changes": 1,
+    "gaps": [
+     6
+    ],
+    "walkMins": 7,
+    "legs": [
+     {
+      "mode": "REGIONAL_RAIL",
+      "line": "RE1 (73745)",
+      "headsign": "S Charlottenburg Bhf (Berlin)",
+      "from": "Magdeburg Hbf",
+      "to": "S Charlottenburg Bhf (Berlin)",
+      "dep": "20:12",
+      "arr": "21:47",
+      "depIso": "2026-10-05T18:12:00Z",
+      "arrIso": "2026-10-05T19:47:00Z",
+      "track": null,
+      "tripId": "20261005_20:12_de-DELFI_3412201865",
+      "dur": 95
+     },
+     {
+      "mode": "METRO",
+      "line": "S3",
+      "headsign": "S+U Friedrichstr. Bhf (Berlin)",
+      "from": "S Charlottenburg Bhf (Berlin)",
+      "to": "S+U Berlin Hauptbahnhof",
+      "dep": "21:53",
+      "arr": "22:06",
+      "depIso": "2026-10-05T19:53:00Z",
+      "arrIso": "2026-10-05T20:06:00Z",
+      "track": "5",
+      "tripId": "20261005_21:36_de-VBB_305965516",
+      "dur": 13
+     }
+    ]
+   }
+  ]
+ }
+}
