@@ -21,7 +21,24 @@
     get(k, d) { try { const v = localStorage.getItem("mb-" + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
     set(k, v) { try { localStorage.setItem("mb-" + k, JSON.stringify(v)); } catch (e) {} },
   };
+  let preset = store.get("preset", null);
   let chosen = store.get("routes", {});
+  /* A preset is the whole trip, already balanced. Picking one sets every day;
+     changing a single day afterwards is still allowed and just means she has
+     stepped off the preset, which the page says rather than hides. */
+  const presetOf = (id) => (D.presets || []).find((p) => p.id === id) || null;
+  function applyPreset(id) {
+    const p = presetOf(id);
+    if (!p) return;
+    preset = id; chosen = {};
+    p.pickDays.forEach((d) => { chosen[d.n] = d.pathId; });
+    store.set("preset", preset); store.set("routes", chosen);
+    liveCache = {}; store.set("live", {});
+  }
+  const offPreset = () => {
+    const p = presetOf(preset);
+    return !!p && p.pickDays.some((d) => (chosen[d.n] || d.pathId) !== d.pathId);
+  };
   let ticked = store.get("ticked", {});
   let liveCache = store.get("live", {});
 
@@ -63,6 +80,11 @@
     info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>',
     tick: '<path d="m4 12 5 5L20 6"/>',
     pin: '<path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+    route: '<circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H15a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h6.5"/>',
+    tram: '<rect x="5" y="3" width="14" height="13" rx="3"/><path d="M5 10h14M9 3V1.5M15 3V1.5M8 19l-2 3M16 19l2 3"/>',
+    prev: '<path d="M15 6 9 12l6 6"/>', next: '<path d="m9 6 6 6-6 6"/>',
+    bed: '<path d="M3 7v12M3 12h18v7M21 19v-7a3 3 0 0 0-3-3h-7v3"/><circle cx="7" cy="10" r="1.6"/>',
+    eye: '<path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.6"/>',
   };
   const svg = (k, cls) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"${cls ? ` class="${cls}"` : ""} aria-hidden="true">${ICON[k]}</svg>`;
 
@@ -242,15 +264,53 @@
   function render() {
     if (view === "now") app.innerHTML = viewNow();
     else if (view === "day") app.innerHTML = viewDay(openDay || (todayDay() || D.days[0]).n);
+    else if (view === "walk") app.innerHTML = viewWalk();
     else if (view === "map") app.innerHTML = viewMap();
     else viewHelp();
     document.querySelectorAll(".tab").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === view)));
     if (view === "map") drawMap();
+    if (view === "walk") drawWalkMap();
     paintPulse();
+  }
+
+  /* ---------- choosing a trip ---------- */
+  /* Shown until a preset is picked, and reachable afterwards. Each card is
+     costed from the real days behind it, so the promise on the front matches
+     what the timetable actually does — and it names the hotel towns, which is
+     the part that has to be decided before anyone leaves. */
+  function viewPresets(inline) {
+    const list = D.presets || [];
+    if (!list.length) return "";
+    return `${inline ? `<div class="label">Change the trip</div>` : ""}
+      <div class="routes">${list.map((p) => `
+        <button class="route" data-preset="${esc(p.id)}" aria-pressed="${p.id === preset}">
+          <span class="rn">${esc(p.name)}</span>
+          <span class="rw">${esc(p.why)}</span>
+          <span class="rs">
+            <span class="tag hot">${p.towns.length} towns</span>
+            <span class="tag">${dur(p.ride)} on trains, all week</span>
+            <span class="tag">in Berlin ${esc(p.arrive)}</span>
+          </span>
+          <span class="beds">${p.beds.map((b) => `<span class="bed"><b>${esc(place(b.place).n)}</b>${b.nights > 1 ? ` · ${b.nights} nights` : ""}</span>`).join("")}</span>
+        </button>`).join("")}</div>`;
+  }
+
+  function viewChoose() {
+    const d = D.days[0];
+    return `<div class="wrap">
+      ${heroCard(d, "Mittenwald to Berlin", "Pick how you want the week to go")}
+      <div class="card pad"><p class="lead" style="margin:0">
+        Four ways across Germany, all of them on regional trains your ticket covers, and all of them
+        in Berlin by the evening of the 3rd. Each one names the towns you sleep in, so you can book the beds now.
+        You can change your mind later, and change any single day after that.</p></div>
+      ${viewPresets(false)}
+      ${ticketNote()}
+      ${footer()}</div>`;
   }
 
   /* ---------- now ---------- */
   function viewNow() {
+    if (!preset && (D.presets || []).length) return viewChoose();
     const s = situation();
 
     if (s.kind === "before") {
@@ -263,7 +323,7 @@
           <p class="why">${esc(d.intro)}</p>
         </div>
         ${ticketNote()}
-        <div class="btns"><button class="btn" data-goday="${d.n}">See day 1</button></div>
+        <div class="btns two"><button class="btn accent" data-startwalk="1">${svg("route")} Walk me through it</button><button class="btn ghost" data-goday="${d.n}">See day 1</button></div>
         </div>
         ${overviewList()}
         ${footer()}</div>`;
@@ -319,12 +379,15 @@
         ${strip}
         <div class="btns two">
           ${nextMove ? `<a class="btn accent" href="${gdir("my location", (at && place(at.place).name) || nextMove.fromStop, "walking")}" target="_blank" rel="noopener">${svg("walk")} Walk me to the ${isBus(nextMove) ? "bus stop" : "station"}</a>` : ""}
+          <button class="btn ghost" data-startwalk="1">${svg("route")} Walk me through the day</button>
           <button class="btn ghost" data-goday="${day.n}">The whole day</button>
         </div>
       </div>
       ${alerts}
       ${day.holiday ? note("warn", day.holiday) : ""}
       ${suggest}
+      ${troubleCard()}
+      ${bedsCard()}
       ${footer()}</div>`;
   }
 
@@ -432,7 +495,13 @@
     const path = pathOf(day);
     const isToday = day.iso === dayKey(now());
 
-    const routes = `<div class="label">${day.paths.length === 1 ? "The plan" : "Choose how to spend it"}</div>
+    const pre = presetOf(preset);
+    const onPreset = pre ? (pre.pickDays.find((x) => x.n === day.n) || {}).pathId : null;
+    const routes = `<div class="label">${day.paths.length === 1 ? "The plan"
+      : pre ? `This day, within “${esc(pre.name)}”` : "Choose how to spend it"}</div>
+      ${pre && onPreset && path.id !== onPreset
+        ? note("calm", `You have swapped this day out of “${pre.name}”. That can change where you sleep — check the hotel list on the front page.`)
+        : ""}
       <div class="routes">${day.paths.map((p) => `
         <button class="route" data-route="${day.n}:${p.id}" aria-pressed="${p.id === path.id}">
           <span class="rn">${esc(p.name)}</span>
@@ -473,12 +542,47 @@
         </div>
         ${s.stn ? `<p class="walknote">${esc(s.stn)}</p>` : ""}
         ${sights.length ? `<div class="rail">${sights.map((x) => sightCard(s.place, x)).join("")}</div>` : ""}
+        ${walkPlan(s)}
         <div class="mfoot">
+          ${s.route && s.route.maps ? `<a class="chip go" href="${esc(s.route.maps)}" target="_blank" rel="noopener">${svg("route")} Walk this route</a>` : ""}
           <a class="chip" href="${gmaps(p.name || p.n)}" target="_blank" rel="noopener">${svg("pin")} Station</a>
-          <a class="chip" href="${gmaps(p.n + ", " + (p.country === "AT" ? "Austria" : "Germany"))}" target="_blank" rel="noopener">${svg("map")} The town</a>
-          ${day.bags && !s.base && s.free ? `<a class="chip" href="${gmaps("Gepäckschließfächer " + (p.name || p.n))}" target="_blank" rel="noopener">Luggage lockers</a>` : ""}
+          <a class="chip" href="${gmaps(p.n + ", " + (p.country === "AT" ? "Austria" : "Germany"))}" target="_blank" rel="noopener">${svg("map")} Town</a>
+          ${day.bags && !s.base && s.free ? `<a class="chip" href="${gmaps("Gepäckschließfächer " + (p.name || p.n))}" target="_blank" rel="noopener">Lockers</a>` : ""}
         </div>
       </div></div>`;
+  }
+
+  /* The order she actually walks it, with the real minutes between each thing
+     and a running clock, so "two hours in Bamberg" becomes something she can
+     follow without deciding anything on the pavement. */
+  function walkPlan(s) {
+    const r = s.route;
+    if (!r || !r.legs || !r.legs.length) return "";
+    const core = r.legs.filter((l) => !l.extra);
+    const extra = r.legs.filter((l) => l.extra);
+    if (!core.length) return "";
+
+    const clock = (off) => {
+      if (off == null || !s.arrIso) return "";
+      return hhmm(new Date(new Date(s.arrIso).getTime() + off * 60000));
+    };
+    const hop = (l) => l.how && l.how.mode === "ride"
+      ? `<div class="whop">${svg("tram")}<b>${esc(l.how.line)}</b> · ${l.mins} min <span style="opacity:.75">(${l.how.walkInstead} min on foot)</span></div>`
+      : `<div class="whop">${svg("walk")}${l.mins} min walk</div>`;
+
+    const row = (l, showClock) => `${hop(l)}
+      <div class="wrow"><div class="wtime">${showClock ? esc(clock(l.at)) : ""}</div>
+        <div class="wbody">
+          <div class="wname">${esc(l.to)}${l.must ? '<span class="star">worth it</span>' : ""}</div>
+          <div class="wsay">${esc(l.note || "")}${l.visit ? ` · about ${l.visit} min${l.ticket ? ", ticket needed" : ""}` : ""}</div>
+        </div></div>`;
+
+    return `<div class="walkplan">
+      ${core.map((l) => row(l, true)).join("")}
+      ${r.back != null ? `<div class="whop">${svg("walk")}${r.back} min back to the station</div>` : ""}
+      ${extra.length ? `<div class="wextra-head">Only if you are ahead of time</div>
+        <div class="wextra">${extra.map((l) => row(l, false)).join("")}</div>` : ""}
+    </div>`;
   }
 
   function moveBlock(day, m, isToday) {
@@ -506,6 +610,123 @@
           <a class="chip" href="${gdir(m.fromStop, m.toStop, "transit")}" target="_blank" rel="noopener">Open in Maps</a>
         </div>
       </div></div>`;
+  }
+
+  /* ================= the walkthrough ================= */
+  /* The whole week as one line of steps you press Next through: where you are,
+     what you walk to, why it is worth walking to, which train, where you sleep.
+     Reading a timetable and believing it is a skill; pressing Next is not. */
+  let wtDay = 1, wtStep = 0;
+
+  const allSteps = (dayN) => {
+    const d = D.days.find((x) => x.n === dayN) || D.days[0];
+    return pathOf(d).steps || [];
+  };
+
+  function wtGo(delta) {
+    let steps = allSteps(wtDay);
+    let i = wtStep + delta;
+    if (i < 0) {
+      if (wtDay <= D.days[0].n) return;
+      wtDay--; steps = allSteps(wtDay); i = steps.length - 1;
+    } else if (i >= steps.length) {
+      const last = D.days[D.days.length - 1].n;
+      if (wtDay >= last) return;
+      wtDay++; i = 0;
+    }
+    wtStep = i;
+    render();
+    const el = document.getElementById("wt-top");
+    if (el) el.scrollIntoView({ block: "start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  }
+
+  const WT = {
+    arrive: { kind: "You are here", icon: "pin" },
+    see: { kind: "Go and see", icon: "eye" },
+    ride: { kind: "Now travel", icon: "train" },
+    back: { kind: "Head back", icon: "walk" },
+    sleep: { kind: "End of the day", icon: "bed" },
+  };
+
+  function wtPhoto(st) {
+    if (st.sight) { const p = photo("sight:" + st.sight); if (p) return p; }
+    if (st.place) { const p = photo("place:" + st.place); if (p) return p; }
+    if (st.toPlace) return photo("place:" + st.toPlace);
+    return null;
+  }
+
+  function viewWalk() {
+    const day = D.days.find((x) => x.n === wtDay) || D.days[0];
+    const steps = allSteps(wtDay);
+    if (!steps.length) return `<div class="wrap"><div class="card pad">Nothing to walk through on this day.</div></div>`;
+    wtStep = Math.min(wtStep, steps.length - 1);
+    const st = steps[wtStep];
+    const meta = WT[st.kind] || WT.see;
+    const img = wtPhoto(st);
+    const total = steps.length;
+
+    const done = allSteps; // keep the linter honest
+    const first = wtDay === D.days[0].n && wtStep === 0;
+    const last = wtDay === D.days[D.days.length - 1].n && wtStep === total - 1;
+
+    const howto = st.kind === "ride"
+      ? `<div class="howto">${svg(st.line && /^\d/.test(String(st.line)) ? "bus" : "train")}<span><b>${esc(st.line)}</b> from ${esc(st.from)}${st.track ? `, platform ${esc(st.track)}` : ""} at ${esc(st.dep)} — in at ${esc(st.arr)}.</span></div>`
+      : st.kind === "see" && st.move
+      ? `<div class="howto">${svg(st.rode ? "tram" : "walk")}<span>${esc(st.move)}${st.visit ? ` Give it about ${st.visit} min.` : ""}</span></div>`
+      : st.kind === "back"
+      ? `<div class="howto">${svg("walk")}<span>${esc(st.say)}</span></div>`
+      : "";
+
+    return `<div class="wrap" id="wt-top">
+      <div class="days">${D.days.map((d) => `<button class="dchip${d.iso === dayKey(now()) ? " today" : ""}" data-wtday="${d.n}" aria-pressed="${d.n === wtDay}">Day ${d.n}<small>${dateShort(d.iso)}</small></button>`).join("")}</div>
+      <div class="card wt">
+        ${img ? `<div class="shotwrap"><img class="shot" src="${img}" alt=""><span class="badge">Day ${day.n} · ${esc(day.title)}</span></div>` : ""}
+        <div class="pad">
+          <div class="kind">${esc(meta.kind)}${st.t ? " · " + esc(st.t) : ""}</div>
+          <h2>${esc(st.title)}</h2>
+          ${st.say ? `<p class="say">${esc(st.say)}</p>` : ""}
+          ${howto}
+          ${st.sight && D.sights[st.sight] ? `<div class="btns" style="padding:14px 0 0"><button class="btn ghost" data-sight="${esc(st.sight)}">${svg("info")} More about ${esc(st.title)}</button></div>` : ""}
+        </div>
+        <div id="wtmap"></div>
+      </div>
+      <div class="wtbar"><span class="num">${wtStep + 1} / ${total}</span>
+        <span class="track"><span class="fill" style="width:${Math.round(((wtStep + 1) / total) * 100)}%"></span></span></div>
+      <div class="wtnav">
+        <button class="btn ghost" data-wt="-1"${first ? " disabled style=\"opacity:.45\"" : ""}>${svg("prev")} Back</button>
+        <button class="btn accent" data-wt="1"${last ? " disabled style=\"opacity:.45\"" : ""}>Next ${svg("next")}</button>
+      </div>
+      <div class="foot">Press Next to walk the whole week, one move at a time. Every time and platform here is the real timetable for your dates.</div>
+    </div>`;
+  }
+
+  let wtMap = null;
+  function drawWalkMap() {
+    const el = document.getElementById("wtmap");
+    if (!el) return;
+    if (!window.L) { el.style.display = "none"; return; }
+    const steps = allSteps(wtDay);
+    const st = steps[wtStep];
+    if (!st || !st.ll) { el.style.display = "none"; return; }
+    const day = D.days.find((x) => x.n === wtDay);
+    if (wtMap) { wtMap.remove(); wtMap = null; }
+    wtMap = L.map(el, { scrollWheelZoom: false, zoomControl: false, attributionControl: false });
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18 }).addTo(wtMap);
+
+    // the thread of the day so far, so she can see where this step sits
+    const line = steps.filter((x) => x.ll).map((x) => x.ll);
+    if (line.length > 1) L.polyline(line, { color: day.c, weight: 3, opacity: .35 }).addTo(wtMap);
+    steps.forEach((x, i) => {
+      if (!x.ll || i > wtStep) return;
+      L.circleMarker(x.ll, { radius: i === wtStep ? 9 : 4, color: day.c, weight: i === wtStep ? 4 : 2,
+        fillColor: i === wtStep ? "#fff" : day.c, fillOpacity: 1 }).addTo(wtMap);
+    });
+    if (st.kind === "ride" && st.toLL) {
+      L.polyline([st.ll, st.toLL], { color: day.c, weight: 4 }).addTo(wtMap);
+      wtMap.fitBounds(L.latLngBounds([st.ll, st.toLL]).pad(0.35));
+    } else {
+      wtMap.setView(st.ll, 15);
+    }
   }
 
   /* ---------- map ---------- */
@@ -610,6 +831,21 @@
       }).join("")}</div>`;
   }
 
+  /* The hotel list, which is the thing that has to be booked before anything
+     else and is otherwise buried inside five days of timetable. */
+  function bedsCard() {
+    const p = presetOf(preset);
+    if (!p) return "";
+    return `<div class="label">Where you sleep</div>
+      <div class="card"><div class="pad">
+        ${p.beds.map((b) => `<div class="kv"><b>${esc(place(b.place).n)}</b>
+          <span>${b.nights} night${b.nights > 1 ? "s" : ""} from ${esc(dateShort(b.from))}${b.in ? ` · in about ${esc(b.in)}` : ""}</span></div>`).join("")}
+        <div class="kv"><b>Berlin</b><span>from ${esc(dateShort(D.days[D.days.length - 1].iso))}</span></div>
+      </div>
+      ${offPreset() ? `<div class="note">${svg("info")}<span>You have changed a day since picking “${esc(p.name)}”, so a hotel town may have moved. Check the list above against your bookings.</span></div>` : ""}
+      </div>`;
+  }
+
   const footer = () => `<div class="foot">Times are real — checked against the German timetable for your dates and filtered to what your ticket covers.
     Platforms can still change on the day, so glance at the board. Pictures from Wikimedia Commons.</div>`;
 
@@ -651,6 +887,131 @@
     scrim.classList.remove("on"); sheet.classList.remove("on");
     setTimeout(() => { scrim.hidden = true; sheet.hidden = true; }, 260);
   }
+
+  /* ================= when the day stops going to plan ================= */
+  /* A timetable is only useful while it is true. The moment a train is missed,
+     or a town turns out to be worth another hour, the printed plan becomes a
+     liability — it keeps telling her about a train that has gone.
+
+     So this re-derives the rest of the day from two facts: where she is and
+     what time it is now. It asks the real timetable what still runs, fits as
+     much of what is left into the time that remains, and says plainly what she
+     has to give up. The one thing it never gives up is the last connection of
+     the day: the bed, and on the final day, Berlin. */
+
+  function remainingOf(day, path, fromIdx) {
+    const seq = path.seq;
+    const out = [];
+    for (let i = fromIdx; i < seq.length; i++) if (seq[i].kind === "stop") out.push({ i, s: seq[i] });
+    return out;
+  }
+
+  /* Where the day has to end: tonight's bed, or Berlin on the last day. */
+  function anchorOf(path) {
+    const stops = path.seq.filter((s) => s.kind === "stop");
+    return stops[stops.length - 1] || null;
+  }
+
+  async function reflow(opts) {
+    const day = todayDay() || D.days[0];
+    const path = pathOf(day);
+    const anchor = anchorOf(path);
+    if (!anchor) return null;
+    const t = opts.from || now();
+
+    // Where is she? Whatever she told us, else the last stop she reached.
+    let hereKey = opts.place;
+    if (!hereKey) {
+      for (const s of path.seq) if (s.kind === "stop" && new Date(s.arrIso) <= t) hereKey = s.place;
+    }
+    hereKey = hereKey || path.seq.find((s) => s.kind === "stop")?.place;
+    const here = place(hereKey);
+
+    // Which stops are still ahead of her on today's line.
+    const idx = path.seq.findIndex((s) => s.kind === "stop" && s.place === hereKey);
+    const ahead = remainingOf(day, path, idx + 1).filter((x) => x.s.place !== anchor.place);
+
+    const dest = place(anchor.place);
+    const result = { here, hereKey, dest, destKey: anchor.place, day, path, t, tried: [], keep: [], drop: [], direct: null };
+
+    // The fallback that always exists: give up the rest and go straight there.
+    result.direct = await firstCovered(hereKey, anchor.place, t);
+
+    // Then try to keep as many of the remaining stops as the clock allows,
+    // dropping from the end — the ones nearest Berlin are the easiest to lose
+    // because she is going that way anyway.
+    for (let take = ahead.length; take >= 0; take--) {
+      const chain = ahead.slice(0, take);
+      const legs = [];
+      let clock = new Date(t), at = hereKey, ok = true;
+
+      for (const { s } of chain) {
+        const c = await firstCovered(at, s.place, clock);
+        if (!c) { ok = false; break; }
+        legs.push({ to: s.place, conn: c });
+        // Give the town the walk its must-sees need, not the whole old plan.
+        const need = minimumFor(s);
+        clock = new Date(new Date(c.arrIso).getTime() + need * 60000);
+        at = s.place;
+      }
+      if (!ok) continue;
+      const last = await firstCovered(at, anchor.place, clock);
+      if (!last) continue;
+      legs.push({ to: anchor.place, conn: last, final: true });
+
+      result.keep = chain.map((x) => x.s);
+      result.drop = ahead.slice(take).map((x) => x.s);
+      result.legs = legs;
+      result.arrives = last.arr;
+      result.arrivesIso = last.arrIso;
+      break;
+    }
+    return result;
+  }
+
+  /* The least time a stop is worth getting off the train for: its marked
+     must-sees, the walk between them, and the walk back. */
+  function minimumFor(stop) {
+    const r = stop.route;
+    if (!r || !r.legs) return 45;
+    const musts = r.legs.filter((l) => l.must);
+    const pick = musts.length ? musts : r.legs.slice(0, 1);
+    const walk = pick.reduce((t, l) => t + (l.mins || 0), 0) + (r.back || 10);
+    return Math.max(30, walk + pick.reduce((t, l) => t + l.visit, 0));
+  }
+
+  async function firstCovered(fromKey, toKey, when) {
+    const a = place(fromKey), b = place(toKey);
+    if (!a.lat || !b.lat) return null;
+    const key = `${fromKey}>${toKey}@${Math.floor(new Date(when).getTime() / 300000)}`;
+    if (replanCache[key] !== undefined) return replanCache[key];
+    try {
+      const res = await motis("/plan", {
+        fromPlace: [a.lat, a.lon].join(","), toPlace: [b.lat, b.lon].join(","),
+        time: new Date(new Date(when).getTime() + 3 * 60000).toISOString(),
+        numItineraries: 3, transitModes: MODES, arriveBy: "false",
+        maxPreTransitTime: 1500, pedestrianProfile: "FOOT",
+      }, 16000);
+      const cov = new Set(D.trip.ticket.modes);
+      for (const it of res.itineraries || []) {
+        const legs = (it.legs || []).filter((l) => l.mode && l.mode !== "WALK");
+        if (!legs.length || !legs.every((l) => cov.has(l.mode))) continue;
+        const f = legs[0], last = legs[legs.length - 1];
+        replanCache[key] = {
+          dep: hhmm(f.startTime), arr: hhmm(last.endTime),
+          depIso: f.startTime, arrIso: last.endTime,
+          dur: mins(f.startTime, last.endTime), changes: legs.length - 1,
+          lines: legs.map((l) => l.routeShortName || l.mode),
+          track: f.from.track || f.from.scheduledTrack || null,
+          board: f.from.name,
+        };
+        return replanCache[key];
+      }
+      replanCache[key] = null;
+    } catch (e) { replanCache[key] = null; }
+    return replanCache[key];
+  }
+  let replanCache = {};
 
   /* ---------- re-plan from where she actually is ---------- */
   async function replan() {
@@ -708,9 +1069,77 @@
     }
   }
 
+  /* ---------- "something has changed" ---------- */
+  async function showReflow(kind, extraMins) {
+    openSheetRaw(`<div class="grab"></div><div class="sbody">
+      <h2>${kind === "stay" ? "Staying longer" : "Working out the rest of the day"}</h2>
+      <p class="about">Asking the timetable what still runs…</p></div>`);
+
+    const from = kind === "stay" ? new Date(now().getTime() + (extraMins || 60) * 60000) : now();
+    let r = null;
+    try { r = await reflow({ from }); } catch (e) { /* handled below */ }
+
+    if (!r || !r.legs) {
+      sheet.querySelector(".about").textContent =
+        "I could not reach the timetable. Your ticket is valid on the next regional train either way — ask at the desk and say “Ich habe meinen Anschluss verpasst.”";
+      return;
+    }
+
+    const anchorLast = D.days[D.days.length - 1].n === r.day.n;
+    const arriveLine = anchorLast
+      ? `You would be in Berlin at <b>${esc(r.arrives)}</b> on the 3rd.`
+      : `You would be in ${esc(r.dest.n)} at <b>${esc(r.arrives)}</b> tonight.`;
+
+    openSheetRaw(`<div class="grab"></div><div class="sbody">
+      <h2>${kind === "stay" ? `Another ${extraMins} min in ${esc(r.here.n)}` : "Here is the rest of the day"}</h2>
+      <p class="about" style="color:var(--ink)">${arriveLine}</p>
+
+      ${r.drop.length ? `<div class="note">${svg("warn")}<span>To do that you would give up
+        ${esc(r.drop.map((s) => place(s.place).n).join(" and "))}.</span></div>` :
+        `<div class="note calm">${svg("tick")}<span>Nothing has to be given up — the whole day still fits.</span></div>`}
+
+      ${r.legs.map((l) => {
+        const c = l.conn;
+        return `<div class="card" style="box-shadow:none;background:var(--hair);margin:10px 0"><div class="pad">
+          <div class="kv" style="border:0;padding:0">
+            <b style="font-size:18px">${esc(c.dep)} → ${esc(c.arr)}</b>
+            <span>${esc(place(l.to).n)}${l.final ? " · your bed" : ""}</span></div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:9px">
+            ${c.lines.map((x) => `<span class="line" style="min-width:0;font-size:13.5px;padding:5px 9px">${esc(x)}</span>`).join("")}
+          </div>
+          <p class="about" style="font-size:14px;margin-top:8px">Board at ${esc(c.board)}${c.track ? `, platform ${esc(c.track)}` : ""}. ${c.changes ? c.changes + " change" + (c.changes > 1 ? "s" : "") : "Straight through"}.</p>
+        </div></div>`;
+      }).join("")}
+
+      ${r.keep.length ? `<p class="about">You still get ${esc(r.keep.map((s) => place(s.place).n).join(", "))}.</p>` : ""}
+      ${!anchorLast ? `<p class="about">Berlin by the end of the 3rd is unaffected — that is a later day.</p>`
+        : r.drop.length ? `<p class="about">This still gets you to Berlin today, which is the one thing that has to happen.</p>` : ""}
+
+      <div class="btns" style="padding-left:0;padding-right:0">
+        <button class="btn ghost" data-close="1">Close</button>
+      </div></div>`);
+  }
+
+  function openSheetRaw(html) {
+    sheet.innerHTML = html;
+    scrim.hidden = false; sheet.hidden = false;
+    requestAnimationFrame(() => { scrim.classList.add("on"); sheet.classList.add("on"); });
+  }
+
+  function troubleCard() {
+    if (!todayDay()) return "";
+    return `<div class="label">If the day stops going to plan</div>
+      <div class="card"><div class="pad" style="padding-bottom:4px">
+        <p class="lead" style="margin:0">Tell me what happened and I will work out the rest of the day from the real timetable — and say what has to give.</p></div>
+        <div class="btns"><button class="btn ghost" data-trouble="missed">${svg("warn")} I missed my train</button>
+        <button class="btn ghost" data-trouble="stay60">${svg("now")} I want another hour here</button>
+        <button class="btn ghost" data-trouble="stay120">${svg("now")} Another two hours</button></div>
+      </div>`;
+  }
+
   /* ---------- events ---------- */
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("[data-tab],[data-goday],[data-route],[data-sight],[data-tick],[data-mapday],[data-replan],[data-close],#scrim,#themebtn,#refresh");
+    const t = e.target.closest("[data-tab],[data-goday],[data-route],[data-sight],[data-tick],[data-mapday],[data-replan],[data-close],[data-wt],[data-wtday],[data-startwalk],[data-trouble],[data-preset],#scrim,#themebtn,#refresh");
     if (!t) return;
     if (t.id === "scrim" || t.dataset.close) return closeSheet();
     if (t.id === "themebtn") {
@@ -725,9 +1154,16 @@
     if (t.dataset.tab) { view = t.dataset.tab; window.scrollTo(0, 0); return render(); }
     if (t.dataset.goday) { view = "day"; openDay = +t.dataset.goday; window.scrollTo(0, 0); return render(); }
     if (t.dataset.mapday) { openDay = +t.dataset.mapday; return render(); }
+    if (t.dataset.wt) return wtGo(+t.dataset.wt);
+    if (t.dataset.wtday) { wtDay = +t.dataset.wtday; wtStep = 0; window.scrollTo(0, 0); return render(); }
+    if (t.dataset.startwalk) {
+      const d = todayDay(); wtDay = d ? d.n : D.days[0].n; wtStep = 0;
+      view = "walk"; window.scrollTo(0, 0); return render();
+    }
     if (t.dataset.route) {
       const [n, id] = t.dataset.route.split(":");
       chosen[n] = id; store.set("routes", chosen);
+      if (+n === wtDay) wtStep = 0;
       liveCache = {}; store.set("live", {});
       render(); refreshLive(true);
       return;
@@ -740,6 +1176,16 @@
       return;
     }
     if (t.dataset.replan) return replan();
+    if (t.dataset.trouble) {
+      const v = t.dataset.trouble;
+      return showReflow(v === "missed" ? "missed" : "stay", v === "stay120" ? 120 : 60);
+    }
+    if (t.dataset.preset) {
+      applyPreset(t.dataset.preset);
+      wtStep = 0; window.scrollTo(0, 0);
+      render(); refreshLive(true);
+      return;
+    }
   });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeSheet(); });
   window.addEventListener("online", () => { online = true; refreshLive(true); });

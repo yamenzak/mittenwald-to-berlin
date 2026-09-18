@@ -173,5 +173,26 @@
   "name": "Berlin Hauptbahnhof",
   "src": "pinned",
   "km": 2.73
+ },
+ "friedberg": {
+  "lat": 48.35306,
+  "lon": 10.97556,
+  "name": "Bahnhof Friedberg (Bayern)",
+  "src": "pinned",
+  "km": 0.67
+ },
+ "jena": {
+  "lat": 50.92417,
+  "lon": 11.59139,
+  "name": "Bahnhof Jena Paradies",
+  "src": "pinned",
+  "km": 0.49
+ },
+ "saalfeld": {
+  "lat": 50.65028,
+  "lon": 11.36889,
+  "name": "Bahnhof Saalfeld (Saale)",
+  "src": "pinned",
+  "km": 1.03
  }
 }

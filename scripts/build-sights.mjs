@@ -107,10 +107,24 @@ const files = new Set();
 
 /* What to look for on Commons when the article itself offers only a crest.
    A town wants a picture of the town; a named building wants itself. */
+/* "<town> Altstadt" on Commons is a lottery: for Nuremberg it returns Altdorf
+   bei Nürnberg, which is a different town, and for Munich an S-Bahn platform.
+   Each hero is therefore aimed at the thing the town is actually known for. */
 const TOWNWORD = {
-  berlin: "Berlin Brandenburger Tor", munich: "München Marienplatz",
-  oberammergau: "Oberammergau Dorfstraße Lüftlmalerei", murnau: "Murnau Obermarkt",
+  berlin: "Berlin Brandenburger Tor", munich: "München Marienplatz Neues Rathaus",
+  oberammergau: "Oberammergau Dorfstraße Lüftlmalerei", murnau: "Murnau Staffelsee",
   donauworth: "Donauwörth Reichsstraße", ettal: "Kloster Ettal",
+  nuremberg: "Nürnberg Altstadt Pegnitz Henkersteg", augsburg: "Augsburg Rathausplatz Perlachturm",
+  jena: "Jena Thüringen Stadt", weimar: "Weimar Marktplatz",
+  bamberg: "Bamberg Altes Rathaus Regnitz", erfurt: "Erfurt Krämerbrücke",
+  naumburg: "Naumburg Saale Markt", saalfeld: "Saalfeld Saale Markt Rathaus",
+  friedberg: "Friedberg Bayern Marienplatz", heidelberg: "Heidelberg Schloss Altstadt",
+  wurzburg: "Würzburg Alte Mainbrücke Festung", rothenburg: "Rothenburg ob der Tauber Plönlein",
+  quedlinburg: "Quedlinburg Fachwerk Markt", magdeburg: "Magdeburg Dom Elbe",
+  fulda: "Fulda Dom Stadtschloss", eisenach: "Wartburg Eisenach",
+  landsberg: "Landsberg am Lech Hauptplatz", fussen: "Füssen Altstadt Lech",
+  garmisch: "Partenkirchen Ludwigstraße", mittenwald: "Mittenwald Obermarkt Karwendel",
+  seefeld: "Seefeld in Tirol Ortszentrum", oberau: "Oberau Loisachtal",
 };
 function fallbackTerm(key, title) {
   const pk = key.startsWith("place:") ? key.slice(6) : key.split("/")[0];
@@ -163,7 +177,7 @@ const out = { sights: {}, places: {}, credits: {} };
 
 for (const [pk, p] of Object.entries(PLACES)) {
   process.stdout.write(`place ${pk} … `);
-  out.places[pk] = await resolve(`place:${pk}`, p.w, 1200);
+  out.places[pk] = await resolve(`place:${pk}`, p.w, 1200, TOWNWORD[pk]);
   console.log(out.places[pk].ok ? (out.places[pk].img ? "photo" : "no photo") : "FAILED");
 }
 

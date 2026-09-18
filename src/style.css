@@ -146,7 +146,7 @@ img { display: block; max-width: 100%; }
 .note.calm { background: var(--hair); }
 .note.bad { background: color-mix(in srgb, var(--stop) 13%, var(--card)); }
 .note svg { width: 19px; height: 19px; flex: none; margin-top: 2px; }
-.btn svg, .chip svg { flex: none; }
+.btn svg { flex: none; }
 
 /* ---------- buttons ---------- */
 .btn {
@@ -236,10 +236,15 @@ img { display: block; max-width: 100%; }
 .change svg { width: 17px; height: 17px; flex: none; }
 .change.tight { color: var(--stop); font-weight: 600; background: color-mix(in srgb, var(--stop) 11%, var(--card)); }
 .mfoot { padding: 11px 16px; border-top: 1px solid var(--hair); display: flex; gap: 8px; flex-wrap: wrap; }
+/* These sit three-across under a stop, so they are labels you can tap, not
+   buttons that shout. The icons had no size set and were rendering enormous. */
 .chip {
-  font-size: 14px; font-weight: 600; padding: 8px 13px; border-radius: 999px; background: var(--hair);
-  text-decoration: none; display: inline-flex; align-items: center; gap: 6px; min-height: 40px;
+  font-size: 13.5px; font-weight: 600; padding: 6px 11px; border-radius: 999px; background: var(--hair);
+  text-decoration: none; display: inline-flex; align-items: center; gap: 5px; min-height: 32px;
+  color: var(--soft-ink);
 }
+.chip svg { width: 14px; height: 14px; flex: none; }
+.chip.go { background: color-mix(in srgb, var(--accent) 13%, var(--card)); color: var(--accent); }
 
 /* ---------- day strip ---------- */
 .days { display: flex; gap: 8px; overflow-x: auto; padding: 12px 16px; scrollbar-width: none; }
@@ -309,3 +314,67 @@ img { display: block; max-width: 100%; }
 .big-call span { display: block; color: var(--soft-ink); font-size: 14px; }
 .foot { color: var(--soft-ink); font-size: 13px; line-height: 1.6; padding: 26px 2px 40px; }
 .foot a { color: var(--accent); }
+
+
+/* ---------- the walk through a town ---------- */
+.walkplan { padding: 2px 16px 14px; }
+.wrow { display: grid; grid-template-columns: 30px 1fr; gap: 11px; align-items: start; }
+.wrow + .wrow { margin-top: 2px; }
+.wtime {
+  font-size: 12px; font-weight: 700; color: var(--soft-ink); text-align: right;
+  font-variant-numeric: tabular-nums; padding-top: 11px;
+}
+.wbody { padding: 9px 0; border-top: 1px solid var(--hair); }
+.wrow:first-child .wbody { border-top: 0; }
+.wname { font-weight: 650; font-size: 16px; }
+.wname .star { color: var(--accent); margin-left: 5px; font-size: 12px; font-weight: 700; }
+.wsay { color: var(--soft-ink); font-size: 14px; line-height: 1.45; margin-top: 2px; }
+.whop {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--soft-ink);
+  margin: 2px 0 2px 41px;
+}
+.whop svg { width: 14px; height: 14px; }
+.whop b { font-weight: 650; color: var(--ink); }
+.wextra { opacity: .62; }
+.wextra-head {
+  font-size: 12px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--soft-ink); margin: 14px 0 6px 41px;
+}
+
+/* ---------- walkthrough ---------- */
+.wt { padding-bottom: 10px; }
+.wt .shotwrap { position: relative; }
+.wt .shot { width: 100%; height: 210px; object-fit: cover; background: var(--hair); }
+.wt .badge {
+  position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,.62); color: #fff;
+  border-radius: 999px; padding: 5px 12px; font-size: 12.5px; font-weight: 650; backdrop-filter: blur(6px);
+}
+.wt .kind {
+  font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--accent);
+}
+.wt h2 { font-size: 26px; margin-top: 4px; text-wrap: balance; }
+.wt .say { color: var(--soft-ink); font-size: 16px; line-height: 1.5; margin-top: 9px; }
+.wt .howto {
+  display: flex; align-items: center; gap: 9px; margin-top: 13px; padding: 11px 13px;
+  border-radius: 13px; background: var(--hair); font-size: 15px;
+}
+.wt .howto svg { width: 18px; height: 18px; flex: none; }
+#wtmap { height: 190px; background: var(--hair); }
+.wtnav {
+  position: sticky; bottom: calc(68px + env(safe-area-inset-bottom)); z-index: 12;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 9px; padding: 10px 0 2px;
+}
+.wtnav .btn { min-height: 52px; }
+.wtbar { display: flex; align-items: center; gap: 10px; margin: 4px 0 0; }
+.wtbar .track { flex: 1; height: 5px; border-radius: 3px; background: var(--hair); overflow: hidden; }
+.wtbar .fill { height: 100%; background: var(--accent); border-radius: 3px; }
+.wtbar .num { font-size: 12.5px; color: var(--soft-ink); font-variant-numeric: tabular-nums; }
+
+/* the hotel towns on a preset card — the part you book before you leave */
+.beds { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.beds .bed {
+  font-size: 12.5px; font-weight: 600; padding: 4px 10px; border-radius: 8px;
+  background: var(--hair); color: var(--soft-ink);
+}
+.beds .bed b { color: var(--ink); font-weight: 700; }
+.route .rs + .beds { margin-top: 8px; }

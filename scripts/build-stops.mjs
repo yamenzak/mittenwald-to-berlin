@@ -59,6 +59,9 @@ const PINNED = {
   garmisch:     [47.49145, 11.09701, "Bahnhof Garmisch-Partenkirchen"],
   fussen:       [47.57026, 10.69782, "Bahnhof Füssen"],
   seefeld:      [47.32887, 11.18933, "Bahnhof Seefeld in Tirol"],
+  friedberg:    [48.35306, 10.97556, "Bahnhof Friedberg (Bayern)"],
+  jena:         [50.92417, 11.59139, "Bahnhof Jena Paradies"],
+  saalfeld:     [50.65028, 11.36889, "Bahnhof Saalfeld (Saale)"],
 };
 
 const out = {};

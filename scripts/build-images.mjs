@@ -75,6 +75,10 @@ async function encode(url, { dl, w, q }) {
 /* Keep anything already encoded. A flaky minute on the network should not cost
    a hundred photographs that were already in hand. */
 const out = existsSync(HERE("images.json")) ? JSON.parse(readFileSync(HERE("images.json"), "utf8")) : {};
+/* Which photo each key was built from. Without this, swapping a town's hero
+   for a better one changes the plan but silently leaves the old picture in the
+   page, because the key is still present. */
+const srcOf = existsSync(HERE(".image-src.json")) ? JSON.parse(readFileSync(HERE(".image-src.json"), "utf8")) : {};
 const had = Object.keys(out).length;
 let total = 0, n = 0, failed = [], fresh = 0;
 
@@ -91,10 +95,11 @@ async function worker() {
     const job = queue.shift();
     if (!job) return;
     const [key, url, size] = job;
-    if (out[key] && !process.argv.includes("--force")) { n++; continue; }
+    if (out[key] && srcOf[key] === clean(url) && !process.argv.includes("--force")) { n++; continue; }
     try {
       const buf = await encode(url, size);
       out[key] = "data:image/webp;base64," + buf.toString("base64");
+      srcOf[key] = clean(url);
       total += buf.length; n++; fresh++;
       if (fresh % 20 === 0) console.log(`  ${n}/${jobs.length} …`);
     } catch (e) {
@@ -105,6 +110,7 @@ async function worker() {
 await Promise.all(Array.from({ length: 6 }, worker));
 
 writeFileSync(HERE("images.json"), JSON.stringify(out));
+writeFileSync(HERE(".image-src.json"), JSON.stringify(srcOf));
 const bytes = Object.values(out).reduce((t, v) => t + v.length, 0);
 console.log(`\n${Object.keys(out).length} of ${jobs.length} images (${fresh} new this run)`);
 console.log(`${(bytes / 1048576).toFixed(2)} MB inlined, ${(bytes / Object.keys(out).length / 1024).toFixed(1)} KB each`);
