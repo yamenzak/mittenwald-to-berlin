@@ -332,17 +332,17 @@
   }
 
   function paintBack() {
-    const b = document.getElementById("backbtn");
-    if (b) b.disabled = navStack.length === 0 && sheet.hidden;
+    const b = document.getElementById("tripsbtn");
+    if (b) b.setAttribute("aria-pressed", String(view === "choose"));
   }
   const app = document.getElementById("app");
 
   function render() {
-    if (view === "now") app.innerHTML = viewNow();
+    if (view === "choose") app.innerHTML = viewChoose();
+    else if (view === "now") app.innerHTML = viewNow();
     else if (view === "day") app.innerHTML = viewDay(openDay || (todayDay() || D.days[0]).n);
     else if (view === "walk") app.innerHTML = viewWalk();
-    else if (view === "map") app.innerHTML = viewMap();
-    else viewHelp();
+    else app.innerHTML = viewMap();
     document.querySelectorAll(".tab").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === view)));
     paintBack();
     paintDates();
@@ -385,6 +385,7 @@
         You can change your mind later, and change any single day after that.</p></div>
       ${viewPresets(false)}
       ${ticketNote()}
+      ${preset ? `<div class="btns" style="padding:8px 0 0"><button class="btn ghost" data-close-choose="1">Keep “${esc((presetOf(preset) || {}).name || "")}”</button></div>` : ""}
       ${footer()}</div>`;
   }
 
@@ -883,45 +884,6 @@
     else map.setView([50.5, 11], 6);
   }
 
-  /* ---------- help ---------- */
-  function viewHelp() {
-    const credits = Object.entries(D.credits || {}).slice(0, 400);
-    app.innerHTML = `<div class="wrap">
-      <div class="label" style="margin-top:18px">If something goes wrong</div>
-      <a class="big-call" href="tel:112"><b>112</b><span>Emergency — police, ambulance, fire. Works anywhere in Europe, free, from any phone.</span></a>
-      <a class="big-call" style="background:var(--hair)" href="tel:+4930297010"><b>+49 30 2970 1055</b><span>Deutsche Bahn customer service, in English.</span></a>
-      <div class="card pad">
-        <div class="kv"><b>Your ticket</b><span>${esc(D.trip.ticket.name)}</span></div>
-        <div class="kv"><b>Covers</b><span>Regional trains (RB, RE, IRE), S-Bahn, U-Bahn, trams and buses</span></div>
-        <div class="kv"><b>Does not cover</b><span>ICE, IC and EC. This page never plans one.</span></div>
-        <div class="kv"><b>Austria</b><span>The Mittenwald–Seefeld hop is Austrian. Buy that short ticket at the machine.</span></div>
-      </div>
-      <div class="label">Words that help</div>
-      <div class="card pad">
-        ${[["Which platform for…?", "Welches Gleis nach …?"], ["Is this train going to…?", "Fährt dieser Zug nach …?"], ["The train is late", "Der Zug hat Verspätung"], ["I have missed my connection", "Ich habe meinen Anschluss verpasst"], ["Where is the station?", "Wo ist der Bahnhof?"], ["Can you help me, please?", "Können Sie mir bitte helfen?"], ["I don't speak German", "Ich spreche kein Deutsch"]]
-          .map(([a, b]) => `<div class="kv"><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join("")}
-      </div>
-      <div class="label">Reading a German platform</div>
-      <div class="card pad"><p class="lead" style="margin:0">
-        <b>Gleis</b> is the platform. <b>Abfahrt</b> is departures, <b>Ankunft</b> arrivals.
-        <b>Heute ca. 10 Minuten später</b> means about ten minutes late.
-        <b>Gleiswechsel</b> means the platform has changed — this page tells you that too, when it can reach the timetable.
-        <b>Fällt aus</b> means cancelled.</p></div>
-      <div class="label">How this page knows things</div>
-      <div class="card pad"><p class="lead" style="margin:0">
-        Train times, platforms and delays come from <a href="https://transitous.org" target="_blank" rel="noopener">Transitous</a>,
-        which runs on Deutsche Bahn's own published timetable and live feed. Every journey was checked against
-        what actually runs on your dates, and filtered so it only ever suggests trains your ticket covers.
-        Photographs and descriptions come from Wikipedia and Wikimedia Commons; places and the map from OpenStreetMap.
-        With no signal, everything you see is the plan as built — the times were right when it was made.</p></div>
-      <div class="label">Photographs</div>
-      <div class="card pad" style="max-height:340px;overflow:auto">
-        ${credits.map(([f, c]) => `<div class="kv" style="font-size:13px"><b style="font-weight:500">${esc(f)}</b><span>${esc(c.by)} · ${esc(c.lic)}</span></div>`).join("")}
-      </div>
-      <div class="foot">Made for one traveller. Times from Deutsche Bahn via Transitous, pictures from Wikimedia Commons,
-        maps © OpenStreetMap contributors.</div></div>`;
-  }
-
   /* ---------- overview ---------- */
   function overviewList() {
     return `<div class="label">The whole week</div>
@@ -951,7 +913,10 @@
   }
 
   const footer = () => `<div class="foot">Times are real — checked against the German timetable for your dates and filtered to what your ticket covers.
-    Platforms can still change on the day, so glance at the board. Pictures from Wikimedia Commons.</div>`;
+    Platforms can still change on the day, so glance at the board.
+    Your ticket does not cover ICE, IC or EC; nothing here will put you on one.
+    In an emergency anywhere in Europe, dial <a href="tel:112">112</a>.
+    Photographs from Wikimedia Commons, each credited on its own card; maps © OpenStreetMap contributors.</div>`;
 
   /* ---------- sight sheet ---------- */
   const scrim = document.getElementById("scrim");
@@ -1287,10 +1252,14 @@
 
   /* ---------- events ---------- */
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("#backbtn,#datebtn,[data-setstart],[data-tab],[data-goday],[data-route],[data-sight],[data-tick],[data-mapday],[data-replan],[data-close],[data-wt],[data-wtday],[data-startwalk],[data-trouble],[data-preset],#scrim,#themebtn,#refresh");
+    const t = e.target.closest("#tripsbtn,#datebtn,[data-close-choose],[data-setstart],[data-tab],[data-goday],[data-route],[data-sight],[data-tick],[data-mapday],[data-replan],[data-close],[data-wt],[data-wtday],[data-startwalk],[data-trouble],[data-preset],#scrim,#themebtn,#refresh");
     if (!t) return;
     if (t.id === "scrim" || t.dataset.close) return closeSheet();
-    if (t.id === "backbtn") return goBack();
+    if (t.dataset.closeChoose) return goBack();
+    if (t.id === "tripsbtn") {
+      if (view === "choose") return goBack();
+      push(); view = "choose"; window.scrollTo(0, 0); return render();
+    }
     if (t.id === "datebtn") return showDates();
     if (t.dataset.setstart) { setStart(t.dataset.setstart); closeSheet(); render(); refreshLive(true); return; }
     if (t.id === "themebtn") {
@@ -1334,7 +1303,9 @@
     }
     if (t.dataset.preset) {
       applyPreset(t.dataset.preset);
-      wtStep = 0; window.scrollTo(0, 0);
+      wtStep = 0;
+      if (view === "choose") { view = "now"; navStack.length = 0; }
+      window.scrollTo(0, 0);
       render(); refreshLive(true);
       return;
     }
@@ -1359,6 +1330,7 @@
   if (savedTheme) document.documentElement.setAttribute("data-theme", savedTheme);
   paintDates();
 
+  if (view === "help") view = "now";
   render();
   refreshLive();
   // The countdown is the whole point of the front page, so it ticks.
