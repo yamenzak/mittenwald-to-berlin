@@ -1064,19 +1064,27 @@
          },
          {
           "to": "Lautersee",
-          "mins": null,
-          "how": null,
+          "mins": 14,
+          "how": {
+           "mins": 14,
+           "mode": "go",
+           "approx": true
+          },
           "visit": 120,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "go",
+           "approx": true
+          },
           "must": false,
           "lat": 47.43861111,
           "lon": 11.23527778,
           "kind": "nature",
           "note": "Mountain lake above the town. About 1 h up through the forest.",
           "ticket": false,
-          "at": 69,
-          "leaveBy": 189,
+          "at": 83,
+          "leaveBy": 203,
           "extra": false
          },
          {
@@ -1087,23 +1095,27 @@
            "mode": "walk"
           },
           "visit": 90,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 18,
+          "backHow": {
+           "mins": 18,
+           "mode": "go",
+           "approx": true
+          },
           "must": false,
           "lat": 47.43916667,
           "lon": 11.21472222,
           "kind": "nature",
           "note": "The quieter second lake, 30 min further on from Lautersee.",
           "ticket": false,
-          "at": 214,
-          "leaveBy": 304,
+          "at": 228,
+          "leaveBy": 318,
           "extra": false
          }
         ],
-        "back": null,
-        "walkTotal": 34,
+        "back": 18,
+        "walkTotal": 66,
         "visitTotal": 270,
-        "needs": 304,
+        "needs": 336,
         "fitted": 4,
         "dropped": 0,
         "noCoords": [],
@@ -1188,13 +1200,13 @@
         11.23527778
        ],
        "sight": "mittenwald/Lautersee",
-       "move": "null min walk.",
+       "move": "14 min walk.",
        "rode": false,
-       "mins": null,
+       "mins": 14,
        "visit": 120,
        "say": "Mountain lake above the town. About 1 h up through the forest.",
-       "offset": 69,
-       "until": 189,
+       "offset": 83,
+       "until": 203,
        "ticket": false
       },
       {
@@ -1214,8 +1226,8 @@
        "mins": 25,
        "visit": 90,
        "say": "The quieter second lake, 30 min further on from Lautersee.",
-       "offset": 214,
-       "until": 304,
+       "offset": 228,
+       "until": 318,
        "ticket": false
       },
       {
@@ -1936,11 +1948,19 @@
          },
          {
           "to": "Staffelsee",
-          "mins": null,
-          "how": null,
+          "mins": 18,
+          "how": {
+           "mins": 18,
+           "mode": "go",
+           "approx": true
+          },
           "visit": 90,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 16,
+          "backHow": {
+           "mins": 16,
+           "mode": "go",
+           "approx": true
+          },
           "must": false,
           "lat": 47.69083333,
           "lon": 11.16083333,
@@ -2997,11 +3017,27 @@
          },
          {
           "to": "Hohenschwangau",
-          "mins": null,
-          "how": null,
+          "mins": 19,
+          "how": {
+           "mins": 19,
+           "mode": "ride",
+           "line": "78",
+           "vehicle": "BUS",
+           "from": "Füssen",
+           "to": "Hohenschwangau, Neuschwanstein",
+           "walkInstead": null
+          },
           "visit": 90,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 20,
+          "backHow": {
+           "mins": 20,
+           "mode": "ride",
+           "line": "78",
+           "vehicle": "BUS",
+           "from": "Hohenschwangau, Neuschwanstein",
+           "to": "Füssen",
+           "walkInstead": null
+          },
           "must": false,
           "lat": 47.555654,
           "lon": 10.736702,
@@ -3014,19 +3050,27 @@
          },
          {
           "to": "Neuschwanstein",
-          "mins": null,
-          "how": null,
+          "mins": 19,
+          "how": {
+           "mins": 19,
+           "mode": "go",
+           "approx": true
+          },
           "visit": 180,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 19,
+          "backHow": {
+           "mins": 19,
+           "mode": "go",
+           "approx": true
+          },
           "must": true,
           "lat": 47.557579,
           "lon": 10.749704,
           "kind": "palace",
           "note": "Ludwig II's castle. Interior needs a timed ticket booked ahead.",
           "ticket": true,
-          "at": 0,
-          "leaveBy": 180,
+          "at": 19,
+          "leaveBy": 199,
           "extra": false
          },
          {
@@ -3037,23 +3081,27 @@
            "mode": "walk"
           },
           "visit": 40,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 19,
+          "backHow": {
+           "mins": 19,
+           "mode": "go",
+           "approx": true
+          },
           "must": true,
           "lat": 47.554938,
           "lon": 10.749425,
           "kind": "view",
           "note": "The bridge over the gorge with the castle view everyone knows.",
           "ticket": false,
-          "at": 191,
-          "leaveBy": 231,
+          "at": 210,
+          "leaveBy": 250,
           "extra": false
          }
         ],
-        "back": null,
-        "walkTotal": 11,
+        "back": 19,
+        "walkTotal": 49,
         "visitTotal": 220,
-        "needs": 231,
+        "needs": 269,
         "fitted": 2,
         "dropped": 5,
         "noCoords": [],
@@ -3324,13 +3372,13 @@
         10.749704
        ],
        "sight": "fussen/Neuschwanstein",
-       "move": "null min walk.",
+       "move": "19 min walk.",
        "rode": false,
-       "mins": null,
+       "mins": 19,
        "visit": 180,
        "say": "Ludwig II's castle. Interior needs a timed ticket booked ahead.",
-       "offset": 0,
-       "until": 180,
+       "offset": 19,
+       "until": 199,
        "ticket": true
       },
       {
@@ -3350,9 +3398,23 @@
        "mins": 11,
        "visit": 40,
        "say": "The bridge over the gorge with the castle view everyone knows.",
-       "offset": 191,
-       "until": 231,
+       "offset": 210,
+       "until": 250,
        "ticket": false
+      },
+      {
+       "day": 2,
+       "path": "B",
+       "t": "15:20",
+       "kind": "back",
+       "place": "fussen",
+       "title": "Back to Bahnhof Füssen",
+       "ll": [
+        47.57026,
+        10.69782
+       ],
+       "mins": 19,
+       "say": "19 min back to the station. Aim to be on the platform by 15:20."
       },
       {
        "day": 2,
@@ -3570,11 +3632,19 @@
         "legs": [
          {
           "to": "Zugspitze",
-          "mins": null,
-          "how": null,
+          "mins": 35,
+          "how": {
+           "mins": 35,
+           "mode": "go",
+           "approx": true
+          },
           "visit": 300,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 35,
+          "backHow": {
+           "mins": 35,
+           "mode": "go",
+           "approx": true
+          },
           "must": true,
           "lat": 47.42122,
           "lon": 10.9863,
@@ -3587,11 +3657,19 @@
          },
          {
           "to": "Eibsee",
-          "mins": null,
-          "how": null,
+          "mins": 32,
+          "how": {
+           "mins": 32,
+           "mode": "go",
+           "approx": true
+          },
           "visit": 150,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 32,
+          "backHow": {
+           "mins": 32,
+           "mode": "go",
+           "approx": true
+          },
           "must": false,
           "lat": 47.45777778,
           "lon": 10.97305556,
@@ -5600,8 +5678,16 @@
            "walkInstead": 23
           },
           "visit": 60,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 24,
+          "backHow": {
+           "mins": 24,
+           "mode": "ride",
+           "line": "16",
+           "vehicle": "TRAM",
+           "from": "Tivolistraße",
+           "to": "Hauptbahnhof (U, Tram)",
+           "walkInstead": null
+          },
           "must": false,
           "lat": 48.1525,
           "lon": 11.5921,
@@ -7516,8 +7602,16 @@
            "mode": "walk"
           },
           "visit": 30,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 24,
+          "backHow": {
+           "mins": 24,
+           "mode": "ride",
+           "line": "911",
+           "vehicle": "BUS",
+           "from": "Bamberg ZOB",
+           "to": "Bamberg, Bahnhof/Post",
+           "walkInstead": null
+          },
           "must": true,
           "lat": 49.89333333,
           "lon": 10.88416667,
@@ -7536,8 +7630,16 @@
            "mode": "walk"
           },
           "visit": 15,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 24,
+          "backHow": {
+           "mins": 24,
+           "mode": "ride",
+           "line": "911",
+           "vehicle": "BUS",
+           "from": "Bamberg ZOB",
+           "to": "Bamberg, Bahnhof/Post",
+           "walkInstead": null
+          },
           "must": false,
           "lat": 49.88916667,
           "lon": 10.88611111,
@@ -7556,8 +7658,16 @@
            "mode": "walk"
           },
           "visit": 45,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 25,
+          "backHow": {
+           "mins": 25,
+           "mode": "ride",
+           "line": "911",
+           "vehicle": "BUS",
+           "from": "Bamberg ZOB",
+           "to": "Bamberg, Bahnhof/Post",
+           "walkInstead": null
+          },
           "must": true,
           "lat": 49.89083333,
           "lon": 10.8825,
@@ -7576,8 +7686,16 @@
            "mode": "walk"
           },
           "visit": 30,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 26,
+          "backHow": {
+           "mins": 26,
+           "mode": "ride",
+           "line": "911",
+           "vehicle": "BUS",
+           "from": "Bamberg ZOB",
+           "to": "Bamberg, Bahnhof/Post",
+           "walkInstead": null
+          },
           "must": false,
           "lat": 49.89111111,
           "lon": 10.88138889,
@@ -7596,8 +7714,16 @@
            "mode": "walk"
           },
           "visit": 40,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 25,
+          "backHow": {
+           "mins": 25,
+           "mode": "ride",
+           "line": "911",
+           "vehicle": "BUS",
+           "from": "Bamberg ZOB",
+           "to": "Bamberg, Bahnhof/Post",
+           "walkInstead": null
+          },
           "must": false,
           "lat": 49.89166667,
           "lon": 10.8825,
@@ -7637,10 +7763,10 @@
           "extra": true
          }
         ],
-        "back": null,
-        "walkTotal": 41,
+        "back": 25,
+        "walkTotal": 66,
         "visitTotal": 125,
-        "needs": 166,
+        "needs": 191,
         "fitted": 5,
         "dropped": 4,
         "noCoords": [],
@@ -8169,6 +8295,20 @@
        "day": 4,
        "path": "A",
        "t": "16:23",
+       "kind": "back",
+       "place": "bamberg",
+       "title": "Back to Bahnhof Bamberg",
+       "ll": [
+        49.9007,
+        10.9019
+       ],
+       "mins": 25,
+       "say": "25 min back to the station. Aim to be on the platform by 16:23."
+      },
+      {
+       "day": 4,
+       "path": "A",
+       "t": "16:23",
        "kind": "ride",
        "title": "Train to Erfurt",
        "line": "RE14",
@@ -8651,26 +8791,42 @@
          },
          {
           "to": "Fairy Grottoes",
-          "mins": null,
-          "how": null,
+          "mins": 11,
+          "how": {
+           "mins": 11,
+           "mode": "ride",
+           "line": "S1",
+           "vehicle": "BUS",
+           "from": "Saalfeld, Promenadenweg",
+           "to": "Saalfeld, Feengrotten",
+           "walkInstead": null
+          },
           "visit": 90,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 22,
+          "backHow": {
+           "mins": 22,
+           "mode": "ride",
+           "line": "A",
+           "vehicle": "BUS",
+           "from": "Saalfeld, Feengrotten",
+           "to": "Saalfeld, Saalstraße",
+           "walkInstead": null
+          },
           "must": true,
           "lat": 50.635,
           "lon": 11.34138889,
           "kind": "nature",
           "note": "Old alum mine turned into the most colourful show cave in the world.",
           "ticket": true,
-          "at": 73,
-          "leaveBy": 163,
+          "at": 84,
+          "leaveBy": 174,
           "extra": false
          }
         ],
-        "back": null,
-        "walkTotal": 18,
+        "back": 22,
+        "walkTotal": 51,
         "visitTotal": 145,
-        "needs": 163,
+        "needs": 196,
         "fitted": 3,
         "dropped": 1,
         "noCoords": [],
@@ -9088,14 +9244,28 @@
         11.34138889
        ],
        "sight": "saalfeld/Fairy Grottoes",
-       "move": "null min walk.",
-       "rode": false,
-       "mins": null,
+       "move": "Take the S1 — 11 min, instead of null on foot.",
+       "rode": true,
+       "mins": 11,
        "visit": 90,
        "say": "Old alum mine turned into the most colourful show cave in the world.",
-       "offset": 73,
-       "until": 163,
+       "offset": 84,
+       "until": 174,
        "ticket": true
+      },
+      {
+       "day": 4,
+       "path": "B",
+       "t": "16:41",
+       "kind": "back",
+       "place": "saalfeld",
+       "title": "Back to Bahnhof Saalfeld (Saale)",
+       "ll": [
+        50.65028,
+        11.36889
+       ],
+       "mins": 22,
+       "say": "22 min back to the station. Aim to be on the platform by 16:41."
       },
       {
        "day": 4,
@@ -10650,8 +10820,16 @@
            "mode": "walk"
           },
           "visit": 75,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 24,
+          "backHow": {
+           "mins": 24,
+           "mode": "ride",
+           "line": "4",
+           "vehicle": "BUS",
+           "from": "Weimar, Goetheplatz / Zentrum",
+           "to": "Weimar, Hauptbahnhof",
+           "walkInstead": null
+          },
           "must": true,
           "lat": 50.9775,
           "lon": 11.32861111,
@@ -10726,8 +10904,16 @@
            "mode": "walk"
           },
           "visit": 75,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 34,
+          "backHow": {
+           "mins": 34,
+           "mode": "ride",
+           "line": "1",
+           "vehicle": "BUS",
+           "from": "Weimar, Bauhaus Universität",
+           "to": "Weimar, Hauptbahnhof",
+           "walkInstead": null
+          },
           "must": true,
           "lat": 50.97472222,
           "lon": 11.33444444,
@@ -10932,8 +11118,16 @@
            "mode": "walk"
           },
           "visit": 40,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 20,
+          "backHow": {
+           "mins": 20,
+           "mode": "ride",
+           "line": "4",
+           "vehicle": "TRAM",
+           "from": "Naumburg (Saale), Poststr./Postring",
+           "to": "Naumburg (Saale), Hauptbahnhof (Tram)",
+           "walkInstead": null
+          },
           "must": false,
           "lat": 51.15004,
           "lon": 11.81256,
@@ -11108,19 +11302,35 @@
         "legs": [
          {
           "to": "Gendarmenmarkt",
-          "mins": null,
-          "how": null,
+          "mins": 25,
+          "how": {
+           "mins": 25,
+           "mode": "ride",
+           "line": "U5",
+           "vehicle": "SUBWAY",
+           "from": "S+U Berlin Hauptbahnhof",
+           "to": "U Museumsinsel (Berlin)",
+           "walkInstead": null
+          },
           "visit": 40,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 24,
+          "backHow": {
+           "mins": 24,
+           "mode": "ride",
+           "line": "U5",
+           "vehicle": "SUBWAY",
+           "from": "U Museumsinsel (Berlin)",
+           "to": "S+U Berlin Hauptbahnhof",
+           "walkInstead": null
+          },
           "must": true,
           "lat": 52.51333333,
           "lon": 13.39305556,
           "kind": "square",
           "note": "Two matching cathedrals and the concert hall. The handsomest square in Berlin.",
           "ticket": false,
-          "at": 0,
-          "leaveBy": 40,
+          "at": 25,
+          "leaveBy": 65,
           "extra": false
          },
          {
@@ -11147,15 +11357,15 @@
           "kind": "sight",
           "note": "The obvious one, and still worth standing in front of.",
           "ticket": false,
-          "at": 60,
-          "leaveBy": 90,
+          "at": 85,
+          "leaveBy": 115,
           "extra": false
          }
         ],
         "back": 13,
-        "walkTotal": 33,
+        "walkTotal": 58,
         "visitTotal": 70,
-        "needs": 103,
+        "needs": 128,
         "fitted": 2,
         "dropped": 0,
         "noCoords": [],
@@ -11495,13 +11705,13 @@
         13.39305556
        ],
        "sight": "berlin/Gendarmenmarkt",
-       "move": "null min walk.",
-       "rode": false,
-       "mins": null,
+       "move": "Take the U5 — 25 min, instead of null on foot.",
+       "rode": true,
+       "mins": 25,
        "visit": 40,
        "say": "Two matching cathedrals and the concert hall. The handsomest square in Berlin.",
-       "offset": 0,
-       "until": 40,
+       "offset": 25,
+       "until": 65,
        "ticket": false
       },
       {
@@ -11521,8 +11731,8 @@
        "mins": 20,
        "visit": 30,
        "say": "The obvious one, and still worth standing in front of.",
-       "offset": 60,
-       "until": 90,
+       "offset": 85,
+       "until": 115,
        "ticket": false
       },
       {
@@ -12220,19 +12430,35 @@
         "legs": [
          {
           "to": "Gendarmenmarkt",
-          "mins": null,
-          "how": null,
+          "mins": 25,
+          "how": {
+           "mins": 25,
+           "mode": "ride",
+           "line": "U5",
+           "vehicle": "SUBWAY",
+           "from": "S+U Berlin Hauptbahnhof",
+           "to": "U Museumsinsel (Berlin)",
+           "walkInstead": null
+          },
           "visit": 40,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 24,
+          "backHow": {
+           "mins": 24,
+           "mode": "ride",
+           "line": "U5",
+           "vehicle": "SUBWAY",
+           "from": "U Museumsinsel (Berlin)",
+           "to": "S+U Berlin Hauptbahnhof",
+           "walkInstead": null
+          },
           "must": true,
           "lat": 52.51333333,
           "lon": 13.39305556,
           "kind": "square",
           "note": "Two matching cathedrals and the concert hall. The handsomest square in Berlin.",
           "ticket": false,
-          "at": 0,
-          "leaveBy": 40,
+          "at": 25,
+          "leaveBy": 65,
           "extra": false
          },
          {
@@ -12259,15 +12485,15 @@
           "kind": "sight",
           "note": "The obvious one, and still worth standing in front of.",
           "ticket": false,
-          "at": 60,
-          "leaveBy": 90,
+          "at": 85,
+          "leaveBy": 115,
           "extra": false
          }
         ],
         "back": 13,
-        "walkTotal": 33,
+        "walkTotal": 58,
         "visitTotal": 70,
-        "needs": 103,
+        "needs": 128,
         "fitted": 2,
         "dropped": 0,
         "noCoords": [],
@@ -12628,13 +12854,13 @@
         13.39305556
        ],
        "sight": "berlin/Gendarmenmarkt",
-       "move": "null min walk.",
-       "rode": false,
-       "mins": null,
+       "move": "Take the U5 — 25 min, instead of null on foot.",
+       "rode": true,
+       "mins": 25,
        "visit": 40,
        "say": "Two matching cathedrals and the concert hall. The handsomest square in Berlin.",
-       "offset": 0,
-       "until": 40,
+       "offset": 25,
+       "until": 65,
        "ticket": false
       },
       {
@@ -12654,8 +12880,8 @@
        "mins": 20,
        "visit": 30,
        "say": "The obvious one, and still worth standing in front of.",
-       "offset": 60,
-       "until": 90,
+       "offset": 85,
+       "until": 115,
        "ticket": false
       },
       {
@@ -12998,8 +13224,16 @@
            "mode": "walk"
           },
           "visit": 75,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 24,
+          "backHow": {
+           "mins": 24,
+           "mode": "ride",
+           "line": "4",
+           "vehicle": "BUS",
+           "from": "Weimar, Goetheplatz / Zentrum",
+           "to": "Weimar, Hauptbahnhof",
+           "walkInstead": null
+          },
           "must": true,
           "lat": 50.9775,
           "lon": 11.32861111,
@@ -13178,19 +13412,35 @@
         "legs": [
          {
           "to": "Gendarmenmarkt",
-          "mins": null,
-          "how": null,
+          "mins": 25,
+          "how": {
+           "mins": 25,
+           "mode": "ride",
+           "line": "U5",
+           "vehicle": "SUBWAY",
+           "from": "S+U Berlin Hauptbahnhof",
+           "to": "U Museumsinsel (Berlin)",
+           "walkInstead": null
+          },
           "visit": 40,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 24,
+          "backHow": {
+           "mins": 24,
+           "mode": "ride",
+           "line": "U5",
+           "vehicle": "SUBWAY",
+           "from": "U Museumsinsel (Berlin)",
+           "to": "S+U Berlin Hauptbahnhof",
+           "walkInstead": null
+          },
           "must": true,
           "lat": 52.51333333,
           "lon": 13.39305556,
           "kind": "square",
           "note": "Two matching cathedrals and the concert hall. The handsomest square in Berlin.",
           "ticket": false,
-          "at": 0,
-          "leaveBy": 40,
+          "at": 25,
+          "leaveBy": 65,
           "extra": false
          },
          {
@@ -13217,8 +13467,8 @@
           "kind": "sight",
           "note": "The obvious one, and still worth standing in front of.",
           "ticket": false,
-          "at": 60,
-          "leaveBy": 90,
+          "at": 85,
+          "leaveBy": 115,
           "extra": false
          },
          {
@@ -13234,16 +13484,24 @@
            "walkInstead": 24
           },
           "visit": 180,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 18,
+          "backHow": {
+           "mins": 18,
+           "mode": "ride",
+           "line": "S7",
+           "vehicle": "METRO",
+           "from": "S+U Friedrichstr. Bhf (Berlin)",
+           "to": "S+U Berlin Hauptbahnhof",
+           "walkInstead": null
+          },
           "must": false,
           "lat": 52.52138889,
           "lon": 13.39555556,
           "kind": "museum",
           "note": "Five museums on one island. The Pergamon's Ishtar Gate is the highlight.",
           "ticket": true,
-          "at": 108,
-          "leaveBy": 288,
+          "at": 133,
+          "leaveBy": 313,
           "extra": false
          },
          {
@@ -13254,23 +13512,31 @@
            "mode": "walk"
           },
           "visit": 60,
-          "backFromHere": null,
-          "backHow": null,
+          "backFromHere": 17,
+          "backHow": {
+           "mins": 17,
+           "mode": "ride",
+           "line": "S5",
+           "vehicle": "METRO",
+           "from": "S Hackescher Markt (Berlin)",
+           "to": "S+U Berlin Hauptbahnhof",
+           "walkInstead": null
+          },
           "must": false,
           "lat": 52.51916667,
           "lon": 13.40111111,
           "kind": "church",
           "note": "Climb to the dome walkway for the view over the island.",
           "ticket": true,
-          "at": 303,
-          "leaveBy": 363,
+          "at": 328,
+          "leaveBy": 388,
           "extra": false
          }
         ],
-        "back": null,
-        "walkTotal": 53,
+        "back": 17,
+        "walkTotal": 95,
         "visitTotal": 310,
-        "needs": 363,
+        "needs": 405,
         "fitted": 4,
         "dropped": 0,
         "noCoords": [],
@@ -13511,13 +13777,13 @@
         13.39305556
        ],
        "sight": "berlin/Gendarmenmarkt",
-       "move": "null min walk.",
-       "rode": false,
-       "mins": null,
+       "move": "Take the U5 — 25 min, instead of null on foot.",
+       "rode": true,
+       "mins": 25,
        "visit": 40,
        "say": "Two matching cathedrals and the concert hall. The handsomest square in Berlin.",
-       "offset": 0,
-       "until": 40,
+       "offset": 25,
+       "until": 65,
        "ticket": false
       },
       {
@@ -13537,8 +13803,8 @@
        "mins": 20,
        "visit": 30,
        "say": "The obvious one, and still worth standing in front of.",
-       "offset": 60,
-       "until": 90,
+       "offset": 85,
+       "until": 115,
        "ticket": false
       },
       {
@@ -13558,8 +13824,8 @@
        "mins": 18,
        "visit": 180,
        "say": "Five museums on one island. The Pergamon's Ishtar Gate is the highlight.",
-       "offset": 108,
-       "until": 288,
+       "offset": 133,
+       "until": 313,
        "ticket": true
       },
       {
@@ -13579,8 +13845,8 @@
        "mins": 15,
        "visit": 60,
        "say": "Climb to the dome walkway for the view over the island.",
-       "offset": 303,
-       "until": 363,
+       "offset": 328,
+       "until": 388,
        "ticket": true
       },
       {
@@ -19912,6 +20178,24 @@
    "5C-2": "خمس عشرة دقيقة نزولاً إلى الوسط.",
    "5C-4": "وصلتِ. محطة برلين المركزية."
   },
+  "moveNotes": {
+   "1B-1": "هذا القطار يعبر إلى النمسا، وتذكرتك الألمانية لا تغطّيه. اشتري تذكرة ميتنفالد–زيفيلد القصيرة من الآلة على الرصيف.",
+   "2A-2": "الحافلة ٩٦٠٦ من أمام محطة غارميش. تسير مباشرة إلى إيتال ثم إلى أوبرأمرغاو.",
+   "2A-8": "تبديل في محطة ميونخ المركزية.",
+   "2B-1": "حافلة إقليمية ٩٦٠٦ عبر إيتال وأوبرأمرغاو. رحلات قليلة في اليوم — تحقّقي من الموعد في الليلة السابقة.",
+   "2B-3": "تبديل في بوخلوه.",
+   "2C-2": "تبديل في محطة ميونخ المركزية.",
+   "3C-3": "بالعودة عبر أوغسبورغ.",
+   "4A-3": "الرحلة الطويلة — نحو ثلاث ساعات صعوداً عبر غابة فرانكونيا. اشتري ما تأكلينه قبل الركوب.",
+   "4B-1": "صعوداً عبر غابة فرانكونيا. تبديل واحد، عادةً في ليشتنفيلس.",
+   "4C-1": "أربع ساعات شمالاً. المناظر عبر غابة فرانكونيا تستحق مقعداً بجانب النافذة.",
+   "5A-5": "تبديل أو تبديلان، عادةً في هاله.",
+   "5B-5": "تبديل أو تبديلان، عادةً في هاله.",
+   "5C-3": "تبديلان في ناومبورغ وهاله."
+  },
+  "holidays": {
+   "5": "يوم الوحدة الألمانية — عطلة رسمية. القطارات تسير بجدول الأحد، فعددها أقل، وقد تعمل المتاحف بساعات العطلة. تحقّقي من المواعيد قبل مغادرة كل مكان."
+  },
   "ui": {
    "Now": "الآن",
    "The day": "اليوم",
@@ -19980,6 +20264,8 @@
    "about": "نحو",
    "min": "دقيقة",
    "ticket needed": "تحتاج تذكرة",
+   "ticket": "تذكرة",
+   "min to get there": "دقيقة للوصول",
    "Walk this route": "امشي هذا المسار",
    "Station": "المحطة",
    "Town": "البلدة",
@@ -20044,6 +20330,36 @@
    "days earlier": "أيام قبله",
    "Or pick the day you arrive in Mittenwald": "أو اختاري يوم وصولك إلى ميتنفالد",
    "Times are real": "الأوقات حقيقية",
+   "More about": "المزيد عن",
+   "on trains": "في القطارات",
+   "no": "بلا",
+   "live-from-timetable": "مباشرة من الجدول للتواريخ التي تسافرين فيها",
+   "about one every": "واحد كل",
+   "not one to miss": "فهذا ليس مما يُفوَّت",
+   "Take the": "خذي",
+   "Give it about": "خصّصي له نحو",
+   "Another": "ساعة إضافية",
+   "in": "في",
+   "at": "الساعة",
+   "Be on the platform by": "كوني على الرصيف قبل",
+   "bags-note": "تغيّرين الفندق اليوم — الحقائب معك. معظم المحطات فيها خزائن إن أردتِ تركها قبل التجوّل.",
+   "Arrive": "الوصول",
+   "you sleep here": "تنامين هنا",
+   "plat": "رصيف",
+   "chg": "تبديل",
+   "Switch to English": "التبديل إلى الإنجليزية",
+   "via Wikimedia Commons": "عبر ويكيميديا كومنز",
+   "Ways to": "طرق إلى",
+   "from-where-you-are": "من حيث أنتِ الآن. فقط القطارات والحافلات التي تغطيها تذكرتك.",
+   "no-regional": "لا يظهر أي قطار إقليمي من هنا الآن. اسألي عند شبّاك التذاكر، وقولي: Ich habe meinen Anschluss verpasst.",
+   "cannot-reach-desk": "تعذّر الوصول إلى الجدول. اسألي عند شبّاك التذاكر — تذكرتك صالحة على القطار الإقليمي التالي في كل الأحوال.",
+   "You still get": "ما زلتِ ستزورين",
+   "berlin-unaffected": "الوصول إلى برلين في اليوم الأخير غير متأثر — فذلك يوم لاحق.",
+   "still-berlin-today": "هذا ما زال يوصلك إلى برلين اليوم، وهو الشيء الوحيد الذي يجب أن يحدث.",
+   "give-up": "لتفعلي ذلك عليك التنازل عن",
+   "You would be in": "ستكونين في",
+   "tonight": "الليلة",
+   "on the 3rd": "في اليوم الأخير",
    "No trains today": "لا قطارات اليوم",
    "Checked at": "تم التحقّق في",
    "live-ok": "التأخيرات وتغييرات الأرصفة التي على الشاشة حقيقية.",
@@ -20089,7 +20405,6 @@
    "The train is cancelled": "أُلغي القطار",
    "The bus is cancelled": "أُلغيت الحافلة",
    "is not running. There is another way below.": "لا يسير. في الأسفل طريق آخر.",
-   "Be on the platform by": "كوني على الرصيف قبل",
    "Worth doing now:": "يستحق الآن:",
    "Right now in": "الآن في",
    "In an emergency anywhere in Europe, dial": "في حالة الطوارئ في أي مكان في أوروبا، اتصلي بـ"

@@ -34,7 +34,41 @@
     : store.get("lang", (navigator.language || "").startsWith("ar") && AR ? "ar" : "en");
   if (urlLang) store.set("lang", lang);
   const ar = () => lang === "ar" && !!AR;
-  const T = (en) => (ar() && AR.ui[en]) || en;
+
+  /* Most strings are their own key — T("Close") is the English. A few are too
+     long or appear in too many places to use as a key, so they get a short one
+     and their English lives here. Without this the English page printed the key
+     itself, which is how "chooser-intro" ended up on screen.
+     scripts/check-strings.mjs fails the build if a key has neither. */
+  const EN = {
+    "chooser-intro": "Four ways across Germany, all of them on regional trains your ticket covers, and all of them in Berlin on the last day. Each one names the towns you sleep in, so you can book the beds now.",
+    "start-intro": "The plan is written for 29 September. If you travel on another day, pick it here and the whole trip moves with it.",
+    "locate-ask": "If you are lost, or just not sure where you are, press this and your phone will tell me.",
+    "locate-failed": "I could not work out where you are. Open your phone's settings and allow location, or carry on from the day page.",
+    "on-plan": "And that is where the plan expects you. All is well.",
+    "off-plan": "But the plan expects you somewhere else today. Press “I missed my train” below and I will rebuild the day from here.",
+    "far-off-plan": "You are well off the route. Press “I missed my train” below and I will work out the way to your bed.",
+    "settings-note": "Nothing in here can break the plan. Everything you choose is kept on this phone only.",
+    "ticket": "ticket",
+    "ticket-note": "Your ticket does not cover ICE, IC or EC trains. Nothing in this plan will ever put you on one.",
+    "map-offline": "The map needs a connection. Every stop still opens in Google Maps from the day page.",
+    "live-none": "Nothing to check — there are no trains on your plan today, so what you see is the plan.",
+    "live-ok": "Delays and platform changes on screen are the real ones.",
+    "live-off": "No connection, so these are the planned times. They were right when the page was built.",
+    "live-bad": "Could not reach the timetable just now. The planned times still stand.",
+    "on trains": "on trains", "no": "no",
+    "bags-note": "You change hotel today — the bags come with you. Most stations have lockers if you want to drop them before wandering.",
+    "berlin-unaffected": "Berlin on the last day is unaffected — that is a later day.",
+    "cannot-reach-desk": "I could not reach the timetable. Your ticket is valid on the next regional train either way — ask at the desk and say “Ich habe meinen Anschluss verpasst.”",
+    "from-where-you-are": "From where you are now. Only trains and buses your ticket covers.",
+    "give-up": "To do that you would give up",
+    "live-from-timetable": "Live from the timetable for the dates you are travelling",
+    "no-regional": "Nothing regional comes up from here right now. Ask at the ticket desk — say “Ich habe meinen Anschluss verpasst.”",
+    "still-berlin-today": "This still gets you to Berlin today, which is the one thing that has to happen.",
+    "on trains": "في القطارات", "no": "بلا",
+    "live-explain": "A green dot means the times you see have been checked against Deutsche Bahn in the last few minutes. Grey means you are reading the plan as it was built. It checks itself every minute or so while you travel, and you can tap here any time to make it check again.",
+  };
+  const T = (k) => (ar() && AR.ui[k]) || EN[k] || k;
   function setLang(next) {
     lang = next; store.set("lang", next);
     applyLang();
@@ -130,6 +164,13 @@
   /* Instructions and the walkthrough's own sentences are written at build time
      in English. Rather than translate the built strings, the Arabic ones are
      rebuilt here from the same facts. */
+  const moveNote = (day, m) => {
+    if (!ar()) return m.note || "";
+    const k = `${day.n}${pathOf(day).id}-${pathOf(day).seq.indexOf(m)}`;
+    return (AR.moveNotes && AR.moveNotes[k]) || m.note || "";
+  };
+  const holidayText = (day) => (ar() && AR.holidays && AR.holidays[day.n]) || day.holiday || "";
+
   const stnText = (day, stop) => {
     if (!ar()) return stop.stn || "";
     const k = `${day.n}${pathOf(day).id}-${pathOf(day).seq.indexOf(stop)}`;
@@ -149,6 +190,7 @@
         ? `${st.dur} ${T("minutes")} و${st.changes} ${T(st.changes > 1 ? "changes" : "change")} — ${st.line}.`
         : `${st.dur} ${T("minutes")}، ${T("direct")}.`;
     }
+    if (st.kind === "see") { const t = sightOf(st.place, st.title); return t ? (t.note || "") : (st.say || ""); }
     if (st.kind === "back") return `${st.mins} ${T("min back to the station")}. ${T("Be on the platform by")} ${st.t || ""}.`;
     if (st.kind === "sleep") return T("Goodnight");
     return st.say || "";
@@ -698,7 +740,7 @@
         </div>
       </div>
       ${alerts}
-      ${day.holiday ? note("warn", day.holiday) : ""}
+      ${day.holiday ? note("warn", holidayText(day)) : ""}
       ${locateCard()}
       ${suggest}
       ${shiftNote()}
@@ -802,7 +844,7 @@
     const done = !!ticked[key];
     return `<button class="sight${done ? " done" : ""}" data-sight="${esc(key)}">
       ${img ? `<img src="${img}" alt="" loading="lazy">` : `<div style="height:118px"></div>`}
-      ${s.ticket ? `<span class="pin">ticket</span>` : ""}
+      ${s.ticket ? `<span class="pin">${T("ticket")}</span>` : ""}
       <span class="sv"><span class="sn">${esc(s.name)}</span>
       <span class="sm">${esc(KIND[s.kind])} · ${s.mins} ${T("min")}</span></span>
     </button>`;
@@ -813,7 +855,7 @@
      Friday should not mean going back to the front page. */
   function dayStrip(cur, attr) {
     return `<div class="days">${D.days.map((d) => `<button class="dchip${dayDate(d) === dayKey(now()) ? " today" : ""}"
-      data-${attr}="${d.n}" aria-pressed="${d.n === cur}">Day ${d.n}<small>${dateShort(d.iso)}</small></button>`).join("")}</div>`;
+      data-${attr}="${d.n}" aria-pressed="${d.n === cur}">${T("Day")} ${d.n}<small>${dateShort(d.iso)}</small></button>`).join("")}</div>`;
   }
 
   function viewDay(n) {
@@ -824,7 +866,7 @@
     const pre = presetOf(preset);
     const onPreset = pre ? (pre.pickDays.find((x) => x.n === day.n) || {}).pathId : null;
     const routes = `<div class="label">${day.paths.length === 1 ? T("The plan")
-      : pre ? `This day, within “${esc(presetText(pre).name)}”` : T("Choose how to spend it")}</div>
+      : pre ? `${T("This day, within")} “${esc(presetText(pre).name)}”` : T("Choose how to spend it")}</div>
       ${pre && onPreset && path.id !== onPreset
         ? note("calm", `You have swapped this day out of “${presetText(pre).name}”. That can change where you sleep — check the hotel list on the front page.`)
         : ""}
@@ -834,7 +876,7 @@
           <span class="rw">${esc(pathText(day, p).why)}</span>
           <span class="rs">
             <span class="tag${p.stops > 2 ? " hot" : ""}">${p.stops} ${T("stops")}</span>
-            <span class="tag">${dur(p.ride) || "no"} on trains</span>
+            <span class="tag">${dur(p.ride) || T("no")} ${T("on trains")}</span>
             <span class="tag">in by ${esc(p.endArr)}</span>
           </span>
         </button>`).join("")}</div>`;
@@ -846,8 +888,8 @@
       ${heroCard(day, `${T("Day")} ${day.n} · ${weekday(day.iso)} ${dateShort(day.iso)}`, dayText(day).title)}
       <div class="card pad"><p class="lead" style="margin:0">${esc(dayText(day).intro)}</p></div>
       ${shiftNote()}
-      ${day.holiday ? note("warn", day.holiday) : ""}
-      ${day.bags ? note("calm", "You change hotel today — the bags come with you. Most stations have lockers if you want to drop them before wandering.") : ""}
+      ${day.holiday ? note("warn", holidayText(day)) : ""}
+      ${day.bags ? note("calm", ar() ? T("bags-note") : "You change hotel today — the bags come with you. Most stations have lockers if you want to drop them before wandering.") : ""}
       ${routes}
       <div class="label">${T("The day, in order")}</div>
       <div class="tl">${body}</div>
@@ -882,9 +924,9 @@
       <div class="stopcard">
         <div class="stophead">
           <span class="ttl"><h3>${esc(p.n)}</h3>
-            <span class="when">${s.base ? "Arrive " + esc(s.arr) + " · you sleep here"
+            <span class="when">${s.base ? T("Arrive") + " " + esc(s.arr) + " · " + T("you sleep here")
               : esc(s.arr) + " – " + (nextMoveAfter(day, s) ? timeBtn(s.dep, nextMoveAfter(day, s).from, nextMoveAfter(day, s).to, nextMoveAfter(day, s).depIso) : esc(s.dep))}</span></span>
-          ${s.free ? `<span class="free"><b>${dur(s.free)}</b><span>here</span></span>` : ""}
+          ${s.free ? `<span class="free"><b>${dur(s.free)}</b><span>${T("here")}</span></span>` : ""}
         </div>
         ${s.stn ? `<p class="walknote">${esc(stnText(day, s))}</p>` : ""}
         ${sights.length ? `<div class="rail">${sights.map((x) => sightCard(s.place, x)).join("")}</div>` : ""}
@@ -912,9 +954,20 @@
       if (off == null || !s.arrIso) return "";
       return hhmm(new Date(new Date(s.arrIso).getTime() + off * 60000));
     };
-    const hop = (l) => l.how && l.how.mode === "ride"
-      ? `<div class="whop">${svg("tram")}<b>${esc(l.how.line)}</b> · ${l.mins} min <span style="opacity:.75">(${l.how.walkInstead} min on foot)</span></div>`
-      : `<div class="whop">${svg("walk")}${l.mins} min walk</div>`;
+    /* A hop the router could not price is a hop we say nothing about rather
+       than one we print the word null for. */
+    const hop = (l) => {
+      if (l.mins == null) return "";
+      const approx = l.how && l.how.approx ? "~" : "";
+      if (l.how && l.how.mode === "ride") {
+        const inst = l.how.walkInstead != null
+          ? ` <span style="opacity:.75">(${l.how.walkInstead} ${T("min walk")})</span>` : "";
+        return `<div class="whop">${svg("tram")}<b>${esc(l.how.line)}</b> · ${l.mins} ${T("min")}${inst}</div>`;
+      }
+      if (l.how && l.how.mode === "go")
+        return `<div class="whop">${svg("tram")}${approx}${l.mins} ${T("min to get there")}</div>`;
+      return `<div class="whop">${svg("walk")}${approx}${l.mins} ${T("min walk")}</div>`;
+    };
 
     const row = (l, showClock) => {
       const t = sightOf(s.place, l.to) || { name: l.to, note: l.note };
@@ -929,7 +982,7 @@
 
     return `<div class="walkplan">
       ${core.map((l) => row(l, true)).join("")}
-      ${r.back != null ? `<div class="whop">${svg("walk")}${r.back} min back to the station</div>` : ""}
+      ${r.back != null ? `<div class="whop">${svg("walk")}${r.back} ${T("min back to the station")}</div>` : ""}
       ${extra.length ? `<div class="wextra-head">${T("Only if you are ahead of time")}</div>
         <div class="wextra">${extra.map((l) => row(l, false)).join("")}</div>` : ""}
     </div>`;
@@ -941,12 +994,12 @@
     const past = isToday && new Date(realArr(m)) < now();
     const rows = m.legs.map((leg, i) => {
       const gap = i > 0 ? m.gaps[i - 1] : null;
-      return (gap != null ? `<div class="change${gap < 8 ? " tight" : ""}">${svg("walk")} ${gap} min to change at ${esc(m.legs[i - 1].to)}${gap < 8 ? " — be ready by the door" : ""}</div>` : "") +
+      return (gap != null ? `<div class="change${gap < 8 ? " tight" : ""}">${svg("walk")} ${gap} ${T("min")} ${T("to change at")} ${esc(m.legs[i - 1].to)}${gap < 8 ? " — " + T("be ready by the door") : ""}</div>` : "") +
         `<div class="mrow">
           <span class="line${leg.mode === "BUS" ? " bus" : ""}">${esc(leg.line)}</span>
           <span class="leg"><span class="lt">${i === 0 ? timeBtn(leg.dep, m.from, m.to, m.depIso) : esc(leg.dep)} → ${esc(leg.arr)}</span>
           <span class="lp">${esc(leg.from.replace(/^Bahnhof[,\s]+/i, ""))} → ${esc(leg.to.replace(/^Bahnhof[,\s]+/i, ""))}</span></span>
-          ${leg.track ? `<span class="plat"><b>${esc(leg.track)}</b><span>plat</span></span>` : ""}
+          ${leg.track ? `<span class="plat"><b>${esc(leg.track)}</b><span>${T("plat")}</span></span>` : ""}
         </div>`;
     }).join("");
 
@@ -954,10 +1007,10 @@
       <div class="move">
         ${l && l.depDelay >= 5 ? `<div class="change tight">${svg("warn")} Running ${l.depDelay} min late — leaves ${hhmm(l.realDep)}</div>` : ""}
         ${rows}
-        ${m.note ? `<div class="change">${svg("info")} ${esc(m.note)}</div>` : ""}
+        ${m.note ? `<div class="change">${svg("info")} ${esc(moveNote(day, m))}</div>` : ""}
         <div class="mfoot">
-          <span class="chip">${dur(m.dur)} · ${m.changes ? m.changes + " change" + (m.changes > 1 ? "s" : "") : "direct"}</span>
-          <a class="chip" href="${gdir(m.fromStop, m.toStop, "transit")}" target="_blank" rel="noopener">Open in Maps</a>
+          <span class="chip">${dur(m.dur)} · ${m.changes ? m.changes + " " + T(m.changes > 1 ? "changes" : "change") : T("direct")}</span>
+          <a class="chip" href="${gdir(m.fromStop, m.toStop, "transit")}" target="_blank" rel="noopener">${T("Open in Maps")}</a>
         </div>
       </div></div>`;
   }
@@ -1045,15 +1098,17 @@
           : lv && lv.replaced ? note("calm", `On your date this service is different — the ${lv.line} at ${hhmm(lv.realDep)} is the one that runs.`)
           : ""}`
       : st.kind === "see" && st.move
-      ? `<div class="howto">${svg(st.rode ? "tram" : "walk")}<span>${esc(st.move)}${st.visit ? ` Give it about ${st.visit} min.` : ""}</span></div>`
+      ? `<div class="howto">${svg(st.rode ? "tram" : "walk")}<span>${esc(ar()
+          ? (st.rode ? `${T("Take the")} ${st.line || ""} — ${st.mins} ${T("min")}` : `${st.mins} ${T("min walk")}`)
+          : st.move)}${st.visit ? ` ${T("Give it about")} ${st.visit} ${T("min")}.` : ""}</span></div>`
       : st.kind === "back"
-      ? `<div class="howto">${svg("walk")}<span>${esc(st.say)}</span></div>`
+      ? `<div class="howto">${svg("walk")}<span>${esc(saidFor(st) || st.say)}</span></div>`
       : "";
 
     return `<div id="wt-top">
       ${dayStrip(wtDay, "wtday")}
       <div class="card wt">
-        ${img ? `<div class="shotwrap"><img class="shot" src="${img}" alt=""><span class="badge">Day ${day.n} · ${esc(day.title)}</span></div>` : ""}
+        ${img ? `<div class="shotwrap"><img class="shot" src="${img}" alt=""><span class="badge">${T("Day")} ${day.n} · ${esc(dayText(day).title)}</span></div>` : ""}
         <div class="pad">
           <div class="kind">${esc(wtKind(st.kind))}${st.t ? " · " + esc(st.t) : ""}</div>
           <h2>${esc(st.kind === "arrive" ? `${T("You are in")} ${place(st.place).n}`
@@ -1063,17 +1118,17 @@
           : (sightOf(st.place, st.title) || {}).name || st.title)}</h2>
           ${saidFor(st) || st.say ? `<p class="say">${esc(saidFor(st) || st.say)}</p>` : ""}
           ${howto}
-          ${st.sight && D.sights[st.sight] ? `<div class="btns" style="padding:14px 0 0"><button class="btn ghost" data-sight="${esc(st.sight)}">${svg("info")} More about ${esc(st.title)}</button></div>` : ""}
+          ${st.sight && D.sights[st.sight] ? `<div class="btns" style="padding:14px 0 0"><button class="btn ghost" data-sight="${esc(st.sight)}">${svg("info")} ${T("More about")} ${esc((sightOf(st.place, st.title) || {}).name || st.title)}</button></div>` : ""}
         </div>
         <div id="wtmap"></div>
       </div>
       <div class="wtbar"><span class="num">${wtStep + 1} / ${total}</span>
         <span class="track"><span class="fill" style="width:${Math.round(((wtStep + 1) / total) * 100)}%"></span></span></div>
       <div class="wtnav">
-        <button class="btn ghost" data-wt="-1"${first ? " disabled style=\"opacity:.45\"" : ""}>${svg("prev")} Back</button>
-        <button class="btn accent" data-wt="1"${last ? " disabled style=\"opacity:.45\"" : ""}>Next ${svg("next")}</button>
+        <button class="btn ghost" data-wt="-1"${first ? " disabled style=\"opacity:.45\"" : ""}>${svg("prev")} ${T("Back")}</button>
+        <button class="btn accent" data-wt="1"${last ? " disabled style=\"opacity:.45\"" : ""}>${T("Next")} ${svg("next")}</button>
       </div>
-      <div class="foot">Press Next to walk the whole week, one move at a time. Every time and platform here is the real timetable for your dates.</div>
+      <div class="foot">${T("Press Next to walk the whole week, one move at a time. Every time and platform here is the real timetable for your dates.")}</div>
     </div>`;
   }
 
@@ -1171,7 +1226,7 @@
         L.circleMarker([p.lat, p.lon], {
           radius: s.base ? 7 : 4.5, color: d.c, weight: s.base ? 3.5 : 2,
           fillColor: s.base ? d.c : "#fff", fillOpacity: 1,
-        }).addTo(layer).bindPopup(`<b>${esc(p.n)}</b><br>Day ${d.n}${s.base ? " · you sleep here" : ""}`);
+        }).addTo(layer).bindPopup(`<b>${esc(p.n)}</b><br>${T("Day")} ${d.n}${s.base ? " · " + T("you sleep here") : ""}`);
       });
       if (pts.length > 1) L.polyline(pts, { color: d.c, weight: 4, opacity: .8 }).addTo(layer);
     });
@@ -1207,13 +1262,13 @@
 
     const head = `<div class="grab"></div><div class="sbody">
       <h2>${esc(a.n)} → ${esc(b.n)}</h2>
-      <p class="about">How often this runs, and what you would catch if you missed one.</p>`;
+      <p class="about">${T("How often this runs, and what you would catch if you missed one.")}</p>`;
     const rows = (list, note) => `${note ? `<p class="about" style="font-size:14px">${esc(note)}</p>` : ""}
       <div style="margin-top:12px">${list.map((r) => `
         <div class="kv"><b${r.now ? ' style="color:var(--accent)"' : ""}>${esc(r.dep)} → ${esc(r.arr)}</b>
-          <span>${esc((r.lines || []).join(" · "))}${r.changes ? ` · ${r.changes} chg` : " · direct"}</span></div>`).join("")}</div>`;
+          <span>${esc((r.lines || []).join(" · "))}${r.changes ? ` · ${r.changes} ${T("chg")}` : " · " + T("direct")}</span></div>`).join("")}</div>`;
 
-    openSheetRaw(head + rows(uniq(baked).slice(0, 8), "From the plan. Checking the live timetable…") +
+    openSheetRaw(head + rows(uniq(baked).slice(0, 8), T("From the plan. Checking the live timetable…")) +
       `<div class="btns" style="padding:14px 0 0"><button class="btn ghost" data-close="1">${T("Close")}</button></div></div>`);
 
     if (!navigator.onLine || a.lat == null || b.lat == null) return;
@@ -1240,8 +1295,8 @@
       const typical = gaps.length ? Math.round(gaps.reduce((x, y) => x + y, 0) / gaps.length) : null;
       sheet.innerHTML = head +
         rows(uniq(live).slice(0, 9), typical
-          ? `Live from the timetable${shifted() ? " for the dates you are travelling" : ""} — about one every ${typical} minutes${typical > 70 ? ", so this is not one to miss" : ""}.`
-          : `Live from the timetable${shifted() ? " for the dates you are travelling" : ""}.`) +
+          ? `${T("live-from-timetable")} — ${T("about one every")} ${typical} ${T("minutes")}${typical > 70 ? (ar() ? "، " : ", ") + T("not one to miss") : ""}.`
+          : T("live-from-timetable") + ".") +
         `<div class="btns" style="padding:14px 0 0"><button class="btn ghost" data-close="1">${T("Close")}</button></div></div>`;
     } catch (e) { /* the plan's own list is already on screen */ }
   }
@@ -1445,8 +1500,10 @@
   const sheet = document.getElementById("sheet");
 
   function openSight(key) {
-    const s = D.sights[key];
-    if (!s) return;
+    const raw = D.sights[key];
+    if (!raw) return;
+    // Go through sightOf so the drawer says what the card said.
+    const s = sightOf(raw.place, raw.name) || raw;
     const p = place(s.place);
     const img = photo("sight:" + key);
     const done = !!ticked[key];
@@ -1459,19 +1516,19 @@
         <h2>${esc(s.name)}</h2>
         <div class="meta">
           <span class="tag">${esc(KIND[s.kind] || "Sight")}</span>
-          <span class="tag">about ${s.mins} min</span>
-          ${s.ticket ? `<span class="tag hot">needs a ticket</span>` : ""}
-          ${s.indoor ? `<span class="tag">fine in the rain</span>` : ""}
+          <span class="tag">${T("about")} ${s.mins} ${T("min")}</span>
+          ${s.ticket ? `<span class="tag hot">${T("needs a ticket")}</span>` : ""}
+          ${s.indoor ? `<span class="tag">${T("fine in the rain")}</span>` : ""}
         </div>
         <p class="about" style="color:var(--ink)">${esc(s.note)}</p>
-        ${s.about ? `<p class="about">${esc(s.about)}</p>` : ""}
+        ${!ar() && s.about ? `<p class="about">${esc(s.about)}</p>` : ""}
         <div class="btns" style="padding-left:0;padding-right:0">
           <button class="btn ${done ? "ghost" : "accent"}" data-tick="${esc(key)}">${svg("tick")} ${done ? T("Seen it — undo") : T("Mark as seen")}</button>
           ${s.lat ? `<a class="btn ghost" href="${gdir(p.name || p.n, s.name + ", " + p.n, "walking")}" target="_blank" rel="noopener">${svg("walk")} ${T("Walk here from the station")}</a>` : ""}
           ${s.lat ? `<a class="btn ghost" href="${osmAt(s.lat, s.lon)}" target="_blank" rel="noopener">${svg("map")} ${T("Show on the map")}</a>` : ""}
           ${s.wiki ? `<a class="btn ghost" href="${esc(s.wiki)}" target="_blank" rel="noopener">${svg("info")} ${T("Read more")}</a>` : ""}
         </div>
-        ${cred ? `<p class="credit">Photo: ${esc(cred.by)} · ${esc(cred.lic)} · via Wikimedia Commons</p>` : ""}
+        ${cred ? `<p class="credit">${T("Photo")}: ${esc(cred.by)} · ${esc(cred.lic)} · ${T("via Wikimedia Commons")}</p>` : ""}
       </div>`;
     scrim.hidden = false; sheet.hidden = false;
     paintBack();
@@ -1643,10 +1700,10 @@
       const opts = (res.itineraries || [])
         .filter((it) => it.legs.filter((l) => l.mode !== "WALK").every((l) => cov.has(l.mode)))
         .slice(0, 4);
-      if (!opts.length) { sheet.querySelector(".about").textContent = "Nothing regional comes up from here right now. Ask at the ticket desk — say “Ich habe meinen Anschluss verpasst.”"; return; }
+      if (!opts.length) { sheet.querySelector(".about").textContent = T("no-regional"); return; }
       sheet.innerHTML = `<div class="grab"></div><div class="sbody">
-        <h2>Ways to ${esc(dest.n)}</h2>
-        <p class="about">From where you are now. Only trains and buses your ticket covers.</p>
+        <h2>${T("Ways to")} ${esc(dest.n)}</h2>
+        <p class="about">${T("from-where-you-are")}</p>
         ${opts.map((it) => {
           const L2 = it.legs.filter((l) => l.mode !== "WALK");
           if (!L2.length) return "";
@@ -1654,20 +1711,20 @@
             <div class="kv" style="border:0;padding-top:0"><b style="font-size:19px">${hhmm(L2[0].startTime)} → ${hhmm(L2[L2.length - 1].endTime)}</b>
             <span>${dur(mins(L2[0].startTime, L2[L2.length - 1].endTime))} · ${L2.length - 1 ? L2.length - 1 + " chg" : "direct"}</span></div>
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">${L2.map((l) => `<span class="line${l.mode === "BUS" ? " bus" : ""}" style="min-width:0;font-size:14px;padding:5px 9px">${esc(l.routeShortName || l.mode)}</span>`).join("")}</div>
-            <p class="about" style="font-size:14px">Board at ${esc(L2[0].from.name)}${L2[0].from.track ? ", platform " + esc(L2[0].from.track) : ""}.</p>
+            <p class="about" style="font-size:14px">${T("Board at")} ${esc(L2[0].from.name)}${L2[0].from.track ? "، " + T("platform") + " " + esc(L2[0].from.track) : ""}.</p>
           </div></div>`;
         }).join("")}
         <div class="btns" style="padding-left:0;padding-right:0"><button class="btn ghost" data-close="1">${T("Close")}</button></div></div>`;
     } catch (e) {
-      sheet.querySelector(".about").textContent = "Could not reach the timetable. Ask at the ticket desk — your ticket is still valid on the next regional train.";
+      sheet.querySelector(".about").textContent = T("cannot-reach-desk");
     }
   }
 
   /* ---------- "something has changed" ---------- */
   async function showReflow(kind, extraMins) {
     openSheetRaw(`<div class="grab"></div><div class="sbody">
-      <h2>${kind === "stay" ? "Staying longer" : "Working out the rest of the day"}</h2>
-      <p class="about">Asking the timetable what still runs…</p></div>`);
+      <h2>${kind === "stay" ? T("Staying longer") : T("Working out the rest of the day")}</h2>
+      <p class="about">${T("Asking the timetable what still runs…")}</p></div>`);
 
     const from = kind === "stay" ? new Date(now().getTime() + (extraMins || 60) * 60000) : now();
     let r = null;
@@ -1675,39 +1732,37 @@
 
     if (!r || !r.legs) {
       sheet.querySelector(".about").textContent =
-        "I could not reach the timetable. Your ticket is valid on the next regional train either way — ask at the desk and say “Ich habe meinen Anschluss verpasst.”";
+        T("cannot-reach-desk");
       return;
     }
 
     const anchorLast = D.days[D.days.length - 1].n === r.day.n;
-    const arriveLine = anchorLast
-      ? `You would be in Berlin at <b>${esc(r.arrives)}</b> on the 3rd.`
-      : `You would be in ${esc(r.dest.n)} at <b>${esc(r.arrives)}</b> tonight.`;
+    const arriveLine = `${T("You would be in")} ${esc(anchorLast ? place("berlin").n : r.dest.n)} ${T("at")} <b>${esc(r.arrives)}</b> ${anchorLast ? T("on the 3rd") : T("tonight")}.`;
 
     openSheetRaw(`<div class="grab"></div><div class="sbody">
-      <h2>${kind === "stay" ? `Another ${extraMins} min in ${esc(r.here.n)}` : "Here is the rest of the day"}</h2>
+      <h2>${kind === "stay" ? `${T("Another")} ${extraMins} ${T("min")} ${T("in")} ${esc(r.here.n)}` : T("Here is the rest of the day")}</h2>
       <p class="about" style="color:var(--ink)">${arriveLine}</p>
 
-      ${r.drop.length ? `<div class="note">${svg("warn")}<span>To do that you would give up
-        ${esc(r.drop.map((s) => place(s.place).n).join(" and "))}.</span></div>` :
-        `<div class="note calm">${svg("tick")}<span>Nothing has to be given up — the whole day still fits.</span></div>`}
+      ${r.drop.length ? `<div class="note">${svg("warn")}<span>${T("give-up")}
+        ${esc(r.drop.map((s) => place(s.place).n).join(ar() ? " و" : " and "))}.</span></div>` :
+        `<div class="note calm">${svg("tick")}<span>${T("Nothing has to be given up — the whole day still fits.")}</span></div>`}
 
       ${r.legs.map((l) => {
         const c = l.conn;
         return `<div class="card" style="box-shadow:none;background:var(--hair);margin:10px 0"><div class="pad">
           <div class="kv" style="border:0;padding:0">
             <b style="font-size:18px">${esc(c.dep)} → ${esc(c.arr)}</b>
-            <span>${esc(place(l.to).n)}${l.final ? " · your bed" : ""}</span></div>
+            <span>${esc(place(l.to).n)}${l.final ? " · " + T("your bed") : ""}</span></div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:9px">
             ${c.lines.map((x) => `<span class="line" style="min-width:0;font-size:13.5px;padding:5px 9px">${esc(x)}</span>`).join("")}
           </div>
-          <p class="about" style="font-size:14px;margin-top:8px">Board at ${esc(c.board)}${c.track ? `, platform ${esc(c.track)}` : ""}. ${c.changes ? c.changes + " change" + (c.changes > 1 ? "s" : "") : "Straight through"}.</p>
+          <p class="about" style="font-size:14px;margin-top:8px">${T("Board at")} ${esc(c.board)}${c.track ? `، ${T("platform")} ${esc(c.track)}` : ""}. ${c.changes ? c.changes + " " + T(c.changes > 1 ? "changes" : "change") : T("Straight through")}.</p>
         </div></div>`;
       }).join("")}
 
-      ${r.keep.length ? `<p class="about">You still get ${esc(r.keep.map((s) => place(s.place).n).join(", "))}.</p>` : ""}
-      ${!anchorLast ? `<p class="about">Berlin by the end of the 3rd is unaffected — that is a later day.</p>`
-        : r.drop.length ? `<p class="about">This still gets you to Berlin today, which is the one thing that has to happen.</p>` : ""}
+      ${r.keep.length ? `<p class="about">${T("You still get")} ${esc(r.keep.map((s) => place(s.place).n).join("، "))}.</p>` : ""}
+      ${!anchorLast ? `<p class="about">${T("berlin-unaffected")}</p>`
+        : r.drop.length ? `<p class="about">${T("still-berlin-today")}</p>` : ""}
 
       <div class="btns" style="padding-left:0;padding-right:0">
         <button class="btn ghost" data-close="1">${T("Close")}</button>
@@ -1731,7 +1786,7 @@
     openSheetRaw(`<div class="grab"></div><div class="sbody">
       <h2>${T("Settings")}</h2>
       <div class="btns" style="padding:14px 0 0">
-        <button class="btn ghost" id="langbtn2">${ar() ? "Switch to English" : "التبديل إلى العربية"}</button>
+        <button class="btn ghost" id="langbtn2">${ar() ? T("Switch to English") : "التبديل إلى العربية"}</button>
         <button class="btn ghost" id="themebtn">${svg("moon")} ${T("Light or dark")}</button>
         <button class="btn accent" id="starttour">${svg("help")} ${T("Show me how this works")}</button>
       </div>

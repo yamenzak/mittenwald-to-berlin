@@ -140,7 +140,12 @@ async function hopBetween(a, b) {
 
   let hop = walk == null ? null : { mins: walk, mode: "walk" };
 
-  if (walk != null && walk > 15) {
+  /* Zugspitze, Neuschwanstein, the Fairy Grottoes: the pedestrian router
+     simply has no path, and the old code took that as "no hop" and wrote a
+     null into the plan, which the page then printed as the word null. A
+     place you cannot walk to is a place you ride to, so ask for the ride
+     whenever the walk is long *or* missing. */
+  if (walk == null || walk > 15) {
     try {
       const res = await api("/plan", {
         fromPlace: a.join(","), toPlace: b.join(","), time: HOP_TIME,
@@ -152,15 +157,29 @@ async function hopBetween(a, b) {
         const legs = (it.legs || []).filter(TRANSIT);
         if (!legs.length || !covered(it)) continue;
         const mins = Math.round(it.duration / 60);
-        // Only worth the bother if it actually saves a walk worth saving.
-        if (mins + 4 < walk) {
+        // Only worth the bother if it actually saves a walk worth saving —
+        // and if there is no walk at all, any ride is worth it.
+        if (walk == null || mins + 4 < walk) {
           hop = { mins, mode: "ride", line: legs[0].routeShortName || legs[0].mode,
                   vehicle: legs[0].mode, from: legs[0].from.name, to: legs[legs.length - 1].to.name,
-                  walkInstead: walk };
+                  walkInstead: walk == null ? null : walk };
         }
         break;
       }
     } catch (e) { /* the walk stands */ }
+  }
+
+  /* Still nothing — a cable car or a shuttle the feed does not carry. The
+     straight line is a worse answer than the router's, and a much better one
+     than a blank, so say roughly how far it is and let the map do the rest. */
+  if (!hop) {
+    const w = guessWalk(a, b);
+    // Over a quarter of an hour on foot means she is not going on foot, and
+    // calling it a walk up the Zugspitze would be a lie. Say how long getting
+    // there takes and leave the how to the map.
+    hop = w > 16
+      ? { mins: guessHop(a, b), mode: "go", approx: true }
+      : { mins: w, mode: "walk", approx: true };
   }
 
   walkCache[key] = hop;
