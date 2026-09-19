@@ -41,7 +41,7 @@
     r.setAttribute("lang", ar() ? "ar" : "en");
     r.setAttribute("dir", ar() ? "rtl" : "ltr");
     document.querySelectorAll("[data-tab]").forEach((b) => {
-      const key = { now: "Now", day: "The day", walk: "Walk it", map: "Map" }[b.dataset.tab];
+      const key = { trip: "Itinerary", day: "The day", now: "Guide me" }[b.dataset.tab];
       const label = b.querySelector("span.lbl");
       if (label && key) label.textContent = T(key);
     });
@@ -58,6 +58,7 @@
   function applyPreset(id) {
     const p = presetOf(id);
     if (!p) return;
+    liveGen++;
     preset = id; chosen = {};
     p.pickDays.forEach((d) => { chosen[d.n] = d.pathId; });
     store.set("preset", preset); store.set("routes", chosen);
@@ -98,6 +99,7 @@
     new Date(new Date(isoTime).getTime() + shiftDays() * DAY_MS).toISOString();
   function setStart(iso) {
     startIso = iso; store.set("start", iso);
+    liveGen++;
     liveCache = {}; store.set("live", {});
     replanCache = {};
   }
@@ -293,8 +295,15 @@
       .slice(0, 4);
   }
 
+  /* Changing a day's route changes which trains matter. An answer that was
+     already in flight belongs to the old route and would be written back over
+     the new one, which is how the indicator ended up showing a delay for a
+     train that is no longer on the plan. Every refresh carries the generation
+     it started in, and a stale one is dropped. */
+  let liveGen = 0;
   let refreshing = false;
   async function refreshLive(force) {
+    const gen = liveGen;
     if (refreshing) return;
     const targets = liveTargets();
     if (!targets.length) { liveState.status = "none"; paintPulse(); return; }
@@ -304,9 +313,13 @@
     for (const m of targets) {
       const id = moveId(m), had = liveCache[id];
       if (!force && had && Date.now() - had.at < 60000) { ok++; continue; }
-      try { liveCache[id] = await checkMove(m); ok++; }
-      catch (e) { /* keep whatever we had; the plan still stands */ }
+      try {
+        const got = await checkMove(m);
+        if (gen !== liveGen) { refreshing = false; return; }
+        liveCache[id] = got; ok++;
+      } catch (e) { /* keep whatever we had; the plan still stands */ }
     }
+    if (gen !== liveGen) { refreshing = false; return; }
     store.set("live", liveCache);
     liveState = { at: Date.now(), status: ok ? "ok" : "bad" };
     refreshing = false;
@@ -393,9 +406,14 @@
   }
 
   /* ================= views ================= */
-  let view = "now";
+  /* Three screens, in the order they get used: choose the trip, read the day,
+     and be guided when the day stops matching the plan. The map lives inside
+     the itinerary because it is how you compare one itinerary with another,
+     and the old "Walk it" is folded into Guide me, because step-by-step
+     directions and "what now" are the same question asked twice. */
+  let view = "trip";
   let openDay = null;
-  let mapDay = null; // 0 means the whole trip
+  let mapDay = 0; // 0 means the whole trip
   /* Every screen she can land on, so the arrow in the corner always has
      somewhere to go — including back out of a sheet, and back a step in the
      walkthrough, which is where people press it first. */
@@ -431,18 +449,16 @@
   const app = document.getElementById("app");
 
   function render() {
-    if (view === "choose") app.innerHTML = viewChoose();
-    else if (view === "now") app.innerHTML = viewNow();
+    if (view === "trip") app.innerHTML = viewTrip();
     else if (view === "day") app.innerHTML = viewDay(openDay || (todayDay() || D.days[0]).n);
-    else if (view === "walk") app.innerHTML = viewWalk();
-    else app.innerHTML = viewMap();
+    else app.innerHTML = viewNow();
     document.querySelectorAll(".tab").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === view)));
     paintBack();
     paintDates();
     const tc = document.querySelector('meta[name="theme-color"]');
     if (tc) tc.setAttribute("content", getComputedStyle(document.documentElement).getPropertyValue("--chrome").trim() || "#16211C");
-    if (view === "map") drawMap();
-    if (view === "walk") drawWalkMap();
+    if (view === "trip") drawMap();
+    if (view === "now" && guideMode === "steps") drawWalkMap();
     paintPulse();
   }
 
@@ -468,24 +484,133 @@
         </button>`).join("")}</div>`;
   }
 
-  function viewChoose() {
+  /* Step one: which way across, and which day it starts. Everything needed to
+     book a hotel lives here, and the map shows the shape of the choice. */
+  function viewTrip() {
     const d = D.days[0];
+    const p = presetOf(preset);
     return `<div class="wrap">
-      ${heroCard(d, "Mittenwald to Berlin", T("Pick how you want the week to go"))}
-      <div class="card pad"><p class="lead" style="margin:0">
-        Four ways across Germany, all of them on regional trains your ticket covers, and all of them
-        in Berlin by the evening of the 3rd. Each one names the towns you sleep in, so you can book the beds now.
-        You can change your mind later, and change any single day after that.</p></div>
+      ${heroCard(d, T("Step 1"), T("Pick how you want the week to go"))}
+      <div class="card pad"><p class="lead" style="margin:0">${T("chooser-intro")}</p></div>
+      <div class="label">${T("Choose your trip")}</div>
       ${viewPresets(false)}
+      ${p ? `<div class="label">${T("The whole trip on the map")}</div>
+        <div class="card"><div id="map"></div>
+          <div class="pad">${mapCaption()}</div></div>` : ""}
+      ${startCard()}
+      ${bedsCard()}
       ${ticketNote()}
       <div class="btns" style="padding:8px 0 0"><button class="btn ghost" id="starttour" type="button">${svg("help")} ${T("Show me how this works")}</button></div>
-      ${preset ? `<div class="btns" style="padding:8px 0 0"><button class="btn ghost" data-close-choose="1">Keep “${esc(presetText(presetOf(preset) || {}).name || "")}”</button></div>` : ""}
       ${footer()}</div>`;
   }
 
-  /* ---------- now ---------- */
+  function mapCaption() {
+    const all = mapDay === 0;
+    const day = all ? null : D.days.find((x) => x.n === mapDay);
+    const totals = D.days.reduce((t, x) => { const q = pathOf(x); return { ride: t.ride + q.ride, stops: t.stops + q.stops }; }, { ride: 0, stops: 0 });
+    const chips = `<div class="days" style="padding:0 0 10px">
+      <button class="dchip" data-mapday="0" aria-pressed="${all}">${T("All days")}</button>
+      ${D.days.map((x) => `<button class="dchip" data-mapday="${x.n}" aria-pressed="${x.n === mapDay}">${T("Day")} ${x.n}</button>`).join("")}</div>`;
+    return chips + (all
+      ? `<p class="lead" style="margin:0">${totals.stops} ${T("stops")} · ${dur(totals.ride)} ${T("on trains, all week")}.
+         <span style="opacity:.8">${T("The bigger dots are where you sleep.")}</span></p>
+         <div class="legend">${D.days.map((x) => `<span><i style="width:11px;height:11px;border-radius:50%;background:${x.c};display:inline-block"></i>${T("Day")} ${x.n}</span>`).join("")}</div>`
+      : `<p class="lead" style="margin:0"><b>${esc(dayText(day).title)}</b> — ${esc(pathText(day, pathOf(day)).name)}</p>`);
+  }
+
+  /* Which day the trip starts on. It was hidden behind an icon in the chrome;
+     it belongs beside the choice it changes. */
+  function startCard() {
+    const opts = [-7, -2, -1, 0, 1, 2, 7].map((k) => ({
+      iso: new Date(Date.parse(planStart + "T12:00:00Z") + k * DAY_MS).toISOString().slice(0, 10), k,
+    }));
+    return `<div class="label">${T("When does it start?")}</div>
+      <div class="card"><div class="pad" style="padding-bottom:8px">
+        <p class="lead" style="margin:0">${T("start-intro")}</p></div>
+        <div class="days" style="padding:0 16px 14px">
+          ${opts.map((o) => `<button class="dchip" data-setstart="${o.iso}" aria-pressed="${o.iso === startIso}">
+            ${esc(fmtWeekday(o.iso))} ${esc(fmtDate(o.iso))}<small>${o.k === 0 ? T("As planned")
+              : o.k > 0 ? "+" + o.k : String(o.k)}</small></button>`).join("")}
+        </div>
+        <div class="pad" style="padding-top:0">
+          <label style="font-size:14px;color:var(--soft-ink)">${T("Or pick the day you arrive in Mittenwald")}
+            <input type="date" id="startpick" value="${esc(startIso)}"
+              style="display:block;margin-top:8px;width:100%;min-height:48px;padding:0 12px;border-radius:13px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit"></label>
+        </div>
+      </div>`;
+  }
+
+  /* ---------- step 3: guide me ---------- */
+  /* One screen for "I am lost, what now". It has two faces — the summary, and
+     the same day as a sequence you press through — and a switch between them,
+     because the answer to being lost is sometimes one sentence and sometimes a
+     list of eleven. Location is asked for here and only here, when she presses
+     the button that needs it. */
   function viewNow() {
-    if (!preset && (D.presets || []).length) return viewChoose();
+    if (!preset && (D.presets || []).length) { view = "trip"; return viewTrip(); }
+    const toggle = `<div class="seg" role="group">
+      <button type="button" data-guide="now" aria-pressed="${guideMode === "now"}">${T("What now")}</button>
+      <button type="button" data-guide="steps" aria-pressed="${guideMode === "steps"}">${T("Step by step")}</button>
+    </div>`;
+    if (guideMode === "steps") return `<div class="wrap">${toggle}${viewWalkBody()}</div>`;
+    return `<div class="wrap">${toggle}${viewNowBody()}</div>`;
+  }
+
+  /* Where the phone says she is, against where the plan says she should be. */
+  async function locate() {
+    guideAsked = true;
+    try {
+      const pos = await new Promise((res, rej) => {
+        if (!navigator.geolocation) return rej(new Error("no gps"));
+        navigator.geolocation.getCurrentPosition(res, rej, { timeout: 10000, maximumAge: 60000 });
+      });
+      guideFix = { lat: pos.coords.latitude, lon: pos.coords.longitude, at: Date.now() };
+    } catch (e) {
+      guideFix = { failed: true, at: Date.now() };
+    }
+    render();
+  }
+
+  const km = (a, b, c, d) => {
+    const R = 6371, r = (x) => (x * Math.PI) / 180;
+    const h = Math.sin(r(c - a) / 2) ** 2 + Math.cos(r(a)) * Math.cos(r(c)) * Math.sin(r(d - b) / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(h));
+  };
+
+  /* Nearest town on the whole trip, so "you seem to be in Bamberg" is something
+     the page can say rather than something she has to tell it. */
+  function whereAmI() {
+    if (!guideFix || guideFix.failed) return null;
+    let best = null;
+    for (const [k, p] of Object.entries(D.places)) {
+      if (p.lat == null) continue;
+      const d = km(guideFix.lat, guideFix.lon, p.lat, p.lon);
+      if (!best || d < best.d) best = { key: k, d };
+    }
+    return best && best.d < 40 ? best : { key: null, d: best ? best.d : null };
+  }
+
+  function locateCard() {
+    const day = todayDay();
+    if (!guideFix) {
+      return `<div class="card"><div class="pad" style="padding-bottom:6px">
+        <p class="lead" style="margin:0">${T("locate-ask")}</p></div>
+        <div class="btns"><button class="btn accent" data-locate="1">${svg("pin")} ${T("Where am I?")}</button></div></div>`;
+    }
+    if (guideFix.failed) return note("calm", T("locate-failed"));
+    const here = whereAmI();
+    const onPlan = day && here && here.key && pathOf(day).seq.some((x) => x.kind === "stop" && x.place === here.key);
+    return `<div class="card"><div class="pad">
+      <div class="what" style="color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase">${T("Where you are")}</div>
+      <div style="font-size:22px;font-weight:700;margin-top:4px">${here && here.key ? esc(place(here.key).n) : T("Somewhere off the route")}</div>
+      <p class="lead" style="margin-top:6px">${here && here.key
+        ? (onPlan ? T("on-plan") : T("off-plan"))
+        : T("far-off-plan")}</p>
+      </div>
+      <div class="btns"><button class="btn ghost" data-locate="1">${T("Check again")}</button></div></div>`;
+  }
+
+  function viewNowBody() {
     const s = situation();
 
     if (s.kind === "before") {
@@ -504,9 +629,9 @@
         ${footer()}</div>`;
     }
     if (s.kind === "after") {
-      return `<div class="wrap">${heroCard(s.day, "The trip", "You made it")}
+      return `${heroCard(s.day, T("The trip"), T("You made it. Berlin."))}
         <div class="card pad"><p class="lead">Seven days, twenty-four towns. Everything is still here if you want to look back at it.</p></div>
-        ${overviewList()}${footer()}</div>`;
+        ${overviewList()}${footer()}`;
     }
 
     const { day, path, at, riding, nextMove } = s;
@@ -547,8 +672,7 @@
     const alerts = liveAlerts(nextMove || riding);
     const suggest = at && !riding ? suggestions(at, nextMove) : "";
 
-    return `<div class="wrap">
-      ${heroCard(day, `${T("Day")} ${day.n} · ${weekday(day.iso)} ${dateShort(day.iso)}`, dayText(day).title)}
+    return `${heroCard(day, `${T("Day")} ${day.n} · ${weekday(day.iso)} ${dateShort(day.iso)}`, dayText(day).title)}
       <div class="card">
         <div class="headline">${head}${count}</div>
         ${strip}
@@ -560,11 +684,11 @@
       </div>
       ${alerts}
       ${day.holiday ? note("warn", day.holiday) : ""}
+      ${locateCard()}
       ${suggest}
       ${shiftNote()}
       ${troubleCard()}
-      ${bedsCard()}
-      ${footer()}</div>`;
+      ${footer()}`;
   }
 
   const pill = (m, label, tone) =>
@@ -606,7 +730,7 @@
   function note(kind, text) {
     return `<div class="note ${kind === "warn" ? "" : kind}">${svg(kind === "calm" ? "info" : "warn")}<span>${esc(text)}</span></div>`;
   }
-  const ticketNote = () => note("calm", D.trip.ticket.excluded);
+  const ticketNote = () => note("calm", ar() ? T("ticket-note") : D.trip.ticket.excluded);
 
   function heroCard(day, kicker, title) {
     const img = photo("place:" + day.hero);
@@ -712,6 +836,17 @@
       ${footer()}</div>`;
   }
 
+  /* The timeline used to be a list of names with the photographs somewhere
+     else. A thumbnail beside each line is the difference between reading a
+     schedule and recognising the place when you get there. */
+  function walkThumb(pk, name) {
+    const s = sightOf(pk, name);
+    const img = s && photo("sight:" + pk + "/" + (s.en || s.name));
+    if (!img) return "";
+    return `<button class="wthumb" data-sight="${esc(pk + "/" + (s.en || s.name))}" aria-label="${esc(s.name)}">
+      <img src="${img}" alt="" loading="lazy"></button>`;
+  }
+
   const nextMoveAfter = (day, stop) => {
     const seq = pathOf(day).seq;
     const at = seq.indexOf(stop);
@@ -763,12 +898,16 @@
       ? `<div class="whop">${svg("tram")}<b>${esc(l.how.line)}</b> · ${l.mins} min <span style="opacity:.75">(${l.how.walkInstead} min on foot)</span></div>`
       : `<div class="whop">${svg("walk")}${l.mins} min walk</div>`;
 
-    const row = (l, showClock) => `${hop(l)}
+    const row = (l, showClock) => {
+      const t = sightOf(s.place, l.to) || { name: l.to, note: l.note };
+      return `${hop(l)}
       <div class="wrow"><div class="wtime">${showClock ? esc(clock(l.at)) : ""}</div>
-        <div class="wbody">
-          <div class="wname">${esc(l.to)}${l.must ? '<span class="star">worth it</span>' : ""}</div>
-          <div class="wsay">${esc(l.note || "")}${l.visit ? ` · about ${l.visit} min${l.ticket ? ", ticket needed" : ""}` : ""}</div>
-        </div></div>`;
+        <button class="wbody" data-sight="${esc(s.place + "/" + l.to)}">
+          <div class="wname">${esc(t.name)}${l.must ? `<span class="star">${T("worth it")}</span>` : ""}</div>
+          <div class="wsay">${esc(t.note || "")}${l.visit ? ` · ${T("about")} ${l.visit} ${T("min")}${l.ticket ? "، " + T("ticket needed") : ""}` : ""}</div>
+        </button>
+        ${walkThumb(s.place, l.to)}</div>`;
+    };
 
     return `<div class="walkplan">
       ${core.map((l) => row(l, true)).join("")}
@@ -858,10 +997,10 @@
       x.from === st.place && x.to === st.toPlace && x.dep === st.dep) || null;
   }
 
-  function viewWalk() {
+  function viewWalkBody() {
     const day = D.days.find((x) => x.n === wtDay) || D.days[0];
     const steps = allSteps(wtDay);
-    if (!steps.length) return `<div class="wrap"><div class="card pad">Nothing to walk through on this day.</div></div>`;
+    if (!steps.length) return `<div class="card pad">${T("Nothing to walk through on this day.")}</div>`;
     wtStep = Math.min(wtStep, steps.length - 1);
     const st = steps[wtStep];
     const meta = WT[st.kind] || WT.see;
@@ -893,7 +1032,7 @@
       ? `<div class="howto">${svg("walk")}<span>${esc(st.say)}</span></div>`
       : "";
 
-    return `<div class="wrap" id="wt-top">
+    return `<div id="wt-top">
       ${dayStrip(wtDay, "wtday")}
       <div class="card wt">
         ${img ? `<div class="shotwrap"><img class="shot" src="${img}" alt=""><span class="badge">Day ${day.n} · ${esc(day.title)}</span></div>` : ""}
@@ -950,33 +1089,13 @@
   }
 
   /* ---------- map ---------- */
-  function viewMap() {
-    const all = mapDay === 0;
-    const day = all ? null : (D.days.find((d) => d.n === (mapDay || (todayDay() || D.days[0]).n)) || D.days[0]);
-    const cur = all ? 0 : day.n;
-    const chips = `<div class="days">
-      <button class="dchip" data-mapday="0" aria-pressed="${all}">All days<small>the whole line</small></button>
-      ${D.days.map((d) => `<button class="dchip${dayDate(d) === dayKey(now()) ? " today" : ""}"
-        data-mapday="${d.n}" aria-pressed="${d.n === cur}">Day ${d.n}<small>${dateShort(d.iso)}</small></button>`).join("")}</div>`;
-
-    const totals = D.days.reduce((t, d) => { const p = pathOf(d); return { ride: t.ride + p.ride, stops: t.stops + p.stops }; }, { ride: 0, stops: 0 });
-    const cap = all
-      ? `<h3>Mittenwald to Berlin</h3><p class="lead">All five days at once. ${totals.stops} stops and ${dur(totals.ride)} on trains across the week; the heavier dots are where you sleep.</p>`
-      : `<h3>${esc(dayText(day).title)}</h3><p class="lead">${esc(pathText(day, pathOf(day)).name)} · ${pathOf(day).stops} stop${pathOf(day).stops === 1 ? "" : "s"} · ${dur(pathOf(day).ride) || "no"} on trains</p>`;
-
-    return `<div class="wrap">
-      ${chips}
-      <div class="card" style="margin-top:2px"><div id="map"></div>
-        <div class="pad">${cap}${all ? `<div class="legend">${D.days.map((d) => `<span><i style="width:11px;height:11px;border-radius:50%;background:${d.c};display:inline-block"></i>Day ${d.n}</span>`).join("")}</div>` : ""}</div></div>
-      <div class="foot">Map tiles and place data © OpenStreetMap contributors.</div></div>`;
-  }
 
   let map = null, layer = null;
   function drawMap() {
     const el = document.getElementById("map");
     if (!el) return;
     if (!window.L) {
-      el.innerHTML = `<div class="mapfall"><p>The map needs a connection. Every stop still opens in Google Maps from the day page.</p></div>`;
+      el.innerHTML = `<div class="mapfall"><p>${esc(ar() ? T("map-offline") : "The map needs a connection. Every stop still opens in Google Maps from the day page.")}</p></div>`;
       return;
     }
     if (mapDay === 0) return drawWholeTrip(el);
@@ -1114,47 +1233,64 @@
      this one in a country whose language she does not read. It drives the app
      itself — switching screens, opening the thing it is describing — so she
      sees the real page underneath rather than a picture of it. */
+  /* The tour's job is to teach the three buttons at the bottom, in order, and
+     it is written against elements that are always on the screen it names —
+     the old one pointed at a card that had scrolled away and left a hole over
+     nothing. Each step says which screen it belongs on and waits for it. */
   const TOUR = [
-    { view: "choose", title: "This is your whole week",
-      body: "Mittenwald to Berlin, five days, already planned. Nothing here needs setting up — I will show you the four buttons that matter and then leave you alone.",
-      at: null },
-    { view: "choose", at: "[data-preset]",
-      title: "First, pick a way across",
-      body: "Four versions of the same week. Each one says how many towns you stop in, how long you spend on trains, and what time you reach Berlin. If you are not sure, the first one is the safe choice." },
-    { view: "choose", at: "[data-preset] .beds",
+    { view: "trip", at: null,
+      title: "This is your whole week",
+      body: "Mittenwald to Berlin, five days, already planned. There are three buttons along the bottom and nothing else to learn. I will show you each one." },
+    { view: "trip", at: '.tabs', gap: 10,
+      title: "Three buttons, in order",
+      body: "One, two, three, left to right. One is your trip. Two is today. Three is for when something goes wrong. You will mostly live on button two." },
+    { view: "trip", at: '.tab[data-tab="trip"]',
+      title: "Button one — the itinerary",
+      body: "You are on it now. This is where you choose the shape of the week, and it is the only screen you need before you leave home." },
+    { view: "trip", at: "[data-preset]",
+      title: "Pick a way across",
+      body: "Four versions of the same week. Each says how many towns you stop in, how long you sit on trains, and what time you reach Berlin. If you are unsure, the first is the safe one." },
+    { view: "trip", at: ".beds", scroll: true,
       title: "These are your hotels",
-      body: "The towns you sleep in, on each card. Book these four and the week is fixed — everything else can change on the day." },
-    { pick: true, view: "now", at: ".headline",
-      title: "Then this screen answers one question",
-      body: "Where you are, what is next, and when to move. It changes by itself through the day. If you only ever look at one thing, look here." },
-    { view: "now", at: ".countdown",
-      title: "The number is when to set off",
-      body: "Not when the train leaves — when you should start walking, with the walk to the station and a few spare minutes already counted. Green means plenty of time. Amber means go soon. Red means now." },
-    { view: "now", at: ".train",
-      title: "Your train, and its platform",
-      body: "The line number, the time, and the platform. Times with a dotted line underneath can be tapped: it tells you how often that train runs, so you know what missing it costs." },
-    { view: "now", at: "#pulse",
-      title: "This dot says whether it is live",
-      body: "Green means the times were checked against the railway in the last minute or two, delays and all. Grey means you have no signal and are reading the plan. Tap it any time to ask again." },
-    { view: "walk", at: ".wt",
-      title: "“Walk it” takes you by the hand",
-      body: "The whole week, one move at a time — you are here, walk eight minutes to this, it is worth seeing because, now this train. Press Next as you go. You cannot get lost in it." },
-    { view: "map", at: "#map",
-      title: "The map shows any day, or all of them",
-      body: "Tap “All days” to see the whole line down the country, or a single day to see just that one. The bigger dots are the towns you sleep in." },
-    { view: "now", at: "[data-trouble]",
-      title: "If something goes wrong",
-      body: "Missed a train, or want another hour somewhere? Press one of these. It asks the railway what still runs and tells you honestly what you would have to give up — and it never gives up getting you to your bed." },
-    { view: "now", at: "#datebtn",
-      title: "If you travel on different days",
-      body: "The calendar moves the whole trip. Everything slides with it, and the live times are then looked up for the days you are really there." },
-    { view: "now", at: "#tripsbtn",
-      title: "And this goes back to the four choices",
-      body: "Any time. Changing your mind costs nothing." },
-    { view: "now", at: null,
-      title: "That is everything",
-      body: "Have a wonderful trip. Everything you have just seen works without signal too — only the live times need a connection." },
+      body: "The towns you sleep in, written on every card. Book these and the week is fixed. Everything else can still change on the day." },
+    { view: "trip", at: "#map", scroll: true,
+      title: "And this is the shape of it",
+      body: "The whole line down the country. Tap a day above the map to see just that day. The bigger dots are where you sleep." },
+    { view: "day", at: '.tab[data-tab="day"]',
+      title: "Button two — the day",
+      body: "This is the screen for the morning: everything today, in the order it happens. It is the one you will open most." },
+    { view: "day", at: ".days", scroll: true,
+      title: "Move between days here",
+      body: "Tap any day along the top. You do not have to go back anywhere to read tomorrow." },
+    { view: "day", at: ".tl", scroll: true,
+      title: "The day, in order",
+      body: "Each town, what to walk to, how many minutes between them, and the trains in between. Tap a photograph to read about that place." },
+    { view: "now", at: '.tab[data-tab="now"]',
+      title: "Button three — guide me",
+      body: "For when you are lost, late, or not sure what to do next. You do not need it on a good day." },
+    { view: "now", at: ".seg", scroll: true,
+      title: "It answers in two ways",
+      body: "“What now” is one sentence: where you are and when to move. “Step by step” walks you through the rest of the day one move at a time, with Next and Back." },
+    { view: "now", at: "[data-locate]", scroll: true,
+      title: "It can find you",
+      body: "Press this and the phone tells it where you are. It will say which town you are in and whether that is where the plan expects you." },
+    { view: "now", at: "[data-trouble]", scroll: true,
+      title: "If a train is missed",
+      body: "Press one of these. It asks the railway what still runs and tells you honestly what you would have to give up — and it never gives up getting you to your bed." },
+    { view: "trip", at: "#pulse",
+      title: "This dot means the times are live",
+      body: "Green: checked against the railway a minute ago, delays and all. Grey: no signal, so you are reading the plan. Tap it to ask again." },
+    { view: "trip", at: "#morebtn",
+      title: "And everything else is in here",
+      body: "Language, light or dark, and this tour again whenever you want it. Nothing in there can break anything." },
+    { view: "trip", at: null,
+      title: "That is all of it",
+      body: "Have a wonderful trip. All of this works without signal — only the live times need a connection." },
   ];
+
+  let guideMode = store.get("guidemode", "now"); // "now" | "steps"
+  let guideFix = null;   // where the phone says she is
+  let guideAsked = false;
 
   let tourAt = -1;
   const tourEl = () => document.getElementById("tour");
@@ -1185,12 +1321,16 @@
 
     // Put the app on the screen this step is about, and give it a trip to talk
     // about if she has not chosen one yet.
-    if (step.pick && !preset) applyPreset((D.presets[0] || {}).id);
+    // Give the tour something to point at: several steps describe parts of the
+    // page that only exist once a trip is chosen.
+    let needsPaint = false;
+    if (!preset) { applyPreset((D.presets[0] || {}).id); needsPaint = true; }
     if (step.view && view !== step.view) {
       view = step.view;
-      if (step.view === "walk") { const d = todayDay(); wtDay = d ? d.n : D.days[0].n; wtStep = 0; }
-      render();
+      if (step.view === "now") guideMode = "now";
+      needsPaint = true;
     }
+    if (needsPaint) render();
 
     el.classList.add("on");
     document.body.style.overflow = "hidden";
@@ -1199,18 +1339,20 @@
     const say = el.querySelector(".say");
     const target = step.at ? document.querySelector(step.at) : null;
 
-    if (target) {
-      target.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    if (target && step.scroll !== false) {
+      target.scrollIntoView({ block: "center", behavior: "auto" });
     }
     // Let the scroll settle before measuring, or the hole lands in the wrong place.
     setTimeout(() => {
       const r = target ? target.getBoundingClientRect() : null;
-      if (r && r.height > 0) {
+      const visible = r && r.height > 4 && r.width > 4 && r.bottom > 0 && r.top < innerHeight;
+      if (visible) {
+        const g = step.gap || 6;
         cut.className = "cut";
-        cut.style.top = Math.max(6, r.top - 6) + "px";
-        cut.style.left = Math.max(6, r.left - 6) + "px";
-        cut.style.width = Math.min(innerWidth - 12, r.width + 12) + "px";
-        cut.style.height = r.height + 12 + "px";
+        cut.style.top = Math.max(4, r.top - g) + "px";
+        cut.style.left = Math.max(4, r.left - g) + "px";
+        cut.style.width = Math.min(innerWidth - 8, r.width + g * 2) + "px";
+        cut.style.height = Math.min(innerHeight - 8, r.height + g * 2) + "px";
       } else {
         cut.className = "cut none";
         cut.style.top = "50%"; cut.style.left = "50%";
@@ -1231,13 +1373,13 @@
       const h = say.offsetHeight || 240;
       const below = r && r.bottom + 16 + h < innerHeight - 10;
       const above = r && r.top - 16 - h > 10;
-      let top = (r && r.height > 0)
+      let top = visible
         ? (below ? r.bottom + 14 : above ? r.top - h - 14 : (innerHeight - h) / 2)
         : (innerHeight - h) / 2;
       // Whatever the geometry says, the card has to be fully on the screen.
       top = Math.min(Math.max(12, top), Math.max(12, innerHeight - h - 12));
       say.style.top = top + "px";
-    }, target ? 260 : 0);
+    }, target ? 180 : 0);
   }
 
   /* ---------- overview ---------- */
@@ -1561,6 +1703,25 @@
   /* Moving the whole plan onto the dates she is actually travelling. The
      offsets are the ones people really need — a day either way, or a week —
      plus whatever date she types. */
+  /* Everything that is a setting rather than a destination, behind the one
+     button in the corner. Replaying the tour lives here too, because the first
+     thing anyone asks after a tour is how to see it again. */
+  function showSettings() {
+    const themeNow = document.documentElement.getAttribute("data-theme") || T("Match my phone");
+    openSheetRaw(`<div class="grab"></div><div class="sbody">
+      <h2>${T("Settings")}</h2>
+      <div class="btns" style="padding:14px 0 0">
+        <button class="btn ghost" id="langbtn2">${ar() ? "Switch to English" : "التبديل إلى العربية"}</button>
+        <button class="btn ghost" id="themebtn">${svg("moon")} ${T("Light or dark")}</button>
+        <button class="btn accent" id="starttour">${svg("help")} ${T("Show me how this works")}</button>
+      </div>
+      <p class="about" style="margin-top:16px">${T("settings-note")}</p>
+      <div class="btns" style="padding:8px 0 0"><button class="btn ghost" data-close="1">${T("Close")}</button></div>
+    </div>`);
+    const lb = document.getElementById("langbtn2");
+    if (lb) lb.addEventListener("click", () => { closeSheet(); setLang(ar() ? "en" : "ar"); });
+  }
+
   function showDates() {
     const cur = startIso, planned = planStart;
     const opts = [-7, -2, -1, 0, 1, 2, 7].map((k) => {
@@ -1614,16 +1775,10 @@
 
   /* ---------- events ---------- */
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("#langbtn,[data-tour],#starttour,#pulse,[data-freq],#tripsbtn,#datebtn,[data-close-choose],[data-setstart],[data-tab],[data-goday],[data-route],[data-sight],[data-tick],[data-mapday],[data-replan],[data-close],[data-wt],[data-wtday],[data-startwalk],[data-trouble],[data-preset],#scrim,#themebtn,#refresh");
+    const t = e.target.closest("#morebtn,[data-guide],[data-locate],[data-tour],#starttour,#pulse,[data-freq],[data-setstart],[data-tab],[data-goday],[data-route],[data-sight],[data-tick],[data-mapday],[data-replan],[data-close],[data-wt],[data-wtday],[data-startwalk],[data-trouble],[data-preset],#scrim,#themebtn,#refresh");
     if (!t) return;
     if (t.id === "scrim" || t.dataset.close) return closeSheet();
-    if (t.dataset.closeChoose) return goBack();
-    if (t.id === "langbtn") return setLang(ar() ? "en" : "ar");
-    if (t.id === "tripsbtn") {
-      if (view === "choose") return goBack();
-      push(); view = "choose"; window.scrollTo(0, 0); return render();
-    }
-    if (t.id === "datebtn") return showDates();
+    if (t.id === "morebtn") return showSettings();
     if (t.dataset.setstart) { setStart(t.dataset.setstart); closeSheet(); render(); refreshLive(true); return; }
     if (t.dataset.tour) {
       return t.dataset.tour === "end" ? endTour() : tourStep(+t.dataset.tour);
@@ -1643,6 +1798,12 @@
       return showFreq(f, to, iso || null);
     }
     if (t.dataset.tab) { push(); view = t.dataset.tab; window.scrollTo(0, 0); return render(); }
+    if (t.dataset.guide) {
+      guideMode = t.dataset.guide; store.set("guidemode", guideMode);
+      if (guideMode === "steps") { const d = todayDay(); wtDay = d ? d.n : (wtDay || D.days[0].n); }
+      return render();
+    }
+    if (t.dataset.locate) return locate();
     if (t.dataset.goday) { push(); view = "day"; openDay = +t.dataset.goday; window.scrollTo(0, 0); return render(); }
     if (t.dataset.mapday != null) { mapDay = +t.dataset.mapday; return render(); }
     if (t.dataset.wt) { if (+t.dataset.wt > 0) push(); return wtGo(+t.dataset.wt); }
@@ -1650,12 +1811,14 @@
     if (t.dataset.startwalk) {
       push();
       const d = todayDay(); wtDay = d ? d.n : D.days[0].n; wtStep = 0;
-      view = "walk"; window.scrollTo(0, 0); return render();
+      view = "now"; guideMode = "steps"; store.set("guidemode", "steps");
+      window.scrollTo(0, 0); return render();
     }
     if (t.dataset.route) {
       const [n, id] = t.dataset.route.split(":");
       chosen[n] = id; store.set("routes", chosen);
       if (+n === wtDay) wtStep = 0;
+      liveGen++; liveState = { at: 0, status: navigator.onLine ? "idle" : "off" };
       liveCache = {}; store.set("live", {});
       render(); refreshLive(true);
       return;
@@ -1707,7 +1870,7 @@
   if (savedTheme) document.documentElement.setAttribute("data-theme", savedTheme);
   paintDates();
 
-  if (view === "help") view = "now";
+  if (!["trip", "day", "now"].includes(view)) view = "trip";
   applyLang();
   render();
   refreshLive();

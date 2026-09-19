@@ -12,11 +12,13 @@ async function run(name, live) {
       localStorage.setItem("mb-preset", JSON.stringify("classic"));
       localStorage.setItem("mb-routes", JSON.stringify({ 1: "A", 2: "A", 3: "A", 4: "A", 5: "A" }));
       localStorage.setItem("mb-live", JSON.stringify(l));
+      localStorage.setItem("mb-toured", "1");
     } catch (e) {}
   }, live);
   await p.goto("file:///home/user/trip/out/mittenwald-to-berlin.html?at=" + encodeURIComponent(AT), { waitUntil: "load" });
   await p.waitForTimeout(700);
-  await p.click('[data-tab="walk"]'); await p.waitForTimeout(500);
+  await p.click('[data-tab="now"]'); await p.waitForTimeout(400);
+  await p.click('[data-guide="steps"]'); await p.waitForTimeout(500);
   // walk forward to the first ride step of day 4
   for (let i = 0; i < 30; i++) {
     const k = await p.evaluate(() => document.querySelector(".wt .kind")?.innerText || "");
@@ -32,9 +34,9 @@ async function run(name, live) {
   await ctx.close();
 }
 
-const id = "mittenwald>garmisch@2026-09-30T06:36:00Z";
-const base = { id, at: Date.now(), depDelay: 0, arrDelay: 0, track: "3", trackChanged: false, cancelled: false, gaps: [] };
-await run("on time", { [id]: { ...base, realDep: "2026-09-30T06:36:00Z", realArr: "2026-09-30T07:00:00Z" } });
-await run("22 late", { [id]: { ...base, depDelay: 22, arrDelay: 20, realDep: "2026-09-30T06:58:00Z", realArr: "2026-09-30T07:20:00Z" } });
-await run("platform", { [id]: { ...base, track: "5", trackChanged: true, realDep: "2026-09-30T06:36:00Z", realArr: "2026-09-30T07:00:00Z" } });
+const id = "nuremberg>bamberg@2026-10-02T10:40:00Z";
+const base = { id, at: Date.now(), depDelay: 0, arrDelay: 0, track: "8", trackChanged: false, cancelled: false, gaps: [] };
+await run("on time", { [id]: { ...base, realDep: "2026-10-02T10:40:00Z", realArr: "2026-10-02T11:20:00Z" } });
+await run("22 late", { [id]: { ...base, depDelay: 22, arrDelay: 20, realDep: "2026-10-02T11:02:00Z", realArr: "2026-10-02T11:40:00Z" } });
+await run("platform", { [id]: { ...base, track: "5", trackChanged: true, realDep: "2026-10-02T10:40:00Z", realArr: "2026-10-02T11:20:00Z" } });
 await b.close();

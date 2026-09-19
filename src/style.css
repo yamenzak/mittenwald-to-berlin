@@ -77,7 +77,8 @@ img { display: block; max-width: 100%; }
   position: sticky; top: 0; z-index: 1300; background: var(--chrome); color: var(--chrome-ink);
   padding-top: env(safe-area-inset-top); border-bottom: 1px solid var(--chrome-edge);
 }
-.top-in { display: flex; align-items: center; gap: 12px; padding: 11px 16px; max-width: 980px; margin: 0 auto; }
+.top-in { display: flex; align-items: center; gap: 10px; padding: 10px 16px; max-width: 980px; margin: 0 auto; }
+.top-in .ttl { min-width: 0; }
 .top h1 { font-size: 16.5px; font-weight: 650; letter-spacing: 0; }
 .top-in > div { min-width: 0; }
 .top h1, .top .sub { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -315,12 +316,17 @@ img { display: block; max-width: 100%; }
   display: flex; justify-content: center;
 }
 .tabs-in { display: flex; width: 100%; max-width: 560px; }
+/* Numbered, because the order they are used in is the thing to teach. */
 .tab {
-  flex: 1; min-height: 62px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
-  font-size: 11.5px; font-weight: 600; color: var(--soft-ink);
+  flex: 1; min-height: 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+  font-size: 12px; font-weight: 600; color: var(--soft-ink);
 }
-.tab svg { width: 24px; height: 24px; }
+.tab .num {
+  width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--hair); color: var(--soft-ink); font: 700 13px/1 system-ui;
+}
 .tab[aria-selected="true"] { color: var(--accent); }
+.tab[aria-selected="true"] .num { background: var(--accent); color: #fff; }
 
 /* ---------- misc ---------- */
 .lead { color: var(--soft-ink); font-size: 16px; margin-top: 6px; }
@@ -442,7 +448,15 @@ img { display: block; max-width: 100%; }
 /* ---------- العربية ---------- */
 /* The layout is built from flex and grid, so most of it mirrors on its own.
    These are the places that had a hard-coded side. */
-[dir="rtl"] body { font-family: "SF Arabic", "Geeza Pro", "Noto Naskh Arabic", ui-rounded, system-ui, sans-serif; }
+[dir="rtl"] body {
+  font-family: "IBM Plex Sans Arabic", "SF Arabic", "Geeza Pro", "Noto Sans Arabic", ui-rounded, system-ui, sans-serif;
+  font-size: 16.5px; line-height: 1.7;
+}
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { letter-spacing: 0; line-height: 1.35; }
+[dir="rtl"] .headline .big { font-size: 27px; line-height: 1.35; }
+[dir="rtl"] .label { letter-spacing: 0; }
+[dir="rtl"] .hero .cap .kicker, [dir="rtl"] .wt .kind, [dir="rtl"] .headline .what,
+[dir="rtl"] .plat span, [dir="rtl"] .free span, [dir="rtl"] #tour .step { letter-spacing: 0; }
 [dir="rtl"] .tl { padding-left: 0; padding-right: 26px; }
 [dir="rtl"] .tl::before { left: auto; right: 7px; }
 [dir="rtl"] .ev::before { left: auto; right: -26px; }
@@ -458,3 +472,27 @@ img { display: block; max-width: 100%; }
 [dir="rtl"] .line, [dir="rtl"] .countdown .n, [dir="rtl"] .free b,
 [dir="rtl"] .stophead .when, [dir="rtl"] .wtbar .num { direction: ltr; unicode-bidi: isolate; }
 [dir="rtl"] .tt { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+
+
+/* ---------- step 3: two ways of answering ---------- */
+.seg {
+  display: flex; background: var(--hair); border-radius: 14px; padding: 4px; margin: 14px 0 4px;
+}
+.seg button {
+  flex: 1; min-height: 42px; border-radius: 11px; font-weight: 650; font-size: 15px;
+  color: var(--soft-ink);
+}
+.seg button[aria-pressed="true"] { background: var(--card); color: var(--ink); box-shadow: var(--shadow); }
+
+/* ---------- a photograph beside each line of the walk ---------- */
+.wrow { grid-template-columns: 30px 1fr auto; }
+.wbody { text-align: start; width: 100%; background: none; padding: 9px 0; }
+.wthumb {
+  width: 58px; height: 58px; border-radius: 12px; overflow: hidden; flex: none;
+  background: var(--hair); padding: 0; align-self: center;
+}
+.wthumb img { width: 100%; height: 100%; object-fit: cover; }
+
+[dir="rtl"] .wthumb { align-self: center; }
+[dir="rtl"] .seg { direction: rtl; }
+[dir="rtl"] .tab .num { font-family: system-ui; }
