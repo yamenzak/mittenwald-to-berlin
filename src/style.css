@@ -18,6 +18,13 @@
   --stop: #B33A3A;
   --band: #16211C;
   --band-ink: #F2EFE6;
+  /* The top bar is part of the page, not a separate dark product. In light it
+     is paper with a hairline; in dark it is the deep green it always was. */
+  --chrome: #FFFFFF;
+  --chrome-ink: #1A2420;
+  --chrome-soft: #5D6B64;
+  --chrome-edge: #E0DED6;
+  --chrome-btn: rgba(26, 36, 32, .06);
   --shadow: 0 1px 2px rgba(20, 30, 25, .05), 0 6px 20px rgba(20, 30, 25, .06);
   --shadow-lg: 0 8px 40px rgba(20, 30, 25, .18);
   --r: 18px;
@@ -25,6 +32,8 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
+    --chrome: #0B100E; --chrome-ink: #ECEFEA; --chrome-soft: #9DABA4;
+    --chrome-edge: #22302A; --chrome-btn: rgba(255, 255, 255, .09);
     --paper: #121916; --card: #1B2420; --ink: #ECEFEA; --soft-ink: #A3AFA8;
     --line: #2C3833; --hair: #232E29; --band: #0B100E; --band-ink: #ECEFEA;
     --accent: #E0836A; --go: #5FBE92; --warn: #E3AB55; --stop: #E77B7B;
@@ -33,6 +42,8 @@
   }
 }
 :root[data-theme="dark"] {
+    --chrome: #0B100E; --chrome-ink: #ECEFEA; --chrome-soft: #9DABA4;
+    --chrome-edge: #22302A; --chrome-btn: rgba(255, 255, 255, .09);
   --paper: #121916; --card: #1B2420; --ink: #ECEFEA; --soft-ink: #A3AFA8;
   --line: #2C3833; --hair: #232E29; --band: #0B100E; --band-ink: #ECEFEA;
   --accent: #E0836A; --go: #5FBE92; --warn: #E3AB55; --stop: #E77B7B;
@@ -63,21 +74,25 @@ img { display: block; max-width: 100%; }
 
 /* ---------- top bar ---------- */
 .top {
-  position: sticky; top: 0; z-index: 30; background: var(--band); color: var(--band-ink);
-  padding-top: env(safe-area-inset-top);
+  position: sticky; top: 0; z-index: 1300; background: var(--chrome); color: var(--chrome-ink);
+  padding-top: env(safe-area-inset-top); border-bottom: 1px solid var(--chrome-edge);
 }
 .top-in { display: flex; align-items: center; gap: 12px; padding: 11px 16px; max-width: 980px; margin: 0 auto; }
-.top h1 { font-size: 17px; font-weight: 650; letter-spacing: 0; }
-.top .sub { font-size: 12.5px; opacity: .62; font-weight: 450; }
+.top h1 { font-size: 16.5px; font-weight: 650; letter-spacing: 0; }
+.top-in > div { min-width: 0; }
+.top h1, .top .sub { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 400px) { .top-in { gap: 8px; } .pulse span { display: none; } }
+.top .sub { font-size: 12.5px; color: var(--chrome-soft); font-weight: 450; }
 .top .spacer { flex: 1; }
 .iconbtn {
   width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
-  background: rgba(255,255,255,.09); flex: none;
+  background: var(--chrome-btn); color: var(--chrome-ink); flex: none;
 }
+.iconbtn[disabled] { opacity: .3; }
 .iconbtn svg { width: 21px; height: 21px; }
 
 /* live pill */
-.pulse { display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 600; opacity: .85; }
+.pulse { display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 600; color: var(--chrome-soft); }
 .pulse i { width: 8px; height: 8px; border-radius: 50%; background: var(--go); box-shadow: 0 0 0 0 rgba(94,190,146,.7); animation: ping 2.4s infinite; }
 .pulse.off i { background: #8B968F; animation: none; }
 .pulse.bad i { background: var(--warn); animation: none; }
@@ -259,10 +274,10 @@ img { display: block; max-width: 100%; }
 .dchip.today::after { content: ""; display: block; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); margin: 3px auto 0; }
 
 /* ---------- sheet ---------- */
-.scrim { position: fixed; inset: 0; background: rgba(10,16,13,.55); z-index: 60; opacity: 0; transition: opacity .22s; backdrop-filter: blur(3px); }
+.scrim { position: fixed; inset: 0; background: rgba(10,16,13,.55); z-index: 1400; opacity: 0; transition: opacity .22s; backdrop-filter: blur(3px); }
 .scrim.on { opacity: 1; }
 .sheet {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 61; background: var(--card);
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 1401; background: var(--card);
   border-radius: 24px 24px 0 0; box-shadow: var(--shadow-lg); max-height: 92vh; overflow-y: auto;
   transform: translateY(100%); transition: transform .28s cubic-bezier(.22,.9,.3,1);
   padding-bottom: env(safe-area-inset-bottom);
@@ -283,6 +298,10 @@ img { display: block; max-width: 100%; }
 .sheet .btns { padding: 16px 0 6px; }
 
 /* ---------- map ---------- */
+/* Leaflet stacks its panes up into the hundreds, which floated the map over
+   the tab bar and the Next button. Each map gets its own stacking context, so
+   everything it does stays inside its own box. */
+#map, #wtmap { position: relative; z-index: 0; isolation: isolate; contain: paint; }
 #map { height: min(62vh, 520px); border-radius: var(--r); overflow: hidden; background: var(--hair); }
 .leaflet-container { font: inherit !important; background: var(--hair) !important; }
 .mapfall { padding: 28px 18px; text-align: center; color: var(--soft-ink); }
@@ -290,7 +309,7 @@ img { display: block; max-width: 100%; }
 
 /* ---------- tab bar ---------- */
 .tabs {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 1200;
   background: color-mix(in srgb, var(--card) 88%, transparent); backdrop-filter: blur(14px) saturate(1.4);
   border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom);
   display: flex; justify-content: center;
@@ -361,7 +380,7 @@ img { display: block; max-width: 100%; }
 .wt .howto svg { width: 18px; height: 18px; flex: none; }
 #wtmap { height: 190px; background: var(--hair); }
 .wtnav {
-  position: sticky; bottom: calc(68px + env(safe-area-inset-bottom)); z-index: 12;
+  position: sticky; bottom: calc(68px + env(safe-area-inset-bottom)); z-index: 20;
   display: grid; grid-template-columns: 1fr 1fr; gap: 9px; padding: 10px 0 2px;
 }
 .wtnav .btn { min-height: 52px; }

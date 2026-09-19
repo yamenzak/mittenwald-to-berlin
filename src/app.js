@@ -50,10 +50,37 @@
   const now = () => (fake ? new Date(fake.getTime() + (Date.now() - boot)) : new Date());
   const boot = Date.now();
 
+  /* The plan was built for 29 September. If she travels a week later — or a day
+     early, or the flight moves — the dates in the file stop matching the dates
+     she is living in, and an app that insists otherwise is useless on the day.
+     So the whole plan slides: day 1 is whatever date she says it is, and every
+     live lookup asks the timetable about the real date rather than the one the
+     plan was baked from. */
+  const DAY_MS = 86400000;
+  const planStart = D.days[0].iso;
+  let startIso = store.get("start", planStart);
+  const shiftDays = () =>
+    Math.round((Date.parse(startIso + "T12:00:00Z") - Date.parse(planStart + "T12:00:00Z")) / DAY_MS);
+  const shifted = () => shiftDays() !== 0;
+  /* A plan date -> the date she is actually there. */
+  const realDate = (iso) =>
+    new Date(Date.parse(iso + "T12:00:00Z") + shiftDays() * DAY_MS).toISOString().slice(0, 10);
+  /* An instant in the baked plan -> the same clock time on the real date. */
+  const realInstant = (isoTime) =>
+    new Date(new Date(isoTime).getTime() + shiftDays() * DAY_MS).toISOString();
+  function setStart(iso) {
+    startIso = iso; store.set("start", iso);
+    liveCache = {}; store.set("live", {});
+    replanCache = {};
+  }
+
   const hhmm = (d) => new Date(d).toLocaleTimeString("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit" });
   const dayKey = (d) => new Date(d).toLocaleDateString("en-CA", { timeZone: TZ });
-  const weekday = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", timeZone: "UTC" });
-  const dateShort = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
+  const fmtWeekday = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", timeZone: "UTC" });
+  const fmtDate = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
+  // Everything on screen is the date she is actually there, not the baked one.
+  const weekday = (iso) => fmtWeekday(realDate(iso));
+  const dateShort = (iso) => fmtDate(realDate(iso));
   const mins = (a, b) => Math.round((new Date(b) - new Date(a)) / 60000);
   const dur = (m) => (m == null ? "" : (m >= 60 ? Math.floor(m / 60) + " h" : "") + (m % 60 ? (m >= 60 ? " " : "") + (m % 60) + " min" : (m >= 60 ? "" : "0 min")));
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -63,7 +90,8 @@
   const pathOf = (day) => day.paths.find((p) => p.id === chosen[day.n]) || day.paths[0];
   const sightOf = (pk, name) => D.sights[pk + "/" + name] || null;
   const photo = (key) => IMG[key] || null;
-  const todayDay = () => D.days.find((d) => d.iso === dayKey(now()));
+  const todayDay = () => D.days.find((d) => realDate(d.iso) === dayKey(now()));
+  const dayDate = (d) => realDate(d.iso);
   const gmaps = (q) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
   const gdir = (a, b, mode) => `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(a)}&destination=${encodeURIComponent(b)}&travelmode=${mode || "walking"}`;
   const osmAt = (lat, lon) => `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=17/${lat}/${lon}`;
@@ -130,22 +158,36 @@
      and answers with the 09:05. The train we are asking about has to be inside
      the window or there is nothing to compare against. */
   async function checkMove(m) {
-    const from = new Date(new Date(m.depIso).getTime() - 20 * 60000).toISOString();
+    const dep = realInstant(m.depIso);
+    const from = new Date(new Date(dep).getTime() - 20 * 60000).toISOString();
     const res = await motis("/plan", {
       fromPlace: m.fromLL.join(","), toPlace: m.toLL.join(","),
       time: from, numItineraries: 6, transitModes: MODES, arriveBy: "false",
       maxPreTransitTime: 1200, pedestrianProfile: "FOOT",
     });
     const want = m.legs[0];
+    const wantDep = realInstant(want.depIso);
     let hit = null;
     for (const it of res.itineraries || []) {
       const first = (it.legs || []).find((l) => l.mode && l.mode !== "WALK");
       if (!first) continue;
-      const sameTime = first.scheduledStartTime === want.depIso;
+      const sameTime = first.scheduledStartTime === wantDep;
       const sameLine = (first.routeShortName || "").replace(/\s*\(\d+\)\s*$/, "") === want.line;
-      if (sameTime || (sameLine && Math.abs(mins(want.depIso, first.scheduledStartTime || first.startTime)) < 6)) { hit = it; break; }
+      if (sameTime || (sameLine && Math.abs(mins(wantDep, first.scheduledStartTime || first.startTime)) < 6)) { hit = it; break; }
     }
-    if (!hit) return { id: moveId(m), at: Date.now(), unknown: true };
+    if (!hit) {
+      // On a date the plan was not built for, this service may simply not run.
+      const alt = (res.itineraries || []).find((it) => (it.legs || []).some((l) => l.mode && l.mode !== "WALK"));
+      if (shifted() && alt) {
+        const legs = alt.legs.filter((l) => l.mode && l.mode !== "WALK");
+        return { id: moveId(m), at: Date.now(), replaced: true,
+          realDep: legs[0].startTime, realArr: legs[legs.length - 1].endTime,
+          line: legs[0].routeShortName || legs[0].mode,
+          track: legs[0].from.track || legs[0].from.scheduledTrack || null,
+          depDelay: 0, arrDelay: 0, gaps: [] };
+      }
+      return { id: moveId(m), at: Date.now(), unknown: true };
+    }
 
     const legs = (hit.legs || []).filter((l) => l.mode && l.mode !== "WALK");
     const f = legs[0], last = legs[legs.length - 1];
@@ -166,13 +208,15 @@
 
   /* Only the moves that still matter — today's, from an hour ago onwards. */
   function liveTargets() {
-    const day = todayDay();
+    // Today if she is travelling; otherwise whatever day she is reading, so the
+    // walkthrough is live when she looks at it the night before too.
+    const day = todayDay() || (view === "walk" ? D.days.find((x) => x.n === wtDay) : null);
     if (!day) return [];
-    const t = now();
+    const t = todayDay() ? now() : new Date(realDate(day.iso) + "T00:00:00Z");
     return pathOf(day).seq
       .filter((s) => s.kind === "move" && !s.missing && s.depIso)
-      .filter((s) => new Date(s.arrIso) > new Date(t.getTime() - 60 * 60000))
-      .slice(0, 3);
+      .filter((s) => new Date(realInstant(s.arrIso)) > new Date(t.getTime() - 60 * 60000))
+      .slice(0, 4);
   }
 
   let refreshing = false;
@@ -259,6 +303,38 @@
   /* ================= views ================= */
   let view = "now";
   let openDay = null;
+  /* Every screen she can land on, so the arrow in the corner always has
+     somewhere to go — including back out of a sheet, and back a step in the
+     walkthrough, which is where people press it first. */
+  const navStack = [];
+  const snapshot = () => ({ view, openDay, wtDay, wtStep });
+  function push() {
+    const cur = snapshot();
+    const top = history[navStack.length - 1];
+    if (top && JSON.stringify(top) === JSON.stringify(cur)) return;
+    navStack.push(cur);
+    if (navStack.length > 60) navStack.shift();
+  }
+  function goBack() {
+    if (!sheet.hidden) return closeSheet();
+    const prev = navStack.pop();
+    if (!prev) return;
+    view = prev.view; openDay = prev.openDay; wtDay = prev.wtDay; wtStep = prev.wtStep;
+    render();
+  }
+  /* The strip under the title is the trip's dates, so it has to move when the
+     trip does — it was printing the dates the plan was baked from. */
+  function paintDates() {
+    const el = document.getElementById("trip-dates");
+    if (!el) return;
+    el.textContent = dateShort(D.days[0].iso) + " – " + dateShort(D.days[D.days.length - 1].iso) +
+      " · " + D.days.length + " days" + (shifted() ? " · moved" : "");
+  }
+
+  function paintBack() {
+    const b = document.getElementById("backbtn");
+    if (b) b.disabled = navStack.length === 0 && sheet.hidden;
+  }
   const app = document.getElementById("app");
 
   function render() {
@@ -268,6 +344,10 @@
     else if (view === "map") app.innerHTML = viewMap();
     else viewHelp();
     document.querySelectorAll(".tab").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === view)));
+    paintBack();
+    paintDates();
+    const tc = document.querySelector('meta[name="theme-color"]');
+    if (tc) tc.setAttribute("content", getComputedStyle(document.documentElement).getPropertyValue("--chrome").trim() || "#16211C");
     if (view === "map") drawMap();
     if (view === "walk") drawWalkMap();
     paintPulse();
@@ -386,6 +466,7 @@
       ${alerts}
       ${day.holiday ? note("warn", day.holiday) : ""}
       ${suggest}
+      ${shiftNote()}
       ${troubleCard()}
       ${bedsCard()}
       ${footer()}</div>`;
@@ -518,6 +599,7 @@
     return `<div class="wrap">
       ${heroCard(day, `Day ${day.n} · ${weekday(day.iso)} ${dateShort(day.iso)}`, day.title)}
       <div class="card pad"><p class="lead" style="margin:0">${esc(day.intro)}</p></div>
+      ${shiftNote()}
       ${day.holiday ? note("warn", day.holiday) : ""}
       ${day.bags ? note("calm", "You change hotel today — the bags come with you. Most stations have lockers if you want to drop them before wandering.") : ""}
       ${routes}
@@ -655,6 +737,15 @@
     return null;
   }
 
+  /* A step and the move it came from, so the walkthrough can show the same
+     live times as the front page instead of a printed schedule that has moved
+     on without it. */
+  function moveForStep(day, st) {
+    if (st.kind !== "ride") return null;
+    return pathOf(day).seq.find((x) => x.kind === "move" && !x.missing &&
+      x.from === st.place && x.to === st.toPlace && x.dep === st.dep) || null;
+  }
+
   function viewWalk() {
     const day = D.days.find((x) => x.n === wtDay) || D.days[0];
     const steps = allSteps(wtDay);
@@ -669,8 +760,21 @@
     const first = wtDay === D.days[0].n && wtStep === 0;
     const last = wtDay === D.days[D.days.length - 1].n && wtStep === total - 1;
 
+    const mv = moveForStep(day, st);
+    const lv = mv ? liveFor(mv) : null;
+    const late = lv && lv.depDelay >= 2;
+    const plat = (lv && lv.track) || st.track;
+
     const howto = st.kind === "ride"
-      ? `<div class="howto">${svg(st.line && /^\d/.test(String(st.line)) ? "bus" : "train")}<span><b>${esc(st.line)}</b> from ${esc(st.from)}${st.track ? `, platform ${esc(st.track)}` : ""} at ${esc(st.dep)} — in at ${esc(st.arr)}.</span></div>`
+      ? `<div class="howto">${svg(st.line && /^\d/.test(String(st.line)) ? "bus" : "train")}<span>
+          <b>${esc((lv && lv.line) || st.line)}</b> from ${esc(st.from)}${plat ? `, platform ${esc(plat)}` : ""}
+          at ${late ? `<s style="opacity:.6">${esc(st.dep)}</s> <em style="font-style:normal;color:var(--stop)">${esc(hhmm(lv.realDep))}</em>` : esc(st.dep)}
+          — in at ${lv && lv.realArr ? esc(hhmm(lv.realArr)) : esc(st.arr)}.</span></div>
+        ${lv && lv.cancelled ? note("bad", "This one is cancelled. Open Now and tap “Find me another way”.")
+          : late ? note("warn", `Running ${lv.depDelay} min late.`)
+          : lv && lv.trackChanged ? note("warn", `Platform changed to ${lv.track}.`)
+          : lv && lv.replaced ? note("calm", `On your date this service is different — the ${lv.line} at ${hhmm(lv.realDep)} is the one that runs.`)
+          : ""}`
       : st.kind === "see" && st.move
       ? `<div class="howto">${svg(st.rode ? "tram" : "walk")}<span>${esc(st.move)}${st.visit ? ` Give it about ${st.visit} min.` : ""}</span></div>`
       : st.kind === "back"
@@ -881,11 +985,12 @@
         ${cred ? `<p class="credit">Photo: ${esc(cred.by)} · ${esc(cred.lic)} · via Wikimedia Commons</p>` : ""}
       </div>`;
     scrim.hidden = false; sheet.hidden = false;
+    paintBack();
     requestAnimationFrame(() => { scrim.classList.add("on"); sheet.classList.add("on"); });
   }
   function closeSheet() {
     scrim.classList.remove("on"); sheet.classList.remove("on");
-    setTimeout(() => { scrim.hidden = true; sheet.hidden = true; }, 260);
+    setTimeout(() => { scrim.hidden = true; sheet.hidden = true; paintBack(); }, 260);
   }
 
   /* ================= when the day stops going to plan ================= */
@@ -1126,6 +1231,49 @@
     requestAnimationFrame(() => { scrim.classList.add("on"); sheet.classList.add("on"); });
   }
 
+  /* Moving the whole plan onto the dates she is actually travelling. The
+     offsets are the ones people really need — a day either way, or a week —
+     plus whatever date she types. */
+  function showDates() {
+    const cur = startIso, planned = planStart;
+    const opts = [-7, -2, -1, 0, 1, 2, 7].map((k) => {
+      const iso = new Date(Date.parse(planned + "T12:00:00Z") + k * DAY_MS).toISOString().slice(0, 10);
+      return { iso, k };
+    });
+    openSheetRaw(`<div class="grab"></div><div class="sbody">
+      <h2>When are you actually going?</h2>
+      <p class="about">The plan was built for ${esc(fmtDate(planned))}. Move it and every day moves with it —
+        and the live times are then looked up for the dates you are really there.</p>
+      <div class="routes" style="margin-top:14px">
+        ${opts.map((o) => `<button class="route" data-setstart="${o.iso}" aria-pressed="${o.iso === cur}">
+          <span class="rn">${esc(fmtWeekday(o.iso))} ${esc(fmtDate(o.iso))}</span>
+          <span class="rw">${o.k === 0 ? "As planned" : o.k > 0 ? `${o.k} day${o.k > 1 ? "s" : ""} later` : `${-o.k} day${o.k < -1 ? "s" : ""} earlier`}
+            — in Berlin ${esc(fmtDate(new Date(Date.parse(o.iso + "T12:00:00Z") + (D.days.length - 1) * DAY_MS).toISOString().slice(0, 10)))}</span>
+        </button>`).join("")}
+      </div>
+      <div class="pad" style="padding:16px 0 0">
+        <label style="font-size:14px;color:var(--soft-ink)">Or pick the day you arrive in Mittenwald
+          <input type="date" id="startpick" value="${esc(cur)}"
+            style="display:block;margin-top:8px;width:100%;min-height:48px;padding:0 12px;border-radius:13px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit"></label>
+      </div>
+      <div class="btns" style="padding-left:0;padding-right:0">
+        <button class="btn ghost" data-close="1">Close</button>
+      </div></div>`);
+    const inp = document.getElementById("startpick");
+    if (inp) inp.addEventListener("change", () => {
+      if (!inp.value) return;
+      setStart(inp.value); closeSheet(); render(); refreshLive(true);
+    });
+  }
+
+  /* Said once, near the top, whenever the dates have been moved — so a time on
+     screen is never silently about a different day than the one she is in. */
+  function shiftNote() {
+    if (!shifted()) return "";
+    const k = shiftDays();
+    return note("calm", `These dates are moved ${Math.abs(k)} day${Math.abs(k) > 1 ? "s" : ""} ${k > 0 ? "later" : "earlier"} than the plan was built for. Times are being checked live against the dates you are actually travelling.`);
+  }
+
   function troubleCard() {
     if (!todayDay()) return "";
     return `<div class="label">If the day stops going to plan</div>
@@ -1139,9 +1287,12 @@
 
   /* ---------- events ---------- */
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("[data-tab],[data-goday],[data-route],[data-sight],[data-tick],[data-mapday],[data-replan],[data-close],[data-wt],[data-wtday],[data-startwalk],[data-trouble],[data-preset],#scrim,#themebtn,#refresh");
+    const t = e.target.closest("#backbtn,#datebtn,[data-setstart],[data-tab],[data-goday],[data-route],[data-sight],[data-tick],[data-mapday],[data-replan],[data-close],[data-wt],[data-wtday],[data-startwalk],[data-trouble],[data-preset],#scrim,#themebtn,#refresh");
     if (!t) return;
     if (t.id === "scrim" || t.dataset.close) return closeSheet();
+    if (t.id === "backbtn") return goBack();
+    if (t.id === "datebtn") return showDates();
+    if (t.dataset.setstart) { setStart(t.dataset.setstart); closeSheet(); render(); refreshLive(true); return; }
     if (t.id === "themebtn") {
       const cur = document.documentElement.getAttribute("data-theme");
       const next = cur === "dark" ? "light" : cur === "light" ? "" : "dark";
@@ -1151,12 +1302,13 @@
       return;
     }
     if (t.id === "refresh") return refreshLive(true);
-    if (t.dataset.tab) { view = t.dataset.tab; window.scrollTo(0, 0); return render(); }
-    if (t.dataset.goday) { view = "day"; openDay = +t.dataset.goday; window.scrollTo(0, 0); return render(); }
+    if (t.dataset.tab) { push(); view = t.dataset.tab; window.scrollTo(0, 0); return render(); }
+    if (t.dataset.goday) { push(); view = "day"; openDay = +t.dataset.goday; window.scrollTo(0, 0); return render(); }
     if (t.dataset.mapday) { openDay = +t.dataset.mapday; return render(); }
-    if (t.dataset.wt) return wtGo(+t.dataset.wt);
-    if (t.dataset.wtday) { wtDay = +t.dataset.wtday; wtStep = 0; window.scrollTo(0, 0); return render(); }
+    if (t.dataset.wt) { if (+t.dataset.wt > 0) push(); return wtGo(+t.dataset.wt); }
+    if (t.dataset.wtday) { push(); wtDay = +t.dataset.wtday; wtStep = 0; window.scrollTo(0, 0); return render(); }
     if (t.dataset.startwalk) {
+      push();
       const d = todayDay(); wtDay = d ? d.n : D.days[0].n; wtStep = 0;
       view = "walk"; window.scrollTo(0, 0); return render();
     }
@@ -1187,7 +1339,17 @@
       return;
     }
   });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeSheet(); });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") return goBack();
+    if (view === "walk" && sheet.hidden) {
+      if (e.key === "ArrowRight") { push(); wtGo(1); }
+      if (e.key === "ArrowLeft") wtGo(-1);
+    }
+  });
+  // Android's back gesture and the browser's back button land here too.
+  window.history.replaceState({ mb: 0 }, "");
+  window.addEventListener("popstate", () => { window.history.pushState({ mb: 1 }, ""); goBack(); });
+  window.history.pushState({ mb: 1 }, "");
   window.addEventListener("online", () => { online = true; refreshLive(true); });
   window.addEventListener("offline", () => { online = false; liveState.status = "off"; paintPulse(); });
   document.addEventListener("visibilitychange", () => { if (!document.hidden) { render(); refreshLive(); } });
@@ -1195,8 +1357,7 @@
   /* ---------- go ---------- */
   const savedTheme = store.get("theme", "");
   if (savedTheme) document.documentElement.setAttribute("data-theme", savedTheme);
-  document.getElementById("trip-dates").textContent =
-    dateShort(D.days[0].iso) + " – " + dateShort(D.days[D.days.length - 1].iso) + " · " + D.days.length + " days";
+  paintDates();
 
   render();
   refreshLive();
