@@ -397,3 +397,44 @@ img { display: block; max-width: 100%; }
 }
 .beds .bed b { color: var(--ink); font-weight: 700; }
 .route .rs + .beds { margin-top: 8px; }
+
+/* A time you can ask about. The dashed rule is the only affordance that fits
+   inside running text without turning every departure into a button. */
+.tt {
+  font: inherit; color: inherit; padding: 0; background: none; border: 0;
+  border-bottom: 1.5px dashed color-mix(in srgb, currentColor 45%, transparent);
+  cursor: pointer; line-height: inherit;
+}
+.tt:hover, .tt:focus-visible { border-bottom-color: var(--accent); color: var(--accent); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: 13px; color: var(--soft-ink); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+/* ---------- the tour ---------- */
+/* A hole cut in a dark sheet, and a card that explains what is in the hole.
+   Built for someone who has not used an app like this before. */
+#tour { position: fixed; inset: 0; z-index: 2000; display: none; }
+#tour.on { display: block; }
+#tour .cut {
+  position: absolute; border-radius: 14px; box-shadow: 0 0 0 9999px rgba(8, 14, 11, .72);
+  transition: all .3s cubic-bezier(.22,.9,.3,1); pointer-events: none;
+  outline: 3px solid var(--accent); outline-offset: 3px;
+}
+#tour .cut.none { box-shadow: 0 0 0 9999px rgba(8, 14, 11, .78); outline: 0; }
+#tour .say {
+  position: absolute; left: 14px; right: 14px; background: var(--card); color: var(--ink);
+  border-radius: 18px; box-shadow: var(--shadow-lg); padding: 18px 18px 14px;
+  max-width: 460px; margin: 0 auto; transition: top .3s cubic-bezier(.22,.9,.3,1);
+}
+#tour .step { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); }
+#tour h3 { font-size: 21px; margin-top: 5px; text-wrap: balance; }
+#tour p { color: var(--soft-ink); font-size: 15.5px; line-height: 1.5; margin-top: 8px; }
+#tour .row { display: flex; gap: 9px; margin-top: 15px; align-items: center; }
+#tour .row .btn { width: auto; flex: 1; min-height: 46px; }
+#tour .skip {
+  background: none; color: var(--soft-ink); font-size: 14.5px; font-weight: 600;
+  padding: 10px 6px; text-decoration: underline; flex: none;
+}
+#tour .dots { display: flex; gap: 5px; justify-content: center; margin-top: 12px; }
+#tour .dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--line); }
+#tour .dots i.on { background: var(--accent); width: 18px; border-radius: 3px; }
+@media (prefers-reduced-motion: reduce) { #tour .cut, #tour .say { transition: none; } }
