@@ -446,7 +446,7 @@
     const el = document.getElementById("trip-dates");
     if (!el) return;
     el.textContent = dateShort(D.days[0].iso) + " – " + dateShort(D.days[D.days.length - 1].iso) +
-      " · " + D.days.length + " days" + (shifted() ? " · moved" : "");
+      " · " + D.days.length + " " + T("days") + (shifted() ? " · " + T("moved") : "");
   }
 
   function paintBack() {
