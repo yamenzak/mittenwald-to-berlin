@@ -3,6 +3,7 @@ const b = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-119
 const errs = [];
 const ctx = await b.newContext({ viewport: { width: 390, height: 880 }, deviceScaleFactor: 2 });
 const p = await ctx.newPage();
+await p.addInitScript(() => { try { localStorage.setItem("mb-toured", "1"); } catch (e) {} });
 p.on("pageerror", (e) => errs.push("PAGEERROR " + e.message));
 await p.goto("file:///home/user/trip/out/mittenwald-to-berlin.html?at=2026-10-02T09:30:00%2B02:00", { waitUntil: "load" });
 await p.waitForTimeout(600);

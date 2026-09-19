@@ -7,6 +7,7 @@ const b = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-119
 const errs = [];
 const ctx = await b.newContext({ viewport: { width: 390, height: 900 }, deviceScaleFactor: 2 });
 const p = await ctx.newPage();
+await p.addInitScript(() => { try { localStorage.setItem("mb-toured", "1"); } catch (e) {} });
 p.on("pageerror", (e) => errs.push("PAGEERROR " + e.message));
 p.on("console", (m) => { if (m.type() === "error" && !/CERT|ERR_/.test(m.text())) errs.push("CONSOLE " + m.text()); });
 

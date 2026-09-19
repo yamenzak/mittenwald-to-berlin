@@ -438,3 +438,23 @@ img { display: block; max-width: 100%; }
 #tour .dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--line); }
 #tour .dots i.on { background: var(--accent); width: 18px; border-radius: 3px; }
 @media (prefers-reduced-motion: reduce) { #tour .cut, #tour .say { transition: none; } }
+
+/* ---------- العربية ---------- */
+/* The layout is built from flex and grid, so most of it mirrors on its own.
+   These are the places that had a hard-coded side. */
+[dir="rtl"] body { font-family: "SF Arabic", "Geeza Pro", "Noto Naskh Arabic", ui-rounded, system-ui, sans-serif; }
+[dir="rtl"] .tl { padding-left: 0; padding-right: 26px; }
+[dir="rtl"] .tl::before { left: auto; right: 7px; }
+[dir="rtl"] .ev::before { left: auto; right: -26px; }
+[dir="rtl"] .route::after { right: auto; left: 15px; }
+[dir="rtl"] .route .rn { padding-right: 0; padding-left: 34px; }
+[dir="rtl"] .whop { margin-left: 0; margin-right: 41px; }
+[dir="rtl"] .wextra-head { margin-left: 0; margin-right: 41px; }
+[dir="rtl"] .wtime { text-align: left; }
+[dir="rtl"] .hero .cap, [dir="rtl"] .wt .badge { direction: rtl; }
+[dir="rtl"] .rail { direction: rtl; }
+/* Times and line numbers stay left-to-right inside Arabic sentences. */
+[dir="rtl"] .train .t, [dir="rtl"] .move .leg .lt, [dir="rtl"] .plat b,
+[dir="rtl"] .line, [dir="rtl"] .countdown .n, [dir="rtl"] .free b,
+[dir="rtl"] .stophead .when, [dir="rtl"] .wtbar .num { direction: ltr; unicode-bidi: isolate; }
+[dir="rtl"] .tt { direction: ltr; unicode-bidi: isolate; display: inline-block; }

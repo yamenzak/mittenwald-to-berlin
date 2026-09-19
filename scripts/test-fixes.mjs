@@ -9,6 +9,8 @@ const errs = [];
 async function open(at, scheme) {
   const ctx = await b.newContext({ viewport: { width: 390, height: 880 }, deviceScaleFactor: 2, colorScheme: scheme || "light" });
   const p = await ctx.newPage();
+  await p.addInitScript(() => { try { localStorage.setItem("mb-toured", "1"); } catch (e) {} });
+await p.addInitScript(() => { try { localStorage.setItem("mb-toured", "1"); } catch (e) {} });
   p.on("pageerror", (e) => errs.push("PAGEERROR " + e.message));
   await p.goto(file + (at ? "?at=" + encodeURIComponent(at) : ""), { waitUntil: "load" });
   await p.waitForTimeout(600);
