@@ -181,7 +181,7 @@ img { display: block; max-width: 100%; }
 /* ---------- route chooser ---------- */
 .routes { display: grid; gap: 10px; }
 .route {
-  display: block; width: 100%; text-align: left; padding: 15px 16px; border-radius: 16px;
+  display: block; width: 100%; text-align: start; padding: 15px 16px; border-radius: 16px;
   background: var(--card); box-shadow: var(--shadow); position: relative;
   border: 2px solid transparent;
 }
@@ -226,7 +226,7 @@ img { display: block; max-width: 100%; }
 .rail { display: flex; gap: 11px; overflow-x: auto; padding: 2px 16px 16px; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .rail::-webkit-scrollbar { display: none; }
 .sight {
-  flex: none; width: 178px; scroll-snap-align: start; text-align: left;
+  flex: none; width: 178px; scroll-snap-align: start; text-align: start;
   border-radius: 15px; overflow: hidden; background: var(--hair); position: relative;
 }
 .sight img { width: 100%; height: 118px; object-fit: cover; background: var(--line); }
@@ -464,7 +464,7 @@ img { display: block; max-width: 100%; }
 [dir="rtl"] .route .rn { padding-right: 0; padding-left: 34px; }
 [dir="rtl"] .whop { margin-left: 0; margin-right: 41px; }
 [dir="rtl"] .wextra-head { margin-left: 0; margin-right: 41px; }
-[dir="rtl"] .wtime { text-align: left; }
+[dir="rtl"] .wtime { text-align: start; }
 [dir="rtl"] .hero .cap, [dir="rtl"] .wt .badge { direction: rtl; }
 [dir="rtl"] .rail { direction: rtl; }
 /* Times and line numbers stay left-to-right inside Arabic sentences. */
@@ -496,3 +496,20 @@ img { display: block; max-width: 100%; }
 [dir="rtl"] .wthumb { align-self: center; }
 [dir="rtl"] .seg { direction: rtl; }
 [dir="rtl"] .tab .num { font-family: system-ui; }
+
+/* Anything that lays out along an axis has to follow the reading direction,
+   not a hard-coded side. */
+.mlist li button, .ov li button, .kv, .stophead, .train, .mrow, .change, .howto { text-align: start; }
+[dir="rtl"] .route .rs, [dir="rtl"] .beds, [dir="rtl"] .meta, [dir="rtl"] .days,
+[dir="rtl"] .mfoot, [dir="rtl"] .rail, [dir="rtl"] .legend { direction: rtl; }
+[dir="rtl"] .ov li button, [dir="rtl"] .mlist li button { border-left: 0; border-right: 6px solid var(--c); }
+
+/* A visible way out of the drawer. The handle is a hint; this is a button. */
+.sheetx {
+  position: absolute; top: 12px; inset-inline-end: 12px; z-index: 3;
+  width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+  background: rgba(10, 16, 13, .55); color: #fff; backdrop-filter: blur(8px);
+}
+.sheetx svg { width: 18px; height: 18px; }
+.sheet { position: fixed; }
+.sheet .sbody { position: relative; }

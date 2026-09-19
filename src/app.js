@@ -26,7 +26,13 @@
      falls back to the English rather than vanishing, so the page is never
      blank in a place I have not reached yet. */
   const AR = D.ar || null;
-  let lang = store.get("lang", (navigator.language || "").startsWith("ar") && AR ? "ar" : "en");
+  const qs = new URLSearchParams(location.search);
+  /* ?lang=ar in the address opens straight into Arabic, so the link itself can
+     carry the language rather than relying on her finding the switch. */
+  const urlLang = qs.get("lang");
+  let lang = (urlLang === "ar" || urlLang === "en") ? urlLang
+    : store.get("lang", (navigator.language || "").startsWith("ar") && AR ? "ar" : "en");
+  if (urlLang) store.set("lang", lang);
   const ar = () => lang === "ar" && !!AR;
   const T = (en) => (ar() && AR.ui[en]) || en;
   function setLang(next) {
@@ -74,7 +80,6 @@
   /* ---------- time ---------- */
   // A ?at= in the address lets the day be previewed before it happens. It is
   // also the only way to test a Tuesday morning in Mittenwald on a Friday.
-  const qs = new URLSearchParams(location.search);
   const fake = qs.get("at") ? new Date(qs.get("at")) : null;
   const now = () => (fake ? new Date(fake.getTime() + (Date.now() - boot)) : new Date());
   const boot = Date.now();
@@ -285,8 +290,8 @@
   /* Only the moves that still matter — today's, from an hour ago onwards. */
   function liveTargets() {
     // Today if she is travelling; otherwise whatever day she is reading, so the
-    // walkthrough is live when she looks at it the night before too.
-    const day = todayDay() || (view === "walk" ? D.days.find((x) => x.n === wtDay) : null);
+    // step-by-step is live when she looks at it the night before too.
+    const day = todayDay() || (view === "now" ? D.days.find((x) => x.n === wtDay) : null);
     if (!day) return [];
     const t = todayDay() ? now() : new Date(realDate(day.iso) + "T00:00:00Z");
     return pathOf(day).seq
@@ -337,17 +342,15 @@
      what she is reading is live. Tapping it should say so in words. */
   function showLiveInfo() {
     const s = liveState.status;
-    const said = s === "ok" ? `Checked at ${hhmm(liveState.at)}. Delays and platform changes on screen are the real ones.`
-      : s === "checking" ? "Checking with the timetable now."
-      : s === "off" ? "No connection, so these are the planned times. They were right when the page was built."
-      : s === "none" ? "Nothing to check yet — you are not travelling today, so these are the planned times."
-      : "Could not reach the timetable just now. The planned times still stand.";
+    const said = s === "ok" ? `${T("Checked at")} ${hhmm(liveState.at)}. ${T("live-ok")}`
+      : s === "checking" || s === "idle" ? T("Checking with the timetable now.")
+      : s === "off" ? T("live-off")
+      : s === "none" ? T("live-none")
+      : T("live-bad");
     openSheetRaw(`<div class="grab"></div><div class="sbody">
-      <h2>${s === "ok" ? "Live" : s === "off" ? "Offline" : "The plan"}</h2>
+      <h2>${s === "ok" ? T("Live") : s === "off" ? T("Offline") : T("The plan")}</h2>
       <p class="about" style="color:var(--ink)">${esc(said)}</p>
-      <p class="about">A green dot means the times you see have been checked against Deutsche Bahn in the last few minutes.
-        Grey means you are reading the plan as it was built. It checks itself every minute or so while you travel,
-        and you can tap here any time to make it check again.</p>
+      <p class="about">${T("live-explain")}</p>
       <div class="btns" style="padding:14px 0 0"><button class="btn ghost" data-close="1">${T("Close")}</button></div></div>`);
   }
 
@@ -355,12 +358,16 @@
     const el = document.getElementById("pulse");
     if (!el) return;
     const s = liveState.status;
-    const cls = s === "ok" || s === "checking" ? "" : s === "off" || s === "none" ? "off" : "bad";
-    const txt = s === "checking" ? "Checking…"
-      : s === "ok" ? "Live · " + hhmm(liveState.at)
-      : s === "off" ? "Offline — using the plan"
-      : s === "none" ? "Plan"
-      : "Can't reach the timetable";
+    const cls = s === "ok" || s === "checking" ? "" : s === "off" || s === "none" || s === "idle" ? "off" : "bad";
+    /* "Plan" beside a grey dot reads like a failure. It is not: on a day with
+       no trains there is simply nothing to check, and that is worth saying in
+       those words rather than leaving her to guess. */
+    const txt = s === "checking" ? T("Checking…")
+      : s === "ok" ? T("Live") + " · " + hhmm(liveState.at)
+      : s === "off" ? T("Offline — using the plan")
+      : s === "none" ? T("No trains today")
+      : s === "idle" ? T("Checking…")
+      : T("Can't reach the timetable");
     el.className = "pulse " + cls;
     el.innerHTML = `<i></i><span>${esc(txt)}</span>`;
   }
@@ -448,11 +455,19 @@
   }
   const app = document.getElementById("app");
 
+  /* Re-rendering replaces the whole screen, which used to fling her back to
+     the top every time she ticked something off or changed a route. The scroll
+     position is kept unless the tap was itself a navigation. */
+  let keepScroll = true;
+  function go(fn) { keepScroll = false; fn(); keepScroll = true; }
+
   function render() {
+    const y = window.scrollY;
     if (view === "trip") app.innerHTML = viewTrip();
     else if (view === "day") app.innerHTML = viewDay(openDay || (todayDay() || D.days[0]).n);
     else app.innerHTML = viewNow();
     document.querySelectorAll(".tab").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === view)));
+    if (keepScroll && y) window.scrollTo(0, y);
     paintBack();
     paintDates();
     const tc = document.querySelector('meta[name="theme-color"]');
@@ -779,7 +794,10 @@
   }
 
   function sightCard(pk, s) {
-    const key = pk + "/" + s.name;
+    // The photo store is keyed by the English name — the Arabic one is a
+    // different string and finds nothing, which is why the pictures went
+    // missing the moment the language changed.
+    const key = pk + "/" + (s.en || s.name);
     const img = photo("sight:" + key);
     const done = !!ticked[key];
     return `<button class="sight${done ? " done" : ""}" data-sight="${esc(key)}">
@@ -1434,6 +1452,8 @@
     const done = !!ticked[key];
     const cred = s.photoFile && D.credits[s.photoFile];
     sheet.innerHTML = `<div class="grab"></div>
+      <button class="sheetx" data-close="1" aria-label="${esc(T("Close"))}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
       ${img ? `<img class="shot" src="${img}" alt="${esc(s.name)}">` : ""}
       <div class="sbody">
         <h2>${esc(s.name)}</h2>
@@ -1797,17 +1817,17 @@
       const [f, to, iso] = t.dataset.freq.split("|");
       return showFreq(f, to, iso || null);
     }
-    if (t.dataset.tab) { push(); view = t.dataset.tab; window.scrollTo(0, 0); return render(); }
+    if (t.dataset.tab) { push(); view = t.dataset.tab; return go(() => { window.scrollTo(0, 0); render(); }); }
     if (t.dataset.guide) {
       guideMode = t.dataset.guide; store.set("guidemode", guideMode);
       if (guideMode === "steps") { const d = todayDay(); wtDay = d ? d.n : (wtDay || D.days[0].n); }
       return render();
     }
     if (t.dataset.locate) return locate();
-    if (t.dataset.goday) { push(); view = "day"; openDay = +t.dataset.goday; window.scrollTo(0, 0); return render(); }
+    if (t.dataset.goday) { push(); view = "day"; openDay = +t.dataset.goday; return go(() => { window.scrollTo(0, 0); render(); }); }
     if (t.dataset.mapday != null) { mapDay = +t.dataset.mapday; return render(); }
     if (t.dataset.wt) { if (+t.dataset.wt > 0) push(); return wtGo(+t.dataset.wt); }
-    if (t.dataset.wtday) { push(); wtDay = +t.dataset.wtday; wtStep = 0; window.scrollTo(0, 0); return render(); }
+    if (t.dataset.wtday) { push(); wtDay = +t.dataset.wtday; wtStep = 0; return go(() => { window.scrollTo(0, 0); render(); }); }
     if (t.dataset.startwalk) {
       push();
       const d = todayDay(); wtDay = d ? d.n : D.days[0].n; wtStep = 0;
