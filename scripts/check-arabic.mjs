@@ -30,7 +30,7 @@ const ctx = await b.newContext({ viewport: { width: 390, height: 880 } });
 const p = await ctx.newPage();
 const errs = [];
 p.on("pageerror", (e) => errs.push("PAGEERROR " + e.message));
-await p.addInitScript(() => { try { localStorage.setItem("mb-toured", "1"); } catch (e) {} });
+await p.addInitScript(() => { try { localStorage.clear(); } catch (e) {} });
 await p.goto("file:///home/user/trip/out/mittenwald-to-berlin.html?lang=ar&at=2026-10-02T09:30:00%2B02:00", { waitUntil: "load" });
 await p.waitForTimeout(700);
 
@@ -44,9 +44,8 @@ async function sweep(where) {
     };
     grab(document.getElementById("app"));
     grab(document.querySelector(".top"));
-    grab(document.querySelector(".tabs"));
+    grab(document.querySelector(".nextbar"));
     if (!document.getElementById("sheet").hidden) grab(document.getElementById("sheet"));
-    if (document.getElementById("tour").classList.contains("on")) grab(document.getElementById("tour"));
     return [...seen];
   });
   for (const w of words) if (!allow.has(w)) {
@@ -60,24 +59,25 @@ const click = async (sel, wait = 600) => {
   return false;
 };
 
-await click("[data-preset]"); await sweep("itinerary");
-await click('[data-mapday="0"]'); await sweep("itinerary/map");
+await sweep("step 1");
+await click("[data-pick].route"); await sweep("step 1, picked");
+await click('[data-goto="when"]'); await sweep("step 2");
+await click('[data-goto="day"]', 800);
 for (const d of [1, 2, 3, 4, 5]) {
-  await click('[data-tab="day"]', 400);
-  await click(`.days [data-goday="${d}"]`, 500);
+  await click(`.days [data-goday="${d}"]`, 600);
   await sweep("day " + d);
   if (d === 1) { await click(".wthumb", 700); await sweep("sight drawer"); await click(".sheetx", 400); }
   if (d === 2) { await click(".tt", 900); await sweep("how often"); await p.keyboard.press("Escape"); await p.waitForTimeout(300); }
+  if (d === 3) {
+    await click('[data-trouble="missed"]', 2000); await sweep("missed train");
+    await p.keyboard.press("Escape"); await p.waitForTimeout(300);
+    await click('[data-trouble="stay60"]', 2000); await sweep("staying longer");
+    await p.keyboard.press("Escape"); await p.waitForTimeout(300);
+  }
 }
-await click('[data-tab="now"]'); await sweep("guide/now");
-await click("[data-locate]", 900); await sweep("guide/located");
-await click('[data-trouble="missed"]', 1500); await sweep("missed train"); await p.keyboard.press("Escape"); await p.waitForTimeout(300);
-await click('[data-guide="steps"]'); await sweep("guide/steps");
-for (let i = 0; i < 14; i++) { if (!(await click('[data-wt="1"]', 220))) break; await sweep("guide/step " + (i + 2)); }
 await click("#pulse", 700); await sweep("live info"); await p.keyboard.press("Escape"); await p.waitForTimeout(300);
 await click("#morebtn", 600); await sweep("settings");
-await click("#starttour", 900);
-for (let i = 0; i < 17; i++) { await sweep("tour " + (i + 1)); if (!(await click('#tour [data-tour="1"]', 380))) break; }
+await click('#sheet [data-goto="pick"]', 700); await sweep("back at step 1");
 
 await b.close();
 console.log(`swept every screen in Arabic.`);

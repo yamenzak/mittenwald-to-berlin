@@ -384,6 +384,46 @@ export const AR = {
     "min walk": "دقيقة مشياً", "min back to the station": "دقيقة للعودة إلى المحطة",
     "worth it": "تستحق", "about": "نحو", "min": "دقيقة", "ticket needed": "تحتاج تذكرة",
     "ticket": "تذكرة", "min to get there": "دقيقة للوصول",
+
+    /* ---- the setup, in two steps ---- */
+    "Which way across?": "أي طريق عبر ألمانيا؟",
+    "pick-sub": "أربع طرق عبر البلاد، كلها على قطارات إقليمية تغطيها تذكرتك. البلدات في كل بطاقة هي التي تنامين فيها.",
+    "when-sub": "الخطة مكتوبة ليوم ٢٩ سبتمبر. إن كنتِ مسافرة في أسبوع آخر، انقليها، وسيُبحث عن كل قطار من جديد للتواريخ التي ستكونين فيها فعلاً.",
+    "Next — when do you start?": "التالي — متى تبدأ الرحلة؟",
+    "Pick one to carry on": "اختاري واحدة للمتابعة",
+    "Open my trip": "افتحي رحلتي",
+    "Change the dates": "تغيير التواريخ",
+
+    /* ---- the day ---- */
+    "Plan your day": "خطّطي يومك",
+    "plan-hint": "كل خيار طريقة مختلفة لقضاء اليوم نفسه. القطارات حقيقية في الحالتين.",
+    "Your day, hour by hour": "يومك، ساعة بساعة",
+    "hour-hint": "كل ما في اليوم، بالترتيب الذي يحدث به. اضغطي على أي صورة لتقرئي عن المكان.",
+    "trouble-hint": "أخبريني بما حدث وسأعيد بناء بقية اليوم من جدول القطارات الحقيقي، وأقول بصراحة ما الذي يجب التخلي عنه.",
+    "swapped-note": "غيّرتِ هذا اليوم، وقد ينقل ذلك مكان مبيتك. راجعي قائمة الفنادق من «تغيير الرحلة».",
+    "in by": "تصلين قبل",
+
+    /* ---- eating ---- */
+    "Lunch": "الغداء", "Dinner": "العشاء",
+    "Places to eat": "أماكن للأكل",
+    "you will be on the train then — buy something before you board": "ستكونين في القطار حينها — اشتري شيئاً قبل الصعود",
+    "only a short window, so something quick": "الوقت ضيّق، فليكن شيئاً سريعاً",
+    "Worth it:": "تستحق:",
+
+    /* ---- moved dates, and the live layer ---- */
+    "These dates are moved": "هذه التواريخ منقولة",
+    "later than planned": "بعد المخطط له", "earlier than planned": "قبل المخطط له",
+    "shift-live": "يجري التحقق من الأوقات مقابل التواريخ التي تسافرين فيها فعلاً.",
+    "This train is cancelled": "هذا القطار ملغى", "This bus is cancelled": "هذه الحافلة ملغاة",
+    "cancelled-note": "اضغطي «جدي لي طريقاً آخر» — لا يقترح إلا قطارات تغطيها تذكرتك.",
+    "Running": "متأخر", "minutes late": "دقيقة", "leaves": "يغادر", "in at": "ويصل",
+    "Platform changed to": "تغيّر الرصيف إلى", "Stop changed to": "تغيّر الموقف إلى",
+    "Check the board when you get there.": "ألقي نظرة على اللوحة عند وصولك.",
+    "One of your changes is down to": "أحد تبديلاتك أصبح",
+    "If you miss it, there is another way below.": "إن فاتك، هناك طريق آخر بالأسفل.",
+    "If this one goes wrong": "إن تعطّل هذا",
+    "Find me another way": "جدي لي طريقاً آخر",
+    "No connection found for": "لم أجد اتصالاً لـ",
     "Walk this route": "امشي هذا المسار", "Station": "المحطة", "Town": "البلدة", "Lockers": "خزائن الأمتعة",
     "to change at": "للتبديل في", "be ready by the door": "كوني جاهزة عند الباب",
     "Open in Maps": "افتحي في الخرائط",

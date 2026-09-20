@@ -1,5 +1,6 @@
-/* There are no delays to look at eleven days before the trip, so the states
-   that matter most are exercised with a seeded live record. */
+/* There are no delays to look at before the trip, so the states that matter
+   are exercised with a seeded live record and read back off the day page,
+   which is now the only place they are said. */
 import { chromium } from "playwright";
 const file = "file:///home/user/trip/out/mittenwald-to-berlin.html";
 const AT = "2026-09-30T12:40:00+02:00";
@@ -7,19 +8,26 @@ const b = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-119
 const errs = [];
 
 async function shot(name, live) {
-  const ctx = await b.newContext({ viewport: { width: 390, height: 1000 }, deviceScaleFactor: 2 });
+  const ctx = await b.newContext({ viewport: { width: 390, height: 1000 }, deviceScaleFactor: 2, ignoreHTTPSErrors: true });
   const p = await ctx.newPage();
   p.on("pageerror", (e) => errs.push(name + ": " + e.message));
   await p.addInitScript((l) => {
-    try { localStorage.setItem("mb-live", JSON.stringify(l)); } catch (e) {}
+    try {
+      localStorage.clear();
+      // Straight into the app, past the two setup questions.
+      localStorage.setItem("mb-preset", JSON.stringify("castles"));
+      localStorage.setItem("mb-setup", "1");
+      localStorage.setItem("mb-live", JSON.stringify(l));
+    } catch (e) {}
   }, live);
   await p.goto(file + "?at=" + encodeURIComponent(AT), { waitUntil: "load" });
-  await p.waitForTimeout(700);
-  const txt = await p.evaluate(() => document.querySelector(".headline")?.innerText.replace(/\n/g, " | "));
-  const notes = await p.evaluate(() => [...document.querySelectorAll(".note")].map((n) => n.innerText.trim()));
+  await p.waitForTimeout(800);
+  const notes = await p.evaluate(() => [...document.querySelectorAll(".tl .note")].map((n) => n.innerText.trim()));
+  const pulse = await p.evaluate(() => document.querySelector("#pulse span")?.innerText);
   await p.screenshot({ path: `/home/user/trip/shots/live-${name}.png` });
-  console.log(`\n[${name}] ${txt}`);
-  notes.forEach((n) => console.log("   note: " + n));
+  console.log(`\n[${name}] indicator: ${JSON.stringify(pulse)}`);
+  notes.forEach((n) => console.log("   note: " + n.replace(/\n/g, " ")));
+  if (!notes.length && name !== "ontime") errs.push(name + ": nothing said on the day page");
   await ctx.close();
 }
 
@@ -34,3 +42,4 @@ await shot("cancelled", { [id]: { ...base, cancelled: true, realDep: "2026-09-30
 
 await b.close();
 console.log(errs.length ? "\nERRORS:\n" + errs.join("\n") : "\nno page errors");
+if (errs.length) process.exit(1);

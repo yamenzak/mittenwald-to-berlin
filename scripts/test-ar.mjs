@@ -1,46 +1,42 @@
+/* The Arabic edition of the two questions and the day, and the switch that
+   gets there from inside the app. */
 import { chromium } from "playwright";
 const b = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
 const errs = [];
-const ctx = await b.newContext({ viewport: { width: 390, height: 880 }, deviceScaleFactor: 2 });
+const ctx = await b.newContext({ viewport: { width: 390, height: 880 }, deviceScaleFactor: 2, ignoreHTTPSErrors: true });
 const p = await ctx.newPage();
 p.on("pageerror", (e) => errs.push("PAGEERROR " + e.message));
-await p.addInitScript(() => { try { localStorage.setItem("mb-toured", "1"); } catch (e) {} });
-await p.goto("file:///home/user/trip/out/mittenwald-to-berlin.html?at=2026-10-02T09:30:00%2B02:00", { waitUntil: "load" });
-await p.waitForTimeout(600);
-await p.locator("[data-preset]").first().click(); await p.waitForTimeout(500);
+await p.addInitScript(() => { try { localStorage.clear(); } catch (e) {} });
+const U = "file:///home/user/trip/out/mittenwald-to-berlin.html";
+await p.goto(U + "?at=2026-10-02T09:30:00%2B02:00", { waitUntil: "load" });
+await p.waitForTimeout(700);
 
-console.log("english tabs:", await p.evaluate(() => [...document.querySelectorAll(".tab .lbl")].map(x => x.textContent).join(" / ")));
-await p.click("#morebtn"); await p.waitForTimeout(500);
-await p.click("#langbtn2"); await p.waitForTimeout(800);
-const st = await p.evaluate(() => ({
+// switching language from inside the app, not from the link
+await p.click("#morebtn"); await p.waitForTimeout(400);
+await p.click("#langbtn2"); await p.waitForTimeout(900);
+console.log("after the switch:", await p.evaluate(() => ({
   dir: document.documentElement.getAttribute("dir"),
   lang: document.documentElement.getAttribute("lang"),
-  tabs: [...document.querySelectorAll(".tab .lbl")].map(x => x.textContent).join(" / "),
-  title: document.querySelector(".top h1")?.textContent,
-  head: document.querySelector(".headline .big")?.textContent,
-  body: document.getElementById("app").innerText.slice(0, 200).replace(/\n/g, " | "),
-}));
-console.log(JSON.stringify(st, null, 1));
-// how much English is left on an Arabic screen
-const leftover = await p.evaluate(() => {
-  const t = document.getElementById("app").innerText;
-  const words = t.match(/\b[A-Za-z][a-z]{3,}\b/g) || [];
-  return [...new Set(words)].slice(0, 25);
-});
-console.log("english words still on the page:", leftover.join(", ") || "none");
-await p.screenshot({ path: "shots/a1-ar-now.png" });
+  step: document.querySelector(".setup-head h2")?.textContent,
+  next: document.querySelector('[data-goto="when"]')?.textContent.trim(),
+})));
+await p.waitForTimeout(1200);
+await p.screenshot({ path: "shots/ar1-pick.png" });
 
-await p.click('[data-tab="day"]'); await p.waitForTimeout(600);
-await p.screenshot({ path: "shots/a2-ar-day.png" });
-await p.click('[data-tab="now"]'); await p.waitForTimeout(600);
-console.log("walk kind:", await p.evaluate(() => document.querySelector(".wt .kind")?.textContent + " / " + document.querySelector(".wt h2")?.textContent));
-await p.screenshot({ path: "shots/a3-ar-walk.png" });
+await p.locator("[data-pick].route").first().click(); await p.waitForTimeout(800);
+await p.locator(".nextbar [data-goto=\"when\"]").click(); await p.waitForTimeout(600);
+await p.screenshot({ path: "shots/ar2-when.png", fullPage: true });
+await p.locator(".nextbar [data-goto=\"day\"]").click(); await p.waitForTimeout(900);
+console.log("the day in Arabic:", await p.evaluate(() => [...document.querySelectorAll(".label")].map((x) => x.textContent.trim())));
+console.log("meals:", await p.evaluate(() => [...document.querySelectorAll(".mealcard")].map((x) => x.innerText.replace(/\n+/g, " · "))));
+await p.screenshot({ path: "shots/ar3-day.png" });
 
-// the tour in Arabic
-await p.evaluate(() => localStorage.removeItem("mb-toured"));
-await p.click('[data-tab="trip"]'); await p.waitForTimeout(500);
-await p.click("#starttour"); await p.waitForTimeout(900);
-console.log("tour step 1:", await p.evaluate(() => document.querySelector("#tour h3")?.textContent));
-await p.screenshot({ path: "shots/a4-ar-tour.png" });
+// and the link straight into Arabic still works
+const q = await ctx.newPage();
+await q.goto(U + "?lang=ar&at=2026-10-02T09:30:00%2B02:00", { waitUntil: "load" });
+await q.waitForTimeout(700);
+console.log("from the link:", await q.evaluate(() => document.documentElement.getAttribute("dir")));
+
 await b.close();
-console.log(errs.length ? "\nERRORS:\n" + errs.join("\n") : "\nno page errors");
+console.log(errs.length ? "\n" + errs.join("\n") : "\nno page errors");
+if (errs.length) process.exit(1);

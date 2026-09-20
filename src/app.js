@@ -41,15 +41,16 @@
      itself, which is how "chooser-intro" ended up on screen.
      scripts/check-strings.mjs fails the build if a key has neither. */
   const EN = {
-    "chooser-intro": "Four ways across Germany, all of them on regional trains your ticket covers, and all of them in Berlin on the last day. Each one names the towns you sleep in, so you can book the beds now.",
-    "start-intro": "The plan is written for 29 September. If you travel on another day, pick it here and the whole trip moves with it.",
-    "locate-ask": "If you are lost, or just not sure where you are, press this and your phone will tell me.",
-    "locate-failed": "I could not work out where you are. Open your phone's settings and allow location, or carry on from the day page.",
-    "on-plan": "And that is where the plan expects you. All is well.",
-    "off-plan": "But the plan expects you somewhere else today. Press “I missed my train” below and I will rebuild the day from here.",
-    "far-off-plan": "You are well off the route. Press “I missed my train” below and I will work out the way to your bed.",
     "settings-note": "Nothing in here can break the plan. Everything you choose is kept on this phone only.",
     "ticket": "ticket",
+    "pick-sub": "Four ways across, all on regional trains your ticket covers. The towns on each card are the ones you sleep in.",
+    "when-sub": "The plan is written for 29 September. Travelling another week? Move it, and every train is looked up again for the dates you are really there.",
+    "plan-hint": "Each one is a different way to spend the same day. The trains are real either way.",
+    "hour-hint": "Everything today, in the order it happens. Tap a photograph to read about a place.",
+    "trouble-hint": "Tell me what happened and I will rebuild the rest of the day from the real timetable — and say honestly what has to give.",
+    "swapped-note": "You have changed this day, which can move where you sleep. Check the hotel list under “Change the trip”.",
+    "shift-live": "Times are being checked against the dates you are actually travelling.",
+    "cancelled-note": "Tap “Find me another way” — it only ever suggests trains your ticket covers.",
     "ticket-note": "Your ticket does not cover ICE, IC or EC trains. Nothing in this plan will ever put you on one.",
     "map-offline": "The map needs a connection. Every stop still opens in Google Maps from the day page.",
     "live-none": "Nothing to check — there are no trains on your plan today, so what you see is the plan.",
@@ -65,7 +66,6 @@
     "live-from-timetable": "Live from the timetable for the dates you are travelling",
     "no-regional": "Nothing regional comes up from here right now. Ask at the ticket desk — say “Ich habe meinen Anschluss verpasst.”",
     "still-berlin-today": "This still gets you to Berlin today, which is the one thing that has to happen.",
-    "on trains": "في القطارات", "no": "بلا",
     "live-explain": "A green dot means the times you see have been checked against Deutsche Bahn in the last few minutes. Grey means you are reading the plan as it was built. It checks itself every minute or so while you travel, and you can tap here any time to make it check again.",
   };
   const T = (k) => (ar() && AR.ui[k]) || EN[k] || k;
@@ -80,11 +80,6 @@
     const r = document.documentElement;
     r.setAttribute("lang", ar() ? "ar" : "en");
     r.setAttribute("dir", ar() ? "rtl" : "ltr");
-    document.querySelectorAll("[data-tab]").forEach((b) => {
-      const key = { trip: "Itinerary", day: "The day", now: "Guide me" }[b.dataset.tab];
-      const label = b.querySelector("span.lbl");
-      if (label && key) label.textContent = T(key);
-    });
     const h = document.querySelector(".top h1");
     if (h) h.textContent = T("Mittenwald to Berlin");
   }
@@ -235,6 +230,8 @@
     prev: '<path d="M15 6 9 12l6 6"/>', next: '<path d="m9 6 6 6-6 6"/>',
     bed: '<path d="M3 7v12M3 12h18v7M21 19v-7a3 3 0 0 0-3-3h-7v3"/><circle cx="7" cy="10" r="1.6"/>',
     eye: '<path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.6"/>',
+    moon: '<path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>',
+    food: '<path d="M5 3v8a2.5 2.5 0 0 0 5 0V3M7.5 11v10"/><path d="M18 3c-1.7 1.2-2.5 3-2.5 5.5S16.3 12 18 12.5V21"/>',
   };
   const svg = (k, cls) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"${cls ? ` class="${cls}"` : ""} aria-hidden="true">${ICON[k]}</svg>`;
 
@@ -333,7 +330,7 @@
   function liveTargets() {
     // Today if she is travelling; otherwise whatever day she is reading, so the
     // step-by-step is live when she looks at it the night before too.
-    const day = todayDay() || (view === "now" ? D.days.find((x) => x.n === wtDay) : null);
+    const day = todayDay() || (view === "day" ? D.days.find((x) => x.n === openDay) : null);
     if (!day) return [];
     const t = todayDay() ? now() : new Date(realDate(day.iso) + "T00:00:00Z");
     return pathOf(day).seq
@@ -460,14 +457,17 @@
      the itinerary because it is how you compare one itinerary with another,
      and the old "Walk it" is folded into Guide me, because step-by-step
      directions and "what now" are the same question asked twice. */
-  let view = "trip";
+  /* Two questions and then one screen. "pick" and "when" are asked once,
+     before she leaves; "day" is the app. There is no navigation because
+     there is nowhere else to be — the day strip moves between days and the
+     button in the corner goes back to the two questions. */
+  let view = store.get("setup", 0) && preset ? "day" : "pick";
   let openDay = null;
-  let mapDay = 0; // 0 means the whole trip
   /* Every screen she can land on, so the arrow in the corner always has
      somewhere to go — including back out of a sheet, and back a step in the
      walkthrough, which is where people press it first. */
   const navStack = [];
-  const snapshot = () => ({ view, openDay, wtDay, wtStep });
+  const snapshot = () => ({ view, openDay });
   function push() {
     const cur = snapshot();
     const top = history[navStack.length - 1];
@@ -479,7 +479,7 @@
     if (!sheet.hidden) return closeSheet();
     const prev = navStack.pop();
     if (!prev) return;
-    view = prev.view; openDay = prev.openDay; wtDay = prev.wtDay; wtStep = prev.wtStep;
+    view = prev.view; openDay = prev.openDay;
     render();
   }
   /* The strip under the title is the trip's dates, so it has to move when the
@@ -491,10 +491,6 @@
       " · " + D.days.length + " " + T("days") + (shifted() ? " · " + T("moved") : "");
   }
 
-  function paintBack() {
-    const b = document.getElementById("tripsbtn");
-    if (b) b.setAttribute("aria-pressed", String(view === "choose"));
-  }
   const app = document.getElementById("app");
 
   /* Re-rendering replaces the whole screen, which used to fling her back to
@@ -505,74 +501,90 @@
 
   function render() {
     const y = window.scrollY;
-    if (view === "trip") app.innerHTML = viewTrip();
-    else if (view === "day") app.innerHTML = viewDay(openDay || (todayDay() || D.days[0]).n);
-    else app.innerHTML = viewNow();
-    document.querySelectorAll(".tab").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === view)));
+    if (view === "pick") app.innerHTML = viewPick();
+    else if (view === "when") app.innerHTML = viewWhen();
+    else app.innerHTML = viewDay(openDay || (todayDay() || D.days[0]).n);
+    document.body.classList.toggle("setup", view !== "day");
     if (keepScroll && y) window.scrollTo(0, y);
-    paintBack();
     paintDates();
     const tc = document.querySelector('meta[name="theme-color"]');
     if (tc) tc.setAttribute("content", getComputedStyle(document.documentElement).getPropertyValue("--chrome").trim() || "#16211C");
-    if (view === "trip") drawMap();
-    if (view === "now" && guideMode === "steps") drawWalkMap();
+    if (view !== "day") drawMap();
     paintPulse();
   }
 
-  /* ---------- choosing a trip ---------- */
-  /* Shown until a preset is picked, and reachable afterwards. Each card is
-     costed from the real days behind it, so the promise on the front matches
-     what the timetable actually does — and it names the hotel towns, which is
-     the part that has to be decided before anyone leaves. */
-  function viewPresets(inline) {
+  /* ================= the setup, in two steps ================= */
+  /* Two decisions have to be made once, before anything else can be true:
+     which way across the country, and which day it starts. They used to sit
+     on a page with everything else and be findable rather than asked. Now
+     they are asked, one at a time, and then never again — the button in the
+     corner brings them back if she changes her mind. */
+
+  /* Each itinerary gets a colour so the four lines on the map and the four
+     cards under it are the same four things. */
+  const PC = ["#B4553A", "#2F6F63", "#5A6BB0", "#A8762B"];
+  const presetColour = (id) => PC[Math.max(0, (D.presets || []).findIndex((p) => p.id === id)) % PC.length];
+  /* The day as a given itinerary would spend it — which is not the same as
+     the day she has chosen, because the map has to show all four at once. */
+  const pathFor = (day, presetId) => {
+    const p = presetOf(presetId);
+    const id = p && (p.pickDays.find((x) => x.n === day.n) || {}).pathId;
+    return day.paths.find((q) => q.id === id) || day.paths[0];
+  };
+
+  const stepHead = (n, title, sub) => `<div class="setup-head">
+    <div class="steps"><span class="on">1</span><i></i><span class="${n === 2 ? "on" : ""}">2</span></div>
+    <h2>${esc(title)}</h2>
+    <p>${esc(sub)}</p></div>`;
+
+  /* Step one. Four lines down the country, four cards under them, and the
+     hotel towns on every card because that is the part that has to be booked
+     before anyone leaves. */
+  function viewPick() {
     const list = D.presets || [];
-    if (!list.length) return "";
-    return `${inline ? `<div class="label">${T("Change the trip")}</div>` : ""}
-      <div class="routes">${list.map((p) => `
-        <button class="route" data-preset="${esc(p.id)}" aria-pressed="${p.id === preset}">
-          <span class="rn">${esc(presetText(p).name)}</span>
-          <span class="rw">${esc(presetText(p).why)}</span>
+    const p = presetOf(preset);
+    return `<div class="wrap setup">
+      ${stepHead(1, T("Which way across?"), T("pick-sub"))}
+      <div class="card"><div id="map"></div>
+        <div class="pad"><div class="legend">${list.map((x) => `
+          <button type="button" data-pick="${esc(x.id)}" class="lg${x.id === preset ? " on" : ""}">
+            <i style="background:${presetColour(x.id)}"></i>${esc(presetText(x).name)}</button>`).join("")}</div></div></div>
+      <div class="routes">${list.map((x) => `
+        <button class="route" data-pick="${esc(x.id)}" aria-pressed="${x.id === preset}" style="--dot:${presetColour(x.id)}">
+          <span class="rn"><i class="dot"></i>${esc(presetText(x).name)}</span>
+          <span class="rw">${esc(presetText(x).why)}</span>
           <span class="rs">
-            <span class="tag hot">${p.towns.length} ${T("towns")}</span>
-            <span class="tag">${dur(p.ride)} ${T("on trains, all week")}</span>
-            <span class="tag">${T("in Berlin")} ${esc(p.arrive)}</span>
+            <span class="tag hot">${x.towns.length} ${T("towns")}</span>
+            <span class="tag">${dur(x.ride)} ${T("on trains, all week")}</span>
+            <span class="tag">${T("in Berlin")} ${esc(x.arrive)}</span>
           </span>
-          <span class="beds">${p.beds.map((b) => `<span class="bed"><b>${esc(place(b.place).n)}</b>${b.nights > 1 ? ` · ${b.nights} nights` : ""}</span>`).join("")}</span>
-        </button>`).join("")}</div>`;
+          <span class="beds">${x.beds.map((b) => `<span class="bed"><b>${esc(place(b.place).n)}</b>${b.nights > 1 ? ` · ${b.nights}` : ""}</span>`).join("")}</span>
+        </button>`).join("")}</div>
+      ${ticketNote()}
+      ${footer()}
+      <div class="nextbar"><button class="btn accent" data-goto="when"${p ? "" : " disabled"}>
+        ${p ? T("Next — when do you start?") : T("Pick one to carry on")}</button></div>
+    </div>`;
   }
 
-  /* Step one: which way across, and which day it starts. Everything needed to
-     book a hotel lives here, and the map shows the shape of the choice. */
-  function viewTrip() {
-    const d = D.days[0];
+  /* Step two. One question, and the hotel list beside it, because moving the
+     dates is the thing that changes what she has to book. */
+  function viewWhen() {
     const p = presetOf(preset);
-    return `<div class="wrap">
-      ${heroCard(d, T("Step 1"), T("Pick how you want the week to go"))}
-      <div class="card pad"><p class="lead" style="margin:0">${T("chooser-intro")}</p></div>
-      <div class="label">${T("Choose your trip")}</div>
-      ${viewPresets(false)}
-      ${p ? `<div class="label">${T("The whole trip on the map")}</div>
-        <div class="card"><div id="map"></div>
-          <div class="pad">${mapCaption()}</div></div>` : ""}
+    if (!p) { view = "pick"; return viewPick(); }
+    return `<div class="wrap setup">
+      ${stepHead(2, T("When does it start?"), T("when-sub"))}
+      <div class="card pad picked" style="--dot:${presetColour(preset)}">
+        <div class="rn"><i class="dot"></i>${esc(presetText(p).name)}</div>
+        <p class="lead" style="margin:4px 0 0">${p.towns.length} ${T("towns")} · ${dur(p.ride)} ${T("on trains, all week")}</p>
+      </div>
       ${startCard()}
       ${bedsCard()}
-      ${ticketNote()}
-      <div class="btns" style="padding:8px 0 0"><button class="btn ghost" id="starttour" type="button">${svg("help")} ${T("Show me how this works")}</button></div>
-      ${footer()}</div>`;
-  }
-
-  function mapCaption() {
-    const all = mapDay === 0;
-    const day = all ? null : D.days.find((x) => x.n === mapDay);
-    const totals = D.days.reduce((t, x) => { const q = pathOf(x); return { ride: t.ride + q.ride, stops: t.stops + q.stops }; }, { ride: 0, stops: 0 });
-    const chips = `<div class="days" style="padding:0 0 10px">
-      <button class="dchip" data-mapday="0" aria-pressed="${all}">${T("All days")}</button>
-      ${D.days.map((x) => `<button class="dchip" data-mapday="${x.n}" aria-pressed="${x.n === mapDay}">${T("Day")} ${x.n}</button>`).join("")}</div>`;
-    return chips + (all
-      ? `<p class="lead" style="margin:0">${totals.stops} ${T("stops")} · ${dur(totals.ride)} ${T("on trains, all week")}.
-         <span style="opacity:.8">${T("The bigger dots are where you sleep.")}</span></p>
-         <div class="legend">${D.days.map((x) => `<span><i style="width:11px;height:11px;border-radius:50%;background:${x.c};display:inline-block"></i>${T("Day")} ${x.n}</span>`).join("")}</div>`
-      : `<p class="lead" style="margin:0"><b>${esc(dayText(day).title)}</b> — ${esc(pathText(day, pathOf(day)).name)}</p>`);
+      ${footer()}
+      <div class="nextbar two">
+        <button class="btn ghost" data-goto="pick">${svg("prev")} ${T("Back")}</button>
+        <button class="btn accent" data-goto="day">${T("Open my trip")}</button></div>
+    </div>`;
   }
 
   /* Which day the trip starts on. It was hidden behind an icon in the chrome;
@@ -581,10 +593,7 @@
     const opts = [-7, -2, -1, 0, 1, 2, 7].map((k) => ({
       iso: new Date(Date.parse(planStart + "T12:00:00Z") + k * DAY_MS).toISOString().slice(0, 10), k,
     }));
-    return `<div class="label">${T("When does it start?")}</div>
-      <div class="card"><div class="pad" style="padding-bottom:8px">
-        <p class="lead" style="margin:0">${T("start-intro")}</p></div>
-        <div class="days" style="padding:0 16px 14px">
+    return `<div class="card"><div class="days" style="padding:14px 16px">
           ${opts.map((o) => `<button class="dchip" data-setstart="${o.iso}" aria-pressed="${o.iso === startIso}">
             ${esc(fmtWeekday(o.iso))} ${esc(fmtDate(o.iso))}<small>${o.k === 0 ? T("As planned")
               : o.k > 0 ? "+" + o.k : String(o.k)}</small></button>`).join("")}
@@ -597,189 +606,22 @@
       </div>`;
   }
 
-  /* ---------- step 3: guide me ---------- */
-  /* One screen for "I am lost, what now". It has two faces — the summary, and
-     the same day as a sequence you press through — and a switch between them,
-     because the answer to being lost is sometimes one sentence and sometimes a
-     list of eleven. Location is asked for here and only here, when she presses
-     the button that needs it. */
-  function viewNow() {
-    if (!preset && (D.presets || []).length) { view = "trip"; return viewTrip(); }
-    const toggle = `<div class="seg" role="group">
-      <button type="button" data-guide="now" aria-pressed="${guideMode === "now"}">${T("What now")}</button>
-      <button type="button" data-guide="steps" aria-pressed="${guideMode === "steps"}">${T("Step by step")}</button>
-    </div>`;
-    if (guideMode === "steps") return `<div class="wrap">${toggle}${viewWalkBody()}</div>`;
-    return `<div class="wrap">${toggle}${viewNowBody()}</div>`;
-  }
-
-  /* Where the phone says she is, against where the plan says she should be. */
-  async function locate() {
-    guideAsked = true;
-    try {
-      const pos = await new Promise((res, rej) => {
-        if (!navigator.geolocation) return rej(new Error("no gps"));
-        navigator.geolocation.getCurrentPosition(res, rej, { timeout: 10000, maximumAge: 60000 });
-      });
-      guideFix = { lat: pos.coords.latitude, lon: pos.coords.longitude, at: Date.now() };
-    } catch (e) {
-      guideFix = { failed: true, at: Date.now() };
-    }
-    render();
-  }
-
-  const km = (a, b, c, d) => {
-    const R = 6371, r = (x) => (x * Math.PI) / 180;
-    const h = Math.sin(r(c - a) / 2) ** 2 + Math.cos(r(a)) * Math.cos(r(c)) * Math.sin(r(d - b) / 2) ** 2;
-    return 2 * R * Math.asin(Math.sqrt(h));
-  };
-
-  /* Nearest town on the whole trip, so "you seem to be in Bamberg" is something
-     the page can say rather than something she has to tell it. */
-  function whereAmI() {
-    if (!guideFix || guideFix.failed) return null;
-    let best = null;
-    for (const [k, p] of Object.entries(D.places)) {
-      if (p.lat == null) continue;
-      const d = km(guideFix.lat, guideFix.lon, p.lat, p.lon);
-      if (!best || d < best.d) best = { key: k, d };
-    }
-    return best && best.d < 40 ? best : { key: null, d: best ? best.d : null };
-  }
-
-  function locateCard() {
-    const day = todayDay();
-    if (!guideFix) {
-      return `<div class="card"><div class="pad" style="padding-bottom:6px">
-        <p class="lead" style="margin:0">${T("locate-ask")}</p></div>
-        <div class="btns"><button class="btn accent" data-locate="1">${svg("pin")} ${T("Where am I?")}</button></div></div>`;
-    }
-    if (guideFix.failed) return note("calm", T("locate-failed"));
-    const here = whereAmI();
-    const onPlan = day && here && here.key && pathOf(day).seq.some((x) => x.kind === "stop" && x.place === here.key);
-    return `<div class="card"><div class="pad">
-      <div class="what" style="color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase">${T("Where you are")}</div>
-      <div style="font-size:22px;font-weight:700;margin-top:4px">${here && here.key ? esc(place(here.key).n) : T("Somewhere off the route")}</div>
-      <p class="lead" style="margin-top:6px">${here && here.key
-        ? (onPlan ? T("on-plan") : T("off-plan"))
-        : T("far-off-plan")}</p>
-      </div>
-      <div class="btns"><button class="btn ghost" data-locate="1">${T("Check again")}</button></div></div>`;
-  }
-
-  function viewNowBody() {
-    const s = situation();
-
-    if (s.kind === "before") {
-      const d = s.day, p = pathOf(d);
-      return `<div class="wrap">
-        ${heroCard(d, `${s.days} day${s.days === 1 ? "" : "s"} to go`, d.title)}
-        <div class="card"><div class="headline">
-          <div class="what">First day</div>
-          <div class="big">${esc(d.title)}</div>
-          <p class="why">${esc(d.intro)}</p>
-        </div>
-        ${ticketNote()}
-        <div class="btns two"><button class="btn accent" data-startwalk="1">${svg("route")} Walk me through it</button><button class="btn ghost" data-goday="${d.n}">See day 1</button></div>
-        </div>
-        ${overviewList()}
-        ${footer()}</div>`;
-    }
-    if (s.kind === "after") {
-      return `${heroCard(s.day, T("The trip"), T("You made it. Berlin."))}
-        <div class="card pad"><p class="lead">Seven days, twenty-four towns. Everything is still here if you want to look back at it.</p></div>
-        ${overviewList()}${footer()}`;
-    }
-
-    const { day, path, at, riding, nextMove } = s;
-    const t = now();
-    let head = "", count = "", strip = "";
-
-    if (riding) {
-      const l = liveFor(riding);
-      const left = mins(t, realArr(riding));
-      head = `<div class="what">${T(isBus(riding) ? "On the bus" : "On the train")}</div>
-        <div class="big">${esc(place(riding.to).n)}</div>
-        <p class="why">${T("arriving")} ${hhmm(realArr(riding))}${l && l.arrDelay > 2 ? ` — ${l.arrDelay} ${T("min late")}` : ""}.</p>`;
-      count = pill(left, T("until you arrive"), left < 6 ? "now" : "go");
-      strip = legStrip(riding, l);
-    } else if (nextMove) {
-      const go = leaveBy(nextMove, at);
-      const toGo = mins(t, go);
-      const l = liveFor(nextMove);
-      const gone = l && l.cancelled;
-      head = `<div class="what">${at ? T("You are in") + " " + esc(place(at.place).n) : T("Next")}</div>
-        <div class="big">${gone ? T(isBus(nextMove) ? "The bus is cancelled" : "The train is cancelled")
-          : toGo > 0 ? T(isBus(nextMove) ? "Next bus at" : "Next train at") + " " + hhmm(realDep(nextMove))
-          : T(isBus(nextMove) ? "Head for the bus stop" : "Head for the station")}</div>
-        <p class="why">${gone ? `${esc(nextMove.legs[0].line)} ${T("is not running. There is another way below.")}`
-          : `${esc(place(nextMove.to).n)}، ${T("arriving")} ${hhmm(realArr(nextMove))}.${at && at.stn ? " " + esc(stnText(day, at)) : ""}`}</p>`;
-      count = gone ? ""
-        : toGo > 0 ? pill(toGo, T("until you should set off"), toGo > 45 ? "go" : toGo > 12 ? "soon" : "now")
-        : pill(Math.max(0, mins(t, realDep(nextMove))), T("until it leaves"), "now");
-      strip = legStrip(nextMove, l);
-    } else if (at) {
-      head = `<div class="what">${T("Tonight")}</div>
-        <div class="big">${esc(place(at.place).n)}</div>
-        <p class="why">${T("Nothing more to catch today.")} ${esc(dayText(day).intro)}</p>`;
-      count = "";
-      strip = "";
-    }
-
-    const alerts = liveAlerts(nextMove || riding);
-    const suggest = at && !riding ? suggestions(at, nextMove) : "";
-
-    return `${heroCard(day, `${T("Day")} ${day.n} · ${weekday(day.iso)} ${dateShort(day.iso)}`, dayText(day).title)}
-      <div class="card">
-        <div class="headline">${head}${count}</div>
-        ${strip}
-        <div class="btns two">
-          ${nextMove ? `<a class="btn accent" href="${gdir("my location", (at && place(at.place).name) || nextMove.fromStop, "walking")}" target="_blank" rel="noopener">${svg("walk")} ${T(isBus(nextMove) ? "Walk me to the bus stop" : "Walk me to the station")}</a>` : ""}
-          <button class="btn ghost" data-startwalk="1">${svg("route")} ${T("Walk me through the day")}</button>
-          <button class="btn ghost" data-goday="${day.n}">${T("The whole day")}</button>
-        </div>
-      </div>
-      ${alerts}
-      ${day.holiday ? note("warn", holidayText(day)) : ""}
-      ${locateCard()}
-      ${suggest}
-      ${shiftNote()}
-      ${troubleCard()}
-      ${footer()}`;
-  }
-
-  const pill = (m, label, tone) =>
-    `<div class="countdown ${tone}"><span class="n">${m <= 0 ? T("now") : m < 60 ? m : Math.floor(m / 60) + (ar() ? "س" : "h") + String(m % 60).padStart(2, "0")}</span><span class="u">${m > 0 && m < 60 ? T("minutes") + " " : ""}${esc(label)}</span></div>`;
-
-  function legStrip(m, l) {
-    const f = m.legs[0];
-    const late = l && l.depDelay > 2;
-    return `<div class="train">
-      <span class="line${m.bus || f.mode === "BUS" ? " bus" : ""}">${esc(f.line)}</span>
-      <span class="mid">
-        <span class="t">${late ? `<s>${esc(f.dep)}</s><em>${hhmm(l.realDep)}</em>` : timeBtn(f.dep, m.from, m.to, m.depIso)} → ${esc(m.arr)}</span>
-        <span class="d">${T("towards")} ${esc(towards(f, m.to))}${m.changes ? ` · ${m.changes} ${T(m.changes > 1 ? "changes" : "change")}` : " · " + T("direct")}</span>
-      </span>
-      ${(l && l.track) || f.track ? `<span class="plat${l && l.trackChanged ? " changed" : ""}"><b>${esc((l && l.track) || f.track)}</b><span>${l && l.trackChanged ? (isBus(m) ? "new stop" : "new plat") : isBus(m) ? "stop" : "platform"}</span></span>` : ""}
-    </div>`;
-  }
-
+  /* What the live layer found, said in the timeline beside the train it is
+     about rather than on a screen of its own. */
   function liveAlerts(m) {
     if (!m) return "";
     const l = liveFor(m);
-    if (!l) return liveState.status === "off"
-      ? note("calm", "You are offline, so these are the planned times. They were right when the page was built.")
-      : "";
+    if (!l) return "";
     const out = [];
-    if (l.cancelled) out.push(note("bad", `This ${vehicle(m)} is cancelled.`.slice(0, -1) + `. Tap "Find me another way" below — it only ever suggests trains and buses your ticket covers.`));
-    else if (l.depDelay >= 5) out.push(note("warn", `Running ${l.depDelay} minutes late. It now leaves at ${hhmm(l.realDep)} and gets in at ${hhmm(l.realArr)}.`));
-    if (l.trackChanged) out.push(note("warn", `${isBus(m) ? "Stop" : "Platform"} changed to ${l.track}. Check the board when you get there.`));
+    if (l.cancelled) out.push(note("bad", `${T(isBus(m) ? "This bus is cancelled" : "This train is cancelled")}. ${T("cancelled-note")}`));
+    else if (l.depDelay >= 5) out.push(note("warn", `${T("Running")} ${l.depDelay} ${T("minutes late")} — ${T("leaves")} ${hhmm(l.realDep)}, ${T("in at")} ${hhmm(l.realArr)}.`));
+    if (l.trackChanged) out.push(note("warn", `${T(isBus(m) ? "Stop changed to" : "Platform changed to")} ${l.track}. ${T("Check the board when you get there.")}`));
     const tight = (l.gaps || []).filter((g) => g < 6);
-    if (tight.length) out.push(note("warn", `One of your changes is down to ${Math.min.apply(null, tight)} minutes. If you miss it, the next connection is below.`));
+    if (tight.length) out.push(note("warn", `${T("One of your changes is down to")} ${Math.min.apply(null, tight)} ${T("minutes")}. ${T("If you miss it, there is another way below.")}`));
     if ((l.depDelay >= 5 || l.cancelled) && m.later && m.later.length) {
-      out.push(`<div class="card"><div class="pad"><div class="label" style="margin-top:0">If this one goes wrong</div>
-        ${m.later.map((c) => `<div class="kv"><b>${esc(c.dep)} → ${esc(c.arr)}</b><span>${esc(c.lines.join(" · "))} · ${c.changes ? c.changes + " chg" : "direct"}</span></div>`).join("")}</div>
-        <div class="btns"><button class="btn ghost" data-replan="1">Find me another way</button></div></div>`);
+      out.push(`<div class="card"><div class="pad"><div class="label" style="margin-top:0">${T("If this one goes wrong")}</div>
+        ${m.later.map((c) => `<div class="kv"><b>${esc(c.dep)} → ${esc(c.arr)}</b><span>${esc(c.lines.join(" · "))} · ${c.changes ? c.changes + " " + T("chg") : T("direct")}</span></div>`).join("")}</div>
+        <div class="btns"><button class="btn ghost" data-replan="1">${T("Find me another way")}</button></div></div>`);
     }
     return out.join("");
   }
@@ -796,43 +638,6 @@
       <div class="veil"></div>
       <div class="cap"><div class="kicker">${esc(kicker)}</div><h2>${esc(title)}</h2></div>
     </div>`;
-  }
-
-  /* ---------- what is worth doing right now ---------- */
-  /* Ranked by the time she actually has left in this town, whether the place is
-     open on this weekday, and whether it is the sort of thing to do after dark. */
-  function suggestions(stop, nextMove) {
-    const list = (stop.see || []).map((n) => sightOf(stop.place, n)).filter(Boolean);
-    if (!list.length) return "";
-    const t = now();
-    const until = nextMove ? mins(t, leaveBy(nextMove, stop)) : 240;
-    const dow = new Date(dayKey(t) + "T12:00:00Z").getUTCDay();
-    const hour = +hhmm(t).slice(0, 2);
-    const dark = hour >= 19 || hour < 8;
-
-    const scored = list.map((s) => {
-      let v = 0;
-      const key = stop.place + "/" + s.name;
-      if (ticked[key]) v -= 100;
-      if (s.mins <= until - 15) v += 30; else v -= (s.mins - until) / 3;
-      if (s.closed && s.closed.includes(dow)) v -= 60;
-      if (dark && (s.kind === "museum" || s.kind === "palace" || s.kind === "view")) v -= 25;
-      if (dark && (s.kind === "food" || s.kind === "square" || s.kind === "street")) v += 15;
-      if (hour >= 12 && hour <= 14 && s.kind === "food") v += 20;
-      if (s.ticket) v -= 5;
-      return { s, v, key };
-    }).sort((a, b) => b.v - a.v);
-
-    const top = scored.filter((x) => x.v > -40).slice(0, 3);
-    if (!top.length) return "";
-    const head = ar()
-      ? `${dur(until)} ${T("here")}. ${T("Worth doing now:")}`
-      : until < 45 ? `You have about ${until} minutes. These are close.`
-      : `You have ${dur(until)} here. Worth doing now:`;
-
-    return `<div class="label">${T("Right now in")} ${esc(place(stop.place).n)}</div>
-      <div class="card"><div class="pad" style="padding-bottom:6px"><p class="lead" style="margin:0">${esc(head)}</p></div>
-      <div class="rail">${top.map((x) => sightCard(stop.place, x.s)).join("")}</div></div>`;
   }
 
   function sightCard(pk, s) {
@@ -861,15 +666,16 @@
   function viewDay(n) {
     const day = D.days.find((d) => d.n === n) || D.days[0];
     const path = pathOf(day);
-    const isToday = day.iso === dayKey(now());
+    // The plan can be moved onto other dates, so "today" is the shifted date,
+    // not the one the plan was baked from.
+    const isToday = dayDate(day) === dayKey(now());
 
     const pre = presetOf(preset);
     const onPreset = pre ? (pre.pickDays.find((x) => x.n === day.n) || {}).pathId : null;
-    const routes = `<div class="label">${day.paths.length === 1 ? T("The plan")
-      : pre ? `${T("This day, within")} “${esc(presetText(pre).name)}”` : T("Choose how to spend it")}</div>
-      ${pre && onPreset && path.id !== onPreset
-        ? note("calm", `You have swapped this day out of “${presetText(pre).name}”. That can change where you sleep — check the hotel list on the front page.`)
-        : ""}
+    const choose = day.paths.length < 2 ? "" : `
+      <div class="label">${T("Plan your day")}</div>
+      <p class="hint">${T("plan-hint")}</p>
+      ${pre && onPreset && path.id !== onPreset ? note("calm", T("swapped-note")) : ""}
       <div class="routes">${day.paths.map((p) => `
         <button class="route" data-route="${day.n}:${p.id}" aria-pressed="${p.id === path.id}">
           <span class="rn">${esc(pathText(day, p).name)}</span>
@@ -877,11 +683,18 @@
           <span class="rs">
             <span class="tag${p.stops > 2 ? " hot" : ""}">${p.stops} ${T("stops")}</span>
             <span class="tag">${dur(p.ride) || T("no")} ${T("on trains")}</span>
-            <span class="tag">in by ${esc(p.endArr)}</span>
+            <span class="tag">${T("in by")} ${esc(p.endArr)}</span>
           </span>
         </button>`).join("")}</div>`;
 
-    const body = path.seq.map((s, i) => s.kind === "stop" ? stopBlock(day, s, i, isToday) : moveBlock(day, s, isToday)).join("");
+    /* Meals are placed before the timeline is drawn, so each one lands beside
+       the town it is actually eaten in. */
+    const meals = mealPlan(path);
+    const body = path.seq.map((s2, i) => {
+      const rows = (meals.get(i) || []).map(mealRow).join("");
+      return s2.kind === "stop" ? stopBlock(day, s2, i, isToday) + rows
+                                : rows + moveBlock(day, s2, isToday);
+    }).join("");
 
     return `<div class="wrap">
       ${dayStrip(day.n, "goday")}
@@ -889,11 +702,65 @@
       <div class="card pad"><p class="lead" style="margin:0">${esc(dayText(day).intro)}</p></div>
       ${shiftNote()}
       ${day.holiday ? note("warn", holidayText(day)) : ""}
-      ${day.bags ? note("calm", ar() ? T("bags-note") : "You change hotel today — the bags come with you. Most stations have lockers if you want to drop them before wandering.") : ""}
-      ${routes}
-      <div class="label">${T("The day, in order")}</div>
+      ${day.bags ? note("calm", T("bags-note")) : ""}
+      ${choose}
+      <div class="label">${T("Your day, hour by hour")}</div>
+      <p class="hint">${T("hour-hint")}</p>
       <div class="tl">${body}</div>
+      ${troubleCard()}
       ${footer()}</div>`;
+  }
+
+  /* ---------- where there is time to eat ---------- */
+  /* A timetable that never mentions food quietly assumes she will work it out
+     on a platform. Each meal goes where there is genuinely room for it: the
+     part of the day with the longest overlap with the hour people eat in. If
+     that turns out to be a train, the page says so and says to buy something
+     first, which is the useful version of the same fact. */
+  const MEALS = [
+    { key: "lunch", label: "Lunch", from: 11 * 60 + 45, to: 14 * 60 + 30, need: 45 },
+    { key: "dinner", label: "Dinner", from: 18 * 60, to: 20 * 60 + 45, need: 50 },
+  ];
+  const hm = (t) => { const [h, m] = String(t || "00:00").split(":").map(Number); return (h || 0) * 60 + (m || 0); };
+  const clockOf = (m) => String(Math.floor(m / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0");
+
+  function mealPlan(path) {
+    const out = new Map();
+    MEALS.forEach((M) => {
+      let best = null;
+      path.seq.forEach((s2, i) => {
+        const a = hm(s2.kind === "stop" ? s2.arr : s2.dep);
+        // The last stop of the day has no departure — the evening is hers.
+        const b = s2.kind === "stop" ? (s2.dep ? hm(s2.dep) : 22 * 60 + 30) : hm(s2.arr);
+        const ov = Math.min(M.to, b) - Math.max(M.from, a);
+        if (ov > 0 && (!best || ov > best.ov)) best = { i, ov, s: s2, a };
+      });
+      if (!best) return;
+      const onTrain = best.s.kind === "move";
+      const key = onTrain ? best.s.to : best.s.place;
+      const rows = out.get(best.i) || [];
+      rows.push({
+        label: M.label, at: clockOf(Math.max(M.from, best.a)), onTrain, place: key,
+        mins: Math.min(best.ov, M.need), short: best.ov < M.need,
+        food: onTrain ? null : (best.s.see || []).map((x) => sightOf(key, x)).find((x) => x && x.kind === "food"),
+      });
+      out.set(best.i, rows);
+    });
+    return out;
+  }
+
+  function mealRow(m) {
+    const p = place(m.place);
+    const where = m.onTrain
+      ? T("you will be on the train then — buy something before you board")
+      : `${T("in")} ${p.n}${m.short ? ` · ${T("only a short window, so something quick")}` : ` · ${T("about")} ${m.mins} ${T("min")}`}`;
+    const q = m.onTrain ? `Bäckerei Imbiss ${p.name || p.n}` : `Restaurants ${p.name || p.n}`;
+    return `<div class="ev meal"><div class="mealcard">
+      <span class="mwhen">${esc(m.at)}</span>
+      <span class="mtxt"><b>${T(m.label)}</b> — ${esc(where)}
+        ${m.food ? `<small>${T("Worth it:")} ${esc(m.food.name)}</small>` : ""}</span>
+      <a class="chip" href="${gmaps(q)}" target="_blank" rel="noopener">${svg("food")} ${T("Places to eat")}</a>
+    </div></div>`;
   }
 
   /* The timeline used to be a list of names with the photographs somewhere
@@ -989,7 +856,7 @@
   }
 
   function moveBlock(day, m, isToday) {
-    if (m.missing) return `<div class="ev">${note("bad", `No connection found for ${place(m.from).n} to ${place(m.to).n}. Check DB Navigator.`)}</div>`;
+    if (m.missing) return `<div class="ev">${note("bad", `${T("No connection found for")} ${place(m.from).n} → ${place(m.to).n}.`)}</div>`;
     const l = isToday ? liveFor(m) : null;
     const past = isToday && new Date(realArr(m)) < now();
     const rows = m.legs.map((leg, i) => {
@@ -1005,160 +872,13 @@
 
     return `<div class="ev${past ? " past" : ""}">
       <div class="move">
-        ${l && l.depDelay >= 5 ? `<div class="change tight">${svg("warn")} Running ${l.depDelay} min late — leaves ${hhmm(l.realDep)}</div>` : ""}
         ${rows}
         ${m.note ? `<div class="change">${svg("info")} ${esc(moveNote(day, m))}</div>` : ""}
         <div class="mfoot">
           <span class="chip">${dur(m.dur)} · ${m.changes ? m.changes + " " + T(m.changes > 1 ? "changes" : "change") : T("direct")}</span>
           <a class="chip" href="${gdir(m.fromStop, m.toStop, "transit")}" target="_blank" rel="noopener">${T("Open in Maps")}</a>
         </div>
-      </div></div>`;
-  }
-
-  /* ================= the walkthrough ================= */
-  /* The whole week as one line of steps you press Next through: where you are,
-     what you walk to, why it is worth walking to, which train, where you sleep.
-     Reading a timetable and believing it is a skill; pressing Next is not. */
-  let wtDay = 1, wtStep = 0;
-
-  const allSteps = (dayN) => {
-    const d = D.days.find((x) => x.n === dayN) || D.days[0];
-    return pathOf(d).steps || [];
-  };
-
-  function wtGo(delta) {
-    let steps = allSteps(wtDay);
-    let i = wtStep + delta;
-    if (i < 0) {
-      if (wtDay <= D.days[0].n) return;
-      wtDay--; steps = allSteps(wtDay); i = steps.length - 1;
-    } else if (i >= steps.length) {
-      const last = D.days[D.days.length - 1].n;
-      if (wtDay >= last) return;
-      wtDay++; i = 0;
-    }
-    wtStep = i;
-    render();
-    const el = document.getElementById("wt-top");
-    if (el) el.scrollIntoView({ block: "start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
-  }
-
-  const WT = {
-    arrive: { kind: "You are here", icon: "pin" },
-    see: { kind: "Go and see", icon: "eye" },
-    ride: { kind: "Now travel", icon: "train" },
-    back: { kind: "Head back", icon: "walk" },
-    sleep: { kind: "End of the day", icon: "bed" },
-  };
-  const wtKind = (k) => T((WT[k] || WT.see).kind);
-
-  function wtPhoto(st) {
-    if (st.sight) { const p = photo("sight:" + st.sight); if (p) return p; }
-    if (st.place) { const p = photo("place:" + st.place); if (p) return p; }
-    if (st.toPlace) return photo("place:" + st.toPlace);
-    return null;
-  }
-
-  /* A step and the move it came from, so the walkthrough can show the same
-     live times as the front page instead of a printed schedule that has moved
-     on without it. */
-  function moveForStep(day, st) {
-    if (st.kind !== "ride") return null;
-    return pathOf(day).seq.find((x) => x.kind === "move" && !x.missing &&
-      x.from === st.place && x.to === st.toPlace && x.dep === st.dep) || null;
-  }
-
-  function viewWalkBody() {
-    const day = D.days.find((x) => x.n === wtDay) || D.days[0];
-    const steps = allSteps(wtDay);
-    if (!steps.length) return `<div class="card pad">${T("Nothing to walk through on this day.")}</div>`;
-    wtStep = Math.min(wtStep, steps.length - 1);
-    const st = steps[wtStep];
-    const meta = WT[st.kind] || WT.see;
-    const img = wtPhoto(st);
-    const total = steps.length;
-
-    const done = allSteps; // keep the linter honest
-    const first = wtDay === D.days[0].n && wtStep === 0;
-    const last = wtDay === D.days[D.days.length - 1].n && wtStep === total - 1;
-
-    const mv = moveForStep(day, st);
-    const lv = mv ? liveFor(mv) : null;
-    const late = lv && lv.depDelay >= 2;
-    const plat = (lv && lv.track) || st.track;
-
-    const howto = st.kind === "ride"
-      ? `<div class="howto">${svg(st.line && /^\d/.test(String(st.line)) ? "bus" : "train")}<span>
-          <b>${esc((lv && lv.line) || st.line)}</b> from ${esc(st.from)}${plat ? `, platform ${esc(plat)}` : ""}
-          at ${late ? `<s style="opacity:.6">${esc(st.dep)}</s> <em style="font-style:normal;color:var(--stop)">${esc(hhmm(lv.realDep))}</em>` : timeBtn(st.dep, st.place, st.toPlace, mv ? mv.depIso : null)}
-          — in at ${lv && lv.realArr ? esc(hhmm(lv.realArr)) : esc(st.arr)}.</span></div>
-        ${lv && lv.cancelled ? note("bad", "This one is cancelled. Open Now and tap “Find me another way”.")
-          : late ? note("warn", `Running ${lv.depDelay} min late.`)
-          : lv && lv.trackChanged ? note("warn", `Platform changed to ${lv.track}.`)
-          : lv && lv.replaced ? note("calm", `On your date this service is different — the ${lv.line} at ${hhmm(lv.realDep)} is the one that runs.`)
-          : ""}`
-      : st.kind === "see" && st.move
-      ? `<div class="howto">${svg(st.rode ? "tram" : "walk")}<span>${esc(ar()
-          ? (st.rode ? `${T("Take the")} ${st.line || ""} — ${st.mins} ${T("min")}` : `${st.mins} ${T("min walk")}`)
-          : st.move)}${st.visit ? ` ${T("Give it about")} ${st.visit} ${T("min")}.` : ""}</span></div>`
-      : st.kind === "back"
-      ? `<div class="howto">${svg("walk")}<span>${esc(saidFor(st) || st.say)}</span></div>`
-      : "";
-
-    return `<div id="wt-top">
-      ${dayStrip(wtDay, "wtday")}
-      <div class="card wt">
-        ${img ? `<div class="shotwrap"><img class="shot" src="${img}" alt=""><span class="badge">${T("Day")} ${day.n} · ${esc(dayText(day).title)}</span></div>` : ""}
-        <div class="pad">
-          <div class="kind">${esc(wtKind(st.kind))}${st.t ? " · " + esc(st.t) : ""}</div>
-          <h2>${esc(st.kind === "arrive" ? `${T("You are in")} ${place(st.place).n}`
-          : st.kind === "ride" ? `${T("Now travel")} — ${place(st.toPlace).n}`
-          : st.kind === "back" ? `${T("Head back")} — ${place(st.place).n}`
-          : st.kind === "sleep" ? `${T("Goodnight")}، ${place(st.place).n}`
-          : (sightOf(st.place, st.title) || {}).name || st.title)}</h2>
-          ${saidFor(st) || st.say ? `<p class="say">${esc(saidFor(st) || st.say)}</p>` : ""}
-          ${howto}
-          ${st.sight && D.sights[st.sight] ? `<div class="btns" style="padding:14px 0 0"><button class="btn ghost" data-sight="${esc(st.sight)}">${svg("info")} ${T("More about")} ${esc((sightOf(st.place, st.title) || {}).name || st.title)}</button></div>` : ""}
-        </div>
-        <div id="wtmap"></div>
-      </div>
-      <div class="wtbar"><span class="num">${wtStep + 1} / ${total}</span>
-        <span class="track"><span class="fill" style="width:${Math.round(((wtStep + 1) / total) * 100)}%"></span></span></div>
-      <div class="wtnav">
-        <button class="btn ghost" data-wt="-1"${first ? " disabled style=\"opacity:.45\"" : ""}>${svg("prev")} ${T("Back")}</button>
-        <button class="btn accent" data-wt="1"${last ? " disabled style=\"opacity:.45\"" : ""}>${T("Next")} ${svg("next")}</button>
-      </div>
-      <div class="foot">${T("Press Next to walk the whole week, one move at a time. Every time and platform here is the real timetable for your dates.")}</div>
-    </div>`;
-  }
-
-  let wtMap = null;
-  function drawWalkMap() {
-    const el = document.getElementById("wtmap");
-    if (!el) return;
-    if (!window.L) { el.style.display = "none"; return; }
-    const steps = allSteps(wtDay);
-    const st = steps[wtStep];
-    if (!st || !st.ll) { el.style.display = "none"; return; }
-    const day = D.days.find((x) => x.n === wtDay);
-    if (wtMap) { wtMap.remove(); wtMap = null; }
-    wtMap = L.map(el, { scrollWheelZoom: false, zoomControl: false, attributionControl: false });
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18 }).addTo(wtMap);
-
-    // the thread of the day so far, so she can see where this step sits
-    const line = steps.filter((x) => x.ll).map((x) => x.ll);
-    if (line.length > 1) L.polyline(line, { color: day.c, weight: 3, opacity: .35 }).addTo(wtMap);
-    steps.forEach((x, i) => {
-      if (!x.ll || i > wtStep) return;
-      L.circleMarker(x.ll, { radius: i === wtStep ? 9 : 4, color: day.c, weight: i === wtStep ? 4 : 2,
-        fillColor: i === wtStep ? "#fff" : day.c, fillOpacity: 1 }).addTo(wtMap);
-    });
-    if (st.kind === "ride" && st.toLL) {
-      L.polyline([st.ll, st.toLL], { color: day.c, weight: 4 }).addTo(wtMap);
-      wtMap.fitBounds(L.latLngBounds([st.ll, st.toLL]).pad(0.35));
-    } else {
-      wtMap.setView(st.ll, 15);
-    }
+      </div>${isToday ? liveAlerts(m) : ""}</div>`;
   }
 
   /* ---------- map ---------- */
@@ -1171,14 +891,7 @@
       el.innerHTML = `<div class="mapfall"><p>${esc(ar() ? T("map-offline") : "The map needs a connection. Every stop still opens in Google Maps from the day page.")}</p></div>`;
       return;
     }
-    if (mapDay === 0) return drawWholeTrip(el);
-    const day = D.days.find((d) => d.n === (mapDay || (todayDay() || D.days[0]).n)) || D.days[0];
-    const path = pathOf(day);
-    const pts = [];
-    path.seq.forEach((s) => {
-      if (s.kind === "stop") { const p = place(s.place); if (p.lat) pts.push({ ll: [p.lat, p.lon], n: p.n, night: s.base, stop: s }); }
-    });
-    if (map) { map.remove(); map = null; }
+    return drawWholeTrip(el);
     map = L.map(el, { scrollWheelZoom: false, attributionControl: true });
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -1204,34 +917,61 @@
     else map.setView([50.5, 11], 6);
   }
 
-  /* The whole week at once: five coloured threads down the country, with the
-     towns she sleeps in marked heavier than the ones she passes through. */
+  /* All four itineraries at once, in the colours of the cards under them —
+     because the question on the first screen is which of these four, and a
+     map of one of them cannot answer it. Once one is picked the other three
+     stay on as faint lines, so the choice is still visible. */
   function drawWholeTrip(el) {
     if (map) { map.remove(); map = null; }
+    // The offline notice may have been painted here a moment ago, before the
+    // map script finished loading. Leaflet builds around it rather than over
+    // it, which left the words sitting on top of the map.
+    el.innerHTML = "";
     map = L.map(el, { scrollWheelZoom: false, attributionControl: true });
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
     layer = L.layerGroup().addTo(map);
     const bounds = [];
-    D.days.forEach((d) => {
-      const path = pathOf(d);
+
+    const drawOne = (id, strong) => {
+      const c = presetColour(id);
       const pts = [];
-      path.seq.forEach((s) => {
-        if (s.kind !== "stop") return;
-        const p = place(s.place);
-        if (p.lat == null) return;
-        pts.push([p.lat, p.lon]);
-        bounds.push([p.lat, p.lon]);
-        L.circleMarker([p.lat, p.lon], {
-          radius: s.base ? 7 : 4.5, color: d.c, weight: s.base ? 3.5 : 2,
-          fillColor: s.base ? d.c : "#fff", fillOpacity: 1,
-        }).addTo(layer).bindPopup(`<b>${esc(p.n)}</b><br>${T("Day")} ${d.n}${s.base ? " · " + T("you sleep here") : ""}`);
+      D.days.forEach((d) => {
+        pathFor(d, id).seq.forEach((st) => {
+          if (st.kind !== "stop") return;
+          const p = place(st.place);
+          if (p.lat == null) return;
+          const ll = [p.lat, p.lon];
+          if (!pts.length || String(pts[pts.length - 1]) !== String(ll)) pts.push(ll);
+          bounds.push(ll);
+          if (!strong) return;
+          L.circleMarker(ll, {
+            radius: st.base ? 7 : 4.5, color: c, weight: st.base ? 3.5 : 2,
+            fillColor: st.base ? c : "#fff", fillOpacity: 1,
+          }).addTo(layer).bindPopup(`<b>${esc(p.n)}</b><br>${T("Day")} ${d.n}${st.base ? " · " + T("you sleep here") : ""}`);
+        });
       });
-      if (pts.length > 1) L.polyline(pts, { color: d.c, weight: 4, opacity: .8 }).addTo(layer);
-    });
-    if (bounds.length) map.fitBounds(L.latLngBounds(bounds).pad(0.12));
-    else map.setView([50.5, 11], 6);
+      if (pts.length > 1) L.polyline(pts, {
+        color: c, weight: strong ? 4.5 : 2.5, opacity: strong ? .9 : .38,
+        dashArray: strong ? null : "3 7",
+      }).addTo(layer);
+    };
+
+    const list = D.presets || [];
+    list.forEach((p) => { if (p.id !== preset) drawOne(p.id, !preset); });
+    if (preset) drawOne(preset, true);
+
+    // The container is still being laid out on the first paint, so the first
+    // fit is against the wrong height. Fit again once the browser has settled.
+    const fit = () => {
+      if (!map) return;
+      map.invalidateSize();
+      if (bounds.length) map.fitBounds(L.latLngBounds(bounds).pad(0.12));
+      else map.setView([50.5, 11], 6);
+    };
+    fit();
+    setTimeout(fit, 60);
   }
 
   /* ---------- how often does this run ---------- */
@@ -1301,173 +1041,6 @@
     } catch (e) { /* the plan's own list is already on screen */ }
   }
 
-  /* ================= the tour ================= */
-  /* For someone who has not used an app before, and who is about to rely on
-     this one in a country whose language she does not read. It drives the app
-     itself — switching screens, opening the thing it is describing — so she
-     sees the real page underneath rather than a picture of it. */
-  /* The tour's job is to teach the three buttons at the bottom, in order, and
-     it is written against elements that are always on the screen it names —
-     the old one pointed at a card that had scrolled away and left a hole over
-     nothing. Each step says which screen it belongs on and waits for it. */
-  const TOUR = [
-    { view: "trip", at: null,
-      title: "This is your whole week",
-      body: "Mittenwald to Berlin, five days, already planned. There are three buttons along the bottom and nothing else to learn. I will show you each one." },
-    { view: "trip", at: '.tabs', gap: 10,
-      title: "Three buttons, in order",
-      body: "One, two, three, left to right. One is your trip. Two is today. Three is for when something goes wrong. You will mostly live on button two." },
-    { view: "trip", at: '.tab[data-tab="trip"]',
-      title: "Button one — the itinerary",
-      body: "You are on it now. This is where you choose the shape of the week, and it is the only screen you need before you leave home." },
-    { view: "trip", at: "[data-preset]",
-      title: "Pick a way across",
-      body: "Four versions of the same week. Each says how many towns you stop in, how long you sit on trains, and what time you reach Berlin. If you are unsure, the first is the safe one." },
-    { view: "trip", at: ".beds", scroll: true,
-      title: "These are your hotels",
-      body: "The towns you sleep in, written on every card. Book these and the week is fixed. Everything else can still change on the day." },
-    { view: "trip", at: "#map", scroll: true,
-      title: "And this is the shape of it",
-      body: "The whole line down the country. Tap a day above the map to see just that day. The bigger dots are where you sleep." },
-    { view: "day", at: '.tab[data-tab="day"]',
-      title: "Button two — the day",
-      body: "This is the screen for the morning: everything today, in the order it happens. It is the one you will open most." },
-    { view: "day", at: ".days", scroll: true,
-      title: "Move between days here",
-      body: "Tap any day along the top. You do not have to go back anywhere to read tomorrow." },
-    { view: "day", at: ".tl", scroll: true,
-      title: "The day, in order",
-      body: "Each town, what to walk to, how many minutes between them, and the trains in between. Tap a photograph to read about that place." },
-    { view: "now", at: '.tab[data-tab="now"]',
-      title: "Button three — guide me",
-      body: "For when you are lost, late, or not sure what to do next. You do not need it on a good day." },
-    { view: "now", at: ".seg", scroll: true,
-      title: "It answers in two ways",
-      body: "“What now” is one sentence: where you are and when to move. “Step by step” walks you through the rest of the day one move at a time, with Next and Back." },
-    { view: "now", at: "[data-locate]", scroll: true,
-      title: "It can find you",
-      body: "Press this and the phone tells it where you are. It will say which town you are in and whether that is where the plan expects you." },
-    { view: "now", at: "[data-trouble]", scroll: true,
-      title: "If a train is missed",
-      body: "Press one of these. It asks the railway what still runs and tells you honestly what you would have to give up — and it never gives up getting you to your bed." },
-    { view: "trip", at: "#pulse",
-      title: "This dot means the times are live",
-      body: "Green: checked against the railway a minute ago, delays and all. Grey: no signal, so you are reading the plan. Tap it to ask again." },
-    { view: "trip", at: "#morebtn",
-      title: "And everything else is in here",
-      body: "Language, light or dark, and this tour again whenever you want it. Nothing in there can break anything." },
-    { view: "trip", at: null,
-      title: "That is all of it",
-      body: "Have a wonderful trip. All of this works without signal — only the live times need a connection." },
-  ];
-
-  let guideMode = store.get("guidemode", "now"); // "now" | "steps"
-  let guideFix = null;   // where the phone says she is
-  let guideAsked = false;
-
-  let tourAt = -1;
-  const tourEl = () => document.getElementById("tour");
-
-  function startTour() {
-    tourAt = 0;
-    store.set("toured", 1);
-    paintTour();
-  }
-  function endTour() {
-    tourAt = -1;
-    const el = tourEl();
-    if (el) el.classList.remove("on");
-    document.body.style.overflow = "";
-  }
-  function tourStep(delta) {
-    const next = tourAt + delta;
-    if (next < 0) return;
-    if (next >= TOUR.length) return endTour();
-    tourAt = next;
-    paintTour();
-  }
-
-  function paintTour() {
-    const el = tourEl();
-    if (!el || tourAt < 0) return;
-    const step = ar() && AR.tour[tourAt] ? { ...TOUR[tourAt], ...AR.tour[tourAt] } : TOUR[tourAt];
-
-    // Put the app on the screen this step is about, and give it a trip to talk
-    // about if she has not chosen one yet.
-    // Give the tour something to point at: several steps describe parts of the
-    // page that only exist once a trip is chosen.
-    let needsPaint = false;
-    if (!preset) { applyPreset((D.presets[0] || {}).id); needsPaint = true; }
-    if (step.view && view !== step.view) {
-      view = step.view;
-      if (step.view === "now") guideMode = "now";
-      needsPaint = true;
-    }
-    if (needsPaint) render();
-
-    el.classList.add("on");
-    document.body.style.overflow = "hidden";
-
-    const cut = el.querySelector(".cut");
-    const say = el.querySelector(".say");
-    const target = step.at ? document.querySelector(step.at) : null;
-
-    if (target && step.scroll !== false) {
-      target.scrollIntoView({ block: "center", behavior: "auto" });
-    }
-    // Let the scroll settle before measuring, or the hole lands in the wrong place.
-    setTimeout(() => {
-      const r = target ? target.getBoundingClientRect() : null;
-      const visible = r && r.height > 4 && r.width > 4 && r.bottom > 0 && r.top < innerHeight;
-      if (visible) {
-        const g = step.gap || 6;
-        cut.className = "cut";
-        cut.style.top = Math.max(4, r.top - g) + "px";
-        cut.style.left = Math.max(4, r.left - g) + "px";
-        cut.style.width = Math.min(innerWidth - 8, r.width + g * 2) + "px";
-        cut.style.height = Math.min(innerHeight - 8, r.height + g * 2) + "px";
-      } else {
-        cut.className = "cut none";
-        cut.style.top = "50%"; cut.style.left = "50%";
-        cut.style.width = "0px"; cut.style.height = "0px";
-      }
-
-      say.innerHTML = `<div class="step">${T("Step")} ${tourAt + 1} ${T("of")} ${TOUR.length}</div>
-        <h3>${esc(step.title)}</h3>
-        <p>${esc(step.body)}</p>
-        <div class="row">
-          ${tourAt > 0 ? `<button class="btn ghost" data-tour="-1">${T("Back")}</button>` : ""}
-          <button class="btn accent" data-tour="1">${tourAt === TOUR.length - 1 ? T("Done") : T("Next")}</button>
-          <button class="skip" data-tour="end">${T("Skip")}</button>
-        </div>
-        <div class="dots">${TOUR.map((_, i) => `<i class="${i === tourAt ? "on" : ""}"></i>`).join("")}</div>`;
-
-      // Sit the card clear of the thing it is pointing at.
-      const h = say.offsetHeight || 240;
-      const below = r && r.bottom + 16 + h < innerHeight - 10;
-      const above = r && r.top - 16 - h > 10;
-      let top = visible
-        ? (below ? r.bottom + 14 : above ? r.top - h - 14 : (innerHeight - h) / 2)
-        : (innerHeight - h) / 2;
-      // Whatever the geometry says, the card has to be fully on the screen.
-      top = Math.min(Math.max(12, top), Math.max(12, innerHeight - h - 12));
-      say.style.top = top + "px";
-    }, target ? 180 : 0);
-  }
-
-  /* ---------- overview ---------- */
-  function overviewList() {
-    return `<div class="label">${T("The whole week")}</div>
-      <div class="routes">${D.days.map((d) => {
-        const p = pathOf(d);
-        return `<button class="route" data-goday="${d.n}">
-          <span class="rn">${esc(dateShort(d.iso))} · ${esc(dayText(d).title)}</span>
-          <span class="rw">${esc(pathText(d, p).name)} — ${esc(place(d.sleep.toLowerCase()).n || d.sleep)}</span>
-          <span class="rs"><span class="tag">${p.stops} stop${p.stops === 1 ? "" : "s"}</span><span class="tag">${dur(p.ride) || "no"} riding</span></span>
-        </button>`;
-      }).join("")}</div>`;
-  }
-
   /* The hotel list, which is the thing that has to be booked before anything
      else and is otherwise buried inside five days of timetable. */
   function bedsCard() {
@@ -1531,12 +1104,11 @@
         ${cred ? `<p class="credit">${T("Photo")}: ${esc(cred.by)} · ${esc(cred.lic)} · ${T("via Wikimedia Commons")}</p>` : ""}
       </div>`;
     scrim.hidden = false; sheet.hidden = false;
-    paintBack();
     requestAnimationFrame(() => { scrim.classList.add("on"); sheet.classList.add("on"); });
   }
   function closeSheet() {
     scrim.classList.remove("on"); sheet.classList.remove("on");
-    setTimeout(() => { scrim.hidden = true; sheet.hidden = true; paintBack(); }, 260);
+    setTimeout(() => { scrim.hidden = true; sheet.hidden = true; }, 260);
   }
 
   /* ================= when the day stops going to plan ================= */
@@ -1775,20 +1347,17 @@
     requestAnimationFrame(() => { scrim.classList.add("on"); sheet.classList.add("on"); });
   }
 
-  /* Moving the whole plan onto the dates she is actually travelling. The
-     offsets are the ones people really need — a day either way, or a week —
-     plus whatever date she types. */
   /* Everything that is a setting rather than a destination, behind the one
-     button in the corner. Replaying the tour lives here too, because the first
-     thing anyone asks after a tour is how to see it again. */
+     button in the corner — and the way back to the two questions, which is
+     the only navigation the app has left. */
   function showSettings() {
-    const themeNow = document.documentElement.getAttribute("data-theme") || T("Match my phone");
     openSheetRaw(`<div class="grab"></div><div class="sbody">
       <h2>${T("Settings")}</h2>
       <div class="btns" style="padding:14px 0 0">
+        <button class="btn ghost" data-goto="pick">${svg("map")} ${T("Change the trip")}</button>
+        <button class="btn ghost" data-goto="when">${svg("days")} ${T("Change the dates")}</button>
         <button class="btn ghost" id="langbtn2">${ar() ? T("Switch to English") : "التبديل إلى العربية"}</button>
         <button class="btn ghost" id="themebtn">${svg("moon")} ${T("Light or dark")}</button>
-        <button class="btn accent" id="starttour">${svg("help")} ${T("Show me how this works")}</button>
       </div>
       <p class="about" style="margin-top:16px">${T("settings-note")}</p>
       <div class="btns" style="padding:8px 0 0"><button class="btn ghost" data-close="1">${T("Close")}</button></div>
@@ -1797,51 +1366,19 @@
     if (lb) lb.addEventListener("click", () => { closeSheet(); setLang(ar() ? "en" : "ar"); });
   }
 
-  function showDates() {
-    const cur = startIso, planned = planStart;
-    const opts = [-7, -2, -1, 0, 1, 2, 7].map((k) => {
-      const iso = new Date(Date.parse(planned + "T12:00:00Z") + k * DAY_MS).toISOString().slice(0, 10);
-      return { iso, k };
-    });
-    openSheetRaw(`<div class="grab"></div><div class="sbody">
-      <h2>${T("When are you actually going?")}</h2>
-      <p class="about">The plan was built for ${esc(fmtDate(planned))}. Move it and every day moves with it —
-        and the live times are then looked up for the dates you are really there.</p>
-      <div class="routes" style="margin-top:14px">
-        ${opts.map((o) => `<button class="route" data-setstart="${o.iso}" aria-pressed="${o.iso === cur}">
-          <span class="rn">${esc(fmtWeekday(o.iso))} ${esc(fmtDate(o.iso))}</span>
-          <span class="rw">${o.k === 0 ? "As planned" : o.k > 0 ? `${o.k} day${o.k > 1 ? "s" : ""} later` : `${-o.k} day${o.k < -1 ? "s" : ""} earlier`}
-            — in Berlin ${esc(fmtDate(new Date(Date.parse(o.iso + "T12:00:00Z") + (D.days.length - 1) * DAY_MS).toISOString().slice(0, 10)))}</span>
-        </button>`).join("")}
-      </div>
-      <div class="pad" style="padding:16px 0 0">
-        <label style="font-size:14px;color:var(--soft-ink)">Or pick the day you arrive in Mittenwald
-          <input type="date" id="startpick" value="${esc(cur)}"
-            style="display:block;margin-top:8px;width:100%;min-height:48px;padding:0 12px;border-radius:13px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit"></label>
-      </div>
-      <div class="btns" style="padding-left:0;padding-right:0">
-        <button class="btn ghost" data-close="1">${T("Close")}</button>
-      </div></div>`);
-    const inp = document.getElementById("startpick");
-    if (inp) inp.addEventListener("change", () => {
-      if (!inp.value) return;
-      setStart(inp.value); closeSheet(); render(); refreshLive(true);
-    });
-  }
-
   /* Said once, near the top, whenever the dates have been moved — so a time on
      screen is never silently about a different day than the one she is in. */
   function shiftNote() {
     if (!shifted()) return "";
     const k = shiftDays();
-    return note("calm", `These dates are moved ${Math.abs(k)} day${Math.abs(k) > 1 ? "s" : ""} ${k > 0 ? "later" : "earlier"} than the plan was built for. Times are being checked live against the dates you are actually travelling.`);
+    return note("calm", `${T("These dates are moved")} ${Math.abs(k)} ${T(Math.abs(k) > 1 ? "days" : "day")} ${T(k > 0 ? "later than planned" : "earlier than planned")}. ${T("shift-live")}`);
   }
 
   function troubleCard() {
     if (!todayDay()) return "";
     return `<div class="label">${T("If the day stops going to plan")}</div>
-      <div class="card"><div class="pad" style="padding-bottom:4px">
-        <p class="lead" style="margin:0">${T("Tell me what happened and I will work out the rest of the day from the real timetable — and say what has to give.")}</p></div>
+      <p class="hint">${T("trouble-hint")}</p>
+      <div class="card">
         <div class="btns"><button class="btn ghost" data-trouble="missed">${svg("warn")} ${T("I missed my train")}</button>
         <button class="btn ghost" data-trouble="stay60">${svg("now")} ${T("I want another hour here")}</button>
         <button class="btn ghost" data-trouble="stay120">${svg("now")} ${T("Another two hours")}</button></div>
@@ -1850,15 +1387,11 @@
 
   /* ---------- events ---------- */
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("#morebtn,[data-guide],[data-locate],[data-tour],#starttour,#pulse,[data-freq],[data-setstart],[data-tab],[data-goday],[data-route],[data-sight],[data-tick],[data-mapday],[data-replan],[data-close],[data-wt],[data-wtday],[data-startwalk],[data-trouble],[data-preset],#scrim,#themebtn,#refresh");
+    const t = e.target.closest("#morebtn,#pulse,[data-freq],[data-setstart],[data-goday],[data-route],[data-sight],[data-tick],[data-replan],[data-close],[data-trouble],[data-pick],[data-goto],#scrim,#themebtn");
     if (!t) return;
     if (t.id === "scrim" || t.dataset.close) return closeSheet();
     if (t.id === "morebtn") return showSettings();
     if (t.dataset.setstart) { setStart(t.dataset.setstart); closeSheet(); render(); refreshLive(true); return; }
-    if (t.dataset.tour) {
-      return t.dataset.tour === "end" ? endTour() : tourStep(+t.dataset.tour);
-    }
-    if (t.id === "starttour") return startTour();
     if (t.id === "pulse") { refreshLive(true); return showLiveInfo(); }
     if (t.id === "themebtn") {
       const cur = document.documentElement.getAttribute("data-theme");
@@ -1872,27 +1405,24 @@
       const [f, to, iso] = t.dataset.freq.split("|");
       return showFreq(f, to, iso || null);
     }
-    if (t.dataset.tab) { push(); view = t.dataset.tab; return go(() => { window.scrollTo(0, 0); render(); }); }
-    if (t.dataset.guide) {
-      guideMode = t.dataset.guide; store.set("guidemode", guideMode);
-      if (guideMode === "steps") { const d = todayDay(); wtDay = d ? d.n : (wtDay || D.days[0].n); }
-      return render();
-    }
-    if (t.dataset.locate) return locate();
     if (t.dataset.goday) { push(); view = "day"; openDay = +t.dataset.goday; return go(() => { window.scrollTo(0, 0); render(); }); }
-    if (t.dataset.mapday != null) { mapDay = +t.dataset.mapday; return render(); }
-    if (t.dataset.wt) { if (+t.dataset.wt > 0) push(); return wtGo(+t.dataset.wt); }
-    if (t.dataset.wtday) { push(); wtDay = +t.dataset.wtday; wtStep = 0; return go(() => { window.scrollTo(0, 0); render(); }); }
-    if (t.dataset.startwalk) {
-      push();
-      const d = todayDay(); wtDay = d ? d.n : D.days[0].n; wtStep = 0;
-      view = "now"; guideMode = "steps"; store.set("guidemode", "steps");
-      window.scrollTo(0, 0); return render();
+    /* The two setup questions, and the way out of them. Opening the trip is
+       what marks the setup as done — until then she lands back on step one. */
+    if (t.dataset.goto) {
+      const to = t.dataset.goto;
+      if (to === "day" && !preset) return;
+      closeSheet();
+      push(); view = to;
+      if (to === "day") store.set("setup", 1);
+      return go(() => { window.scrollTo(0, 0); render(); });
+    }
+    if (t.dataset.pick) {
+      applyPreset(t.dataset.pick);
+      return go(() => { render(); refreshLive(true); });
     }
     if (t.dataset.route) {
       const [n, id] = t.dataset.route.split(":");
       chosen[n] = id; store.set("routes", chosen);
-      if (+n === wtDay) wtStep = 0;
       liveGen++; liveState = { at: 0, status: navigator.onLine ? "idle" : "off" };
       liveCache = {}; store.set("live", {});
       render(); refreshLive(true);
@@ -1910,32 +1440,16 @@
       const v = t.dataset.trouble;
       return showReflow(v === "missed" ? "missed" : "stay", v === "stay120" ? 120 : 60);
     }
-    if (t.dataset.preset) {
-      applyPreset(t.dataset.preset);
-      wtStep = 0;
-      if (view === "choose") { view = "now"; navStack.length = 0; }
-      window.scrollTo(0, 0);
-      render(); refreshLive(true);
-      return;
-    }
   });
   document.addEventListener("keydown", (e) => {
-    if (tourAt >= 0) {
-      if (e.key === "Escape") return endTour();
-      if (e.key === "ArrowRight" || e.key === "Enter") return tourStep(1);
-      if (e.key === "ArrowLeft") return tourStep(-1);
-      return;
-    }
     if (e.key === "Escape") return goBack();
-    if (view === "walk" && sheet.hidden) {
-      if (e.key === "ArrowRight") { push(); wtGo(1); }
-      if (e.key === "ArrowLeft") wtGo(-1);
-    }
   });
   // Android's back gesture and the browser's back button land here too.
   window.history.replaceState({ mb: 0 }, "");
   window.addEventListener("popstate", () => { window.history.pushState({ mb: 1 }, ""); goBack(); });
   window.history.pushState({ mb: 1 }, "");
+  // The map script is deferred, so the first paint can happen without it.
+  window.addEventListener("load", () => { if (view !== "day") drawMap(); });
   window.addEventListener("online", () => { online = true; refreshLive(true); });
   window.addEventListener("offline", () => { online = false; liveState.status = "off"; paintPulse(); });
   document.addEventListener("visibilitychange", () => { if (!document.hidden) { render(); refreshLive(); } });
@@ -1945,13 +1459,12 @@
   if (savedTheme) document.documentElement.setAttribute("data-theme", savedTheme);
   paintDates();
 
-  if (!["trip", "day", "now"].includes(view)) view = "trip";
+  if (!["pick", "when", "day"].includes(view)) view = "pick";
+  if (view !== "pick" && !preset) view = "pick";
   applyLang();
   render();
   refreshLive();
-  // First time anyone opens this, walk them through it rather than hoping.
-  if (!store.get("toured", 0)) setTimeout(startTour, 500);
-  // The countdown is the whole point of the front page, so it ticks.
-  setInterval(() => { if (view === "now" && !document.hidden) render(); }, 30000);
+  // "Now" markers in the timeline move on their own.
+  setInterval(() => { if (view === "day" && !document.hidden) render(); }, 60000);
   setInterval(() => { if (!document.hidden) refreshLive(); }, 90000);
 })();
