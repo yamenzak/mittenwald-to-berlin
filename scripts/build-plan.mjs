@@ -274,26 +274,27 @@ async function routeFor(stop, sightsIndex, free) {
     return t + guessHop(at(list[list.length - 1]), home);
   };
 
-  let keep = geo.slice();
+  /* Fill the window rather than empty it.
+
+     The old rule dropped the least-valuable thing over and over until the walk
+     fitted, and it protected the marked ones absolutely — so four hours in
+     Heidelberg gave up the pharmacy museum, the university quarter, the old
+     bridge and everything else in order to hold on to the Philosophers' Walk,
+     and then had to drop that too. Two items out of nine, in 235 minutes.
+
+     So it fills instead, in the order she walks: the marked ones get first
+     refusal, and then everything else is offered the leftovers. Anything that
+     does not fit is still on the page, under "only if you are ahead of time". */
   const budget = free == null ? Infinity : free - 5; // five minutes of not running
+  let keep = geo.slice();
   if (budget !== Infinity) {
-    while (keep.length && cost(keep) > budget) {
-      const droppable = keep.filter((x) => !x.must);
-      const base = cost(keep);
-      const saving = (cand) => base - cost(keep.filter((x) => x !== cand));
-      let worst;
-      if (droppable.length) {
-        // Give up the one that buys back the most time.
-        worst = droppable.reduce((a, b) => (saving(b) > saving(a) ? b : a));
-      } else {
-        /* Only marked ones left, and there is no good way to choose between
-           them by size: dropping the biggest gave up Ludwigstraße for a
-           twenty-minute church, and dropping the smallest gave up Marienplatz.
-           So the walk is truncated instead — she turns back earlier, and what
-           she does see is the start of the route rather than a scatter of it. */
-        worst = keep[keep.length - 1];
+    const inOrder = (list) => geo.filter((x) => list.includes(x));
+    keep = [];
+    for (const pass of [geo.filter((x) => x.must), geo.filter((x) => !x.must)]) {
+      for (const cand of pass) {
+        const trial = inOrder([...keep, cand]);
+        if (cost(trial) <= budget) keep = trial;
       }
-      keep = keep.filter((x) => x !== worst);
     }
   }
   const kept = new Set(keep);

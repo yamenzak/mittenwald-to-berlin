@@ -3159,15 +3159,15 @@
           "kind": "sight",
           "note": "Painted head to foot, with an astronomical clock from 1520.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 113,
+          "leaveBy": 138,
+          "extra": false
          },
          {
           "to": "Museum Ulm",
-          "mins": 7,
+          "mins": 13,
           "how": {
-           "mins": 7,
+           "mins": 13,
            "mode": "walk"
           },
           "visit": 75,
@@ -3188,9 +3188,9 @@
          },
          {
           "to": "Fishermen's Quarter",
-          "mins": 9,
+          "mins": 1,
           "how": {
-           "mins": 9,
+           "mins": 1,
            "mode": "walk"
           },
           "visit": 60,
@@ -3205,8 +3205,8 @@
           "kind": "street",
           "note": "Half-timbered lanes over the little Blau, two minutes from the Minster.",
           "ticket": false,
-          "at": 113,
-          "leaveBy": 173,
+          "at": 139,
+          "leaveBy": 199,
           "extra": false
          },
          {
@@ -3297,9 +3297,9 @@
           "kind": "sight",
           "note": "He was born here in 1879; the house went in the war and a stone marks it.",
           "ticket": false,
-          "at": 180,
-          "leaveBy": 195,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Wiblingen Abbey library",
@@ -3335,14 +3335,14 @@
           "extra": true
          }
         ],
-        "back": 3,
+        "back": 9,
         "walkTotal": 33,
-        "visitTotal": 165,
-        "needs": 198,
+        "visitTotal": 175,
+        "needs": 208,
         "fitted": 3,
         "dropped": 7,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ulm%20Hauptbahnhof&destination=Ulm%20Hauptbahnhof&waypoints=Ulm%20Minster%2C%20Ulm%7CFishermen's%20Quarter%2C%20Ulm%7CEinstein's%20birthplace%2C%20Ulm",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ulm%20Hauptbahnhof&destination=Ulm%20Hauptbahnhof&waypoints=Ulm%20Minster%2C%20Ulm%7CUlm%20Town%20Hall%2C%20Ulm%7CFishermen's%20Quarter%2C%20Ulm",
         "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ulm%20Hauptbahnhof&destination=Einstein's%20birthplace%2C%20Ulm&waypoints=Ulm%20Minster%2C%20Ulm%7CStadthaus%2C%20Ulm%7CUlm%20Town%20Hall%2C%20Ulm%7CMuseum%20Ulm%2C%20Ulm%7CFishermen's%20Quarter%2C%20Ulm%7CCrooked%20House%2C%20Ulm%7CMetzgerturm%2C%20Ulm%7CDanube%20wall%20walk%2C%20Ulm",
         "town": "Ulm, Germany"
        }
@@ -4118,19 +4118,19 @@
        "t": null,
        "kind": "see",
        "place": "ulm",
-       "title": "Fishermen's Quarter",
+       "title": "Ulm Town Hall",
        "ll": [
         48.40083333,
         9.98722222
        ],
-       "sight": "ulm/Fishermen's Quarter",
+       "sight": "ulm/Ulm Town Hall",
        "move": "9 min walk.",
        "rode": false,
        "mins": 9,
-       "visit": 60,
-       "say": "Half-timbered lanes over the little Blau, two minutes from the Minster.",
+       "visit": 25,
+       "say": "Painted head to foot, with an astronomical clock from 1520.",
        "offset": 113,
-       "until": 173,
+       "until": 138,
        "ticket": false
       },
       {
@@ -4139,19 +4139,19 @@
        "t": null,
        "kind": "see",
        "place": "ulm",
-       "title": "Einstein's birthplace",
+       "title": "Fishermen's Quarter",
        "ll": [
-        48.399,
-        9.9833
+        48.40083333,
+        9.98722222
        ],
-       "sight": "ulm/Einstein's birthplace",
-       "move": "7 min walk.",
+       "sight": "ulm/Fishermen's Quarter",
+       "move": "1 min walk.",
        "rode": false,
-       "mins": 7,
-       "visit": 15,
-       "say": "He was born here in 1879; the house went in the war and a stone marks it.",
-       "offset": 180,
-       "until": 195,
+       "mins": 1,
+       "visit": 60,
+       "say": "Half-timbered lanes over the little Blau, two minutes from the Minster.",
+       "offset": 139,
+       "until": 199,
        "ticket": false
       },
       {
@@ -4165,8 +4165,8 @@
         48.3993,
         9.9824
        ],
-       "mins": 3,
-       "say": "3 min back to the station. Aim to be on the platform by 15:15."
+       "mins": 9,
+       "say": "9 min back to the station. Aim to be on the platform by 15:15."
       },
       {
        "day": 3,
@@ -4473,11 +4473,14 @@
        "stn": "Bus 33 to the castle, or the funicular from Kornmarkt. The Philosophers' Walk is over the Old Bridge.",
        "see": [
         "Heidelberg Castle",
+        "The Great Tun",
+        "German Pharmacy Museum",
+        "University Square",
+        "Student Prison",
+        "Jesuitenkirche",
         "Old Bridge",
         "Philosophers' Walk",
-        "Marktplatz and Church of the Holy Spirit",
-        "Hauptstraße",
-        "Student Prison"
+        "Königstuhl funicular"
        ],
        "base": false,
        "arrIso": "2026-10-02T06:00:00.000Z",
@@ -4511,88 +4514,55 @@
            "to": "Heidelberg, Hauptbahnhof",
            "walkInstead": null
           },
-          "must": false,
+          "must": true,
           "lat": 49.41,
           "lon": 8.716,
           "kind": "palace",
           "note": "Red sandstone ruin above the town. Funicular from Kornmarkt.",
           "ticket": true,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         },
-         {
-          "to": "Old Bridge",
-          "mins": 21,
-          "how": {
-           "mins": 21,
-           "mode": "ride",
-           "line": "S7",
-           "vehicle": "METRO",
-           "from": "Heidelberg, Hauptbahnhof",
-           "to": "Heidelberg, Altstadt",
-           "walkInstead": null
-          },
-          "visit": 30,
-          "backFromHere": 19,
-          "backHow": {
-           "mins": 19,
-           "mode": "ride",
-           "line": "RNV 35",
-           "vehicle": "BUS",
-           "from": "Heidelberg, Marstallstraße",
-           "to": "Heidelberg, Hauptbahnhof",
-           "walkInstead": null
-          },
-          "must": false,
-          "lat": 49.41425278,
-          "lon": 8.70954722,
-          "kind": "sight",
-          "note": "1788. The bronze monkey at the end is for holding, and for luck.",
-          "ticket": false,
           "at": 21,
-          "leaveBy": 51,
+          "leaveBy": 141,
           "extra": false
          },
          {
-          "to": "Philosophers' Walk",
-          "mins": 15,
+          "to": "The Great Tun",
+          "mins": 2,
           "how": {
-           "mins": 15,
+           "mins": 2,
            "mode": "walk"
           },
-          "visit": 90,
-          "backFromHere": 26,
+          "visit": 20,
+          "backFromHere": 20,
           "backHow": {
-           "mins": 26,
+           "mins": 20,
            "mode": "ride",
-           "line": "RNV 5",
-           "vehicle": "TRAM",
-           "from": "Neuenheim, Brückenstraße",
+           "line": "RNV 20",
+           "vehicle": "BUS",
+           "from": "Heidelberg, Rathaus/Bergbahn",
            "to": "Heidelberg, Hauptbahnhof",
            "walkInstead": null
           },
-          "must": false,
-          "lat": 49.415,
-          "lon": 8.70027778,
-          "kind": "view",
-          "note": "Across the river and up. The classic view back at the castle.",
+          "must": true,
+          "lat": 49.4105,
+          "lon": 8.7154,
+          "kind": "sight",
+          "note": "A wine barrel holding 220,000 litres, inside the castle. There is a dance floor on top of it.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 143,
+          "leaveBy": 163,
+          "extra": false
          },
          {
-          "to": "Marktplatz and Church of the Holy Spirit",
-          "mins": 3,
+          "to": "German Pharmacy Museum",
+          "mins": 2,
           "how": {
-           "mins": 3,
+           "mins": 2,
            "mode": "walk"
           },
-          "visit": 30,
-          "backFromHere": 17,
+          "visit": 45,
+          "backFromHere": 20,
           "backHow": {
-           "mins": 17,
+           "mins": 20,
            "mode": "ride",
            "line": "RNV 20",
            "vehicle": "BUS",
@@ -4601,26 +4571,26 @@
            "walkInstead": null
           },
           "must": false,
-          "lat": 49.41222222,
-          "lon": 8.70944444,
-          "kind": "church",
-          "note": "Market square church with shops built into its outer walls.",
+          "lat": 49.4106,
+          "lon": 8.7149,
+          "kind": "museum",
+          "note": "Also in the castle, and included — four centuries of jars, stills and alarming remedies.",
           "ticket": false,
-          "at": 54,
-          "leaveBy": 84,
+          "at": 165,
+          "leaveBy": 210,
           "extra": false
          },
          {
-          "to": "Hauptstraße",
-          "mins": 5,
+          "to": "University Square",
+          "mins": 13,
           "how": {
-           "mins": 5,
+           "mins": 13,
            "mode": "walk"
           },
-          "visit": 60,
-          "backFromHere": 17,
+          "visit": 25,
+          "backFromHere": 16,
           "backHow": {
-           "mins": 17,
+           "mins": 16,
            "mode": "ride",
            "line": "RNV 20",
            "vehicle": "BUS",
@@ -4629,20 +4599,20 @@
            "walkInstead": null
           },
           "must": false,
-          "lat": 49.4116,
-          "lon": 8.7055,
-          "kind": "street",
-          "note": "1.6 km of pedestrian street, the longest in Germany.",
+          "lat": 49.4112,
+          "lon": 8.7058,
+          "kind": "square",
+          "note": "The old university, the Lion Fountain, and students everywhere since 1386.",
           "ticket": false,
-          "at": 89,
-          "leaveBy": 149,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Student Prison",
-          "mins": 1,
+          "mins": 13,
           "how": {
-           "mins": 1,
+           "mins": 13,
            "mode": "walk"
           },
           "visit": 30,
@@ -4662,20 +4632,132 @@
           "kind": "museum",
           "note": "Where misbehaving students were locked up — and covered the walls in graffiti.",
           "ticket": true,
-          "at": 150,
-          "leaveBy": 180,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Jesuitenkirche",
+          "mins": 12,
+          "how": {
+           "mins": 12,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 17,
+          "backHow": {
+           "mins": 17,
+           "mode": "ride",
+           "line": "RNV 20",
+           "vehicle": "BUS",
+           "from": "Heidelberg, Peterskirche",
+           "to": "Heidelberg, Hauptbahnhof",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.41111111,
+          "lon": 8.70777778,
+          "kind": "church",
+          "note": "White and enormous inside, a block off the Hauptstraße.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Old Bridge",
+          "mins": 12,
+          "how": {
+           "mins": 12,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 19,
+          "backHow": {
+           "mins": 19,
+           "mode": "ride",
+           "line": "RNV 35",
+           "vehicle": "BUS",
+           "from": "Heidelberg, Marstallstraße",
+           "to": "Heidelberg, Hauptbahnhof",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.41425278,
+          "lon": 8.70954722,
+          "kind": "sight",
+          "note": "1788. The bronze monkey at the end is for holding, and for luck.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Philosophers' Walk",
+          "mins": 28,
+          "how": {
+           "mins": 28,
+           "mode": "walk"
+          },
+          "visit": 90,
+          "backFromHere": 26,
+          "backHow": {
+           "mins": 26,
+           "mode": "ride",
+           "line": "RNV 5",
+           "vehicle": "TRAM",
+           "from": "Neuenheim, Brückenstraße",
+           "to": "Heidelberg, Hauptbahnhof",
+           "walkInstead": null
+          },
+          "must": true,
+          "lat": 49.415,
+          "lon": 8.70027778,
+          "kind": "view",
+          "note": "Across the river and up. The classic view back at the castle.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Königstuhl funicular",
+          "mins": 7,
+          "how": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "visit": 90,
+          "backFromHere": 17,
+          "backHow": {
+           "mins": 17,
+           "mode": "ride",
+           "line": "RNV 20",
+           "vehicle": "BUS",
+           "from": "Heidelberg, Rathaus/Bergbahn",
+           "to": "Heidelberg, Hauptbahnhof",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.4103,
+          "lon": 8.7133,
+          "kind": "view",
+          "note": "Continue past the castle to the top of the hill.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
-        "back": 18,
-        "walkTotal": 48,
-        "visitTotal": 150,
-        "needs": 198,
-        "fitted": 4,
-        "dropped": 2,
+        "back": 20,
+        "walkTotal": 45,
+        "visitTotal": 185,
+        "needs": 230,
+        "fitted": 3,
+        "dropped": 6,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Old%20Bridge%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7CHauptstra%C3%9Fe%2C%20Heidelberg%7CStudent%20Prison%2C%20Heidelberg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Heidelberg%20Castle%2C%20Heidelberg%7COld%20Bridge%2C%20Heidelberg%7CPhilosophers'%20Walk%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7CHauptstra%C3%9Fe%2C%20Heidelberg%7CStudent%20Prison%2C%20Heidelberg",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Heidelberg%20Castle%2C%20Heidelberg%7CThe%20Great%20Tun%2C%20Heidelberg%7CGerman%20Pharmacy%20Museum%2C%20Heidelberg",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=K%C3%B6nigstuhl%20funicular%2C%20Heidelberg&waypoints=Heidelberg%20Castle%2C%20Heidelberg%7CThe%20Great%20Tun%2C%20Heidelberg%7CGerman%20Pharmacy%20Museum%2C%20Heidelberg%7CUniversity%20Square%2C%20Heidelberg%7CStudent%20Prison%2C%20Heidelberg%7CJesuitenkirche%2C%20Heidelberg%7COld%20Bridge%2C%20Heidelberg%7CPhilosophers'%20Walk%2C%20Heidelberg",
         "town": "Heidelberg, Germany"
        }
       },
@@ -4772,9 +4854,14 @@
        "stn": "Ten minutes down Kaiserstraße from the Hbf, or tram 1 to Dom.",
        "see": [
         "Würzburg Residence",
+        "Court Garden",
+        "Neumünster",
+        "Würzburg Cathedral",
         "Marktplatz and Marienkapelle",
+        "Juliusspital",
         "Old Main Bridge",
-        "Franconian wine"
+        "Franconian wine",
+        "Marienberg Fortress"
        ],
        "base": false,
        "arrIso": "2026-10-02T12:20:00Z",
@@ -4797,33 +4884,102 @@
            "to": "Würzburg Residenzplatz",
            "walkInstead": 21
           },
-          "visit": 90,
+          "visit": 85,
           "backFromHere": 21,
           "backHow": {
            "mins": 21,
            "mode": "walk"
           },
-          "must": false,
+          "must": true,
           "lat": 49.7929,
           "lon": 9.9393,
           "kind": "palace",
           "note": "UNESCO. Tiepolo's staircase fresco is the largest in the world.",
           "ticket": true,
+          "at": 14,
+          "leaveBy": 99,
+          "extra": false
+         },
+         {
+          "to": "Court Garden",
+          "mins": 3,
+          "how": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 23,
+          "backHow": {
+           "mins": 23,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 49.7921,
+          "lon": 9.9408,
+          "kind": "nature",
+          "note": "Behind the Residence, free to walk into.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Neumünster",
+          "mins": 11,
+          "how": {
+           "mins": 11,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "ride",
+           "line": "5",
+           "vehicle": "TRAM",
+           "from": "Würzburg Dom",
+           "to": "Würzburg, Hauptbahnhof Ost",
+           "walkInstead": 18
+          },
+          "must": false,
+          "lat": 49.79383056,
+          "lon": 9.93157778,
+          "kind": "church",
+          "note": "Round red-and-white baroque front beside the cathedral, over the grave of St Kilian.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Würzburg Cathedral",
+          "mins": 11,
+          "how": {
+           "mins": 11,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 18,
+          "backHow": {
+           "mins": 18,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 49.79337778,
+          "lon": 9.93239722,
+          "kind": "church",
+          "note": "One of the largest Romanesque churches in Germany.",
+          "ticket": false,
           "at": null,
           "leaveBy": null,
           "extra": true
          },
          {
           "to": "Marktplatz and Marienkapelle",
-          "mins": 12,
+          "mins": 14,
           "how": {
-           "mins": 12,
-           "mode": "ride",
-           "line": "4",
-           "vehicle": "TRAM",
-           "from": "Würzburg, Hauptbahnhof West",
-           "to": "Würzburg Dom",
-           "walkInstead": 17
+           "mins": 14,
+           "mode": "walk"
           },
           "visit": 30,
           "backFromHere": 17,
@@ -4837,15 +4993,38 @@
           "kind": "square",
           "note": "Red-and-white Gothic chapel on the market square.",
           "ticket": false,
-          "at": 12,
-          "leaveBy": 42,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Juliusspital",
+          "mins": 15,
+          "how": {
+           "mins": 15,
+           "mode": "walk"
+          },
+          "visit": 45,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 49.797583,
+          "lon": 9.931444,
+          "kind": "food",
+          "note": "A hospital that owns vineyards and has done since 1576. The courtyard and the wine bar are open to anyone.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Old Main Bridge",
-          "mins": 7,
+          "mins": 17,
           "how": {
-           "mins": 7,
+           "mins": 17,
            "mode": "walk"
           },
           "visit": 40,
@@ -4859,21 +5038,21 @@
            "to": "Würzburg, Hauptbahnhof Ost",
            "walkInstead": 22
           },
-          "must": false,
+          "must": true,
           "lat": 49.79305556,
           "lon": 9.92611111,
           "kind": "sight",
           "note": "Stone saints along the parapet. People drink wine on it at sunset.",
           "ticket": false,
-          "at": 49,
-          "leaveBy": 89,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Franconian wine",
-          "mins": 4,
+          "mins": 16,
           "how": {
-           "mins": 4,
+           "mins": 16,
            "mode": "walk"
           },
           "visit": 60,
@@ -4896,17 +5075,50 @@
           "at": null,
           "leaveBy": null,
           "extra": true
+         },
+         {
+          "to": "Marienberg Fortress",
+          "mins": 46,
+          "how": {
+           "mins": 46,
+           "mode": "ride",
+           "line": "4",
+           "vehicle": "TRAM",
+           "from": "Würzburg Juliuspromenade",
+           "to": "Würzburg Alte Mainbrücke",
+           "walkInstead": null
+          },
+          "visit": 120,
+          "backFromHere": 41,
+          "backHow": {
+           "mins": 41,
+           "mode": "ride",
+           "line": "7",
+           "vehicle": "BUS",
+           "from": "Würzburg Alte Mainbrücke",
+           "to": "Würzburg, Hauptbahnhof ZOB",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.78972222,
+          "lon": 9.92138889,
+          "kind": "view",
+          "note": "30 min climb through the vineyards, or bus 9. The view is the point.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
-        "back": 16,
+        "back": 21,
         "walkTotal": 35,
-        "visitTotal": 70,
-        "needs": 105,
-        "fitted": 2,
-        "dropped": 2,
+        "visitTotal": 85,
+        "needs": 120,
+        "fitted": 1,
+        "dropped": 8,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=W%C3%BCrzburg%20Hauptbahnhof&destination=W%C3%BCrzburg%20Hauptbahnhof&waypoints=Marktplatz%20and%20Marienkapelle%2C%20W%C3%BCrzburg%7COld%20Main%20Bridge%2C%20W%C3%BCrzburg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=W%C3%BCrzburg%20Hauptbahnhof&destination=W%C3%BCrzburg%20Hauptbahnhof&waypoints=W%C3%BCrzburg%20Residence%2C%20W%C3%BCrzburg%7CMarktplatz%20and%20Marienkapelle%2C%20W%C3%BCrzburg%7COld%20Main%20Bridge%2C%20W%C3%BCrzburg%7CFranconian%20wine%2C%20W%C3%BCrzburg",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=W%C3%BCrzburg%20Hauptbahnhof&destination=W%C3%BCrzburg%20Hauptbahnhof&waypoints=W%C3%BCrzburg%20Residence%2C%20W%C3%BCrzburg",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=W%C3%BCrzburg%20Hauptbahnhof&destination=Marienberg%20Fortress%2C%20W%C3%BCrzburg&waypoints=W%C3%BCrzburg%20Residence%2C%20W%C3%BCrzburg%7CCourt%20Garden%2C%20W%C3%BCrzburg%7CNeum%C3%BCnster%2C%20W%C3%BCrzburg%7CW%C3%BCrzburg%20Cathedral%2C%20W%C3%BCrzburg%7CMarktplatz%20and%20Marienkapelle%2C%20W%C3%BCrzburg%7CJuliusspital%2C%20W%C3%BCrzburg%7COld%20Main%20Bridge%2C%20W%C3%BCrzburg%7CFranconian%20wine%2C%20W%C3%BCrzburg",
         "town": "Würzburg, Germany"
        }
       },
@@ -4987,7 +5199,12 @@
         "Obere Brücke",
         "Old Town Hall",
         "Little Venice",
-        "Schlenkerla"
+        "Schlenkerla",
+        "Bamberg Cathedral",
+        "Alte Hofhaltung",
+        "New Residence rose garden",
+        "Böttingerhaus",
+        "Maximiliansplatz"
        ],
        "base": false,
        "arrIso": "2026-10-02T15:30:00Z",
@@ -5027,21 +5244,16 @@
           "kind": "sight",
           "note": "The bridge the old town hall stands on.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 20,
+          "leaveBy": 30,
+          "extra": false
          },
          {
           "to": "Old Town Hall",
-          "mins": 20,
+          "mins": 1,
           "how": {
-           "mins": 20,
-           "mode": "ride",
-           "line": "907",
-           "vehicle": "BUS",
-           "from": "Bamberg, Bahnhof/Ludwigstr.",
-           "to": "Bamberg ZOB",
-           "walkInstead": 27
+           "mins": 1,
+           "mode": "walk"
           },
           "visit": 25,
           "backFromHere": 20,
@@ -5060,8 +5272,8 @@
           "kind": "sight",
           "note": "Built on an artificial island in the middle of the river, painted all over.",
           "ticket": false,
-          "at": 20,
-          "leaveBy": 45,
+          "at": 31,
+          "leaveBy": 56,
           "extra": false
          },
          {
@@ -5119,17 +5331,157 @@
           "at": null,
           "leaveBy": null,
           "extra": true
+         },
+         {
+          "to": "Bamberg Cathedral",
+          "mins": 6,
+          "how": {
+           "mins": 6,
+           "mode": "walk"
+          },
+          "visit": 45,
+          "backFromHere": 25,
+          "backHow": {
+           "mins": 25,
+           "mode": "ride",
+           "line": "911",
+           "vehicle": "BUS",
+           "from": "Bamberg ZOB",
+           "to": "Bamberg, Bahnhof/Post",
+           "walkInstead": null
+          },
+          "must": true,
+          "lat": 49.89083333,
+          "lon": 10.8825,
+          "kind": "church",
+          "note": "Four towers, and the Bamberg Horseman inside.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Alte Hofhaltung",
+          "mins": 7,
+          "how": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 26,
+          "backHow": {
+           "mins": 26,
+           "mode": "ride",
+           "line": "911",
+           "vehicle": "BUS",
+           "from": "Bamberg ZOB",
+           "to": "Bamberg, Bahnhof/Post",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.89111111,
+          "lon": 10.88138889,
+          "kind": "palace",
+          "note": "Half-timbered courtyard beside the cathedral.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "New Residence rose garden",
+          "mins": 7,
+          "how": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "visit": 40,
+          "backFromHere": 25,
+          "backHow": {
+           "mins": 25,
+           "mode": "ride",
+           "line": "911",
+           "vehicle": "BUS",
+           "from": "Bamberg ZOB",
+           "to": "Bamberg, Bahnhof/Post",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.89166667,
+          "lon": 10.8825,
+          "kind": "nature",
+          "note": "Terrace garden with the best view over the roofs.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Böttingerhaus",
+          "mins": 6,
+          "how": {
+           "mins": 6,
+           "mode": "walk"
+          },
+          "visit": 15,
+          "backFromHere": 24,
+          "backHow": {
+           "mins": 24,
+           "mode": "ride",
+           "line": "911",
+           "vehicle": "BUS",
+           "from": "Bamberg ZOB",
+           "to": "Bamberg, Bahnhof/Post",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.88916667,
+          "lon": 10.88611111,
+          "kind": "sight",
+          "note": "The grandest baroque townhouse in the city.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Maximiliansplatz",
+          "mins": 7,
+          "how": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 14,
+          "backHow": {
+           "mins": 14,
+           "mode": "ride",
+           "line": "902",
+           "vehicle": "BUS",
+           "from": "Bamberg ZOB",
+           "to": "Bamberg, Bahnhof/Brennerstr.",
+           "walkInstead": 25
+          },
+          "must": false,
+          "lat": 49.89166667,
+          "lon": 10.89166667,
+          "kind": "square",
+          "note": "The market square in the lower town, with St Martin's church on it.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
         "back": 20,
-        "walkTotal": 40,
-        "visitTotal": 25,
-        "needs": 65,
-        "fitted": 1,
-        "dropped": 3,
+        "walkTotal": 41,
+        "visitTotal": 35,
+        "needs": 76,
+        "fitted": 2,
+        "dropped": 7,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Bamberg&destination=Bahnhof%20Bamberg&waypoints=Old%20Town%20Hall%2C%20Bamberg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Bamberg&destination=Bahnhof%20Bamberg&waypoints=Obere%20Br%C3%BCcke%2C%20Bamberg%7COld%20Town%20Hall%2C%20Bamberg%7CLittle%20Venice%2C%20Bamberg%7CSchlenkerla%2C%20Bamberg",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Bamberg&destination=Bahnhof%20Bamberg&waypoints=Obere%20Br%C3%BCcke%2C%20Bamberg%7COld%20Town%20Hall%2C%20Bamberg",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Bamberg&destination=Maximiliansplatz%2C%20Bamberg&waypoints=Obere%20Br%C3%BCcke%2C%20Bamberg%7COld%20Town%20Hall%2C%20Bamberg%7CLittle%20Venice%2C%20Bamberg%7CSchlenkerla%2C%20Bamberg%7CBamberg%20Cathedral%2C%20Bamberg%7CAlte%20Hofhaltung%2C%20Bamberg%7CNew%20Residence%20rose%20garden%2C%20Bamberg%7CB%C3%B6ttingerhaus%2C%20Bamberg",
         "town": "Bamberg, Germany"
        }
       },
@@ -5215,7 +5567,9 @@
        "see": [
         "Anger",
         "Fischmarkt",
-        "Krämerbrücke"
+        "Krämerbrücke",
+        "Merchants' Bridge shops",
+        "Domplatz"
        ],
        "base": true,
        "arrIso": "2026-10-02T18:03:00Z",
@@ -5293,17 +5647,68 @@
           "at": 95,
           "leaveBy": 140,
           "extra": false
+         },
+         {
+          "to": "Merchants' Bridge shops",
+          "mins": 1,
+          "how": {
+           "mins": 1,
+           "mode": "walk"
+          },
+          "visit": 40,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 50.9787455,
+          "lon": 11.0307747,
+          "kind": "shop",
+          "note": "Thirty-two houses on the bridge, with workshops in the ground floors.",
+          "ticket": false,
+          "at": 141,
+          "leaveBy": 181,
+          "extra": false
+         },
+         {
+          "to": "Domplatz",
+          "mins": 8,
+          "how": {
+           "mins": 8,
+           "mode": "walk"
+          },
+          "visit": 40,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "ride",
+           "line": "2",
+           "vehicle": "TRAM",
+           "from": "Erfurt, Domplatz Süd",
+           "to": "Erfurt, Hauptbahnhof",
+           "walkInstead": 20
+          },
+          "must": true,
+          "lat": 50.97694444,
+          "lon": 11.02388889,
+          "kind": "square",
+          "note": "Cathedral and St Severi side by side above a huge open square.",
+          "ticket": false,
+          "at": 189,
+          "leaveBy": 229,
+          "extra": false
          }
         ],
-        "back": 15,
-        "walkTotal": 35,
-        "visitTotal": 120,
-        "needs": 155,
-        "fitted": 3,
+        "back": 11,
+        "walkTotal": 40,
+        "visitTotal": 200,
+        "needs": 240,
+        "fitted": 5,
         "dropped": 0,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Anger%2C%20Erfurt%7CFischmarkt%2C%20Erfurt%7CKr%C3%A4merbr%C3%BCcke%2C%20Erfurt",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Anger%2C%20Erfurt%7CFischmarkt%2C%20Erfurt%7CKr%C3%A4merbr%C3%BCcke%2C%20Erfurt",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Anger%2C%20Erfurt%7CFischmarkt%2C%20Erfurt%7CKr%C3%A4merbr%C3%BCcke%2C%20Erfurt%7CMerchants'%20Bridge%20shops%2C%20Erfurt%7CDomplatz%2C%20Erfurt",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Anger%2C%20Erfurt%7CFischmarkt%2C%20Erfurt%7CKr%C3%A4merbr%C3%BCcke%2C%20Erfurt%7CMerchants'%20Bridge%20shops%2C%20Erfurt%7CDomplatz%2C%20Erfurt",
         "town": "Erfurt, Germany"
        }
       }
@@ -5341,83 +5746,62 @@
        "t": null,
        "kind": "see",
        "place": "heidelberg",
-       "title": "Old Bridge",
+       "title": "Heidelberg Castle",
        "ll": [
-        49.41425278,
-        8.70954722
+        49.41,
+        8.716
        ],
-       "sight": "heidelberg/Old Bridge",
+       "sight": "heidelberg/Heidelberg Castle",
        "move": "Take the S7 — 21 min, instead of null on foot.",
        "rode": true,
        "mins": 21,
-       "visit": 30,
-       "say": "1788. The bronze monkey at the end is for holding, and for luck.",
+       "visit": 120,
+       "say": "Red sandstone ruin above the town. Funicular from Kornmarkt.",
        "offset": 21,
-       "until": 51,
-       "ticket": false
-      },
-      {
-       "day": 4,
-       "path": "A",
-       "t": null,
-       "kind": "see",
-       "place": "heidelberg",
-       "title": "Marktplatz and Church of the Holy Spirit",
-       "ll": [
-        49.41222222,
-        8.70944444
-       ],
-       "sight": "heidelberg/Marktplatz and Church of the Holy Spirit",
-       "move": "3 min walk.",
-       "rode": false,
-       "mins": 3,
-       "visit": 30,
-       "say": "Market square church with shops built into its outer walls.",
-       "offset": 54,
-       "until": 84,
-       "ticket": false
-      },
-      {
-       "day": 4,
-       "path": "A",
-       "t": null,
-       "kind": "see",
-       "place": "heidelberg",
-       "title": "Hauptstraße",
-       "ll": [
-        49.4116,
-        8.7055
-       ],
-       "sight": "heidelberg/Hauptstraße",
-       "move": "5 min walk.",
-       "rode": false,
-       "mins": 5,
-       "visit": 60,
-       "say": "1.6 km of pedestrian street, the longest in Germany.",
-       "offset": 89,
-       "until": 149,
-       "ticket": false
-      },
-      {
-       "day": 4,
-       "path": "A",
-       "t": null,
-       "kind": "see",
-       "place": "heidelberg",
-       "title": "Student Prison",
-       "ll": [
-        49.4118,
-        8.7062
-       ],
-       "sight": "heidelberg/Student Prison",
-       "move": "1 min walk.",
-       "rode": false,
-       "mins": 1,
-       "visit": 30,
-       "say": "Where misbehaving students were locked up — and covered the walls in graffiti.",
-       "offset": 150,
-       "until": 180,
+       "until": 141,
        "ticket": true
+      },
+      {
+       "day": 4,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "heidelberg",
+       "title": "The Great Tun",
+       "ll": [
+        49.4105,
+        8.7154
+       ],
+       "sight": "heidelberg/The Great Tun",
+       "move": "2 min walk.",
+       "rode": false,
+       "mins": 2,
+       "visit": 20,
+       "say": "A wine barrel holding 220,000 litres, inside the castle. There is a dance floor on top of it.",
+       "offset": 143,
+       "until": 163,
+       "ticket": false
+      },
+      {
+       "day": 4,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "heidelberg",
+       "title": "German Pharmacy Museum",
+       "ll": [
+        49.4106,
+        8.7149
+       ],
+       "sight": "heidelberg/German Pharmacy Museum",
+       "move": "2 min walk.",
+       "rode": false,
+       "mins": 2,
+       "visit": 45,
+       "say": "Also in the castle, and included — four centuries of jars, stills and alarming remedies.",
+       "offset": 165,
+       "until": 210,
+       "ticket": false
       },
       {
        "day": 4,
@@ -5430,8 +5814,8 @@
         49.4037,
         8.6754
        ],
-       "mins": 18,
-       "say": "18 min back to the station. Aim to be on the platform by 11:55."
+       "mins": 20,
+       "say": "20 min back to the station. Aim to be on the platform by 11:55."
       },
       {
        "day": 4,
@@ -5482,41 +5866,20 @@
        "t": null,
        "kind": "see",
        "place": "wurzburg",
-       "title": "Marktplatz and Marienkapelle",
+       "title": "Würzburg Residence",
        "ll": [
-        49.79477778,
-        9.92958333
+        49.7929,
+        9.9393
        ],
-       "sight": "wurzburg/Marktplatz and Marienkapelle",
-       "move": "Take the 4 — 12 min, instead of 17 on foot.",
+       "sight": "wurzburg/Würzburg Residence",
+       "move": "Take the 471 — 14 min, instead of 21 on foot.",
        "rode": true,
-       "mins": 12,
-       "visit": 30,
-       "say": "Red-and-white Gothic chapel on the market square.",
-       "offset": 12,
-       "until": 42,
-       "ticket": false
-      },
-      {
-       "day": 4,
-       "path": "A",
-       "t": null,
-       "kind": "see",
-       "place": "wurzburg",
-       "title": "Old Main Bridge",
-       "ll": [
-        49.79305556,
-        9.92611111
-       ],
-       "sight": "wurzburg/Old Main Bridge",
-       "move": "7 min walk.",
-       "rode": false,
-       "mins": 7,
-       "visit": 40,
-       "say": "Stone saints along the parapet. People drink wine on it at sunset.",
-       "offset": 49,
-       "until": 89,
-       "ticket": false
+       "mins": 14,
+       "visit": 85,
+       "say": "UNESCO. Tiepolo's staircase fresco is the largest in the world.",
+       "offset": 14,
+       "until": 99,
+       "ticket": true
       },
       {
        "day": 4,
@@ -5529,8 +5892,8 @@
         49.8017,
         9.9356
        ],
-       "mins": 16,
-       "say": "16 min back to the station. Aim to be on the platform by 16:35."
+       "mins": 21,
+       "say": "21 min back to the station. Aim to be on the platform by 16:35."
       },
       {
        "day": 4,
@@ -5581,19 +5944,40 @@
        "t": null,
        "kind": "see",
        "place": "bamberg",
+       "title": "Obere Brücke",
+       "ll": [
+        49.89166667,
+        10.88694444
+       ],
+       "sight": "bamberg/Obere Brücke",
+       "move": "Take the 907 — 20 min, instead of 27 on foot.",
+       "rode": true,
+       "mins": 20,
+       "visit": 10,
+       "say": "The bridge the old town hall stands on.",
+       "offset": 20,
+       "until": 30,
+       "ticket": false
+      },
+      {
+       "day": 4,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "bamberg",
        "title": "Old Town Hall",
        "ll": [
         49.89166667,
         10.88694444
        ],
        "sight": "bamberg/Old Town Hall",
-       "move": "Take the 907 — 20 min, instead of 27 on foot.",
-       "rode": true,
-       "mins": 20,
+       "move": "1 min walk.",
+       "rode": false,
+       "mins": 1,
        "visit": 25,
        "say": "Built on an artificial island in the middle of the river, painted all over.",
-       "offset": 20,
-       "until": 45,
+       "offset": 31,
+       "until": 56,
        "ticket": false
       },
       {
@@ -5714,6 +6098,48 @@
        "say": "A bridge with houses on it, lived in continuously since 1325.",
        "offset": 95,
        "until": 140,
+       "ticket": false
+      },
+      {
+       "day": 4,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "erfurt",
+       "title": "Merchants' Bridge shops",
+       "ll": [
+        50.9787455,
+        11.0307747
+       ],
+       "sight": "erfurt/Merchants' Bridge shops",
+       "move": "1 min walk.",
+       "rode": false,
+       "mins": 1,
+       "visit": 40,
+       "say": "Thirty-two houses on the bridge, with workshops in the ground floors.",
+       "offset": 141,
+       "until": 181,
+       "ticket": false
+      },
+      {
+       "day": 4,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "erfurt",
+       "title": "Domplatz",
+       "ll": [
+        50.97694444,
+        11.02388889
+       ],
+       "sight": "erfurt/Domplatz",
+       "move": "8 min walk.",
+       "rode": false,
+       "mins": 8,
+       "visit": 40,
+       "say": "Cathedral and St Severi side by side above a huge open square.",
+       "offset": 189,
+       "until": 229,
        "ticket": false
       },
       {
@@ -6055,15 +6481,15 @@
           "kind": "square",
           "note": "The Goethe and Schiller statue stands in front of the theatre.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 60,
+          "leaveBy": 80,
+          "extra": false
          },
          {
           "to": "Cranach House",
-          "mins": 2,
+          "mins": 7,
           "how": {
-           "mins": 2,
+           "mins": 7,
            "mode": "walk"
           },
           "visit": 20,
@@ -6083,19 +6509,19 @@
           "kind": "sight",
           "note": "The painter's last home, on the market square.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 87,
+          "leaveBy": 107,
+          "extra": false
          }
         ],
-        "back": 22,
-        "walkTotal": 45,
-        "visitTotal": 30,
-        "needs": 75,
-        "fitted": 1,
-        "dropped": 3,
+        "back": 23,
+        "walkTotal": 60,
+        "visitTotal": 70,
+        "needs": 130,
+        "fitted": 3,
+        "dropped": 1,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CTheaterplatz%2C%20Weimar%7CCranach%20House%2C%20Weimar",
         "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CGoethe's%20House%2C%20Weimar%7CTheaterplatz%2C%20Weimar%7CCranach%20House%2C%20Weimar",
         "town": "Weimar, Germany"
        }
@@ -7010,6 +7436,48 @@
       {
        "day": 5,
        "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "weimar",
+       "title": "Theaterplatz",
+       "ll": [
+        50.97956111,
+        11.32468333
+       ],
+       "sight": "weimar/Theaterplatz",
+       "move": "7 min walk.",
+       "rode": false,
+       "mins": 7,
+       "visit": 20,
+       "say": "The Goethe and Schiller statue stands in front of the theatre.",
+       "offset": 60,
+       "until": 80,
+       "ticket": false
+      },
+      {
+       "day": 5,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "weimar",
+       "title": "Cranach House",
+       "ll": [
+        50.97916667,
+        11.33
+       ],
+       "sight": "weimar/Cranach House",
+       "move": "7 min walk.",
+       "rode": false,
+       "mins": 7,
+       "visit": 20,
+       "say": "The painter's last home, on the market square.",
+       "offset": 87,
+       "until": 107,
+       "ticket": false
+      },
+      {
+       "day": 5,
+       "path": "A",
        "t": "11:52",
        "kind": "back",
        "place": "weimar",
@@ -7018,8 +7486,8 @@
         50.993,
         11.3253
        ],
-       "mins": 22,
-       "say": "22 min back to the station. Aim to be on the platform by 11:52."
+       "mins": 23,
+       "say": "23 min back to the station. Aim to be on the platform by 11:52."
       },
       {
        "day": 5,
@@ -7762,15 +8230,15 @@
           "kind": "square",
           "note": "The Goethe and Schiller statue stands in front of the theatre.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 60,
+          "leaveBy": 80,
+          "extra": false
          },
          {
           "to": "Park an der Ilm",
-          "mins": 13,
+          "mins": 18,
           "how": {
-           "mins": 13,
+           "mins": 18,
            "mode": "walk"
           },
           "visit": 75,
@@ -7795,14 +8263,14 @@
           "extra": true
          }
         ],
-        "back": 22,
-        "walkTotal": 45,
-        "visitTotal": 30,
-        "needs": 75,
-        "fitted": 1,
-        "dropped": 3,
+        "back": 20,
+        "walkTotal": 50,
+        "visitTotal": 50,
+        "needs": 100,
+        "fitted": 2,
+        "dropped": 2,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CTheaterplatz%2C%20Weimar",
         "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CGoethe's%20House%2C%20Weimar%7CTheaterplatz%2C%20Weimar%7CPark%20an%20der%20Ilm%2C%20Weimar",
         "town": "Weimar, Germany"
        }
@@ -8218,6 +8686,27 @@
       {
        "day": 5,
        "path": "B",
+       "t": null,
+       "kind": "see",
+       "place": "weimar",
+       "title": "Theaterplatz",
+       "ll": [
+        50.97956111,
+        11.32468333
+       ],
+       "sight": "weimar/Theaterplatz",
+       "move": "7 min walk.",
+       "rode": false,
+       "mins": 7,
+       "visit": 20,
+       "say": "The Goethe and Schiller statue stands in front of the theatre.",
+       "offset": 60,
+       "until": 80,
+       "ticket": false
+      },
+      {
+       "day": 5,
+       "path": "B",
        "t": "12:52",
        "kind": "back",
        "place": "weimar",
@@ -8226,8 +8715,8 @@
         50.993,
         11.3253
        ],
-       "mins": 22,
-       "say": "22 min back to the station. Aim to be on the platform by 12:52."
+       "mins": 20,
+       "say": "20 min back to the station. Aim to be on the platform by 12:52."
       },
       {
        "day": 5,
@@ -8676,8 +9165,8 @@
    "src": "pinned",
    "km": 1.33,
    "wiki": "https://de.wikipedia.org/wiki/Halle_(Saale)",
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg",
-   "photoFile": "Halle (Saale), Marktplatz, Roter Turm 20170718 002.jpg",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg",
+   "photoFile": "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg",
    "about": ""
   },
   "wittenberg": {
@@ -10996,12 +11485,12 @@
    "place": "wurzburg",
    "name": "Würzburg Residence",
    "note": "UNESCO. Tiepolo's staircase fresco is the largest in the world.",
-   "mins": 90,
+   "mins": 85,
    "kind": "palace",
    "ticket": true,
    "indoor": true,
    "closed": null,
-   "must": false,
+   "must": true,
    "lat": 49.7929,
    "lon": 9.9393,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aerial_image_of_W%C3%BCrzburg_Residence_%28view_from_the_east%29.jpg/640px-Aerial_image_of_W%C3%BCrzburg_Residence_%28view_from_the_east%29.jpg",
@@ -11019,7 +11508,7 @@
    "ticket": false,
    "indoor": false,
    "closed": null,
-   "must": false,
+   "must": true,
    "lat": 49.79305556,
    "lon": 9.92611111,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Panorama_Alte_Mainbr%C3%BCcke_W%C3%BCrzburg.jpg/640px-Panorama_Alte_Mainbr%C3%BCcke_W%C3%BCrzburg.jpg",
@@ -11086,7 +11575,7 @@
    "place": "wurzburg",
    "name": "Court Garden",
    "note": "Behind the Residence, free to walk into.",
-   "mins": 30,
+   "mins": 20,
    "kind": "nature",
    "ticket": false,
    "indoor": false,
@@ -11099,6 +11588,60 @@
    "photoFile": "Würzburg, Residenz, Hofgarten -- 2018 -- 0181.jpg",
    "wiki": "https://de.wikipedia.org/wiki/W%C3%BCrzburger_Residenz",
    "about": ""
+  },
+  "wurzburg/Neumünster": {
+   "place": "wurzburg",
+   "name": "Neumünster",
+   "note": "Round red-and-white baroque front beside the cathedral, over the grave of St Kilian.",
+   "mins": 25,
+   "kind": "church",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": false,
+   "lat": 49.79383056,
+   "lon": 9.93157778,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Neum%C3%BCnster_W%C3%BCrzburg_facade_-_DSC02776.JPG/640px-Neum%C3%BCnster_W%C3%BCrzburg_facade_-_DSC02776.JPG",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Neum%C3%BCnster_W%C3%BCrzburg_facade_-_DSC02776.JPG/1000px-Neum%C3%BCnster_W%C3%BCrzburg_facade_-_DSC02776.JPG",
+   "photoFile": "Neumünster_Würzburg_facade_-_DSC02776.JPG",
+   "wiki": "https://de.wikipedia.org/wiki/Neum%C3%BCnster_(W%C3%BCrzburg)",
+   "about": ""
+  },
+  "wurzburg/Juliusspital": {
+   "place": "wurzburg",
+   "name": "Juliusspital",
+   "note": "A hospital that owns vineyards and has done since 1576. The courtyard and the wine bar are open to anyone.",
+   "mins": 45,
+   "kind": "food",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 49.797583,
+   "lon": 9.931444,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Juliusspital_Stiftung_W%C3%BCrzburg_04.JPG/640px-Juliusspital_Stiftung_W%C3%BCrzburg_04.JPG",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Juliusspital_Stiftung_W%C3%BCrzburg_04.JPG/1000px-Juliusspital_Stiftung_W%C3%BCrzburg_04.JPG",
+   "photoFile": "Juliusspital_Stiftung_Würzburg_04.JPG",
+   "wiki": "https://de.wikipedia.org/wiki/Stiftung_Juliusspital_W%C3%BCrzburg",
+   "about": ""
+  },
+  "wurzburg/Käppele": {
+   "place": "wurzburg",
+   "name": "Käppele",
+   "note": "Pilgrimage chapel above the vineyards, up 247 steps past the Stations of the Cross.",
+   "mins": 75,
+   "kind": "view",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 49.784311,
+   "lon": 9.9219,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Kaeppele_wuerzburg_festungsfoto.jpg/640px-Kaeppele_wuerzburg_festungsfoto.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Kaeppele_wuerzburg_festungsfoto.jpg/1000px-Kaeppele_wuerzburg_festungsfoto.jpg",
+   "photoFile": "Kaeppele_wuerzburg_festungsfoto.jpg",
+   "wiki": "https://en.wikipedia.org/wiki/K%C3%A4ppele",
+   "about": "The Käppele is the commonly used name for the Wallfahrtskirche Mariä Heimsuchung, located on a hill above Würzburg, in Germany. It was built following plans by Balthasar Neumann in the mid-18th century in Rococo style."
   },
   "wurzburg/Franconian wine": {
    "place": "wurzburg",
@@ -11127,7 +11670,7 @@
    "ticket": true,
    "indoor": false,
    "closed": null,
-   "must": false,
+   "must": true,
    "lat": 49.41,
    "lon": 8.716,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Heidelberg-2726936.jpg/640px-Heidelberg-2726936.jpg",
@@ -11145,7 +11688,7 @@
    "ticket": false,
    "indoor": false,
    "closed": null,
-   "must": false,
+   "must": true,
    "lat": 49.415,
    "lon": 8.70027778,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/HeidelbergPhilosophenweg.JPG/640px-HeidelbergPhilosophenweg.JPG",
@@ -11226,6 +11769,78 @@
    "wiki": "https://de.wikipedia.org/wiki/Karzer",
    "about": ""
   },
+  "heidelberg/The Great Tun": {
+   "place": "heidelberg",
+   "name": "The Great Tun",
+   "note": "A wine barrel holding 220,000 litres, inside the castle. There is a dance floor on top of it.",
+   "mins": 20,
+   "kind": "sight",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": true,
+   "lat": 49.4105,
+   "lon": 8.7154,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Walpergen_Gro%C3%9Fes_Heidelberger_Fass_1753.jpg/640px-Walpergen_Gro%C3%9Fes_Heidelberger_Fass_1753.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Walpergen_Gro%C3%9Fes_Heidelberger_Fass_1753.jpg/1000px-Walpergen_Gro%C3%9Fes_Heidelberger_Fass_1753.jpg",
+   "photoFile": "Walpergen Großes Heidelberger Fass 1753.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Heidelberger_Schloss",
+   "about": ""
+  },
+  "heidelberg/German Pharmacy Museum": {
+   "place": "heidelberg",
+   "name": "German Pharmacy Museum",
+   "note": "Also in the castle, and included — four centuries of jars, stills and alarming remedies.",
+   "mins": 45,
+   "kind": "museum",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": false,
+   "lat": 49.4106,
+   "lon": 8.7149,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Deutsches_Apotheken-Museum%2C_Offizin_aus_Schwarzach_%281._H%C3%A4lfte_18._Jh.%29.jpg/640px-Deutsches_Apotheken-Museum%2C_Offizin_aus_Schwarzach_%281._H%C3%A4lfte_18._Jh.%29.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Deutsches_Apotheken-Museum%2C_Offizin_aus_Schwarzach_%281._H%C3%A4lfte_18._Jh.%29.jpg/1000px-Deutsches_Apotheken-Museum%2C_Offizin_aus_Schwarzach_%281._H%C3%A4lfte_18._Jh.%29.jpg",
+   "photoFile": "Deutsches_Apotheken-Museum,_Offizin_aus_Schwarzach_(1._Hälfte_18._Jh.).jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Deutsches_Apotheken-Museum",
+   "about": ""
+  },
+  "heidelberg/Jesuitenkirche": {
+   "place": "heidelberg",
+   "name": "Jesuitenkirche",
+   "note": "White and enormous inside, a block off the Hauptstraße.",
+   "mins": 25,
+   "kind": "church",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": false,
+   "lat": 49.41111111,
+   "lon": 8.70777778,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Heidelberger-Jesuitenkirche.jpg/640px-Heidelberger-Jesuitenkirche.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Heidelberger-Jesuitenkirche.jpg/1000px-Heidelberger-Jesuitenkirche.jpg",
+   "photoFile": "Heidelberger-Jesuitenkirche.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Jesuitenkirche_(Heidelberg)",
+   "about": ""
+  },
+  "heidelberg/University Square": {
+   "place": "heidelberg",
+   "name": "University Square",
+   "note": "The old university, the Lion Fountain, and students everywhere since 1386.",
+   "mins": 25,
+   "kind": "square",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 49.4112,
+   "lon": 8.7058,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Heidelberg%2C_Alte_Universit%C3%A4t_v_S%2C_5.jpeg/640px-Heidelberg%2C_Alte_Universit%C3%A4t_v_S%2C_5.jpeg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Heidelberg%2C_Alte_Universit%C3%A4t_v_S%2C_5.jpeg/1000px-Heidelberg%2C_Alte_Universit%C3%A4t_v_S%2C_5.jpeg",
+   "photoFile": "Heidelberg,_Alte_Universität_v_S,_5.jpeg",
+   "wiki": "https://de.wikipedia.org/wiki/Alte_Universit%C3%A4t_(Heidelberg)",
+   "about": ""
+  },
   "heidelberg/Kornmarkt": {
    "place": "heidelberg",
    "name": "Kornmarkt",
@@ -11272,8 +11887,8 @@
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 49.4103,
+   "lon": 8.7133,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg/640px-Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg/1000px-Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg",
    "photoFile": "Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg",
@@ -13432,7 +14047,7 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "© Ra Boe / Wikipedia"
   },
-  "Halle (Saale), Marktplatz, Roter Turm 20170718 002.jpg": {
+  "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Tilman2007"
   },
@@ -13832,10 +14447,6 @@
    "lic": "CC BY-SA 2.0 de",
    "by": "jailbird"
   },
-  "Heidelberg Germany 10082005 Square1.jpg": {
-   "lic": "CC BY-SA 2.5",
-   "by": "unknown"
-  },
   "Bamberg-Schlenkerla1-Asio.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "No machine-readable author provided. Asio otus assumed (based on copyright claims)."
@@ -13863,10 +14474,6 @@
   "Bamberg-Alte Hofhaltung-Fassade.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Reinhard Kirchner"
-  },
-  "Karlstor Heidelberg Germany.JPG": {
-   "lic": "CC BY 3.0",
-   "by": "Solaris2006"
   },
   "Rothenburg BW 25.JPG": {
    "lic": "Public domain",
@@ -13908,9 +14515,17 @@
    "lic": "CC BY 3.0",
    "by": "KaterBegemot"
   },
+  "Kaeppele wuerzburg festungsfoto.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Lukas M. (Benutzer:Renredam)"
+  },
   "Heidelberg Karzer 01.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Llez"
+  },
+  "Neumünster Würzburg facade - DSC02776.JPG": {
+   "lic": "CC0",
+   "by": "Daderot"
   },
   "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13932,13 +14547,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
   },
-  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Alexander Hoernigk"
-  },
-  "Ulmer Münster-Münsterplatz (cropped).jpg": {
+  "Juliusspital Stiftung Würzburg 04.JPG": {
    "lic": "CC BY-SA 3.0",
-   "by": "Martin Kraft"
+   "by": "Hajotthu"
+  },
+  "Walpergen Großes Heidelberger Fass 1753.jpg": {
+   "lic": "Public domain",
+   "by": "Peter Friedrich de Walpergen"
   },
   "Handwerkerhof an Weihnachten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13988,29 +14603,25 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
+  "Heidelberg Germany 10082005 Square1.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "unknown"
+  },
+  "Heidelberger-Jesuitenkirche.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Reinhard Wolf, Talstraße 13, 63128 Dietzenbach. (selbst fotografiert); User Pumuckel42 on "
+  },
   "LuftbildPetersberg.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "TomKidd"
   },
-  "Augustinerkirche Erfurt.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Lukas Götz"
-  },
-  "Weimar Wittumspalais.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Markv at Dutch Wikipedia"
+  "Karlstor Heidelberg Germany.JPG": {
+   "lic": "CC BY 3.0",
+   "by": "Solaris2006"
   },
   "ESNeuesRathaus.jpg": {
    "lic": "Public domain",
    "by": "--Xocolatl 20:50, 27 December 2007 (UTC)"
-  },
-  "Alte Synagoge Erfurt.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Michael Sander"
-  },
-  "Cranachhaus in Weimar.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Most Curious"
   },
   "Eslebt esslingen speyrer zehnthof kessler.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -14028,10 +14639,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "MOs810"
   },
-  "Goethe Gartenhaus Kraus.jpg": {
-   "lic": "Public domain",
-   "by": "The original uploader was Georg Jäger at German Wikipedia."
-  },
   "Ägidienkirche Erfurt.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Michael Sander"
@@ -14039,10 +14646,6 @@
   "ES Schelztorturm Zoom.jpg": {
    "lic": "CC0",
    "by": "Xocolatl (talk) 22:55, 5 September 2011 (UTC)"
-  },
-  "Egapark Erfurt Festplatz.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Grimba-Photo"
   },
   "Esslingen - Stadtkirche St. Dionys 2012 (aka).jpg": {
    "lic": "CC BY-SA 2.5",
@@ -14076,7 +14679,11 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "Christian Wolf (www.c-w-design.de)"
   },
-  "MK38365-69 Fischmarkt (Erfurt).jpg": {
+  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Alexander Hoernigk"
+  },
+  "Ulmer Münster-Münsterplatz (cropped).jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Martin Kraft"
   },
@@ -14096,6 +14703,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Uoaei1"
   },
+  "Deutsches Apotheken-Museum, Offizin aus Schwarzach (1. Hälfte 18. Jh.).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "DAM Heidelberg TS"
+  },
   "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
@@ -14107,6 +14718,10 @@
   "Stadtschloss Fulda (Südwestansicht).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Jörg Braukmann"
+  },
+  "Heidelberg, Alte Universität v S, 5.jpeg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Renardo la vulpo"
   },
   "Thuringia Eisenach asv2020-07 img14 Bach Museum.jpg": {
    "lic": "FAL",
@@ -14152,6 +14767,14 @@
    "lic": "CC BY-SA 2.5",
    "by": "Andreas Trepte"
   },
+  "Augustinerkirche Erfurt.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Lukas Götz"
+  },
+  "Weimar Wittumspalais.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Markv at Dutch Wikipedia"
+  },
   "Naumburg stwenzel.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Christian Bier"
@@ -14164,6 +14787,14 @@
    "lic": "CC BY-SA 3.0",
    "by": "© R.Möhler"
   },
+  "Alte Synagoge Erfurt.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Michael Sander"
+  },
+  "Cranachhaus in Weimar.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Most Curious"
+  },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Denkhenk"
@@ -14172,33 +14803,25 @@
    "lic": "Public domain",
    "by": "Axel Hindemith"
   },
-  "Halle Händelhaus 2012.jpg": {
+  "Goethe Gartenhaus Kraus.jpg": {
+   "lic": "Public domain",
+   "by": "The original uploader was Georg Jäger at German Wikipedia."
+  },
+  "Egapark Erfurt Festplatz.jpg": {
    "lic": "CC BY 3.0",
-   "by": "Photo: Andreas Praefcke"
+   "by": "Grimba-Photo"
   },
   "Wernigerode später Frühling im Lustgartens von Wernigerode im Harz Foto 2005 Wolfgang Pehlemann Wiesbaden PICT0037.jpg": {
    "lic": "CC BY-SA 3.0 de",
    "by": "Wolfgang Pehlemann Wiesbaden Germany"
   },
-  "20150902-BurgGiebichenstein.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Voigt"
-  },
-  "Stadtkirche Wittenberg 09 2015.JPG": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Concord"
-  },
-  "Augusteum - Lutherhaus Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
+  "MK38365-69 Fischmarkt (Erfurt).jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Martin Kraft"
   },
   "Roter Turm Halle 2009.jpg": {
    "lic": "CC BY-SA 3.0 de",
    "by": "de:Benutzer:OmiTs"
-  },
-  "Halloren-Winter-Edition-3.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "WiseWoman"
   },
   "00 4092 Wernigerode - Harzquerbahn.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14248,10 +14871,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "H.Helmlechner"
   },
-  "Moritzburg Halle Hauptzuweg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Barnos"
-  },
   "Schloss Wernigerode Luftbild 2.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
@@ -14263,10 +14882,6 @@
   "Halberstadt, Fischmarkt und Rathaus (Rückseite).jpg": {
    "lic": "CC BY 4.0",
    "by": "Dguendel"
-  },
-  "Schlosskirche Wittenberg Luftbild 2024 Toni Klemm.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Toniklemm"
   },
   "Halle(Saale) Marktkirche asv2024-04.jpg": {
    "lic": "FAL",
@@ -14328,6 +14943,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Thomas Wolf, www.foto-tw.de"
   },
+  "Halle Händelhaus 2012.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Photo: Andreas Praefcke"
+  },
   "BerlinBrandenburgerTor1985.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Joergsam"
@@ -14352,9 +14971,25 @@
    "lic": "CC BY 3.0 de",
    "by": "Ansgar Koreng"
   },
+  "20150902-BurgGiebichenstein.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Voigt"
+  },
+  "Stadtkirche Wittenberg 09 2015.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Concord"
+  },
+  "Augusteum - Lutherhaus Wittenberg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
+  },
   "Luthereiche in Wittenberg.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Markus Sturzbecher"
+  },
+  "Halloren-Winter-Edition-3.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "WiseWoman"
   },
   "Lutherstadt Wittenberg 09-2016 photo10.jpg": {
    "lic": "FAL",
@@ -14384,6 +15019,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
   },
+  "Moritzburg Halle Hauptzuweg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Barnos"
+  },
   "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
    "lic": "FAL",
    "by": "A.Savin"
@@ -14403,6 +15042,10 @@
   "2023 Berliner Dom - Westfassade -- 01.jpg": {
    "lic": "CC BY 4.0",
    "by": "Chainwit."
+  },
+  "Schlosskirche Wittenberg Luftbild 2024 Toni Klemm.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Toniklemm"
   },
   "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
    "lic": "CC BY-SA 4.0",

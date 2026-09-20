@@ -1800,6 +1800,51 @@
    "file": "Würzburg, Residenz, Hofgarten -- 2018 -- 0181.jpg",
    "extract": "Die Würzburger Residenz ist der ehemalige Sitz der Fürstbischöfe in der bayerischen Stadt Würzburg. Die barocke Dreiflügelanlage wurde in den Jahren 1720 bis 1780 im Auftrag von Johann Philipp Franz und Friedrich Karl von Schönborn nach Entwurf von Balthasar N"
   },
+  "wurzburg/Neumünster": {
+   "ok": true,
+   "w": "Neumünster (Würzburg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Neumünster (Würzburg)",
+   "url": "https://de.wikipedia.org/wiki/Neum%C3%BCnster_(W%C3%BCrzburg)",
+   "lat": 49.79383056,
+   "lon": 9.93157778,
+   "wd": "Q881050",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Neum%C3%BCnster_W%C3%BCrzburg_facade_-_DSC02776.JPG/640px-Neum%C3%BCnster_W%C3%BCrzburg_facade_-_DSC02776.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Neum%C3%BCnster_W%C3%BCrzburg_facade_-_DSC02776.JPG/1000px-Neum%C3%BCnster_W%C3%BCrzburg_facade_-_DSC02776.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Neumünster_Würzburg_facade_-_DSC02776.JPG",
+   "extract": ""
+  },
+  "wurzburg/Juliusspital": {
+   "ok": true,
+   "w": "Juliusspital",
+   "ct": null,
+   "lang": "de",
+   "title": "Stiftung Juliusspital Würzburg",
+   "url": "https://de.wikipedia.org/wiki/Stiftung_Juliusspital_W%C3%BCrzburg",
+   "lat": 49.797583,
+   "lon": 9.931444,
+   "wd": "Q2349038",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Juliusspital_Stiftung_W%C3%BCrzburg_04.JPG/640px-Juliusspital_Stiftung_W%C3%BCrzburg_04.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Juliusspital_Stiftung_W%C3%BCrzburg_04.JPG/1000px-Juliusspital_Stiftung_W%C3%BCrzburg_04.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Juliusspital_Stiftung_Würzburg_04.JPG",
+   "extract": ""
+  },
+  "wurzburg/Käppele": {
+   "ok": true,
+   "w": "Käppele",
+   "ct": null,
+   "lang": "en",
+   "title": "Käppele",
+   "url": "https://en.wikipedia.org/wiki/K%C3%A4ppele",
+   "lat": 49.784311,
+   "lon": 9.9219,
+   "wd": "Q1795397",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Kaeppele_wuerzburg_festungsfoto.jpg/640px-Kaeppele_wuerzburg_festungsfoto.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Kaeppele_wuerzburg_festungsfoto.jpg/1000px-Kaeppele_wuerzburg_festungsfoto.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Kaeppele_wuerzburg_festungsfoto.jpg",
+   "extract": "The Käppele is the commonly used name for the Wallfahrtskirche Mariä Heimsuchung, located on a hill above Würzburg, in Germany. It was built following plans by Balthasar Neumann in the mid-18th century in Rococo style."
+  },
   "wurzburg/Franconian wine": {
    "ok": true,
    "w": "Bocksbeutel",
@@ -1903,6 +1948,66 @@
    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Heidelberg_Karzer_01.JPG/640px-Heidelberg_Karzer_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Heidelberg_Karzer_01.JPG/1000px-Heidelberg_Karzer_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "file": "Heidelberg Karzer 01.JPG",
+   "extract": ""
+  },
+  "heidelberg/The Great Tun": {
+   "ok": true,
+   "w": "Heidelberger Schloss",
+   "ct": "Großes Fass Heidelberger Schloss",
+   "lang": "de",
+   "title": "Heidelberger Schloss",
+   "url": "https://de.wikipedia.org/wiki/Heidelberger_Schloss",
+   "lat": 49.41,
+   "lon": 8.716,
+   "wd": "Q327265",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Walpergen_Gro%C3%9Fes_Heidelberger_Fass_1753.jpg/640px-Walpergen_Gro%C3%9Fes_Heidelberger_Fass_1753.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Walpergen_Gro%C3%9Fes_Heidelberger_Fass_1753.jpg/1000px-Walpergen_Gro%C3%9Fes_Heidelberger_Fass_1753.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Walpergen Großes Heidelberger Fass 1753.jpg",
+   "extract": ""
+  },
+  "heidelberg/German Pharmacy Museum": {
+   "ok": true,
+   "w": "Deutsches Apotheken-Museum",
+   "ct": null,
+   "lang": "de",
+   "title": "Deutsches Apotheken-Museum",
+   "url": "https://de.wikipedia.org/wiki/Deutsches_Apotheken-Museum",
+   "lat": 49.41112,
+   "lon": 8.71538,
+   "wd": "Q1205535",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Deutsches_Apotheken-Museum%2C_Offizin_aus_Schwarzach_%281._H%C3%A4lfte_18._Jh.%29.jpg/640px-Deutsches_Apotheken-Museum%2C_Offizin_aus_Schwarzach_%281._H%C3%A4lfte_18._Jh.%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Deutsches_Apotheken-Museum%2C_Offizin_aus_Schwarzach_%281._H%C3%A4lfte_18._Jh.%29.jpg/1000px-Deutsches_Apotheken-Museum%2C_Offizin_aus_Schwarzach_%281._H%C3%A4lfte_18._Jh.%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Deutsches_Apotheken-Museum,_Offizin_aus_Schwarzach_(1._Hälfte_18._Jh.).jpg",
+   "extract": ""
+  },
+  "heidelberg/Jesuitenkirche": {
+   "ok": true,
+   "w": "Jesuitenkirche (Heidelberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Jesuitenkirche (Heidelberg)",
+   "url": "https://de.wikipedia.org/wiki/Jesuitenkirche_(Heidelberg)",
+   "lat": 49.41111111,
+   "lon": 8.70777778,
+   "wd": "Q884093",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Heidelberger-Jesuitenkirche.jpg/640px-Heidelberger-Jesuitenkirche.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Heidelberger-Jesuitenkirche.jpg/1000px-Heidelberger-Jesuitenkirche.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Heidelberger-Jesuitenkirche.jpg",
+   "extract": ""
+  },
+  "heidelberg/University Square": {
+   "ok": true,
+   "w": "Alte Universität (Heidelberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Alte Universität (Heidelberg)",
+   "url": "https://de.wikipedia.org/wiki/Alte_Universit%C3%A4t_(Heidelberg)",
+   "lat": 49.41111111,
+   "lon": 8.70611111,
+   "wd": "Q436344",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Heidelberg%2C_Alte_Universit%C3%A4t_v_S%2C_5.jpeg/640px-Heidelberg%2C_Alte_Universit%C3%A4t_v_S%2C_5.jpeg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Heidelberg%2C_Alte_Universit%C3%A4t_v_S%2C_5.jpeg/1000px-Heidelberg%2C_Alte_Universit%C3%A4t_v_S%2C_5.jpeg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Heidelberg,_Alte_Universität_v_S,_5.jpeg",
    "extract": ""
   },
   "heidelberg/Kornmarkt": {
@@ -3942,9 +4047,9 @@
    "lat": 51.48277778,
    "lon": 11.97,
    "wd": "Q2814",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Halle (Saale), Marktplatz, Roter Turm 20170718 002.jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg",
    "extract": ""
   },
   "wittenberg": {
@@ -4262,7 +4367,7 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "© Ra Boe / Wikipedia"
   },
-  "Halle (Saale), Marktplatz, Roter Turm 20170718 002.jpg": {
+  "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Tilman2007"
   },
@@ -4662,10 +4767,6 @@
    "lic": "CC BY-SA 2.0 de",
    "by": "jailbird"
   },
-  "Heidelberg Germany 10082005 Square1.jpg": {
-   "lic": "CC BY-SA 2.5",
-   "by": "unknown"
-  },
   "Bamberg-Schlenkerla1-Asio.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "No machine-readable author provided. Asio otus assumed (based on copyright claims)."
@@ -4693,10 +4794,6 @@
   "Bamberg-Alte Hofhaltung-Fassade.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Reinhard Kirchner"
-  },
-  "Karlstor Heidelberg Germany.JPG": {
-   "lic": "CC BY 3.0",
-   "by": "Solaris2006"
   },
   "Rothenburg BW 25.JPG": {
    "lic": "Public domain",
@@ -4738,9 +4835,17 @@
    "lic": "CC BY 3.0",
    "by": "KaterBegemot"
   },
+  "Kaeppele wuerzburg festungsfoto.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Lukas M. (Benutzer:Renredam)"
+  },
   "Heidelberg Karzer 01.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Llez"
+  },
+  "Neumünster Würzburg facade - DSC02776.JPG": {
+   "lic": "CC0",
+   "by": "Daderot"
   },
   "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4762,13 +4867,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
   },
-  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Alexander Hoernigk"
-  },
-  "Ulmer Münster-Münsterplatz (cropped).jpg": {
+  "Juliusspital Stiftung Würzburg 04.JPG": {
    "lic": "CC BY-SA 3.0",
-   "by": "Martin Kraft"
+   "by": "Hajotthu"
+  },
+  "Walpergen Großes Heidelberger Fass 1753.jpg": {
+   "lic": "Public domain",
+   "by": "Peter Friedrich de Walpergen"
   },
   "Handwerkerhof an Weihnachten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4818,29 +4923,25 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
+  "Heidelberg Germany 10082005 Square1.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "unknown"
+  },
+  "Heidelberger-Jesuitenkirche.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Reinhard Wolf, Talstraße 13, 63128 Dietzenbach. (selbst fotografiert); User Pumuckel42 on "
+  },
   "LuftbildPetersberg.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "TomKidd"
   },
-  "Augustinerkirche Erfurt.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Lukas Götz"
-  },
-  "Weimar Wittumspalais.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Markv at Dutch Wikipedia"
+  "Karlstor Heidelberg Germany.JPG": {
+   "lic": "CC BY 3.0",
+   "by": "Solaris2006"
   },
   "ESNeuesRathaus.jpg": {
    "lic": "Public domain",
    "by": "--Xocolatl 20:50, 27 December 2007 (UTC)"
-  },
-  "Alte Synagoge Erfurt.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Michael Sander"
-  },
-  "Cranachhaus in Weimar.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Most Curious"
   },
   "Eslebt esslingen speyrer zehnthof kessler.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -4858,10 +4959,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "MOs810"
   },
-  "Goethe Gartenhaus Kraus.jpg": {
-   "lic": "Public domain",
-   "by": "The original uploader was Georg Jäger at German Wikipedia."
-  },
   "Ägidienkirche Erfurt.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Michael Sander"
@@ -4869,10 +4966,6 @@
   "ES Schelztorturm Zoom.jpg": {
    "lic": "CC0",
    "by": "Xocolatl (talk) 22:55, 5 September 2011 (UTC)"
-  },
-  "Egapark Erfurt Festplatz.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Grimba-Photo"
   },
   "Esslingen - Stadtkirche St. Dionys 2012 (aka).jpg": {
    "lic": "CC BY-SA 2.5",
@@ -4906,7 +4999,11 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "Christian Wolf (www.c-w-design.de)"
   },
-  "MK38365-69 Fischmarkt (Erfurt).jpg": {
+  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Alexander Hoernigk"
+  },
+  "Ulmer Münster-Münsterplatz (cropped).jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Martin Kraft"
   },
@@ -4926,6 +5023,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Uoaei1"
   },
+  "Deutsches Apotheken-Museum, Offizin aus Schwarzach (1. Hälfte 18. Jh.).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "DAM Heidelberg TS"
+  },
   "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
@@ -4937,6 +5038,10 @@
   "Stadtschloss Fulda (Südwestansicht).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Jörg Braukmann"
+  },
+  "Heidelberg, Alte Universität v S, 5.jpeg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Renardo la vulpo"
   },
   "Thuringia Eisenach asv2020-07 img14 Bach Museum.jpg": {
    "lic": "FAL",
@@ -4982,6 +5087,14 @@
    "lic": "CC BY-SA 2.5",
    "by": "Andreas Trepte"
   },
+  "Augustinerkirche Erfurt.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Lukas Götz"
+  },
+  "Weimar Wittumspalais.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Markv at Dutch Wikipedia"
+  },
   "Naumburg stwenzel.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Christian Bier"
@@ -4994,6 +5107,14 @@
    "lic": "CC BY-SA 3.0",
    "by": "© R.Möhler"
   },
+  "Alte Synagoge Erfurt.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Michael Sander"
+  },
+  "Cranachhaus in Weimar.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Most Curious"
+  },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Denkhenk"
@@ -5002,33 +5123,25 @@
    "lic": "Public domain",
    "by": "Axel Hindemith"
   },
-  "Halle Händelhaus 2012.jpg": {
+  "Goethe Gartenhaus Kraus.jpg": {
+   "lic": "Public domain",
+   "by": "The original uploader was Georg Jäger at German Wikipedia."
+  },
+  "Egapark Erfurt Festplatz.jpg": {
    "lic": "CC BY 3.0",
-   "by": "Photo: Andreas Praefcke"
+   "by": "Grimba-Photo"
   },
   "Wernigerode später Frühling im Lustgartens von Wernigerode im Harz Foto 2005 Wolfgang Pehlemann Wiesbaden PICT0037.jpg": {
    "lic": "CC BY-SA 3.0 de",
    "by": "Wolfgang Pehlemann Wiesbaden Germany"
   },
-  "20150902-BurgGiebichenstein.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Voigt"
-  },
-  "Stadtkirche Wittenberg 09 2015.JPG": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Concord"
-  },
-  "Augusteum - Lutherhaus Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
+  "MK38365-69 Fischmarkt (Erfurt).jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Martin Kraft"
   },
   "Roter Turm Halle 2009.jpg": {
    "lic": "CC BY-SA 3.0 de",
    "by": "de:Benutzer:OmiTs"
-  },
-  "Halloren-Winter-Edition-3.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "WiseWoman"
   },
   "00 4092 Wernigerode - Harzquerbahn.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5078,10 +5191,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "H.Helmlechner"
   },
-  "Moritzburg Halle Hauptzuweg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Barnos"
-  },
   "Schloss Wernigerode Luftbild 2.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
@@ -5093,10 +5202,6 @@
   "Halberstadt, Fischmarkt und Rathaus (Rückseite).jpg": {
    "lic": "CC BY 4.0",
    "by": "Dguendel"
-  },
-  "Schlosskirche Wittenberg Luftbild 2024 Toni Klemm.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Toniklemm"
   },
   "Halle(Saale) Marktkirche asv2024-04.jpg": {
    "lic": "FAL",
@@ -5158,6 +5263,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Thomas Wolf, www.foto-tw.de"
   },
+  "Halle Händelhaus 2012.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Photo: Andreas Praefcke"
+  },
   "BerlinBrandenburgerTor1985.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Joergsam"
@@ -5182,9 +5291,25 @@
    "lic": "CC BY 3.0 de",
    "by": "Ansgar Koreng"
   },
+  "20150902-BurgGiebichenstein.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Voigt"
+  },
+  "Stadtkirche Wittenberg 09 2015.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Concord"
+  },
+  "Augusteum - Lutherhaus Wittenberg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
+  },
   "Luthereiche in Wittenberg.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Markus Sturzbecher"
+  },
+  "Halloren-Winter-Edition-3.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "WiseWoman"
   },
   "Lutherstadt Wittenberg 09-2016 photo10.jpg": {
    "lic": "FAL",
@@ -5214,6 +5339,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
   },
+  "Moritzburg Halle Hauptzuweg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Barnos"
+  },
   "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
    "lic": "FAL",
    "by": "A.Savin"
@@ -5233,6 +5362,10 @@
   "2023 Berliner Dom - Westfassade -- 01.jpg": {
    "lic": "CC BY 4.0",
    "by": "Chainwit."
+  },
+  "Schlosskirche Wittenberg Luftbild 2024 Toni Klemm.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Toniklemm"
   },
   "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
    "lic": "CC BY-SA 4.0",
