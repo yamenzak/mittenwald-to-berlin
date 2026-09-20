@@ -69,12 +69,15 @@ export const SIGHTS = {
     S("Kalvarienberg", "Mittenwald", "Stations of the Cross up a wooded hill, 25 min for the valley view.", { cimg: "Kalvarienberg Mittenwald", mins: 60, kind: "view" }),
     S("Obermarkt", "Mittenwald", "The painted main street — Lüftlmalerei on nearly every facade.", { must: 1, mins: 40, kind: "street" }),
     S("St Peter and Paul", "St. Peter und Paul (Mittenwald)", "Baroque church with a painted tower you can see from the whole valley.", { must: 1, mins: 20, kind: "church", indoor: 1 }),
-    S("Violin Making Museum", "Geigenbaumuseum Mittenwald", "Mittenwald has made violins since 1684. Small, and genuinely lovely.", { mins: 45, kind: "museum", indoor: 1, ticket: 1, closed: [1] }),
-    S("Lautersee", "Lautersee", "Mountain lake above the town. About 1 h up through the forest.", { mins: 120, kind: "nature", walkFromStation: 55 }),
-    S("Ferchensee", "Ferchensee", "The quieter second lake, 30 min further on from Lautersee.", { mins: 90, kind: "nature" }),
+    S("Violin Making Museum", "Geigenbaumuseum Mittenwald", "Mittenwald has made violins since 1684. Small, and genuinely lovely.", { at: [47.44228, 11.26055], mins: 45, kind: "museum", indoor: 1, ticket: 1, closed: [1] }),
+    S("Lautersee", "Lautersee", "Mountain lake above the town, an hour up through the forest. Swimmable in summer, freezing now.", { must: 1, mins: 60, kind: "nature", walkFromStation: 55 }),
+    S("Ferchensee", "Ferchensee", "The quieter second lake, half an hour on from Lautersee through the trees.", { mins: 45, kind: "nature" }),
     S("Karwendel cable car", "Karwendelbahn (Seilbahn)", "Up to 2244 m. A viewing platform over the whole range.", { cimg: "Karwendelbahn Mittenwald", mins: 150, kind: "view", ticket: 1 }),
     S("Leutaschklamm", "Leutaschklamm", "Gorge walkway on steel catwalks over the water. 4 km from town.", { mins: 90, kind: "nature", ticket: 1 }),
-    S("Isar source valley", "Isar", "The Isar starts here and runs north to Munich.", { mins: 60, kind: "nature" }),
+    S("Isar riverside", "Isar", "The river comes out of the Karwendel here, milky green and very cold. Flat walk at the east edge of town.", { at: [47.44520, 11.27060], cimg: "Isar Mittenwald Fluss", mins: 35, kind: "nature" }),
+    S("The painted houses", "Lüftlmalerei", "Lüftlmalerei — frescoes painted straight onto wet lime. Mittenwald has the best street of them in Bavaria.", { at: [47.44135, 11.26060], cimg: "Lüftlmalerei Mittenwald", must: 1, mins: 25, kind: "street" }),
+    S("Matthias Klotz monument", "Matthias Klotz", "He brought violin-making back from Padua in 1684 and the town has lived on it since. His statue faces the church.", { at: [47.44205, 11.26030], cimg: "Matthias Klotz Denkmal Mittenwald", mins: 10, kind: "sight" }),
+    S("Hoher Kranzberg", "Hoher Kranzberg (Wettersteingebirge)", "A small summit with a big view, and a chairlift most of the way up.", { mins: 120, kind: "view", ticket: 1 }),
   ],
   seefeld: [
     S("Seefeld centre", "Seefeld in Tirol", "Tyrolean pedestrian streets, cafés, mountain air.", { must: 1, mins: 60, kind: "street" }),
@@ -89,7 +92,7 @@ export const SIGHTS = {
     S("Old St Martin", "Alte Pfarrkirche St. Martin (Garmisch-Partenkirchen)", "Medieval frescoes inside, including a giant St Christopher.", { must: 1, mins: 20, kind: "church", indoor: 1 }),
     S("Partnachklamm", "Partnachklamm", "Gorge cut 80 m deep. Walkway through the spray. 20 min walk to the entrance.", { mins: 120, kind: "nature", ticket: 1 }),
     S("Zugspitze", "Zugspitze", "Germany's highest point, 2962 m. Cog railway plus cable car. Half a day.", { must: 1, mins: 300, kind: "view", ticket: 1 }),
-    S("Olympic ski stadium", "Olympiaschanze", "The 1936 jump. You can walk up to the top of the tower.", { mins: 40, kind: "view" }),
+    S("Olympic ski stadium", "Olympiaschanze", "The 1936 jump. You can walk up to the top of the tower.", { at: [47.48690, 11.10970], mins: 40, kind: "view" }),
     S("Eibsee", "Eibsee", "Turquoise lake under the Zugspitze. A flat 7 km loop.", { mins: 150, kind: "nature" }),
   ],
   ettal: [
@@ -337,7 +340,7 @@ export const SIGHTS = {
   magdeburg: [
     S("Magdeburg Cathedral", "Magdeburger Dom", "The first Gothic cathedral on German soil, on the Elbe.", { mins: 50, kind: "church", indoor: 1 }),
     S("Green Citadel", "Grüne Zitadelle von Magdeburg", "Hundertwasser's last building. Pink, wonky, full of trees.", { mins: 40, kind: "sight" }),
-    S("Elbe promenade", "Elbe", "River walk between the cathedral and the bridges.", { mins: 40, kind: "nature" }),
+    S("Elbe promenade", "Elbe", "River walk between the cathedral and the bridges.", { at: [52.12700, 11.63900], cimg: "Elbuferpromenade Magdeburg", mins: 40, kind: "nature" }),
     S("Monastery of Our Lady", "Kloster Unser Lieben Frauen", "Romanesque monastery, now a sculpture museum.", { mins: 50, kind: "museum", indoor: 1, ticket: 1 }),
   ],
   berlin: [
@@ -390,24 +393,15 @@ export const DAYS = [
   {
     n: 1, iso: "2026-09-29", title: "Into the Karwendel", c: "#4E7A9B",
     hero: "mittenwald",
-    intro: "You arrive in the afternoon. One small alpine town, painted head to foot, with a limestone wall behind it that goes pink at sunset.",
+    intro: "You arrive at two. The painted street and the violin town first, on the flat, then up through the forest to the two lakes for the last of the light.",
     paths: [
-      { id: "A", name: "The town, slowly", why: "You have been travelling. No more trains today.", seq: [
+      /* The town first, on the flat, and then up to the lakes while the light
+         lasts. The order below is the order it is walked. */
+      { id: "A", name: "The town, then the lakes", why: "", seq: [
         { S: "mittenwald", arr: "14:00", base: 1, stn: "Out of the station, straight down Bahnhofstraße — Obermarkt is five minutes on the flat.",
-          see: ["Obermarkt", "St Peter and Paul", "Ballenhausgasse", "Violin Making Museum", "Kalvarienberg", "Karwendel cable car"] },
-      ]},
-      { id: "B", name: "Over the border to Seefeld", why: "Twenty minutes into Austria and back, for a lake and a different country.", seq: [
-        { S: "mittenwald", arr: "14:00", dep: "15:40", stn: "Obermarkt is five minutes from the station, on the flat.",
-          see: ["Obermarkt", "St Peter and Paul", "Ballenhausgasse"] },
-        T("15:40", "16:00", "Seefeld", ["mittenwald", "seefeld"], "This crosses into Austria, and your German ticket does not cover it. Buy the short Mittenwald–Seefeld ticket from the machine on the platform."),
-        { S: "seefeld", arr: "16:00", dep: "18:40", stn: "The station is at the edge of the centre — five minutes in.",
-          see: ["Seefeld centre", "Pfarrkirche St Oswald", "Seekirchl", "Wildsee"] },
-        T("18:40", "19:00", "Mittenwald", ["seefeld", "mittenwald"]),
-        { S: "mittenwald", arr: "19:00", base: 1, see: [] },
-      ]},
-      { id: "C", name: "Up to the lakes", why: "The two mountain lakes above the town. A proper walk, about three hours.", seq: [
-        { S: "mittenwald", arr: "14:00", base: 1, stn: "The path to the lakes starts at the south end of town, past the church.",
-          see: ["Obermarkt", "St Peter and Paul", "Lautersee", "Ferchensee"] },
+          see: ["Obermarkt", "The painted houses", "St Peter and Paul", "Matthias Klotz monument",
+                "Ballenhausgasse", "Violin Making Museum",
+                "Lautersee", "Ferchensee"] },
       ]},
     ],
   },
@@ -455,13 +449,13 @@ export const DAYS = [
       { id: "A", name: "Ulm, Esslingen, Heidelberg", why: "Three towns along the Danube and the Neckar, none of them rushed.", seq: [
         { S: "augsburg", arr: "08:00", dep: "10:30", stn: "Fifteen minutes east from the Hbf, or tram 2 to Rathausplatz.",
           see: ["Rathausplatz", "Golden Hall", "Augustusbrunnen", "Maximilianstraße"] },
-        T("10:30", "11:45", "Ulm", ["augsburg", "ulm"], "Direct along the Danube on the RE9 — the slower ones take two hours, so take this one."),
+        T("10:30", "11:45", "Ulm", ["augsburg", "ulm"], "The RE9 is direct. The slower ones take two hours."),
         { S: "ulm", arr: "11:45", dep: "15:20", stn: "Five minutes from the Hbf down Bahnhofstraße to Münsterplatz. You cannot miss it.",
           see: ["Ulm Minster", "Ulm Town Hall", "Fishermen's Quarter", "Crooked House", "Metzgerturm", "Danube wall walk", "Einstein's birthplace"] },
-        T("15:20", "16:12", "Esslingen", ["ulm", "esslingen"], "Direct on the RE5, down the Fils and the Neckar."),
+        T("15:20", "16:12", "Esslingen", ["ulm", "esslingen"], "Direct on the RE5."),
         { S: "esslingen", arr: "16:12", dep: "18:40", stn: "Ten minutes from the station across the Neckar and you are in the old town.",
           see: ["Old Town Hall", "The oldest timber houses", "Innere Brücke", "Frauenkirche", "Esslingen Burg", "Kessler Sekt"] },
-        T("18:40", "20:19", "Heidelberg", ["esslingen", "heidelberg"], "Two changes, usually Stuttgart and Mannheim."),
+        T("18:40", "20:19", "Heidelberg", ["esslingen", "heidelberg"], "Changes at Stuttgart and Mannheim."),
         { S: "heidelberg", arr: "20:19", base: 1, stn: "The Hbf is out of the centre — bus 32 or tram 5 to Bismarckplatz, then the Hauptstraße is in front of you.",
           see: ["Hauptstraße", "Marktplatz and Church of the Holy Spirit", "Old Bridge"] },
       ]},
@@ -475,13 +469,13 @@ export const DAYS = [
       { id: "A", name: "Heidelberg, Würzburg, Bamberg", why: "Three towns and the longest ride of the week, which is what the west costs.", seq: [
         { S: "heidelberg", arr: "08:00", dep: "11:55", stn: "Bus 33 to the castle, or the funicular from Kornmarkt. The Philosophers' Walk is over the Old Bridge.",
           see: ["Heidelberg Castle", "Old Bridge", "Philosophers' Walk", "Marktplatz and Church of the Holy Spirit", "Hauptstraße", "Student Prison"] },
-        T("11:55", "14:20", "Würzburg", ["heidelberg", "wurzburg"], "Change at Mannheim or Osterburken. Buy something to eat before you board."),
+        T("11:55", "14:20", "Würzburg", ["heidelberg", "wurzburg"], "Change at Mannheim or Osterburken. Eat before you board."),
         { S: "wurzburg", arr: "14:20", dep: "16:40", stn: "Ten minutes down Kaiserstraße from the Hbf, or tram 1 to Dom.",
           see: ["Würzburg Residence", "Marktplatz and Marienkapelle", "Old Main Bridge", "Franconian wine"] },
         T("16:40", "17:35", "Bamberg", ["wurzburg", "bamberg"], "Direct up the Main."),
         { S: "bamberg", arr: "17:35", dep: "18:45", stn: "Twenty minutes from the station to the river, or bus 901.",
           see: ["Obere Brücke", "Old Town Hall", "Little Venice", "Schlenkerla"] },
-        T("18:40", "19:55", "Erfurt", ["bamberg", "erfurt"], "Direct on the RE29, an hour and a quarter. The late ones are not direct and take three hours, so this is the train to be on."),
+        T("18:40", "19:55", "Erfurt", ["bamberg", "erfurt"], "The RE29, direct. Later trains take three hours — be on this one."),
         { S: "erfurt", arr: "19:55", base: 1, stn: "Fifteen minutes from the station up the Anger to the old town, or tram 3, 4 or 6.",
           see: ["Anger", "Fischmarkt", "Krämerbrücke"] },
       ]},
@@ -490,10 +484,10 @@ export const DAYS = [
   {
     n: 5, iso: "2026-10-03", title: "Down the Saale to Berlin", c: "#3B4C8C",
     hero: "wittenberg", bags: 1,
-    holiday: "German Unity Day — a public holiday. Trains run a Sunday timetable, so there are fewer of them, and museums may keep holiday hours. Check the times before you leave each place.",
+    holiday: "German Unity Day. Sunday timetable, so fewer trains, and museums may keep holiday hours.",
     intro: "Four short stops rather than one long ride: Goethe's town, a cathedral, Handel's birthplace, and the door the Reformation was nailed to.",
     paths: [
-      { id: "A", name: "Weimar, Naumburg, Halle, Wittenberg", why: "Breaking the run to Berlin into four means less time sitting down, not more — the direct way is slower than this.", seq: [
+      { id: "A", name: "Weimar, Naumburg, Halle, Wittenberg", why: "Less time sitting down than going direct, not more.", seq: [
         { S: "erfurt", arr: "08:00", dep: "09:30", stn: "Fifteen minutes from the station up the Anger, or tram 3, 4 or 6 to Domplatz.",
           see: ["Krämerbrücke", "Domplatz", "Erfurt Cathedral", "Fischmarkt"] },
         T("09:30", "09:52", "Weimar", ["erfurt", "weimar"]),
@@ -512,7 +506,7 @@ export const DAYS = [
         { S: "berlin", arr: "22:08", base: 1, stn: "You have arrived. Berlin Hauptbahnhof.",
           see: ["Gendarmenmarkt", "Brandenburg Gate"] },
       ]},
-      { id: "B", name: "Weimar, then straight on", why: "One stop instead of four, and in Berlin in the afternoon.", seq: [
+      { id: "B", name: "Weimar, then straight on", why: "One stop, and in Berlin by teatime.", seq: [
         { S: "erfurt", arr: "08:00", dep: "10:30", stn: "Fifteen minutes up the Anger, or tram 3, 4 or 6 to Domplatz.",
           see: ["Anger", "Fischmarkt", "Krämerbrücke", "Domplatz", "Erfurt Cathedral", "Petersberg Citadel"] },
         T("10:30", "10:52", "Weimar", ["erfurt", "weimar"]),

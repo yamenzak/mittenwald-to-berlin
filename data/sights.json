@@ -135,20 +135,65 @@
    "file": "Leutaschklamm_(Marius_Hoch)_27.JPG",
    "extract": "Die Leutaschklamm, auch Leutascher Geisterklamm, ist eine Klamm bei Mittenwald und Unterleutasch im bayerisch-tirolischen Grenzgebiet, durch die die Leutascher Ache fließt."
   },
-  "mittenwald/Isar source valley": {
+  "mittenwald/Isar riverside": {
    "ok": true,
    "w": "Isar",
-   "ct": null,
+   "ct": "Isar Mittenwald Fluss",
    "lang": "de",
    "title": "Isar",
    "url": "https://de.wikipedia.org/wiki/Isar",
    "lat": 48.80361111,
    "lon": 12.975,
    "wd": "Q106588",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Georgenstein_Ostufer.jpg/640px-Georgenstein_Ostufer.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Georgenstein_Ostufer.jpg/1000px-Georgenstein_Ostufer.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Georgenstein_Ostufer.jpg",
-   "extract": "Die Isar ist ein für Wasserfahrzeuge über Floßgröße nicht schiffbarer Fluss in Tirol (Österreich) und Bayern (Deutschland), der nach einem 292 km langen Lauf südlich von Deggendorf von rechts in die Donau mündet."
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Isar_valley_near_Mittenwald_%28SM_sg1313z%29.png/640px-Isar_valley_near_Mittenwald_%28SM_sg1313z%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Isar_valley_near_Mittenwald_%28SM_sg1313z%29.png/1000px-Isar_valley_near_Mittenwald_%28SM_sg1313z%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Isar valley near Mittenwald (SM sg1313z).png",
+   "extract": ""
+  },
+  "mittenwald/The painted houses": {
+   "ok": true,
+   "w": "Lüftlmalerei",
+   "ct": "Lüftlmalerei Mittenwald",
+   "lang": "en",
+   "title": "Lüftlmalerei",
+   "url": "https://en.wikipedia.org/wiki/L%C3%BCftlmalerei",
+   "lat": null,
+   "lon": null,
+   "wd": "Q1880270",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Mittenwald_L%C3%BCftlmalerei_Im_Gries_53_318.jpg/640px-Mittenwald_L%C3%BCftlmalerei_Im_Gries_53_318.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Mittenwald_L%C3%BCftlmalerei_Im_Gries_53_318.jpg/1000px-Mittenwald_L%C3%BCftlmalerei_Im_Gries_53_318.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Mittenwald Lüftlmalerei Im Gries 53 318.jpg",
+   "extract": "Lüftlmalerei is a form of mural art that is native to villages and towns of southern Germany and Austria, especially in Upper Bavaria and in the Tyrol."
+  },
+  "mittenwald/Matthias Klotz monument": {
+   "ok": true,
+   "w": "Matthias Klotz",
+   "ct": "Matthias Klotz Denkmal Mittenwald",
+   "lang": "en",
+   "title": "Matthias Klotz",
+   "url": "https://en.wikipedia.org/wiki/Matthias_Klotz",
+   "lat": null,
+   "lon": null,
+   "wd": "Q1424779",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Mittenwald_-_Obermarkt_%2808%29_-_Matthias-Klotz-Denkmal.jpg/640px-Mittenwald_-_Obermarkt_%2808%29_-_Matthias-Klotz-Denkmal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Mittenwald_-_Obermarkt_%2808%29_-_Matthias-Klotz-Denkmal.jpg/1000px-Mittenwald_-_Obermarkt_%2808%29_-_Matthias-Klotz-Denkmal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Mittenwald - Obermarkt (08) - Matthias-Klotz-Denkmal.jpg",
+   "extract": "Matthias Klotz (1653–1743) was a luthier, a member of the Klotz family of violin makers that flourished in Mittenwald, Duchy of Bavaria as early as 1683."
+  },
+  "mittenwald/Hoher Kranzberg": {
+   "ok": true,
+   "w": "Hoher Kranzberg (Wettersteingebirge)",
+   "ct": null,
+   "lang": "de",
+   "title": "Hoher Kranzberg (Wettersteingebirge)",
+   "url": "https://de.wikipedia.org/wiki/Hoher_Kranzberg_(Wettersteingebirge)",
+   "lat": 47.45277778,
+   "lon": 11.22388889,
+   "wd": "Q177064",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Hoher_Kranzberg.jpg/640px-Hoher_Kranzberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Hoher_Kranzberg.jpg/1000px-Hoher_Kranzberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Hoher_Kranzberg.jpg",
+   "extract": ""
   },
   "seefeld/Seefeld centre": {
    "ok": true,
@@ -3213,17 +3258,17 @@
   "magdeburg/Elbe promenade": {
    "ok": true,
    "w": "Elbe",
-   "ct": null,
+   "ct": "Elbuferpromenade Magdeburg",
    "lang": "de",
    "title": "Elbe",
    "url": "https://de.wikipedia.org/wiki/Elbe",
    "lat": 53.89333333,
    "lon": 8.70555556,
    "wd": "Q1644",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Damnatz_Elbe.jpg/640px-Damnatz_Elbe.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Damnatz_Elbe.jpg/1000px-Damnatz_Elbe.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Damnatz_Elbe.jpg",
-   "extract": "Die Elbe ist ein mitteleuropäischer Strom, der in Tschechien entspringt, durch Deutschland fließt und in die Nordsee mündet. Sie entwässert unter anderem einen großen Teil Ostdeutschlands sowie nahezu das ganze von Mittelgebirgen umschlossene Böhmen."
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Aerial_view_of_Elbuferpromenade%2C_Magdeburg.jpg/640px-Aerial_view_of_Elbuferpromenade%2C_Magdeburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Aerial_view_of_Elbuferpromenade%2C_Magdeburg.jpg/1000px-Aerial_view_of_Elbuferpromenade%2C_Magdeburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Aerial view of Elbuferpromenade, Magdeburg.jpg",
+   "extract": ""
   },
   "magdeburg/Monastery of Our Lady": {
    "ok": true,
@@ -3657,9 +3702,9 @@
    "lat": 47.55916667,
    "lon": 11.13888889,
    "wd": "Q505979",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Loisachtal südlich von Oberau Juni 2020 2.jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Loisachtal südlich von Oberau Juni 2020 1.jpg",
    "extract": ""
   },
   "ettal": {
@@ -3897,9 +3942,9 @@
    "lat": 51.48277778,
    "lon": 11.97,
    "wd": "Q2814",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Halle (Saale), Marktplatz, Roter Turm 20170718 002.jpg",
    "extract": ""
   },
   "wittenberg": {
@@ -4217,7 +4262,7 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "© Ra Boe / Wikipedia"
   },
-  "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg": {
+  "Halle (Saale), Marktplatz, Roter Turm 20170718 002.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Tilman2007"
   },
@@ -4241,7 +4286,7 @@
    "lic": "CC0",
    "by": "Christoph Braun"
   },
-  "Loisachtal südlich von Oberau Juni 2020 2.jpg": {
+  "Loisachtal südlich von Oberau Juni 2020 1.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kajebi II."
   },
@@ -4317,6 +4362,10 @@
    "lic": "Public domain",
    "by": "Patrick Huebgen"
   },
+  "Hoher Kranzberg.jpg": {
+   "lic": "GFDL",
+   "by": "Kogo"
+  },
   "Olympiaschanze St. Moritz.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Garry Furrer"
@@ -4357,10 +4406,6 @@
    "lic": "CC0",
    "by": "Leitzsche"
   },
-  "Georgenstein Ostufer.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Richard Bartz"
-  },
   "Kloster Ettal Klosteranlage.JPG": {
    "lic": "CC BY-SA 1.0",
    "by": "Bbb"
@@ -4381,6 +4426,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo"
   },
+  "Mittenwald Lüftlmalerei Im Gries 53 318.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "GFreihalter"
+  },
   "AltePfarrkircheStMartinGarmischPartenkirchenTurmL1050993 (3).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Oktobersonne"
@@ -4388,10 +4437,6 @@
   "Oberammergau, Peter und Paul von Südosten, 1.jpeg": {
    "lic": "CC BY-SA 4.0",
    "by": "Renardo la vulpo"
-  },
-  "Odeonsplatz von der Feldherrnhalle.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Wolfgang Rieger"
   },
   "Hohenschwangau (3383608894).jpg": {
    "lic": "CC BY 2.0",
@@ -4401,9 +4446,17 @@
    "lic": "CC BY-SA 4.0",
    "by": "Molgreen"
   },
+  "Mittenwald - Obermarkt (08) - Matthias-Klotz-Denkmal.jpg": {
+   "lic": "CC BY 2.0",
+   "by": "Pixelteufel"
+  },
   "Ettal, Linderhof 21.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "LBM1948"
+  },
+  "Isar valley near Mittenwald (SM sg1313z).png": {
+   "lic": "PDM-owner",
+   "by": "Pose, Eduard Wilhelm Eduard Wilhelm Pose (Q17265513)"
   },
   "Nördliche Karwendelkette, Blick von Mittenwald 05.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4412,10 +4465,6 @@
   "Lautersee, Mittenwald 04.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kritzolina"
-  },
-  "Aerial image of the Abbey of Saint Mang (view from the southwest).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Carsten Steger"
   },
   "Sankt Oswald (Seefeld in Tirol) v NO.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4432,10 +4481,6 @@
   "Aerial image of the Staffelsee (view from the southeast).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
-  },
-  "Exterior of Theatinerkirche, Munich.jpg": {
-   "lic": "CC0",
-   "by": "Wilfredor"
   },
   "Neuschwanstein Castle 2024-02.jpg": {
    "lic": "CC0",
@@ -4469,10 +4514,6 @@
    "lic": "CC BY 2.5",
    "by": "User:ReclaM"
   },
-  "Nürnberg St. Sebald komplett v N.jpg": {
-   "lic": "CC BY-SA 2.0 de",
-   "by": "jailbird"
-  },
   "Frauenkirche Munich - View from Peterskirche Tower.jpg": {
    "lic": "CC BY 2.5",
    "by": "Diliff"
@@ -4504,10 +4545,6 @@
   "Rathaus-maximilianstrasse-Augsburg-Blick-vom-Perlachturm.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Peter Bubenik"
-  },
-  "Nuernberg-schoener-Brunnen-gp.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "User:Kolossos"
   },
   "Nürnberg Frauentormauer Turm rotes N und Spittlertorturm.jpg": {
    "lic": "CC BY 3.0",
@@ -4557,10 +4594,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo, derivative work Lämpel"
   },
-  "Nürnberg, Stadtbefestigung, Tiergärtnertorhaus-20160304-002.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Tilman2007"
-  },
   "Innenstadt - St. Ulrich-Dom, Augsburg, Germany - panoramio.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Dewi König"
@@ -4568,6 +4601,10 @@
   "Augsburg.- Town Hall (Goldener Saal) (1).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "© Pierre André"
+  },
+  "Odeonsplatz von der Feldherrnhalle.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Wolfgang Rieger"
   },
   "Donauwörth-KätheKrusePuppenMuseum1-Asio.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -4597,6 +4634,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Diego Delso"
   },
+  "Aerial image of the Abbey of Saint Mang (view from the southwest).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Carsten Steger"
+  },
   "Augsburg Fuggerei Eingang 220326.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Hajotthu"
@@ -4604,6 +4645,10 @@
   "Deutsches Museum Portrait 4.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Burkhard Mücke"
+  },
+  "Exterior of Theatinerkirche, Munich.jpg": {
+   "lic": "CC0",
+   "by": "Wilfredor"
   },
   "Aerial image of Stadtpfarrkirche Mariä Himmelfahrt, Landsberg am Lech (view from the south).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4625,17 +4670,13 @@
    "lic": "Public domain",
    "by": "Immanuel Giel"
   },
+  "Nürnberg St. Sebald komplett v N.jpg": {
+   "lic": "CC BY-SA 2.0 de",
+   "by": "jailbird"
+  },
   "Neue Residenz auf domberg in Bamberg.png": {
    "lic": "Public domain",
    "by": "Immanuel Giel"
-  },
-  "Heidelberg 20060420 021.jpg": {
-   "lic": "CC BY 2.5",
-   "by": "No machine-readable author provided. Hlohning assumed (based on copyright claims)."
-  },
-  "Heidelberg Fussgaengerzone.JPG": {
-   "lic": "Public domain",
-   "by": "Rudolf Stricker"
   },
   "Nürnberg Burg ArM.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4658,6 +4699,10 @@
    "by": "Berthold Werner"
   },
   "Nuernberg-Frauenkirche-gp.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "User:Kolossos"
+  },
+  "Nuernberg-schoener-Brunnen-gp.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "User:Kolossos"
   },
@@ -4697,10 +4742,6 @@
    "lic": "CC BY 3.0",
    "by": "KaterBegemot"
   },
-  "Heidelberg Karzer 01.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Llez"
-  },
   "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
@@ -4720,6 +4761,10 @@
   "St. Jakob Kirche Rothenburg 2014.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
+  },
+  "Nürnberg, Stadtbefestigung, Tiergärtnertorhaus-20160304-002.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Tilman2007"
   },
   "Handwerkerhof an Weihnachten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4773,9 +4818,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Schiller Weimar.jpg": {
-   "lic": "CC BY-SA 2.5",
-   "by": "Andreas Trepte"
+  "Heidelberg 20060420 021.jpg": {
+   "lic": "CC BY 2.5",
+   "by": "No machine-readable author provided. Hlohning assumed (based on copyright claims)."
+  },
+  "Heidelberg Fussgaengerzone.JPG": {
+   "lic": "Public domain",
+   "by": "Rudolf Stricker"
   },
   "LuftbildPetersberg.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4788,10 +4837,6 @@
   "Weimar Wittumspalais.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Markv at Dutch Wikipedia"
-  },
-  "Ilmpark in Weimar - Blick zum Stern.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "© R.Möhler"
   },
   "Alte Synagoge Erfurt.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -4828,6 +4873,10 @@
   "Egapark Erfurt Festplatz.jpg": {
    "lic": "CC BY 3.0",
    "by": "Grimba-Photo"
+  },
+  "Heidelberg Karzer 01.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Llez"
   },
   "2013-04-20 Krämerbrücke.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4885,10 +4934,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Uoaei1"
   },
-  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
-  },
   "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
@@ -4933,6 +4978,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
+  "Schiller Weimar.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "Andreas Trepte"
+  },
   "Naumburg stwenzel.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Christian Bier"
@@ -4940,6 +4989,10 @@
   "Naumburg Marientor.jpg": {
    "lic": "CC BY 3.0",
    "by": "Density"
+  },
+  "Ilmpark in Weimar - Blick zum Stern.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "© R.Möhler"
   },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4968,10 +5021,6 @@
   "Augusteum - Lutherhaus Wittenberg.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
-  },
-  "Luthereiche in Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Markus Sturzbecher"
   },
   "Roter Turm Halle 2009.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -5013,6 +5062,10 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
+  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
   "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
@@ -5024,10 +5077,6 @@
   "Goethe-Schiller-Denkmal 01.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "H.Helmlechner"
-  },
-  "Magdeburger Dom Luftbild.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Gregor Rom"
   },
   "Moritzburg Halle Hauptzuweg.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5052,10 +5101,6 @@
   "Halle(Saale) Marktkirche asv2024-04.jpg": {
    "lic": "FAL",
    "by": "A.Savin"
-  },
-  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
   },
   "BD Nitzsche Haus, Naumburg (1).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5133,13 +5178,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "NoRud"
   },
-  "Damnatz Elbe.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Christian Fischer"
-  },
   "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
    "lic": "CC BY 3.0 de",
    "by": "Ansgar Koreng"
+  },
+  "Luthereiche in Wittenberg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Markus Sturzbecher"
   },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5148,6 +5193,10 @@
   "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kora27"
+  },
+  "Magdeburger Dom Luftbild.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gregor Rom"
   },
   "Hackesche höfe berlin.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -5165,6 +5214,10 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
+  "Aerial view of Elbuferpromenade, Magdeburg.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Olivier Cleynen"
+  },
   "Jena-40-Marktplatz-2023-gje.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gerd Eichmann"
@@ -5180,6 +5233,10 @@
   "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Barnos"
+  },
+  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Dguendel"
   },
   "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
    "lic": "Public domain",

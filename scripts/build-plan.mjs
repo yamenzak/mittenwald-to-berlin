@@ -333,16 +333,29 @@ for (const [k, p] of Object.entries(PLACES)) {
   out.places[k] = { ...p, ...stops[k], wiki: sights.places[k]?.url || null, photo: clean(sights.places[k]?.img),
     photoFile: sights.places[k]?.file || null, about: prose(sights.places[k]) };
 }
+const far = (a, b, c, d) => {
+  const R = 6371, t = (x) => (x * Math.PI) / 180;
+  const h = Math.sin(t(c - a) / 2) ** 2 + Math.cos(t(a)) * Math.cos(t(c)) * Math.sin(t(d - b) / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+};
 for (const [pk, list] of Object.entries(SIGHTS)) {
   for (const s of list) {
     const e = sights.sights[`${pk}/${s.name}`] || {};
     out.sights[`${pk}/${s.name}`] = {
       place: pk, name: s.name, note: s.note, mins: s.mins, kind: s.kind,
       ticket: !!s.ticket, indoor: !!s.indoor, closed: s.closed || null, must: !!s.must,
-      lat: e.lat ?? null, lon: e.lon ?? null,
+      /* Some articles are about a technique, a person or a whole river, and
+         their coordinates are useless — the Isar's are its mouth on the Danube,
+         150 km away. `at` in trip.mjs pins the real spot. */
+      lat: s.at ? s.at[0] : (e.lat ?? null), lon: s.at ? s.at[1] : (e.lon ?? null),
       photo: clean(e.img), photoBig: clean(e.imgBig), photoFile: e.file || null,
       wiki: e.url || null, about: prose(e),
     };
+    // A sight an hour's drive from its own town is a bad coordinate, not a walk.
+    const put = out.sights[`${pk}/${s.name}`], home = stops[pk];
+    if (put.lat != null && home && far(home.lat, home.lon, put.lat, put.lon) > 20) {
+      warn.push(`${pk}/${s.name}: coordinates are ${Math.round(far(home.lat, home.lon, put.lat, put.lon))} km from the station — pin it with at: [lat, lon]`);
+    }
   }
 }
 

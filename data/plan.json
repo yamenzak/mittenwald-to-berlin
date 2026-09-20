@@ -24,12 +24,12 @@
    "title": "Into the Karwendel",
    "c": "#4E7A9B",
    "hero": "mittenwald",
-   "intro": "You arrive in the afternoon. One small alpine town, painted head to foot, with a limestone wall behind it that goes pink at sunset.",
+   "intro": "You arrive at two. The painted street and the violin town first, on the flat, then up through the forest to the two lakes for the last of the light.",
    "paths": [
     {
      "id": "A",
-     "name": "The town, slowly",
-     "why": "You have been travelling. No more trains today.",
+     "name": "The town, then the lakes",
+     "why": "",
      "seq": [
       {
        "kind": "stop",
@@ -37,11 +37,13 @@
        "stn": "Out of the station, straight down Bahnhofstraße — Obermarkt is five minutes on the flat.",
        "see": [
         "Obermarkt",
+        "The painted houses",
         "St Peter and Paul",
+        "Matthias Klotz monument",
         "Ballenhausgasse",
         "Violin Making Museum",
-        "Kalvarienberg",
-        "Karwendel cable car"
+        "Lautersee",
+        "Ferchensee"
        ],
        "base": true,
        "arrIso": "2026-09-29T12:00:00.000Z",
@@ -75,10 +77,33 @@
           "extra": false
          },
          {
-          "to": "St Peter and Paul",
+          "to": "The painted houses",
           "mins": 1,
           "how": {
            "mins": 1,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 8,
+          "backHow": {
+           "mins": 8,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 47.44135,
+          "lon": 11.2606,
+          "kind": "street",
+          "note": "Lüftlmalerei — frescoes painted straight onto wet lime. Mittenwald has the best street of them in Bavaria.",
+          "ticket": false,
+          "at": 49,
+          "leaveBy": 74,
+          "extra": false
+         },
+         {
+          "to": "St Peter and Paul",
+          "mins": 2,
+          "how": {
+           "mins": 2,
            "mode": "walk"
           },
           "visit": 20,
@@ -93,8 +118,31 @@
           "kind": "church",
           "note": "Baroque church with a painted tower you can see from the whole valley.",
           "ticket": false,
-          "at": 49,
-          "leaveBy": 69,
+          "at": 76,
+          "leaveBy": 96,
+          "extra": false
+         },
+         {
+          "to": "Matthias Klotz monument",
+          "mins": 1,
+          "how": {
+           "mins": 1,
+           "mode": "walk"
+          },
+          "visit": 10,
+          "backFromHere": 8,
+          "backHow": {
+           "mins": 8,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.44205,
+          "lon": 11.2603,
+          "kind": "sight",
+          "note": "He brought violin-making back from Padua in 1684 and the town has lived on it since. His statue faces the church.",
+          "ticket": false,
+          "at": 97,
+          "leaveBy": 107,
           "extra": false
          },
          {
@@ -116,68 +164,92 @@
           "kind": "street",
           "note": "The lane behind Obermarkt, quieter and just as painted.",
           "ticket": false,
-          "at": 70,
-          "leaveBy": 85,
+          "at": 108,
+          "leaveBy": 123,
           "extra": false
          },
          {
-          "to": "Kalvarienberg",
+          "to": "Violin Making Museum",
           "mins": 1,
           "how": {
            "mins": 1,
            "mode": "walk"
           },
-          "visit": 60,
-          "backFromHere": 8,
+          "visit": 45,
+          "backFromHere": 9,
           "backHow": {
-           "mins": 8,
+           "mins": 9,
            "mode": "walk"
           },
           "must": false,
-          "lat": 47.44194444,
-          "lon": 11.26027778,
-          "kind": "view",
-          "note": "Stations of the Cross up a wooded hill, 25 min for the valley view.",
-          "ticket": false,
-          "at": 86,
-          "leaveBy": 146,
+          "lat": 47.44228,
+          "lon": 11.26055,
+          "kind": "museum",
+          "note": "Mittenwald has made violins since 1684. Small, and genuinely lovely.",
+          "ticket": true,
+          "at": 124,
+          "leaveBy": 169,
           "extra": false
          },
          {
-          "to": "Karwendel cable car",
-          "mins": 19,
+          "to": "Lautersee",
+          "mins": 14,
           "how": {
-           "mins": 19,
+           "mins": 14,
+           "mode": "go",
+           "approx": true
+          },
+          "visit": 60,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "go",
+           "approx": true
+          },
+          "must": true,
+          "lat": 47.43861111,
+          "lon": 11.23527778,
+          "kind": "nature",
+          "note": "Mountain lake above the town, an hour up through the forest. Swimmable in summer, freezing now.",
+          "ticket": false,
+          "at": 183,
+          "leaveBy": 243,
+          "extra": false
+         },
+         {
+          "to": "Ferchensee",
+          "mins": 25,
+          "how": {
+           "mins": 25,
            "mode": "walk"
           },
-          "visit": 150,
-          "backFromHere": 14,
+          "visit": 45,
+          "backFromHere": 18,
           "backHow": {
-           "mins": 14,
-           "mode": "walk"
+           "mins": 18,
+           "mode": "go",
+           "approx": true
           },
           "must": false,
-          "lat": 47.43825,
-          "lon": 11.27044444,
-          "kind": "view",
-          "note": "Up to 2244 m. A viewing platform over the whole range.",
-          "ticket": true,
-          "at": 165,
-          "leaveBy": 315,
+          "lat": 47.43916667,
+          "lon": 11.21472222,
+          "kind": "nature",
+          "note": "The quieter second lake, half an hour on from Lautersee through the trees.",
+          "ticket": false,
+          "at": 268,
+          "leaveBy": 313,
           "extra": false
          }
         ],
-        "back": 14,
-        "walkTotal": 44,
-        "visitTotal": 285,
-        "needs": 329,
-        "fitted": 5,
+        "back": 18,
+        "walkTotal": 71,
+        "visitTotal": 260,
+        "needs": 331,
+        "fitted": 8,
         "dropped": 0,
-        "noCoords": [
-         "Violin Making Museum"
-        ],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Mittenwald&destination=Bahnhof%20Mittenwald&waypoints=Obermarkt%2C%20Mittenwald%7CSt%20Peter%20and%20Paul%2C%20Mittenwald%7CBallenhausgasse%2C%20Mittenwald%7CKalvarienberg%2C%20Mittenwald%7CKarwendel%20cable%20car%2C%20Mittenwald",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Mittenwald&destination=Bahnhof%20Mittenwald&waypoints=Obermarkt%2C%20Mittenwald%7CSt%20Peter%20and%20Paul%2C%20Mittenwald%7CBallenhausgasse%2C%20Mittenwald%7CKalvarienberg%2C%20Mittenwald%7CKarwendel%20cable%20car%2C%20Mittenwald",
+        "noCoords": [],
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Mittenwald&destination=Bahnhof%20Mittenwald&waypoints=Obermarkt%2C%20Mittenwald%7CThe%20painted%20houses%2C%20Mittenwald%7CSt%20Peter%20and%20Paul%2C%20Mittenwald%7CMatthias%20Klotz%20monument%2C%20Mittenwald%7CBallenhausgasse%2C%20Mittenwald%7CViolin%20Making%20Museum%2C%20Mittenwald%7CLautersee%2C%20Mittenwald%7CFerchensee%2C%20Mittenwald",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Mittenwald&destination=Bahnhof%20Mittenwald&waypoints=Obermarkt%2C%20Mittenwald%7CThe%20painted%20houses%2C%20Mittenwald%7CSt%20Peter%20and%20Paul%2C%20Mittenwald%7CMatthias%20Klotz%20monument%2C%20Mittenwald%7CBallenhausgasse%2C%20Mittenwald%7CViolin%20Making%20Museum%2C%20Mittenwald%7CLautersee%2C%20Mittenwald%7CFerchensee%2C%20Mittenwald",
         "town": "Mittenwald, Germany"
        }
       }
@@ -236,19 +308,61 @@
        "t": null,
        "kind": "see",
        "place": "mittenwald",
+       "title": "The painted houses",
+       "ll": [
+        47.44135,
+        11.2606
+       ],
+       "sight": "mittenwald/The painted houses",
+       "move": "1 min walk.",
+       "rode": false,
+       "mins": 1,
+       "visit": 25,
+       "say": "Lüftlmalerei — frescoes painted straight onto wet lime. Mittenwald has the best street of them in Bavaria.",
+       "offset": 49,
+       "until": 74,
+       "ticket": false
+      },
+      {
+       "day": 1,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "mittenwald",
        "title": "St Peter and Paul",
        "ll": [
         47.44223,
         11.26021
        ],
        "sight": "mittenwald/St Peter and Paul",
+       "move": "2 min walk.",
+       "rode": false,
+       "mins": 2,
+       "visit": 20,
+       "say": "Baroque church with a painted tower you can see from the whole valley.",
+       "offset": 76,
+       "until": 96,
+       "ticket": false
+      },
+      {
+       "day": 1,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "mittenwald",
+       "title": "Matthias Klotz monument",
+       "ll": [
+        47.44205,
+        11.2603
+       ],
+       "sight": "mittenwald/Matthias Klotz monument",
        "move": "1 min walk.",
        "rode": false,
        "mins": 1,
-       "visit": 20,
-       "say": "Baroque church with a painted tower you can see from the whole valley.",
-       "offset": 49,
-       "until": 69,
+       "visit": 10,
+       "say": "He brought violin-making back from Padua in 1684 and the town has lived on it since. His statue faces the church.",
+       "offset": 97,
+       "until": 107,
        "ticket": false
       },
       {
@@ -268,8 +382,8 @@
        "mins": 1,
        "visit": 15,
        "say": "The lane behind Obermarkt, quieter and just as painted.",
-       "offset": 70,
-       "until": 85,
+       "offset": 108,
+       "until": 123,
        "ticket": false
       },
       {
@@ -278,936 +392,24 @@
        "t": null,
        "kind": "see",
        "place": "mittenwald",
-       "title": "Kalvarienberg",
+       "title": "Violin Making Museum",
        "ll": [
-        47.44194444,
-        11.26027778
+        47.44228,
+        11.26055
        ],
-       "sight": "mittenwald/Kalvarienberg",
+       "sight": "mittenwald/Violin Making Museum",
        "move": "1 min walk.",
        "rode": false,
        "mins": 1,
-       "visit": 60,
-       "say": "Stations of the Cross up a wooded hill, 25 min for the valley view.",
-       "offset": 86,
-       "until": 146,
-       "ticket": false
-      },
-      {
-       "day": 1,
-       "path": "A",
-       "t": null,
-       "kind": "see",
-       "place": "mittenwald",
-       "title": "Karwendel cable car",
-       "ll": [
-        47.43825,
-        11.27044444
-       ],
-       "sight": "mittenwald/Karwendel cable car",
-       "move": "19 min walk.",
-       "rode": false,
-       "mins": 19,
-       "visit": 150,
-       "say": "Up to 2244 m. A viewing platform over the whole range.",
-       "offset": 165,
-       "until": 315,
+       "visit": 45,
+       "say": "Mittenwald has made violins since 1684. Small, and genuinely lovely.",
+       "offset": 124,
+       "until": 169,
        "ticket": true
       },
       {
        "day": 1,
        "path": "A",
-       "t": null,
-       "kind": "sleep",
-       "place": "mittenwald",
-       "title": "Goodnight, Mittenwald",
-       "ll": [
-        47.44,
-        11.2655
-       ],
-       "say": "Tomorrow: Out of the Alps."
-      }
-     ]
-    },
-    {
-     "id": "B",
-     "name": "Over the border to Seefeld",
-     "why": "Twenty minutes into Austria and back, for a lake and a different country.",
-     "seq": [
-      {
-       "kind": "stop",
-       "place": "mittenwald",
-       "stn": "Obermarkt is five minutes from the station, on the flat.",
-       "see": [
-        "Obermarkt",
-        "St Peter and Paul",
-        "Ballenhausgasse"
-       ],
-       "base": false,
-       "arrIso": "2026-09-29T12:00:00.000Z",
-       "want": 100,
-       "arr": "14:00",
-       "depIso": "2026-09-29T13:36:00Z",
-       "dep": "15:36",
-       "free": 96,
-       "route": {
-        "legs": [
-         {
-          "to": "Obermarkt",
-          "mins": 8,
-          "how": {
-           "mins": 8,
-           "mode": "walk"
-          },
-          "visit": 40,
-          "backFromHere": 8,
-          "backHow": {
-           "mins": 8,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 47.44194444,
-          "lon": 11.26027778,
-          "kind": "street",
-          "note": "The painted main street — Lüftlmalerei on nearly every facade.",
-          "ticket": false,
-          "at": 8,
-          "leaveBy": 48,
-          "extra": false
-         },
-         {
-          "to": "St Peter and Paul",
-          "mins": 1,
-          "how": {
-           "mins": 1,
-           "mode": "walk"
-          },
-          "visit": 20,
-          "backFromHere": 9,
-          "backHow": {
-           "mins": 9,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 47.44223,
-          "lon": 11.26021,
-          "kind": "church",
-          "note": "Baroque church with a painted tower you can see from the whole valley.",
-          "ticket": false,
-          "at": 49,
-          "leaveBy": 69,
-          "extra": false
-         },
-         {
-          "to": "Ballenhausgasse",
-          "mins": 1,
-          "how": {
-           "mins": 1,
-           "mode": "walk"
-          },
-          "visit": 15,
-          "backFromHere": 8,
-          "backHow": {
-           "mins": 8,
-           "mode": "walk"
-          },
-          "must": false,
-          "lat": 47.44194444,
-          "lon": 11.26027778,
-          "kind": "street",
-          "note": "The lane behind Obermarkt, quieter and just as painted.",
-          "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         }
-        ],
-        "back": 9,
-        "walkTotal": 18,
-        "visitTotal": 60,
-        "needs": 78,
-        "fitted": 2,
-        "dropped": 1,
-        "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Mittenwald&destination=Bahnhof%20Mittenwald&waypoints=Obermarkt%2C%20Mittenwald%7CSt%20Peter%20and%20Paul%2C%20Mittenwald",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Mittenwald&destination=Bahnhof%20Mittenwald&waypoints=Obermarkt%2C%20Mittenwald%7CSt%20Peter%20and%20Paul%2C%20Mittenwald%7CBallenhausgasse%2C%20Mittenwald",
-        "town": "Mittenwald, Germany"
-       }
-      },
-      {
-       "kind": "move",
-       "from": "mittenwald",
-       "to": "seefeld",
-       "note": "This crosses into Austria, and your German ticket does not cover it. Buy the short Mittenwald–Seefeld ticket from the machine on the platform.",
-       "bus": false,
-       "fromStop": "Bahnhof Mittenwald",
-       "toStop": "Bahnhof Seefeld in Tirol",
-       "fromLL": [
-        47.44,
-        11.2655
-       ],
-       "toLL": [
-        47.32887,
-        11.18933
-       ],
-       "dep": "15:36",
-       "arr": "15:56",
-       "depIso": "2026-09-29T13:36:00Z",
-       "arrIso": "2026-09-29T13:56:00Z",
-       "dur": 20,
-       "changes": 0,
-       "gaps": [],
-       "legs": [
-        {
-         "mode": "REGIONAL_RAIL",
-         "line": "RB6",
-         "towards": "Seefeld in Tirol",
-         "from": "Mittenwald",
-         "to": "Seefeld in Tirol",
-         "dep": "15:36",
-         "arr": "15:56",
-         "depIso": "2026-09-29T13:36:00Z",
-         "arrIso": "2026-09-29T13:56:00Z",
-         "track": "1",
-         "tripId": "20260929_13:28_de-DELFI_3412767019"
-        }
-       ],
-       "wanted": "15:40",
-       "later": [
-        {
-         "dep": "16:25",
-         "arr": "16:45",
-         "dur": 20,
-         "changes": 0,
-         "lines": [
-          "S6"
-         ]
-        },
-        {
-         "dep": "18:25",
-         "arr": "18:45",
-         "dur": 20,
-         "changes": 0,
-         "lines": [
-          "R 5431"
-         ]
-        },
-        {
-         "dep": "19:36",
-         "arr": "19:56",
-         "dur": 20,
-         "changes": 0,
-         "lines": [
-          "RB6"
-         ]
-        }
-       ]
-      },
-      {
-       "kind": "stop",
-       "place": "seefeld",
-       "stn": "The station is at the edge of the centre — five minutes in.",
-       "see": [
-        "Seefeld centre",
-        "Pfarrkirche St Oswald",
-        "Seekirchl",
-        "Wildsee"
-       ],
-       "base": false,
-       "arrIso": "2026-09-29T13:56:00Z",
-       "want": 160,
-       "arr": "15:56",
-       "depIso": "2026-09-29T17:15:00Z",
-       "dep": "19:15",
-       "free": 199,
-       "route": {
-        "legs": [
-         {
-          "to": "Seefeld centre",
-          "mins": 2,
-          "how": {
-           "mins": 2,
-           "mode": "walk"
-          },
-          "visit": 60,
-          "backFromHere": 2,
-          "backHow": {
-           "mins": 2,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 47.32944444,
-          "lon": 11.18916667,
-          "kind": "street",
-          "note": "Tyrolean pedestrian streets, cafés, mountain air.",
-          "ticket": false,
-          "at": 2,
-          "leaveBy": 62,
-          "extra": false
-         },
-         {
-          "to": "Pfarrkirche St Oswald",
-          "mins": 5,
-          "how": {
-           "mins": 5,
-           "mode": "walk"
-          },
-          "visit": 20,
-          "backFromHere": 4,
-          "backHow": {
-           "mins": 4,
-           "mode": "walk"
-          },
-          "must": false,
-          "lat": 47.328743,
-          "lon": 11.18648,
-          "kind": "church",
-          "note": "Late-Gothic church, the reason pilgrims came here.",
-          "ticket": false,
-          "at": 67,
-          "leaveBy": 87,
-          "extra": false
-         },
-         {
-          "to": "Seekirchl",
-          "mins": 9,
-          "how": {
-           "mins": 9,
-           "mode": "walk"
-          },
-          "visit": 20,
-          "backFromHere": 12,
-          "backHow": {
-           "mins": 12,
-           "mode": "walk"
-          },
-          "must": false,
-          "lat": 47.327021,
-          "lon": 11.180574,
-          "kind": "church",
-          "note": "The little round white chapel on the meadow — Seefeld's postcard.",
-          "ticket": false,
-          "at": 96,
-          "leaveBy": 116,
-          "extra": false
-         },
-         {
-          "to": "Wildsee",
-          "mins": 17,
-          "how": {
-           "mins": 17,
-           "mode": "walk"
-          },
-          "visit": 50,
-          "backFromHere": 15,
-          "backHow": {
-           "mins": 15,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 47.32222222,
-          "lon": 11.19083333,
-          "kind": "nature",
-          "note": "Lake walk at the southern edge of the centre, flat and easy.",
-          "ticket": false,
-          "at": 133,
-          "leaveBy": 183,
-          "extra": false
-         }
-        ],
-        "back": 15,
-        "walkTotal": 48,
-        "visitTotal": 150,
-        "needs": 198,
-        "fitted": 4,
-        "dropped": 0,
-        "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Seefeld%20in%20Tirol&destination=Bahnhof%20Seefeld%20in%20Tirol&waypoints=Seefeld%20centre%2C%20Seefeld%7CPfarrkirche%20St%20Oswald%2C%20Seefeld%7CSeekirchl%2C%20Seefeld%7CWildsee%2C%20Seefeld",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Seefeld%20in%20Tirol&destination=Bahnhof%20Seefeld%20in%20Tirol&waypoints=Seefeld%20centre%2C%20Seefeld%7CPfarrkirche%20St%20Oswald%2C%20Seefeld%7CSeekirchl%2C%20Seefeld%7CWildsee%2C%20Seefeld",
-        "town": "Seefeld, Austria"
-       }
-      },
-      {
-       "kind": "move",
-       "from": "seefeld",
-       "to": "mittenwald",
-       "note": "",
-       "bus": false,
-       "fromStop": "Bahnhof Seefeld in Tirol",
-       "toStop": "Bahnhof Mittenwald",
-       "fromLL": [
-        47.32887,
-        11.18933
-       ],
-       "toLL": [
-        47.44,
-        11.2655
-       ],
-       "dep": "19:15",
-       "arr": "19:35",
-       "depIso": "2026-09-29T17:15:00Z",
-       "arrIso": "2026-09-29T17:35:00Z",
-       "dur": 20,
-       "changes": 0,
-       "gaps": [],
-       "legs": [
-        {
-         "mode": "METRO",
-         "line": "6",
-         "towards": "Mittenwald",
-         "from": "Seefeld in Tirol",
-         "to": "Mittenwald",
-         "dep": "19:15",
-         "arr": "19:35",
-         "depIso": "2026-09-29T17:15:00Z",
-         "arrIso": "2026-09-29T17:35:00Z",
-         "track": null,
-         "tripId": "20260929_18:38_de-DELFI_3412493882"
-        }
-       ],
-       "wanted": "18:36",
-       "later": [
-        {
-         "dep": "20:04",
-         "arr": "20:25",
-         "dur": 21,
-         "changes": 0,
-         "lines": [
-          "S6"
-         ]
-        },
-        {
-         "dep": "21:15",
-         "arr": "21:35",
-         "dur": 20,
-         "changes": 0,
-         "lines": [
-          "6"
-         ]
-        },
-        {
-         "dep": "07:15",
-         "arr": "07:35",
-         "dur": 20,
-         "changes": 0,
-         "lines": [
-          "6"
-         ]
-        }
-       ]
-      },
-      {
-       "kind": "stop",
-       "place": "mittenwald",
-       "stn": "",
-       "see": [],
-       "base": true,
-       "arrIso": "2026-09-29T17:35:00Z",
-       "want": null,
-       "arr": "19:35",
-       "free": null,
-       "dep": null,
-       "route": {
-        "legs": [],
-        "back": null,
-        "walkTotal": 0,
-        "visitTotal": 0,
-        "needs": 0,
-        "fitted": 0,
-        "dropped": 0,
-        "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Mittenwald&destination=Bahnhof%20Mittenwald",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Mittenwald&destination=Bahnhof%20Mittenwald",
-        "town": "Mittenwald, Germany"
-       }
-      }
-     ],
-     "from": "mittenwald",
-     "to": "mittenwald",
-     "title": null,
-     "intro": null,
-     "hero": null,
-     "bags": null,
-     "ride": 40,
-     "stops": 2,
-     "endArr": "19:35",
-     "startDep": "15:36",
-     "steps": [
-      {
-       "day": 1,
-       "path": "B",
-       "t": "14:00",
-       "kind": "arrive",
-       "place": "mittenwald",
-       "title": "You are in Mittenwald",
-       "ll": [
-        47.44,
-        11.2655
-       ],
-       "station": "Bahnhof Mittenwald",
-       "say": "1 h 36 min here, until the 15:36 on. Obermarkt is five minutes from the station, on the flat.",
-       "free": 96,
-       "dep": "15:36"
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "mittenwald",
-       "title": "Obermarkt",
-       "ll": [
-        47.44194444,
-        11.26027778
-       ],
-       "sight": "mittenwald/Obermarkt",
-       "move": "8 min walk.",
-       "rode": false,
-       "mins": 8,
-       "visit": 40,
-       "say": "The painted main street — Lüftlmalerei on nearly every facade.",
-       "offset": 8,
-       "until": 48,
-       "ticket": false
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "mittenwald",
-       "title": "St Peter and Paul",
-       "ll": [
-        47.44223,
-        11.26021
-       ],
-       "sight": "mittenwald/St Peter and Paul",
-       "move": "1 min walk.",
-       "rode": false,
-       "mins": 1,
-       "visit": 20,
-       "say": "Baroque church with a painted tower you can see from the whole valley.",
-       "offset": 49,
-       "until": 69,
-       "ticket": false
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": "15:36",
-       "kind": "back",
-       "place": "mittenwald",
-       "title": "Back to Bahnhof Mittenwald",
-       "ll": [
-        47.44,
-        11.2655
-       ],
-       "mins": 9,
-       "say": "9 min back to the station. Aim to be on the platform by 15:36."
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": "15:36",
-       "kind": "ride",
-       "title": "Train to Seefeld",
-       "line": "RB6",
-       "from": "Bahnhof Mittenwald",
-       "to": "Bahnhof Seefeld in Tirol",
-       "dep": "15:36",
-       "arr": "15:56",
-       "dur": 20,
-       "changes": 0,
-       "track": "1",
-       "ll": [
-        47.44,
-        11.2655
-       ],
-       "toLL": [
-        47.32887,
-        11.18933
-       ],
-       "place": "mittenwald",
-       "toPlace": "seefeld",
-       "say": "20 minutes, straight through.",
-       "note": "This crosses into Austria, and your German ticket does not cover it. Buy the short Mittenwald–Seefeld ticket from the machine on the platform."
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": "15:56",
-       "kind": "arrive",
-       "place": "seefeld",
-       "title": "You are in Seefeld",
-       "ll": [
-        47.32887,
-        11.18933
-       ],
-       "station": "Bahnhof Seefeld in Tirol",
-       "say": "3 h 19 min here, until the 19:15 on. The station is at the edge of the centre — five minutes in.",
-       "free": 199,
-       "dep": "19:15"
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "seefeld",
-       "title": "Seefeld centre",
-       "ll": [
-        47.32944444,
-        11.18916667
-       ],
-       "sight": "seefeld/Seefeld centre",
-       "move": "2 min walk.",
-       "rode": false,
-       "mins": 2,
-       "visit": 60,
-       "say": "Tyrolean pedestrian streets, cafés, mountain air.",
-       "offset": 2,
-       "until": 62,
-       "ticket": false
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "seefeld",
-       "title": "Pfarrkirche St Oswald",
-       "ll": [
-        47.328743,
-        11.18648
-       ],
-       "sight": "seefeld/Pfarrkirche St Oswald",
-       "move": "5 min walk.",
-       "rode": false,
-       "mins": 5,
-       "visit": 20,
-       "say": "Late-Gothic church, the reason pilgrims came here.",
-       "offset": 67,
-       "until": 87,
-       "ticket": false
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "seefeld",
-       "title": "Seekirchl",
-       "ll": [
-        47.327021,
-        11.180574
-       ],
-       "sight": "seefeld/Seekirchl",
-       "move": "9 min walk.",
-       "rode": false,
-       "mins": 9,
-       "visit": 20,
-       "say": "The little round white chapel on the meadow — Seefeld's postcard.",
-       "offset": 96,
-       "until": 116,
-       "ticket": false
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "seefeld",
-       "title": "Wildsee",
-       "ll": [
-        47.32222222,
-        11.19083333
-       ],
-       "sight": "seefeld/Wildsee",
-       "move": "17 min walk.",
-       "rode": false,
-       "mins": 17,
-       "visit": 50,
-       "say": "Lake walk at the southern edge of the centre, flat and easy.",
-       "offset": 133,
-       "until": 183,
-       "ticket": false
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": "19:15",
-       "kind": "back",
-       "place": "seefeld",
-       "title": "Back to Bahnhof Seefeld in Tirol",
-       "ll": [
-        47.32887,
-        11.18933
-       ],
-       "mins": 15,
-       "say": "15 min back to the station. Aim to be on the platform by 19:15."
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": "19:15",
-       "kind": "ride",
-       "title": "Train to Mittenwald",
-       "line": "6",
-       "from": "Bahnhof Seefeld in Tirol",
-       "to": "Bahnhof Mittenwald",
-       "dep": "19:15",
-       "arr": "19:35",
-       "dur": 20,
-       "changes": 0,
-       "track": null,
-       "ll": [
-        47.32887,
-        11.18933
-       ],
-       "toLL": [
-        47.44,
-        11.2655
-       ],
-       "place": "seefeld",
-       "toPlace": "mittenwald",
-       "say": "20 minutes, straight through.",
-       "note": ""
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": "19:35",
-       "kind": "arrive",
-       "place": "mittenwald",
-       "title": "You are in Mittenwald",
-       "ll": [
-        47.44,
-        11.2655
-       ],
-       "station": "Bahnhof Mittenwald",
-       "say": "This is where you sleep tonight.",
-       "free": null,
-       "dep": null
-      },
-      {
-       "day": 1,
-       "path": "B",
-       "t": null,
-       "kind": "sleep",
-       "place": "mittenwald",
-       "title": "Goodnight, Mittenwald",
-       "ll": [
-        47.44,
-        11.2655
-       ],
-       "say": "Tomorrow: Out of the Alps."
-      }
-     ]
-    },
-    {
-     "id": "C",
-     "name": "Up to the lakes",
-     "why": "The two mountain lakes above the town. A proper walk, about three hours.",
-     "seq": [
-      {
-       "kind": "stop",
-       "place": "mittenwald",
-       "stn": "The path to the lakes starts at the south end of town, past the church.",
-       "see": [
-        "Obermarkt",
-        "St Peter and Paul",
-        "Lautersee",
-        "Ferchensee"
-       ],
-       "base": true,
-       "arrIso": "2026-09-29T12:00:00.000Z",
-       "want": null,
-       "arr": "14:00",
-       "free": null,
-       "dep": null,
-       "route": {
-        "legs": [
-         {
-          "to": "Obermarkt",
-          "mins": 8,
-          "how": {
-           "mins": 8,
-           "mode": "walk"
-          },
-          "visit": 40,
-          "backFromHere": 8,
-          "backHow": {
-           "mins": 8,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 47.44194444,
-          "lon": 11.26027778,
-          "kind": "street",
-          "note": "The painted main street — Lüftlmalerei on nearly every facade.",
-          "ticket": false,
-          "at": 8,
-          "leaveBy": 48,
-          "extra": false
-         },
-         {
-          "to": "St Peter and Paul",
-          "mins": 1,
-          "how": {
-           "mins": 1,
-           "mode": "walk"
-          },
-          "visit": 20,
-          "backFromHere": 9,
-          "backHow": {
-           "mins": 9,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 47.44223,
-          "lon": 11.26021,
-          "kind": "church",
-          "note": "Baroque church with a painted tower you can see from the whole valley.",
-          "ticket": false,
-          "at": 49,
-          "leaveBy": 69,
-          "extra": false
-         },
-         {
-          "to": "Lautersee",
-          "mins": 14,
-          "how": {
-           "mins": 14,
-           "mode": "go",
-           "approx": true
-          },
-          "visit": 120,
-          "backFromHere": 15,
-          "backHow": {
-           "mins": 15,
-           "mode": "go",
-           "approx": true
-          },
-          "must": false,
-          "lat": 47.43861111,
-          "lon": 11.23527778,
-          "kind": "nature",
-          "note": "Mountain lake above the town. About 1 h up through the forest.",
-          "ticket": false,
-          "at": 83,
-          "leaveBy": 203,
-          "extra": false
-         },
-         {
-          "to": "Ferchensee",
-          "mins": 25,
-          "how": {
-           "mins": 25,
-           "mode": "walk"
-          },
-          "visit": 90,
-          "backFromHere": 18,
-          "backHow": {
-           "mins": 18,
-           "mode": "go",
-           "approx": true
-          },
-          "must": false,
-          "lat": 47.43916667,
-          "lon": 11.21472222,
-          "kind": "nature",
-          "note": "The quieter second lake, 30 min further on from Lautersee.",
-          "ticket": false,
-          "at": 228,
-          "leaveBy": 318,
-          "extra": false
-         }
-        ],
-        "back": 18,
-        "walkTotal": 66,
-        "visitTotal": 270,
-        "needs": 336,
-        "fitted": 4,
-        "dropped": 0,
-        "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Mittenwald&destination=Bahnhof%20Mittenwald&waypoints=Obermarkt%2C%20Mittenwald%7CSt%20Peter%20and%20Paul%2C%20Mittenwald%7CLautersee%2C%20Mittenwald%7CFerchensee%2C%20Mittenwald",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Mittenwald&destination=Bahnhof%20Mittenwald&waypoints=Obermarkt%2C%20Mittenwald%7CSt%20Peter%20and%20Paul%2C%20Mittenwald%7CLautersee%2C%20Mittenwald%7CFerchensee%2C%20Mittenwald",
-        "town": "Mittenwald, Germany"
-       }
-      }
-     ],
-     "from": "mittenwald",
-     "to": "mittenwald",
-     "title": null,
-     "intro": null,
-     "hero": null,
-     "bags": null,
-     "ride": 0,
-     "stops": 0,
-     "endArr": "14:00",
-     "startDep": "14:00",
-     "steps": [
-      {
-       "day": 1,
-       "path": "C",
-       "t": "14:00",
-       "kind": "arrive",
-       "place": "mittenwald",
-       "title": "You are in Mittenwald",
-       "ll": [
-        47.44,
-        11.2655
-       ],
-       "station": "Bahnhof Mittenwald",
-       "say": "This is where you sleep tonight. The path to the lakes starts at the south end of town, past the church.",
-       "free": null,
-       "dep": null
-      },
-      {
-       "day": 1,
-       "path": "C",
-       "t": null,
-       "kind": "see",
-       "place": "mittenwald",
-       "title": "Obermarkt",
-       "ll": [
-        47.44194444,
-        11.26027778
-       ],
-       "sight": "mittenwald/Obermarkt",
-       "move": "8 min walk.",
-       "rode": false,
-       "mins": 8,
-       "visit": 40,
-       "say": "The painted main street — Lüftlmalerei on nearly every facade.",
-       "offset": 8,
-       "until": 48,
-       "ticket": false
-      },
-      {
-       "day": 1,
-       "path": "C",
-       "t": null,
-       "kind": "see",
-       "place": "mittenwald",
-       "title": "St Peter and Paul",
-       "ll": [
-        47.44223,
-        11.26021
-       ],
-       "sight": "mittenwald/St Peter and Paul",
-       "move": "1 min walk.",
-       "rode": false,
-       "mins": 1,
-       "visit": 20,
-       "say": "Baroque church with a painted tower you can see from the whole valley.",
-       "offset": 49,
-       "until": 69,
-       "ticket": false
-      },
-      {
-       "day": 1,
-       "path": "C",
        "t": null,
        "kind": "see",
        "place": "mittenwald",
@@ -1220,15 +422,15 @@
        "move": "14 min walk.",
        "rode": false,
        "mins": 14,
-       "visit": 120,
-       "say": "Mountain lake above the town. About 1 h up through the forest.",
-       "offset": 83,
-       "until": 203,
+       "visit": 60,
+       "say": "Mountain lake above the town, an hour up through the forest. Swimmable in summer, freezing now.",
+       "offset": 183,
+       "until": 243,
        "ticket": false
       },
       {
        "day": 1,
-       "path": "C",
+       "path": "A",
        "t": null,
        "kind": "see",
        "place": "mittenwald",
@@ -1241,15 +443,15 @@
        "move": "25 min walk.",
        "rode": false,
        "mins": 25,
-       "visit": 90,
-       "say": "The quieter second lake, 30 min further on from Lautersee.",
-       "offset": 228,
-       "until": 318,
+       "visit": 45,
+       "say": "The quieter second lake, half an hour on from Lautersee through the trees.",
+       "offset": 268,
+       "until": 313,
        "ticket": false
       },
       {
        "day": 1,
-       "path": "C",
+       "path": "A",
        "t": null,
        "kind": "sleep",
        "place": "mittenwald",
@@ -2040,7 +1242,7 @@
          "dur": 54,
          "changes": 0,
          "lines": [
-          "RB60"
+          "RB6"
          ]
         },
         {
@@ -2332,7 +1534,7 @@
          "changes": 1,
          "lines": [
           "RB6",
-          "WB 966"
+          "DRF"
          ]
         },
         {
@@ -2350,7 +1552,7 @@
          "dur": 47,
          "changes": 0,
          "lines": [
-          "RE9"
+          "RE89"
          ]
         }
        ]
@@ -4084,7 +3286,7 @@
        "kind": "move",
        "from": "augsburg",
        "to": "ulm",
-       "note": "Direct along the Danube on the RE9 — the slower ones take two hours, so take this one.",
+       "note": "The RE9 is direct. The slower ones take two hours.",
        "bus": false,
        "fromStop": "Augsburg Hauptbahnhof",
        "toStop": "Ulm Hauptbahnhof",
@@ -4309,7 +3511,7 @@
        "kind": "move",
        "from": "ulm",
        "to": "esslingen",
-       "note": "Direct on the RE5, down the Fils and the Neckar.",
+       "note": "Direct on the RE5.",
        "bus": false,
        "fromStop": "Ulm Hauptbahnhof",
        "toStop": "Bahnhof Esslingen (Neckar)",
@@ -4530,7 +3732,7 @@
        "kind": "move",
        "from": "esslingen",
        "to": "heidelberg",
-       "note": "Two changes, usually Stuttgart and Mannheim.",
+       "note": "Changes at Stuttgart and Mannheim.",
        "bus": false,
        "fromStop": "Bahnhof Esslingen (Neckar)",
        "toStop": "Heidelberg Hauptbahnhof",
@@ -4859,7 +4061,7 @@
        "place": "augsburg",
        "toPlace": "ulm",
        "say": "80 minutes, straight through.",
-       "note": "Direct along the Danube on the RE9 — the slower ones take two hours, so take this one."
+       "note": "The RE9 is direct. The slower ones take two hours."
       },
       {
        "day": 3,
@@ -4979,7 +4181,7 @@
        "place": "ulm",
        "toPlace": "esslingen",
        "say": "57 minutes, straight through.",
-       "note": "Direct on the RE5, down the Fils and the Neckar."
+       "note": "Direct on the RE5."
       },
       {
        "day": 3,
@@ -5078,7 +4280,7 @@
        "place": "esslingen",
        "toPlace": "heidelberg",
        "say": "100 minutes and 2 changes — MEX16, then RE1, then RE71.",
-       "note": "Two changes, usually Stuttgart and Mannheim."
+       "note": "Changes at Stuttgart and Mannheim."
       },
       {
        "day": 3,
@@ -5380,7 +4582,7 @@
        "kind": "move",
        "from": "heidelberg",
        "to": "wurzburg",
-       "note": "Change at Mannheim or Osterburken. Buy something to eat before you board.",
+       "note": "Change at Mannheim or Osterburken. Eat before you board.",
        "bus": false,
        "fromStop": "Heidelberg Hauptbahnhof",
        "toStop": "Würzburg Hauptbahnhof",
@@ -5781,7 +4983,7 @@
        "kind": "move",
        "from": "bamberg",
        "to": "erfurt",
-       "note": "Direct on the RE29, an hour and a quarter. The late ones are not direct and take three hours, so this is the train to be on.",
+       "note": "The RE29, direct. Later trains take three hours — be on this one.",
        "bus": false,
        "fromStop": "Bahnhof Bamberg",
        "toStop": "Erfurt Hauptbahnhof",
@@ -6081,7 +5283,7 @@
        "place": "heidelberg",
        "toPlace": "wurzburg",
        "say": "145 minutes and 1 change — S1, then RE8.",
-       "note": "Change at Mannheim or Osterburken. Buy something to eat before you board."
+       "note": "Change at Mannheim or Osterburken. Eat before you board."
       },
       {
        "day": 4,
@@ -6258,7 +5460,7 @@
        "place": "bamberg",
        "toPlace": "erfurt",
        "say": "67 minutes, straight through.",
-       "note": "Direct on the RE29, an hour and a quarter. The late ones are not direct and take three hours, so this is the train to be on."
+       "note": "The RE29, direct. Later trains take three hours — be on this one."
       },
       {
        "day": 4,
@@ -6363,13 +5565,13 @@
    "c": "#3B4C8C",
    "hero": "wittenberg",
    "bags": 1,
-   "holiday": "German Unity Day — a public holiday. Trains run a Sunday timetable, so there are fewer of them, and museums may keep holiday hours. Check the times before you leave each place.",
+   "holiday": "German Unity Day. Sunday timetable, so fewer trains, and museums may keep holiday hours.",
    "intro": "Four short stops rather than one long ride: Goethe's town, a cathedral, Handel's birthplace, and the door the Reformation was nailed to.",
    "paths": [
     {
      "id": "A",
      "name": "Weimar, Naumburg, Halle, Wittenberg",
-     "why": "Breaking the run to Berlin into four means less time sitting down, not more — the direct way is slower than this.",
+     "why": "Less time sitting down than going direct, not more.",
      "seq": [
       {
        "kind": "stop",
@@ -8064,7 +7266,7 @@
     {
      "id": "B",
      "name": "Weimar, then straight on",
-     "why": "One stop instead of four, and in Berlin in the afternoon.",
+     "why": "One stop, and in Berlin by teatime.",
      "seq": [
       {
        "kind": "stop",
@@ -9126,8 +8328,8 @@
    "src": "pinned",
    "km": 0.36,
    "wiki": "https://de.wikipedia.org/wiki/Oberau",
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg",
-   "photoFile": "Loisachtal südlich von Oberau Juni 2020 2.jpg",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg",
+   "photoFile": "Loisachtal südlich von Oberau Juni 2020 1.jpg",
    "about": ""
   },
   "ettal": {
@@ -9382,8 +8584,8 @@
    "src": "pinned",
    "km": 1.33,
    "wiki": "https://de.wikipedia.org/wiki/Halle_(Saale)",
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg",
-   "photoFile": "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg",
+   "photoFile": "Halle (Saale), Marktplatz, Roter Turm 20170718 002.jpg",
    "about": ""
   },
   "wittenberg": {
@@ -9712,8 +8914,8 @@
     1
    ],
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 47.44228,
+   "lon": 11.26055,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Geigenbaumuseum_in_%28Mittenwald%29_Garmisch-Partenkirchen.jpg/640px-Geigenbaumuseum_in_%28Mittenwald%29_Garmisch-Partenkirchen.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Geigenbaumuseum_in_%28Mittenwald%29_Garmisch-Partenkirchen.jpg/1000px-Geigenbaumuseum_in_%28Mittenwald%29_Garmisch-Partenkirchen.jpg",
    "photoFile": "Geigenbaumuseum_in_(Mittenwald)_Garmisch-Partenkirchen.jpg",
@@ -9723,13 +8925,13 @@
   "mittenwald/Lautersee": {
    "place": "mittenwald",
    "name": "Lautersee",
-   "note": "Mountain lake above the town. About 1 h up through the forest.",
-   "mins": 120,
+   "note": "Mountain lake above the town, an hour up through the forest. Swimmable in summer, freezing now.",
+   "mins": 60,
    "kind": "nature",
    "ticket": false,
    "indoor": false,
    "closed": null,
-   "must": false,
+   "must": true,
    "lat": 47.43861111,
    "lon": 11.23527778,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Lautersee%2C_Mittenwald_04.jpg/640px-Lautersee%2C_Mittenwald_04.jpg",
@@ -9741,8 +8943,8 @@
   "mittenwald/Ferchensee": {
    "place": "mittenwald",
    "name": "Ferchensee",
-   "note": "The quieter second lake, 30 min further on from Lautersee.",
-   "mins": 90,
+   "note": "The quieter second lake, half an hour on from Lautersee through the trees.",
+   "mins": 45,
    "kind": "nature",
    "ticket": false,
    "indoor": false,
@@ -9792,22 +8994,76 @@
    "wiki": "https://de.wikipedia.org/wiki/Leutaschklamm",
    "about": ""
   },
-  "mittenwald/Isar source valley": {
+  "mittenwald/Isar riverside": {
    "place": "mittenwald",
-   "name": "Isar source valley",
-   "note": "The Isar starts here and runs north to Munich.",
-   "mins": 60,
+   "name": "Isar riverside",
+   "note": "The river comes out of the Karwendel here, milky green and very cold. Flat walk at the east edge of town.",
+   "mins": 35,
    "kind": "nature",
    "ticket": false,
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": 48.80361111,
-   "lon": 12.975,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Georgenstein_Ostufer.jpg/640px-Georgenstein_Ostufer.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Georgenstein_Ostufer.jpg/1000px-Georgenstein_Ostufer.jpg",
-   "photoFile": "Georgenstein_Ostufer.jpg",
+   "lat": 47.4452,
+   "lon": 11.2706,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Isar_valley_near_Mittenwald_%28SM_sg1313z%29.png/640px-Isar_valley_near_Mittenwald_%28SM_sg1313z%29.png",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Isar_valley_near_Mittenwald_%28SM_sg1313z%29.png/1000px-Isar_valley_near_Mittenwald_%28SM_sg1313z%29.png",
+   "photoFile": "Isar valley near Mittenwald (SM sg1313z).png",
    "wiki": "https://de.wikipedia.org/wiki/Isar",
+   "about": ""
+  },
+  "mittenwald/The painted houses": {
+   "place": "mittenwald",
+   "name": "The painted houses",
+   "note": "Lüftlmalerei — frescoes painted straight onto wet lime. Mittenwald has the best street of them in Bavaria.",
+   "mins": 25,
+   "kind": "street",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": true,
+   "lat": 47.44135,
+   "lon": 11.2606,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Mittenwald_L%C3%BCftlmalerei_Im_Gries_53_318.jpg/640px-Mittenwald_L%C3%BCftlmalerei_Im_Gries_53_318.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Mittenwald_L%C3%BCftlmalerei_Im_Gries_53_318.jpg/1000px-Mittenwald_L%C3%BCftlmalerei_Im_Gries_53_318.jpg",
+   "photoFile": "Mittenwald Lüftlmalerei Im Gries 53 318.jpg",
+   "wiki": "https://en.wikipedia.org/wiki/L%C3%BCftlmalerei",
+   "about": "Lüftlmalerei is a form of mural art that is native to villages and towns of southern Germany and Austria, especially in Upper Bavaria and in the Tyrol."
+  },
+  "mittenwald/Matthias Klotz monument": {
+   "place": "mittenwald",
+   "name": "Matthias Klotz monument",
+   "note": "He brought violin-making back from Padua in 1684 and the town has lived on it since. His statue faces the church.",
+   "mins": 10,
+   "kind": "sight",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 47.44205,
+   "lon": 11.2603,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Mittenwald_-_Obermarkt_%2808%29_-_Matthias-Klotz-Denkmal.jpg/640px-Mittenwald_-_Obermarkt_%2808%29_-_Matthias-Klotz-Denkmal.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Mittenwald_-_Obermarkt_%2808%29_-_Matthias-Klotz-Denkmal.jpg/1000px-Mittenwald_-_Obermarkt_%2808%29_-_Matthias-Klotz-Denkmal.jpg",
+   "photoFile": "Mittenwald - Obermarkt (08) - Matthias-Klotz-Denkmal.jpg",
+   "wiki": "https://en.wikipedia.org/wiki/Matthias_Klotz",
+   "about": "Matthias Klotz (1653–1743) was a luthier, a member of the Klotz family of violin makers that flourished in Mittenwald, Duchy of Bavaria as early as 1683."
+  },
+  "mittenwald/Hoher Kranzberg": {
+   "place": "mittenwald",
+   "name": "Hoher Kranzberg",
+   "note": "A small summit with a big view, and a chairlift most of the way up.",
+   "mins": 120,
+   "kind": "view",
+   "ticket": true,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 47.45277778,
+   "lon": 11.22388889,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Hoher_Kranzberg.jpg/640px-Hoher_Kranzberg.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Hoher_Kranzberg.jpg/1000px-Hoher_Kranzberg.jpg",
+   "photoFile": "Hoher_Kranzberg.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Hoher_Kranzberg_(Wettersteingebirge)",
    "about": ""
   },
   "seefeld/Seefeld centre": {
@@ -10000,8 +9256,8 @@
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": 46.475182,
-   "lon": 9.824156,
+   "lat": 47.4869,
+   "lon": 11.1097,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Olympiaschanze_St._Moritz.jpg/640px-Olympiaschanze_St._Moritz.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Olympiaschanze_St._Moritz.jpg/1000px-Olympiaschanze_St._Moritz.jpg",
    "photoFile": "Olympiaschanze_St._Moritz.jpg",
@@ -13516,11 +12772,11 @@
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": 53.89333333,
-   "lon": 8.70555556,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Damnatz_Elbe.jpg/640px-Damnatz_Elbe.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Damnatz_Elbe.jpg/1000px-Damnatz_Elbe.jpg",
-   "photoFile": "Damnatz_Elbe.jpg",
+   "lat": 52.127,
+   "lon": 11.639,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Aerial_view_of_Elbuferpromenade%2C_Magdeburg.jpg/640px-Aerial_view_of_Elbuferpromenade%2C_Magdeburg.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Aerial_view_of_Elbuferpromenade%2C_Magdeburg.jpg/1000px-Aerial_view_of_Elbuferpromenade%2C_Magdeburg.jpg",
+   "photoFile": "Aerial view of Elbuferpromenade, Magdeburg.jpg",
    "wiki": "https://de.wikipedia.org/wiki/Elbe",
    "about": ""
   },
@@ -14064,7 +13320,7 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "© Ra Boe / Wikipedia"
   },
-  "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg": {
+  "Halle (Saale), Marktplatz, Roter Turm 20170718 002.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Tilman2007"
   },
@@ -14088,7 +13344,7 @@
    "lic": "CC0",
    "by": "Christoph Braun"
   },
-  "Loisachtal südlich von Oberau Juni 2020 2.jpg": {
+  "Loisachtal südlich von Oberau Juni 2020 1.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kajebi II."
   },
@@ -14164,6 +13420,10 @@
    "lic": "Public domain",
    "by": "Patrick Huebgen"
   },
+  "Hoher Kranzberg.jpg": {
+   "lic": "GFDL",
+   "by": "Kogo"
+  },
   "Olympiaschanze St. Moritz.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Garry Furrer"
@@ -14204,10 +13464,6 @@
    "lic": "CC0",
    "by": "Leitzsche"
   },
-  "Georgenstein Ostufer.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Richard Bartz"
-  },
   "Kloster Ettal Klosteranlage.JPG": {
    "lic": "CC BY-SA 1.0",
    "by": "Bbb"
@@ -14228,6 +13484,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo"
   },
+  "Mittenwald Lüftlmalerei Im Gries 53 318.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "GFreihalter"
+  },
   "AltePfarrkircheStMartinGarmischPartenkirchenTurmL1050993 (3).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Oktobersonne"
@@ -14235,10 +13495,6 @@
   "Oberammergau, Peter und Paul von Südosten, 1.jpeg": {
    "lic": "CC BY-SA 4.0",
    "by": "Renardo la vulpo"
-  },
-  "Odeonsplatz von der Feldherrnhalle.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Wolfgang Rieger"
   },
   "Hohenschwangau (3383608894).jpg": {
    "lic": "CC BY 2.0",
@@ -14248,9 +13504,17 @@
    "lic": "CC BY-SA 4.0",
    "by": "Molgreen"
   },
+  "Mittenwald - Obermarkt (08) - Matthias-Klotz-Denkmal.jpg": {
+   "lic": "CC BY 2.0",
+   "by": "Pixelteufel"
+  },
   "Ettal, Linderhof 21.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "LBM1948"
+  },
+  "Isar valley near Mittenwald (SM sg1313z).png": {
+   "lic": "PDM-owner",
+   "by": "Pose, Eduard Wilhelm Eduard Wilhelm Pose (Q17265513)"
   },
   "Nördliche Karwendelkette, Blick von Mittenwald 05.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14259,10 +13523,6 @@
   "Lautersee, Mittenwald 04.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kritzolina"
-  },
-  "Aerial image of the Abbey of Saint Mang (view from the southwest).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Carsten Steger"
   },
   "Sankt Oswald (Seefeld in Tirol) v NO.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14279,10 +13539,6 @@
   "Aerial image of the Staffelsee (view from the southeast).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
-  },
-  "Exterior of Theatinerkirche, Munich.jpg": {
-   "lic": "CC0",
-   "by": "Wilfredor"
   },
   "Neuschwanstein Castle 2024-02.jpg": {
    "lic": "CC0",
@@ -14316,10 +13572,6 @@
    "lic": "CC BY 2.5",
    "by": "User:ReclaM"
   },
-  "Nürnberg St. Sebald komplett v N.jpg": {
-   "lic": "CC BY-SA 2.0 de",
-   "by": "jailbird"
-  },
   "Frauenkirche Munich - View from Peterskirche Tower.jpg": {
    "lic": "CC BY 2.5",
    "by": "Diliff"
@@ -14351,10 +13603,6 @@
   "Rathaus-maximilianstrasse-Augsburg-Blick-vom-Perlachturm.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Peter Bubenik"
-  },
-  "Nuernberg-schoener-Brunnen-gp.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "User:Kolossos"
   },
   "Nürnberg Frauentormauer Turm rotes N und Spittlertorturm.jpg": {
    "lic": "CC BY 3.0",
@@ -14404,10 +13652,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo, derivative work Lämpel"
   },
-  "Nürnberg, Stadtbefestigung, Tiergärtnertorhaus-20160304-002.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Tilman2007"
-  },
   "Innenstadt - St. Ulrich-Dom, Augsburg, Germany - panoramio.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Dewi König"
@@ -14415,6 +13659,10 @@
   "Augsburg.- Town Hall (Goldener Saal) (1).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "© Pierre André"
+  },
+  "Odeonsplatz von der Feldherrnhalle.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Wolfgang Rieger"
   },
   "Donauwörth-KätheKrusePuppenMuseum1-Asio.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -14444,6 +13692,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Diego Delso"
   },
+  "Aerial image of the Abbey of Saint Mang (view from the southwest).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Carsten Steger"
+  },
   "Augsburg Fuggerei Eingang 220326.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Hajotthu"
@@ -14451,6 +13703,10 @@
   "Deutsches Museum Portrait 4.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Burkhard Mücke"
+  },
+  "Exterior of Theatinerkirche, Munich.jpg": {
+   "lic": "CC0",
+   "by": "Wilfredor"
   },
   "Aerial image of Stadtpfarrkirche Mariä Himmelfahrt, Landsberg am Lech (view from the south).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14472,17 +13728,13 @@
    "lic": "Public domain",
    "by": "Immanuel Giel"
   },
+  "Nürnberg St. Sebald komplett v N.jpg": {
+   "lic": "CC BY-SA 2.0 de",
+   "by": "jailbird"
+  },
   "Neue Residenz auf domberg in Bamberg.png": {
    "lic": "Public domain",
    "by": "Immanuel Giel"
-  },
-  "Heidelberg 20060420 021.jpg": {
-   "lic": "CC BY 2.5",
-   "by": "No machine-readable author provided. Hlohning assumed (based on copyright claims)."
-  },
-  "Heidelberg Fussgaengerzone.JPG": {
-   "lic": "Public domain",
-   "by": "Rudolf Stricker"
   },
   "Nürnberg Burg ArM.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -14505,6 +13757,10 @@
    "by": "Berthold Werner"
   },
   "Nuernberg-Frauenkirche-gp.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "User:Kolossos"
+  },
+  "Nuernberg-schoener-Brunnen-gp.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "User:Kolossos"
   },
@@ -14544,10 +13800,6 @@
    "lic": "CC BY 3.0",
    "by": "KaterBegemot"
   },
-  "Heidelberg Karzer 01.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Llez"
-  },
   "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
@@ -14567,6 +13819,10 @@
   "St. Jakob Kirche Rothenburg 2014.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
+  },
+  "Nürnberg, Stadtbefestigung, Tiergärtnertorhaus-20160304-002.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Tilman2007"
   },
   "Handwerkerhof an Weihnachten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14620,9 +13876,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Schiller Weimar.jpg": {
-   "lic": "CC BY-SA 2.5",
-   "by": "Andreas Trepte"
+  "Heidelberg 20060420 021.jpg": {
+   "lic": "CC BY 2.5",
+   "by": "No machine-readable author provided. Hlohning assumed (based on copyright claims)."
+  },
+  "Heidelberg Fussgaengerzone.JPG": {
+   "lic": "Public domain",
+   "by": "Rudolf Stricker"
   },
   "LuftbildPetersberg.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -14635,10 +13895,6 @@
   "Weimar Wittumspalais.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Markv at Dutch Wikipedia"
-  },
-  "Ilmpark in Weimar - Blick zum Stern.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "© R.Möhler"
   },
   "Alte Synagoge Erfurt.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -14675,6 +13931,10 @@
   "Egapark Erfurt Festplatz.jpg": {
    "lic": "CC BY 3.0",
    "by": "Grimba-Photo"
+  },
+  "Heidelberg Karzer 01.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Llez"
   },
   "2013-04-20 Krämerbrücke.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -14732,10 +13992,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Uoaei1"
   },
-  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
-  },
   "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
@@ -14780,6 +14036,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
+  "Schiller Weimar.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "Andreas Trepte"
+  },
   "Naumburg stwenzel.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Christian Bier"
@@ -14787,6 +14047,10 @@
   "Naumburg Marientor.jpg": {
    "lic": "CC BY 3.0",
    "by": "Density"
+  },
+  "Ilmpark in Weimar - Blick zum Stern.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "© R.Möhler"
   },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -14815,10 +14079,6 @@
   "Augusteum - Lutherhaus Wittenberg.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
-  },
-  "Luthereiche in Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Markus Sturzbecher"
   },
   "Roter Turm Halle 2009.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -14860,6 +14120,10 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
+  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
   "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
@@ -14871,10 +14135,6 @@
   "Goethe-Schiller-Denkmal 01.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "H.Helmlechner"
-  },
-  "Magdeburger Dom Luftbild.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Gregor Rom"
   },
   "Moritzburg Halle Hauptzuweg.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14899,10 +14159,6 @@
   "Halle(Saale) Marktkirche asv2024-04.jpg": {
    "lic": "FAL",
    "by": "A.Savin"
-  },
-  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
   },
   "BD Nitzsche Haus, Naumburg (1).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14980,13 +14236,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "NoRud"
   },
-  "Damnatz Elbe.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Christian Fischer"
-  },
   "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
    "lic": "CC BY 3.0 de",
    "by": "Ansgar Koreng"
+  },
+  "Luthereiche in Wittenberg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Markus Sturzbecher"
   },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14995,6 +14251,10 @@
   "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kora27"
+  },
+  "Magdeburger Dom Luftbild.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gregor Rom"
   },
   "Hackesche höfe berlin.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -15012,6 +14272,10 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
+  "Aerial view of Elbuferpromenade, Magdeburg.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Olivier Cleynen"
+  },
   "Jena-40-Marktplatz-2023-gje.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gerd Eichmann"
@@ -15027,6 +14291,10 @@
   "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Barnos"
+  },
+  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Dguendel"
   },
   "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
    "lic": "Public domain",
@@ -15050,7 +14318,7 @@
     {
      "n": 1,
      "pathId": "A",
-     "name": "The town, slowly",
+     "name": "The town, then the lakes",
      "endArr": "14:00"
     },
     {

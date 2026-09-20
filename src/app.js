@@ -295,7 +295,7 @@
     openSheetRaw(`<div class="grab"></div><div class="sbody">
       <h2>${s === "ok" ? "Live" : s === "off" ? "Offline" : "The plan"}</h2>
       <p class="about" style="color:var(--ink)">${esc(said)}</p>
-      <p class="about">A green dot means the times you see have been checked against Deutsche Bahn in the last few minutes. Grey means you are reading the plan as it was built. It checks itself every minute or so while you travel, and you can tap here any time to make it check again.</p>
+      <p class="about">Green: checked against Deutsche Bahn in the last few minutes. Grey: you are reading the plan as built. Tap to check again.</p>
       <div class="btns" style="padding:14px 0 0"><button class="btn ghost" data-close="1">Close</button></div></div>`);
   }
 
@@ -508,7 +508,7 @@
       ${heroCard(day, `Day ${day.n} · ${weekday(day.iso)} ${dateShort(day.iso)}`, dayText(day, path).title, heroOf(day, path))}
       <div class="card pad"><p class="lead" style="margin:0">${esc(dayText(day, path).intro)}</p></div>
       ${day.holiday ? note("warn", holidayText(day)) : ""}
-      ${bagsOf(day, path) ? note("calm", `Bags come with you today — tonight is ${esc(place(last.place).n)}. Most stations have lockers.`) : ""}
+      ${bagsOf(day, path) ? note("calm", `Bags with you today. Tonight is ${esc(place(last.place).n)}.`) : ""}
       ${choose}
       <div class="label">The day, in order</div>
       <div class="tl">${body}</div>
