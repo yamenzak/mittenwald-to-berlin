@@ -30,25 +30,9 @@
     get(k, d) { try { const v = localStorage.getItem("mb-" + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
     set(k, v) { try { localStorage.setItem("mb-" + k, JSON.stringify(v)); } catch (e) {} },
   };
-  let preset = store.get("preset", null);
+  /* One trip. `chosen` is only ever an override on the day options inside it. */
+  const TRIP = (D.presets || [])[0] || { pickDays: [], beds: [] };
   let chosen = store.get("routes", {});
-  /* A preset is the whole trip, already balanced. Picking one sets every day;
-     changing a single day afterwards is still allowed and just means she has
-     stepped off the preset, which the page says rather than hides. */
-  const presetOf = (id) => (D.presets || []).find((p) => p.id === id) || null;
-  function applyPreset(id) {
-    const p = presetOf(id);
-    if (!p) return;
-    liveGen++;
-    preset = id; chosen = {};
-    p.pickDays.forEach((d) => { chosen[d.n] = d.pathId; });
-    store.set("preset", preset); store.set("routes", chosen);
-    liveCache = {}; store.set("live", {});
-  }
-  const offPreset = () => {
-    const p = presetOf(preset);
-    return !!p && p.pickDays.some((d) => (chosen[d.n] || d.pathId) !== d.pathId);
-  };
   let ticked = store.get("ticked", {});
   let liveCache = store.get("live", {});
 
@@ -59,30 +43,11 @@
   const now = () => (fake ? new Date(fake.getTime() + (Date.now() - boot)) : new Date());
   const boot = Date.now();
 
-  /* The plan was built for 29 September. If she travels a week later — or a day
-     early, or the flight moves — the dates in the file stop matching the dates
-     she is living in, and an app that insists otherwise is useless on the day.
-     So the whole plan slides: day 1 is whatever date she says it is, and every
-     live lookup asks the timetable about the real date rather than the one the
-     plan was baked from. */
-  const DAY_MS = 86400000;
-  const planStart = D.days[0].iso;
-  let startIso = store.get("start", planStart);
-  const shiftDays = () =>
-    Math.round((Date.parse(startIso + "T12:00:00Z") - Date.parse(planStart + "T12:00:00Z")) / DAY_MS);
-  const shifted = () => shiftDays() !== 0;
-  /* A plan date -> the date she is actually there. */
-  const realDate = (iso) =>
-    new Date(Date.parse(iso + "T12:00:00Z") + shiftDays() * DAY_MS).toISOString().slice(0, 10);
-  /* An instant in the baked plan -> the same clock time on the real date. */
-  const realInstant = (isoTime) =>
-    new Date(new Date(isoTime).getTime() + shiftDays() * DAY_MS).toISOString();
-  function setStart(iso) {
-    startIso = iso; store.set("start", iso);
-    liveGen++;
-    liveCache = {}; store.set("live", {});
-    replanCache = {};
-  }
+  /* The trip has one set of dates now, so a plan time and a real time are the
+     same instant. The two names stay because the live layer reads better with
+     them than without. */
+  const realDate = (iso) => iso;
+  const realInstant = (isoTime) => isoTime;
 
   const hhmm = (d) => new Date(d).toLocaleTimeString("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit" });
   const dayKey = (d) => new Date(d).toLocaleDateString("en-CA", { timeZone: TZ });
@@ -135,7 +100,7 @@
      itinerary stored but no overrides — a fresh phone, or cleared routes —
      quietly showed the classic days under the Harz's name. */
   const pickId = (day) => chosen[day.n] ||
-    ((presetOf(preset) || { pickDays: [] }).pickDays.find((x) => x.n === day.n) || {}).pathId;
+    (TRIP.pickDays.find((x) => x.n === day.n) || {}).pathId;
   function pathOf(day) {
     const i = D.days.indexOf(day);
     const here = day.paths.find((p) => p.id === pickId(day));
@@ -239,7 +204,7 @@
     if (!hit) {
       // On a date the plan was not built for, this service may simply not run.
       const alt = (res.itineraries || []).find((it) => (it.legs || []).some((l) => l.mode && l.mode !== "WALK"));
-      if (shifted() && alt) {
+      if (false && alt) {
         const legs = alt.legs.filter((l) => l.mode && l.mode !== "WALK");
         return { id: moveId(m), at: Date.now(), replaced: true,
           realDep: legs[0].startTime, realArr: legs[legs.length - 1].endTime,
@@ -271,7 +236,7 @@
   function liveTargets() {
     // Today if she is travelling; otherwise whatever day she is reading, so the
     // step-by-step is live when she looks at it the night before too.
-    const day = todayDay() || (view === "day" ? D.days.find((x) => x.n === openDay) : null);
+    const day = todayDay() || D.days.find((x) => x.n === openDay) || null;
     if (!day) return [];
     const t = todayDay() ? now() : new Date(realDate(day.iso) + "T00:00:00Z");
     return pathOf(day).seq
@@ -309,7 +274,7 @@
     liveState = { at: Date.now(), status: ok ? "ok" : "bad" };
     refreshing = false;
     paintPulse();
-    if (view === "now" || view === "day") render();
+    render();
   }
 
   function liveFor(m) {
@@ -402,13 +367,12 @@
      before she leaves; "day" is the app. There is no navigation because
      there is nowhere else to be — the day strip moves between days and the
      button in the corner goes back to the two questions. */
-  let view = store.get("setup", 0) && preset ? "day" : "pick";
   let openDay = null;
   /* Every screen she can land on, so the arrow in the corner always has
      somewhere to go — including back out of a sheet, and back a step in the
      walkthrough, which is where people press it first. */
   const navStack = [];
-  const snapshot = () => ({ view, openDay });
+  const snapshot = () => ({ openDay });
   function push() {
     const cur = snapshot();
     const top = history[navStack.length - 1];
@@ -420,7 +384,7 @@
     if (!sheet.hidden) return closeSheet();
     const prev = navStack.pop();
     if (!prev) return;
-    view = prev.view; openDay = prev.openDay;
+    openDay = prev.openDay;
     render();
   }
   /* The strip under the title is the trip's dates, so it has to move when the
@@ -429,7 +393,7 @@
     const el = document.getElementById("trip-dates");
     if (!el) return;
     el.textContent = dateShort(D.days[0].iso) + " – " + dateShort(D.days[D.days.length - 1].iso) +
-      " · " + D.days.length + " " + "days" + (shifted() ? " · " + "moved" : "");
+      " · " + D.days.length + " days";
   }
 
   const app = document.getElementById("app");
@@ -442,112 +406,13 @@
 
   function render() {
     const y = window.scrollY;
-    if (view === "pick") app.innerHTML = viewPick();
-    else if (view === "when") app.innerHTML = viewWhen();
-    else app.innerHTML = viewDay(openDay || (todayDay() || D.days[0]).n);
-    document.body.classList.toggle("setup", view !== "day");
+    app.innerHTML = viewDay(openDay || (todayDay() || D.days[0]).n);
     if (keepScroll && y) window.scrollTo(0, y);
     paintDates();
     const tc = document.querySelector('meta[name="theme-color"]');
     if (tc) tc.setAttribute("content", getComputedStyle(document.documentElement).getPropertyValue("--chrome").trim() || "#16211C");
-    if (view !== "day") drawMap();
+    drawMap();
     paintPulse();
-  }
-
-  /* ================= the setup, in two steps ================= */
-  /* Two decisions have to be made once, before anything else can be true:
-     which way across the country, and which day it starts. They used to sit
-     on a page with everything else and be findable rather than asked. Now
-     they are asked, one at a time, and then never again — the button in the
-     corner brings them back if she changes her mind. */
-
-  /* Each itinerary gets a colour so the four lines on the map and the four
-     cards under it are the same four things. */
-  const PC = ["#B4553A", "#2F6F63", "#5A6BB0", "#7A4E7E", "#A8762B"];
-  const presetColour = (id) => PC[Math.max(0, (D.presets || []).findIndex((p) => p.id === id)) % PC.length];
-  /* The day as a given itinerary would spend it — which is not the same as
-     the day she has chosen, because the map has to show all four at once. */
-  const pathFor = (day, presetId) => {
-    const p = presetOf(presetId);
-    const id = p && (p.pickDays.find((x) => x.n === day.n) || {}).pathId;
-    return day.paths.find((q) => q.id === id) || day.paths[0];
-  };
-
-  // Counting the itineraries rather than writing the number down: it said four
-  // for a week after the fifth one was added.
-  const NUM = { 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven" };
-  const stepHead = (n, title, sub) => `<div class="setup-head">
-    <div class="steps"><span class="on">1</span><i></i><span class="${n === 2 ? "on" : ""}">2</span></div>
-    <h2>${esc(title)}</h2>
-    <p>${esc(sub)}</p></div>`;
-
-  /* Step one. Four lines down the country, four cards under them, and the
-     hotel towns on every card because that is the part that has to be booked
-     before anyone leaves. */
-  function viewPick() {
-    const list = D.presets || [];
-    const p = presetOf(preset);
-    return `<div class="wrap setup">
-      ${stepHead(1, "Which way across?", `${NUM[list.length] || list.length} ways across, all on regional trains your ticket covers. The towns on each card are the ones you sleep in.`)}
-      <div class="card"><div id="map"></div>
-        <div class="pad"><div class="legend">${list.map((x) => `
-          <button type="button" data-pick="${esc(x.id)}" class="lg${x.id === preset ? " on" : ""}">
-            <i style="background:${presetColour(x.id)}"></i>${esc(presetText(x).name)}</button>`).join("")}</div></div></div>
-      <div class="routes">${list.map((x) => `
-        <button class="route" data-pick="${esc(x.id)}" aria-pressed="${x.id === preset}" style="--dot:${presetColour(x.id)}">
-          <span class="rn"><i class="dot"></i>${esc(presetText(x).name)}</span>
-          <span class="rw">${esc(presetText(x).why)}</span>
-          <span class="rs">
-            <span class="tag hot">${x.towns.length} towns</span>
-            <span class="tag">${dur(x.ride)} on trains, all week</span>
-            <span class="tag">in Berlin ${esc(x.arrive)}</span>
-          </span>
-          <span class="beds">${x.beds.map((b) => `<span class="bed"><b>${esc(place(b.place).n)}</b>${b.nights > 1 ? ` · ${b.nights}` : ""}</span>`).join("")}</span>
-        </button>`).join("")}</div>
-      ${ticketNote()}
-      ${footer()}
-      <div class="nextbar"><button class="btn accent" data-goto="when"${p ? "" : " disabled"}>
-        ${p ? "Next — when do you start?" : "Pick one to carry on"}</button></div>
-    </div>`;
-  }
-
-  /* Step two. One question, and the hotel list beside it, because moving the
-     dates is the thing that changes what she has to book. */
-  function viewWhen() {
-    const p = presetOf(preset);
-    if (!p) { view = "pick"; return viewPick(); }
-    return `<div class="wrap setup">
-      ${stepHead(2, "When does it start?", "The plan is written for 29 September. Travelling another week? Move it, and every train is looked up again for the dates you are really there.")}
-      <div class="card pad picked" style="--dot:${presetColour(preset)}">
-        <div class="rn"><i class="dot"></i>${esc(presetText(p).name)}</div>
-        <p class="lead" style="margin:4px 0 0">${p.towns.length} towns · ${dur(p.ride)} on trains, all week</p>
-      </div>
-      ${startCard()}
-      ${bedsCard()}
-      ${footer()}
-      <div class="nextbar two">
-        <button class="btn ghost" data-goto="pick">${svg("prev")} Back</button>
-        <button class="btn accent" data-goto="day">Open my trip</button></div>
-    </div>`;
-  }
-
-  /* Which day the trip starts on. It was hidden behind an icon in the chrome;
-     it belongs beside the choice it changes. */
-  function startCard() {
-    const opts = [-7, -2, -1, 0, 1, 2, 7].map((k) => ({
-      iso: new Date(Date.parse(planStart + "T12:00:00Z") + k * DAY_MS).toISOString().slice(0, 10), k,
-    }));
-    return `<div class="card"><div class="days" style="padding:14px 16px">
-          ${opts.map((o) => `<button class="dchip" data-setstart="${o.iso}" aria-pressed="${o.iso === startIso}">
-            ${esc(fmtWeekday(o.iso))} ${esc(fmtDate(o.iso))}<small>${o.k === 0 ? "As planned"
-              : o.k > 0 ? "+" + o.k : String(o.k)}</small></button>`).join("")}
-        </div>
-        <div class="pad" style="padding-top:0">
-          <label style="font-size:14px;color:var(--soft-ink)">Or pick the day you arrive in Mittenwald
-            <input type="date" id="startpick" value="${esc(startIso)}"
-              style="display:block;margin-top:8px;width:100%;min-height:48px;padding:0 12px;border-radius:13px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit"></label>
-        </div>
-      </div>`;
   }
 
   /* What the live layer found, said in the timeline beside the train it is
@@ -573,7 +438,6 @@
   function note(kind, text) {
     return `<div class="note ${kind === "warn" ? "" : kind}">${svg(kind === "calm" ? "info" : "warn")}<span>${esc(text)}</span></div>`;
   }
-  const ticketNote = () => note("calm", D.trip.ticket.excluded);
 
   function heroCard(day, kicker, title, heroKey) {
     const key = heroKey || day.hero;
@@ -612,18 +476,12 @@
     // not the one the plan was baked from.
     const isToday = dayDate(day) === dayKey(now());
 
-    const pre = presetOf(preset);
-    const onPreset = pre ? (pre.pickDays.find((x) => x.n === day.n) || {}).pathId : null;
     const opts = pathsFor(day);
     /* Some days have no choice left once the itinerary is picked — only one
        option starts in Würzburg. Say what today is rather than showing an
        empty space where the others were. */
-    const choose = opts.length < 2 ? (opts.length === 1 ? `
-      <div class="label">Today's plan</div>
-      <p class="hint">${esc(pathText(day, opts[0]).why)}</p>` : "") : `
-      <div class="label">Plan your day</div>
-      <p class="hint">Each one is a different way to spend the same day. The trains are real either way.</p>
-      ${pre && onPreset && path.id !== onPreset ? note("calm", "You have changed this day, which can move where you sleep — and the days after it. Check the hotel list under “Change the dates”.") : ""}
+    const choose = opts.length < 2 ? "" : `
+      <div class="label">Two ways to spend it</div>
       <div class="routes">${opts.map((p) => `
         <button class="route" data-route="${day.n}:${p.id}" aria-pressed="${p.id === path.id}">
           <span class="rn">${esc(pathText(day, p).name)}</span>
@@ -632,7 +490,6 @@
             <span class="tag${p.stops > 2 ? " hot" : ""}">${p.stops} stops</span>
             <span class="tag">${dur(p.ride) || "no"} on trains</span>
             <span class="tag">in by ${esc(p.endArr)}</span>
-            ${p.to && p.to !== path.to ? `<span class="tag hot">sleeps in ${esc(place(p.to).n)}</span>` : ""}
           </span>
         </button>`).join("")}</div>`;
 
@@ -645,17 +502,17 @@
                                 : rows + moveBlock(day, s2, isToday);
     }).join("");
 
+    const last = path.seq.filter((x) => x.kind === "stop").pop();
     return `<div class="wrap">
       ${dayStrip(day.n, "goday")}
       ${heroCard(day, `Day ${day.n} · ${weekday(day.iso)} ${dateShort(day.iso)}`, dayText(day, path).title, heroOf(day, path))}
       <div class="card pad"><p class="lead" style="margin:0">${esc(dayText(day, path).intro)}</p></div>
-      ${shiftNote()}
       ${day.holiday ? note("warn", holidayText(day)) : ""}
-      ${bagsOf(day, path) ? note("calm", "You change hotel today — the bags come with you. Most stations have lockers if you want to drop them before wandering.") : ""}
+      ${bagsOf(day, path) ? note("calm", `Bags come with you today — tonight is ${esc(place(last.place).n)}. Most stations have lockers.`) : ""}
       ${choose}
-      <div class="label">Your day, hour by hour</div>
-      <p class="hint">Everything today, in the order it happens. Tap a photograph to read about a place.</p>
+      <div class="label">The day, in order</div>
       <div class="tl">${body}</div>
+      <div class="card"><div id="map"></div></div>
       ${troubleCard()}
       ${footer()}</div>`;
   }
@@ -830,22 +687,37 @@
       </div>${isToday ? liveAlerts(m) : ""}</div>`;
   }
 
-  /* ---------- map ---------- */
-
+  /* ---------- the day on a map ---------- */
+  /* One day at a time, which is the only scale that is useful once the line is
+     fixed: the towns in order, numbered, with the sights as small dots so the
+     map shows what there is to see and not only where the platforms are. */
   let map = null, layer = null;
   function drawMap() {
     const el = document.getElementById("map");
     if (!el) return;
     if (!window.L) {
-      el.innerHTML = `<div class="mapfall"><p>The map needs a connection. Every stop still opens in Google Maps from the day page.</p></div>`;
+      el.innerHTML = `<div class="mapfall"><p>The map needs a connection. Every stop still opens in Google Maps.</p></div>`;
       return;
     }
-    return drawWholeTrip(el);
+    const day = D.days.find((d) => d.n === (openDay || (todayDay() || D.days[0]).n)) || D.days[0];
+    const path = pathOf(day);
+    const pts = [];
+    path.seq.forEach((st) => {
+      if (st.kind !== "stop") return;
+      const p = place(st.place);
+      if (p.lat != null) pts.push({ ll: [p.lat, p.lon], n: p.n, night: st.base, stop: st });
+    });
+
+    if (map) { map.remove(); map = null; }
+    // The offline notice may have been painted here a moment ago, before the
+    // map script finished loading. Leaflet builds around it rather than over it.
+    el.innerHTML = "";
     map = L.map(el, { scrollWheelZoom: false, attributionControl: true });
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
     layer = L.layerGroup().addTo(map);
+
     if (pts.length > 1) L.polyline(pts.map((p) => p.ll), { color: day.c, weight: 4, opacity: .85 }).addTo(layer);
     pts.forEach((p, i) => {
       L.marker(p.ll, {
@@ -853,70 +725,21 @@
           className: "", iconSize: [26, 26], iconAnchor: [13, 13],
           html: `<div style="width:26px;height:26px;border-radius:50%;background:${p.night ? day.c : "#fff"};border:3.5px solid ${day.c};display:grid;place-items:center;font:700 12px system-ui;color:${p.night ? "#fff" : day.c};box-shadow:0 2px 8px rgba(0,0,0,.3)">${i + 1}</div>`,
         }),
-      }).addTo(layer).bindPopup(`<b>${esc(p.n)}</b><br>${p.stop.base ? "Arrive " + esc(p.stop.arr) + " · overnight" : esc(p.stop.arr) + "–" + esc(p.stop.dep)}`);
+      }).addTo(layer).bindPopup(`<b>${esc(p.n)}</b><br>${p.stop.base ? "Arrive " + esc(p.stop.arr) + " · you sleep here" : esc(p.stop.arr) + "–" + esc(p.stop.dep)}`);
     });
-    // Sights of the day, so the map shows what there is to see, not just stations.
-    path.seq.filter((s) => s.kind === "stop").forEach((s) => {
-      (s.see || []).map((n) => sightOf(s.place, n)).filter((x) => x && x.lat).forEach((x) => {
+    path.seq.filter((st) => st.kind === "stop").forEach((st) => {
+      (st.see || []).map((n) => sightOf(st.place, n)).filter((x) => x && x.lat).forEach((x) => {
         L.circleMarker([x.lat, x.lon], { radius: 5, color: day.c, weight: 2, fillColor: "#fff", fillOpacity: 1 })
           .addTo(layer).bindPopup(`<b>${esc(x.name)}</b><br>${esc(x.note)}`);
       });
     });
-    if (pts.length) map.fitBounds(L.latLngBounds(pts.map((p) => p.ll)).pad(0.25));
-    else map.setView([50.5, 11], 6);
-  }
-
-  /* All four itineraries at once, in the colours of the cards under them —
-     because the question on the first screen is which of these four, and a
-     map of one of them cannot answer it. Once one is picked the other three
-     stay on as faint lines, so the choice is still visible. */
-  function drawWholeTrip(el) {
-    if (map) { map.remove(); map = null; }
-    // The offline notice may have been painted here a moment ago, before the
-    // map script finished loading. Leaflet builds around it rather than over
-    // it, which left the words sitting on top of the map.
-    el.innerHTML = "";
-    map = L.map(el, { scrollWheelZoom: false, attributionControl: true });
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    }).addTo(map);
-    layer = L.layerGroup().addTo(map);
-    const bounds = [];
-
-    const drawOne = (id, strong) => {
-      const c = presetColour(id);
-      const pts = [];
-      D.days.forEach((d) => {
-        pathFor(d, id).seq.forEach((st) => {
-          if (st.kind !== "stop") return;
-          const p = place(st.place);
-          if (p.lat == null) return;
-          const ll = [p.lat, p.lon];
-          if (!pts.length || String(pts[pts.length - 1]) !== String(ll)) pts.push(ll);
-          bounds.push(ll);
-          if (!strong) return;
-          L.circleMarker(ll, {
-            radius: st.base ? 7 : 4.5, color: c, weight: st.base ? 3.5 : 2,
-            fillColor: st.base ? c : "#fff", fillOpacity: 1,
-          }).addTo(layer).bindPopup(`<b>${esc(p.n)}</b><br>Day ${d.n}${st.base ? " · " + "you sleep here" : ""}`);
-        });
-      });
-      if (pts.length > 1) L.polyline(pts, {
-        color: c, weight: strong ? 4.5 : 2.5, opacity: strong ? .9 : .38,
-        dashArray: strong ? null : "3 7",
-      }).addTo(layer);
-    };
-
-    const list = D.presets || [];
-    list.forEach((p) => { if (p.id !== preset) drawOne(p.id, !preset); });
-    if (preset) drawOne(preset, true);
 
     // The container is still being laid out on the first paint, so the first
     // fit is against the wrong height. Fit again once the browser has settled.
     const fit = () => {
       if (!map) return;
       map.invalidateSize();
-      if (bounds.length) map.fitBounds(L.latLngBounds(bounds).pad(0.12));
+      if (pts.length) map.fitBounds(L.latLngBounds(pts.map((p) => p.ll)).pad(0.22));
       else map.setView([50.5, 11], 6);
     };
     fit();
@@ -1008,25 +831,12 @@
     });
     return out;
   }
-  function bedsCard() {
-    const p = presetOf(preset);
-    if (!p) return "";
-    const beds = bedsNow();
-    return `<div class="label">Where you sleep</div>
-      <div class="card"><div class="pad">
-        ${beds.map((b) => `<div class="kv"><b>${esc(place(b.place).n)}</b>
-          <span>${b.last ? "from" + " " + esc(dateShort(b.from))
-            : `${b.nights} ${(b.nights > 1 ? "nights" : "night")} from ${esc(dateShort(b.from))}${b.in ? ` · in about ${esc(b.in)}` : ""}`}</span></div>`).join("")}
-      </div>
-      ${offPreset() ? note("calm", "You have changed a day since picking this itinerary, so a hotel town has moved. This list is the one to book.") : ""}
-      </div>`;
-  }
 
-  const footer = () => `<div class="foot">Times are real — checked against the German timetable for your dates and filtered to what your ticket covers.
-    Platforms can still change on the day, so glance at the board.
-    Your ticket does not cover ICE, IC or EC; nothing here will put you on one.
-    In an emergency anywhere in Europe, dial <a href="tel:112">112</a>.
-    Photographs from Wikimedia Commons, each credited on its own card; maps © OpenStreetMap contributors.</div>`;
+
+  const footer = () => `<div class="foot">Real times from the German timetable, regional trains only — never ICE, IC or EC.
+    Platforms still change on the day, so glance at the board.
+    Emergencies anywhere in Europe: <a href="tel:112">112</a>.
+    Photographs from Wikimedia Commons, credited on each card; maps © OpenStreetMap.</div>`;
 
   /* ---------- sight sheet ---------- */
   const scrim = document.getElementById("scrim");
@@ -1308,31 +1118,27 @@
   /* Everything that is a setting rather than a destination, behind the one
      button in the corner — and the way back to the two questions, which is
      the only navigation the app has left. */
+  /* The hotel list lives here now that there is no front page to put it on.
+     It is the one thing in the app that has to be true before anyone leaves. */
   function showSettings() {
+    const beds = bedsNow();
     openSheetRaw(`<div class="grab"></div><div class="sbody">
-      <h2>Settings</h2>
+      <h2>Where you sleep</h2>
+      <div class="card" style="box-shadow:none;background:var(--hair);margin-top:12px"><div class="pad">
+        ${beds.map((b) => `<div class="kv"><b>${esc(place(b.place).n)}</b>
+          <span>${b.last ? esc(dateShort(b.from)) + " onwards"
+            : `${b.nights} ${b.nights > 1 ? "nights" : "night"} from ${esc(dateShort(b.from))}${b.in ? ` · in about ${esc(b.in)}` : ""}`}</span></div>`).join("")}
+      </div></div>
       <div class="btns" style="padding:14px 0 0">
-        <button class="btn ghost" data-goto="pick">${svg("map")} Change the trip</button>
-        <button class="btn ghost" data-goto="when">${svg("days")} Change the dates</button>
         <button class="btn ghost" id="themebtn">${svg("moon")} Light or dark</button>
+        <button class="btn ghost" data-close="1">Close</button>
       </div>
-      <p class="about" style="margin-top:16px">Nothing in here can break the plan. Everything you choose is kept on this phone only.</p>
-      <div class="btns" style="padding:8px 0 0"><button class="btn ghost" data-close="1">Close</button></div>
     </div>`);
-  }
-
-  /* Said once, near the top, whenever the dates have been moved — so a time on
-     screen is never silently about a different day than the one she is in. */
-  function shiftNote() {
-    if (!shifted()) return "";
-    const k = shiftDays();
-    return note("calm", `These dates are moved ${Math.abs(k)} ${(Math.abs(k) > 1 ? "days" : "day")} ${(k > 0 ? "later than planned" : "earlier than planned")}. Times are being checked against the dates you are actually travelling.`);
   }
 
   function troubleCard() {
     if (!todayDay()) return "";
     return `<div class="label">If the day stops going to plan</div>
-      <p class="hint">Tell me what happened and I will rebuild the rest of the day from the real timetable — and say honestly what has to give.</p>
       <div class="card">
         <div class="btns"><button class="btn ghost" data-trouble="missed">${svg("warn")} I missed my train</button>
         <button class="btn ghost" data-trouble="stay60">${svg("now")} I want another hour here</button>
@@ -1342,11 +1148,10 @@
 
   /* ---------- events ---------- */
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("#morebtn,#pulse,[data-freq],[data-setstart],[data-goday],[data-route],[data-sight],[data-tick],[data-replan],[data-close],[data-trouble],[data-pick],[data-goto],#scrim,#themebtn");
+    const t = e.target.closest("#morebtn,#pulse,[data-freq],[data-goday],[data-route],[data-sight],[data-tick],[data-replan],[data-close],[data-trouble],#scrim,#themebtn");
     if (!t) return;
     if (t.id === "scrim" || t.dataset.close) return closeSheet();
     if (t.id === "morebtn") return showSettings();
-    if (t.dataset.setstart) { setStart(t.dataset.setstart); closeSheet(); render(); refreshLive(true); return; }
     if (t.id === "pulse") { refreshLive(true); return showLiveInfo(); }
     if (t.id === "themebtn") {
       const cur = document.documentElement.getAttribute("data-theme");
@@ -1360,33 +1165,7 @@
       const [f, to, iso] = t.dataset.freq.split("|");
       return showFreq(f, to, iso || null);
     }
-    if (t.dataset.goday) { push(); view = "day"; openDay = +t.dataset.goday; return go(() => { window.scrollTo(0, 0); render(); }); }
-    /* The two setup questions, and the way out of them. Opening the trip is
-       what marks the setup as done — until then she lands back on step one. */
-    if (t.dataset.goto) {
-      const to = t.dataset.goto;
-      if (to === "day" && !preset) return;
-      closeSheet();
-      push(); view = to;
-      if (to === "day") store.set("setup", 1);
-      return go(() => { window.scrollTo(0, 0); render(); });
-    }
-    if (t.dataset.pick) {
-      applyPreset(t.dataset.pick);
-      return go(() => { render(); refreshLive(true); });
-    }
-    if (t.dataset.route) {
-      const [n, id] = t.dataset.route.split(":");
-      chosen[n] = id;
-      // A later day may no longer start where this one now sleeps. Resolve the
-      // whole chain and keep what it settled on, so nothing stale is stored.
-      D.days.forEach((d) => { chosen[d.n] = pathOf(d).id; });
-      store.set("routes", chosen);
-      liveGen++; liveState = { at: 0, status: navigator.onLine ? "idle" : "off" };
-      liveCache = {}; store.set("live", {});
-      render(); refreshLive(true);
-      return;
-    }
+    if (t.dataset.goday) { push(); openDay = +t.dataset.goday; return go(() => { window.scrollTo(0, 0); render(); }); }
     if (t.dataset.sight) return openSight(t.dataset.sight);
     if (t.dataset.tick) {
       const k = t.dataset.tick;
@@ -1408,7 +1187,7 @@
   window.addEventListener("popstate", () => { window.history.pushState({ mb: 1 }, ""); goBack(); });
   window.history.pushState({ mb: 1 }, "");
   // The map script is deferred, so the first paint can happen without it.
-  window.addEventListener("load", () => { if (view !== "day") drawMap(); });
+  window.addEventListener("load", () => drawMap());
   window.addEventListener("online", () => { online = true; refreshLive(true); });
   window.addEventListener("offline", () => { online = false; liveState.status = "off"; paintPulse(); });
   document.addEventListener("visibilitychange", () => { if (!document.hidden) { render(); refreshLive(); } });
@@ -1418,11 +1197,9 @@
   if (savedTheme) document.documentElement.setAttribute("data-theme", savedTheme);
   paintDates();
 
-  if (!["pick", "when", "day"].includes(view)) view = "pick";
-  if (view !== "pick" && !preset) view = "pick";
   render();
   refreshLive();
   // "Now" markers in the timeline move on their own.
-  setInterval(() => { if (view === "day" && !document.hidden) render(); }, 60000);
+  setInterval(() => { if (!document.hidden) render(); }, 60000);
   setInterval(() => { if (!document.hidden) refreshLive(); }, 90000);
 })();

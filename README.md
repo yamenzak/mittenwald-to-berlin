@@ -9,47 +9,31 @@ server, no install. It works with no signal, and gets better when there is one.
 
 ## What it does
 
-**Asks two questions, then gets out of the way.** Which way across the country
-— four itineraries drawn on one map in four colours, each naming the towns you
-sleep in so the hotels can be booked — and which day it starts. After that
-there is no navigation at all: the app is the day, and the strip along the top
-moves between days. There is no tour, because there is nothing left to explain.
+**One trip, one screen.** Mittenwald to Berlin, 29 September to 3 October,
+eighteen towns, fixed. There is nothing to choose before you start and nothing
+to set up: it opens on the day you are in, and the strip along the top moves
+between days. Two of the five days offer a real alternative — Seefeld or the
+lakes on the first, four stops or one on the last — and those are the only
+decisions in the app.
 
-**Five lines, not five ways of spending the same day.** The classic run through
-Augsburg, Nuremberg and Erfurt; the Romantic Road, which turns north-west for
-Rothenburg and sleeps in Würzburg; the Harz, which gets the northward ride done
-early to buy a day for Wernigerode and a night inside Quedlinburg; the west,
-which leaves the south–north road entirely for Ulm, Esslingen and a night under
-Heidelberg castle; and two nights in Mittenwald with the Zugspitze between them.
-They sleep in different towns, so the choice is the one that has to be made
-before leaving home. A day's options are filtered to the ones that start where
-the night before ended — you are never offered a train out of a town you are
-not in.
-
-**Says where there is time to eat.** Lunch and dinner are placed where there is
-genuinely room for them — the part of the day with the longest overlap with the
-hour people eat in — and appear in the timeline with the town, the minutes, and
-somewhere to look. When the answer is a train, it says so and says to buy
-something before boarding, which is the useful version of the same fact.
-
-**Uses the real timetable.** Every one of the 40 journeys across 16 route
-options was planned against the German timetable for the actual dates, through
-[Transitous](https://transitous.org) — MOTIS over the official DELFI/DB feeds
-with GTFS-Realtime. Real line numbers, real platforms, real changes, real
-durations.
+**Uses the real timetable.** Every journey was planned against the German
+timetable for the actual dates, through [Transitous](https://transitous.org) —
+MOTIS over the official DELFI/DB feeds with GTFS-Realtime. Real line numbers,
+real platforms, real changes, real durations. The build prints every leg it
+chose, and the plan is rewritten from what actually runs rather than from what
+was typed.
 
 **Cannot put her on a train she has no ticket for.** The ticket covers regional
 services only. Every query is filtered to those modes and every returned
 itinerary is checked again before it is accepted, at build time and live — and
 the mode filter alone is not enough, because the Brocken steam railway comes
 back from the feed as `REGIONAL_RAIL` and is a private line with its own fares.
-It routed itself into the Harz day once; it is now refused by name. Changes
-under four minutes are refused too, except onto something that runs every few
-minutes anyway.
+It is refused by name. Changes under four minutes are refused too, except onto
+something that runs every few minutes anyway.
 
 **Tracks delays while she travels.** Every 90 seconds it re-checks the next
 three moves and shows only what has changed: a delay, a platform change, a
-connection that realtime has eaten into. If a train is cancelled or badly late,
+connection realtime has eaten into. If a train is cancelled or badly late,
 "Find me another way" plans from her actual GPS position to that night's hotel,
 still regional-only — and "I missed my train" rebuilds the rest of the day from
 the real timetable, saying honestly what has to be given up and never giving up
@@ -58,16 +42,19 @@ the bed.
 **Walks each town in order.** Every stop carries the route through it with a
 running clock — arrive here, twelve minutes to there, forty minutes inside, back
 to the station by — routed for real against pedestrian and transit directions,
-with a thumbnail of each place beside it. Where the router has no path at all,
-the page says roughly how long getting there takes rather than pretending it is
-a walk up the Zugspitze.
+with a thumbnail of each place beside it.
+
+**Says where there is time to eat.** Lunch and dinner are placed where there is
+genuinely room for them, and appear in the timeline with the town, the minutes,
+and somewhere to look. When the answer is a train, it says so and says to buy
+something before boarding.
 
 **Shows real photographs.** Every sight and town carries a real photo from
 Wikimedia Commons, with the photographer and licence recorded and shown. German
 town articles lead with a coat of arms rather than a photograph, so lead images
 are checked and a Commons photo search is used instead where needed.
 
-**Works on a train in the Alps.** All 229 photographs are re-encoded as small
+**Works on a train in the Alps.** All 275 photographs are re-encoded as small
 WebP and inlined, so the page is complete the moment it loads and stays complete
 with no signal. The live layer only ever refines what is already readable.
 
@@ -99,35 +86,29 @@ inventing it.
 
 ## Three things worth knowing
 
-**Heidelberg fits as a line of its own and not as a detour, which took two
-measurements to learn.** Hung off the normal route it is hopeless — 4 h 49 out
-from Augsburg and 10 h 27 back to Berlin, paid twice because nothing on the
-return is new. Given its own week it works, because the way back east through
-Würzburg is all new ground: Augsburg → Ulm 1 h 21 direct, Ulm → Esslingen 1 h 04
-direct, Esslingen → Heidelberg 1 h 48, Heidelberg → Würzburg 2 h 29, Würzburg →
-Erfurt 2 h 31. That is 16 h 38 over the week, the heaviest of the five, and it
-is the price of the only line that leaves the south–north road.
+**Heidelberg works as a line of its own and not as a detour, which took two
+measurements to learn.** Hung off the normal south–north road it is hopeless —
+4 h 49 out from Augsburg and 10 h 27 back to Berlin, paid twice because nothing
+on the return is new. Given its own week it works, because the way back east
+through Würzburg is all new ground: Augsburg → Ulm 1 h 21 direct, Ulm →
+Esslingen 1 h 04 direct, Esslingen → Heidelberg 1 h 48, Heidelberg → Würzburg
+2 h 29, Würzburg → Erfurt 2 h 31.
 
-Esslingen is there because Stuttgart is not worth a stop and Esslingen is: it
-costs 1 h 04 from Ulm against 1 h 16 to Stuttgart, and Webergasse has the oldest
-standing timber houses in Germany. The Harz turned out to be nearer Berlin than
-Thuringia is — Quedlinburg to Berlin is 3 h 44 against Erfurt's 4 h 46.
-`scripts/build-plan.mjs` prints every leg it chooses, and every number here came
+**More stops made the week shorter, not longer.** Breaking the last day into
+four — Weimar, Naumburg, Halle, Wittenberg — rides 3 h 44, where going Erfurt to
+Berlin with one stop rides 4 h 39: the direct routing takes a slower path than
+the string of regional hops does. Bamberg is the same trick: Würzburg → Bamberg
+→ Erfurt is 2 h 14 against 2 h 32 direct, so the town is free and then some.
+Murnau costs nothing at all, being a stop on the train already being ridden. The
+week went from eleven towns and 16 h 38 to eighteen towns and 16 h 12.
+
+**Some trains stop running before the day does.** The fast RE29 from Bamberg to
+Erfurt takes 1 h 12; after about seven in the evening the same journey is 2 h 58
+with two changes, and later still it is four and a half hours. A day that looks
+fine on paper can lose two hours to leaving a town twenty minutes late, so day
+four is pulled forward to catch that train. `scripts/build-plan.mjs` prints
+every leg it chose and every alternative it rejected, and every number here came
 off that output.
-
-## Two things worth knowing
-
-**Stations are resolved by position, not by name.** Asking the geocoder for
-"Oberammergau Bahnhof" returns a stop in Bern, and "Eisenach" returns
-Eisenstadt in Austria. For smaller towns the stop index only surfaces bus stops
-at all. So stations are pinned as coordinates and the planner is asked to route
-from a point, which is what it is good at.
-
-**The day is chained, not copied.** The times in `data/trip.mjs` are a wish —
-"about two hours in Oberammergau, then on to Murnau". Each day is walked in
-order and every move is planned from the moment she is genuinely free to leave.
-Where the line is two-hourly, it will cut a stop twenty-five minutes short
-rather than have her arrive somewhere at ten at night.
 
 ## Sources
 

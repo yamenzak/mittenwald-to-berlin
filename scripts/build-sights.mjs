@@ -127,6 +127,7 @@ const TOWNWORD = {
   fulda: "Fulda Dom Stadtschloss", eisenach: "Wartburg Eisenach",
   landsberg: "Landsberg am Lech Hauptplatz", fussen: "Füssen Altstadt Lech",
   wernigerode: "Wernigerode Rathaus", thale: "Roßtrappe Bodetal Blick",
+  wittenberg: "Schlosskirche Wittenberg Turm", halle: "Halle Saale Marktplatz Roter Turm",
   halberstadt: "Halberstadt Fachwerk Altstadt",
   garmisch: "Partenkirchen Ludwigstraße", mittenwald: "Mittenwald Obermarkt Karwendel",
   seefeld: "Seefeld in Tirol Ortszentrum", oberau: "Oberau Loisachtal",

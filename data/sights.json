@@ -3000,6 +3000,186 @@
    "file": "Halberstadt_St-Burchardi-Kirche.jpg",
    "extract": "Organ²/ASLSP is a musical piece by John Cage and the subject of the second-longest-lasting musical performance yet undertaken. Cage wrote it in 1987 for organ, as an adaptation of his 1985 composition ASLSP for piano."
   },
+  "halle/Marktplatz and the Red Tower": {
+   "ok": true,
+   "w": "Roter Turm (Halle)",
+   "ct": null,
+   "lang": "de",
+   "title": "Roter Turm (Halle (Saale))",
+   "url": "https://de.wikipedia.org/wiki/Roter_Turm_(Halle_(Saale))",
+   "lat": 51.48283889,
+   "lon": 11.96924444,
+   "wd": "Q1368151",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Roter_Turm_Halle_2009.jpg/640px-Roter_Turm_Halle_2009.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Roter_Turm_Halle_2009.jpg/1000px-Roter_Turm_Halle_2009.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Roter_Turm_Halle_2009.jpg",
+   "extract": ""
+  },
+  "halle/Market Church": {
+   "ok": true,
+   "w": "Marktkirche Unser Lieben Frauen",
+   "ct": null,
+   "lang": "de",
+   "title": "Marktkirche Unser Lieben Frauen",
+   "url": "https://de.wikipedia.org/wiki/Marktkirche_Unser_Lieben_Frauen",
+   "lat": 51.48255556,
+   "lon": 11.96809444,
+   "wd": "Q538370",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Halle%28Saale%29_Marktkirche_asv2024-04.jpg/640px-Halle%28Saale%29_Marktkirche_asv2024-04.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Halle%28Saale%29_Marktkirche_asv2024-04.jpg/1000px-Halle%28Saale%29_Marktkirche_asv2024-04.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Halle(Saale)_Marktkirche_asv2024-04.jpg",
+   "extract": ""
+  },
+  "halle/Händel House": {
+   "ok": true,
+   "w": "Händel-Haus",
+   "ct": null,
+   "lang": "de",
+   "title": "Händel-Haus",
+   "url": "https://de.wikipedia.org/wiki/H%C3%A4ndel-Haus",
+   "lat": 51.48416667,
+   "lon": 11.96694444,
+   "wd": "Q1386963",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Halle_H%C3%A4ndelhaus_2012.jpg/640px-Halle_H%C3%A4ndelhaus_2012.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Halle_H%C3%A4ndelhaus_2012.jpg/1000px-Halle_H%C3%A4ndelhaus_2012.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Halle_Händelhaus_2012.jpg",
+   "extract": ""
+  },
+  "halle/Moritzburg": {
+   "ok": true,
+   "w": "Moritzburg (Halle)",
+   "ct": null,
+   "lang": "de",
+   "title": "Moritzburg (Halle (Saale))",
+   "url": "https://de.wikipedia.org/wiki/Moritzburg_(Halle_(Saale))",
+   "lat": 51.48611111,
+   "lon": 11.96333333,
+   "wd": "Q879819",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Moritzburg_Halle_Hauptzuweg.jpg/640px-Moritzburg_Halle_Hauptzuweg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Moritzburg_Halle_Hauptzuweg.jpg/1000px-Moritzburg_Halle_Hauptzuweg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Moritzburg_Halle_Hauptzuweg.jpg",
+   "extract": ""
+  },
+  "halle/Giebichenstein Castle": {
+   "ok": true,
+   "w": "Burg Giebichenstein",
+   "ct": null,
+   "lang": "de",
+   "title": "Burg Giebichenstein",
+   "url": "https://de.wikipedia.org/wiki/Burg_Giebichenstein",
+   "lat": 51.50333333,
+   "lon": 11.95388889,
+   "wd": "Q885088",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/20150902-BurgGiebichenstein.jpg/640px-20150902-BurgGiebichenstein.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/20150902-BurgGiebichenstein.jpg/1000px-20150902-BurgGiebichenstein.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "20150902-BurgGiebichenstein.jpg",
+   "extract": ""
+  },
+  "halle/Halloren chocolate": {
+   "ok": true,
+   "w": "Halloren Schokoladenfabrik",
+   "ct": null,
+   "lang": "de",
+   "title": "Halloren Schokoladenfabrik",
+   "url": "https://de.wikipedia.org/wiki/Halloren_Schokoladenfabrik",
+   "lat": 51.4775,
+   "lon": 12.00944444,
+   "wd": "Q316714",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halloren-Winter-Edition-3.jpg/640px-Halloren-Winter-Edition-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halloren-Winter-Edition-3.jpg/1000px-Halloren-Winter-Edition-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Halloren-Winter-Edition-3.jpg",
+   "extract": ""
+  },
+  "wittenberg/Castle Church": {
+   "ok": true,
+   "w": "Schlosskirche (Lutherstadt Wittenberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Schlosskirche (Lutherstadt Wittenberg)",
+   "url": "https://de.wikipedia.org/wiki/Schlosskirche_(Lutherstadt_Wittenberg)",
+   "lat": 51.866369,
+   "lon": 12.637947,
+   "wd": "Q661752",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg/640px-Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg/1000px-Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg",
+   "extract": ""
+  },
+  "wittenberg/Town Church of St Mary": {
+   "ok": true,
+   "w": "Stadtkirche (Lutherstadt Wittenberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Stadtkirche Lutherstadt Wittenberg",
+   "url": "https://de.wikipedia.org/wiki/Stadtkirche_Lutherstadt_Wittenberg",
+   "lat": 51.86649722,
+   "lon": 12.64479444,
+   "wd": "Q458821",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Stadtkirche_Wittenberg_09_2015.JPG/640px-Stadtkirche_Wittenberg_09_2015.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Stadtkirche_Wittenberg_09_2015.JPG/1000px-Stadtkirche_Wittenberg_09_2015.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Stadtkirche_Wittenberg_09_2015.JPG",
+   "extract": ""
+  },
+  "wittenberg/Luther House": {
+   "ok": true,
+   "w": "Augusteum und Lutherhaus Wittenberg",
+   "ct": null,
+   "lang": "de",
+   "title": "Augusteum und Lutherhaus Wittenberg",
+   "url": "https://de.wikipedia.org/wiki/Augusteum_und_Lutherhaus_Wittenberg",
+   "lat": 51.86416667,
+   "lon": 12.6525,
+   "wd": "Q459493",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Augusteum_-_Lutherhaus_Wittenberg.jpg/640px-Augusteum_-_Lutherhaus_Wittenberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Augusteum_-_Lutherhaus_Wittenberg.jpg/1000px-Augusteum_-_Lutherhaus_Wittenberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Augusteum_-_Lutherhaus_Wittenberg.jpg",
+   "extract": ""
+  },
+  "wittenberg/Melanchthon House": {
+   "ok": true,
+   "w": "Melanchthonhaus Wittenberg",
+   "ct": null,
+   "lang": "de",
+   "title": "Melanchthonhaus Wittenberg",
+   "url": "https://de.wikipedia.org/wiki/Melanchthonhaus_Wittenberg",
+   "lat": 51.864792,
+   "lon": 12.650966,
+   "wd": "Q316137",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Lutherstadt_Wittenberg_09-2016_photo10.jpg/640px-Lutherstadt_Wittenberg_09-2016_photo10.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Lutherstadt_Wittenberg_09-2016_photo10.jpg/1000px-Lutherstadt_Wittenberg_09-2016_photo10.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Lutherstadt_Wittenberg_09-2016_photo10.jpg",
+   "extract": ""
+  },
+  "wittenberg/Markt and the Cranach houses": {
+   "ok": true,
+   "w": "Lutherstadt Wittenberg",
+   "ct": "Marktplatz Lutherstadt Wittenberg Rathaus",
+   "lang": "de",
+   "title": "Lutherstadt Wittenberg",
+   "url": "https://de.wikipedia.org/wiki/Lutherstadt_Wittenberg",
+   "lat": 51.86644,
+   "lon": 12.64351,
+   "wd": "Q6837",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg/640px-Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg/1000px-Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg",
+   "extract": ""
+  },
+  "wittenberg/Luther's Oak": {
+   "ok": true,
+   "w": "Luthereiche",
+   "ct": null,
+   "lang": "de",
+   "title": "Luthereiche",
+   "url": "https://de.wikipedia.org/wiki/Luthereiche",
+   "lat": null,
+   "lon": null,
+   "wd": "Q59274594",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Luthereiche_in_Wittenberg.jpg/640px-Luthereiche_in_Wittenberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Luthereiche_in_Wittenberg.jpg/1000px-Luthereiche_in_Wittenberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Luthereiche_in_Wittenberg.jpg",
+   "extract": ""
+  },
   "magdeburg/Magdeburg Cathedral": {
    "ok": true,
    "w": "Magdeburger Dom",
@@ -3707,6 +3887,36 @@
    "file": "Esslingen a.N. - Altstadt - Altes Rathaus - nördlicher Giebel und Glockenspiel mit Abendsonne.jpg",
    "extract": ""
   },
+  "halle": {
+   "ok": true,
+   "w": "Halle (Saale)",
+   "ct": "Halle Saale Marktplatz Roter Turm",
+   "lang": "de",
+   "title": "Halle (Saale)",
+   "url": "https://de.wikipedia.org/wiki/Halle_(Saale)",
+   "lat": 51.48277778,
+   "lon": 11.97,
+   "wd": "Q2814",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg",
+   "extract": ""
+  },
+  "wittenberg": {
+   "ok": true,
+   "w": "Lutherstadt Wittenberg",
+   "ct": "Schlosskirche Wittenberg Turm",
+   "lang": "de",
+   "title": "Lutherstadt Wittenberg",
+   "url": "https://de.wikipedia.org/wiki/Lutherstadt_Wittenberg",
+   "lat": 51.86644,
+   "lon": 12.64351,
+   "wd": "Q6837",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Lutherstadt_Wittenberg%2C_die_Schlossstra%C3%9Fe%2C_Turm_der_Schlosskirche.jpg/1200px-Lutherstadt_Wittenberg%2C_die_Schlossstra%C3%9Fe%2C_Turm_der_Schlosskirche.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Lutherstadt_Wittenberg%2C_die_Schlossstra%C3%9Fe%2C_Turm_der_Schlosskirche.jpg/1200px-Lutherstadt_Wittenberg%2C_die_Schlossstra%C3%9Fe%2C_Turm_der_Schlosskirche.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Lutherstadt Wittenberg, die Schlossstraße, Turm der Schlosskirche.jpg",
+   "extract": ""
+  },
   "fulda": {
    "ok": true,
    "w": "Fulda",
@@ -3919,10 +4129,6 @@
   }
  },
  "credits": {
-  "Ferchensee Lautersee Mittenwald.jpg": {
-   "lic": "GFDL",
-   "by": "Kogo"
-  },
   "Rothenburg BW 4.JPG": {
    "lic": "Public domain",
    "by": "Berthold Werner"
@@ -4011,6 +4217,10 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "© Ra Boe / Wikipedia"
   },
+  "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Tilman2007"
+  },
   "Henkersteg und Pegnitz - geo.hlipp.de - 1295.jpg": {
    "lic": "CC BY-SA 2.0",
    "by": "Dave C on geo.hlipp.de"
@@ -4043,10 +4253,6 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
-  "Lautersee, Mittenwald 04.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Kritzolina"
-  },
   "Esslingen a.N. - Altstadt - Altes Rathaus - nördlicher Giebel und Glockenspiel mit Abendsonne.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Roman Eisele"
@@ -4062,6 +4268,10 @@
   "Kloster Ettal und Basilika.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Cayambe"
+  },
+  "Lutherstadt Wittenberg, die Schlossstraße, Turm der Schlosskirche.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Dguendel"
   },
   "(27357) Magdeburg, Dom und Elbe (cropped).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4091,10 +4301,6 @@
    "lic": "CC BY-SA 2.5",
    "by": "No machine-readable author provided. Elian assumed (based on copyright claims)."
   },
-  "20060416-Michaelskirche Muenchen.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Luidger"
-  },
   "Mittenwald 5 - 26.05.2006.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Hesse1309"
@@ -4102,6 +4308,10 @@
   "Murnauer Moos.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "No machine-readable author provided. Dark Avenger~commonswiki assumed (based on copyright "
+  },
+  "Ferchensee Lautersee Mittenwald.jpg": {
+   "lic": "GFDL",
+   "by": "Kogo"
   },
   "Fuessen hohes schloss.jpg": {
    "lic": "Public domain",
@@ -4167,10 +4377,6 @@
    "lic": "CC0",
    "by": "Jebulon"
   },
-  "Stachus 2014-08-02 pseudo-pano.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Meister Eiskalt derivative work: MagentaGreen"
-  },
   "Partnachklamm 2014a.JPG": {
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo"
@@ -4200,6 +4406,10 @@
    "by": "LBM1948"
   },
   "Nördliche Karwendelkette, Blick von Mittenwald 05.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kritzolina"
+  },
+  "Lautersee, Mittenwald 04.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kritzolina"
   },
@@ -4251,6 +4461,10 @@
    "lic": "Public domain",
    "by": "No machine-readable author provided. Infilms assumed (based on copyright claims)."
   },
+  "20060416-Michaelskirche Muenchen.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Luidger"
+  },
   "Augsburg-Mozarthaus renoviert2006.jpg": {
    "lic": "CC BY 2.5",
    "by": "User:ReclaM"
@@ -4279,10 +4493,6 @@
    "lic": "Public domain",
    "by": "Kiban"
   },
-  "Nürnberg Burg ArM.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "ArtMechanic"
-  },
   "Augsburg-Perlachkirche.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
@@ -4302,10 +4512,6 @@
   "Nürnberg Frauentormauer Turm rotes N und Spittlertorturm.jpg": {
    "lic": "CC BY 3.0",
    "by": "Photo: Andreas Praefcke"
-  },
-  "Heilig-Geist-Spital (Nürnberg).jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "– Wladyslaw [Disk.]"
   },
   "Der Hohe Dom zu AugsburgDSC 2136.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4338,6 +4544,10 @@
   "München, Alter Hof, spätgotischer Torturm und Erker am Affenturm (14282908665).jpg": {
    "lic": "CC BY-SA 2.0",
    "by": "Heribert Pohl --- Thanks for half a million clicks! from Germering bei München, Bayern"
+  },
+  "Stachus 2014-08-02 pseudo-pano.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Meister Eiskalt derivative work: MagentaGreen"
   },
   "Viktualienmarkt 2016.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4427,6 +4637,10 @@
    "lic": "Public domain",
    "by": "Rudolf Stricker"
   },
+  "Nürnberg Burg ArM.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "ArtMechanic"
+  },
   "Alte Brücke Heidelberg.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "BishkekRocks"
@@ -4471,6 +4685,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Schlaier"
   },
+  "Heilig-Geist-Spital (Nürnberg).jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "– Wladyslaw [Disk.]"
+  },
   "German Bratwürste.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Gerbis"
@@ -4502,14 +4720,6 @@
   "St. Jakob Kirche Rothenburg 2014.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
-  },
-  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Alexander Hoernigk"
-  },
-  "Ulmer Münster-Münsterplatz (cropped).jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Martin Kraft"
   },
   "Handwerkerhof an Weihnachten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4647,6 +4857,14 @@
    "lic": "CC BY-SA 3.0",
    "by": "Martin Kraft"
   },
+  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Alexander Hoernigk"
+  },
+  "Ulmer Münster-Münsterplatz (cropped).jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Martin Kraft"
+  },
   "J24 014 Hp Anger, ET 623.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Falk2"
@@ -4671,10 +4889,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
   },
-  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
-  },
   "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
@@ -4682,10 +4896,6 @@
   "Stadtschloss Fulda (Südwestansicht).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Jörg Braukmann"
-  },
-  "Goethe-Schiller-Denkmal 01.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "H.Helmlechner"
   },
   "Thuringia Eisenach asv2020-07 img14 Bach Museum.jpg": {
    "lic": "FAL",
@@ -4723,29 +4933,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Berlin Tiergarten Siegessäule Luftansicht.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "beedubz"
-  },
-  "Berlin Charlottenburger Schloss Strassenseite.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Times"
-  },
   "Naumburg stwenzel.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Christian Bier"
   },
-  "Checkpoint Charlie1.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Lyricmac at en.wikipedia"
-  },
   "Naumburg Marientor.jpg": {
    "lic": "CC BY 3.0",
    "by": "Density"
-  },
-  "Bundesarchiv B 145 Bild-F088809-0038, Berlin, East Side Gallery.jpg": {
-   "lic": "CC BY-SA 3.0 de",
-   "by": "Joachim F. Thurn"
   },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4755,33 +4949,41 @@
    "lic": "Public domain",
    "by": "Axel Hindemith"
   },
-  "Berlin Museumsinsel Fernsehturm.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Thomas Wolf, www.foto-tw.de"
-  },
-  "BerlinBrandenburgerTor1985.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Joergsam"
-  },
-  "Berlin - Berliner Fernsehturm - Fensterreinigung.jpg": {
-   "lic": "FAL",
-   "by": "Taxiarchos228"
+  "Halle Händelhaus 2012.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Photo: Andreas Praefcke"
   },
   "Wernigerode später Frühling im Lustgartens von Wernigerode im Harz Foto 2005 Wolfgang Pehlemann Wiesbaden PICT0037.jpg": {
    "lic": "CC BY-SA 3.0 de",
    "by": "Wolfgang Pehlemann Wiesbaden Germany"
   },
-  "Damnatz Elbe.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Christian Fischer"
-  },
-  "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
-   "lic": "CC BY 3.0 de",
-   "by": "Ansgar Koreng"
-  },
-  "Memorial to the Murdered Jews of Europeabove.jpg": {
+  "20150902-BurgGiebichenstein.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Alexander Blum"
+   "by": "Steffen Voigt"
+  },
+  "Stadtkirche Wittenberg 09 2015.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Concord"
+  },
+  "Augusteum - Lutherhaus Wittenberg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
+  },
+  "Luthereiche in Wittenberg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Markus Sturzbecher"
+  },
+  "Roter Turm Halle 2009.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "de:Benutzer:OmiTs"
+  },
+  "Halloren-Winter-Edition-3.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "WiseWoman"
+  },
+  "Lutherstadt Wittenberg 09-2016 photo10.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
   },
   "00 4092 Wernigerode - Harzquerbahn.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4811,29 +5013,29 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
+  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
   "Ein sonniger Anblick zum Hexentanzplatz vom Seilbahn in Thale (Naturschutzgebiet Bodetal).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Vadat, Hasanov"
+  },
+  "Goethe-Schiller-Denkmal 01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "H.Helmlechner"
   },
   "Magdeburger Dom Luftbild.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
   },
-  "Reichstagsgebäude von Westen.jpg": {
+  "Moritzburg Halle Hauptzuweg.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Jörg Braukmann"
+   "by": "Barnos"
   },
   "Schloss Wernigerode Luftbild 2.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
-  },
-  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
-  },
-  "2023 Berliner Dom - Westfassade -- 01.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Chainwit."
   },
   "Dom Halberstadt von Südosten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4843,9 +5045,17 @@
    "lic": "CC BY 4.0",
    "by": "Dguendel"
   },
-  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
+  "Schlosskirche Wittenberg Luftbild 2024 Toni Klemm.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Barnos"
+   "by": "Toniklemm"
+  },
+  "Halle(Saale) Marktkirche asv2024-04.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Dguendel"
   },
   "BD Nitzsche Haus, Naumburg (1).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4879,13 +5089,41 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
+  "Berlin Tiergarten Siegessäule Luftansicht.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "beedubz"
+  },
+  "Berlin Charlottenburger Schloss Strassenseite.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Times"
+  },
+  "Checkpoint Charlie1.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Lyricmac at en.wikipedia"
+  },
+  "Bundesarchiv B 145 Bild-F088809-0038, Berlin, East Side Gallery.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Joachim F. Thurn"
+  },
   "Stadtkirche St. Michael in Jena 2008-05-24.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Henry Mühlpfordt"
   },
+  "Berlin Museumsinsel Fernsehturm.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Thomas Wolf, www.foto-tw.de"
+  },
+  "BerlinBrandenburgerTor1985.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joergsam"
+  },
   "PlanetariumJena01.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Selby"
+  },
+  "Berlin - Berliner Fernsehturm - Fensterreinigung.jpg": {
+   "lic": "FAL",
+   "by": "Taxiarchos228"
   },
   "140823 Märchendom Saalfelder Feengrotten.jpg": {
    "lic": "CC BY 3.0 de",
@@ -4895,6 +5133,18 @@
    "lic": "CC BY-SA 4.0",
    "by": "NoRud"
   },
+  "Damnatz Elbe.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Christian Fischer"
+  },
+  "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
+   "lic": "CC BY 3.0 de",
+   "by": "Ansgar Koreng"
+  },
+  "Memorial to the Murdered Jews of Europeabove.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Alexander Blum"
+  },
   "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kora27"
@@ -4903,9 +5153,17 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "Arne Müseler"
   },
+  "Reichstagsgebäude von Westen.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Jörg Braukmann"
+  },
   "Aerial image of the Schloss Friedberg (view from the south).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
+  },
+  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
   },
   "Jena-40-Marktplatz-2023-gje.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4914,6 +5172,14 @@
   "JenTower, Jena 2023-1.jpg": {
    "lic": "CC0",
    "by": "Catatine"
+  },
+  "2023 Berliner Dom - Westfassade -- 01.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Chainwit."
+  },
+  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Barnos"
   },
   "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
    "lic": "Public domain",

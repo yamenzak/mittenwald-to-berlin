@@ -39,6 +39,8 @@ export const PLACES = {
   heidelberg:   { n: "Heidelberg",      q: "Heidelberg Hauptbahnhof",            w: "Heidelberg",                    stn: "Heidelberg Hauptbahnhof",       country: "DE" },
   ulm:          { n: "Ulm",             q: "Ulm Hauptbahnhof",                   w: "Ulm",                           stn: "Ulm Hauptbahnhof",              country: "DE" },
   esslingen:    { n: "Esslingen",       q: "Esslingen (Neckar) Bahnhof",         w: "Esslingen am Neckar",           stn: "Bahnhof Esslingen (Neckar)",    country: "DE" },
+  halle:        { n: "Halle",           q: "Halle (Saale) Hauptbahnhof",         w: "Halle (Saale)",                 stn: "Halle (Saale) Hauptbahnhof",    country: "DE" },
+  wittenberg:   { n: "Wittenberg",      q: "Lutherstadt Wittenberg Hauptbahnhof", w: "Lutherstadt Wittenberg",       stn: "Bahnhof Lutherstadt Wittenberg", country: "DE" },
   fulda:        { n: "Fulda",           q: "Fulda Bahnhof",                      w: "Fulda",                         stn: "Bahnhof Fulda",                 country: "DE" },
   eisenach:     { n: "Eisenach",        q: "Eisenach Bahnhof",                   w: "Eisenach",                      stn: "Bahnhof Eisenach",              country: "DE" },
   erfurt:       { n: "Erfurt",          q: "Erfurt Hauptbahnhof",                w: "Erfurt",                        stn: "Erfurt Hauptbahnhof",           country: "DE" },
@@ -316,6 +318,22 @@ export const SIGHTS = {
     S("Fischmarkt", "Halberstadt", "The rebuilt half-timbered centre, with the Rathaus and Roland.", { mins: 30, kind: "square" }),
     S("As Slow as Possible", "As Slow as Possible", "A John Cage organ piece in the Burchardikirche, playing since 2001. It ends in 2640.", { mins: 40, kind: "sight" }),
   ],
+  halle: [
+    S("Marktplatz and the Red Tower", "Roter Turm (Halle)", "Five towers over one square — four on the church, one standing alone.", { must: 1, mins: 40, kind: "square" }),
+    S("Market Church", "Marktkirche Unser Lieben Frauen", "Luther preached here; his death mask is upstairs.", { mins: 40, kind: "church", indoor: 1 }),
+    S("Händel House", "Händel-Haus", "Handel was born in this house in 1685. Instruments of his time, played.", { must: 1, mins: 75, kind: "museum", indoor: 1, ticket: 1 }),
+    S("Moritzburg", "Moritzburg (Halle)", "A ruined castle roofed in glass and aluminium, holding the modern art.", { mins: 90, kind: "museum", indoor: 1, ticket: 1, closed: [2] }),
+    S("Giebichenstein Castle", "Burg Giebichenstein", "On the cliff above the Saale, twenty minutes north by tram 7.", { mins: 60, kind: "view", ticket: 1 }),
+    S("Halloren chocolate", "Halloren Schokoladenfabrik", "The oldest chocolate works in Germany, 1804, with a room made of chocolate.", { mins: 60, kind: "food", indoor: 1, ticket: 1 }),
+  ],
+  wittenberg: [
+    S("Castle Church", "Schlosskirche (Lutherstadt Wittenberg)", "The door where the 95 theses went up in 1517. UNESCO, and the reason for the town.", { must: 1, mins: 50, kind: "church", indoor: 1 }),
+    S("Town Church of St Mary", "Stadtkirche (Lutherstadt Wittenberg)", "Where Luther actually preached, with Cranach's altarpiece.", { must: 1, mins: 40, kind: "church", indoor: 1 }),
+    S("Luther House", "Augusteum und Lutherhaus Wittenberg", "The monastery he lived in for 35 years — the largest Reformation museum there is.", { must: 1, mins: 90, kind: "museum", indoor: 1, ticket: 1 }),
+    S("Melanchthon House", "Melanchthonhaus Wittenberg", "The quieter scholar next door, in a Renaissance house with its garden.", { mins: 50, kind: "museum", indoor: 1, ticket: 1 }),
+    S("Markt and the Cranach houses", "Lutherstadt Wittenberg", "Town hall, the two statues, and the painter's courtyards behind the square.", { cimg: "Marktplatz Lutherstadt Wittenberg Rathaus", must: 1, mins: 45, kind: "square" }),
+    S("Luther's Oak", "Luthereiche", "Where he burned the papal bull in 1520. Five minutes east of the Lutherhaus.", { mins: 15, kind: "sight" }),
+  ],
   magdeburg: [
     S("Magdeburg Cathedral", "Magdeburger Dom", "The first Gothic cathedral on German soil, on the Elbe.", { mins: 50, kind: "church", indoor: 1 }),
     S("Green Citadel", "Grüne Zitadelle von Magdeburg", "Hundertwasser's last building. Pink, wonky, full of trees.", { mins: 40, kind: "sight" }),
@@ -395,369 +413,128 @@ export const DAYS = [
   },
   {
     n: 2, iso: "2026-09-30", title: "Out of the Alps", c: "#1F8F8A",
-    hero: "ettal",
-    intro: "The best day of the week for looking out of a window. An abbey, a village where the houses are painted with fairy tales, and a lake, before the mountains let go.",
+    hero: "ettal", bags: 1,
+    intro: "An abbey, a village painted with fairy tales, a lake, and Munich in the evening.",
     paths: [
-      { id: "A", name: "Abbey and woodcarvers", why: "Four short stops, none of them rushed. The most to see.", bags: 1, seq: [
-        T("08:30", "08:50", "Garmisch", ["mittenwald", "garmisch"]),
-        { S: "garmisch", arr: "08:50", dep: "10:35", stn: "Ten minutes east from the station to Ludwigstraße — the Partenkirchen half, which is the pretty one.",
-          see: ["Ludwigstraße", "Mohrenplatz", "Old St Martin", "Kurpark Garmisch"] },
-        T("10:40", "11:10", "Ettal", ["garmisch", "ettal"], "Bus 9606 from outside Garmisch station. It runs straight through to Ettal and on to Oberammergau.", 1),
-        { S: "ettal", arr: "11:10", dep: "12:00", stn: "The bus stops at the abbey gate. Everything is in front of you.",
-          see: ["Ettal Abbey church", "Abbey shop and distillery"] },
-        T("12:00", "12:10", "Oberammergau", ["ettal", "oberammergau"], "", 1),
-        { S: "oberammergau", arr: "12:10", dep: "14:15", stn: "Ten minutes from the station into the village.",
-          see: ["Dorfstraße", "Pilatushaus", "Ettaler Straße houses", "Pfarrkirche St Peter und Paul", "Woodcarving workshops", "Passion Play Theatre", "Ammer riverside"] },
-        T("14:15", "14:55", "Murnau", ["oberammergau", "murnau"]),
-        { S: "murnau", arr: "14:55", dep: "16:20", stn: "Ten minutes uphill from the station to Obermarkt.",
-          see: ["Obermarkt", "Münter House", "Staffelsee"] },
-        T("16:05", "17:55", "Augsburg", ["murnau", "augsburg"], "Change at München Hbf."),
-        { S: "augsburg", arr: "17:55", base: 1, stn: "Fifteen minutes east from the Hbf to Rathausplatz, or tram 2.",
-          see: ["Maximilianstraße", "Rathausplatz", "Augustusbrunnen", "Lechviertel canals"] },
-      ]},
-      { id: "B", name: "Füssen and Neuschwanstein", why: "One famous castle instead of four small towns. Early start, long day, a lot of queueing.", bags: 1, seq: [
-        T("07:30", "07:50", "Garmisch", ["mittenwald", "garmisch"]),
-        T("08:05", "10:05", "Füssen", ["garmisch", "oberammergau", "fussen"], "Regional bus 9606 via Ettal and Oberammergau. Only a few runs a day — check the time the night before.", 1),
-        { S: "fussen", arr: "10:05", dep: "15:05", stn: "The station is right beside the old town; the castle bus leaves from outside it.",
-          see: ["Füssen old town", "Hohes Schloss", "St Mang's Abbey", "Lechfall", "Hohenschwangau", "Neuschwanstein", "Marienbrücke"] },
-        T("15:05", "17:05", "Augsburg", ["fussen", "augsburg"], "Change at Buchloe."),
-        { S: "augsburg", arr: "17:05", base: 1, stn: "Fifteen minutes east from the Hbf to Rathausplatz, or tram 2.",
-          see: ["Maximilianstraße", "Rathausplatz", "Augsburg Cathedral"] },
-      ]},
-      /* The western line leaves the Alps the same morning but turns down the
-         Danube instead of up to Franconia. Garmisch, Munich and Augsburg are
-         all still on it — short stops rather than none. */
-      { id: "W", name: "Down the Danube to Ulm",
-        title: "Out of the Alps, westward", hero: "munich",
-        intro: "The same road out of the mountains, cut short three times: Partenkirchen for an hour and a half, Munich for the middle of the day, Augsburg before the light goes, and a bed under the tallest church spire in the world.",
-        why: "Garmisch, Munich and Augsburg in one day, and then west along the Danube. Sleeps in Ulm.", bags: 1, seq: [
+      { id: "A", name: "Abbey, woodcarvers, and Munich", why: "Five stops down out of the mountains. The most to see of any day here.", seq: [
         T("08:00", "08:27", "Garmisch", ["mittenwald", "garmisch"]),
         { S: "garmisch", arr: "08:27", dep: "10:00", stn: "Ten minutes east from the station to Ludwigstraße — the Partenkirchen half, which is the pretty one.",
           see: ["Ludwigstraße", "Mohrenplatz", "Old St Martin"] },
-        T("10:00", "11:26", "Munich", ["garmisch", "munich"], "Direct up the Loisach valley."),
-        { S: "munich", arr: "11:26", dep: "14:15", stn: "Twenty minutes on foot down Neuhauser Straße, or two stops on the S-Bahn.",
-          see: ["Karlsplatz and Neuhauser Straße", "Frauenkirche", "Marienplatz", "St Peter's tower", "Viktualienmarkt", "Asamkirche"] },
-        T("14:15", "15:02", "Augsburg", ["munich", "augsburg"]),
-        { S: "augsburg", arr: "15:02", dep: "17:00", stn: "Fifteen minutes east from the Hbf to Rathausplatz, or tram 2.",
-          see: ["Rathausplatz", "Augustusbrunnen", "Golden Hall", "Maximilianstraße"] },
-        T("17:00", "18:21", "Ulm", ["augsburg", "ulm"], "Direct along the Danube, an hour and twenty."),
-        { S: "ulm", arr: "18:21", base: 1, stn: "Out of the Hbf and straight down Bahnhofstraße — the Minster is five minutes and you cannot miss it.",
-          see: ["Ulm Minster", "Fishermen's Quarter", "Crooked House"] },
+        T("10:00", "10:33", "Ettal", ["garmisch", "ettal"], "Bus 326 from outside the station, through to Ettal and on to Oberammergau.", 1),
+        { S: "ettal", arr: "10:33", dep: "11:30", stn: "The bus stops at the abbey gate. Everything is in front of you.",
+          see: ["Ettal Abbey church", "Abbey shop and distillery"] },
+        T("11:30", "11:52", "Oberammergau", ["ettal", "oberammergau"], "", 1),
+        { S: "oberammergau", arr: "11:52", dep: "14:15", stn: "Ten minutes from the station into the village.",
+          see: ["Dorfstraße", "Pilatushaus", "Ettaler Straße houses", "Pfarrkirche St Peter und Paul", "Woodcarving workshops", "Passion Play Theatre", "Ammer riverside"] },
+        T("14:15", "15:08", "Murnau", ["oberammergau", "murnau"]),
+        { S: "murnau", arr: "15:08", dep: "16:30", stn: "Ten minutes uphill from the station to Obermarkt.",
+          see: ["Obermarkt", "Münter House", "Staffelsee"] },
+        T("16:30", "17:32", "Munich", ["murnau", "munich"], "Direct. The same train you came out of the mountains on."),
+        { S: "munich", arr: "17:32", dep: "20:30", stn: "Twenty minutes on foot down Neuhauser Straße, or two stops on the S-Bahn.",
+          see: ["Karlsplatz and Neuhauser Straße", "Frauenkirche", "Marienplatz", "St Peter's tower", "Viktualienmarkt", "Asamkirche", "Hofbräuhaus"] },
+        T("20:30", "21:19", "Augsburg", ["munich", "augsburg"]),
+        { S: "augsburg", arr: "21:19", base: 1, stn: "Fifteen minutes east from the Hbf to Rathausplatz, or tram 2.",
+          see: ["Maximilianstraße", "Rathausplatz"] },
       ]},
-
-      { id: "Z", name: "The Zugspitze, and back to Mittenwald",
-        title: "The Zugspitze", hero: "garmisch",
-        intro: "Germany's highest point and then back to the same bed. Nothing to pack, nothing to catch at the end of it.",
-        why: "Stays a second night in Mittenwald. The mountain all day, and no hotel to change.", seq: [
-        T("08:00", "08:20", "Garmisch", ["mittenwald", "garmisch"]),
-        { S: "garmisch", arr: "08:20", dep: "17:40", stn: "The Zugspitzbahn leaves from its own platform beside the main station.",
-          see: ["Zugspitze", "Eibsee", "Ludwigstraße", "Mohrenplatz", "Partnachklamm", "Old St Martin"] },
-        T("17:40", "18:00", "Mittenwald", ["garmisch", "mittenwald"]),
-        { S: "mittenwald", arr: "18:00", base: 1, stn: "The same walk down Bahnhofstraße as last night.",
-          see: ["Obermarkt", "Ballenhausgasse"] },
+      { id: "B", name: "Füssen and Neuschwanstein", why: "One famous castle instead of five small places. Early start, long queues, and no Munich.", seq: [
+        T("07:30", "07:57", "Garmisch", ["mittenwald", "garmisch"]),
+        T("08:05", "10:05", "Füssen", ["garmisch", "oberammergau", "fussen"], "Regional bus via Ettal and Oberammergau. Only a few runs a day — check the time the night before.", 1),
+        { S: "fussen", arr: "10:05", dep: "16:30", stn: "The station is right beside the old town; the castle bus leaves from outside it.",
+          see: ["Füssen old town", "Hohes Schloss", "St Mang's Abbey", "Lechfall", "Hohenschwangau", "Neuschwanstein", "Marienbrücke"] },
+        T("16:30", "18:30", "Augsburg", ["fussen", "augsburg"], "Change at Buchloe."),
+        { S: "augsburg", arr: "18:30", base: 1, stn: "Fifteen minutes east from the Hbf to Rathausplatz, or tram 2.",
+          see: ["Maximilianstraße", "Rathausplatz", "Augsburg Cathedral", "Lechviertel canals"] },
       ]},
     ],
   },
   {
-    n: 3, iso: "2026-10-01", title: "Augsburg, Munich, Nuremberg", c: "#9A7428",
-    hero: "munich", bags: 1,
-    intro: "Three cities in one day, which sounds mad and is not: they are forty minutes apart and you only walk the middle of each.",
+    n: 3, iso: "2026-10-01", title: "West to the Neckar", c: "#9A7428",
+    hero: "ulm", bags: 1,
+    intro: "The tallest church spire in the world before lunch, a medieval town almost nobody outside Germany has heard of after it, and a castle above a river for the night.",
     paths: [
-      { id: "A", name: "All three", why: "Augsburg before the crowds, Munich in the middle, Nuremberg for the evening.", seq: [
-        { S: "augsburg", arr: "08:00", dep: "10:45", stn: "Fifteen minutes east from the Hbf, or tram 2 to Rathausplatz.",
-          see: ["Rathausplatz", "Augustusbrunnen", "Golden Hall", "Perlachturm", "Augsburg Cathedral", "Fuggerei", "Maximilianstraße"] },
-        T("10:45", "11:30", "Munich", ["augsburg", "munich"]),
-        { S: "munich", arr: "11:30", dep: "17:00", stn: "From the Hbf it is twenty minutes on foot straight down Neuhauser Straße, or two stops on the S-Bahn.",
-          see: ["Karlsplatz and Neuhauser Straße", "Michaelskirche", "Frauenkirche", "Marienplatz", "St Peter's tower", "Viktualienmarkt", "Asamkirche", "Hofbräuhaus"] },
-        T("17:00", "19:10", "Nuremberg", ["munich", "nuremberg"]),
-        { S: "nuremberg", arr: "19:10", base: 1, stn: "Cross the road from the Hbf and you are through the Königstor and inside the walls.",
-          see: ["Königstor and the walls", "Handwerkerhof", "Nuremberg sausages"] },
-      ]},
-      { id: "B", name: "Munich properly", why: "Skips Augsburg's museums for a long unhurried Munich, including the English Garden.", seq: [
-        { S: "augsburg", arr: "08:15", dep: "09:30", stn: "Straight down Bahnhofstraße — Rathausplatz is fifteen minutes.",
-          see: ["Rathausplatz", "Maximilianstraße"] },
-        T("09:15", "10:00", "Munich", ["augsburg", "munich"]),
-        { S: "munich", arr: "10:00", dep: "17:30", stn: "Twenty minutes on foot down Neuhauser Straße, or two stops on the S-Bahn.",
-          see: ["Karlsplatz and Neuhauser Straße", "Frauenkirche", "Marienplatz", "St Peter's tower", "Viktualienmarkt", "Alter Hof", "Residenz", "Odeonsplatz", "Theatinerkirche", "Hofgarten", "English Garden", "Chinesischer Turm"] },
-        T("17:30", "19:40", "Nuremberg", ["munich", "nuremberg"]),
-        { S: "nuremberg", arr: "19:40", base: 1, stn: "Through the Königstor, straight across from the Hbf.",
-          see: ["Königstor and the walls", "Nuremberg sausages"] },
-      ]},
-
-      /* The Romantic Road. Augsburg is on it and so is Rothenburg, which is
-         two and a half hours up the line rather than the day-long detour it
-         looks like on a map. Würzburg is the far end of the road and a bed
-         nobody else on this trip sleeps in. */
-      { id: "R", name: "Rothenburg and Würzburg",
-        title: "Up the Romantic Road", hero: "rothenburg",
-        intro: "North-west instead of north-east, along the road the coaches take: the most complete walled town in Germany, and then the bishops' city at the end of it.",
-        why: "The whole point is Rothenburg — walls you can walk the top of, and a town inside them that stopped in 1650. Sleeps in Würzburg.", seq: [
-        { S: "augsburg", arr: "08:00", dep: "09:15", stn: "Fifteen minutes east from the Hbf, or tram 2 to Rathausplatz.",
-          see: ["Rathausplatz", "Augustusbrunnen", "Maximilianstraße"] },
-        T("09:15", "11:45", "Rothenburg", ["augsburg", "rothenburg"], "Changes at Treuchtlingen and Steinach. The last one is a two-carriage shuttle up the valley."),
-        { S: "rothenburg", arr: "11:45", dep: "16:45", stn: "Ten minutes uphill from the station, in through the Rödertor, and you are on the wall.",
-          see: ["Marktplatz", "Plönlein", "Town wall walk", "Burggarten", "St Jakob's", "Medieval Crime Museum", "Käthe Wohlfahrt"] },
-        T("16:45", "18:00", "Würzburg", ["rothenburg", "wurzburg"], "Change at Steinach."),
-        { S: "wurzburg", arr: "18:00", base: 1, stn: "Ten minutes from the Hbf down Kaiserstraße to the centre, or tram 1 to Dom.",
-          see: ["Marktplatz and Marienkapelle", "Old Main Bridge", "Franconian wine"] },
-      ]},
-
-      /* Straight north instead, to buy a day in the Harz. */
-      { id: "H", name: "Nuremberg, then on to Erfurt",
-        title: "Nuremberg, then Thuringia", hero: "nuremberg",
-        intro: "Nuremberg for the middle of the day, and then a fast run north so that tomorrow can be spent in the mountains above Quedlinburg rather than on a train.",
-        why: "Gets the northward ride out of the way today, which is what buys the Harz tomorrow. Sleeps in Erfurt.", seq: [
-        { S: "augsburg", arr: "08:00", dep: "09:00", stn: "Fifteen minutes east from the Hbf, or tram 2 to Rathausplatz.",
-          see: ["Rathausplatz", "Maximilianstraße"] },
-        T("09:00", "10:50", "Nuremberg", ["augsburg", "nuremberg"], "Direct, about an hour and three quarters."),
-        { S: "nuremberg", arr: "10:50", dep: "16:30", stn: "Cross the road from the Hbf, through the Königstor, and you are inside the walls.",
-          see: ["Königstor and the walls", "St Lorenz", "Heilig-Geist-Spital", "Hauptmarkt", "Schöner Brunnen", "Sebalduskirche", "Albrecht Dürer's House", "Imperial Castle", "Weißgerbergasse", "Nuremberg sausages"] },
-        T("16:30", "18:25", "Erfurt", ["nuremberg", "erfurt"], "Direct on the RE29 — under two hours, and the Franconian Forest out of the window."),
-        { S: "erfurt", arr: "18:25", base: 1, stn: "Fifteen minutes from the station up the Anger to the old town, or tram 3, 4 or 6.",
-          see: ["Anger", "Fischmarkt", "Krämerbrücke", "Domplatz"] },
-      ]},
-
-      /* The western line's one day that is entirely new ground. */
-      { id: "W", name: "Ulm, Esslingen, Heidelberg",
-        title: "West to the Neckar", hero: "heidelberg",
-        intro: "The Minster first thing while it is quiet, then a medieval town almost nobody outside Germany has heard of, and a castle above a river for the night.",
-        why: "Ulm's spire, Esslingen's timber houses — the oldest standing in Germany — and Heidelberg by the evening. Sleeps in Heidelberg.", seq: [
-        { S: "ulm", arr: "08:00", dep: "11:30", stn: "Five minutes from the Hbf down Bahnhofstraße to Münsterplatz.",
+      { id: "A", name: "Ulm, Esslingen, Heidelberg", why: "Three towns along the Danube and the Neckar, none of them rushed.", seq: [
+        { S: "augsburg", arr: "08:00", dep: "10:30", stn: "Fifteen minutes east from the Hbf, or tram 2 to Rathausplatz.",
+          see: ["Rathausplatz", "Golden Hall", "Augustusbrunnen", "Maximilianstraße"] },
+        T("10:30", "11:45", "Ulm", ["augsburg", "ulm"], "Direct along the Danube on the RE9 — the slower ones take two hours, so take this one."),
+        { S: "ulm", arr: "11:45", dep: "15:20", stn: "Five minutes from the Hbf down Bahnhofstraße to Münsterplatz. You cannot miss it.",
           see: ["Ulm Minster", "Ulm Town Hall", "Fishermen's Quarter", "Crooked House", "Metzgerturm", "Danube wall walk", "Einstein's birthplace"] },
-        T("11:30", "12:34", "Esslingen", ["ulm", "esslingen"], "Direct on the RE5, an hour down the Fils and the Neckar."),
-        { S: "esslingen", arr: "12:34", dep: "15:30", stn: "Ten minutes from the station across the Neckar and you are in the old town.",
+        T("15:20", "16:12", "Esslingen", ["ulm", "esslingen"], "Direct on the RE5, down the Fils and the Neckar."),
+        { S: "esslingen", arr: "16:12", dep: "18:40", stn: "Ten minutes from the station across the Neckar and you are in the old town.",
           see: ["Old Town Hall", "The oldest timber houses", "Innere Brücke", "Frauenkirche", "Esslingen Burg", "Kessler Sekt"] },
-        T("15:30", "17:18", "Heidelberg", ["esslingen", "heidelberg"], "Two changes, usually Stuttgart and Mannheim."),
-        { S: "heidelberg", arr: "17:18", base: 1, stn: "The Hbf is out of the centre — bus 32 or tram 5 to Bismarckplatz, then the Hauptstraße is in front of you.",
+        T("18:40", "20:19", "Heidelberg", ["esslingen", "heidelberg"], "Two changes, usually Stuttgart and Mannheim."),
+        { S: "heidelberg", arr: "20:19", base: 1, stn: "The Hbf is out of the centre — bus 32 or tram 5 to Bismarckplatz, then the Hauptstraße is in front of you.",
           see: ["Hauptstraße", "Marktplatz and Church of the Holy Spirit", "Old Bridge"] },
       ]},
-
-      /* The Alps line comes out of Mittenwald today instead of yesterday. */
-      { id: "Z", name: "Down from the mountains, via Munich",
-        title: "Mittenwald to Nuremberg", hero: "munich",
-        intro: "Two hours out of the mountains, a long afternoon in Munich, and Franconia for the night.",
-        why: "For the week that stayed two nights in Mittenwald. Munich all afternoon, Nuremberg for the evening.", seq: [
-        { S: "mittenwald", arr: "08:00", dep: "09:00", stn: "Five minutes down Bahnhofstraße for anything you still want to see.",
-          see: ["Obermarkt", "St Peter and Paul"] },
-        T("09:00", "11:00", "Munich", ["mittenwald", "munich"], "Change at Garmisch or Murnau. The Karwendel line is the good half."),
-        { S: "munich", arr: "11:00", dep: "17:15", stn: "Twenty minutes on foot down Neuhauser Straße, or two stops on the S-Bahn.",
-          see: ["Karlsplatz and Neuhauser Straße", "Frauenkirche", "Marienplatz", "St Peter's tower", "Viktualienmarkt", "Asamkirche", "Residenz", "Odeonsplatz", "Hofgarten", "Hofbräuhaus"] },
-        T("17:15", "19:25", "Nuremberg", ["munich", "nuremberg"]),
-        { S: "nuremberg", arr: "19:25", base: 1, stn: "Through the Königstor, straight across from the Hbf.",
-          see: ["Königstor and the walls", "Handwerkerhof", "Nuremberg sausages"] },
-      ]},
     ],
   },
   {
-    n: 4, iso: "2026-10-02", title: "Franconia, then north", c: "#8E3B46",
-    hero: "bamberg", bags: 1,
-    intro: "One more Franconian old town in the morning, and then the run up into Thuringia, which is shorter than it looks.",
+    n: 4, iso: "2026-10-02", title: "Heidelberg, then back east", c: "#8E3B46",
+    hero: "heidelberg", bags: 1,
+    intro: "The castle and the Philosophers' Walk in the morning, and then east through two of the best towns in Franconia.",
     paths: [
-      { id: "A", name: "Nuremberg, then Bamberg", why: "Two of the best old towns in Germany in one day, and in Erfurt in good time.", seq: [
-        { S: "nuremberg", arr: "08:00", dep: "12:30", stn: "Through the Königstor and uphill; the castle is the far end of the old town.",
-          see: ["St Lorenz", "Heilig-Geist-Spital", "Hauptmarkt", "Schöner Brunnen", "Frauenkirche", "Sebalduskirche", "Albrecht Dürer's House", "Tiergärtnertorplatz", "Imperial Castle", "Weißgerbergasse", "Henkersteg"] },
-        T("12:30", "13:15", "Bamberg", ["nuremberg", "bamberg"]),
-        { S: "bamberg", arr: "13:15", dep: "17:30", stn: "Twenty minutes from the station to the river, or bus 901.",
-          see: ["Maximiliansplatz", "Obere Brücke", "Old Town Hall", "Little Venice", "Böttingerhaus", "Bamberg Cathedral", "Alte Hofhaltung", "New Residence rose garden", "Schlenkerla"] },
-        T("17:30", "19:05", "Erfurt", ["bamberg", "erfurt"], "Direct on the RE29, an hour and a half."),
-        { S: "erfurt", arr: "19:05", base: 1, stn: "Fifteen minutes from the station up the Anger to the old town, or tram 3, 4 or 6.",
-          see: ["Anger", "Fischmarkt", "Krämerbrücke"] },
-      ]},
-      { id: "B", name: "Nuremberg, then the Fairy Grottoes", why: "Saalfeld's show cave is the strangest thing on this route, and it sits on the way north.", seq: [
-        { S: "nuremberg", arr: "08:00", dep: "10:45", stn: "Through the Königstor and uphill to the castle.",
-          see: ["St Lorenz", "Hauptmarkt", "Schöner Brunnen", "Sebalduskirche", "Albrecht Dürer's House", "Imperial Castle", "Weißgerbergasse"] },
-        T("10:45", "13:15", "Saalfeld", ["nuremberg", "saalfeld"], "Up through the Franconian Forest. One change, usually at Lichtenfels."),
-        { S: "saalfeld", arr: "13:15", dep: "17:00", stn: "The Feengrotten are a 25-minute walk south-west of the station, or bus A.",
-          see: ["Marktplatz", "Johanneskirche", "Saalfeld town walls", "Fairy Grottoes"] },
-        T("17:00", "18:15", "Erfurt", ["saalfeld", "erfurt"]),
-        { S: "erfurt", arr: "18:15", base: 1, stn: "Fifteen minutes up the Anger, or tram 3, 4 or 6.",
-          see: ["Anger", "Fischmarkt", "Krämerbrücke", "Domplatz"] },
-      ]},
-
-      /* Out of Würzburg for the Romantic Road week. */
-      { id: "R", name: "Würzburg, then Bamberg",
-        title: "Würzburg and Bamberg", hero: "wurzburg",
-        intro: "The Residence first thing, while the staircase still has its light, then an hour up the Main to Bamberg and on into Thuringia.",
-        why: "Two UNESCO towns in a morning and an afternoon, and the shortest ride north on the whole trip.", seq: [
-        { S: "wurzburg", arr: "08:00", dep: "12:15", stn: "Ten minutes down Kaiserstraße from the Hbf, or tram 1 to Dom.",
-          see: ["Würzburg Residence", "Court Garden", "Würzburg Cathedral", "Marktplatz and Marienkapelle", "Old Main Bridge", "Marienberg Fortress", "Franconian wine"] },
-        T("12:15", "13:30", "Bamberg", ["wurzburg", "bamberg"], "Change at Schweinfurt or Haßfurt."),
-        { S: "bamberg", arr: "13:30", dep: "17:30", stn: "Twenty minutes from the station to the river, or bus 901.",
-          see: ["Maximiliansplatz", "Obere Brücke", "Old Town Hall", "Little Venice", "Bamberg Cathedral", "Alte Hofhaltung", "New Residence rose garden", "Schlenkerla"] },
-        T("17:30", "19:05", "Erfurt", ["bamberg", "erfurt"], "Direct on the RE29."),
-        { S: "erfurt", arr: "19:05", base: 1, stn: "Fifteen minutes up the Anger, or tram 3, 4 or 6.",
-          see: ["Anger", "Fischmarkt", "Krämerbrücke"] },
-      ]},
-
-      /* Back east, and the only day on the trip with five hours of train in it.
-         It is what the west costs. */
-      { id: "W", name: "Heidelberg, then east to Würzburg",
-        title: "Heidelberg, then back east", hero: "heidelberg",
-        intro: "The castle and the Philosophers' Walk in the morning, and then the long run east with the Würzburg Residence in the middle of it.",
-        why: "Heidelberg's morning is the reason for this week. The afternoon buys Würzburg and the evening gets you back on the line to Berlin. Five hours riding — the most of any day here.", seq: [
-        { S: "heidelberg", arr: "08:00", dep: "11:45", stn: "Bus 33 to the castle, or the funicular from Kornmarkt. The Philosophers' Walk is over the Old Bridge.",
+      { id: "A", name: "Heidelberg, Würzburg, Bamberg", why: "Three towns and the longest ride of the week, which is what the west costs.", seq: [
+        { S: "heidelberg", arr: "08:00", dep: "11:55", stn: "Bus 33 to the castle, or the funicular from Kornmarkt. The Philosophers' Walk is over the Old Bridge.",
           see: ["Heidelberg Castle", "Old Bridge", "Philosophers' Walk", "Marktplatz and Church of the Holy Spirit", "Hauptstraße", "Student Prison"] },
-        T("11:45", "14:14", "Würzburg", ["heidelberg", "wurzburg"], "Change at Mannheim or Osterburken. Buy something to eat before you board."),
-        { S: "wurzburg", arr: "14:14", dep: "17:00", stn: "Ten minutes down Kaiserstraße from the Hbf, or tram 1 to Dom.",
-          see: ["Würzburg Residence", "Court Garden", "Marktplatz and Marienkapelle", "Old Main Bridge", "Franconian wine"] },
-        T("17:00", "19:31", "Erfurt", ["wurzburg", "erfurt"], "Change at Bamberg or Schweinfurt."),
-        { S: "erfurt", arr: "19:31", base: 1, stn: "Fifteen minutes from the station up the Anger to the old town, or tram 3, 4 or 6.",
+        T("11:55", "14:20", "Würzburg", ["heidelberg", "wurzburg"], "Change at Mannheim or Osterburken. Buy something to eat before you board."),
+        { S: "wurzburg", arr: "14:20", dep: "16:40", stn: "Ten minutes down Kaiserstraße from the Hbf, or tram 1 to Dom.",
+          see: ["Würzburg Residence", "Marktplatz and Marienkapelle", "Old Main Bridge", "Franconian wine"] },
+        T("16:40", "17:35", "Bamberg", ["wurzburg", "bamberg"], "Direct up the Main."),
+        { S: "bamberg", arr: "17:35", dep: "18:45", stn: "Twenty minutes from the station to the river, or bus 901.",
+          see: ["Obere Brücke", "Old Town Hall", "Little Venice", "Schlenkerla"] },
+        T("18:40", "19:55", "Erfurt", ["bamberg", "erfurt"], "Direct on the RE29, an hour and a quarter. The late ones are not direct and take three hours, so this is the train to be on."),
+        { S: "erfurt", arr: "19:55", base: 1, stn: "Fifteen minutes from the station up the Anger to the old town, or tram 3, 4 or 6.",
           see: ["Anger", "Fischmarkt", "Krämerbrücke"] },
-      ]},
-
-      /* And the Harz, which is the one day of this trip that is not a city. */
-      { id: "H", name: "Into the Harz",
-        title: "The Harz", hero: "wernigerode",
-        intro: "Out of Thuringia and into the mountains the fairy tales came from: a town of painted timber under a castle, and a night inside a thousand-year-old UNESCO town.",
-        why: "The only day that is not cities. Wernigerode under its castle, then Quedlinburg — 1300 half-timbered houses and a bed in the middle of them.", seq: [
-        { S: "erfurt", arr: "08:00", dep: "08:40", stn: "Straight to the station this morning; you had the evening here.",
-          see: ["Anger"] },
-        T("08:40", "12:20", "Wernigerode", ["erfurt", "wernigerode"], "The long one of the day — up through Sangerhausen and Halberstadt. Buy something to eat before you board."),
-        { S: "wernigerode", arr: "12:20", dep: "17:00", stn: "The Hbf is fifteen minutes from Breite Straße — or take the Bimmelbahn, which stops outside.",
-          see: ["Breite Straße", "Marktplatz", "Kleinstes Haus", "Schiefes Haus", "Wernigerode Castle", "Lustgarten", "Harzquerbahn"] },
-        T("17:00", "18:15", "Quedlinburg", ["wernigerode", "quedlinburg"], "Change at Halberstadt."),
-        { S: "quedlinburg", arr: "18:15", base: 1, stn: "Ten minutes from the station down Bahnhofstraße and you are in the old town.",
-          see: ["Marktplatz", "Old town", "Finkenherd"] },
-      ]},
-
-      /* The same bed with less of the day on a train — Halberstadt is on the
-         way and half an hour from Quedlinburg on the bus. */
-      { id: "G", name: "The Harz, gently",
-        title: "The Harz", hero: "halberstadt",
-        intro: "One cathedral town on the way in instead of two, and in Quedlinburg with the afternoon still going.",
-        why: "Half an hour less riding than the full Harz day, and Halberstadt's treasury is the best of its kind in Europe. Same bed in Quedlinburg.", seq: [
-        { S: "erfurt", arr: "08:00", dep: "08:40", stn: "Straight to the station this morning; you had the evening here.",
-          see: ["Anger"] },
-        T("08:40", "11:50", "Halberstadt", ["erfurt", "halberstadt"], "Up through Sangerhausen. Buy something to eat before you board."),
-        { S: "halberstadt", arr: "11:50", dep: "16:30", stn: "Fifteen minutes from the station to the Domplatz, all of it level.",
-          see: ["Halberstadt Cathedral", "Domplatz", "Fischmarkt", "As Slow as Possible"] },
-        T("16:30", "17:05", "Quedlinburg", ["halberstadt", "quedlinburg"], "Bus 233, half an hour across the fields.", 1),
-        { S: "quedlinburg", arr: "17:05", base: 1, stn: "Ten minutes from the station down Bahnhofstraße and you are in the old town.",
-          see: ["Marktplatz", "Old town", "Finkenherd", "Schlossberg and collegiate church"] },
       ]},
     ],
   },
   {
-    n: 5, iso: "2026-10-03", title: "Thuringia to Berlin", c: "#3B4C8C",
-    hero: "berlin", bags: 1,
+    n: 5, iso: "2026-10-03", title: "Down the Saale to Berlin", c: "#3B4C8C",
+    hero: "wittenberg", bags: 1,
     holiday: "German Unity Day — a public holiday. Trains run a Sunday timetable, so there are fewer of them, and museums may keep holiday hours. Check the times before you leave each place.",
-    intro: "The last morning, two small stops on the way, and your brother at the end of it.",
+    intro: "Four short stops rather than one long ride: Goethe's town, a cathedral, Handel's birthplace, and the door the Reformation was nailed to.",
     paths: [
-      { id: "A", name: "Weimar and Naumburg", why: "Two short, beautiful stops and very little walking between them.", seq: [
-        { S: "erfurt", arr: "08:00", dep: "10:30", stn: "Fifteen minutes from the station up the Anger, or tram 3, 4 or 6 to Domplatz.",
-          see: ["Anger", "Fischmarkt", "Krämerbrücke", "Merchants' Bridge shops", "Ägidienkirche tower", "Domplatz", "Erfurt Cathedral", "St Severi"] },
-        T("10:30", "10:50", "Weimar", ["erfurt", "weimar"]),
-        { S: "weimar", arr: "10:50", dep: "13:15", stn: "Fifteen minutes downhill from the station into the centre.",
-          see: ["Marktplatz", "Cranach House", "Goethe's House", "Theaterplatz", "Wittumspalais", "Park an der Ilm"] },
-        T("13:30", "14:10", "Naumburg", ["weimar", "naumburg"]),
-        { S: "naumburg", arr: "14:10", dep: "16:40", stn: "Fifteen minutes from the Hbf, or the little historic tram, to the old town.",
-          see: ["Marktplatz", "Naumburg Cathedral", "St Wenceslas", "Nietzsche House", "Town walls and Marientor"] },
-        T("16:15", "19:30", "Berlin", ["naumburg", "berlin"], "One or two changes, usually at Halle."),
-        { S: "berlin", arr: "19:30", base: 1, stn: "You have arrived. Berlin Hauptbahnhof.",
+      { id: "A", name: "Weimar, Naumburg, Halle, Wittenberg", why: "Breaking the run to Berlin into four means less time sitting down, not more — the direct way is slower than this.", seq: [
+        { S: "erfurt", arr: "08:00", dep: "09:30", stn: "Fifteen minutes from the station up the Anger, or tram 3, 4 or 6 to Domplatz.",
+          see: ["Krämerbrücke", "Domplatz", "Erfurt Cathedral", "Fischmarkt"] },
+        T("09:30", "09:52", "Weimar", ["erfurt", "weimar"]),
+        { S: "weimar", arr: "09:52", dep: "12:00", stn: "Fifteen minutes downhill from the station into the centre.",
+          see: ["Marktplatz", "Goethe's House", "Theaterplatz", "Cranach House"] },
+        T("12:00", "12:42", "Naumburg", ["weimar", "naumburg"]),
+        { S: "naumburg", arr: "12:42", dep: "14:30", stn: "Fifteen minutes from the Hbf, or the little historic tram, to the old town.",
+          see: ["Naumburg Cathedral", "Marktplatz", "St Wenceslas"] },
+        T("14:30", "15:09", "Halle", ["naumburg", "halle"]),
+        { S: "halle", arr: "15:09", dep: "17:30", stn: "Ten minutes from the Hbf up Leipziger Straße to the market, or any tram.",
+          see: ["Marktplatz and the Red Tower", "Market Church", "Händel House", "Moritzburg"] },
+        T("17:30", "18:35", "Wittenberg", ["halle", "wittenberg"], "Direct on the S8."),
+        { S: "wittenberg", arr: "18:35", dep: "20:30", stn: "Ten minutes from the station into the old town, all of it on one street.",
+          see: ["Castle Church", "Markt and the Cranach houses", "Town Church of St Mary", "Luther House"] },
+        T("20:30", "22:08", "Berlin", ["wittenberg", "berlin"], "Direct on the RE3."),
+        { S: "berlin", arr: "22:08", base: 1, stn: "You have arrived. Berlin Hauptbahnhof.",
           see: ["Gendarmenmarkt", "Brandenburg Gate"] },
       ]},
-      { id: "B", name: "Jena and Naumburg", why: "Jena is a university town in a gorge, and the tower has the best view in Thuringia.", seq: [
-        { S: "erfurt", arr: "08:00", dep: "10:00", stn: "Fifteen minutes up the Anger, or tram 3, 4 or 6 to Domplatz.",
-          see: ["Anger", "Krämerbrücke", "Domplatz", "Erfurt Cathedral"] },
-        T("10:00", "10:45", "Jena", ["erfurt", "jena"]),
-        { S: "jena", arr: "10:45", dep: "13:45", stn: "Jena Paradies station is ten minutes from the market square, along the river.",
-          see: ["Marktplatz", "Stadtkirche St Michael", "JenTower", "Botanical Garden"] },
-        T("13:45", "14:20", "Naumburg", ["jena", "naumburg"]),
-        { S: "naumburg", arr: "14:20", dep: "16:30", stn: "Fifteen minutes from the Hbf, or the historic tram.",
-          see: ["Marktplatz", "Naumburg Cathedral", "St Wenceslas"] },
-        T("16:30", "19:45", "Berlin", ["naumburg", "berlin"], "One or two changes, usually at Halle."),
-        { S: "berlin", arr: "19:45", base: 1, stn: "You have arrived. Berlin Hauptbahnhof.",
-          see: ["Gendarmenmarkt", "Brandenburg Gate"] },
-      ]},
-      { id: "C", name: "Straight to Berlin, Weimar on the way", why: "The gentlest last day. One stop, and in Berlin in the afternoon.", seq: [
+      { id: "B", name: "Weimar, then straight on", why: "One stop instead of four, and in Berlin in the afternoon.", seq: [
         { S: "erfurt", arr: "08:00", dep: "10:30", stn: "Fifteen minutes up the Anger, or tram 3, 4 or 6 to Domplatz.",
           see: ["Anger", "Fischmarkt", "Krämerbrücke", "Domplatz", "Erfurt Cathedral", "Petersberg Citadel"] },
-        T("10:30", "10:50", "Weimar", ["erfurt", "weimar"]),
-        { S: "weimar", arr: "10:50", dep: "13:00", stn: "Fifteen minutes downhill into the centre.",
-          see: ["Marktplatz", "Goethe's House", "Theaterplatz"] },
+        T("10:30", "10:52", "Weimar", ["erfurt", "weimar"]),
+        { S: "weimar", arr: "10:52", dep: "13:00", stn: "Fifteen minutes downhill into the centre.",
+          see: ["Marktplatz", "Goethe's House", "Theaterplatz", "Park an der Ilm"] },
         T("13:00", "16:45", "Berlin", ["weimar", "berlin"], "Changes at Naumburg and Halle."),
         { S: "berlin", arr: "16:45", base: 1, stn: "You have arrived. Berlin Hauptbahnhof.",
           see: ["Gendarmenmarkt", "Brandenburg Gate", "Museum Island", "Berlin Cathedral"] },
-      ]},
-
-      /* Out of the Harz. Quedlinburg is nearer Berlin than Erfurt is, so this
-         is the shortest last day of the four and the only one with a morning
-         in the town you slept in. */
-      { id: "H", name: "Quedlinburg, then Magdeburg",
-        title: "Out of the Harz", hero: "quedlinburg",
-        intro: "A whole morning inside the UNESCO town instead of on a platform, one cathedral city on the Elbe, and Berlin before it is dark.",
-        why: "The shortest last day. Quedlinburg all morning, Magdeburg in the afternoon, and in Berlin by early evening.", seq: [
-        { S: "quedlinburg", arr: "08:00", dep: "12:30", stn: "Ten minutes from the station into the old town, all of it on the flat until the castle rock.",
-          see: ["Marktplatz", "Old town", "Finkenherd", "Schlossberg and collegiate church", "Half-timbered museum"] },
-        T("12:30", "14:05", "Magdeburg", ["quedlinburg", "magdeburg"], "Direct on the RE11, an hour and a half down the Bode and the Elbe."),
-        { S: "magdeburg", arr: "14:05", dep: "16:45", stn: "Ten minutes from the Hbf to the cathedral, or one stop on any tram.",
-          see: ["Magdeburg Cathedral", "Green Citadel", "Elbe promenade", "Monastery of Our Lady"] },
-        T("16:45", "18:40", "Berlin", ["magdeburg", "berlin"], "Change at Potsdam or Berlin-Spandau."),
-        { S: "berlin", arr: "18:40", base: 1, stn: "You have arrived. Berlin Hauptbahnhof.",
-          see: ["Gendarmenmarkt", "Brandenburg Gate"] },
-      ]},
-
-      { id: "G", name: "Quedlinburg, then the Bodetal",
-        title: "The Bodetal, then Berlin", hero: "thale",
-        intro: "The old town in the morning and then half an hour up the valley: the deepest gorge north of the Alps, with a cable car over it, before the run into Berlin.",
-        why: "Swaps Magdeburg's cathedral for the Harz's gorge. A later arrival in Berlin, and the only mountain on the last day.", seq: [
-        { S: "quedlinburg", arr: "08:00", dep: "11:30", stn: "Ten minutes from the station into the old town, all of it on the flat until the castle rock.",
-          see: ["Marktplatz", "Old town", "Finkenherd", "Schlossberg and collegiate church"] },
-        T("11:30", "12:00", "Thale", ["quedlinburg", "thale"], "Half an hour up the Bode on the RE11."),
-        { S: "thale", arr: "12:00", dep: "15:30", stn: "The gorge path and both cable cars start within ten minutes of the station.",
-          see: ["Bodetal", "Hexentanzplatz", "Rosstrappe"] },
-        T("15:30", "19:25", "Berlin", ["thale", "berlin"], "Changes at Magdeburg and Potsdam. It is a holiday, so check the board before you leave the valley."),
-        { S: "berlin", arr: "19:25", base: 1, stn: "You have arrived. Berlin Hauptbahnhof.",
-          see: ["Gendarmenmarkt", "Brandenburg Gate"] },
       ]},
     ],
   },
 ];
 
 
-/* Presets: whole trips, not a pile of choices.
-
-   They used to differ only in how the middle of a day was spent — all four
-   slept in the same five towns, which made choosing one a decision about
-   nothing. Now each is a different line down the country with a different set
-   of beds, so the choice is the one that actually has to be made before
-   leaving home.
-
-   What they cannot differ in is the end: Berlin, on the evening of the 3rd,
-   on trains the ticket covers. That rules out more than it sounds. Heidelberg
-   was asked for and measured — 4 h 49 from Augsburg and 10 h 27 back out to
-   Berlin on regional trains — and there is no version of a five-day week that
-   affords it. Rothenburg, at 2 h 29 from Augsburg, affords itself easily, and
-   the Harz turned out to be nearer Berlin than Thuringia is. */
+/* One trip. It used to be five, which meant the first thing anybody saw was a
+   choice they had no way to make; now the line is fixed and the only decisions
+   left are the ones inside a day. */
 export const PRESETS = [
   {
-    id: "classic", name: "The classic line",
-    sub: "Augsburg · Nuremberg · Erfurt",
-    why: "Every town on the way that is worth stopping in, and no day that ends after eight. If you are not sure, take this one.",
-    pick: { 1: "A", 2: "A", 3: "A", 4: "A", 5: "A" },
-  },
-  {
-    id: "romantic", name: "The Romantic Road",
-    sub: "Rothenburg · Würzburg · Bamberg",
-    why: "Turns north-west after Augsburg for the walled town everyone means when they say medieval Germany, sleeps in Würzburg under the Residence, and comes back east through Bamberg.",
-    pick: { 1: "A", 2: "A", 3: "R", 4: "R", 5: "A" },
-  },
-  {
-    id: "harz", name: "The Harz",
-    sub: "Nuremberg · Wernigerode · Quedlinburg",
-    why: "Gets the long ride north done on Thursday so that Friday can be spent in the mountains: Wernigerode under its castle, a night inside Quedlinburg's 1300 half-timbered houses, and the shortest run into Berlin of the four.",
-    pick: { 1: "A", 2: "A", 3: "H", 4: "H", 5: "H" },
-  },
-  {
-    id: "west", name: "West to Heidelberg",
+    id: "west", name: "Mittenwald to Berlin",
     sub: "Ulm · Esslingen · Heidelberg",
-    why: "The only line that leaves the south–north road. Out of the Alps down the Danube to Ulm, west along the Neckar, a night under Heidelberg castle, and back east through Würzburg. Garmisch, Munich, Augsburg, Würzburg and Erfurt are all still on it, as shorter stops. The most riding of the five, and the least like the others.",
-    pick: { 1: "A", 2: "W", 3: "W", 4: "W", 5: "C" },
-  },
-  {
-    id: "alps", name: "Two nights in the mountains",
-    sub: "Mittenwald twice · Zugspitze · Munich",
-    why: "Gives the Alps a second day and the Zugspitze with it, with no hotel to change on the Wednesday. Pays for it with one long Thursday down through Munich.",
-    pick: { 1: "C", 2: "Z", 3: "Z", 4: "A", 5: "C" },
+    why: "Out of the Alps by way of the abbey and the painted village, west to Heidelberg along the Danube and the Neckar, and back east through Franconia to Berlin.",
+    pick: { 1: "A", 2: "A", 3: "A", 4: "A", 5: "A" },
   },
 ];

@@ -132,6 +132,20 @@
   "src": "pinned",
   "km": 0.5
  },
+ "halle": {
+  "lat": 51.4775,
+  "lon": 11.9872,
+  "name": "Halle (Saale) Hauptbahnhof",
+  "src": "pinned",
+  "km": 1.33
+ },
+ "wittenberg": {
+  "lat": 51.865,
+  "lon": 12.662,
+  "name": "Bahnhof Lutherstadt Wittenberg",
+  "src": "pinned",
+  "km": 1.28
+ },
  "fulda": {
   "lat": 50.5544,
   "lon": 9.6836,
