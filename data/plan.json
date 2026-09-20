@@ -2745,8 +2745,13 @@
        "see": [
         "Rathausplatz",
         "Golden Hall",
-        "Augustusbrunnen",
-        "Maximilianstraße"
+        "Perlachturm",
+        "Augsburg Cathedral",
+        "Maximilianmuseum",
+        "Mozarthaus",
+        "Fuggerei",
+        "Schaezlerpalais",
+        "St Ulrich and St Afra"
        ],
        "base": false,
        "arrIso": "2026-10-01T06:00:00.000Z",
@@ -2814,61 +2819,181 @@
           "extra": false
          },
          {
-          "to": "Augustusbrunnen",
+          "to": "Perlachturm",
           "mins": 2,
           "how": {
            "mins": 2,
            "mode": "walk"
           },
-          "visit": 10,
+          "visit": 40,
           "backFromHere": 16,
           "backHow": {
            "mins": 16,
            "mode": "walk"
           },
           "must": false,
-          "lat": 48.369048,
-          "lon": 10.897955,
-          "kind": "square",
-          "note": "The bronze fountain in front of the town hall.",
-          "ticket": false,
+          "lat": 48.36916667,
+          "lon": 10.89833333,
+          "kind": "view",
+          "note": "70 m of tower beside the town hall. On a clear day you can see the Alps.",
+          "ticket": true,
           "at": null,
           "leaveBy": null,
           "extra": true
          },
          {
-          "to": "Maximilianstraße",
-          "mins": 11,
+          "to": "Augsburg Cathedral",
+          "mins": 9,
           "how": {
-           "mins": 11,
+           "mins": 9,
            "mode": "walk"
           },
-          "visit": 40,
+          "visit": 35,
+          "backFromHere": 21,
+          "backHow": {
+           "mins": 21,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 48.37277778,
+          "lon": 10.89666667,
+          "kind": "church",
+          "note": "Has some of the oldest stained glass in the world, around 1100.",
+          "ticket": false,
+          "at": 96,
+          "leaveBy": 131,
+          "extra": false
+         },
+         {
+          "to": "Maximilianmuseum",
+          "mins": 10,
+          "how": {
+           "mins": 10,
+           "mode": "walk"
+          },
+          "visit": 60,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.36777778,
+          "lon": 10.89666667,
+          "kind": "museum",
+          "note": "The city's own museum, in two merchants' houses.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Mozarthaus",
+          "mins": 5,
+          "how": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "visit": 45,
           "backFromHere": 23,
           "backHow": {
            "mins": 23,
            "mode": "walk"
           },
+          "must": false,
+          "lat": 48.37555556,
+          "lon": 10.89566667,
+          "kind": "museum",
+          "note": "Leopold Mozart was born here; Wolfgang visited.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Fuggerei",
+          "mins": 17,
+          "how": {
+           "mins": 17,
+           "mode": "walk"
+          },
+          "visit": 60,
+          "backFromHere": 26,
+          "backHow": {
+           "mins": 26,
+           "mode": "walk"
+          },
           "must": true,
-          "lat": 48.36527778,
-          "lon": 10.89944444,
-          "kind": "street",
-          "note": "The grand street, with the Hercules and Mercury fountains.",
+          "lat": 48.36878333,
+          "lon": 10.90405556,
+          "kind": "museum",
+          "note": "Social housing founded in 1521. Rent is still 0.88 € a year. People live here.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Schaezlerpalais",
+          "mins": 14,
+          "how": {
+           "mins": 14,
+           "mode": "walk"
+          },
+          "visit": 60,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.365,
+          "lon": 10.89916667,
+          "kind": "museum",
+          "note": "Rococo ballroom and a good picture gallery.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "St Ulrich and St Afra",
+          "mins": 20,
+          "how": {
+           "mins": 20,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "ride",
+           "line": "6",
+           "vehicle": "TRAM",
+           "from": "Augsburg, Th.-Heuss-Platz/IHK",
+           "to": "Augsburg Hbf",
+           "walkInstead": 21
+          },
+          "must": false,
+          "lat": 48.361511,
+          "lon": 10.90026,
+          "kind": "church",
+          "note": "Two churches, Catholic and Protestant, sharing one building.",
           "ticket": false,
           "at": null,
           "leaveBy": null,
           "extra": true
          }
         ],
-        "back": 11,
-        "walkTotal": 28,
-        "visitTotal": 70,
-        "needs": 98,
-        "fitted": 2,
-        "dropped": 2,
+        "back": 21,
+        "walkTotal": 47,
+        "visitTotal": 105,
+        "needs": 152,
+        "fitted": 3,
+        "dropped": 6,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Augsburg%20Hauptbahnhof&destination=Augsburg%20Hauptbahnhof&waypoints=Rathausplatz%2C%20Augsburg%7CGolden%20Hall%2C%20Augsburg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Augsburg%20Hauptbahnhof&destination=Augsburg%20Hauptbahnhof&waypoints=Rathausplatz%2C%20Augsburg%7CGolden%20Hall%2C%20Augsburg%7CAugustusbrunnen%2C%20Augsburg%7CMaximilianstra%C3%9Fe%2C%20Augsburg",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Augsburg%20Hauptbahnhof&destination=Augsburg%20Hauptbahnhof&waypoints=Rathausplatz%2C%20Augsburg%7CGolden%20Hall%2C%20Augsburg%7CAugsburg%20Cathedral%2C%20Augsburg",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Augsburg%20Hauptbahnhof&destination=St%20Ulrich%20and%20St%20Afra%2C%20Augsburg&waypoints=Rathausplatz%2C%20Augsburg%7CGolden%20Hall%2C%20Augsburg%7CPerlachturm%2C%20Augsburg%7CAugsburg%20Cathedral%2C%20Augsburg%7CMaximilianmuseum%2C%20Augsburg%7CMozarthaus%2C%20Augsburg%7CFuggerei%2C%20Augsburg%7CSchaezlerpalais%2C%20Augsburg",
         "town": "Augsburg, Germany"
        }
       },
@@ -2950,12 +3075,15 @@
        "stn": "Five minutes from the Hbf down Bahnhofstraße to Münsterplatz. You cannot miss it.",
        "see": [
         "Ulm Minster",
+        "Stadthaus",
         "Ulm Town Hall",
+        "Museum Ulm",
         "Fishermen's Quarter",
         "Crooked House",
         "Metzgerturm",
         "Danube wall walk",
-        "Einstein's birthplace"
+        "Einstein's birthplace",
+        "Wiblingen Abbey library"
        ],
        "base": false,
        "arrIso": "2026-10-01T09:45:00Z",
@@ -2990,6 +3118,29 @@
           "extra": false
          },
          {
+          "to": "Stadthaus",
+          "mins": 5,
+          "how": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.398074,
+          "lon": 9.990842,
+          "kind": "sight",
+          "note": "Richard Meier's white block set down beside a Gothic cathedral in 1993. The town argued about it for years.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
           "to": "Ulm Town Hall",
           "mins": 9,
           "how": {
@@ -3008,6 +3159,29 @@
           "kind": "sight",
           "note": "Painted head to foot, with an astronomical clock from 1520.",
           "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Museum Ulm",
+          "mins": 7,
+          "how": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "visit": 75,
+          "backFromHere": 17,
+          "backHow": {
+           "mins": 17,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.39702778,
+          "lon": 9.99480556,
+          "kind": "museum",
+          "note": "The Lion Man is here — a figure carved from mammoth ivory forty thousand years ago.",
+          "ticket": true,
           "at": null,
           "leaveBy": null,
           "extra": true
@@ -3054,9 +3228,32 @@
           "kind": "sight",
           "note": "A 1443 hotel leaning far enough that the beds are levelled with wedges.",
           "ticket": false,
-          "at": 174,
-          "leaveBy": 189,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Metzgerturm",
+          "mins": 14,
+          "how": {
+           "mins": 14,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 16,
+          "backHow": {
+           "mins": 16,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.3949,
+          "lon": 9.9928,
+          "kind": "view",
+          "note": "The leaning butcher's tower on the old wall, above the Danube.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Danube wall walk",
@@ -3080,20 +3277,73 @@
           "at": null,
           "leaveBy": null,
           "extra": true
+         },
+         {
+          "to": "Einstein's birthplace",
+          "mins": 7,
+          "how": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "visit": 15,
+          "backFromHere": 3,
+          "backHow": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.399,
+          "lon": 9.9833,
+          "kind": "sight",
+          "note": "He was born here in 1879; the house went in the war and a stone marks it.",
+          "ticket": false,
+          "at": 180,
+          "leaveBy": 195,
+          "extra": false
+         },
+         {
+          "to": "Wiblingen Abbey library",
+          "mins": 28,
+          "how": {
+           "mins": 28,
+           "mode": "ride",
+           "line": "4",
+           "vehicle": "BUS",
+           "from": "Ulm Steinerne Brücke",
+           "to": "Wiblingen Kloster",
+           "walkInstead": null
+          },
+          "visit": 90,
+          "backFromHere": 28,
+          "backHow": {
+           "mins": 28,
+           "mode": "ride",
+           "line": "4",
+           "vehicle": "BUS",
+           "from": "Wiblingen Kloster",
+           "to": "Ulm Ehinger Tor",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 48.36166,
+          "lon": 9.992,
+          "kind": "museum",
+          "note": "A rococo library hall in white, gold and marble, 5 km south on bus 3 or 4.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
-        "back": 9,
+        "back": 3,
         "walkTotal": 33,
         "visitTotal": 165,
         "needs": 198,
         "fitted": 3,
-        "dropped": 2,
-        "noCoords": [
-         "Metzgerturm",
-         "Einstein's birthplace"
-        ],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ulm%20Hauptbahnhof&destination=Ulm%20Hauptbahnhof&waypoints=Ulm%20Minster%2C%20Ulm%7CFishermen's%20Quarter%2C%20Ulm%7CCrooked%20House%2C%20Ulm",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ulm%20Hauptbahnhof&destination=Ulm%20Hauptbahnhof&waypoints=Ulm%20Minster%2C%20Ulm%7CUlm%20Town%20Hall%2C%20Ulm%7CFishermen's%20Quarter%2C%20Ulm%7CCrooked%20House%2C%20Ulm%7CDanube%20wall%20walk%2C%20Ulm",
+        "dropped": 7,
+        "noCoords": [],
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ulm%20Hauptbahnhof&destination=Ulm%20Hauptbahnhof&waypoints=Ulm%20Minster%2C%20Ulm%7CFishermen's%20Quarter%2C%20Ulm%7CEinstein's%20birthplace%2C%20Ulm",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ulm%20Hauptbahnhof&destination=Einstein's%20birthplace%2C%20Ulm&waypoints=Ulm%20Minster%2C%20Ulm%7CStadthaus%2C%20Ulm%7CUlm%20Town%20Hall%2C%20Ulm%7CMuseum%20Ulm%2C%20Ulm%7CFishermen's%20Quarter%2C%20Ulm%7CCrooked%20House%2C%20Ulm%7CMetzgerturm%2C%20Ulm%7CDanube%20wall%20walk%2C%20Ulm",
         "town": "Ulm, Germany"
        }
       },
@@ -3173,9 +3423,12 @@
        "stn": "Ten minutes from the station across the Neckar and you are in the old town.",
        "see": [
         "Old Town Hall",
+        "Neues Rathaus",
         "The oldest timber houses",
         "Innere Brücke",
+        "St Dionys",
         "Frauenkirche",
+        "Schelztorturm",
         "Esslingen Burg",
         "Kessler Sekt"
        ],
@@ -3210,6 +3463,29 @@
           "at": 10,
           "leaveBy": 40,
           "extra": false
+         },
+         {
+          "to": "Neues Rathaus",
+          "mins": 7,
+          "how": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "visit": 15,
+          "backFromHere": 3,
+          "backHow": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.74293,
+          "lon": 9.30748,
+          "kind": "sight",
+          "note": "The baroque front next door to the old one, with a carillon.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "The oldest timber houses",
@@ -3258,10 +3534,33 @@
           "extra": true
          },
          {
-          "to": "Frauenkirche",
-          "mins": 11,
+          "to": "St Dionys",
+          "mins": 8,
           "how": {
-           "mins": 11,
+           "mins": 8,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 2,
+          "backHow": {
+           "mins": 2,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 48.74213889,
+          "lon": 9.30599722,
+          "kind": "church",
+          "note": "Two towers joined by a stone bridge across the roof, which is not a thing other churches do.",
+          "ticket": false,
+          "at": 89,
+          "leaveBy": 119,
+          "extra": false
+         },
+         {
+          "to": "Frauenkirche",
+          "mins": 4,
+          "how": {
+           "mins": 4,
            "mode": "walk"
           },
           "visit": 30,
@@ -3281,10 +3580,33 @@
           "extra": true
          },
          {
-          "to": "Esslingen Burg",
-          "mins": 13,
+          "to": "Schelztorturm",
+          "mins": 12,
           "how": {
-           "mins": 13,
+           "mins": 12,
+           "mode": "walk"
+          },
+          "visit": 15,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.746,
+          "lon": 9.3024,
+          "kind": "view",
+          "note": "A gate tower of the old wall, on the way up to the Burg.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Esslingen Burg",
+          "mins": 8,
+          "how": {
+           "mins": 8,
            "mode": "walk"
           },
           "visit": 60,
@@ -3302,19 +3624,40 @@
           "at": null,
           "leaveBy": null,
           "extra": true
+         },
+         {
+          "to": "Kessler Sekt",
+          "mins": 4,
+          "how": {
+           "mins": 4,
+           "mode": "walk"
+          },
+          "visit": 45,
+          "backFromHere": 6,
+          "backHow": {
+           "mins": 6,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.7406,
+          "lon": 9.3084,
+          "kind": "food",
+          "note": "Germany's first sparkling wine house, founded 1826, still in its vaulted cellar.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
-        "back": 10,
+        "back": 2,
         "walkTotal": 21,
-        "visitTotal": 70,
-        "needs": 91,
-        "fitted": 2,
-        "dropped": 3,
-        "noCoords": [
-         "Kessler Sekt"
-        ],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Esslingen%20(Neckar)&destination=Bahnhof%20Esslingen%20(Neckar)&waypoints=Old%20Town%20Hall%2C%20Esslingen%7CThe%20oldest%20timber%20houses%2C%20Esslingen",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Esslingen%20(Neckar)&destination=Bahnhof%20Esslingen%20(Neckar)&waypoints=Old%20Town%20Hall%2C%20Esslingen%7CThe%20oldest%20timber%20houses%2C%20Esslingen%7CInnere%20Br%C3%BCcke%2C%20Esslingen%7CFrauenkirche%2C%20Esslingen%7CEsslingen%20Burg%2C%20Esslingen",
+        "visitTotal": 100,
+        "needs": 121,
+        "fitted": 3,
+        "dropped": 6,
+        "noCoords": [],
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Esslingen%20(Neckar)&destination=Bahnhof%20Esslingen%20(Neckar)&waypoints=Old%20Town%20Hall%2C%20Esslingen%7CThe%20oldest%20timber%20houses%2C%20Esslingen%7CSt%20Dionys%2C%20Esslingen",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Esslingen%20(Neckar)&destination=Kessler%20Sekt%2C%20Esslingen&waypoints=Old%20Town%20Hall%2C%20Esslingen%7CNeues%20Rathaus%2C%20Esslingen%7CThe%20oldest%20timber%20houses%2C%20Esslingen%7CInnere%20Br%C3%BCcke%2C%20Esslingen%7CSt%20Dionys%2C%20Esslingen%7CFrauenkirche%2C%20Esslingen%7CSchelztorturm%2C%20Esslingen%7CEsslingen%20Burg%2C%20Esslingen",
         "town": "Esslingen, Germany"
        }
       },
@@ -3429,7 +3772,9 @@
        "stn": "The Hbf is out of the centre — bus 32 or tram 5 to Bismarckplatz, then the Hauptstraße is in front of you.",
        "see": [
         "Hauptstraße",
+        "Karlstor",
         "Marktplatz and Church of the Holy Spirit",
+        "Kornmarkt",
         "Old Bridge"
        ],
        "base": true,
@@ -3474,10 +3819,38 @@
           "extra": false
          },
          {
-          "to": "Marktplatz and Church of the Holy Spirit",
-          "mins": 5,
+          "to": "Karlstor",
+          "mins": 14,
           "how": {
-           "mins": 5,
+           "mins": 14,
+           "mode": "walk"
+          },
+          "visit": 15,
+          "backFromHere": 18,
+          "backHow": {
+           "mins": 18,
+           "mode": "ride",
+           "line": "RNV 20",
+           "vehicle": "BUS",
+           "from": "Heidelberg, Herrenmühle",
+           "to": "Heidelberg, Hauptbahnhof",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.41416667,
+          "lon": 8.71805556,
+          "kind": "sight",
+          "note": "The triumphal gate at the east end of the Hauptstraße.",
+          "ticket": false,
+          "at": 92,
+          "leaveBy": 107,
+          "extra": false
+         },
+         {
+          "to": "Marktplatz and Church of the Holy Spirit",
+          "mins": 10,
+          "how": {
+           "mins": 10,
            "mode": "walk"
           },
           "visit": 30,
@@ -3497,15 +3870,43 @@
           "kind": "church",
           "note": "Market square church with shops built into its outer walls.",
           "ticket": false,
-          "at": 83,
-          "leaveBy": 113,
+          "at": 117,
+          "leaveBy": 147,
+          "extra": false
+         },
+         {
+          "to": "Kornmarkt",
+          "mins": 3,
+          "how": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "ride",
+           "line": "RNV 20",
+           "vehicle": "BUS",
+           "from": "Heidelberg, Rathaus/Bergbahn",
+           "to": "Heidelberg, Hauptbahnhof",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.412,
+          "lon": 8.7115,
+          "kind": "square",
+          "note": "The small square below the castle with the gilded Madonna. The funicular leaves from the corner.",
+          "ticket": false,
+          "at": 150,
+          "leaveBy": 170,
           "extra": false
          },
          {
           "to": "Old Bridge",
-          "mins": 3,
+          "mins": 5,
           "how": {
-           "mins": 3,
+           "mins": 5,
            "mode": "walk"
           },
           "visit": 30,
@@ -3525,20 +3926,20 @@
           "kind": "sight",
           "note": "1788. The bronze monkey at the end is for holding, and for luck.",
           "ticket": false,
-          "at": 116,
-          "leaveBy": 146,
+          "at": 175,
+          "leaveBy": 205,
           "extra": false
          }
         ],
         "back": 19,
-        "walkTotal": 45,
-        "visitTotal": 120,
-        "needs": 165,
-        "fitted": 3,
+        "walkTotal": 69,
+        "visitTotal": 155,
+        "needs": 224,
+        "fitted": 5,
         "dropped": 0,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Hauptstra%C3%9Fe%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7COld%20Bridge%2C%20Heidelberg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Hauptstra%C3%9Fe%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7COld%20Bridge%2C%20Heidelberg",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Hauptstra%C3%9Fe%2C%20Heidelberg%7CKarlstor%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7CKornmarkt%2C%20Heidelberg%7COld%20Bridge%2C%20Heidelberg",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Hauptstra%C3%9Fe%2C%20Heidelberg%7CKarlstor%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7CKornmarkt%2C%20Heidelberg%7COld%20Bridge%2C%20Heidelberg",
         "town": "Heidelberg, Germany"
        }
       }
@@ -3615,6 +4016,27 @@
       {
        "day": 3,
        "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "augsburg",
+       "title": "Augsburg Cathedral",
+       "ll": [
+        48.37277778,
+        10.89666667
+       ],
+       "sight": "augsburg/Augsburg Cathedral",
+       "move": "9 min walk.",
+       "rode": false,
+       "mins": 9,
+       "visit": 35,
+       "say": "Has some of the oldest stained glass in the world, around 1100.",
+       "offset": 96,
+       "until": 131,
+       "ticket": false
+      },
+      {
+       "day": 3,
+       "path": "A",
        "t": "10:25",
        "kind": "back",
        "place": "augsburg",
@@ -3623,8 +4045,8 @@
         48.36556,
         10.88639
        ],
-       "mins": 11,
-       "say": "11 min back to the station. Aim to be on the platform by 10:25."
+       "mins": 21,
+       "say": "21 min back to the station. Aim to be on the platform by 10:25."
       },
       {
        "day": 3,
@@ -3717,19 +4139,19 @@
        "t": null,
        "kind": "see",
        "place": "ulm",
-       "title": "Crooked House",
+       "title": "Einstein's birthplace",
        "ll": [
-        48.40083333,
-        9.98722222
+        48.399,
+        9.9833
        ],
-       "sight": "ulm/Crooked House",
-       "move": "1 min walk.",
+       "sight": "ulm/Einstein's birthplace",
+       "move": "7 min walk.",
        "rode": false,
-       "mins": 1,
+       "mins": 7,
        "visit": 15,
-       "say": "A 1443 hotel leaning far enough that the beds are levelled with wedges.",
-       "offset": 174,
-       "until": 189,
+       "say": "He was born here in 1879; the house went in the war and a stone marks it.",
+       "offset": 180,
+       "until": 195,
        "ticket": false
       },
       {
@@ -3743,8 +4165,8 @@
         48.3993,
         9.9824
        ],
-       "mins": 9,
-       "say": "9 min back to the station. Aim to be on the platform by 15:15."
+       "mins": 3,
+       "say": "3 min back to the station. Aim to be on the platform by 15:15."
       },
       {
        "day": 3,
@@ -3834,6 +4256,27 @@
       {
        "day": 3,
        "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "esslingen",
+       "title": "St Dionys",
+       "ll": [
+        48.74213889,
+        9.30599722
+       ],
+       "sight": "esslingen/St Dionys",
+       "move": "8 min walk.",
+       "rode": false,
+       "mins": 8,
+       "visit": 30,
+       "say": "Two towers joined by a stone bridge across the roof, which is not a thing other churches do.",
+       "offset": 89,
+       "until": 119,
+       "ticket": false
+      },
+      {
+       "day": 3,
+       "path": "A",
        "t": "18:39",
        "kind": "back",
        "place": "esslingen",
@@ -3842,8 +4285,8 @@
         48.74253,
         9.3047
        ],
-       "mins": 10,
-       "say": "10 min back to the station. Aim to be on the platform by 18:39."
+       "mins": 2,
+       "say": "2 min back to the station. Aim to be on the platform by 18:39."
       },
       {
        "day": 3,
@@ -3915,19 +4358,61 @@
        "t": null,
        "kind": "see",
        "place": "heidelberg",
+       "title": "Karlstor",
+       "ll": [
+        49.41416667,
+        8.71805556
+       ],
+       "sight": "heidelberg/Karlstor",
+       "move": "14 min walk.",
+       "rode": false,
+       "mins": 14,
+       "visit": 15,
+       "say": "The triumphal gate at the east end of the Hauptstraße.",
+       "offset": 92,
+       "until": 107,
+       "ticket": false
+      },
+      {
+       "day": 3,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "heidelberg",
        "title": "Marktplatz and Church of the Holy Spirit",
        "ll": [
         49.41222222,
         8.70944444
        ],
        "sight": "heidelberg/Marktplatz and Church of the Holy Spirit",
-       "move": "5 min walk.",
+       "move": "10 min walk.",
        "rode": false,
-       "mins": 5,
+       "mins": 10,
        "visit": 30,
        "say": "Market square church with shops built into its outer walls.",
-       "offset": 83,
-       "until": 113,
+       "offset": 117,
+       "until": 147,
+       "ticket": false
+      },
+      {
+       "day": 3,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "heidelberg",
+       "title": "Kornmarkt",
+       "ll": [
+        49.412,
+        8.7115
+       ],
+       "sight": "heidelberg/Kornmarkt",
+       "move": "3 min walk.",
+       "rode": false,
+       "mins": 3,
+       "visit": 20,
+       "say": "The small square below the castle with the gilded Madonna. The funicular leaves from the corner.",
+       "offset": 150,
+       "until": 170,
        "ticket": false
       },
       {
@@ -3942,13 +4427,13 @@
         8.70954722
        ],
        "sight": "heidelberg/Old Bridge",
-       "move": "3 min walk.",
+       "move": "5 min walk.",
        "rode": false,
-       "mins": 3,
+       "mins": 5,
        "visit": 30,
        "say": "1788. The bronze monkey at the end is for holding, and for luck.",
-       "offset": 116,
-       "until": 146,
+       "offset": 175,
+       "until": 205,
        "ticket": false
       },
       {
@@ -4152,19 +4637,45 @@
           "at": 89,
           "leaveBy": 149,
           "extra": false
+         },
+         {
+          "to": "Student Prison",
+          "mins": 1,
+          "how": {
+           "mins": 1,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 18,
+          "backHow": {
+           "mins": 18,
+           "mode": "ride",
+           "line": "RNV 20",
+           "vehicle": "BUS",
+           "from": "Heidelberg, Peterskirche",
+           "to": "Heidelberg, Hauptbahnhof",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.4118,
+          "lon": 8.7062,
+          "kind": "museum",
+          "note": "Where misbehaving students were locked up — and covered the walls in graffiti.",
+          "ticket": true,
+          "at": 150,
+          "leaveBy": 180,
+          "extra": false
          }
         ],
-        "back": 17,
-        "walkTotal": 46,
-        "visitTotal": 120,
-        "needs": 166,
-        "fitted": 3,
+        "back": 18,
+        "walkTotal": 48,
+        "visitTotal": 150,
+        "needs": 198,
+        "fitted": 4,
         "dropped": 2,
-        "noCoords": [
-         "Student Prison"
-        ],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Old%20Bridge%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7CHauptstra%C3%9Fe%2C%20Heidelberg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Heidelberg%20Castle%2C%20Heidelberg%7COld%20Bridge%2C%20Heidelberg%7CPhilosophers'%20Walk%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7CHauptstra%C3%9Fe%2C%20Heidelberg",
+        "noCoords": [],
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Old%20Bridge%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7CHauptstra%C3%9Fe%2C%20Heidelberg%7CStudent%20Prison%2C%20Heidelberg",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Heidelberg%20Castle%2C%20Heidelberg%7COld%20Bridge%2C%20Heidelberg%7CPhilosophers'%20Walk%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7CHauptstra%C3%9Fe%2C%20Heidelberg%7CStudent%20Prison%2C%20Heidelberg",
         "town": "Heidelberg, Germany"
        }
       },
@@ -4275,6 +4786,34 @@
        "route": {
         "legs": [
          {
+          "to": "Würzburg Residence",
+          "mins": 14,
+          "how": {
+           "mins": 14,
+           "mode": "ride",
+           "line": "471",
+           "vehicle": "BUS",
+           "from": "Würzburg, Hauptbahnhof ZOB",
+           "to": "Würzburg Residenzplatz",
+           "walkInstead": 21
+          },
+          "visit": 90,
+          "backFromHere": 21,
+          "backHow": {
+           "mins": 21,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 49.7929,
+          "lon": 9.9393,
+          "kind": "palace",
+          "note": "UNESCO. Tiepolo's staircase fresco is the largest in the world.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
           "to": "Marktplatz and Marienkapelle",
           "mins": 12,
           "how": {
@@ -4329,6 +4868,34 @@
           "at": 49,
           "leaveBy": 89,
           "extra": false
+         },
+         {
+          "to": "Franconian wine",
+          "mins": 4,
+          "how": {
+           "mins": 4,
+           "mode": "walk"
+          },
+          "visit": 60,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "ride",
+           "line": "5",
+           "vehicle": "TRAM",
+           "from": "Würzburg Dom",
+           "to": "Würzburg, Hauptbahnhof Ost",
+           "walkInstead": 20
+          },
+          "must": false,
+          "lat": 49.794,
+          "lon": 9.9284,
+          "kind": "food",
+          "note": "Dry white in the flat round Bocksbeutel bottle. Local to here.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
         "back": 16,
@@ -4336,13 +4903,10 @@
         "visitTotal": 70,
         "needs": 105,
         "fitted": 2,
-        "dropped": 0,
-        "noCoords": [
-         "Würzburg Residence",
-         "Franconian wine"
-        ],
+        "dropped": 2,
+        "noCoords": [],
         "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=W%C3%BCrzburg%20Hauptbahnhof&destination=W%C3%BCrzburg%20Hauptbahnhof&waypoints=Marktplatz%20and%20Marienkapelle%2C%20W%C3%BCrzburg%7COld%20Main%20Bridge%2C%20W%C3%BCrzburg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=W%C3%BCrzburg%20Hauptbahnhof&destination=W%C3%BCrzburg%20Hauptbahnhof&waypoints=Marktplatz%20and%20Marienkapelle%2C%20W%C3%BCrzburg%7COld%20Main%20Bridge%2C%20W%C3%BCrzburg",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=W%C3%BCrzburg%20Hauptbahnhof&destination=W%C3%BCrzburg%20Hauptbahnhof&waypoints=W%C3%BCrzburg%20Residence%2C%20W%C3%BCrzburg%7CMarktplatz%20and%20Marienkapelle%2C%20W%C3%BCrzburg%7COld%20Main%20Bridge%2C%20W%C3%BCrzburg%7CFranconian%20wine%2C%20W%C3%BCrzburg",
         "town": "Würzburg, Germany"
        }
       },
@@ -4837,6 +5401,27 @@
       {
        "day": 4,
        "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "heidelberg",
+       "title": "Student Prison",
+       "ll": [
+        49.4118,
+        8.7062
+       ],
+       "sight": "heidelberg/Student Prison",
+       "move": "1 min walk.",
+       "rode": false,
+       "mins": 1,
+       "visit": 30,
+       "say": "Where misbehaving students were locked up — and covered the walls in graffiti.",
+       "offset": 150,
+       "until": 180,
+       "ticket": true
+      },
+      {
+       "day": 4,
+       "path": "A",
        "t": "11:55",
        "kind": "back",
        "place": "heidelberg",
@@ -4845,8 +5430,8 @@
         49.4037,
         8.6754
        ],
-       "mins": 17,
-       "say": "17 min back to the station. Aim to be on the platform by 11:55."
+       "mins": 18,
+       "say": "18 min back to the station. Aim to be on the platform by 11:55."
       },
       {
        "day": 4,
@@ -7851,8 +8436,8 @@
    "src": "pinned",
    "km": 0.36,
    "wiki": "https://de.wikipedia.org/wiki/Oberau",
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg",
-   "photoFile": "Loisachtal südlich von Oberau Juni 2020 1.jpg",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg",
+   "photoFile": "Loisachtal südlich von Oberau Juni 2020 2.jpg",
    "about": ""
   },
   "ettal": {
@@ -10417,8 +11002,8 @@
    "indoor": true,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 49.7929,
+   "lon": 9.9393,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aerial_image_of_W%C3%BCrzburg_Residence_%28view_from_the_east%29.jpg/640px-Aerial_image_of_W%C3%BCrzburg_Residence_%28view_from_the_east%29.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aerial_image_of_W%C3%BCrzburg_Residence_%28view_from_the_east%29.jpg/1000px-Aerial_image_of_W%C3%BCrzburg_Residence_%28view_from_the_east%29.jpg",
    "photoFile": "Aerial_image_of_Würzburg_Residence_(view_from_the_east).jpg",
@@ -10507,8 +11092,8 @@
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 49.7921,
+   "lon": 9.9408,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/W%C3%BCrzburg%2C_Residenz%2C_Hofgarten_--_2018_--_0181.jpg/640px-W%C3%BCrzburg%2C_Residenz%2C_Hofgarten_--_2018_--_0181.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/W%C3%BCrzburg%2C_Residenz%2C_Hofgarten_--_2018_--_0181.jpg/1000px-W%C3%BCrzburg%2C_Residenz%2C_Hofgarten_--_2018_--_0181.jpg",
    "photoFile": "Würzburg, Residenz, Hofgarten -- 2018 -- 0181.jpg",
@@ -10525,8 +11110,8 @@
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 49.794,
+   "lon": 9.9284,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Bocksbeutels.jpg/640px-Bocksbeutels.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Bocksbeutels.jpg/1000px-Bocksbeutels.jpg",
    "photoFile": "Bocksbeutels.jpg",
@@ -10633,12 +11218,48 @@
    "indoor": true,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 49.4118,
+   "lon": 8.7062,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Heidelberg_Karzer_01.JPG/640px-Heidelberg_Karzer_01.JPG",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Heidelberg_Karzer_01.JPG/1000px-Heidelberg_Karzer_01.JPG",
    "photoFile": "Heidelberg Karzer 01.JPG",
    "wiki": "https://de.wikipedia.org/wiki/Karzer",
+   "about": ""
+  },
+  "heidelberg/Kornmarkt": {
+   "place": "heidelberg",
+   "name": "Kornmarkt",
+   "note": "The small square below the castle with the gilded Madonna. The funicular leaves from the corner.",
+   "mins": 20,
+   "kind": "square",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 49.412,
+   "lon": 8.7115,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Heidelberg_Germany_10082005_Square1.jpg/640px-Heidelberg_Germany_10082005_Square1.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Heidelberg_Germany_10082005_Square1.jpg/1000px-Heidelberg_Germany_10082005_Square1.jpg",
+   "photoFile": "Heidelberg_Germany_10082005_Square1.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Kornmarkt_(Heidelberg)",
+   "about": ""
+  },
+  "heidelberg/Karlstor": {
+   "place": "heidelberg",
+   "name": "Karlstor",
+   "note": "The triumphal gate at the east end of the Hauptstraße.",
+   "mins": 15,
+   "kind": "sight",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 49.41416667,
+   "lon": 8.71805556,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Karlstor_Heidelberg_Germany.JPG/640px-Karlstor_Heidelberg_Germany.JPG",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Karlstor_Heidelberg_Germany.JPG/1000px-Karlstor_Heidelberg_Germany.JPG",
+   "photoFile": "Karlstor_Heidelberg_Germany.JPG",
+   "wiki": "https://de.wikipedia.org/wiki/Karlstor_(Heidelberg)",
    "about": ""
   },
   "heidelberg/Königstuhl funicular": {
@@ -10741,8 +11362,8 @@
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 48.3949,
+   "lon": 9.9928,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Ulm_Metzgerturm_04.jpg/640px-Ulm_Metzgerturm_04.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Ulm_Metzgerturm_04.jpg/1000px-Ulm_Metzgerturm_04.jpg",
    "photoFile": "Ulm Metzgerturm 04.jpg",
@@ -10767,6 +11388,62 @@
    "wiki": "https://de.wikipedia.org/wiki/Ulm",
    "about": ""
   },
+  "ulm/Stadthaus": {
+   "place": "ulm",
+   "name": "Stadthaus",
+   "note": "Richard Meier's white block set down beside a Gothic cathedral in 1993. The town argued about it for years.",
+   "mins": 30,
+   "kind": "sight",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 48.398074,
+   "lon": 9.990842,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/View_of_Stadthaus_Ulm_from_Ulm_Minster_03.jpg/640px-View_of_Stadthaus_Ulm_from_Ulm_Minster_03.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/View_of_Stadthaus_Ulm_from_Ulm_Minster_03.jpg/1000px-View_of_Stadthaus_Ulm_from_Ulm_Minster_03.jpg",
+   "photoFile": "View_of_Stadthaus_Ulm_from_Ulm_Minster_03.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Stadthaus_Ulm",
+   "about": ""
+  },
+  "ulm/Museum Ulm": {
+   "place": "ulm",
+   "name": "Museum Ulm",
+   "note": "The Lion Man is here — a figure carved from mammoth ivory forty thousand years ago.",
+   "mins": 75,
+   "kind": "museum",
+   "ticket": true,
+   "indoor": true,
+   "closed": [
+    1
+   ],
+   "must": false,
+   "lat": 48.39702778,
+   "lon": 9.99480556,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Museum_Ulm.jpg/640px-Museum_Ulm.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Museum_Ulm.jpg/1000px-Museum_Ulm.jpg",
+   "photoFile": "Museum_Ulm.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Museum_Ulm",
+   "about": ""
+  },
+  "ulm/Wiblingen Abbey library": {
+   "place": "ulm",
+   "name": "Wiblingen Abbey library",
+   "note": "A rococo library hall in white, gold and marble, 5 km south on bus 3 or 4.",
+   "mins": 90,
+   "kind": "museum",
+   "ticket": true,
+   "indoor": true,
+   "closed": null,
+   "must": false,
+   "lat": 48.36166,
+   "lon": 9.992,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Kloster_Wiblingen_Bibliothekssaal_05.jpg/640px-Kloster_Wiblingen_Bibliothekssaal_05.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Kloster_Wiblingen_Bibliothekssaal_05.jpg/1000px-Kloster_Wiblingen_Bibliothekssaal_05.jpg",
+   "photoFile": "Kloster Wiblingen Bibliothekssaal 05.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Kloster_Wiblingen",
+   "about": ""
+  },
   "ulm/Einstein's birthplace": {
    "place": "ulm",
    "name": "Einstein's birthplace",
@@ -10777,8 +11454,8 @@
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 48.399,
+   "lon": 9.9833,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ulm_Einstein-2.jpg/640px-Ulm_Einstein-2.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ulm_Einstein-2.jpg/1000px-Ulm_Einstein-2.jpg",
    "photoFile": "Ulm Einstein-2.jpg",
@@ -10875,6 +11552,60 @@
    "wiki": "https://de.wikipedia.org/wiki/Esslingen_am_Neckar",
    "about": ""
   },
+  "esslingen/St Dionys": {
+   "place": "esslingen",
+   "name": "St Dionys",
+   "note": "Two towers joined by a stone bridge across the roof, which is not a thing other churches do.",
+   "mins": 30,
+   "kind": "church",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": true,
+   "lat": 48.74213889,
+   "lon": 9.30599722,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Esslingen_-_Stadtkirche_St._Dionys_2012_%28aka%29.jpg/640px-Esslingen_-_Stadtkirche_St._Dionys_2012_%28aka%29.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Esslingen_-_Stadtkirche_St._Dionys_2012_%28aka%29.jpg/1000px-Esslingen_-_Stadtkirche_St._Dionys_2012_%28aka%29.jpg",
+   "photoFile": "Esslingen_-_Stadtkirche_St._Dionys_2012_(aka).jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Stadtkirche_St._Dionys_(Esslingen_am_Neckar)",
+   "about": ""
+  },
+  "esslingen/Neues Rathaus": {
+   "place": "esslingen",
+   "name": "Neues Rathaus",
+   "note": "The baroque front next door to the old one, with a carillon.",
+   "mins": 15,
+   "kind": "sight",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 48.74293,
+   "lon": 9.30748,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/ESNeuesRathaus.jpg/640px-ESNeuesRathaus.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/ESNeuesRathaus.jpg/1000px-ESNeuesRathaus.jpg",
+   "photoFile": "ESNeuesRathaus.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Neues_Rathaus_(Esslingen)",
+   "about": ""
+  },
+  "esslingen/Schelztorturm": {
+   "place": "esslingen",
+   "name": "Schelztorturm",
+   "note": "A gate tower of the old wall, on the way up to the Burg.",
+   "mins": 15,
+   "kind": "view",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 48.746,
+   "lon": 9.3024,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/ES_Schelztorturm_Zoom.jpg/640px-ES_Schelztorturm_Zoom.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/ES_Schelztorturm_Zoom.jpg/1000px-ES_Schelztorturm_Zoom.jpg",
+   "photoFile": "ES Schelztorturm Zoom.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Esslingen_am_Neckar",
+   "about": ""
+  },
   "esslingen/Kessler Sekt": {
    "place": "esslingen",
    "name": "Kessler Sekt",
@@ -10885,8 +11616,8 @@
    "indoor": true,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 48.7406,
+   "lon": 9.3084,
    "photo": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Eslebt_esslingen_speyrer_zehnthof_kessler.jpg",
    "photoBig": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Eslebt_esslingen_speyrer_zehnthof_kessler.jpg",
    "photoFile": "Eslebt esslingen speyrer zehnthof kessler.jpg",
@@ -12725,7 +13456,7 @@
    "lic": "CC0",
    "by": "Christoph Braun"
   },
-  "Loisachtal südlich von Oberau Juni 2020 1.jpg": {
+  "Loisachtal südlich von Oberau Juni 2020 2.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kajebi II."
   },
@@ -13101,6 +13832,10 @@
    "lic": "CC BY-SA 2.0 de",
    "by": "jailbird"
   },
+  "Heidelberg Germany 10082005 Square1.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "unknown"
+  },
   "Bamberg-Schlenkerla1-Asio.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "No machine-readable author provided. Asio otus assumed (based on copyright claims)."
@@ -13128,6 +13863,10 @@
   "Bamberg-Alte Hofhaltung-Fassade.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Reinhard Kirchner"
+  },
+  "Karlstor Heidelberg Germany.JPG": {
+   "lic": "CC BY 3.0",
+   "by": "Solaris2006"
   },
   "Rothenburg BW 25.JPG": {
    "lic": "Public domain",
@@ -13160,10 +13899,6 @@
   "Henkersteg in Nürnberg.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Schlaier"
-  },
-  "Fischerviertel Ulm.JPG": {
-   "lic": "CC BY-SA 4.0",
-   "by": "MOs810"
   },
   "German Bratwürste.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13217,10 +13952,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Dietmar Rabich"
   },
-  "Ulm Schiefes Haus 03.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Uoaei1"
-  },
   "50 000 Exponate aus 1000 Jahren Kriminalgeschichte zeigt das Kriminalmuseum Rothenburg ob der Tauber. 42.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Holger Uwe Schmitt"
@@ -13257,10 +13988,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Schiller Weimar.jpg": {
-   "lic": "CC BY-SA 2.5",
-   "by": "Andreas Trepte"
-  },
   "LuftbildPetersberg.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "TomKidd"
@@ -13273,13 +14000,9 @@
    "lic": "CC BY-SA 3.0",
    "by": "Markv at Dutch Wikipedia"
   },
-  "Naumburg Marientor.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Density"
-  },
-  "Ilmpark in Weimar - Blick zum Stern.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "© R.Möhler"
+  "ESNeuesRathaus.jpg": {
+   "lic": "Public domain",
+   "by": "--Xocolatl 20:50, 27 December 2007 (UTC)"
   },
   "Alte Synagoge Erfurt.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -13301,6 +14024,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Wikswat"
   },
+  "Fischerviertel Ulm.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "MOs810"
+  },
   "Goethe Gartenhaus Kraus.jpg": {
    "lic": "Public domain",
    "by": "The original uploader was Georg Jäger at German Wikipedia."
@@ -13309,9 +14036,17 @@
    "lic": "CC BY-SA 3.0",
    "by": "Michael Sander"
   },
+  "ES Schelztorturm Zoom.jpg": {
+   "lic": "CC0",
+   "by": "Xocolatl (talk) 22:55, 5 September 2011 (UTC)"
+  },
   "Egapark Erfurt Festplatz.jpg": {
    "lic": "CC BY 3.0",
    "by": "Grimba-Photo"
+  },
+  "Esslingen - Stadtkirche St. Dionys 2012 (aka).jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "André Karwath aka Aka"
   },
   "2013-04-20 Krämerbrücke.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13337,6 +14072,10 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "Christian Wolf (www.c-w-design.de)"
   },
+  "Museum Ulm.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Christian Wolf (www.c-w-design.de)"
+  },
   "MK38365-69 Fischmarkt (Erfurt).jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Martin Kraft"
@@ -13344,10 +14083,6 @@
   "J24 014 Hp Anger, ET 623.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Falk2"
-  },
-  "Weimar Dom Goethego.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Andrzej Otrębski"
   },
   "MK56776 Michaelskirche (Fulda) .jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13357,25 +14092,21 @@
    "lic": "CC BY-SA 4.0",
    "by": "Uoaei1"
   },
-  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
+  "Ulm Schiefes Haus 03.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
-  },
-  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
+   "by": "Uoaei1"
   },
   "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
   },
+  "Kloster Wiblingen Bibliothekssaal 05.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Spatzameez"
+  },
   "Stadtschloss Fulda (Südwestansicht).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Jörg Braukmann"
-  },
-  "Goethe-Schiller-Denkmal 01.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "H.Helmlechner"
   },
   "Thuringia Eisenach asv2020-07 img14 Bach Museum.jpg": {
    "lic": "FAL",
@@ -13405,9 +14136,9 @@
    "lic": "CC BY-SA 4.0",
    "by": "GFreihalter"
   },
-  "BD Nitzsche Haus, Naumburg (1).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "ArthurMcGill"
+  "View of Stadthaus Ulm from Ulm Minster 03.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Kent Wang"
   },
   "Halberstadt St-Burchardi-Kirche.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13417,9 +14148,21 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
+  "Schiller Weimar.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "Andreas Trepte"
+  },
   "Naumburg stwenzel.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Christian Bier"
+  },
+  "Naumburg Marientor.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Density"
+  },
+  "Ilmpark in Weimar - Blick zum Stern.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "© R.Möhler"
   },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13432,10 +14175,6 @@
   "Halle Händelhaus 2012.jpg": {
    "lic": "CC BY 3.0",
    "by": "Photo: Andreas Praefcke"
-  },
-  "BerlinBrandenburgerTor1985.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Joergsam"
   },
   "Wernigerode später Frühling im Lustgartens von Wernigerode im Harz Foto 2005 Wolfgang Pehlemann Wiesbaden PICT0037.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -13453,10 +14192,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
   },
-  "Luthereiche in Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Markus Sturzbecher"
-  },
   "Roter Turm Halle 2009.jpg": {
    "lic": "CC BY-SA 3.0 de",
    "by": "de:Benutzer:OmiTs"
@@ -13464,10 +14199,6 @@
   "Halloren-Winter-Edition-3.jpg": {
    "lic": "CC BY 4.0",
    "by": "WiseWoman"
-  },
-  "Lutherstadt Wittenberg 09-2016 photo10.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
   },
   "00 4092 Wernigerode - Harzquerbahn.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13480,6 +14211,10 @@
   "Quedlinburg Marktplatz 2018a.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Olaf Meister"
+  },
+  "Weimar Dom Goethego.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Andrzej Otrębski"
   },
   "Naumburger Dom Ostseite.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13497,13 +14232,21 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
+  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
+  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
   "Ein sonniger Anblick zum Hexentanzplatz vom Seilbahn in Thale (Naturschutzgebiet Bodetal).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Vadat, Hasanov"
   },
-  "Magdeburger Dom Luftbild.jpg": {
+  "Goethe-Schiller-Denkmal 01.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Gregor Rom"
+   "by": "H.Helmlechner"
   },
   "Moritzburg Halle Hauptzuweg.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13512,14 +14255,6 @@
   "Schloss Wernigerode Luftbild 2.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
-  },
-  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
-  },
-  "Aerial view of Elbuferpromenade, Magdeburg.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Olivier Cleynen"
   },
   "Dom Halberstadt von Südosten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13537,13 +14272,9 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
-  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
+  "BD Nitzsche Haus, Naumburg (1).jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Barnos"
-  },
-  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
+   "by": "ArthurMcGill"
   },
   "Finkenherd 1 in Quedlinburg (2).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13597,6 +14328,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Thomas Wolf, www.foto-tw.de"
   },
+  "BerlinBrandenburgerTor1985.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joergsam"
+  },
   "PlanetariumJena01.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Selby"
@@ -13617,6 +14352,14 @@
    "lic": "CC BY 3.0 de",
    "by": "Ansgar Koreng"
   },
+  "Luthereiche in Wittenberg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Markus Sturzbecher"
+  },
+  "Lutherstadt Wittenberg 09-2016 photo10.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Alexander Blum"
@@ -13624,6 +14367,10 @@
   "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kora27"
+  },
+  "Magdeburger Dom Luftbild.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gregor Rom"
   },
   "Hackesche höfe berlin.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -13637,6 +14384,14 @@
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
   },
+  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Aerial view of Elbuferpromenade, Magdeburg.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Olivier Cleynen"
+  },
   "Jena-40-Marktplatz-2023-gje.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gerd Eichmann"
@@ -13648,6 +14403,14 @@
   "2023 Berliner Dom - Westfassade -- 01.jpg": {
    "lic": "CC BY 4.0",
    "by": "Chainwit."
+  },
+  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Barnos"
+  },
+  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Dguendel"
   },
   "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
    "lic": "Public domain",

@@ -1905,6 +1905,36 @@
    "file": "Heidelberg Karzer 01.JPG",
    "extract": ""
   },
+  "heidelberg/Kornmarkt": {
+   "ok": true,
+   "w": "Kornmarkt (Heidelberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Kornmarkt (Heidelberg)",
+   "url": "https://de.wikipedia.org/wiki/Kornmarkt_(Heidelberg)",
+   "lat": 49.412,
+   "lon": 8.7115,
+   "wd": "Q1700798",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Heidelberg_Germany_10082005_Square1.jpg/640px-Heidelberg_Germany_10082005_Square1.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Heidelberg_Germany_10082005_Square1.jpg/1000px-Heidelberg_Germany_10082005_Square1.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Heidelberg_Germany_10082005_Square1.jpg",
+   "extract": ""
+  },
+  "heidelberg/Karlstor": {
+   "ok": true,
+   "w": "Karlstor (Heidelberg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Karlstor (Heidelberg)",
+   "url": "https://de.wikipedia.org/wiki/Karlstor_(Heidelberg)",
+   "lat": 49.41416667,
+   "lon": 8.71805556,
+   "wd": "Q1733998",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Karlstor_Heidelberg_Germany.JPG/640px-Karlstor_Heidelberg_Germany.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Karlstor_Heidelberg_Germany.JPG/1000px-Karlstor_Heidelberg_Germany.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Karlstor_Heidelberg_Germany.JPG",
+   "extract": ""
+  },
   "heidelberg/Königstuhl funicular": {
    "ok": true,
    "w": "Heidelberger Bergbahn",
@@ -2010,6 +2040,51 @@
    "file": "Ulm - Stadtmauer an der Donau 02.JPG",
    "extract": ""
   },
+  "ulm/Stadthaus": {
+   "ok": true,
+   "w": "Stadthaus Ulm",
+   "ct": null,
+   "lang": "de",
+   "title": "Stadthaus Ulm",
+   "url": "https://de.wikipedia.org/wiki/Stadthaus_Ulm",
+   "lat": 48.398074,
+   "lon": 9.990842,
+   "wd": "Q268609",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/View_of_Stadthaus_Ulm_from_Ulm_Minster_03.jpg/640px-View_of_Stadthaus_Ulm_from_Ulm_Minster_03.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/View_of_Stadthaus_Ulm_from_Ulm_Minster_03.jpg/1000px-View_of_Stadthaus_Ulm_from_Ulm_Minster_03.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "View_of_Stadthaus_Ulm_from_Ulm_Minster_03.jpg",
+   "extract": ""
+  },
+  "ulm/Museum Ulm": {
+   "ok": true,
+   "w": "Museum Ulm",
+   "ct": null,
+   "lang": "de",
+   "title": "Museum Ulm",
+   "url": "https://de.wikipedia.org/wiki/Museum_Ulm",
+   "lat": 48.39702778,
+   "lon": 9.99480556,
+   "wd": "Q2475379",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Museum_Ulm.jpg/640px-Museum_Ulm.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Museum_Ulm.jpg/1000px-Museum_Ulm.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Museum_Ulm.jpg",
+   "extract": ""
+  },
+  "ulm/Wiblingen Abbey library": {
+   "ok": true,
+   "w": "Kloster Wiblingen",
+   "ct": "Bibliothekssaal Kloster Wiblingen",
+   "lang": "de",
+   "title": "Kloster Wiblingen",
+   "url": "https://de.wikipedia.org/wiki/Kloster_Wiblingen",
+   "lat": 48.36166,
+   "lon": 9.992,
+   "wd": "Q181304",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Kloster_Wiblingen_Bibliothekssaal_05.jpg/640px-Kloster_Wiblingen_Bibliothekssaal_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Kloster_Wiblingen_Bibliothekssaal_05.jpg/1000px-Kloster_Wiblingen_Bibliothekssaal_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Kloster Wiblingen Bibliothekssaal 05.jpg",
+   "extract": ""
+  },
   "ulm/Einstein's birthplace": {
    "ok": true,
    "w": "Albert Einstein",
@@ -2098,6 +2173,51 @@
    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Esslingen_am_Neckar_Webergasse_8a_Fachwerk_992.jpg/640px-Esslingen_am_Neckar_Webergasse_8a_Fachwerk_992.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Esslingen_am_Neckar_Webergasse_8a_Fachwerk_992.jpg/1000px-Esslingen_am_Neckar_Webergasse_8a_Fachwerk_992.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "file": "Esslingen am Neckar Webergasse 8a Fachwerk 992.jpg",
+   "extract": ""
+  },
+  "esslingen/St Dionys": {
+   "ok": true,
+   "w": "Stadtkirche St. Dionys (Esslingen am Neckar)",
+   "ct": null,
+   "lang": "de",
+   "title": "Stadtkirche St. Dionys (Esslingen am Neckar)",
+   "url": "https://de.wikipedia.org/wiki/Stadtkirche_St._Dionys_(Esslingen_am_Neckar)",
+   "lat": 48.74213889,
+   "lon": 9.30599722,
+   "wd": "Q1364052",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Esslingen_-_Stadtkirche_St._Dionys_2012_%28aka%29.jpg/640px-Esslingen_-_Stadtkirche_St._Dionys_2012_%28aka%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Esslingen_-_Stadtkirche_St._Dionys_2012_%28aka%29.jpg/1000px-Esslingen_-_Stadtkirche_St._Dionys_2012_%28aka%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Esslingen_-_Stadtkirche_St._Dionys_2012_(aka).jpg",
+   "extract": ""
+  },
+  "esslingen/Neues Rathaus": {
+   "ok": true,
+   "w": "Neues Rathaus (Esslingen)",
+   "ct": null,
+   "lang": "de",
+   "title": "Neues Rathaus (Esslingen)",
+   "url": "https://de.wikipedia.org/wiki/Neues_Rathaus_(Esslingen)",
+   "lat": 48.74293,
+   "lon": 9.30748,
+   "wd": "Q1980368",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/ESNeuesRathaus.jpg/640px-ESNeuesRathaus.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/ESNeuesRathaus.jpg/1000px-ESNeuesRathaus.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "ESNeuesRathaus.jpg",
+   "extract": ""
+  },
+  "esslingen/Schelztorturm": {
+   "ok": true,
+   "w": "Esslingen am Neckar",
+   "ct": "Schelztorturm Esslingen",
+   "lang": "de",
+   "title": "Esslingen am Neckar",
+   "url": "https://de.wikipedia.org/wiki/Esslingen_am_Neckar",
+   "lat": 48.74055556,
+   "lon": 9.31083333,
+   "wd": "Q3786",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/ES_Schelztorturm_Zoom.jpg/640px-ES_Schelztorturm_Zoom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/ES_Schelztorturm_Zoom.jpg/1000px-ES_Schelztorturm_Zoom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "ES Schelztorturm Zoom.jpg",
    "extract": ""
   },
   "esslingen/Kessler Sekt": {
@@ -3597,9 +3717,9 @@
    "lat": 47.55916667,
    "lon": 11.13888889,
    "wd": "Q505979",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Loisachtal südlich von Oberau Juni 2020 1.jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Loisachtal südlich von Oberau Juni 2020 2.jpg",
    "extract": ""
   },
   "ettal": {
@@ -4166,7 +4286,7 @@
    "lic": "CC0",
    "by": "Christoph Braun"
   },
-  "Loisachtal südlich von Oberau Juni 2020 1.jpg": {
+  "Loisachtal südlich von Oberau Juni 2020 2.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kajebi II."
   },
@@ -4542,6 +4662,10 @@
    "lic": "CC BY-SA 2.0 de",
    "by": "jailbird"
   },
+  "Heidelberg Germany 10082005 Square1.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "unknown"
+  },
   "Bamberg-Schlenkerla1-Asio.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "No machine-readable author provided. Asio otus assumed (based on copyright claims)."
@@ -4569,6 +4693,10 @@
   "Bamberg-Alte Hofhaltung-Fassade.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Reinhard Kirchner"
+  },
+  "Karlstor Heidelberg Germany.JPG": {
+   "lic": "CC BY 3.0",
+   "by": "Solaris2006"
   },
   "Rothenburg BW 25.JPG": {
    "lic": "Public domain",
@@ -4601,10 +4729,6 @@
   "Henkersteg in Nürnberg.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Schlaier"
-  },
-  "Fischerviertel Ulm.JPG": {
-   "lic": "CC BY-SA 4.0",
-   "by": "MOs810"
   },
   "German Bratwürste.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4658,10 +4782,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Dietmar Rabich"
   },
-  "Ulm Schiefes Haus 03.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Uoaei1"
-  },
   "50 000 Exponate aus 1000 Jahren Kriminalgeschichte zeigt das Kriminalmuseum Rothenburg ob der Tauber. 42.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Holger Uwe Schmitt"
@@ -4698,10 +4818,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Schiller Weimar.jpg": {
-   "lic": "CC BY-SA 2.5",
-   "by": "Andreas Trepte"
-  },
   "LuftbildPetersberg.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "TomKidd"
@@ -4714,13 +4830,9 @@
    "lic": "CC BY-SA 3.0",
    "by": "Markv at Dutch Wikipedia"
   },
-  "Naumburg Marientor.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Density"
-  },
-  "Ilmpark in Weimar - Blick zum Stern.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "© R.Möhler"
+  "ESNeuesRathaus.jpg": {
+   "lic": "Public domain",
+   "by": "--Xocolatl 20:50, 27 December 2007 (UTC)"
   },
   "Alte Synagoge Erfurt.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -4742,6 +4854,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Wikswat"
   },
+  "Fischerviertel Ulm.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "MOs810"
+  },
   "Goethe Gartenhaus Kraus.jpg": {
    "lic": "Public domain",
    "by": "The original uploader was Georg Jäger at German Wikipedia."
@@ -4750,9 +4866,17 @@
    "lic": "CC BY-SA 3.0",
    "by": "Michael Sander"
   },
+  "ES Schelztorturm Zoom.jpg": {
+   "lic": "CC0",
+   "by": "Xocolatl (talk) 22:55, 5 September 2011 (UTC)"
+  },
   "Egapark Erfurt Festplatz.jpg": {
    "lic": "CC BY 3.0",
    "by": "Grimba-Photo"
+  },
+  "Esslingen - Stadtkirche St. Dionys 2012 (aka).jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "André Karwath aka Aka"
   },
   "2013-04-20 Krämerbrücke.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4778,6 +4902,10 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "Christian Wolf (www.c-w-design.de)"
   },
+  "Museum Ulm.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Christian Wolf (www.c-w-design.de)"
+  },
   "MK38365-69 Fischmarkt (Erfurt).jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Martin Kraft"
@@ -4785,10 +4913,6 @@
   "J24 014 Hp Anger, ET 623.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Falk2"
-  },
-  "Weimar Dom Goethego.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Andrzej Otrębski"
   },
   "MK56776 Michaelskirche (Fulda) .jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4798,25 +4922,21 @@
    "lic": "CC BY-SA 4.0",
    "by": "Uoaei1"
   },
-  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
+  "Ulm Schiefes Haus 03.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
-  },
-  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
+   "by": "Uoaei1"
   },
   "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
   },
+  "Kloster Wiblingen Bibliothekssaal 05.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Spatzameez"
+  },
   "Stadtschloss Fulda (Südwestansicht).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Jörg Braukmann"
-  },
-  "Goethe-Schiller-Denkmal 01.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "H.Helmlechner"
   },
   "Thuringia Eisenach asv2020-07 img14 Bach Museum.jpg": {
    "lic": "FAL",
@@ -4846,9 +4966,9 @@
    "lic": "CC BY-SA 4.0",
    "by": "GFreihalter"
   },
-  "BD Nitzsche Haus, Naumburg (1).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "ArthurMcGill"
+  "View of Stadthaus Ulm from Ulm Minster 03.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Kent Wang"
   },
   "Halberstadt St-Burchardi-Kirche.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4858,9 +4978,21 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
+  "Schiller Weimar.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "Andreas Trepte"
+  },
   "Naumburg stwenzel.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Christian Bier"
+  },
+  "Naumburg Marientor.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Density"
+  },
+  "Ilmpark in Weimar - Blick zum Stern.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "© R.Möhler"
   },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4873,10 +5005,6 @@
   "Halle Händelhaus 2012.jpg": {
    "lic": "CC BY 3.0",
    "by": "Photo: Andreas Praefcke"
-  },
-  "BerlinBrandenburgerTor1985.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Joergsam"
   },
   "Wernigerode später Frühling im Lustgartens von Wernigerode im Harz Foto 2005 Wolfgang Pehlemann Wiesbaden PICT0037.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -4894,10 +5022,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
   },
-  "Luthereiche in Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Markus Sturzbecher"
-  },
   "Roter Turm Halle 2009.jpg": {
    "lic": "CC BY-SA 3.0 de",
    "by": "de:Benutzer:OmiTs"
@@ -4905,10 +5029,6 @@
   "Halloren-Winter-Edition-3.jpg": {
    "lic": "CC BY 4.0",
    "by": "WiseWoman"
-  },
-  "Lutherstadt Wittenberg 09-2016 photo10.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
   },
   "00 4092 Wernigerode - Harzquerbahn.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4921,6 +5041,10 @@
   "Quedlinburg Marktplatz 2018a.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Olaf Meister"
+  },
+  "Weimar Dom Goethego.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Andrzej Otrębski"
   },
   "Naumburger Dom Ostseite.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4938,13 +5062,21 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
+  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
+  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
   "Ein sonniger Anblick zum Hexentanzplatz vom Seilbahn in Thale (Naturschutzgebiet Bodetal).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Vadat, Hasanov"
   },
-  "Magdeburger Dom Luftbild.jpg": {
+  "Goethe-Schiller-Denkmal 01.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Gregor Rom"
+   "by": "H.Helmlechner"
   },
   "Moritzburg Halle Hauptzuweg.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4953,14 +5085,6 @@
   "Schloss Wernigerode Luftbild 2.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
-  },
-  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
-  },
-  "Aerial view of Elbuferpromenade, Magdeburg.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Olivier Cleynen"
   },
   "Dom Halberstadt von Südosten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4978,13 +5102,9 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
-  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
+  "BD Nitzsche Haus, Naumburg (1).jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Barnos"
-  },
-  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
+   "by": "ArthurMcGill"
   },
   "Finkenherd 1 in Quedlinburg (2).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5038,6 +5158,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Thomas Wolf, www.foto-tw.de"
   },
+  "BerlinBrandenburgerTor1985.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joergsam"
+  },
   "PlanetariumJena01.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Selby"
@@ -5058,6 +5182,14 @@
    "lic": "CC BY 3.0 de",
    "by": "Ansgar Koreng"
   },
+  "Luthereiche in Wittenberg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Markus Sturzbecher"
+  },
+  "Lutherstadt Wittenberg 09-2016 photo10.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Alexander Blum"
@@ -5065,6 +5197,10 @@
   "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kora27"
+  },
+  "Magdeburger Dom Luftbild.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gregor Rom"
   },
   "Hackesche höfe berlin.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -5078,6 +5214,14 @@
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
   },
+  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Aerial view of Elbuferpromenade, Magdeburg.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Olivier Cleynen"
+  },
   "Jena-40-Marktplatz-2023-gje.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gerd Eichmann"
@@ -5089,6 +5233,14 @@
   "2023 Berliner Dom - Westfassade -- 01.jpg": {
    "lic": "CC BY 4.0",
    "by": "Chainwit."
+  },
+  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Barnos"
+  },
+  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Dguendel"
   },
   "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
    "lic": "Public domain",

@@ -357,10 +357,27 @@ for (const [pk, list] of Object.entries(SIGHTS)) {
       photo: clean(e.img), photoBig: clean(e.imgBig), photoFile: e.file || null,
       wiki: e.url || null, about: prose(e),
     };
+    /* A sight with no coordinates is invisible: the router skips it and it
+       appears in neither the walk nor the "if you are ahead" list, so nobody
+       ever learns it was meant to be there. This has now bitten the Isar,
+       Pilatushaus, the English Garden and the Würzburg Residence. */
     // A sight an hour's drive from its own town is a bad coordinate, not a walk.
     const put = out.sights[`${pk}/${s.name}`], home = stops[pk];
     if (put.lat != null && home && far(home.lat, home.lon, put.lat, put.lon) > 20) {
       warn.push(`${pk}/${s.name}: coordinates are ${Math.round(far(home.lat, home.lon, put.lat, put.lon))} km from the station — pin it with at: [lat, lon]`);
+    }
+  }
+}
+
+/* Anything a day actually asks for has to be findable, or it is on no page. */
+for (const day of DAYS) {
+  for (const path of day.paths) {
+    for (const step of path.seq) {
+      for (const n of (step.see || [])) {
+        const e = out.sights[`${step.S}/${n}`];
+        if (!e) warn.push(`day ${day.n}${path.id}: ${step.S}/${n} is not in SIGHTS`);
+        else if (e.lat == null) warn.push(`day ${day.n}${path.id}: ${step.S}/${n} has no coordinates — it will not appear at all; pin it with at: [lat, lon]`);
+      }
     }
   }
 }
