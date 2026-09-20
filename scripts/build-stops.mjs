@@ -68,7 +68,7 @@ const PINNED = {
   ulm:          [48.39930,  9.98240, "Ulm Hauptbahnhof"],
   esslingen:    [48.74253,  9.30470, "Bahnhof Esslingen (Neckar)"],
   halle:        [51.47750, 11.98720, "Halle (Saale) Hauptbahnhof"],
-  wittenberg:   [51.86500, 12.66200, "Bahnhof Lutherstadt Wittenberg"],
+  leipzig:      [51.34500, 12.38100, "Leipzig Hauptbahnhof"],
 };
 
 const out = {};

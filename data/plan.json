@@ -5586,7 +5586,7 @@
            "mins": 10,
            "mode": "walk"
           },
-          "visit": 30,
+          "visit": 20,
           "backFromHere": 10,
           "backHow": {
            "mins": 10,
@@ -5599,7 +5599,7 @@
           "note": "The wide shopping street between the station and the old town.",
           "ticket": false,
           "at": 10,
-          "leaveBy": 40,
+          "leaveBy": 30,
           "extra": false
          },
          {
@@ -5609,7 +5609,7 @@
            "mins": 7,
            "mode": "walk"
           },
-          "visit": 45,
+          "visit": 25,
           "backFromHere": 15,
           "backHow": {
            "mins": 15,
@@ -5621,8 +5621,8 @@
           "kind": "square",
           "note": "Renaissance houses and the town hall. Dinner here.",
           "ticket": false,
-          "at": 47,
-          "leaveBy": 92,
+          "at": 37,
+          "leaveBy": 62,
           "extra": false
          },
          {
@@ -5632,7 +5632,7 @@
            "mins": 3,
            "mode": "walk"
           },
-          "visit": 45,
+          "visit": 30,
           "backFromHere": 15,
           "backHow": {
            "mins": 15,
@@ -5644,8 +5644,8 @@
           "kind": "street",
           "note": "A bridge with houses on it, lived in continuously since 1325.",
           "ticket": false,
-          "at": 95,
-          "leaveBy": 140,
+          "at": 65,
+          "leaveBy": 95,
           "extra": false
          },
          {
@@ -5655,7 +5655,7 @@
            "mins": 1,
            "mode": "walk"
           },
-          "visit": 40,
+          "visit": 25,
           "backFromHere": 15,
           "backHow": {
            "mins": 15,
@@ -5667,8 +5667,8 @@
           "kind": "shop",
           "note": "Thirty-two houses on the bridge, with workshops in the ground floors.",
           "ticket": false,
-          "at": 141,
-          "leaveBy": 181,
+          "at": 96,
+          "leaveBy": 121,
           "extra": false
          },
          {
@@ -5678,7 +5678,7 @@
            "mins": 8,
            "mode": "walk"
           },
-          "visit": 40,
+          "visit": 20,
           "backFromHere": 11,
           "backHow": {
            "mins": 11,
@@ -5695,15 +5695,15 @@
           "kind": "square",
           "note": "Cathedral and St Severi side by side above a huge open square.",
           "ticket": false,
-          "at": 189,
-          "leaveBy": 229,
+          "at": 129,
+          "leaveBy": 149,
           "extra": false
          }
         ],
         "back": 11,
         "walkTotal": 40,
-        "visitTotal": 200,
-        "needs": 240,
+        "visitTotal": 120,
+        "needs": 160,
         "fitted": 5,
         "dropped": 0,
         "noCoords": [],
@@ -6052,10 +6052,10 @@
        "move": "10 min walk.",
        "rode": false,
        "mins": 10,
-       "visit": 30,
+       "visit": 20,
        "say": "The wide shopping street between the station and the old town.",
        "offset": 10,
-       "until": 40,
+       "until": 30,
        "ticket": false
       },
       {
@@ -6073,10 +6073,10 @@
        "move": "7 min walk.",
        "rode": false,
        "mins": 7,
-       "visit": 45,
+       "visit": 25,
        "say": "Renaissance houses and the town hall. Dinner here.",
-       "offset": 47,
-       "until": 92,
+       "offset": 37,
+       "until": 62,
        "ticket": false
       },
       {
@@ -6094,10 +6094,10 @@
        "move": "3 min walk.",
        "rode": false,
        "mins": 3,
-       "visit": 45,
+       "visit": 30,
        "say": "A bridge with houses on it, lived in continuously since 1325.",
-       "offset": 95,
-       "until": 140,
+       "offset": 65,
+       "until": 95,
        "ticket": false
       },
       {
@@ -6115,10 +6115,10 @@
        "move": "1 min walk.",
        "rode": false,
        "mins": 1,
-       "visit": 40,
+       "visit": 25,
        "say": "Thirty-two houses on the bridge, with workshops in the ground floors.",
-       "offset": 141,
-       "until": 181,
+       "offset": 96,
+       "until": 121,
        "ticket": false
       },
       {
@@ -6136,10 +6136,10 @@
        "move": "8 min walk.",
        "rode": false,
        "mins": 8,
-       "visit": 40,
+       "visit": 20,
        "say": "Cathedral and St Severi side by side above a huge open square.",
-       "offset": 189,
-       "until": 229,
+       "offset": 129,
+       "until": 149,
        "ticket": false
       },
       {
@@ -6164,43 +6164,94 @@
    "iso": "2026-10-03",
    "title": "Down the Saale to Berlin",
    "c": "#3B4C8C",
-   "hero": "wittenberg",
+   "hero": "leipzig",
    "bags": 1,
    "holiday": "German Unity Day. Sunday timetable, so fewer trains, and museums may keep holiday hours.",
-   "intro": "Four short stops rather than one long ride: Goethe's town, a cathedral, Handel's birthplace, and the door the Reformation was nailed to.",
+   "intro": "Four stops down the Saale before the last long ride: Goethe's town, a cathedral, Handel's birthplace, and Bach's.",
    "paths": [
     {
      "id": "A",
-     "name": "Weimar, Naumburg, Halle, Wittenberg",
-     "why": "Less time sitting down than going direct, not more.",
+     "name": "Weimar, Naumburg, Halle, Leipzig",
+     "why": "Four towns before the one long ride into Berlin.",
      "seq": [
       {
        "kind": "stop",
        "place": "erfurt",
        "stn": "Fifteen minutes from the station up the Anger, or tram 3, 4 or 6 to Domplatz.",
        "see": [
+        "Anger",
+        "Fischmarkt",
         "Krämerbrücke",
+        "Merchants' Bridge shops",
+        "Ägidienkirche tower",
         "Domplatz",
         "Erfurt Cathedral",
-        "Fischmarkt"
+        "St Severi",
+        "Augustinian Monastery"
        ],
        "base": false,
-       "arrIso": "2026-10-03T06:00:00.000Z",
-       "want": 90,
-       "arr": "08:00",
+       "arrIso": "2026-10-03T05:15:00.000Z",
+       "want": 135,
+       "arr": "07:15",
        "depIso": "2026-10-03T07:36:00Z",
        "dep": "09:36",
-       "free": 96,
+       "free": 141,
        "route": {
         "legs": [
          {
-          "to": "Krämerbrücke",
-          "mins": 15,
+          "to": "Anger",
+          "mins": 10,
           "how": {
+           "mins": 10,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 10,
+          "backHow": {
+           "mins": 10,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 50.97611111,
+          "lon": 11.03416667,
+          "kind": "street",
+          "note": "The wide shopping street between the station and the old town.",
+          "ticket": false,
+          "at": 10,
+          "leaveBy": 30,
+          "extra": false
+         },
+         {
+          "to": "Fischmarkt",
+          "mins": 7,
+          "how": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 15,
+          "backHow": {
            "mins": 15,
            "mode": "walk"
           },
-          "visit": 45,
+          "must": true,
+          "lat": 50.97777778,
+          "lon": 11.02888889,
+          "kind": "square",
+          "note": "Renaissance houses and the town hall. Dinner here.",
+          "ticket": false,
+          "at": 37,
+          "leaveBy": 62,
+          "extra": false
+         },
+         {
+          "to": "Krämerbrücke",
+          "mins": 3,
+          "how": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "visit": 30,
           "backFromHere": 15,
           "backHow": {
            "mins": 15,
@@ -6212,9 +6263,55 @@
           "kind": "street",
           "note": "A bridge with houses on it, lived in continuously since 1325.",
           "ticket": false,
-          "at": 15,
-          "leaveBy": 60,
+          "at": 65,
+          "leaveBy": 95,
           "extra": false
+         },
+         {
+          "to": "Merchants' Bridge shops",
+          "mins": 1,
+          "how": {
+           "mins": 1,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 50.9787455,
+          "lon": 11.0307747,
+          "kind": "shop",
+          "note": "Thirty-two houses on the bridge, with workshops in the ground floors.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Ägidienkirche tower",
+          "mins": 1,
+          "how": {
+           "mins": 1,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 14,
+          "backHow": {
+           "mins": 14,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 50.9787377,
+          "lon": 11.0316616,
+          "kind": "view",
+          "note": "Climb the tower at the end of the bridge for the best view of it.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Domplatz",
@@ -6223,7 +6320,7 @@
            "mins": 8,
            "mode": "walk"
           },
-          "visit": 40,
+          "visit": 20,
           "backFromHere": 11,
           "backHow": {
            "mins": 11,
@@ -6240,15 +6337,15 @@
           "kind": "square",
           "note": "Cathedral and St Severi side by side above a huge open square.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 103,
+          "leaveBy": 123,
+          "extra": false
          },
          {
           "to": "Erfurt Cathedral",
-          "mins": 12,
+          "mins": 5,
           "how": {
-           "mins": 12,
+           "mins": 5,
            "mode": "walk"
           },
           "visit": 40,
@@ -6273,38 +6370,71 @@
           "extra": true
          },
          {
-          "to": "Fischmarkt",
-          "mins": 3,
+          "to": "St Severi",
+          "mins": 4,
           "how": {
-           "mins": 3,
+           "mins": 4,
            "mode": "walk"
           },
-          "visit": 45,
-          "backFromHere": 15,
+          "visit": 25,
+          "backFromHere": 14,
           "backHow": {
-           "mins": 15,
+           "mins": 14,
+           "mode": "ride",
+           "line": "6",
+           "vehicle": "TRAM",
+           "from": "Erfurt, Domplatz Nord",
+           "to": "Erfurt, Hauptbahnhof",
+           "walkInstead": 23
+          },
+          "must": false,
+          "lat": 50.976131,
+          "lon": 11.022561,
+          "kind": "church",
+          "note": "The five-spired church sharing the steps with the cathedral.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Augustinian Monastery",
+          "mins": 11,
+          "how": {
+           "mins": 11,
            "mode": "walk"
           },
-          "must": true,
-          "lat": 50.97777778,
-          "lon": 11.02888889,
-          "kind": "square",
-          "note": "Renaissance houses and the town hall. Dinner here.",
-          "ticket": false,
+          "visit": 50,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "ride",
+           "line": "5",
+           "vehicle": "TRAM",
+           "from": "Erfurt, Augustinerkloster",
+           "to": "Erfurt, Hauptbahnhof",
+           "walkInstead": 20
+          },
+          "must": false,
+          "lat": 50.98138889,
+          "lon": 11.03,
+          "kind": "church",
+          "note": "Luther was a monk here for six years.",
+          "ticket": true,
           "at": null,
           "leaveBy": null,
           "extra": true
          }
         ],
-        "back": 15,
-        "walkTotal": 30,
-        "visitTotal": 45,
-        "needs": 75,
-        "fitted": 1,
-        "dropped": 3,
+        "back": 11,
+        "walkTotal": 39,
+        "visitTotal": 95,
+        "needs": 134,
+        "fitted": 4,
+        "dropped": 5,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Kr%C3%A4merbr%C3%BCcke%2C%20Erfurt",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Kr%C3%A4merbr%C3%BCcke%2C%20Erfurt%7CDomplatz%2C%20Erfurt%7CErfurt%20Cathedral%2C%20Erfurt%7CFischmarkt%2C%20Erfurt",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Anger%2C%20Erfurt%7CFischmarkt%2C%20Erfurt%7CKr%C3%A4merbr%C3%BCcke%2C%20Erfurt%7CDomplatz%2C%20Erfurt",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Augustinian%20Monastery%2C%20Erfurt&waypoints=Anger%2C%20Erfurt%7CFischmarkt%2C%20Erfurt%7CKr%C3%A4merbr%C3%BCcke%2C%20Erfurt%7CMerchants'%20Bridge%20shops%2C%20Erfurt%7C%C3%84gidienkirche%20tower%2C%20Erfurt%7CDomplatz%2C%20Erfurt%7CErfurt%20Cathedral%2C%20Erfurt%7CSt%20Severi%2C%20Erfurt",
         "town": "Erfurt, Germany"
        }
       },
@@ -6383,9 +6513,12 @@
        "stn": "Fifteen minutes downhill from the station into the centre.",
        "see": [
         "Marktplatz",
-        "Goethe's House",
+        "Cranach House",
         "Theaterplatz",
-        "Cranach House"
+        "Goethe's House",
+        "Schiller's House",
+        "Wittumspalais",
+        "Duchess Anna Amalia Library"
        ],
        "base": false,
        "arrIso": "2026-10-03T07:50:00Z",
@@ -6430,32 +6563,32 @@
           "extra": false
          },
          {
-          "to": "Goethe's House",
-          "mins": 4,
+          "to": "Cranach House",
+          "mins": 2,
           "how": {
-           "mins": 4,
+           "mins": 2,
            "mode": "walk"
           },
-          "visit": 75,
-          "backFromHere": 24,
+          "visit": 20,
+          "backFromHere": 23,
           "backHow": {
-           "mins": 24,
+           "mins": 23,
            "mode": "ride",
            "line": "4",
            "vehicle": "BUS",
            "from": "Weimar, Goetheplatz / Zentrum",
            "to": "Weimar, Hauptbahnhof",
-           "walkInstead": null
+           "walkInstead": 29
           },
-          "must": true,
-          "lat": 50.9775,
-          "lon": 11.32861111,
-          "kind": "museum",
-          "note": "On Frauenplan. He lived here for fifty years; it is exactly as he left it.",
-          "ticket": true,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "must": false,
+          "lat": 50.97916667,
+          "lon": 11.33,
+          "kind": "sight",
+          "note": "The painter's last home, on the market square.",
+          "ticket": false,
+          "at": 55,
+          "leaveBy": 75,
+          "extra": false
          },
          {
           "to": "Theaterplatz",
@@ -6481,48 +6614,132 @@
           "kind": "square",
           "note": "The Goethe and Schiller statue stands in front of the theatre.",
           "ticket": false,
-          "at": 60,
-          "leaveBy": 80,
+          "at": 82,
+          "leaveBy": 102,
           "extra": false
          },
          {
-          "to": "Cranach House",
-          "mins": 7,
+          "to": "Goethe's House",
+          "mins": 8,
           "how": {
-           "mins": 7,
+           "mins": 8,
            "mode": "walk"
           },
-          "visit": 20,
-          "backFromHere": 23,
+          "visit": 60,
+          "backFromHere": 24,
           "backHow": {
-           "mins": 23,
+           "mins": 24,
            "mode": "ride",
            "line": "4",
            "vehicle": "BUS",
            "from": "Weimar, Goetheplatz / Zentrum",
            "to": "Weimar, Hauptbahnhof",
-           "walkInstead": 29
+           "walkInstead": null
+          },
+          "must": true,
+          "lat": 50.9775,
+          "lon": 11.32861111,
+          "kind": "museum",
+          "note": "On Frauenplan. He lived here for fifty years; it is exactly as he left it.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Schiller's House",
+          "mins": 5,
+          "how": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "visit": 50,
+          "backFromHere": 21,
+          "backHow": {
+           "mins": 21,
+           "mode": "ride",
+           "line": "7",
+           "vehicle": "BUS",
+           "from": "Weimar, Goetheplatz / Zentrum",
+           "to": "Weimar, Hauptbahnhof",
+           "walkInstead": 30
           },
           "must": false,
-          "lat": 50.97916667,
-          "lon": 11.33,
-          "kind": "sight",
-          "note": "The painter's last home, on the market square.",
-          "ticket": false,
-          "at": 87,
-          "leaveBy": 107,
-          "extra": false
+          "lat": 50.97893611,
+          "lon": 11.32776667,
+          "kind": "museum",
+          "note": "Where Schiller wrote William Tell.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Wittumspalais",
+          "mins": 3,
+          "how": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "visit": 45,
+          "backFromHere": 19,
+          "backHow": {
+           "mins": 19,
+           "mode": "ride",
+           "line": "7",
+           "vehicle": "BUS",
+           "from": "Weimar, Goetheplatz / Zentrum",
+           "to": "Weimar, Hauptbahnhof",
+           "walkInstead": 27
+          },
+          "must": false,
+          "lat": 50.97966667,
+          "lon": 11.32655278,
+          "kind": "palace",
+          "note": "Anna Amalia's town palace, where the salon met.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Duchess Anna Amalia Library",
+          "mins": 9,
+          "how": {
+           "mins": 9,
+           "mode": "walk"
+          },
+          "visit": 45,
+          "backFromHere": 25,
+          "backHow": {
+           "mins": 25,
+           "mode": "ride",
+           "line": "4",
+           "vehicle": "BUS",
+           "from": "Weimar, Goetheplatz / Zentrum",
+           "to": "Weimar, Hauptbahnhof",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 50.97861111,
+          "lon": 11.33222222,
+          "kind": "museum",
+          "note": "The oval rococo hall. Timed tickets, limited numbers, book ahead.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
-        "back": 23,
-        "walkTotal": 60,
+        "back": 20,
+        "walkTotal": 52,
         "visitTotal": 70,
-        "needs": 130,
+        "needs": 122,
         "fitted": 3,
-        "dropped": 1,
+        "dropped": 4,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CTheaterplatz%2C%20Weimar%7CCranach%20House%2C%20Weimar",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CGoethe's%20House%2C%20Weimar%7CTheaterplatz%2C%20Weimar%7CCranach%20House%2C%20Weimar",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CCranach%20House%2C%20Weimar%7CTheaterplatz%2C%20Weimar",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CCranach%20House%2C%20Weimar%7CTheaterplatz%2C%20Weimar%7CGoethe's%20House%2C%20Weimar%7CSchiller's%20House%2C%20Weimar%7CWittumspalais%2C%20Weimar%7CDuchess%20Anna%20Amalia%20Library%2C%20Weimar",
         "town": "Weimar, Germany"
        }
       },
@@ -6600,19 +6817,51 @@
        "place": "naumburg",
        "stn": "Fifteen minutes from the Hbf, or the little historic tram, to the old town.",
        "see": [
+        "The historic tram",
         "Naumburg Cathedral",
         "Marktplatz",
-        "St Wenceslas"
+        "Marienstraße",
+        "St Wenceslas",
+        "Town walls and Marientor",
+        "Saale-Unstrut wine"
        ],
        "base": false,
        "arrIso": "2026-10-03T10:21:00Z",
-       "want": 108,
+       "want": 58,
        "arr": "12:21",
-       "depIso": "2026-10-03T12:22:00Z",
-       "dep": "14:22",
-       "free": 121,
+       "depIso": "2026-10-03T11:55:00Z",
+       "dep": "13:55",
+       "free": 94,
        "route": {
         "legs": [
+         {
+          "to": "The historic tram",
+          "mins": 17,
+          "how": {
+           "mins": 17,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 9,
+          "backHow": {
+           "mins": 9,
+           "mode": "ride",
+           "line": "103",
+           "vehicle": "BUS",
+           "from": "Naumburg (Saale), Moritzberg",
+           "to": "Naumburg (Saale), Busbahnhof am Hauptbahnhof",
+           "walkInstead": 17
+          },
+          "must": false,
+          "lat": 51.1538,
+          "lon": 11.7992,
+          "kind": "sight",
+          "note": "One line, one carriage, running since 1892. It goes from the Hbf to the cathedral.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
          {
           "to": "Naumburg Cathedral",
           "mins": 17,
@@ -6643,7 +6892,7 @@
            "mins": 9,
            "mode": "walk"
           },
-          "visit": 30,
+          "visit": 20,
           "backFromHere": 17,
           "backHow": {
            "mins": 17,
@@ -6659,6 +6908,34 @@
           "lon": 11.80999,
           "kind": "square",
           "note": "Late-Gothic town hall and burgher houses.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Marienstraße",
+          "mins": 8,
+          "how": {
+           "mins": 8,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 19,
+          "backHow": {
+           "mins": 19,
+           "mode": "ride",
+           "line": "4",
+           "vehicle": "TRAM",
+           "from": "Naumburg (Saale), Poststr./Postring",
+           "to": "Naumburg (Saale), Hauptbahnhof (Tram)",
+           "walkInstead": 24
+          },
+          "must": false,
+          "lat": 51.1523,
+          "lon": 11.8083,
+          "kind": "street",
+          "note": "The old street between the market and the Marientor, timber-framed most of the way.",
           "ticket": false,
           "at": null,
           "leaveBy": null,
@@ -6691,6 +6968,62 @@
           "at": null,
           "leaveBy": null,
           "extra": true
+         },
+         {
+          "to": "Town walls and Marientor",
+          "mins": 12,
+          "how": {
+           "mins": 12,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 10,
+          "backHow": {
+           "mins": 10,
+           "mode": "ride",
+           "line": "4",
+           "vehicle": "TRAM",
+           "from": "Naumburg (Saale), Poststr./Postring",
+           "to": "Naumburg (Saale), Hauptbahnhof (Tram)",
+           "walkInstead": 23
+          },
+          "must": false,
+          "lat": 51.155,
+          "lon": 11.8125,
+          "kind": "street",
+          "note": "The last surviving double gate in Thuringia.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Saale-Unstrut wine",
+          "mins": 11,
+          "how": {
+           "mins": 11,
+           "mode": "walk"
+          },
+          "visit": 45,
+          "backFromHere": 20,
+          "backHow": {
+           "mins": 20,
+           "mode": "ride",
+           "line": "4",
+           "vehicle": "TRAM",
+           "from": "Naumburg (Saale), Poststr./Postring",
+           "to": "Naumburg (Saale), Hauptbahnhof (Tram)",
+           "walkInstead": 27
+          },
+          "must": false,
+          "lat": 51.1506,
+          "lon": 11.809,
+          "kind": "food",
+          "note": "The northernmost quality wine region in Europe. The taverns round the market pour it by the glass.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
         "back": 17,
@@ -6698,10 +7031,10 @@
         "visitTotal": 60,
         "needs": 94,
         "fitted": 1,
-        "dropped": 2,
+        "dropped": 6,
         "noCoords": [],
         "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Naumburg%20(Saale)%20Hauptbahnhof&destination=Naumburg%20(Saale)%20Hauptbahnhof&waypoints=Naumburg%20Cathedral%2C%20Naumburg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Naumburg%20(Saale)%20Hauptbahnhof&destination=Naumburg%20(Saale)%20Hauptbahnhof&waypoints=Naumburg%20Cathedral%2C%20Naumburg%7CMarktplatz%2C%20Naumburg%7CSt%20Wenceslas%2C%20Naumburg",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Naumburg%20(Saale)%20Hauptbahnhof&destination=Naumburg%20(Saale)%20Hauptbahnhof&waypoints=The%20historic%20tram%2C%20Naumburg%7CNaumburg%20Cathedral%2C%20Naumburg%7CMarktplatz%2C%20Naumburg%7CMarienstra%C3%9Fe%2C%20Naumburg%7CSt%20Wenceslas%2C%20Naumburg%7CTown%20walls%20and%20Marientor%2C%20Naumburg%7CSaale-Unstrut%20wine%2C%20Naumburg",
         "town": "Naumburg, Germany"
        }
       },
@@ -6721,30 +7054,39 @@
         51.4775,
         11.9872
        ],
-       "dep": "14:22",
-       "arr": "14:55",
-       "depIso": "2026-10-03T12:22:00Z",
-       "arrIso": "2026-10-03T12:55:00Z",
-       "dur": 33,
+       "dep": "13:55",
+       "arr": "14:35",
+       "depIso": "2026-10-03T11:55:00Z",
+       "arrIso": "2026-10-03T12:35:00Z",
+       "dur": 40,
        "changes": 0,
        "gaps": [],
        "legs": [
         {
          "mode": "REGIONAL_RAIL",
-         "line": "RE16",
+         "line": "RB25",
          "towards": "Halle (Saale) Hbf",
          "from": "Naumburg (Saale) Hbf",
          "to": "Halle (Saale) Hbf",
-         "dep": "14:22",
-         "arr": "14:55",
-         "depIso": "2026-10-03T12:22:00Z",
-         "arrIso": "2026-10-03T12:55:00Z",
+         "dep": "13:55",
+         "arr": "14:35",
+         "depIso": "2026-10-03T11:55:00Z",
+         "arrIso": "2026-10-03T12:35:00Z",
          "track": null,
-         "tripId": "20261003_13:35_de-DELFI_3412418897"
+         "tripId": "20261003_12:41_de-DELFI_3412420969"
         }
        ],
-       "wanted": "14:09",
+       "wanted": "13:19",
        "later": [
+        {
+         "dep": "14:22",
+         "arr": "14:55",
+         "dur": 33,
+         "changes": 0,
+         "lines": [
+          "RE16"
+         ]
+        },
         {
          "dep": "14:55",
          "arr": "15:35",
@@ -6762,15 +7104,6 @@
          "lines": [
           "RE16"
          ]
-        },
-        {
-         "dep": "15:55",
-         "arr": "16:35",
-         "dur": 40,
-         "changes": 0,
-         "lines": [
-          "RB25"
-         ]
         }
        ]
       },
@@ -6782,15 +7115,18 @@
         "Marktplatz and the Red Tower",
         "Market Church",
         "Händel House",
-        "Moritzburg"
+        "Halle Cathedral",
+        "Moritzburg",
+        "The Nebra Sky Disc",
+        "Francke Foundations"
        ],
        "base": false,
-       "arrIso": "2026-10-03T12:55:00Z",
-       "want": 141,
-       "arr": "14:55",
-       "depIso": "2026-10-03T15:26:00Z",
-       "dep": "17:26",
-       "free": 151,
+       "arrIso": "2026-10-03T12:35:00Z",
+       "want": 81,
+       "arr": "14:35",
+       "depIso": "2026-10-03T14:01:00Z",
+       "dep": "16:01",
+       "free": 86,
        "route": {
         "legs": [
          {
@@ -6805,7 +7141,7 @@
            "to": "Halle (Saale), Marktplatz",
            "walkInstead": 21
           },
-          "visit": 40,
+          "visit": 25,
           "backFromHere": 13,
           "backHow": {
            "mins": 13,
@@ -6823,7 +7159,7 @@
           "note": "Five towers over one square — four on the church, one standing alone.",
           "ticket": false,
           "at": 13,
-          "leaveBy": 53,
+          "leaveBy": 38,
           "extra": false
          },
          {
@@ -6833,7 +7169,7 @@
            "mins": 2,
            "mode": "walk"
           },
-          "visit": 40,
+          "visit": 25,
           "backFromHere": 14,
           "backHow": {
            "mins": 14,
@@ -6850,9 +7186,9 @@
           "kind": "church",
           "note": "Luther preached here; his death mask is upstairs.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 40,
+          "leaveBy": 65,
+          "extra": false
          },
          {
           "to": "Händel House",
@@ -6878,15 +7214,43 @@
           "kind": "museum",
           "note": "Handel was born in this house in 1685. Instruments of his time, played.",
           "ticket": true,
-          "at": 57,
-          "leaveBy": 132,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Halle Cathedral",
+          "mins": 5,
+          "how": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 18,
+          "backHow": {
+           "mins": 18,
+           "mode": "ride",
+           "line": "7",
+           "vehicle": "TRAM",
+           "from": "Halle (Saale), Neues Theater",
+           "to": "Halle (Saale), Hauptbahnhof (Tram/Bus)",
+           "walkInstead": 25
+          },
+          "must": false,
+          "lat": 51.4832,
+          "lon": 11.9653,
+          "kind": "church",
+          "note": "Plain outside, and the oldest church in the city. Handel played the organ here.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Moritzburg",
-          "mins": 7,
+          "mins": 10,
           "how": {
-           "mins": 7,
+           "mins": 10,
            "mode": "walk"
           },
           "visit": 90,
@@ -6909,309 +7273,469 @@
           "at": null,
           "leaveBy": null,
           "extra": true
-         }
-        ],
-        "back": 16,
-        "walkTotal": 33,
-        "visitTotal": 115,
-        "needs": 148,
-        "fitted": 2,
-        "dropped": 2,
-        "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Halle%20(Saale)%20Hauptbahnhof&destination=Halle%20(Saale)%20Hauptbahnhof&waypoints=Marktplatz%20and%20the%20Red%20Tower%2C%20Halle%7CH%C3%A4ndel%20House%2C%20Halle",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Halle%20(Saale)%20Hauptbahnhof&destination=Halle%20(Saale)%20Hauptbahnhof&waypoints=Marktplatz%20and%20the%20Red%20Tower%2C%20Halle%7CMarket%20Church%2C%20Halle%7CH%C3%A4ndel%20House%2C%20Halle%7CMoritzburg%2C%20Halle",
-        "town": "Halle, Germany"
-       }
-      },
-      {
-       "kind": "move",
-       "from": "halle",
-       "to": "wittenberg",
-       "note": "Direct on the S8.",
-       "bus": false,
-       "fromStop": "Halle (Saale) Hauptbahnhof",
-       "toStop": "Bahnhof Lutherstadt Wittenberg",
-       "fromLL": [
-        51.4775,
-        11.9872
-       ],
-       "toLL": [
-        51.865,
-        12.662
-       ],
-       "dep": "17:26",
-       "arr": "18:28",
-       "depIso": "2026-10-03T15:26:00Z",
-       "arrIso": "2026-10-03T16:28:00Z",
-       "dur": 62,
-       "changes": 1,
-       "gaps": [
-        5
-       ],
-       "legs": [
-        {
-         "mode": "METRO",
-         "line": "S8",
-         "towards": "Bitterfeld",
-         "from": "Halle (Saale) Hbf",
-         "to": "Bitterfeld",
-         "dep": "17:26",
-         "arr": "17:47",
-         "depIso": "2026-10-03T15:26:00Z",
-         "arrIso": "2026-10-03T15:47:00Z",
-         "track": null,
-         "tripId": "20261003_17:26_de-DELFI_3412697883"
-        },
-        {
-         "mode": "METRO",
-         "line": "S2",
-         "towards": "Lutherstadt Wittenberg Hbf",
-         "from": "Bitterfeld",
-         "to": "Lutherstadt Wittenberg Hbf",
-         "dep": "17:52",
-         "arr": "18:28",
-         "depIso": "2026-10-03T15:52:00Z",
-         "arrIso": "2026-10-03T16:28:00Z",
-         "track": null,
-         "tripId": "20261003_17:10_de-DELFI_3412698045"
-        }
-       ],
-       "wanted": "17:16",
-       "later": [
-        {
-         "dep": "18:19",
-         "arr": "19:17",
-         "dur": 58,
-         "changes": 0,
-         "lines": [
-          "S8"
-         ]
-        },
-        {
-         "dep": "19:26",
-         "arr": "20:28",
-         "dur": 62,
-         "changes": 1,
-         "lines": [
-          "S8",
-          "S2"
-         ]
-        },
-        {
-         "dep": "20:19",
-         "arr": "21:14",
-         "dur": 55,
-         "changes": 0,
-         "lines": [
-          "S8"
-         ]
-        }
-       ]
-      },
-      {
-       "kind": "stop",
-       "place": "wittenberg",
-       "stn": "Ten minutes from the station into the old town, all of it on one street.",
-       "see": [
-        "Castle Church",
-        "Markt and the Cranach houses",
-        "Town Church of St Mary",
-        "Luther House"
-       ],
-       "base": false,
-       "arrIso": "2026-10-03T16:28:00Z",
-       "want": 115,
-       "arr": "18:28",
-       "depIso": "2026-10-03T18:52:00Z",
-       "dep": "20:52",
-       "free": 144,
-       "route": {
-        "legs": [
-         {
-          "to": "Castle Church",
-          "mins": 18,
-          "how": {
-           "mins": 18,
-           "mode": "ride",
-           "line": "RB51 (16166)",
-           "vehicle": "REGIONAL_RAIL",
-           "from": "Lutherstadt Wittenberg Hbf",
-           "to": "Lutherstadt Wittenberg Altstadt",
-           "walkInstead": 30
-          },
-          "visit": 50,
-          "backFromHere": 24,
-          "backHow": {
-           "mins": 24,
-           "mode": "ride",
-           "line": "301",
-           "vehicle": "BUS",
-           "from": "Lu. Wittenberg, Marktplatz",
-           "to": "Lu. Wittenberg, Hauptbahnhof (Bus)",
-           "walkInstead": 30
-          },
-          "must": true,
-          "lat": 51.866369,
-          "lon": 12.637947,
-          "kind": "church",
-          "note": "The door where the 95 theses went up in 1517. UNESCO, and the reason for the town.",
-          "ticket": false,
-          "at": 18,
-          "leaveBy": 68,
-          "extra": false
          },
          {
-          "to": "Markt and the Cranach houses",
-          "mins": 7,
+          "to": "The Nebra Sky Disc",
+          "mins": 21,
           "how": {
-           "mins": 7,
+           "mins": 21,
            "mode": "walk"
           },
-          "visit": 45,
+          "visit": 75,
           "backFromHere": 20,
           "backHow": {
            "mins": 20,
            "mode": "ride",
-           "line": "301",
-           "vehicle": "BUS",
-           "from": "Lu. Wittenberg, Marktplatz",
-           "to": "Lu. Wittenberg, Hauptbahnhof (Bus)",
-           "walkInstead": 25
+           "line": "2",
+           "vehicle": "TRAM",
+           "from": "Halle (Saale), Am Steintor",
+           "to": "Halle (Saale), Hauptbahnhof (Tram/Bus)",
+           "walkInstead": null
           },
           "must": true,
-          "lat": 51.86644,
-          "lon": 12.64351,
-          "kind": "square",
-          "note": "Town hall, the two statues, and the painter's courtyards behind the square.",
-          "ticket": false,
-          "at": 75,
-          "leaveBy": 120,
-          "extra": false
-         },
-         {
-          "to": "Town Church of St Mary",
-          "mins": 2,
-          "how": {
-           "mins": 2,
-           "mode": "walk"
-          },
-          "visit": 40,
-          "backFromHere": 23,
-          "backHow": {
-           "mins": 23,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 51.86649722,
-          "lon": 12.64479444,
-          "kind": "church",
-          "note": "Where Luther actually preached, with Cranach's altarpiece.",
-          "ticket": false,
+          "lat": 51.4915,
+          "lon": 11.9734,
+          "kind": "museum",
+          "note": "The oldest known map of the stars, 3600 years old, in the prehistory museum.",
+          "ticket": true,
           "at": null,
           "leaveBy": null,
           "extra": true
          },
          {
-          "to": "Luther House",
-          "mins": 11,
+          "to": "Francke Foundations",
+          "mins": 13,
           "how": {
-           "mins": 11,
+           "mins": 13,
            "mode": "walk"
           },
-          "visit": 90,
-          "backFromHere": 15,
+          "visit": 60,
+          "backFromHere": 18,
           "backHow": {
-           "mins": 15,
+           "mins": 18,
            "mode": "walk"
           },
-          "must": true,
-          "lat": 51.86416667,
-          "lon": 12.6525,
+          "must": false,
+          "lat": 51.4781,
+          "lon": 11.9723,
           "kind": "museum",
-          "note": "The monastery he lived in for 35 years — the largest Reformation museum there is.",
+          "note": "A whole school town from 1698, with a cabinet of curiosities still in its original cases.",
           "ticket": true,
           "at": null,
           "leaveBy": null,
           "extra": true
          }
         ],
-        "back": 20,
-        "walkTotal": 45,
-        "visitTotal": 95,
-        "needs": 140,
+        "back": 14,
+        "walkTotal": 29,
+        "visitTotal": 50,
+        "needs": 79,
         "fitted": 2,
-        "dropped": 2,
+        "dropped": 5,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Lutherstadt%20Wittenberg&destination=Bahnhof%20Lutherstadt%20Wittenberg&waypoints=Castle%20Church%2C%20Wittenberg%7CMarkt%20and%20the%20Cranach%20houses%2C%20Wittenberg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Lutherstadt%20Wittenberg&destination=Bahnhof%20Lutherstadt%20Wittenberg&waypoints=Castle%20Church%2C%20Wittenberg%7CMarkt%20and%20the%20Cranach%20houses%2C%20Wittenberg%7CTown%20Church%20of%20St%20Mary%2C%20Wittenberg%7CLuther%20House%2C%20Wittenberg",
-        "town": "Wittenberg, Germany"
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Halle%20(Saale)%20Hauptbahnhof&destination=Halle%20(Saale)%20Hauptbahnhof&waypoints=Marktplatz%20and%20the%20Red%20Tower%2C%20Halle%7CMarket%20Church%2C%20Halle",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Halle%20(Saale)%20Hauptbahnhof&destination=Halle%20(Saale)%20Hauptbahnhof&waypoints=Marktplatz%20and%20the%20Red%20Tower%2C%20Halle%7CMarket%20Church%2C%20Halle%7CH%C3%A4ndel%20House%2C%20Halle%7CHalle%20Cathedral%2C%20Halle%7CMoritzburg%2C%20Halle%7CThe%20Nebra%20Sky%20Disc%2C%20Halle%7CFrancke%20Foundations%2C%20Halle",
+        "town": "Halle, Germany"
        }
       },
       {
        "kind": "move",
-       "from": "wittenberg",
-       "to": "berlin",
-       "note": "Direct on the RE3.",
+       "from": "halle",
+       "to": "leipzig",
+       "note": "Half an hour on the S-Bahn.",
        "bus": false,
-       "fromStop": "Bahnhof Lutherstadt Wittenberg",
+       "fromStop": "Halle (Saale) Hauptbahnhof",
+       "toStop": "Leipzig Hauptbahnhof",
+       "fromLL": [
+        51.4775,
+        11.9872
+       ],
+       "toLL": [
+        51.345,
+        12.381
+       ],
+       "dep": "16:01",
+       "arr": "16:27",
+       "depIso": "2026-10-03T14:01:00Z",
+       "arrIso": "2026-10-03T14:27:00Z",
+       "dur": 26,
+       "changes": 0,
+       "gaps": [],
+       "legs": [
+        {
+         "mode": "METRO",
+         "line": "S5",
+         "towards": "Altenburg",
+         "from": "Halle (Saale) Hbf",
+         "to": "Leipzig Hbf",
+         "dep": "16:01",
+         "arr": "16:27",
+         "depIso": "2026-10-03T14:01:00Z",
+         "arrIso": "2026-10-03T14:27:00Z",
+         "track": "2",
+         "tripId": "20261003_15:48_de-DELFI_3412685919"
+        }
+       ],
+       "wanted": "15:56",
+       "later": [
+        {
+         "dep": "16:18",
+         "arr": "16:39",
+         "dur": 21,
+         "changes": 0,
+         "lines": [
+          "S35"
+         ]
+        },
+        {
+         "dep": "16:31",
+         "arr": "16:57",
+         "dur": 26,
+         "changes": 0,
+         "lines": [
+          "S5X"
+         ]
+        },
+        {
+         "dep": "17:01",
+         "arr": "17:27",
+         "dur": 26,
+         "changes": 0,
+         "lines": [
+          "S5"
+         ]
+        }
+       ]
+      },
+      {
+       "kind": "stop",
+       "place": "leipzig",
+       "stn": "Out through the station hall — it is worth a look on the way — and the market is ten minutes straight ahead.",
+       "see": [
+        "Hauptbahnhof",
+        "Marktplatz and the Old Town Hall",
+        "Mädler Passage",
+        "St Thomas Church",
+        "Bach Museum",
+        "Nikolaikirche",
+        "Augustusplatz",
+        "Leipzig coffee"
+       ],
+       "base": false,
+       "arrIso": "2026-10-03T14:27:00Z",
+       "want": 151,
+       "arr": "16:27",
+       "depIso": "2026-10-03T17:12:00Z",
+       "dep": "19:12",
+       "free": 165,
+       "route": {
+        "legs": [
+         {
+          "to": "Hauptbahnhof",
+          "mins": 5,
+          "how": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 5,
+          "backHow": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 51.345278,
+          "lon": 12.382222,
+          "kind": "sight",
+          "note": "The largest railway terminus in Europe by floor area, and a shopping street on two levels inside it.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Marktplatz and the Old Town Hall",
+          "mins": 14,
+          "how": {
+           "mins": 14,
+           "mode": "walk"
+          },
+          "visit": 40,
+          "backFromHere": 14,
+          "backHow": {
+           "mins": 14,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 51.34030833,
+          "lon": 12.37538056,
+          "kind": "square",
+          "note": "One of the last great Renaissance town halls in Germany, the whole length of the square.",
+          "ticket": false,
+          "at": 14,
+          "leaveBy": 54,
+          "extra": false
+         },
+         {
+          "to": "Mädler Passage",
+          "mins": 2,
+          "how": {
+           "mins": 2,
+           "mode": "walk"
+          },
+          "visit": 40,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 51.33944444,
+          "lon": 12.37555556,
+          "kind": "shop",
+          "note": "Glass-roofed arcade with Auerbachs Keller under it — the cellar Goethe put in Faust.",
+          "ticket": false,
+          "at": 56,
+          "leaveBy": 96,
+          "extra": false
+         },
+         {
+          "to": "St Thomas Church",
+          "mins": 5,
+          "how": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "visit": 45,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "ride",
+           "line": "S3",
+           "vehicle": "METRO",
+           "from": "Leipzig Markt",
+           "to": "Leipzig Hbf",
+           "walkInstead": 18
+          },
+          "must": true,
+          "lat": 51.33916667,
+          "lon": 12.3725,
+          "kind": "church",
+          "note": "Bach was cantor here for 27 years and is buried in front of the altar. The boys' choir still sings.",
+          "ticket": false,
+          "at": 101,
+          "leaveBy": 146,
+          "extra": false
+         },
+         {
+          "to": "Bach Museum",
+          "mins": 1,
+          "how": {
+           "mins": 1,
+           "mode": "walk"
+          },
+          "visit": 60,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "ride",
+           "line": "S3",
+           "vehicle": "METRO",
+           "from": "Leipzig Markt",
+           "to": "Leipzig Hbf",
+           "walkInstead": 19
+          },
+          "must": false,
+          "lat": 51.33874,
+          "lon": 12.3723,
+          "kind": "museum",
+          "note": "Across the square from the church, in the house of the family he worked for.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Nikolaikirche",
+          "mins": 8,
+          "how": {
+           "mins": 8,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 51.34026389,
+          "lon": 12.37856389,
+          "kind": "church",
+          "note": "The Monday prayers here turned into the demonstrations that brought the Wall down.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Augustusplatz",
+          "mins": 11,
+          "how": {
+           "mins": 11,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 51.33916667,
+          "lon": 12.38083333,
+          "kind": "square",
+          "note": "The opera at one end, the Gewandhaus at the other, and the university tower above.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Leipzig coffee",
+          "mins": 5,
+          "how": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "visit": 45,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 51.341081,
+          "lon": 12.372935,
+          "kind": "food",
+          "note": "One of the oldest coffee houses in Europe, pouring since 1711.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         }
+        ],
+        "back": 11,
+        "walkTotal": 32,
+        "visitTotal": 125,
+        "needs": 157,
+        "fitted": 3,
+        "dropped": 5,
+        "noCoords": [],
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Leipzig%20Hauptbahnhof&destination=Leipzig%20Hauptbahnhof&waypoints=Marktplatz%20and%20the%20Old%20Town%20Hall%2C%20Leipzig%7CM%C3%A4dler%20Passage%2C%20Leipzig%7CSt%20Thomas%20Church%2C%20Leipzig",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Leipzig%20Hauptbahnhof&destination=Leipzig%20Hauptbahnhof&waypoints=Hauptbahnhof%2C%20Leipzig%7CMarktplatz%20and%20the%20Old%20Town%20Hall%2C%20Leipzig%7CM%C3%A4dler%20Passage%2C%20Leipzig%7CSt%20Thomas%20Church%2C%20Leipzig%7CBach%20Museum%2C%20Leipzig%7CNikolaikirche%2C%20Leipzig%7CAugustusplatz%2C%20Leipzig%7CLeipzig%20coffee%2C%20Leipzig",
+        "town": "Leipzig, Germany"
+       }
+      },
+      {
+       "kind": "move",
+       "from": "leipzig",
+       "to": "berlin",
+       "note": "The long one, three hours. Buy something to eat before you board.",
+       "bus": false,
+       "fromStop": "Leipzig Hauptbahnhof",
        "toStop": "Berlin Hauptbahnhof",
        "fromLL": [
-        51.865,
-        12.662
+        51.345,
+        12.381
        ],
        "toLL": [
         52.525,
         13.3694
        ],
-       "dep": "20:52",
-       "arr": "22:18",
-       "depIso": "2026-10-03T18:52:00Z",
-       "arrIso": "2026-10-03T20:18:00Z",
-       "dur": 86,
-       "changes": 0,
-       "gaps": [],
+       "dep": "19:12",
+       "arr": "22:14",
+       "depIso": "2026-10-03T17:12:00Z",
+       "arrIso": "2026-10-03T20:14:00Z",
+       "dur": 182,
+       "changes": 2,
+       "gaps": [
+        5,
+        2
+       ],
        "legs": [
         {
          "mode": "REGIONAL_RAIL",
-         "line": "RE3",
-         "towards": "Schwedt, Bahnhof",
-         "from": "Lutherstadt Wittenberg Hbf",
-         "to": "S+U Berlin Hauptbahnhof",
-         "dep": "20:52",
-         "arr": "22:18",
-         "depIso": "2026-10-03T18:52:00Z",
-         "arrIso": "2026-10-03T20:18:00Z",
+         "line": "RE10",
+         "towards": "Frankfurt (Oder), Bahnhof",
+         "from": "Leipzig Hbf",
+         "to": "Calau, Bahnhof",
+         "dep": "19:12",
+         "arr": "20:38",
+         "depIso": "2026-10-03T17:12:00Z",
+         "arrIso": "2026-10-03T18:38:00Z",
          "track": null,
-         "tripId": "20261003_20:52_de-DELFI_3412620295"
+         "tripId": "20261003_19:12_de-DELFI_3412618850"
+        },
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RE7",
+         "towards": "S Ostbahnhof (Berlin)",
+         "from": "Calau, Bahnhof",
+         "to": "S Ostkreuz Bhf (Berlin)",
+         "dep": "20:43",
+         "arr": "21:56",
+         "depIso": "2026-10-03T18:43:00Z",
+         "arrIso": "2026-10-03T19:56:00Z",
+         "track": "1",
+         "tripId": "20261003_20:14_de-DELFI_3412610351"
+        },
+        {
+         "mode": "METRO",
+         "line": "S5",
+         "towards": "S Westkreuz (Berlin)",
+         "from": "S Ostkreuz Bhf (Berlin)",
+         "to": "S+U Berlin Hauptbahnhof",
+         "dep": "21:58",
+         "arr": "22:14",
+         "depIso": "2026-10-03T19:58:00Z",
+         "arrIso": "2026-10-03T20:14:00Z",
+         "track": "6",
+         "tripId": "20261003_21:10_de-VBB_295936914"
         }
        ],
-       "wanted": "20:23",
+       "wanted": "18:58",
        "later": [
         {
-         "dep": "22:52",
-         "arr": "00:16",
-         "dur": 84,
-         "changes": 0,
+         "dep": "19:22",
+         "arr": "22:18",
+         "dur": 176,
+         "changes": 1,
          "lines": [
+          "S2",
           "RE3"
          ]
         },
         {
-         "dep": "00:34",
-         "arr": "02:00",
-         "dur": 86,
-         "changes": 0,
+         "dep": "19:46",
+         "arr": "23:03",
+         "dur": 197,
+         "changes": 2,
          "lines": [
-          "RE3"
+          "S4",
+          "RE4",
+          "RE4"
          ]
         },
         {
-         "dep": "04:52",
-         "arr": "06:18",
-         "dur": 86,
-         "changes": 0,
+         "dep": "20:21",
+         "arr": "00:00",
+         "dur": 219,
+         "changes": 2,
          "lines": [
-          "RE3"
+          "RE13",
+          "RE1",
+          "S5"
          ]
         }
        ]
@@ -7225,9 +7749,9 @@
         "Brandenburg Gate"
        ],
        "base": true,
-       "arrIso": "2026-10-03T20:18:00Z",
+       "arrIso": "2026-10-03T20:14:00Z",
        "want": null,
-       "arr": "22:18",
+       "arr": "22:14",
        "free": null,
        "dep": null,
        "route": {
@@ -7313,15 +7837,15 @@
      "intro": null,
      "hero": null,
      "bags": null,
-     "ride": 224,
+     "ride": 291,
      "stops": 5,
-     "endArr": "22:18",
+     "endArr": "22:14",
      "startDep": "09:36",
      "steps": [
       {
        "day": 5,
        "path": "A",
-       "t": "08:00",
+       "t": "07:15",
        "kind": "arrive",
        "place": "erfurt",
        "title": "You are in Erfurt",
@@ -7330,9 +7854,51 @@
         11.038
        ],
        "station": "Erfurt Hauptbahnhof",
-       "say": "1 h 36 min here, until the 09:36 on. Fifteen minutes from the station up the Anger, or tram 3, 4 or 6 to Domplatz.",
-       "free": 96,
+       "say": "2 h 21 min here, until the 09:36 on. Fifteen minutes from the station up the Anger, or tram 3, 4 or 6 to Domplatz.",
+       "free": 141,
        "dep": "09:36"
+      },
+      {
+       "day": 5,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "erfurt",
+       "title": "Anger",
+       "ll": [
+        50.97611111,
+        11.03416667
+       ],
+       "sight": "erfurt/Anger",
+       "move": "10 min walk.",
+       "rode": false,
+       "mins": 10,
+       "visit": 20,
+       "say": "The wide shopping street between the station and the old town.",
+       "offset": 10,
+       "until": 30,
+       "ticket": false
+      },
+      {
+       "day": 5,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "erfurt",
+       "title": "Fischmarkt",
+       "ll": [
+        50.97777778,
+        11.02888889
+       ],
+       "sight": "erfurt/Fischmarkt",
+       "move": "7 min walk.",
+       "rode": false,
+       "mins": 7,
+       "visit": 25,
+       "say": "Renaissance houses and the town hall. Dinner here.",
+       "offset": 37,
+       "until": 62,
+       "ticket": false
       },
       {
        "day": 5,
@@ -7346,13 +7912,34 @@
         11.0307747
        ],
        "sight": "erfurt/Krämerbrücke",
-       "move": "15 min walk.",
+       "move": "3 min walk.",
        "rode": false,
-       "mins": 15,
-       "visit": 45,
+       "mins": 3,
+       "visit": 30,
        "say": "A bridge with houses on it, lived in continuously since 1325.",
-       "offset": 15,
-       "until": 60,
+       "offset": 65,
+       "until": 95,
+       "ticket": false
+      },
+      {
+       "day": 5,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "erfurt",
+       "title": "Domplatz",
+       "ll": [
+        50.97694444,
+        11.02388889
+       ],
+       "sight": "erfurt/Domplatz",
+       "move": "8 min walk.",
+       "rode": false,
+       "mins": 8,
+       "visit": 20,
+       "say": "Cathedral and St Severi side by side above a huge open square.",
+       "offset": 103,
+       "until": 123,
        "ticket": false
       },
       {
@@ -7366,8 +7953,8 @@
         50.9723,
         11.038
        ],
-       "mins": 15,
-       "say": "15 min back to the station. Aim to be on the platform by 09:36."
+       "mins": 11,
+       "say": "11 min back to the station. Aim to be on the platform by 09:36."
       },
       {
        "day": 5,
@@ -7439,6 +8026,27 @@
        "t": null,
        "kind": "see",
        "place": "weimar",
+       "title": "Cranach House",
+       "ll": [
+        50.97916667,
+        11.33
+       ],
+       "sight": "weimar/Cranach House",
+       "move": "2 min walk.",
+       "rode": false,
+       "mins": 2,
+       "visit": 20,
+       "say": "The painter's last home, on the market square.",
+       "offset": 55,
+       "until": 75,
+       "ticket": false
+      },
+      {
+       "day": 5,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "weimar",
        "title": "Theaterplatz",
        "ll": [
         50.97956111,
@@ -7450,29 +8058,8 @@
        "mins": 7,
        "visit": 20,
        "say": "The Goethe and Schiller statue stands in front of the theatre.",
-       "offset": 60,
-       "until": 80,
-       "ticket": false
-      },
-      {
-       "day": 5,
-       "path": "A",
-       "t": null,
-       "kind": "see",
-       "place": "weimar",
-       "title": "Cranach House",
-       "ll": [
-        50.97916667,
-        11.33
-       ],
-       "sight": "weimar/Cranach House",
-       "move": "7 min walk.",
-       "rode": false,
-       "mins": 7,
-       "visit": 20,
-       "say": "The painter's last home, on the market square.",
-       "offset": 87,
-       "until": 107,
+       "offset": 82,
+       "until": 102,
        "ticket": false
       },
       {
@@ -7486,8 +8073,8 @@
         50.993,
         11.3253
        ],
-       "mins": 23,
-       "say": "23 min back to the station. Aim to be on the platform by 11:52."
+       "mins": 20,
+       "say": "20 min back to the station. Aim to be on the platform by 11:52."
       },
       {
        "day": 5,
@@ -7528,9 +8115,9 @@
         11.7962
        ],
        "station": "Naumburg (Saale) Hauptbahnhof",
-       "say": "2 h 1 min here, until the 14:22 on. Fifteen minutes from the Hbf, or the little historic tram, to the old town.",
-       "free": 121,
-       "dep": "14:22"
+       "say": "1 h 34 min here, until the 13:55 on. Fifteen minutes from the Hbf, or the little historic tram, to the old town.",
+       "free": 94,
+       "dep": "13:55"
       },
       {
        "day": 5,
@@ -7556,7 +8143,7 @@
       {
        "day": 5,
        "path": "A",
-       "t": "14:22",
+       "t": "13:55",
        "kind": "back",
        "place": "naumburg",
        "title": "Back to Naumburg (Saale) Hauptbahnhof",
@@ -7565,20 +8152,20 @@
         11.7962
        ],
        "mins": 17,
-       "say": "17 min back to the station. Aim to be on the platform by 14:22."
+       "say": "17 min back to the station. Aim to be on the platform by 13:55."
       },
       {
        "day": 5,
        "path": "A",
-       "t": "14:22",
+       "t": "13:55",
        "kind": "ride",
        "title": "Train to Halle",
-       "line": "RE16",
+       "line": "RB25",
        "from": "Naumburg (Saale) Hauptbahnhof",
        "to": "Halle (Saale) Hauptbahnhof",
-       "dep": "14:22",
-       "arr": "14:55",
-       "dur": 33,
+       "dep": "13:55",
+       "arr": "14:35",
+       "dur": 40,
        "changes": 0,
        "track": null,
        "ll": [
@@ -7591,13 +8178,13 @@
        ],
        "place": "naumburg",
        "toPlace": "halle",
-       "say": "33 minutes, straight through.",
+       "say": "40 minutes, straight through.",
        "note": ""
       },
       {
        "day": 5,
        "path": "A",
-       "t": "14:55",
+       "t": "14:35",
        "kind": "arrive",
        "place": "halle",
        "title": "You are in Halle",
@@ -7606,9 +8193,9 @@
         11.9872
        ],
        "station": "Halle (Saale) Hauptbahnhof",
-       "say": "2 h 31 min here, until the 17:26 on. Ten minutes from the Hbf up Leipziger Straße to the market, or any tram.",
-       "free": 151,
-       "dep": "17:26"
+       "say": "1 h 26 min here, until the 16:01 on. Ten minutes from the Hbf up Leipziger Straße to the market, or any tram.",
+       "free": 86,
+       "dep": "16:01"
       },
       {
        "day": 5,
@@ -7625,10 +8212,10 @@
        "move": "Take the 2 — 13 min, instead of 21 on foot.",
        "rode": true,
        "mins": 13,
-       "visit": 40,
+       "visit": 25,
        "say": "Five towers over one square — four on the church, one standing alone.",
        "offset": 13,
-       "until": 53,
+       "until": 38,
        "ticket": false
       },
       {
@@ -7637,25 +8224,25 @@
        "t": null,
        "kind": "see",
        "place": "halle",
-       "title": "Händel House",
+       "title": "Market Church",
        "ll": [
-        51.48416667,
-        11.96694444
+        51.48255556,
+        11.96809444
        ],
-       "sight": "halle/Händel House",
-       "move": "4 min walk.",
+       "sight": "halle/Market Church",
+       "move": "2 min walk.",
        "rode": false,
-       "mins": 4,
-       "visit": 75,
-       "say": "Handel was born in this house in 1685. Instruments of his time, played.",
-       "offset": 57,
-       "until": 132,
-       "ticket": true
+       "mins": 2,
+       "visit": 25,
+       "say": "Luther preached here; his death mask is upstairs.",
+       "offset": 40,
+       "until": 65,
+       "ticket": false
       },
       {
        "day": 5,
        "path": "A",
-       "t": "17:26",
+       "t": "16:01",
        "kind": "back",
        "place": "halle",
        "title": "Back to Halle (Saale) Hauptbahnhof",
@@ -7663,139 +8250,160 @@
         51.4775,
         11.9872
        ],
-       "mins": 16,
-       "say": "16 min back to the station. Aim to be on the platform by 17:26."
+       "mins": 14,
+       "say": "14 min back to the station. Aim to be on the platform by 16:01."
       },
       {
        "day": 5,
        "path": "A",
-       "t": "17:26",
+       "t": "16:01",
        "kind": "ride",
-       "title": "Train to Wittenberg",
-       "line": "S8",
+       "title": "Train to Leipzig",
+       "line": "S5",
        "from": "Halle (Saale) Hauptbahnhof",
-       "to": "Bahnhof Lutherstadt Wittenberg",
-       "dep": "17:26",
-       "arr": "18:28",
-       "dur": 62,
-       "changes": 1,
-       "track": null,
+       "to": "Leipzig Hauptbahnhof",
+       "dep": "16:01",
+       "arr": "16:27",
+       "dur": 26,
+       "changes": 0,
+       "track": "2",
        "ll": [
         51.4775,
         11.9872
        ],
        "toLL": [
-        51.865,
-        12.662
+        51.345,
+        12.381
        ],
        "place": "halle",
-       "toPlace": "wittenberg",
-       "say": "62 minutes and 1 change — S8, then S2.",
-       "note": "Direct on the S8."
+       "toPlace": "leipzig",
+       "say": "26 minutes, straight through.",
+       "note": "Half an hour on the S-Bahn."
       },
       {
        "day": 5,
        "path": "A",
-       "t": "18:28",
+       "t": "16:27",
        "kind": "arrive",
-       "place": "wittenberg",
-       "title": "You are in Wittenberg",
+       "place": "leipzig",
+       "title": "You are in Leipzig",
        "ll": [
-        51.865,
-        12.662
+        51.345,
+        12.381
        ],
-       "station": "Bahnhof Lutherstadt Wittenberg",
-       "say": "2 h 24 min here, until the 20:52 on. Ten minutes from the station into the old town, all of it on one street.",
-       "free": 144,
-       "dep": "20:52"
+       "station": "Leipzig Hauptbahnhof",
+       "say": "2 h 45 min here, until the 19:12 on. Out through the station hall — it is worth a look on the way — and the market is ten minutes straight ahead.",
+       "free": 165,
+       "dep": "19:12"
       },
       {
        "day": 5,
        "path": "A",
        "t": null,
        "kind": "see",
-       "place": "wittenberg",
-       "title": "Castle Church",
+       "place": "leipzig",
+       "title": "Marktplatz and the Old Town Hall",
        "ll": [
-        51.866369,
-        12.637947
+        51.34030833,
+        12.37538056
        ],
-       "sight": "wittenberg/Castle Church",
-       "move": "Take the RB51 (16166) — 18 min, instead of 30 on foot.",
-       "rode": true,
-       "mins": 18,
-       "visit": 50,
-       "say": "The door where the 95 theses went up in 1517. UNESCO, and the reason for the town.",
-       "offset": 18,
-       "until": 68,
-       "ticket": false
-      },
-      {
-       "day": 5,
-       "path": "A",
-       "t": null,
-       "kind": "see",
-       "place": "wittenberg",
-       "title": "Markt and the Cranach houses",
-       "ll": [
-        51.86644,
-        12.64351
-       ],
-       "sight": "wittenberg/Markt and the Cranach houses",
-       "move": "7 min walk.",
+       "sight": "leipzig/Marktplatz and the Old Town Hall",
+       "move": "14 min walk.",
        "rode": false,
-       "mins": 7,
-       "visit": 45,
-       "say": "Town hall, the two statues, and the painter's courtyards behind the square.",
-       "offset": 75,
-       "until": 120,
+       "mins": 14,
+       "visit": 40,
+       "say": "One of the last great Renaissance town halls in Germany, the whole length of the square.",
+       "offset": 14,
+       "until": 54,
        "ticket": false
       },
       {
        "day": 5,
        "path": "A",
-       "t": "20:52",
-       "kind": "back",
-       "place": "wittenberg",
-       "title": "Back to Bahnhof Lutherstadt Wittenberg",
+       "t": null,
+       "kind": "see",
+       "place": "leipzig",
+       "title": "Mädler Passage",
        "ll": [
-        51.865,
-        12.662
+        51.33944444,
+        12.37555556
        ],
-       "mins": 20,
-       "say": "20 min back to the station. Aim to be on the platform by 20:52."
+       "sight": "leipzig/Mädler Passage",
+       "move": "2 min walk.",
+       "rode": false,
+       "mins": 2,
+       "visit": 40,
+       "say": "Glass-roofed arcade with Auerbachs Keller under it — the cellar Goethe put in Faust.",
+       "offset": 56,
+       "until": 96,
+       "ticket": false
       },
       {
        "day": 5,
        "path": "A",
-       "t": "20:52",
+       "t": null,
+       "kind": "see",
+       "place": "leipzig",
+       "title": "St Thomas Church",
+       "ll": [
+        51.33916667,
+        12.3725
+       ],
+       "sight": "leipzig/St Thomas Church",
+       "move": "5 min walk.",
+       "rode": false,
+       "mins": 5,
+       "visit": 45,
+       "say": "Bach was cantor here for 27 years and is buried in front of the altar. The boys' choir still sings.",
+       "offset": 101,
+       "until": 146,
+       "ticket": false
+      },
+      {
+       "day": 5,
+       "path": "A",
+       "t": "19:12",
+       "kind": "back",
+       "place": "leipzig",
+       "title": "Back to Leipzig Hauptbahnhof",
+       "ll": [
+        51.345,
+        12.381
+       ],
+       "mins": 11,
+       "say": "11 min back to the station. Aim to be on the platform by 19:12."
+      },
+      {
+       "day": 5,
+       "path": "A",
+       "t": "19:12",
        "kind": "ride",
        "title": "Train to Berlin",
-       "line": "RE3",
-       "from": "Bahnhof Lutherstadt Wittenberg",
+       "line": "RE10",
+       "from": "Leipzig Hauptbahnhof",
        "to": "Berlin Hauptbahnhof",
-       "dep": "20:52",
-       "arr": "22:18",
-       "dur": 86,
-       "changes": 0,
+       "dep": "19:12",
+       "arr": "22:14",
+       "dur": 182,
+       "changes": 2,
        "track": null,
        "ll": [
-        51.865,
-        12.662
+        51.345,
+        12.381
        ],
        "toLL": [
         52.525,
         13.3694
        ],
-       "place": "wittenberg",
+       "place": "leipzig",
        "toPlace": "berlin",
-       "say": "86 minutes, straight through.",
-       "note": "Direct on the RE3."
+       "say": "182 minutes and 2 changes — RE10, then RE7, then S5.",
+       "note": "The long one, three hours. Buy something to eat before you board."
       },
       {
        "day": 5,
        "path": "A",
-       "t": "22:18",
+       "t": "22:14",
        "kind": "arrive",
        "place": "berlin",
        "title": "You are in Berlin",
@@ -7853,1001 +8461,6 @@
       {
        "day": 5,
        "path": "A",
-       "t": null,
-       "kind": "sleep",
-       "place": "berlin",
-       "title": "Goodnight, Berlin",
-       "ll": [
-        52.525,
-        13.3694
-       ],
-       "say": "You made it. Berlin."
-      }
-     ]
-    },
-    {
-     "id": "B",
-     "name": "Weimar, then straight on",
-     "why": "One stop, and in Berlin by teatime.",
-     "seq": [
-      {
-       "kind": "stop",
-       "place": "erfurt",
-       "stn": "Fifteen minutes up the Anger, or tram 3, 4 or 6 to Domplatz.",
-       "see": [
-        "Anger",
-        "Fischmarkt",
-        "Krämerbrücke",
-        "Domplatz",
-        "Erfurt Cathedral",
-        "Petersberg Citadel"
-       ],
-       "base": false,
-       "arrIso": "2026-10-03T06:00:00.000Z",
-       "want": 150,
-       "arr": "08:00",
-       "depIso": "2026-10-03T08:36:00Z",
-       "dep": "10:36",
-       "free": 156,
-       "route": {
-        "legs": [
-         {
-          "to": "Anger",
-          "mins": 10,
-          "how": {
-           "mins": 10,
-           "mode": "walk"
-          },
-          "visit": 30,
-          "backFromHere": 10,
-          "backHow": {
-           "mins": 10,
-           "mode": "walk"
-          },
-          "must": false,
-          "lat": 50.97611111,
-          "lon": 11.03416667,
-          "kind": "street",
-          "note": "The wide shopping street between the station and the old town.",
-          "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         },
-         {
-          "to": "Fischmarkt",
-          "mins": 15,
-          "how": {
-           "mins": 15,
-           "mode": "walk"
-          },
-          "visit": 45,
-          "backFromHere": 15,
-          "backHow": {
-           "mins": 15,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 50.97777778,
-          "lon": 11.02888889,
-          "kind": "square",
-          "note": "Renaissance houses and the town hall. Dinner here.",
-          "ticket": false,
-          "at": 15,
-          "leaveBy": 60,
-          "extra": false
-         },
-         {
-          "to": "Krämerbrücke",
-          "mins": 3,
-          "how": {
-           "mins": 3,
-           "mode": "walk"
-          },
-          "visit": 45,
-          "backFromHere": 15,
-          "backHow": {
-           "mins": 15,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 50.9787455,
-          "lon": 11.0307747,
-          "kind": "street",
-          "note": "A bridge with houses on it, lived in continuously since 1325.",
-          "ticket": false,
-          "at": 63,
-          "leaveBy": 108,
-          "extra": false
-         },
-         {
-          "to": "Domplatz",
-          "mins": 8,
-          "how": {
-           "mins": 8,
-           "mode": "walk"
-          },
-          "visit": 40,
-          "backFromHere": 11,
-          "backHow": {
-           "mins": 11,
-           "mode": "ride",
-           "line": "2",
-           "vehicle": "TRAM",
-           "from": "Erfurt, Domplatz Süd",
-           "to": "Erfurt, Hauptbahnhof",
-           "walkInstead": 20
-          },
-          "must": true,
-          "lat": 50.97694444,
-          "lon": 11.02388889,
-          "kind": "square",
-          "note": "Cathedral and St Severi side by side above a huge open square.",
-          "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         },
-         {
-          "to": "Erfurt Cathedral",
-          "mins": 12,
-          "how": {
-           "mins": 12,
-           "mode": "walk"
-          },
-          "visit": 40,
-          "backFromHere": 14,
-          "backHow": {
-           "mins": 14,
-           "mode": "ride",
-           "line": "6",
-           "vehicle": "TRAM",
-           "from": "Erfurt, Domplatz Nord",
-           "to": "Erfurt, Hauptbahnhof",
-           "walkInstead": 24
-          },
-          "must": true,
-          "lat": 50.97583,
-          "lon": 11.02317,
-          "kind": "church",
-          "note": "Climb the steps. The Gloriosa bell inside is the largest medieval bell in the world.",
-          "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         },
-         {
-          "to": "Petersberg Citadel",
-          "mins": 15,
-          "how": {
-           "mins": 15,
-           "mode": "walk"
-          },
-          "visit": 60,
-          "backFromHere": 17,
-          "backHow": {
-           "mins": 17,
-           "mode": "ride",
-           "line": "3",
-           "vehicle": "TRAM",
-           "from": "Erfurt, Webergasse/Andreaskirche",
-           "to": "Erfurt, Hauptbahnhof",
-           "walkInstead": 28
-          },
-          "must": false,
-          "lat": 50.97861111,
-          "lon": 11.01833333,
-          "kind": "view",
-          "note": "Baroque fortress on the hill. Best place for sunset over the city.",
-          "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         }
-        ],
-        "back": 15,
-        "walkTotal": 33,
-        "visitTotal": 90,
-        "needs": 123,
-        "fitted": 2,
-        "dropped": 4,
-        "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Fischmarkt%2C%20Erfurt%7CKr%C3%A4merbr%C3%BCcke%2C%20Erfurt",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Anger%2C%20Erfurt%7CFischmarkt%2C%20Erfurt%7CKr%C3%A4merbr%C3%BCcke%2C%20Erfurt%7CDomplatz%2C%20Erfurt%7CErfurt%20Cathedral%2C%20Erfurt%7CPetersberg%20Citadel%2C%20Erfurt",
-        "town": "Erfurt, Germany"
-       }
-      },
-      {
-       "kind": "move",
-       "from": "erfurt",
-       "to": "weimar",
-       "note": "",
-       "bus": false,
-       "fromStop": "Erfurt Hauptbahnhof",
-       "toStop": "Bahnhof Weimar",
-       "fromLL": [
-        50.9723,
-        11.038
-       ],
-       "toLL": [
-        50.993,
-        11.3253
-       ],
-       "dep": "10:36",
-       "arr": "10:50",
-       "depIso": "2026-10-03T08:36:00Z",
-       "arrIso": "2026-10-03T08:50:00Z",
-       "dur": 14,
-       "changes": 0,
-       "gaps": [],
-       "legs": [
-        {
-         "mode": "REGIONAL_RAIL",
-         "line": "RE16",
-         "towards": "Halle (Saale) Hbf",
-         "from": "Erfurt Hbf",
-         "to": "Weimar",
-         "dep": "10:36",
-         "arr": "10:50",
-         "depIso": "2026-10-03T08:36:00Z",
-         "arrIso": "2026-10-03T08:50:00Z",
-         "track": null,
-         "tripId": "20261003_10:36_de-DELFI_3412418973"
-        }
-       ],
-       "wanted": "10:30",
-       "later": [
-        {
-         "dep": "10:51",
-         "arr": "11:04",
-         "dur": 13,
-         "changes": 0,
-         "lines": [
-          "RE3"
-         ]
-        },
-        {
-         "dep": "11:01",
-         "arr": "11:16",
-         "dur": 15,
-         "changes": 0,
-         "lines": [
-          "RB20"
-         ]
-        },
-        {
-         "dep": "11:17",
-         "arr": "11:32",
-         "dur": 15,
-         "changes": 0,
-         "lines": [
-          "RB21"
-         ]
-        }
-       ]
-      },
-      {
-       "kind": "stop",
-       "place": "weimar",
-       "stn": "Fifteen minutes downhill into the centre.",
-       "see": [
-        "Marktplatz",
-        "Goethe's House",
-        "Theaterplatz",
-        "Park an der Ilm"
-       ],
-       "base": false,
-       "arrIso": "2026-10-03T08:50:00Z",
-       "want": 128,
-       "arr": "10:50",
-       "depIso": "2026-10-03T10:52:00Z",
-       "dep": "12:52",
-       "free": 122,
-       "route": {
-        "legs": [
-         {
-          "to": "Marktplatz",
-          "mins": 23,
-          "how": {
-           "mins": 23,
-           "mode": "ride",
-           "line": "8",
-           "vehicle": "BUS",
-           "from": "Weimar, Rastenberger Tunnel",
-           "to": "Weimar, Goetheplatz / Zentrum",
-           "walkInstead": 29
-          },
-          "visit": 30,
-          "backFromHere": 22,
-          "backHow": {
-           "mins": 22,
-           "mode": "ride",
-           "line": "7",
-           "vehicle": "BUS",
-           "from": "Weimar, Goetheplatz / Zentrum",
-           "to": "Weimar, Hauptbahnhof",
-           "walkInstead": 29
-          },
-          "must": true,
-          "lat": 50.97944444,
-          "lon": 11.32972222,
-          "kind": "square",
-          "note": "Town hall and the Cranach house, with the old Elephant hotel.",
-          "ticket": false,
-          "at": 23,
-          "leaveBy": 53,
-          "extra": false
-         },
-         {
-          "to": "Goethe's House",
-          "mins": 4,
-          "how": {
-           "mins": 4,
-           "mode": "walk"
-          },
-          "visit": 75,
-          "backFromHere": 24,
-          "backHow": {
-           "mins": 24,
-           "mode": "ride",
-           "line": "4",
-           "vehicle": "BUS",
-           "from": "Weimar, Goetheplatz / Zentrum",
-           "to": "Weimar, Hauptbahnhof",
-           "walkInstead": null
-          },
-          "must": true,
-          "lat": 50.9775,
-          "lon": 11.32861111,
-          "kind": "museum",
-          "note": "On Frauenplan. He lived here for fifty years; it is exactly as he left it.",
-          "ticket": true,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         },
-         {
-          "to": "Theaterplatz",
-          "mins": 7,
-          "how": {
-           "mins": 7,
-           "mode": "walk"
-          },
-          "visit": 20,
-          "backFromHere": 20,
-          "backHow": {
-           "mins": 20,
-           "mode": "ride",
-           "line": "7",
-           "vehicle": "BUS",
-           "from": "Weimar, Goetheplatz / Zentrum",
-           "to": "Weimar, Hauptbahnhof",
-           "walkInstead": 28
-          },
-          "must": true,
-          "lat": 50.97956111,
-          "lon": 11.32468333,
-          "kind": "square",
-          "note": "The Goethe and Schiller statue stands in front of the theatre.",
-          "ticket": false,
-          "at": 60,
-          "leaveBy": 80,
-          "extra": false
-         },
-         {
-          "to": "Park an der Ilm",
-          "mins": 18,
-          "how": {
-           "mins": 18,
-           "mode": "walk"
-          },
-          "visit": 75,
-          "backFromHere": 34,
-          "backHow": {
-           "mins": 34,
-           "mode": "ride",
-           "line": "1",
-           "vehicle": "BUS",
-           "from": "Weimar, Bauhaus Universität",
-           "to": "Weimar, Hauptbahnhof",
-           "walkInstead": null
-          },
-          "must": true,
-          "lat": 50.97472222,
-          "lon": 11.33444444,
-          "kind": "nature",
-          "note": "Landscape park along the river, with Goethe's garden house in it.",
-          "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         }
-        ],
-        "back": 20,
-        "walkTotal": 50,
-        "visitTotal": 50,
-        "needs": 100,
-        "fitted": 2,
-        "dropped": 2,
-        "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CTheaterplatz%2C%20Weimar",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CGoethe's%20House%2C%20Weimar%7CTheaterplatz%2C%20Weimar%7CPark%20an%20der%20Ilm%2C%20Weimar",
-        "town": "Weimar, Germany"
-       }
-      },
-      {
-       "kind": "move",
-       "from": "weimar",
-       "to": "berlin",
-       "note": "Changes at Naumburg and Halle.",
-       "bus": false,
-       "fromStop": "Bahnhof Weimar",
-       "toStop": "Berlin Hauptbahnhof",
-       "fromLL": [
-        50.993,
-        11.3253
-       ],
-       "toLL": [
-        52.525,
-        13.3694
-       ],
-       "dep": "12:52",
-       "arr": "17:17",
-       "depIso": "2026-10-03T10:52:00Z",
-       "arrIso": "2026-10-03T15:17:00Z",
-       "dur": 265,
-       "changes": 2,
-       "gaps": [
-        24,
-        37
-       ],
-       "legs": [
-        {
-         "mode": "REGIONAL_RAIL",
-         "line": "RE16",
-         "towards": "Halle (Saale) Hbf",
-         "from": "Weimar",
-         "to": "Halle (Saale) Hbf",
-         "dep": "12:52",
-         "arr": "13:55",
-         "depIso": "2026-10-03T10:52:00Z",
-         "arrIso": "2026-10-03T11:55:00Z",
-         "track": null,
-         "tripId": "20261003_12:36_de-DELFI_3412418971"
-        },
-        {
-         "mode": "METRO",
-         "line": "S8",
-         "towards": "Lutherstadt Wittenberg Hbf",
-         "from": "Halle (Saale) Hbf",
-         "to": "Lutherstadt Wittenberg Hbf",
-         "dep": "14:19",
-         "arr": "15:14",
-         "depIso": "2026-10-03T12:19:00Z",
-         "arrIso": "2026-10-03T13:14:00Z",
-         "track": null,
-         "tripId": "20261003_14:19_de-DELFI_3412697825"
-        },
-        {
-         "mode": "REGIONAL_RAIL",
-         "line": "RE3",
-         "towards": "Stralsund Hauptbahnhof",
-         "from": "Lutherstadt Wittenberg Hbf",
-         "to": "S+U Berlin Hauptbahnhof",
-         "dep": "15:51",
-         "arr": "17:17",
-         "depIso": "2026-10-03T13:51:00Z",
-         "arrIso": "2026-10-03T15:17:00Z",
-         "track": null,
-         "tripId": "20261003_15:51_de-DELFI_3412620402"
-        }
-       ],
-       "wanted": "12:58",
-       "later": [
-        {
-         "dep": "13:17",
-         "arr": "18:14",
-         "dur": 297,
-         "changes": 4,
-         "lines": [
-          "RB20",
-          "S6",
-          "RE10",
-          "RE7",
-          "S5"
-         ]
-        },
-        {
-         "dep": "13:52",
-         "arr": "18:19",
-         "dur": 267,
-         "changes": 3,
-         "lines": [
-          "RE16",
-          "S8",
-          "S2",
-          "RE3"
-         ]
-        },
-        {
-         "dep": "14:52",
-         "arr": "19:17",
-         "dur": 265,
-         "changes": 2,
-         "lines": [
-          "RE16",
-          "S8",
-          "RE3"
-         ]
-        }
-       ]
-      },
-      {
-       "kind": "stop",
-       "place": "berlin",
-       "stn": "You have arrived. Berlin Hauptbahnhof.",
-       "see": [
-        "Gendarmenmarkt",
-        "Brandenburg Gate",
-        "Museum Island",
-        "Berlin Cathedral"
-       ],
-       "base": true,
-       "arrIso": "2026-10-03T15:17:00Z",
-       "want": null,
-       "arr": "17:17",
-       "free": null,
-       "dep": null,
-       "route": {
-        "legs": [
-         {
-          "to": "Gendarmenmarkt",
-          "mins": 25,
-          "how": {
-           "mins": 25,
-           "mode": "ride",
-           "line": "U5",
-           "vehicle": "SUBWAY",
-           "from": "S+U Berlin Hauptbahnhof",
-           "to": "U Museumsinsel (Berlin)",
-           "walkInstead": null
-          },
-          "visit": 40,
-          "backFromHere": 24,
-          "backHow": {
-           "mins": 24,
-           "mode": "ride",
-           "line": "U5",
-           "vehicle": "SUBWAY",
-           "from": "U Museumsinsel (Berlin)",
-           "to": "S+U Berlin Hauptbahnhof",
-           "walkInstead": null
-          },
-          "must": true,
-          "lat": 52.51333333,
-          "lon": 13.39305556,
-          "kind": "square",
-          "note": "Two matching cathedrals and the concert hall. The handsomest square in Berlin.",
-          "ticket": false,
-          "at": 25,
-          "leaveBy": 65,
-          "extra": false
-         },
-         {
-          "to": "Brandenburg Gate",
-          "mins": 20,
-          "how": {
-           "mins": 20,
-           "mode": "walk"
-          },
-          "visit": 30,
-          "backFromHere": 13,
-          "backHow": {
-           "mins": 13,
-           "mode": "ride",
-           "line": "S2",
-           "vehicle": "METRO",
-           "from": "S+U Brandenburger Tor (Berlin)",
-           "to": "S+U Berlin Hauptbahnhof",
-           "walkInstead": 19
-          },
-          "must": true,
-          "lat": 52.51638889,
-          "lon": 13.37777778,
-          "kind": "sight",
-          "note": "The obvious one, and still worth standing in front of.",
-          "ticket": false,
-          "at": 85,
-          "leaveBy": 115,
-          "extra": false
-         },
-         {
-          "to": "Museum Island",
-          "mins": 18,
-          "how": {
-           "mins": 18,
-           "mode": "ride",
-           "line": "S2",
-           "vehicle": "METRO",
-           "from": "S+U Brandenburger Tor (Berlin)",
-           "to": "S+U Friedrichstr. Bhf (Berlin)",
-           "walkInstead": 24
-          },
-          "visit": 180,
-          "backFromHere": 18,
-          "backHow": {
-           "mins": 18,
-           "mode": "ride",
-           "line": "S7",
-           "vehicle": "METRO",
-           "from": "S+U Friedrichstr. Bhf (Berlin)",
-           "to": "S+U Berlin Hauptbahnhof",
-           "walkInstead": null
-          },
-          "must": false,
-          "lat": 52.52138889,
-          "lon": 13.39555556,
-          "kind": "museum",
-          "note": "Five museums on one island. The Pergamon's Ishtar Gate is the highlight.",
-          "ticket": true,
-          "at": 133,
-          "leaveBy": 313,
-          "extra": false
-         },
-         {
-          "to": "Berlin Cathedral",
-          "mins": 15,
-          "how": {
-           "mins": 15,
-           "mode": "walk"
-          },
-          "visit": 60,
-          "backFromHere": 17,
-          "backHow": {
-           "mins": 17,
-           "mode": "ride",
-           "line": "S5",
-           "vehicle": "METRO",
-           "from": "S Hackescher Markt (Berlin)",
-           "to": "S+U Berlin Hauptbahnhof",
-           "walkInstead": null
-          },
-          "must": false,
-          "lat": 52.51916667,
-          "lon": 13.40111111,
-          "kind": "church",
-          "note": "Climb to the dome walkway for the view over the island.",
-          "ticket": true,
-          "at": 328,
-          "leaveBy": 388,
-          "extra": false
-         }
-        ],
-        "back": 17,
-        "walkTotal": 95,
-        "visitTotal": 310,
-        "needs": 405,
-        "fitted": 4,
-        "dropped": 0,
-        "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Berlin%20Hauptbahnhof&destination=Berlin%20Hauptbahnhof&waypoints=Gendarmenmarkt%2C%20Berlin%7CBrandenburg%20Gate%2C%20Berlin%7CMuseum%20Island%2C%20Berlin%7CBerlin%20Cathedral%2C%20Berlin",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Berlin%20Hauptbahnhof&destination=Berlin%20Hauptbahnhof&waypoints=Gendarmenmarkt%2C%20Berlin%7CBrandenburg%20Gate%2C%20Berlin%7CMuseum%20Island%2C%20Berlin%7CBerlin%20Cathedral%2C%20Berlin",
-        "town": "Berlin, Germany"
-       }
-      }
-     ],
-     "from": "erfurt",
-     "to": "berlin",
-     "title": null,
-     "intro": null,
-     "hero": null,
-     "bags": null,
-     "ride": 279,
-     "stops": 2,
-     "endArr": "17:17",
-     "startDep": "10:36",
-     "steps": [
-      {
-       "day": 5,
-       "path": "B",
-       "t": "08:00",
-       "kind": "arrive",
-       "place": "erfurt",
-       "title": "You are in Erfurt",
-       "ll": [
-        50.9723,
-        11.038
-       ],
-       "station": "Erfurt Hauptbahnhof",
-       "say": "2 h 36 min here, until the 10:36 on. Fifteen minutes up the Anger, or tram 3, 4 or 6 to Domplatz.",
-       "free": 156,
-       "dep": "10:36"
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "erfurt",
-       "title": "Fischmarkt",
-       "ll": [
-        50.97777778,
-        11.02888889
-       ],
-       "sight": "erfurt/Fischmarkt",
-       "move": "15 min walk.",
-       "rode": false,
-       "mins": 15,
-       "visit": 45,
-       "say": "Renaissance houses and the town hall. Dinner here.",
-       "offset": 15,
-       "until": 60,
-       "ticket": false
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "erfurt",
-       "title": "Krämerbrücke",
-       "ll": [
-        50.9787455,
-        11.0307747
-       ],
-       "sight": "erfurt/Krämerbrücke",
-       "move": "3 min walk.",
-       "rode": false,
-       "mins": 3,
-       "visit": 45,
-       "say": "A bridge with houses on it, lived in continuously since 1325.",
-       "offset": 63,
-       "until": 108,
-       "ticket": false
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": "10:36",
-       "kind": "back",
-       "place": "erfurt",
-       "title": "Back to Erfurt Hauptbahnhof",
-       "ll": [
-        50.9723,
-        11.038
-       ],
-       "mins": 15,
-       "say": "15 min back to the station. Aim to be on the platform by 10:36."
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": "10:36",
-       "kind": "ride",
-       "title": "Train to Weimar",
-       "line": "RE16",
-       "from": "Erfurt Hauptbahnhof",
-       "to": "Bahnhof Weimar",
-       "dep": "10:36",
-       "arr": "10:50",
-       "dur": 14,
-       "changes": 0,
-       "track": null,
-       "ll": [
-        50.9723,
-        11.038
-       ],
-       "toLL": [
-        50.993,
-        11.3253
-       ],
-       "place": "erfurt",
-       "toPlace": "weimar",
-       "say": "14 minutes, straight through.",
-       "note": ""
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": "10:50",
-       "kind": "arrive",
-       "place": "weimar",
-       "title": "You are in Weimar",
-       "ll": [
-        50.993,
-        11.3253
-       ],
-       "station": "Bahnhof Weimar",
-       "say": "2 h 2 min here, until the 12:52 on. Fifteen minutes downhill into the centre.",
-       "free": 122,
-       "dep": "12:52"
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "weimar",
-       "title": "Marktplatz",
-       "ll": [
-        50.97944444,
-        11.32972222
-       ],
-       "sight": "weimar/Marktplatz",
-       "move": "Take the 8 — 23 min, instead of 29 on foot.",
-       "rode": true,
-       "mins": 23,
-       "visit": 30,
-       "say": "Town hall and the Cranach house, with the old Elephant hotel.",
-       "offset": 23,
-       "until": 53,
-       "ticket": false
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "weimar",
-       "title": "Theaterplatz",
-       "ll": [
-        50.97956111,
-        11.32468333
-       ],
-       "sight": "weimar/Theaterplatz",
-       "move": "7 min walk.",
-       "rode": false,
-       "mins": 7,
-       "visit": 20,
-       "say": "The Goethe and Schiller statue stands in front of the theatre.",
-       "offset": 60,
-       "until": 80,
-       "ticket": false
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": "12:52",
-       "kind": "back",
-       "place": "weimar",
-       "title": "Back to Bahnhof Weimar",
-       "ll": [
-        50.993,
-        11.3253
-       ],
-       "mins": 20,
-       "say": "20 min back to the station. Aim to be on the platform by 12:52."
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": "12:52",
-       "kind": "ride",
-       "title": "Train to Berlin",
-       "line": "RE16",
-       "from": "Bahnhof Weimar",
-       "to": "Berlin Hauptbahnhof",
-       "dep": "12:52",
-       "arr": "17:17",
-       "dur": 265,
-       "changes": 2,
-       "track": null,
-       "ll": [
-        50.993,
-        11.3253
-       ],
-       "toLL": [
-        52.525,
-        13.3694
-       ],
-       "place": "weimar",
-       "toPlace": "berlin",
-       "say": "265 minutes and 2 changes — RE16, then S8, then RE3.",
-       "note": "Changes at Naumburg and Halle."
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": "17:17",
-       "kind": "arrive",
-       "place": "berlin",
-       "title": "You are in Berlin",
-       "ll": [
-        52.525,
-        13.3694
-       ],
-       "station": "Berlin Hauptbahnhof",
-       "say": "This is where you sleep tonight. You have arrived. Berlin Hauptbahnhof.",
-       "free": null,
-       "dep": null
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "berlin",
-       "title": "Gendarmenmarkt",
-       "ll": [
-        52.51333333,
-        13.39305556
-       ],
-       "sight": "berlin/Gendarmenmarkt",
-       "move": "Take the U5 — 25 min, instead of null on foot.",
-       "rode": true,
-       "mins": 25,
-       "visit": 40,
-       "say": "Two matching cathedrals and the concert hall. The handsomest square in Berlin.",
-       "offset": 25,
-       "until": 65,
-       "ticket": false
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "berlin",
-       "title": "Brandenburg Gate",
-       "ll": [
-        52.51638889,
-        13.37777778
-       ],
-       "sight": "berlin/Brandenburg Gate",
-       "move": "20 min walk.",
-       "rode": false,
-       "mins": 20,
-       "visit": 30,
-       "say": "The obvious one, and still worth standing in front of.",
-       "offset": 85,
-       "until": 115,
-       "ticket": false
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "berlin",
-       "title": "Museum Island",
-       "ll": [
-        52.52138889,
-        13.39555556
-       ],
-       "sight": "berlin/Museum Island",
-       "move": "Take the S2 — 18 min, instead of 24 on foot.",
-       "rode": true,
-       "mins": 18,
-       "visit": 180,
-       "say": "Five museums on one island. The Pergamon's Ishtar Gate is the highlight.",
-       "offset": 133,
-       "until": 313,
-       "ticket": true
-      },
-      {
-       "day": 5,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "berlin",
-       "title": "Berlin Cathedral",
-       "ll": [
-        52.51916667,
-        13.40111111
-       ],
-       "sight": "berlin/Berlin Cathedral",
-       "move": "15 min walk.",
-       "rode": false,
-       "mins": 15,
-       "visit": 60,
-       "say": "Climb to the dome walkway for the view over the island.",
-       "offset": 328,
-       "until": 388,
-       "ticket": true
-      },
-      {
-       "day": 5,
-       "path": "B",
        "t": null,
        "kind": "sleep",
        "place": "berlin",
@@ -8925,8 +8538,8 @@
    "src": "pinned",
    "km": 0.36,
    "wiki": "https://de.wikipedia.org/wiki/Oberau",
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg",
-   "photoFile": "Loisachtal südlich von Oberau Juni 2020 2.jpg",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg",
+   "photoFile": "Loisachtal südlich von Oberau Juni 2020 1.jpg",
    "about": ""
   },
   "ettal": {
@@ -9165,24 +8778,24 @@
    "src": "pinned",
    "km": 1.33,
    "wiki": "https://de.wikipedia.org/wiki/Halle_(Saale)",
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_009.jpg",
-   "photoFile": "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg/1200px-Halle_%28Saale%29%2C_Marktplatz%2C_Roter_Turm_20170718_002.jpg",
+   "photoFile": "Halle (Saale), Marktplatz, Roter Turm 20170718 002.jpg",
    "about": ""
   },
-  "wittenberg": {
-   "n": "Wittenberg",
-   "q": "Lutherstadt Wittenberg Hauptbahnhof",
-   "w": "Lutherstadt Wittenberg",
-   "stn": "Bahnhof Lutherstadt Wittenberg",
+  "leipzig": {
+   "n": "Leipzig",
+   "q": "Leipzig Hauptbahnhof",
+   "w": "Leipzig",
+   "stn": "Leipzig Hauptbahnhof",
    "country": "DE",
-   "lat": 51.865,
-   "lon": 12.662,
-   "name": "Bahnhof Lutherstadt Wittenberg",
+   "lat": 51.345,
+   "lon": 12.381,
+   "name": "Leipzig Hauptbahnhof",
    "src": "pinned",
-   "km": 1.28,
-   "wiki": "https://de.wikipedia.org/wiki/Lutherstadt_Wittenberg",
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Lutherstadt_Wittenberg%2C_die_Schlossstra%C3%9Fe%2C_Turm_der_Schlosskirche.jpg/1200px-Lutherstadt_Wittenberg%2C_die_Schlossstra%C3%9Fe%2C_Turm_der_Schlosskirche.jpg",
-   "photoFile": "Lutherstadt Wittenberg, die Schlossstraße, Turm der Schlosskirche.jpg",
+   "km": 0.68,
+   "wiki": "https://de.wikipedia.org/wiki/Leipzig",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/PD_Leipzig.jpg/1200px-PD_Leipzig.jpg",
+   "photoFile": "PD Leipzig.jpg",
    "about": ""
   },
   "fulda": {
@@ -12387,7 +12000,7 @@
    "place": "erfurt",
    "name": "Anger",
    "note": "The wide shopping street between the station and the old town.",
-   "mins": 30,
+   "mins": 20,
    "kind": "street",
    "ticket": false,
    "indoor": false,
@@ -12405,7 +12018,7 @@
    "place": "erfurt",
    "name": "Merchants' Bridge shops",
    "note": "Thirty-two houses on the bridge, with workshops in the ground floors.",
-   "mins": 40,
+   "mins": 25,
    "kind": "shop",
    "ticket": false,
    "indoor": false,
@@ -12459,7 +12072,7 @@
    "place": "erfurt",
    "name": "Krämerbrücke",
    "note": "A bridge with houses on it, lived in continuously since 1325.",
-   "mins": 45,
+   "mins": 30,
    "kind": "street",
    "ticket": false,
    "indoor": false,
@@ -12477,7 +12090,7 @@
    "place": "erfurt",
    "name": "Domplatz",
    "note": "Cathedral and St Severi side by side above a huge open square.",
-   "mins": 40,
+   "mins": 20,
    "kind": "square",
    "ticket": false,
    "indoor": false,
@@ -12531,7 +12144,7 @@
    "place": "erfurt",
    "name": "Fischmarkt",
    "note": "Renaissance houses and the town hall. Dinner here.",
-   "mins": 45,
+   "mins": 25,
    "kind": "square",
    "ticket": false,
    "indoor": false,
@@ -12659,7 +12272,7 @@
    "place": "weimar",
    "name": "Goethe's House",
    "note": "On Frauenplan. He lived here for fifty years; it is exactly as he left it.",
-   "mins": 75,
+   "mins": 60,
    "kind": "museum",
    "ticket": true,
    "indoor": true,
@@ -12843,7 +12456,7 @@
    "place": "naumburg",
    "name": "Marktplatz",
    "note": "Late-Gothic town hall and burgher houses.",
-   "mins": 30,
+   "mins": 20,
    "kind": "square",
    "ticket": false,
    "indoor": false,
@@ -12875,18 +12488,72 @@
    "wiki": "https://de.wikipedia.org/wiki/Stadtkirche_St._Wenzel_(Naumburg)",
    "about": ""
   },
+  "naumburg/Salztor and the Saale": {
+   "place": "naumburg",
+   "name": "Salztor and the Saale",
+   "note": "The old salt gate at the bottom of the town, and the river path below it.",
+   "mins": 25,
+   "kind": "street",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 51.1479,
+   "lon": 11.8028,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Salztor_Naumburg.JPG/640px-Salztor_Naumburg.JPG",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Salztor_Naumburg.JPG/1000px-Salztor_Naumburg.JPG",
+   "photoFile": "Salztor Naumburg.JPG",
+   "wiki": "https://de.wikipedia.org/wiki/Naumburg_(Saale)",
+   "about": ""
+  },
+  "naumburg/Marienstraße": {
+   "place": "naumburg",
+   "name": "Marienstraße",
+   "note": "The old street between the market and the Marientor, timber-framed most of the way.",
+   "mins": 25,
+   "kind": "street",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 51.1523,
+   "lon": 11.8083,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Marienstra%C3%9Fe_Naumburg_St._Wenzel.jpg/640px-Marienstra%C3%9Fe_Naumburg_St._Wenzel.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Marienstra%C3%9Fe_Naumburg_St._Wenzel.jpg/1000px-Marienstra%C3%9Fe_Naumburg_St._Wenzel.jpg",
+   "photoFile": "Marienstraße_Naumburg_St._Wenzel.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Marienstra%C3%9Fe_(Naumburg)",
+   "about": ""
+  },
+  "naumburg/The historic tram": {
+   "place": "naumburg",
+   "name": "The historic tram",
+   "note": "One line, one carriage, running since 1892. It goes from the Hbf to the cathedral.",
+   "mins": 20,
+   "kind": "sight",
+   "ticket": true,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 51.1538,
+   "lon": 11.7992,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Strassenbahn-nmb-tw36undtw51_depot.jpg/640px-Strassenbahn-nmb-tw36undtw51_depot.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Strassenbahn-nmb-tw36undtw51_depot.jpg/1000px-Strassenbahn-nmb-tw36undtw51_depot.jpg",
+   "photoFile": "Strassenbahn-nmb-tw36undtw51_depot.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Stra%C3%9Fenbahn_Naumburg",
+   "about": ""
+  },
   "naumburg/Saale-Unstrut wine": {
    "place": "naumburg",
    "name": "Saale-Unstrut wine",
-   "note": "The northernmost quality wine region in Europe.",
-   "mins": 60,
+   "note": "The northernmost quality wine region in Europe. The taverns round the market pour it by the glass.",
+   "mins": 45,
    "kind": "food",
    "ticket": false,
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 51.1506,
+   "lon": 11.809,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Weinstrasse_Unstrut.jpg/640px-Weinstrasse_Unstrut.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Weinstrasse_Unstrut.jpg/1000px-Weinstrasse_Unstrut.jpg",
    "photoFile": "Weinstrasse_Unstrut.jpg",
@@ -13239,7 +12906,7 @@
    "place": "halle",
    "name": "Marktplatz and the Red Tower",
    "note": "Five towers over one square — four on the church, one standing alone.",
-   "mins": 40,
+   "mins": 25,
    "kind": "square",
    "ticket": false,
    "indoor": false,
@@ -13257,7 +12924,7 @@
    "place": "halle",
    "name": "Market Church",
    "note": "Luther preached here; his death mask is upstairs.",
-   "mins": 40,
+   "mins": 25,
    "kind": "church",
    "ticket": false,
    "indoor": true,
@@ -13327,6 +12994,62 @@
    "wiki": "https://de.wikipedia.org/wiki/Burg_Giebichenstein",
    "about": ""
   },
+  "halle/Halle Cathedral": {
+   "place": "halle",
+   "name": "Halle Cathedral",
+   "note": "Plain outside, and the oldest church in the city. Handel played the organ here.",
+   "mins": 25,
+   "kind": "church",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": false,
+   "lat": 51.4832,
+   "lon": 11.9653,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Dom_Halle.jpg/640px-Dom_Halle.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Dom_Halle.jpg/1000px-Dom_Halle.jpg",
+   "photoFile": "Dom_Halle.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Hallescher_Dom",
+   "about": ""
+  },
+  "halle/The Nebra Sky Disc": {
+   "place": "halle",
+   "name": "The Nebra Sky Disc",
+   "note": "The oldest known map of the stars, 3600 years old, in the prehistory museum.",
+   "mins": 75,
+   "kind": "museum",
+   "ticket": true,
+   "indoor": true,
+   "closed": [
+    1
+   ],
+   "must": true,
+   "lat": 51.4915,
+   "lon": 11.9734,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Fundort_der_Himmelsscheibe_von_Nebra_20210913_HOF05567.jpg/640px-Fundort_der_Himmelsscheibe_von_Nebra_20210913_HOF05567.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Fundort_der_Himmelsscheibe_von_Nebra_20210913_HOF05567.jpg/1000px-Fundort_der_Himmelsscheibe_von_Nebra_20210913_HOF05567.jpg",
+   "photoFile": "Fundort der Himmelsscheibe von Nebra 20210913 HOF05567.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Landesmuseum_f%C3%BCr_Vorgeschichte_(Halle_(Saale))",
+   "about": ""
+  },
+  "halle/Francke Foundations": {
+   "place": "halle",
+   "name": "Francke Foundations",
+   "note": "A whole school town from 1698, with a cabinet of curiosities still in its original cases.",
+   "mins": 60,
+   "kind": "museum",
+   "ticket": true,
+   "indoor": true,
+   "closed": null,
+   "must": false,
+   "lat": 51.4781,
+   "lon": 11.9723,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Historisches_Waisenhaus_der_Franckeschen_Stiftungen.jpg/640px-Historisches_Waisenhaus_der_Franckeschen_Stiftungen.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Historisches_Waisenhaus_der_Franckeschen_Stiftungen.jpg/1000px-Historisches_Waisenhaus_der_Franckeschen_Stiftungen.jpg",
+   "photoFile": "Historisches_Waisenhaus_der_Franckeschen_Stiftungen.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Franckesche_Stiftungen",
+   "about": ""
+  },
   "halle/Halloren chocolate": {
    "place": "halle",
    "name": "Halloren chocolate",
@@ -13345,112 +13068,150 @@
    "wiki": "https://de.wikipedia.org/wiki/Halloren_Schokoladenfabrik",
    "about": ""
   },
-  "wittenberg/Castle Church": {
-   "place": "wittenberg",
-   "name": "Castle Church",
-   "note": "The door where the 95 theses went up in 1517. UNESCO, and the reason for the town.",
-   "mins": 50,
-   "kind": "church",
+  "leipzig/Hauptbahnhof": {
+   "place": "leipzig",
+   "name": "Hauptbahnhof",
+   "note": "The largest railway terminus in Europe by floor area, and a shopping street on two levels inside it.",
+   "mins": 25,
+   "kind": "sight",
    "ticket": false,
-   "indoor": true,
-   "closed": null,
-   "must": true,
-   "lat": 51.866369,
-   "lon": 12.637947,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg/640px-Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg/1000px-Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg",
-   "photoFile": "Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Schlosskirche_(Lutherstadt_Wittenberg)",
-   "about": ""
-  },
-  "wittenberg/Town Church of St Mary": {
-   "place": "wittenberg",
-   "name": "Town Church of St Mary",
-   "note": "Where Luther actually preached, with Cranach's altarpiece.",
-   "mins": 40,
-   "kind": "church",
-   "ticket": false,
-   "indoor": true,
-   "closed": null,
-   "must": true,
-   "lat": 51.86649722,
-   "lon": 12.64479444,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Stadtkirche_Wittenberg_09_2015.JPG/640px-Stadtkirche_Wittenberg_09_2015.JPG",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Stadtkirche_Wittenberg_09_2015.JPG/1000px-Stadtkirche_Wittenberg_09_2015.JPG",
-   "photoFile": "Stadtkirche_Wittenberg_09_2015.JPG",
-   "wiki": "https://de.wikipedia.org/wiki/Stadtkirche_Lutherstadt_Wittenberg",
-   "about": ""
-  },
-  "wittenberg/Luther House": {
-   "place": "wittenberg",
-   "name": "Luther House",
-   "note": "The monastery he lived in for 35 years — the largest Reformation museum there is.",
-   "mins": 90,
-   "kind": "museum",
-   "ticket": true,
-   "indoor": true,
-   "closed": null,
-   "must": true,
-   "lat": 51.86416667,
-   "lon": 12.6525,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Augusteum_-_Lutherhaus_Wittenberg.jpg/640px-Augusteum_-_Lutherhaus_Wittenberg.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Augusteum_-_Lutherhaus_Wittenberg.jpg/1000px-Augusteum_-_Lutherhaus_Wittenberg.jpg",
-   "photoFile": "Augusteum_-_Lutherhaus_Wittenberg.jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Augusteum_und_Lutherhaus_Wittenberg",
-   "about": ""
-  },
-  "wittenberg/Melanchthon House": {
-   "place": "wittenberg",
-   "name": "Melanchthon House",
-   "note": "The quieter scholar next door, in a Renaissance house with its garden.",
-   "mins": 50,
-   "kind": "museum",
-   "ticket": true,
    "indoor": true,
    "closed": null,
    "must": false,
-   "lat": 51.864792,
-   "lon": 12.650966,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Lutherstadt_Wittenberg_09-2016_photo10.jpg/640px-Lutherstadt_Wittenberg_09-2016_photo10.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Lutherstadt_Wittenberg_09-2016_photo10.jpg/1000px-Lutherstadt_Wittenberg_09-2016_photo10.jpg",
-   "photoFile": "Lutherstadt_Wittenberg_09-2016_photo10.jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Melanchthonhaus_Wittenberg",
+   "lat": 51.345278,
+   "lon": 12.382222,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/LE_Hauptbahnhof-4.jpg/640px-LE_Hauptbahnhof-4.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/LE_Hauptbahnhof-4.jpg/1000px-LE_Hauptbahnhof-4.jpg",
+   "photoFile": "LE_Hauptbahnhof-4.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Leipzig_Hauptbahnhof",
    "about": ""
   },
-  "wittenberg/Markt and the Cranach houses": {
-   "place": "wittenberg",
-   "name": "Markt and the Cranach houses",
-   "note": "Town hall, the two statues, and the painter's courtyards behind the square.",
-   "mins": 45,
+  "leipzig/Marktplatz and the Old Town Hall": {
+   "place": "leipzig",
+   "name": "Marktplatz and the Old Town Hall",
+   "note": "One of the last great Renaissance town halls in Germany, the whole length of the square.",
+   "mins": 40,
    "kind": "square",
    "ticket": false,
    "indoor": false,
    "closed": null,
    "must": true,
-   "lat": 51.86644,
-   "lon": 12.64351,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg/640px-Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg/1000px-Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg",
-   "photoFile": "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Lutherstadt_Wittenberg",
+   "lat": 51.34030833,
+   "lon": 12.37538056,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Old_city_hall_of_Leipzig_%2820%29.jpg/640px-Old_city_hall_of_Leipzig_%2820%29.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Old_city_hall_of_Leipzig_%2820%29.jpg/1000px-Old_city_hall_of_Leipzig_%2820%29.jpg",
+   "photoFile": "Old_city_hall_of_Leipzig_(20).jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Altes_Rathaus_(Leipzig)",
    "about": ""
   },
-  "wittenberg/Luther's Oak": {
-   "place": "wittenberg",
-   "name": "Luther's Oak",
-   "note": "Where he burned the papal bull in 1520. Five minutes east of the Lutherhaus.",
-   "mins": 15,
-   "kind": "sight",
+  "leipzig/Mädler Passage": {
+   "place": "leipzig",
+   "name": "Mädler Passage",
+   "note": "Glass-roofed arcade with Auerbachs Keller under it — the cellar Goethe put in Faust.",
+   "mins": 40,
+   "kind": "shop",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": true,
+   "lat": 51.33944444,
+   "lon": 12.37555556,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Leipzig-M%C3%A4dlerpassage-vor-Auerbachs-Keller-IMG_6674-9x5B-360x180G-PanoS-09-04-2024.jpg/640px-Leipzig-M%C3%A4dlerpassage-vor-Auerbachs-Keller-IMG_6674-9x5B-360x180G-PanoS-09-04-2024.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Leipzig-M%C3%A4dlerpassage-vor-Auerbachs-Keller-IMG_6674-9x5B-360x180G-PanoS-09-04-2024.jpg/1000px-Leipzig-M%C3%A4dlerpassage-vor-Auerbachs-Keller-IMG_6674-9x5B-360x180G-PanoS-09-04-2024.jpg",
+   "photoFile": "Leipzig-Mädlerpassage-vor-Auerbachs-Keller-IMG_6674-9x5B-360x180G-PanoS-09-04-2024.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/M%C3%A4dlerpassage",
+   "about": ""
+  },
+  "leipzig/St Thomas Church": {
+   "place": "leipzig",
+   "name": "St Thomas Church",
+   "note": "Bach was cantor here for 27 years and is buried in front of the altar. The boys' choir still sings.",
+   "mins": 45,
+   "kind": "church",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": true,
+   "lat": 51.33916667,
+   "lon": 12.3725,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Leipzig_Thomaskirche.jpg/640px-Leipzig_Thomaskirche.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Leipzig_Thomaskirche.jpg/1000px-Leipzig_Thomaskirche.jpg",
+   "photoFile": "Leipzig_Thomaskirche.jpg",
+   "wiki": "https://en.wikipedia.org/wiki/St._Thomas_Church%2C_Leipzig",
+   "about": "The St. Thomas Church is a Lutheran church in Leipzig, Germany, located at the western part of the inner city ring road in Leipzig's central district."
+  },
+  "leipzig/Bach Museum": {
+   "place": "leipzig",
+   "name": "Bach Museum",
+   "note": "Across the square from the church, in the house of the family he worked for.",
+   "mins": 60,
+   "kind": "museum",
+   "ticket": true,
+   "indoor": true,
+   "closed": [
+    1
+   ],
+   "must": false,
+   "lat": 51.33874,
+   "lon": 12.3723,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Bosehaus_Leipzig_Stra%C3%9Fenfront_1.jpg/640px-Bosehaus_Leipzig_Stra%C3%9Fenfront_1.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Bosehaus_Leipzig_Stra%C3%9Fenfront_1.jpg/1000px-Bosehaus_Leipzig_Stra%C3%9Fenfront_1.jpg",
+   "photoFile": "Bosehaus_Leipzig_Straßenfront_1.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Bach-Museum_Leipzig",
+   "about": ""
+  },
+  "leipzig/Nikolaikirche": {
+   "place": "leipzig",
+   "name": "Nikolaikirche",
+   "note": "The Monday prayers here turned into the demonstrations that brought the Wall down.",
+   "mins": 30,
+   "kind": "church",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": true,
+   "lat": 51.34026389,
+   "lon": 12.37856389,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Nicolaikirche_Leipzig.jpg/640px-Nicolaikirche_Leipzig.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Nicolaikirche_Leipzig.jpg/1000px-Nicolaikirche_Leipzig.jpg",
+   "photoFile": "Nicolaikirche_Leipzig.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Nikolaikirche_(Leipzig)",
+   "about": ""
+  },
+  "leipzig/Augustusplatz": {
+   "place": "leipzig",
+   "name": "Augustusplatz",
+   "note": "The opera at one end, the Gewandhaus at the other, and the university tower above.",
+   "mins": 30,
+   "kind": "square",
    "ticket": false,
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Luthereiche_in_Wittenberg.jpg/640px-Luthereiche_in_Wittenberg.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Luthereiche_in_Wittenberg.jpg/1000px-Luthereiche_in_Wittenberg.jpg",
-   "photoFile": "Luthereiche_in_Wittenberg.jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Luthereiche",
+   "lat": 51.33916667,
+   "lon": 12.38083333,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Augustusplatz_Leipzig_2019.jpg/640px-Augustusplatz_Leipzig_2019.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Augustusplatz_Leipzig_2019.jpg/1000px-Augustusplatz_Leipzig_2019.jpg",
+   "photoFile": "Augustusplatz_Leipzig_2019.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Augustusplatz",
+   "about": ""
+  },
+  "leipzig/Leipzig coffee": {
+   "place": "leipzig",
+   "name": "Leipzig coffee",
+   "note": "One of the oldest coffee houses in Europe, pouring since 1711.",
+   "mins": 45,
+   "kind": "food",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": false,
+   "lat": 51.341081,
+   "lon": 12.372935,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Kaffebaum_Leipzig%2C_Portalrelief.JPG/640px-Kaffebaum_Leipzig%2C_Portalrelief.JPG",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Kaffebaum_Leipzig%2C_Portalrelief.JPG/1000px-Kaffebaum_Leipzig%2C_Portalrelief.JPG",
+   "photoFile": "Kaffebaum_Leipzig,_Portalrelief.JPG",
+   "wiki": "https://de.wikipedia.org/wiki/Zum_Arabischen_Coffe_Baum",
    "about": ""
   },
   "magdeburg/Magdeburg Cathedral": {
@@ -13959,6 +13720,10 @@
   }
  },
  "credits": {
+  "PD Leipzig.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "de:Benutzer:Wiprecht"
+  },
   "Rothenburg BW 4.JPG": {
    "lic": "Public domain",
    "by": "Berthold Werner"
@@ -14047,7 +13812,7 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "© Ra Boe / Wikipedia"
   },
-  "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg": {
+  "Halle (Saale), Marktplatz, Roter Turm 20170718 002.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Tilman2007"
   },
@@ -14071,7 +13836,7 @@
    "lic": "CC0",
    "by": "Christoph Braun"
   },
-  "Loisachtal südlich von Oberau Juni 2020 2.jpg": {
+  "Loisachtal südlich von Oberau Juni 2020 1.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kajebi II."
   },
@@ -14102,10 +13867,6 @@
   "Kloster Ettal und Basilika.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Cayambe"
-  },
-  "Lutherstadt Wittenberg, die Schlossstraße, Turm der Schlosskirche.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
   },
   "(27357) Magdeburg, Dom und Elbe (cropped).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14755,10 +14516,6 @@
    "lic": "CC BY 4.0",
    "by": "Kent Wang"
   },
-  "Halberstadt St-Burchardi-Kirche.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "unknown"
-  },
   "Quedlinburg Ständerbau.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
@@ -14770,6 +14527,10 @@
   "Augustinerkirche Erfurt.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Lukas Götz"
+  },
+  "Strassenbahn-nmb-tw36undtw51 depot.jpg": {
+   "lic": "CC BY-SA 2.0 de",
+   "by": "The original uploader was ChristianBier at German Wikipedia."
   },
   "Weimar Wittumspalais.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -14795,6 +14556,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Most Curious"
   },
+  "Salztor Naumburg.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Olaf Meister"
+  },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Denkhenk"
@@ -14818,10 +14583,6 @@
   "MK38365-69 Fischmarkt (Erfurt).jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Martin Kraft"
-  },
-  "Roter Turm Halle 2009.jpg": {
-   "lic": "CC BY-SA 3.0 de",
-   "by": "de:Benutzer:OmiTs"
   },
   "00 4092 Wernigerode - Harzquerbahn.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14875,6 +14636,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
   },
+  "Marienstraße Naumburg St. Wenzel.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Pomfuttge"
+  },
   "Dom Halberstadt von Südosten.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Barnos"
@@ -14882,10 +14647,6 @@
   "Halberstadt, Fischmarkt und Rathaus (Rückseite).jpg": {
    "lic": "CC BY 4.0",
    "by": "Dguendel"
-  },
-  "Halle(Saale) Marktkirche asv2024-04.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
   },
   "BD Nitzsche Haus, Naumburg (1).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14915,6 +14676,14 @@
    "lic": "CC0",
    "by": "Romzig"
   },
+  "Leipzig Thomaskirche.jpg": {
+   "lic": "Public domain",
+   "by": "Dirk Goldhahn"
+  },
+  "Halberstadt St-Burchardi-Kirche.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "unknown"
+  },
   "Botanischer-garten-jena-rs-786x512.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
@@ -14935,9 +14704,21 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "Joachim F. Thurn"
   },
-  "Stadtkirche St. Michael in Jena 2008-05-24.jpg": {
+  "Kaffebaum Leipzig, Portalrelief.JPG": {
    "lic": "CC BY-SA 3.0",
-   "by": "Henry Mühlpfordt"
+   "by": "© Foto H.-P.Haack"
+  },
+  "Dom Halle.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "White shark"
+  },
+  "LE Hauptbahnhof-4.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Appaloosa"
+  },
+  "Nicolaikirche Leipzig.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "JesterWr"
   },
   "Berlin Museumsinsel Fernsehturm.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -14959,13 +14740,9 @@
    "lic": "FAL",
    "by": "Taxiarchos228"
   },
-  "140823 Märchendom Saalfelder Feengrotten.jpg": {
-   "lic": "CC BY 3.0 de",
-   "by": "Ansgar Koreng"
-  },
-  "Saalfeld Obere Torgasse 29 Sachteil Stadtmauer Bestandteil Denkmalensemble \"Stadtkern Saalfeld-Saale\".jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "NoRud"
+  "Bosehaus Leipzig Straßenfront 1.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Geisler Martin"
   },
   "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
    "lic": "CC BY 3.0 de",
@@ -14975,33 +14752,25 @@
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Voigt"
   },
-  "Stadtkirche Wittenberg 09 2015.JPG": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Concord"
-  },
-  "Augusteum - Lutherhaus Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
-  },
-  "Luthereiche in Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Markus Sturzbecher"
+  "Roter Turm Halle 2009.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "de:Benutzer:OmiTs"
   },
   "Halloren-Winter-Edition-3.jpg": {
    "lic": "CC BY 4.0",
    "by": "WiseWoman"
   },
-  "Lutherstadt Wittenberg 09-2016 photo10.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
-  },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Alexander Blum"
   },
-  "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
+  "Augustusplatz Leipzig 2019.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Kora27"
+   "by": "Martin Geisler"
+  },
+  "Old city hall of Leipzig (20).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Krzysztof Golik"
   },
   "Magdeburger Dom Luftbild.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -15023,6 +14792,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Barnos"
   },
+  "Fundort der Himmelsscheibe von Nebra 20210913 HOF05567.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "PantheraLeo1359531"
+  },
   "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
    "lic": "FAL",
    "by": "A.Savin"
@@ -15043,21 +14816,41 @@
    "lic": "CC BY 4.0",
    "by": "Chainwit."
   },
-  "Schlosskirche Wittenberg Luftbild 2024 Toni Klemm.jpg": {
+  "Leipzig-Mädlerpassage-vor-Auerbachs-Keller-IMG 6674-9x5B-360x180G-PanoS-09-04-2024.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Toniklemm"
+   "by": "Joachim Köhler"
+  },
+  "Halle(Saale) Marktkirche asv2024-04.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Historisches Waisenhaus der Franckeschen Stiftungen.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Uwe Gaasch"
   },
   "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Barnos"
   },
-  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
-  },
   "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
    "lic": "Public domain",
    "by": "Władysław Skoczylas"
+  },
+  "Stadtkirche St. Michael in Jena 2008-05-24.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Henry Mühlpfordt"
+  },
+  "140823 Märchendom Saalfelder Feengrotten.jpg": {
+   "lic": "CC BY 3.0 de",
+   "by": "Ansgar Koreng"
+  },
+  "Saalfeld Obere Torgasse 29 Sachteil Stadtmauer Bestandteil Denkmalensemble \"Stadtkern Saalfeld-Saale\".jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "NoRud"
+  },
+  "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kora27"
   }
  },
  "presets": [
@@ -15101,8 +14894,8 @@
     {
      "n": 5,
      "pathId": "A",
-     "name": "Weimar, Naumburg, Halle, Wittenberg",
-     "endArr": "22:18"
+     "name": "Weimar, Naumburg, Halle, Leipzig",
+     "endArr": "22:14"
     }
    ],
    "beds": [
@@ -15148,13 +14941,13 @@
     "weimar",
     "naumburg",
     "halle",
-    "wittenberg",
+    "leipzig",
     "berlin"
    ],
-   "ride": 934,
+   "ride": 1001,
    "stops": 16,
-   "latest": "22:18",
-   "arrive": "22:18"
+   "latest": "22:14",
+   "arrive": "22:14"
   }
  ]
 }

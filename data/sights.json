@@ -2865,6 +2865,51 @@
    "file": "Naumburg_stwenzel.jpg",
    "extract": "Die evangelisch-lutherische Stadtkirche St. Wenzel am Marktplatz von Naumburg ist die Hauptkirche der Stadt außerhalb des geistlichen Bezirks der ehemaligen Domfreiheit."
   },
+  "naumburg/Salztor and the Saale": {
+   "ok": true,
+   "w": "Naumburg (Saale)",
+   "ct": "Salztor Naumburg",
+   "lang": "de",
+   "title": "Naumburg (Saale)",
+   "url": "https://de.wikipedia.org/wiki/Naumburg_(Saale)",
+   "lat": 51.1525,
+   "lon": 11.80999,
+   "wd": "Q15986",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Salztor_Naumburg.JPG/640px-Salztor_Naumburg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Salztor_Naumburg.JPG/1000px-Salztor_Naumburg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Salztor Naumburg.JPG",
+   "extract": ""
+  },
+  "naumburg/Marienstraße": {
+   "ok": true,
+   "w": "Marienstraße (Naumburg)",
+   "ct": null,
+   "lang": "de",
+   "title": "Marienstraße (Naumburg)",
+   "url": "https://de.wikipedia.org/wiki/Marienstra%C3%9Fe_(Naumburg)",
+   "lat": null,
+   "lon": null,
+   "wd": "Q100712471",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Marienstra%C3%9Fe_Naumburg_St._Wenzel.jpg/640px-Marienstra%C3%9Fe_Naumburg_St._Wenzel.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Marienstra%C3%9Fe_Naumburg_St._Wenzel.jpg/1000px-Marienstra%C3%9Fe_Naumburg_St._Wenzel.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Marienstraße_Naumburg_St._Wenzel.jpg",
+   "extract": ""
+  },
+  "naumburg/The historic tram": {
+   "ok": true,
+   "w": "Naumburger Straßenbahn",
+   "ct": null,
+   "lang": "de",
+   "title": "Straßenbahn Naumburg",
+   "url": "https://de.wikipedia.org/wiki/Stra%C3%9Fenbahn_Naumburg",
+   "lat": null,
+   "lon": null,
+   "wd": "Q876113",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Strassenbahn-nmb-tw36undtw51_depot.jpg/640px-Strassenbahn-nmb-tw36undtw51_depot.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Strassenbahn-nmb-tw36undtw51_depot.jpg/1000px-Strassenbahn-nmb-tw36undtw51_depot.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Strassenbahn-nmb-tw36undtw51_depot.jpg",
+   "extract": ""
+  },
   "naumburg/Saale-Unstrut wine": {
    "ok": true,
    "w": "Saale-Unstrut (Weinanbaugebiet)",
@@ -3240,6 +3285,51 @@
    "file": "20150902-BurgGiebichenstein.jpg",
    "extract": ""
   },
+  "halle/Halle Cathedral": {
+   "ok": true,
+   "w": "Hallescher Dom",
+   "ct": null,
+   "lang": "de",
+   "title": "Hallescher Dom",
+   "url": "https://de.wikipedia.org/wiki/Hallescher_Dom",
+   "lat": 51.48416667,
+   "lon": 11.96444444,
+   "wd": "Q1571657",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Dom_Halle.jpg/640px-Dom_Halle.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Dom_Halle.jpg/1000px-Dom_Halle.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Dom_Halle.jpg",
+   "extract": ""
+  },
+  "halle/The Nebra Sky Disc": {
+   "ok": true,
+   "w": "Landesmuseum für Vorgeschichte (Halle)",
+   "ct": "Himmelsscheibe von Nebra",
+   "lang": "de",
+   "title": "Landesmuseum für Vorgeschichte (Halle (Saale))",
+   "url": "https://de.wikipedia.org/wiki/Landesmuseum_f%C3%BCr_Vorgeschichte_(Halle_(Saale))",
+   "lat": 51.498333,
+   "lon": 11.9625,
+   "wd": "Q1332407",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Fundort_der_Himmelsscheibe_von_Nebra_20210913_HOF05567.jpg/640px-Fundort_der_Himmelsscheibe_von_Nebra_20210913_HOF05567.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Fundort_der_Himmelsscheibe_von_Nebra_20210913_HOF05567.jpg/1000px-Fundort_der_Himmelsscheibe_von_Nebra_20210913_HOF05567.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Fundort der Himmelsscheibe von Nebra 20210913 HOF05567.jpg",
+   "extract": ""
+  },
+  "halle/Francke Foundations": {
+   "ok": true,
+   "w": "Franckesche Stiftungen",
+   "ct": null,
+   "lang": "de",
+   "title": "Franckesche Stiftungen",
+   "url": "https://de.wikipedia.org/wiki/Franckesche_Stiftungen",
+   "lat": 51.47805556,
+   "lon": 11.97194444,
+   "wd": "Q276846",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Historisches_Waisenhaus_der_Franckeschen_Stiftungen.jpg/640px-Historisches_Waisenhaus_der_Franckeschen_Stiftungen.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Historisches_Waisenhaus_der_Franckeschen_Stiftungen.jpg/1000px-Historisches_Waisenhaus_der_Franckeschen_Stiftungen.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Historisches_Waisenhaus_der_Franckeschen_Stiftungen.jpg",
+   "extract": ""
+  },
   "halle/Halloren chocolate": {
    "ok": true,
    "w": "Halloren Schokoladenfabrik",
@@ -3255,94 +3345,124 @@
    "file": "Halloren-Winter-Edition-3.jpg",
    "extract": ""
   },
-  "wittenberg/Castle Church": {
+  "leipzig/Hauptbahnhof": {
    "ok": true,
-   "w": "Schlosskirche (Lutherstadt Wittenberg)",
+   "w": "Leipzig Hauptbahnhof",
    "ct": null,
    "lang": "de",
-   "title": "Schlosskirche (Lutherstadt Wittenberg)",
-   "url": "https://de.wikipedia.org/wiki/Schlosskirche_(Lutherstadt_Wittenberg)",
-   "lat": 51.866369,
-   "lon": 12.637947,
-   "wd": "Q661752",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg/640px-Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg/1000px-Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Schlosskirche_Wittenberg_Luftbild_2024_Toni_Klemm.jpg",
+   "title": "Leipzig Hauptbahnhof",
+   "url": "https://de.wikipedia.org/wiki/Leipzig_Hauptbahnhof",
+   "lat": 51.345278,
+   "lon": 12.382222,
+   "wd": "Q703916",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/LE_Hauptbahnhof-4.jpg/640px-LE_Hauptbahnhof-4.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/LE_Hauptbahnhof-4.jpg/1000px-LE_Hauptbahnhof-4.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "LE_Hauptbahnhof-4.jpg",
    "extract": ""
   },
-  "wittenberg/Town Church of St Mary": {
+  "leipzig/Marktplatz and the Old Town Hall": {
    "ok": true,
-   "w": "Stadtkirche (Lutherstadt Wittenberg)",
+   "w": "Altes Rathaus (Leipzig)",
    "ct": null,
    "lang": "de",
-   "title": "Stadtkirche Lutherstadt Wittenberg",
-   "url": "https://de.wikipedia.org/wiki/Stadtkirche_Lutherstadt_Wittenberg",
-   "lat": 51.86649722,
-   "lon": 12.64479444,
-   "wd": "Q458821",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Stadtkirche_Wittenberg_09_2015.JPG/640px-Stadtkirche_Wittenberg_09_2015.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Stadtkirche_Wittenberg_09_2015.JPG/1000px-Stadtkirche_Wittenberg_09_2015.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Stadtkirche_Wittenberg_09_2015.JPG",
+   "title": "Altes Rathaus (Leipzig)",
+   "url": "https://de.wikipedia.org/wiki/Altes_Rathaus_(Leipzig)",
+   "lat": 51.34030833,
+   "lon": 12.37538056,
+   "wd": "Q439431",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Old_city_hall_of_Leipzig_%2820%29.jpg/640px-Old_city_hall_of_Leipzig_%2820%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Old_city_hall_of_Leipzig_%2820%29.jpg/1000px-Old_city_hall_of_Leipzig_%2820%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Old_city_hall_of_Leipzig_(20).jpg",
    "extract": ""
   },
-  "wittenberg/Luther House": {
+  "leipzig/Mädler Passage": {
    "ok": true,
-   "w": "Augusteum und Lutherhaus Wittenberg",
+   "w": "Mädlerpassage",
    "ct": null,
    "lang": "de",
-   "title": "Augusteum und Lutherhaus Wittenberg",
-   "url": "https://de.wikipedia.org/wiki/Augusteum_und_Lutherhaus_Wittenberg",
-   "lat": 51.86416667,
-   "lon": 12.6525,
-   "wd": "Q459493",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Augusteum_-_Lutherhaus_Wittenberg.jpg/640px-Augusteum_-_Lutherhaus_Wittenberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Augusteum_-_Lutherhaus_Wittenberg.jpg/1000px-Augusteum_-_Lutherhaus_Wittenberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Augusteum_-_Lutherhaus_Wittenberg.jpg",
+   "title": "Mädlerpassage",
+   "url": "https://de.wikipedia.org/wiki/M%C3%A4dlerpassage",
+   "lat": 51.33944444,
+   "lon": 12.37555556,
+   "wd": "Q1491479",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Leipzig-M%C3%A4dlerpassage-vor-Auerbachs-Keller-IMG_6674-9x5B-360x180G-PanoS-09-04-2024.jpg/640px-Leipzig-M%C3%A4dlerpassage-vor-Auerbachs-Keller-IMG_6674-9x5B-360x180G-PanoS-09-04-2024.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Leipzig-M%C3%A4dlerpassage-vor-Auerbachs-Keller-IMG_6674-9x5B-360x180G-PanoS-09-04-2024.jpg/1000px-Leipzig-M%C3%A4dlerpassage-vor-Auerbachs-Keller-IMG_6674-9x5B-360x180G-PanoS-09-04-2024.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Leipzig-Mädlerpassage-vor-Auerbachs-Keller-IMG_6674-9x5B-360x180G-PanoS-09-04-2024.jpg",
    "extract": ""
   },
-  "wittenberg/Melanchthon House": {
+  "leipzig/St Thomas Church": {
    "ok": true,
-   "w": "Melanchthonhaus Wittenberg",
+   "w": "Thomaskirche",
+   "ct": null,
+   "lang": "en",
+   "title": "St. Thomas Church, Leipzig",
+   "url": "https://en.wikipedia.org/wiki/St._Thomas_Church%2C_Leipzig",
+   "lat": 51.33916667,
+   "lon": 12.3725,
+   "wd": "Q170402",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Leipzig_Thomaskirche.jpg/640px-Leipzig_Thomaskirche.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Leipzig_Thomaskirche.jpg/1000px-Leipzig_Thomaskirche.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Leipzig_Thomaskirche.jpg",
+   "extract": "The St. Thomas Church is a Lutheran church in Leipzig, Germany, located at the western part of the inner city ring road in Leipzig's central district."
+  },
+  "leipzig/Bach Museum": {
+   "ok": true,
+   "w": "Bach-Museum Leipzig",
    "ct": null,
    "lang": "de",
-   "title": "Melanchthonhaus Wittenberg",
-   "url": "https://de.wikipedia.org/wiki/Melanchthonhaus_Wittenberg",
-   "lat": 51.864792,
-   "lon": 12.650966,
-   "wd": "Q316137",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Lutherstadt_Wittenberg_09-2016_photo10.jpg/640px-Lutherstadt_Wittenberg_09-2016_photo10.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Lutherstadt_Wittenberg_09-2016_photo10.jpg/1000px-Lutherstadt_Wittenberg_09-2016_photo10.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Lutherstadt_Wittenberg_09-2016_photo10.jpg",
+   "title": "Bach-Museum Leipzig",
+   "url": "https://de.wikipedia.org/wiki/Bach-Museum_Leipzig",
+   "lat": 51.33874,
+   "lon": 12.3723,
+   "wd": "Q18748122",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Bosehaus_Leipzig_Stra%C3%9Fenfront_1.jpg/640px-Bosehaus_Leipzig_Stra%C3%9Fenfront_1.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Bosehaus_Leipzig_Stra%C3%9Fenfront_1.jpg/1000px-Bosehaus_Leipzig_Stra%C3%9Fenfront_1.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Bosehaus_Leipzig_Straßenfront_1.jpg",
    "extract": ""
   },
-  "wittenberg/Markt and the Cranach houses": {
+  "leipzig/Nikolaikirche": {
    "ok": true,
-   "w": "Lutherstadt Wittenberg",
-   "ct": "Marktplatz Lutherstadt Wittenberg Rathaus",
-   "lang": "de",
-   "title": "Lutherstadt Wittenberg",
-   "url": "https://de.wikipedia.org/wiki/Lutherstadt_Wittenberg",
-   "lat": 51.86644,
-   "lon": 12.64351,
-   "wd": "Q6837",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg/640px-Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg/1000px-Lutherstadt_Wittenberg%2C_Marktplatz_und_Rathaus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg",
-   "extract": ""
-  },
-  "wittenberg/Luther's Oak": {
-   "ok": true,
-   "w": "Luthereiche",
+   "w": "Nikolaikirche (Leipzig)",
    "ct": null,
    "lang": "de",
-   "title": "Luthereiche",
-   "url": "https://de.wikipedia.org/wiki/Luthereiche",
-   "lat": null,
-   "lon": null,
-   "wd": "Q59274594",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Luthereiche_in_Wittenberg.jpg/640px-Luthereiche_in_Wittenberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Luthereiche_in_Wittenberg.jpg/1000px-Luthereiche_in_Wittenberg.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Luthereiche_in_Wittenberg.jpg",
+   "title": "Nikolaikirche (Leipzig)",
+   "url": "https://de.wikipedia.org/wiki/Nikolaikirche_(Leipzig)",
+   "lat": 51.34026389,
+   "lon": 12.37856389,
+   "wd": "Q694286",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Nicolaikirche_Leipzig.jpg/640px-Nicolaikirche_Leipzig.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Nicolaikirche_Leipzig.jpg/1000px-Nicolaikirche_Leipzig.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Nicolaikirche_Leipzig.jpg",
+   "extract": ""
+  },
+  "leipzig/Augustusplatz": {
+   "ok": true,
+   "w": "Augustusplatz",
+   "ct": null,
+   "lang": "de",
+   "title": "Augustusplatz",
+   "url": "https://de.wikipedia.org/wiki/Augustusplatz",
+   "lat": 51.33916667,
+   "lon": 12.38083333,
+   "wd": "Q880646",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Augustusplatz_Leipzig_2019.jpg/640px-Augustusplatz_Leipzig_2019.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Augustusplatz_Leipzig_2019.jpg/1000px-Augustusplatz_Leipzig_2019.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Augustusplatz_Leipzig_2019.jpg",
+   "extract": ""
+  },
+  "leipzig/Leipzig coffee": {
+   "ok": true,
+   "w": "Zum Arabischen Coffe Baum",
+   "ct": null,
+   "lang": "de",
+   "title": "Zum Arabischen Coffe Baum",
+   "url": "https://de.wikipedia.org/wiki/Zum_Arabischen_Coffe_Baum",
+   "lat": 51.341081,
+   "lon": 12.372935,
+   "wd": "Q228926",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Kaffebaum_Leipzig%2C_Portalrelief.JPG/640px-Kaffebaum_Leipzig%2C_Portalrelief.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Kaffebaum_Leipzig%2C_Portalrelief.JPG/1000px-Kaffebaum_Leipzig%2C_Portalrelief.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Kaffebaum_Leipzig,_Portalrelief.JPG",
    "extract": ""
   },
   "magdeburg/Magdeburg Cathedral": {
@@ -4052,19 +4172,19 @@
    "file": "Halle (Saale), Marktplatz, Roter Turm 20170718 009.jpg",
    "extract": ""
   },
-  "wittenberg": {
+  "leipzig": {
    "ok": true,
-   "w": "Lutherstadt Wittenberg",
-   "ct": "Schlosskirche Wittenberg Turm",
+   "w": "Leipzig",
+   "ct": null,
    "lang": "de",
-   "title": "Lutherstadt Wittenberg",
-   "url": "https://de.wikipedia.org/wiki/Lutherstadt_Wittenberg",
-   "lat": 51.86644,
-   "lon": 12.64351,
-   "wd": "Q6837",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Lutherstadt_Wittenberg%2C_die_Schlossstra%C3%9Fe%2C_Turm_der_Schlosskirche.jpg/1200px-Lutherstadt_Wittenberg%2C_die_Schlossstra%C3%9Fe%2C_Turm_der_Schlosskirche.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Lutherstadt_Wittenberg%2C_die_Schlossstra%C3%9Fe%2C_Turm_der_Schlosskirche.jpg/1200px-Lutherstadt_Wittenberg%2C_die_Schlossstra%C3%9Fe%2C_Turm_der_Schlosskirche.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Lutherstadt Wittenberg, die Schlossstraße, Turm der Schlosskirche.jpg",
+   "title": "Leipzig",
+   "url": "https://de.wikipedia.org/wiki/Leipzig",
+   "lat": 51.34033333,
+   "lon": 12.37475,
+   "wd": "Q2079",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/PD_Leipzig.jpg/1200px-PD_Leipzig.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/PD_Leipzig.jpg/1200px-PD_Leipzig.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "PD Leipzig.jpg",
    "extract": ""
   },
   "fulda": {
@@ -4122,9 +4242,9 @@
    "lat": 50.97944444,
    "lon": 11.32972222,
    "wd": "Q3955",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Marktplatz_in_Weimar_04.jpg/1200px-Marktplatz_in_Weimar_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Marktplatz_in_Weimar_04.jpg/1200px-Marktplatz_in_Weimar_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Marktplatz in Weimar 04.jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Marktplatz_in_Weimar_03.jpg/1200px-Marktplatz_in_Weimar_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Marktplatz_in_Weimar_03.jpg/1200px-Marktplatz_in_Weimar_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Marktplatz in Weimar 03.jpg",
    "extract": ""
   },
   "naumburg": {
@@ -4279,6 +4399,10 @@
   }
  },
  "credits": {
+  "PD Leipzig.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "de:Benutzer:Wiprecht"
+  },
   "Rothenburg BW 4.JPG": {
    "lic": "Public domain",
    "by": "Berthold Werner"
@@ -4383,7 +4507,7 @@
    "lic": "CC BY-SA 4.0",
    "by": "Krzysztof Golik"
   },
-  "Marktplatz in Weimar 04.jpg": {
+  "Marktplatz in Weimar 03.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Krzysztof Golik"
   },
@@ -4422,10 +4546,6 @@
   "Kloster Ettal und Basilika.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Cayambe"
-  },
-  "Lutherstadt Wittenberg, die Schlossstraße, Turm der Schlosskirche.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
   },
   "(27357) Magdeburg, Dom und Elbe (cropped).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5075,10 +5195,6 @@
    "lic": "CC BY 4.0",
    "by": "Kent Wang"
   },
-  "Halberstadt St-Burchardi-Kirche.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "unknown"
-  },
   "Quedlinburg Ständerbau.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
@@ -5090,6 +5206,10 @@
   "Augustinerkirche Erfurt.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Lukas Götz"
+  },
+  "Strassenbahn-nmb-tw36undtw51 depot.jpg": {
+   "lic": "CC BY-SA 2.0 de",
+   "by": "The original uploader was ChristianBier at German Wikipedia."
   },
   "Weimar Wittumspalais.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -5115,6 +5235,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Most Curious"
   },
+  "Salztor Naumburg.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Olaf Meister"
+  },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Denkhenk"
@@ -5139,10 +5263,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Martin Kraft"
   },
-  "Roter Turm Halle 2009.jpg": {
-   "lic": "CC BY-SA 3.0 de",
-   "by": "de:Benutzer:OmiTs"
-  },
   "00 4092 Wernigerode - Harzquerbahn.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "W. Bulach"
@@ -5164,6 +5284,10 @@
    "by": "Kirschgaertner"
   },
   "Marktplatz in Naumburg 01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Krzysztof Golik"
+  },
+  "Marktplatz in Weimar 04.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Krzysztof Golik"
   },
@@ -5195,17 +5319,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
   },
+  "Marienstraße Naumburg St. Wenzel.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Pomfuttge"
+  },
   "Dom Halberstadt von Südosten.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Barnos"
-  },
-  "Halberstadt, Fischmarkt und Rathaus (Rückseite).jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
-  },
-  "Halle(Saale) Marktkirche asv2024-04.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
   },
   "BD Nitzsche Haus, Naumburg (1).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5235,6 +5355,14 @@
    "lic": "CC0",
    "by": "Romzig"
   },
+  "Leipzig Thomaskirche.jpg": {
+   "lic": "Public domain",
+   "by": "Dirk Goldhahn"
+  },
+  "Halberstadt St-Burchardi-Kirche.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "unknown"
+  },
   "Botanischer-garten-jena-rs-786x512.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
@@ -5255,9 +5383,21 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "Joachim F. Thurn"
   },
-  "Stadtkirche St. Michael in Jena 2008-05-24.jpg": {
+  "Kaffebaum Leipzig, Portalrelief.JPG": {
    "lic": "CC BY-SA 3.0",
-   "by": "Henry Mühlpfordt"
+   "by": "© Foto H.-P.Haack"
+  },
+  "Dom Halle.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "White shark"
+  },
+  "LE Hauptbahnhof-4.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Appaloosa"
+  },
+  "Nicolaikirche Leipzig.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "JesterWr"
   },
   "Berlin Museumsinsel Fernsehturm.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -5271,21 +5411,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "Joergsam"
   },
-  "PlanetariumJena01.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Selby"
-  },
   "Berlin - Berliner Fernsehturm - Fensterreinigung.jpg": {
    "lic": "FAL",
    "by": "Taxiarchos228"
   },
-  "140823 Märchendom Saalfelder Feengrotten.jpg": {
-   "lic": "CC BY 3.0 de",
-   "by": "Ansgar Koreng"
-  },
-  "Saalfeld Obere Torgasse 29 Sachteil Stadtmauer Bestandteil Denkmalensemble \"Stadtkern Saalfeld-Saale\".jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "NoRud"
+  "Bosehaus Leipzig Straßenfront 1.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Geisler Martin"
   },
   "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
    "lic": "CC BY 3.0 de",
@@ -5295,33 +5427,25 @@
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Voigt"
   },
-  "Stadtkirche Wittenberg 09 2015.JPG": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Concord"
-  },
-  "Augusteum - Lutherhaus Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
-  },
-  "Luthereiche in Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Markus Sturzbecher"
+  "Roter Turm Halle 2009.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "de:Benutzer:OmiTs"
   },
   "Halloren-Winter-Edition-3.jpg": {
    "lic": "CC BY 4.0",
    "by": "WiseWoman"
   },
-  "Lutherstadt Wittenberg 09-2016 photo10.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
-  },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Alexander Blum"
   },
-  "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
+  "Augustusplatz Leipzig 2019.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Kora27"
+   "by": "Martin Geisler"
+  },
+  "Old city hall of Leipzig (20).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Krzysztof Golik"
   },
   "Magdeburger Dom Luftbild.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5343,6 +5467,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Barnos"
   },
+  "Fundort der Himmelsscheibe von Nebra 20210913 HOF05567.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "PantheraLeo1359531"
+  },
   "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
    "lic": "FAL",
    "by": "A.Savin"
@@ -5363,21 +5491,49 @@
    "lic": "CC BY 4.0",
    "by": "Chainwit."
   },
-  "Schlosskirche Wittenberg Luftbild 2024 Toni Klemm.jpg": {
+  "Halberstadt, Fischmarkt und Rathaus (Rückseite).jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Dguendel"
+  },
+  "Leipzig-Mädlerpassage-vor-Auerbachs-Keller-IMG 6674-9x5B-360x180G-PanoS-09-04-2024.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Toniklemm"
+   "by": "Joachim Köhler"
+  },
+  "Halle(Saale) Marktkirche asv2024-04.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Historisches Waisenhaus der Franckeschen Stiftungen.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Uwe Gaasch"
   },
   "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Barnos"
   },
-  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
-  },
   "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
    "lic": "Public domain",
    "by": "Władysław Skoczylas"
+  },
+  "Stadtkirche St. Michael in Jena 2008-05-24.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Henry Mühlpfordt"
+  },
+  "PlanetariumJena01.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Selby"
+  },
+  "140823 Märchendom Saalfelder Feengrotten.jpg": {
+   "lic": "CC BY 3.0 de",
+   "by": "Ansgar Koreng"
+  },
+  "Saalfeld Obere Torgasse 29 Sachteil Stadtmauer Bestandteil Denkmalensemble \"Stadtkern Saalfeld-Saale\".jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "NoRud"
+  },
+  "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kora27"
   }
  }
 }
