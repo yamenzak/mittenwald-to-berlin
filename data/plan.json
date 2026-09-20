@@ -478,7 +478,7 @@
     {
      "id": "A",
      "name": "Abbey, woodcarvers, and Munich",
-     "why": "Five stops down out of the mountains. The most to see of any day here.",
+     "why": "",
      "seq": [
       {
        "kind": "move",
@@ -552,19 +552,21 @@
       {
        "kind": "stop",
        "place": "garmisch",
-       "stn": "Ten minutes east from the station to Ludwigstraße — the Partenkirchen half, which is the pretty one.",
+       "stn": "Twenty minutes east from the station to Ludwigstraße — the Partenkirchen half, which is the pretty one.",
        "see": [
         "Ludwigstraße",
         "Mohrenplatz",
-        "Old St Martin"
+        "Old St Martin",
+        "Kurpark Garmisch",
+        "Olympic ski stadium"
        ],
        "base": false,
        "arrIso": "2026-09-30T06:31:00Z",
-       "want": 93,
+       "want": 133,
        "arr": "08:31",
-       "depIso": "2026-09-30T07:40:00Z",
-       "dep": "09:40",
-       "free": 69,
+       "depIso": "2026-09-30T08:40:00Z",
+       "dep": "10:40",
+       "free": 129,
        "route": {
         "legs": [
          {
@@ -586,15 +588,15 @@
           "kind": "street",
           "note": "Partenkirchen's old painted street. Prettier than the Garmisch half.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 12,
+          "leaveBy": 57,
+          "extra": false
          },
          {
           "to": "Mohrenplatz",
-          "mins": 12,
+          "mins": 1,
           "how": {
-           "mins": 12,
+           "mins": 1,
            "mode": "walk"
           },
           "visit": 15,
@@ -609,15 +611,15 @@
           "kind": "square",
           "note": "The small square at the top of Ludwigstraße.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 58,
+          "leaveBy": 73,
+          "extra": false
          },
          {
           "to": "Old St Martin",
-          "mins": 20,
+          "mins": 27,
           "how": {
-           "mins": 20,
+           "mins": 27,
            "mode": "walk"
           },
           "visit": 20,
@@ -632,20 +634,76 @@
           "kind": "church",
           "note": "Medieval frescoes inside, including a giant St Christopher.",
           "ticket": false,
-          "at": 20,
-          "leaveBy": 40,
+          "at": 100,
+          "leaveBy": 120,
           "extra": false
+         },
+         {
+          "to": "Kurpark Garmisch",
+          "mins": 22,
+          "how": {
+           "mins": 22,
+           "mode": "ride",
+           "line": "321",
+           "vehicle": "BUS",
+           "from": "Garmisch, Michael-Ende-Kurpark",
+           "to": "Partenkirchen, Rathaus",
+           "walkInstead": 27
+          },
+          "visit": 30,
+          "backFromHere": 12,
+          "backHow": {
+           "mins": 12,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.49388889,
+          "lon": 11.10527778,
+          "kind": "nature",
+          "note": "Bandstand, flowerbeds and the Wetterstein behind them.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Olympic ski stadium",
+          "mins": 34,
+          "how": {
+           "mins": 34,
+           "mode": "ride",
+           "line": "321",
+           "vehicle": "BUS",
+           "from": "Garmisch, Michael-Ende-Kurpark",
+           "to": "Partenkirchen, Rathaus",
+           "walkInstead": null
+          },
+          "visit": 40,
+          "backFromHere": 18,
+          "backHow": {
+           "mins": 18,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.4869,
+          "lon": 11.1097,
+          "kind": "view",
+          "note": "The 1936 jump. You can walk up to the top of the tower.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
         "back": 20,
-        "walkTotal": 40,
-        "visitTotal": 20,
-        "needs": 60,
-        "fitted": 1,
+        "walkTotal": 60,
+        "visitTotal": 80,
+        "needs": 140,
+        "fitted": 3,
         "dropped": 2,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Garmisch-Partenkirchen&destination=Bahnhof%20Garmisch-Partenkirchen&waypoints=Old%20St%20Martin%2C%20Garmisch",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Garmisch-Partenkirchen&destination=Bahnhof%20Garmisch-Partenkirchen&waypoints=Ludwigstra%C3%9Fe%2C%20Garmisch%7CMohrenplatz%2C%20Garmisch%7COld%20St%20Martin%2C%20Garmisch",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Garmisch-Partenkirchen&destination=Bahnhof%20Garmisch-Partenkirchen&waypoints=Ludwigstra%C3%9Fe%2C%20Garmisch%7CMohrenplatz%2C%20Garmisch%7COld%20St%20Martin%2C%20Garmisch",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Garmisch-Partenkirchen&destination=Bahnhof%20Garmisch-Partenkirchen&waypoints=Ludwigstra%C3%9Fe%2C%20Garmisch%7CMohrenplatz%2C%20Garmisch%7COld%20St%20Martin%2C%20Garmisch%7CKurpark%20Garmisch%2C%20Garmisch%7COlympic%20ski%20stadium%2C%20Garmisch",
         "town": "Garmisch, Germany"
        }
       },
@@ -665,10 +723,10 @@
         47.5695,
         11.0949
        ],
-       "dep": "09:40",
-       "arr": "10:05",
-       "depIso": "2026-09-30T07:40:00Z",
-       "arrIso": "2026-09-30T08:05:00Z",
+       "dep": "10:40",
+       "arr": "11:05",
+       "depIso": "2026-09-30T08:40:00Z",
+       "arrIso": "2026-09-30T09:05:00Z",
        "dur": 25,
        "changes": 0,
        "gaps": [],
@@ -676,28 +734,19 @@
         {
          "mode": "BUS",
          "line": "326",
-         "towards": "Füssen",
+         "towards": "Echelsbacher Brücke",
          "from": "Garmisch-Partenkirchen",
          "to": "Ettal, Klostergasthof",
-         "dep": "09:40",
-         "arr": "10:05",
-         "depIso": "2026-09-30T07:40:00Z",
-         "arrIso": "2026-09-30T08:05:00Z",
-         "track": "1",
-         "tripId": "20260930_09:40_de-DELFI_3401762211"
-        }
-       ],
-       "wanted": "10:04",
-       "later": [
-        {
          "dep": "10:40",
          "arr": "11:05",
-         "dur": 25,
-         "changes": 0,
-         "lines": [
-          "326"
-         ]
-        },
+         "depIso": "2026-09-30T08:40:00Z",
+         "arrIso": "2026-09-30T09:05:00Z",
+         "track": "1",
+         "tripId": "20260930_10:40_de-DELFI_3412839284"
+        }
+       ],
+       "wanted": "10:44",
+       "later": [
         {
          "dep": "12:00",
          "arr": "12:24",
@@ -715,6 +764,16 @@
          "lines": [
           "326"
          ]
+        },
+        {
+         "dep": "12:07",
+         "arr": "12:30",
+         "dur": 23,
+         "changes": 1,
+         "lines": [
+          "RB6",
+          "326"
+         ]
         }
        ]
       },
@@ -727,12 +786,12 @@
         "Abbey shop and distillery"
        ],
        "base": false,
-       "arrIso": "2026-09-30T08:05:00Z",
-       "want": 57,
-       "arr": "10:05",
-       "depIso": "2026-09-30T09:40:00Z",
-       "dep": "11:40",
-       "free": 95,
+       "arrIso": "2026-09-30T09:05:00Z",
+       "want": 65,
+       "arr": "11:05",
+       "depIso": "2026-09-30T10:15:00Z",
+       "dep": "12:15",
+       "free": 70,
        "route": {
         "legs": [
          {
@@ -810,54 +869,30 @@
         47.5983,
         11.0663
        ],
-       "dep": "11:40",
-       "arr": "12:20",
-       "depIso": "2026-09-30T09:40:00Z",
-       "arrIso": "2026-09-30T10:20:00Z",
-       "dur": 40,
-       "changes": 1,
-       "gaps": [
-        29
-       ],
+       "dep": "12:15",
+       "arr": "12:23",
+       "depIso": "2026-09-30T10:15:00Z",
+       "arrIso": "2026-09-30T10:23:00Z",
+       "dur": 8,
+       "changes": 0,
+       "gaps": [],
        "legs": [
         {
          "mode": "BUS",
-         "line": "316",
-         "towards": "Linderhof, Schloss",
+         "line": "326",
+         "towards": "Unterammergau, Ammerbrücke",
          "from": "Ettal, Klostergasthof",
-         "to": "Ettal, Ettaler Mühle",
-         "dep": "11:40",
-         "arr": "11:43",
-         "depIso": "2026-09-30T09:40:00Z",
-         "arrIso": "2026-09-30T09:43:00Z",
-         "track": null,
-         "tripId": "20260930_11:25_de-DELFI_3412843688"
-        },
-        {
-         "mode": "BUS",
-         "line": "316",
-         "towards": "Oberammergau",
-         "from": "Ettal, Ettaler Mühle",
          "to": "Oberammergau, Tiroler Gasse",
-         "dep": "12:12",
-         "arr": "12:20",
-         "depIso": "2026-09-30T10:12:00Z",
-         "arrIso": "2026-09-30T10:20:00Z",
-         "track": null,
-         "tripId": "20260930_12:00_de-DELFI_3412843661"
-        }
-       ],
-       "wanted": "11:02",
-       "later": [
-        {
          "dep": "12:15",
          "arr": "12:23",
-         "dur": 8,
-         "changes": 0,
-         "lines": [
-          "326"
-         ]
-        },
+         "depIso": "2026-09-30T10:15:00Z",
+         "arrIso": "2026-09-30T10:23:00Z",
+         "track": null,
+         "tripId": "20260930_12:15_de-DELFI_3412839275"
+        }
+       ],
+       "wanted": "12:10",
+       "later": [
         {
          "dep": "12:24",
          "arr": "12:35",
@@ -875,6 +910,15 @@
          "lines": [
           "326"
          ]
+        },
+        {
+         "dep": "13:00",
+         "arr": "13:08",
+         "dur": 8,
+         "changes": 0,
+         "lines": [
+          "326"
+         ]
         }
        ]
       },
@@ -884,20 +928,20 @@
        "stn": "Ten minutes from the station into the village.",
        "see": [
         "Dorfstraße",
-        "Pilatushaus",
         "Ettaler Straße houses",
+        "Pilatushaus",
         "Pfarrkirche St Peter und Paul",
         "Woodcarving workshops",
         "Passion Play Theatre",
         "Ammer riverside"
        ],
        "base": false,
-       "arrIso": "2026-09-30T10:20:00Z",
-       "want": 143,
-       "arr": "12:20",
+       "arrIso": "2026-09-30T10:23:00Z",
+       "want": 148,
+       "arr": "12:23",
        "depIso": "2026-09-30T12:40:00Z",
        "dep": "14:40",
-       "free": 140,
+       "free": 137,
        "route": {
         "legs": [
          {
@@ -919,15 +963,61 @@
           "kind": "street",
           "note": "The main street, painted end to end.",
           "ticket": false,
-          "at": 3,
-          "leaveBy": 33,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Ettaler Straße houses",
+          "mins": 7,
+          "how": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 7,
+          "backHow": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 47.5961,
+          "lon": 11.0698,
+          "kind": "street",
+          "note": "Hansel and Gretel and Little Red Riding Hood, painted across whole walls.",
+          "ticket": false,
+          "at": 7,
+          "leaveBy": 32,
+          "extra": false
+         },
+         {
+          "to": "Pilatushaus",
+          "mins": 5,
+          "how": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 3,
+          "backHow": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 47.597,
+          "lon": 11.0666,
+          "kind": "street",
+          "note": "The most famous painted facade in Bavaria — painted architecture that isn't there.",
+          "ticket": false,
+          "at": 37,
+          "leaveBy": 62,
           "extra": false
          },
          {
           "to": "Pfarrkirche St Peter und Paul",
-          "mins": 7,
+          "mins": 3,
           "how": {
-           "mins": 7,
+           "mins": 3,
            "mode": "walk"
           },
           "visit": 20,
@@ -942,8 +1032,8 @@
           "kind": "church",
           "note": "Rococo interior, considered one of the finest village churches in Bavaria.",
           "ticket": false,
-          "at": 40,
-          "leaveBy": 60,
+          "at": 65,
+          "leaveBy": 85,
           "extra": false
          },
          {
@@ -988,24 +1078,43 @@
           "kind": "museum",
           "note": "The village has staged the Passion every ten years since 1634.",
           "ticket": false,
-          "at": 70,
-          "leaveBy": 100,
+          "at": 95,
+          "leaveBy": 125,
           "extra": false
+         },
+         {
+          "to": "Ammer riverside",
+          "mins": 17,
+          "how": {
+           "mins": 17,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 10,
+          "backHow": {
+           "mins": 10,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.5934,
+          "lon": 11.0698,
+          "kind": "nature",
+          "note": "Five minutes from the centre, with the Kofel above it.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
         "back": 7,
-        "walkTotal": 27,
-        "visitTotal": 80,
-        "needs": 107,
-        "fitted": 3,
-        "dropped": 1,
-        "noCoords": [
-         "Pilatushaus",
-         "Ettaler Straße houses",
-         "Ammer riverside"
-        ],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Oberammergau&destination=Bahnhof%20Oberammergau&waypoints=Dorfstra%C3%9Fe%2C%20Oberammergau%7CPfarrkirche%20St%20Peter%20und%20Paul%2C%20Oberammergau%7CPassion%20Play%20Theatre%2C%20Oberammergau",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Oberammergau&destination=Bahnhof%20Oberammergau&waypoints=Dorfstra%C3%9Fe%2C%20Oberammergau%7CPfarrkirche%20St%20Peter%20und%20Paul%2C%20Oberammergau%7CWoodcarving%20workshops%2C%20Oberammergau%7CPassion%20Play%20Theatre%2C%20Oberammergau",
+        "walkTotal": 32,
+        "visitTotal": 100,
+        "needs": 132,
+        "fitted": 4,
+        "dropped": 3,
+        "noCoords": [],
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Oberammergau&destination=Bahnhof%20Oberammergau&waypoints=Ettaler%20Stra%C3%9Fe%20houses%2C%20Oberammergau%7CPilatushaus%2C%20Oberammergau%7CPfarrkirche%20St%20Peter%20und%20Paul%2C%20Oberammergau%7CPassion%20Play%20Theatre%2C%20Oberammergau",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Oberammergau&destination=Bahnhof%20Oberammergau&waypoints=Dorfstra%C3%9Fe%2C%20Oberammergau%7CEttaler%20Stra%C3%9Fe%20houses%2C%20Oberammergau%7CPilatushaus%2C%20Oberammergau%7CPfarrkirche%20St%20Peter%20und%20Paul%2C%20Oberammergau%7CWoodcarving%20workshops%2C%20Oberammergau%7CPassion%20Play%20Theatre%2C%20Oberammergau%7CAmmer%20riverside%2C%20Oberammergau",
         "town": "Oberammergau, Germany"
        }
       },
@@ -1047,7 +1156,7 @@
          "tripId": "20260930_14:40_de-DELFI_3412718577"
         }
        ],
-       "wanted": "14:43",
+       "wanted": "14:51",
        "later": [
         {
          "dep": "14:44",
@@ -1087,15 +1196,17 @@
        "see": [
         "Obermarkt",
         "Münter House",
-        "Staffelsee"
+        "Schlossmuseum Murnau",
+        "Staffelsee",
+        "Ramsachkircherl"
        ],
        "base": false,
        "arrIso": "2026-09-30T13:22:00Z",
-       "want": 82,
+       "want": 102,
        "arr": "15:22",
-       "depIso": "2026-09-30T14:32:00Z",
-       "dep": "16:32",
-       "free": 70,
+       "depIso": "2026-09-30T15:32:00Z",
+       "dep": "17:32",
+       "free": 130,
        "route": {
         "legs": [
          {
@@ -1145,15 +1256,38 @@
           "kind": "museum",
           "note": "Where Kandinsky and Gabriele Münter lived and painted. Still furnished.",
           "ticket": true,
+          "at": 49,
+          "leaveBy": 99,
+          "extra": false
+         },
+         {
+          "to": "Schlossmuseum Murnau",
+          "mins": 11,
+          "how": {
+           "mins": 11,
+           "mode": "walk"
+          },
+          "visit": 50,
+          "backFromHere": 17,
+          "backHow": {
+           "mins": 17,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.67743,
+          "lon": 11.20245,
+          "kind": "museum",
+          "note": "Blaue Reiter paintings in the old castle.",
+          "ticket": true,
           "at": null,
           "leaveBy": null,
           "extra": true
          },
          {
           "to": "Staffelsee",
-          "mins": 18,
+          "mins": 17,
           "how": {
-           "mins": 18,
+           "mins": 17,
            "mode": "go",
            "approx": true
           },
@@ -1173,17 +1307,42 @@
           "at": null,
           "leaveBy": null,
           "extra": true
+         },
+         {
+          "to": "Ramsachkircherl",
+          "mins": 20,
+          "how": {
+           "mins": 20,
+           "mode": "go",
+           "approx": true
+          },
+          "visit": 75,
+          "backFromHere": 21,
+          "backHow": {
+           "mins": 21,
+           "mode": "go",
+           "approx": true
+          },
+          "must": false,
+          "lat": 47.648043,
+          "lon": 11.153183,
+          "kind": "nature",
+          "note": "A tiny church alone in the moor, 30 min out on the flat.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
-        "back": 20,
-        "walkTotal": 31,
-        "visitTotal": 30,
-        "needs": 61,
-        "fitted": 1,
-        "dropped": 2,
+        "back": 16,
+        "walkTotal": 35,
+        "visitTotal": 80,
+        "needs": 115,
+        "fitted": 2,
+        "dropped": 3,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Murnau&destination=Bahnhof%20Murnau&waypoints=Obermarkt%2C%20Murnau",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Murnau&destination=Bahnhof%20Murnau&waypoints=Obermarkt%2C%20Murnau%7CM%C3%BCnter%20House%2C%20Murnau%7CStaffelsee%2C%20Murnau",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Murnau&destination=Bahnhof%20Murnau&waypoints=Obermarkt%2C%20Murnau%7CM%C3%BCnter%20House%2C%20Murnau",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Murnau&destination=Bahnhof%20Murnau&waypoints=Obermarkt%2C%20Murnau%7CM%C3%BCnter%20House%2C%20Murnau%7CSchlossmuseum%20Murnau%2C%20Murnau%7CStaffelsee%2C%20Murnau%7CRamsachkircherl%2C%20Murnau",
         "town": "Murnau, Germany"
        }
       },
@@ -1203,39 +1362,30 @@
         48.14044,
         11.55772
        ],
-       "dep": "16:32",
-       "arr": "17:28",
-       "depIso": "2026-09-30T14:32:00Z",
-       "arrIso": "2026-09-30T15:28:00Z",
+       "dep": "17:32",
+       "arr": "18:28",
+       "depIso": "2026-09-30T15:32:00Z",
+       "arrIso": "2026-09-30T16:28:00Z",
        "dur": 56,
        "changes": 0,
        "gaps": [],
        "legs": [
         {
-         "mode": "REGIONAL_RAIL",
+         "mode": "METRO",
          "line": "RB6",
          "towards": "München Hbf",
          "from": "Murnau",
          "to": "München Hbf",
-         "dep": "16:32",
-         "arr": "17:28",
-         "depIso": "2026-09-30T14:32:00Z",
-         "arrIso": "2026-09-30T15:28:00Z",
-         "track": "1",
-         "tripId": "20260930_16:07_de-DELFI_3412766798"
-        }
-       ],
-       "wanted": "16:44",
-       "later": [
-        {
          "dep": "17:32",
          "arr": "18:28",
-         "dur": 56,
-         "changes": 0,
-         "lines": [
-          "RB6"
-         ]
-        },
+         "depIso": "2026-09-30T15:32:00Z",
+         "arrIso": "2026-09-30T16:28:00Z",
+         "track": "1",
+         "tripId": "20260930_16:16_de-DELFI_3412766503"
+        }
+       ],
+       "wanted": "17:04",
+       "later": [
         {
          "dep": "18:32",
          "arr": "19:26",
@@ -1253,6 +1403,15 @@
          "lines": [
           "RB6"
          ]
+        },
+        {
+         "dep": "20:32",
+         "arr": "21:26",
+         "dur": 54,
+         "changes": 0,
+         "lines": [
+          "RB6"
+         ]
         }
        ]
       },
@@ -1262,20 +1421,25 @@
        "stn": "Twenty minutes on foot down Neuhauser Straße, or two stops on the S-Bahn.",
        "see": [
         "Karlsplatz and Neuhauser Straße",
+        "Michaelskirche",
+        "Asamkirche",
         "Frauenkirche",
         "Marienplatz",
         "St Peter's tower",
         "Viktualienmarkt",
-        "Asamkirche",
-        "Hofbräuhaus"
+        "Hofbräuhaus",
+        "Alter Hof",
+        "Odeonsplatz",
+        "Theatinerkirche",
+        "Hofgarten"
        ],
        "base": false,
-       "arrIso": "2026-09-30T15:28:00Z",
-       "want": 178,
-       "arr": "17:28",
-       "depIso": "2026-09-30T18:21:00Z",
-       "dep": "20:21",
-       "free": 173,
+       "arrIso": "2026-09-30T16:28:00Z",
+       "want": 173,
+       "arr": "18:28",
+       "depIso": "2026-09-30T18:57:00Z",
+       "dep": "20:57",
+       "free": 149,
        "route": {
         "legs": [
          {
@@ -1296,6 +1460,62 @@
           "lon": 11.56583333,
           "kind": "street",
           "note": "The shopping street that runs from the station to Marienplatz.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Michaelskirche",
+          "mins": 16,
+          "how": {
+           "mins": 16,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 16,
+          "backHow": {
+           "mins": 16,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.13888889,
+          "lon": 11.57055556,
+          "kind": "church",
+          "note": "Renaissance church on the way in; Ludwig II is buried in the crypt.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Asamkirche",
+          "mins": 15,
+          "how": {
+           "mins": 15,
+           "mode": "ride",
+           "line": "16",
+           "vehicle": "TRAM",
+           "from": "Hauptbahnhof Nord",
+           "to": "Sendlinger Tor",
+           "walkInstead": 21
+          },
+          "visit": 20,
+          "backFromHere": 15,
+          "backHow": {
+           "mins": 15,
+           "mode": "ride",
+           "line": "U2",
+           "vehicle": "SUBWAY",
+           "from": "Sendlinger Tor",
+           "to": "Hauptbahnhof (U, Tram)",
+           "walkInstead": 21
+          },
+          "must": false,
+          "lat": 48.13511667,
+          "lon": 11.56953056,
+          "kind": "church",
+          "note": "A tiny baroque church squeezed between shops. Astonishing inside.",
           "ticket": false,
           "at": null,
           "leaveBy": null,
@@ -1419,34 +1639,6 @@
           "extra": true
          },
          {
-          "to": "Asamkirche",
-          "mins": 8,
-          "how": {
-           "mins": 8,
-           "mode": "walk"
-          },
-          "visit": 20,
-          "backFromHere": 15,
-          "backHow": {
-           "mins": 15,
-           "mode": "ride",
-           "line": "U2",
-           "vehicle": "SUBWAY",
-           "from": "Sendlinger Tor",
-           "to": "Hauptbahnhof (U, Tram)",
-           "walkInstead": 21
-          },
-          "must": false,
-          "lat": 48.13511667,
-          "lon": 11.56953056,
-          "kind": "church",
-          "note": "A tiny baroque church squeezed between shops. Astonishing inside.",
-          "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         },
-         {
           "to": "Hofbräuhaus",
           "mins": 6,
           "how": {
@@ -1473,6 +1665,118 @@
           "at": null,
           "leaveBy": null,
           "extra": true
+         },
+         {
+          "to": "Alter Hof",
+          "mins": 5,
+          "how": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 12,
+          "backHow": {
+           "mins": 12,
+           "mode": "ride",
+           "line": "S2",
+           "vehicle": "METRO",
+           "from": "Marienplatz",
+           "to": "Hauptbahnhof (U, Tram)",
+           "walkInstead": 24
+          },
+          "must": false,
+          "lat": 48.13805556,
+          "lon": 11.57805556,
+          "kind": "palace",
+          "note": "The Wittelsbachs' first castle, a quiet courtyard most people walk past.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Odeonsplatz",
+          "mins": 14,
+          "how": {
+           "mins": 14,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "ride",
+           "line": "U4",
+           "vehicle": "SUBWAY",
+           "from": "Odeonsplatz",
+           "to": "Hauptbahnhof (U, Tram)",
+           "walkInstead": 27
+          },
+          "must": false,
+          "lat": 48.143571,
+          "lon": 11.578029,
+          "kind": "square",
+          "note": "The Feldherrnhalle and the yellow Theatinerkirche.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Theatinerkirche",
+          "mins": 12,
+          "how": {
+           "mins": 12,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "ride",
+           "line": "U4",
+           "vehicle": "SUBWAY",
+           "from": "Odeonsplatz",
+           "to": "Hauptbahnhof (U, Tram)",
+           "walkInstead": 25
+          },
+          "must": false,
+          "lat": 48.142114,
+          "lon": 11.576481,
+          "kind": "church",
+          "note": "Butter-yellow outside, all white stucco inside.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Hofgarten",
+          "mins": 14,
+          "how": {
+           "mins": 14,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "ride",
+           "line": "U4",
+           "vehicle": "SUBWAY",
+           "from": "Odeonsplatz",
+           "to": "Hauptbahnhof (U, Tram)",
+           "walkInstead": 28
+          },
+          "must": false,
+          "lat": 48.14277778,
+          "lon": 11.58,
+          "kind": "nature",
+          "note": "Quiet formal garden behind the Residenz.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
         "back": 12,
@@ -1480,10 +1784,10 @@
         "visitTotal": 110,
         "needs": 141,
         "fitted": 3,
-        "dropped": 4,
+        "dropped": 9,
         "noCoords": [],
         "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=M%C3%BCnchen%20Hauptbahnhof&destination=M%C3%BCnchen%20Hauptbahnhof&waypoints=Frauenkirche%2C%20Munich%7CMarienplatz%2C%20Munich%7CSt%20Peter's%20tower%2C%20Munich",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=M%C3%BCnchen%20Hauptbahnhof&destination=M%C3%BCnchen%20Hauptbahnhof&waypoints=Karlsplatz%20and%20Neuhauser%20Stra%C3%9Fe%2C%20Munich%7CFrauenkirche%2C%20Munich%7CMarienplatz%2C%20Munich%7CSt%20Peter's%20tower%2C%20Munich%7CViktualienmarkt%2C%20Munich%7CAsamkirche%2C%20Munich%7CHofbr%C3%A4uhaus%2C%20Munich",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=M%C3%BCnchen%20Hauptbahnhof&destination=Alter%20Hof%2C%20Munich&waypoints=Karlsplatz%20and%20Neuhauser%20Stra%C3%9Fe%2C%20Munich%7CMichaelskirche%2C%20Munich%7CAsamkirche%2C%20Munich%7CFrauenkirche%2C%20Munich%7CMarienplatz%2C%20Munich%7CSt%20Peter's%20tower%2C%20Munich%7CViktualienmarkt%2C%20Munich%7CHofbr%C3%A4uhaus%2C%20Munich",
         "town": "Munich, Germany"
        }
       },
@@ -1503,49 +1807,30 @@
         48.36556,
         10.88639
        ],
-       "dep": "20:21",
-       "arr": "21:16",
-       "depIso": "2026-09-30T18:21:00Z",
-       "arrIso": "2026-09-30T19:16:00Z",
-       "dur": 55,
+       "dep": "20:57",
+       "arr": "21:46",
+       "depIso": "2026-09-30T18:57:00Z",
+       "arrIso": "2026-09-30T19:46:00Z",
+       "dur": 49,
        "changes": 0,
        "gaps": [],
        "legs": [
         {
          "mode": "REGIONAL_RAIL",
-         "line": "RB87",
+         "line": "RE9",
          "towards": "Augsburg Hbf",
          "from": "München Hbf",
          "to": "Augsburg Hbf",
-         "dep": "20:21",
-         "arr": "21:16",
-         "depIso": "2026-09-30T18:21:00Z",
-         "arrIso": "2026-09-30T19:16:00Z",
-         "track": "17",
-         "tripId": "20260930_20:21_de-DELFI_3412574624"
-        }
-       ],
-       "wanted": "20:26",
-       "later": [
-        {
-         "dep": "20:27",
-         "arr": "20:59",
-         "dur": 32,
-         "changes": 1,
-         "lines": [
-          "RB6",
-          "DRF"
-         ]
-        },
-        {
          "dep": "20:57",
          "arr": "21:46",
-         "dur": 49,
-         "changes": 0,
-         "lines": [
-          "RE9"
-         ]
-        },
+         "depIso": "2026-09-30T18:57:00Z",
+         "arrIso": "2026-09-30T19:46:00Z",
+         "track": "16",
+         "tripId": "20260930_20:57_de-DELFI_3412577272"
+        }
+       ],
+       "wanted": "21:21",
+       "later": [
         {
          "dep": "21:59",
          "arr": "22:46",
@@ -1553,6 +1838,25 @@
          "changes": 0,
          "lines": [
           "RE89"
+         ]
+        },
+        {
+         "dep": "22:10",
+         "arr": "23:38",
+         "dur": 88,
+         "changes": 1,
+         "lines": [
+          "RE72",
+          "RB67"
+         ]
+        },
+        {
+         "dep": "22:58",
+         "arr": "23:46",
+         "dur": 48,
+         "changes": 0,
+         "lines": [
+          "RE9"
          ]
         }
        ]
@@ -1563,12 +1867,14 @@
        "stn": "Fifteen minutes east from the Hbf to Rathausplatz, or tram 2.",
        "see": [
         "Maximilianstraße",
-        "Rathausplatz"
+        "Rathausplatz",
+        "Augustusbrunnen",
+        "Lechviertel canals"
        ],
        "base": true,
-       "arrIso": "2026-09-30T19:16:00Z",
+       "arrIso": "2026-09-30T19:46:00Z",
        "want": null,
-       "arr": "21:16",
+       "arr": "21:46",
        "free": null,
        "dep": null,
        "route": {
@@ -1623,17 +1929,63 @@
           "at": 74,
           "leaveBy": 114,
           "extra": false
+         },
+         {
+          "to": "Augustusbrunnen",
+          "mins": 1,
+          "how": {
+           "mins": 1,
+           "mode": "walk"
+          },
+          "visit": 10,
+          "backFromHere": 16,
+          "backHow": {
+           "mins": 16,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.369048,
+          "lon": 10.897955,
+          "kind": "square",
+          "note": "The bronze fountain in front of the town hall.",
+          "ticket": false,
+          "at": 115,
+          "leaveBy": 125,
+          "extra": false
+         },
+         {
+          "to": "Lechviertel canals",
+          "mins": 5,
+          "how": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "visit": 45,
+          "backFromHere": 20,
+          "backHow": {
+           "mins": 20,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 48.37,
+          "lon": 10.90111111,
+          "kind": "street",
+          "note": "The old craftsmen's quarter, threaded with water channels.",
+          "ticket": false,
+          "at": 130,
+          "leaveBy": 175,
+          "extra": false
          }
         ],
-        "back": 11,
-        "walkTotal": 45,
-        "visitTotal": 80,
-        "needs": 125,
-        "fitted": 2,
+        "back": 20,
+        "walkTotal": 60,
+        "visitTotal": 135,
+        "needs": 195,
+        "fitted": 4,
         "dropped": 0,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Augsburg%20Hauptbahnhof&destination=Augsburg%20Hauptbahnhof&waypoints=Maximilianstra%C3%9Fe%2C%20Augsburg%7CRathausplatz%2C%20Augsburg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Augsburg%20Hauptbahnhof&destination=Augsburg%20Hauptbahnhof&waypoints=Maximilianstra%C3%9Fe%2C%20Augsburg%7CRathausplatz%2C%20Augsburg",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Augsburg%20Hauptbahnhof&destination=Augsburg%20Hauptbahnhof&waypoints=Maximilianstra%C3%9Fe%2C%20Augsburg%7CRathausplatz%2C%20Augsburg%7CAugustusbrunnen%2C%20Augsburg%7CLechviertel%20canals%2C%20Augsburg",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Augsburg%20Hauptbahnhof&destination=Augsburg%20Hauptbahnhof&waypoints=Maximilianstra%C3%9Fe%2C%20Augsburg%7CRathausplatz%2C%20Augsburg%7CAugustusbrunnen%2C%20Augsburg%7CLechviertel%20canals%2C%20Augsburg",
         "town": "Augsburg, Germany"
        }
       }
@@ -1644,9 +1996,9 @@
      "intro": null,
      "hero": null,
      "bags": null,
-     "ride": 244,
+     "ride": 206,
      "stops": 5,
-     "endArr": "21:16",
+     "endArr": "21:46",
      "startDep": "08:05",
      "steps": [
       {
@@ -1688,9 +2040,51 @@
         11.09701
        ],
        "station": "Bahnhof Garmisch-Partenkirchen",
-       "say": "1 h 9 min here, until the 09:40 on. Ten minutes east from the station to Ludwigstraße — the Partenkirchen half, which is the pretty one.",
-       "free": 69,
-       "dep": "09:40"
+       "say": "2 h 9 min here, until the 10:40 on. Twenty minutes east from the station to Ludwigstraße — the Partenkirchen half, which is the pretty one.",
+       "free": 129,
+       "dep": "10:40"
+      },
+      {
+       "day": 2,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "garmisch",
+       "title": "Ludwigstraße",
+       "ll": [
+        47.49388889,
+        11.10527778
+       ],
+       "sight": "garmisch/Ludwigstraße",
+       "move": "12 min walk.",
+       "rode": false,
+       "mins": 12,
+       "visit": 45,
+       "say": "Partenkirchen's old painted street. Prettier than the Garmisch half.",
+       "offset": 12,
+       "until": 57,
+       "ticket": false
+      },
+      {
+       "day": 2,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "garmisch",
+       "title": "Mohrenplatz",
+       "ll": [
+        47.49388889,
+        11.10527778
+       ],
+       "sight": "garmisch/Mohrenplatz",
+       "move": "1 min walk.",
+       "rode": false,
+       "mins": 1,
+       "visit": 15,
+       "say": "The small square at the top of Ludwigstraße.",
+       "offset": 58,
+       "until": 73,
+       "ticket": false
       },
       {
        "day": 2,
@@ -1704,19 +2098,19 @@
         11.0873
        ],
        "sight": "garmisch/Old St Martin",
-       "move": "20 min walk.",
+       "move": "27 min walk.",
        "rode": false,
-       "mins": 20,
+       "mins": 27,
        "visit": 20,
        "say": "Medieval frescoes inside, including a giant St Christopher.",
-       "offset": 20,
-       "until": 40,
+       "offset": 100,
+       "until": 120,
        "ticket": false
       },
       {
        "day": 2,
        "path": "A",
-       "t": "09:40",
+       "t": "10:40",
        "kind": "back",
        "place": "garmisch",
        "title": "Back to Bahnhof Garmisch-Partenkirchen",
@@ -1725,19 +2119,19 @@
         11.09701
        ],
        "mins": 20,
-       "say": "20 min back to the station. Aim to be on the platform by 09:40."
+       "say": "20 min back to the station. Aim to be on the platform by 10:40."
       },
       {
        "day": 2,
        "path": "A",
-       "t": "09:40",
+       "t": "10:40",
        "kind": "ride",
        "title": "Bus to Ettal",
        "line": "326",
        "from": "Bahnhof Garmisch-Partenkirchen",
        "to": "Ettal, Kloster (bus)",
-       "dep": "09:40",
-       "arr": "10:05",
+       "dep": "10:40",
+       "arr": "11:05",
        "dur": 25,
        "changes": 0,
        "track": "1",
@@ -1757,7 +2151,7 @@
       {
        "day": 2,
        "path": "A",
-       "t": "10:05",
+       "t": "11:05",
        "kind": "arrive",
        "place": "ettal",
        "title": "You are in Ettal",
@@ -1766,9 +2160,9 @@
         11.0949
        ],
        "station": "Ettal, Kloster (bus)",
-       "say": "1 h 35 min here, until the 11:40 on. The bus stops at the abbey gate. Everything is in front of you.",
-       "free": 95,
-       "dep": "11:40"
+       "say": "1 h 10 min here, until the 12:15 on. The bus stops at the abbey gate. Everything is in front of you.",
+       "free": 70,
+       "dep": "12:15"
       },
       {
        "day": 2,
@@ -1815,7 +2209,7 @@
       {
        "day": 2,
        "path": "A",
-       "t": "11:40",
+       "t": "12:15",
        "kind": "back",
        "place": "ettal",
        "title": "Back to Ettal, Kloster (bus)",
@@ -1824,21 +2218,21 @@
         11.0949
        ],
        "mins": 5,
-       "say": "5 min back to the station. Aim to be on the platform by 11:40."
+       "say": "5 min back to the station. Aim to be on the platform by 12:15."
       },
       {
        "day": 2,
        "path": "A",
-       "t": "11:40",
+       "t": "12:15",
        "kind": "ride",
        "title": "Bus to Oberammergau",
-       "line": "316",
+       "line": "326",
        "from": "Ettal, Kloster (bus)",
        "to": "Bahnhof Oberammergau",
-       "dep": "11:40",
-       "arr": "12:20",
-       "dur": 40,
-       "changes": 1,
+       "dep": "12:15",
+       "arr": "12:23",
+       "dur": 8,
+       "changes": 0,
        "track": null,
        "ll": [
         47.5695,
@@ -1850,13 +2244,13 @@
        ],
        "place": "ettal",
        "toPlace": "oberammergau",
-       "say": "40 minutes and 1 change — 316, then 316.",
+       "say": "8 minutes, straight through.",
        "note": ""
       },
       {
        "day": 2,
        "path": "A",
-       "t": "12:20",
+       "t": "12:23",
        "kind": "arrive",
        "place": "oberammergau",
        "title": "You are in Oberammergau",
@@ -1865,8 +2259,8 @@
         11.0663
        ],
        "station": "Bahnhof Oberammergau",
-       "say": "2 h 20 min here, until the 14:40 on. Ten minutes from the station into the village.",
-       "free": 140,
+       "say": "2 h 17 min here, until the 14:40 on. Ten minutes from the station into the village.",
+       "free": 137,
        "dep": "14:40"
       },
       {
@@ -1875,19 +2269,40 @@
        "t": null,
        "kind": "see",
        "place": "oberammergau",
-       "title": "Dorfstraße",
+       "title": "Ettaler Straße houses",
        "ll": [
-        47.59859,
-        11.06434
+        47.5961,
+        11.0698
        ],
-       "sight": "oberammergau/Dorfstraße",
-       "move": "3 min walk.",
+       "sight": "oberammergau/Ettaler Straße houses",
+       "move": "7 min walk.",
        "rode": false,
-       "mins": 3,
-       "visit": 30,
-       "say": "The main street, painted end to end.",
-       "offset": 3,
-       "until": 33,
+       "mins": 7,
+       "visit": 25,
+       "say": "Hansel and Gretel and Little Red Riding Hood, painted across whole walls.",
+       "offset": 7,
+       "until": 32,
+       "ticket": false
+      },
+      {
+       "day": 2,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "oberammergau",
+       "title": "Pilatushaus",
+       "ll": [
+        47.597,
+        11.0666
+       ],
+       "sight": "oberammergau/Pilatushaus",
+       "move": "5 min walk.",
+       "rode": false,
+       "mins": 5,
+       "visit": 25,
+       "say": "The most famous painted facade in Bavaria — painted architecture that isn't there.",
+       "offset": 37,
+       "until": 62,
        "ticket": false
       },
       {
@@ -1902,13 +2317,13 @@
         11.0661
        ],
        "sight": "oberammergau/Pfarrkirche St Peter und Paul",
-       "move": "7 min walk.",
+       "move": "3 min walk.",
        "rode": false,
-       "mins": 7,
+       "mins": 3,
        "visit": 20,
        "say": "Rococo interior, considered one of the finest village churches in Bavaria.",
-       "offset": 40,
-       "until": 60,
+       "offset": 65,
+       "until": 85,
        "ticket": false
       },
       {
@@ -1928,8 +2343,8 @@
        "mins": 10,
        "visit": 30,
        "say": "The village has staged the Passion every ten years since 1634.",
-       "offset": 70,
-       "until": 100,
+       "offset": 95,
+       "until": 125,
        "ticket": false
       },
       {
@@ -1985,9 +2400,9 @@
         11.193
        ],
        "station": "Bahnhof Murnau",
-       "say": "1 h 10 min here, until the 16:32 on. Ten minutes uphill from the station to Obermarkt.",
-       "free": 70,
-       "dep": "16:32"
+       "say": "2 h 10 min here, until the 17:32 on. Ten minutes uphill from the station to Obermarkt.",
+       "free": 130,
+       "dep": "17:32"
       },
       {
        "day": 2,
@@ -2013,7 +2428,28 @@
       {
        "day": 2,
        "path": "A",
-       "t": "16:32",
+       "t": null,
+       "kind": "see",
+       "place": "murnau",
+       "title": "Münter House",
+       "ll": [
+        47.67468,
+        11.19662
+       ],
+       "sight": "murnau/Münter House",
+       "move": "8 min walk.",
+       "rode": false,
+       "mins": 8,
+       "visit": 50,
+       "say": "Where Kandinsky and Gabriele Münter lived and painted. Still furnished.",
+       "offset": 49,
+       "until": 99,
+       "ticket": true
+      },
+      {
+       "day": 2,
+       "path": "A",
+       "t": "17:32",
        "kind": "back",
        "place": "murnau",
        "title": "Back to Bahnhof Murnau",
@@ -2021,20 +2457,20 @@
         47.6823,
         11.193
        ],
-       "mins": 20,
-       "say": "20 min back to the station. Aim to be on the platform by 16:32."
+       "mins": 16,
+       "say": "16 min back to the station. Aim to be on the platform by 17:32."
       },
       {
        "day": 2,
        "path": "A",
-       "t": "16:32",
+       "t": "17:32",
        "kind": "ride",
        "title": "Train to Munich",
        "line": "RB6",
        "from": "Bahnhof Murnau",
        "to": "München Hauptbahnhof",
-       "dep": "16:32",
-       "arr": "17:28",
+       "dep": "17:32",
+       "arr": "18:28",
        "dur": 56,
        "changes": 0,
        "track": "1",
@@ -2054,7 +2490,7 @@
       {
        "day": 2,
        "path": "A",
-       "t": "17:28",
+       "t": "18:28",
        "kind": "arrive",
        "place": "munich",
        "title": "You are in Munich",
@@ -2063,9 +2499,9 @@
         11.55772
        ],
        "station": "München Hauptbahnhof",
-       "say": "2 h 53 min here, until the 20:21 on. Twenty minutes on foot down Neuhauser Straße, or two stops on the S-Bahn.",
-       "free": 173,
-       "dep": "20:21"
+       "say": "2 h 29 min here, until the 20:57 on. Twenty minutes on foot down Neuhauser Straße, or two stops on the S-Bahn.",
+       "free": 149,
+       "dep": "20:57"
       },
       {
        "day": 2,
@@ -2133,7 +2569,7 @@
       {
        "day": 2,
        "path": "A",
-       "t": "20:21",
+       "t": "20:57",
        "kind": "back",
        "place": "munich",
        "title": "Back to München Hauptbahnhof",
@@ -2142,22 +2578,22 @@
         11.55772
        ],
        "mins": 12,
-       "say": "12 min back to the station. Aim to be on the platform by 20:21."
+       "say": "12 min back to the station. Aim to be on the platform by 20:57."
       },
       {
        "day": 2,
        "path": "A",
-       "t": "20:21",
+       "t": "20:57",
        "kind": "ride",
        "title": "Train to Augsburg",
-       "line": "RB87",
+       "line": "RE9",
        "from": "München Hauptbahnhof",
        "to": "Augsburg Hauptbahnhof",
-       "dep": "20:21",
-       "arr": "21:16",
-       "dur": 55,
+       "dep": "20:57",
+       "arr": "21:46",
+       "dur": 49,
        "changes": 0,
-       "track": "17",
+       "track": "16",
        "ll": [
         48.14044,
         11.55772
@@ -2168,13 +2604,13 @@
        ],
        "place": "munich",
        "toPlace": "augsburg",
-       "say": "55 minutes, straight through.",
+       "say": "49 minutes, straight through.",
        "note": ""
       },
       {
        "day": 2,
        "path": "A",
-       "t": "21:16",
+       "t": "21:46",
        "kind": "arrive",
        "place": "augsburg",
        "title": "You are in Augsburg",
@@ -2233,872 +2669,26 @@
        "day": 2,
        "path": "A",
        "t": null,
-       "kind": "sleep",
-       "place": "augsburg",
-       "title": "Goodnight, Augsburg",
-       "ll": [
-        48.36556,
-        10.88639
-       ],
-       "say": "Tomorrow: West to the Neckar."
-      }
-     ]
-    },
-    {
-     "id": "B",
-     "name": "Füssen and Neuschwanstein",
-     "why": "One famous castle instead of five small places. Early start, long queues, and no Munich.",
-     "seq": [
-      {
-       "kind": "move",
-       "from": "mittenwald",
-       "to": "garmisch",
-       "note": "",
-       "bus": false,
-       "fromStop": "Bahnhof Mittenwald",
-       "toStop": "Bahnhof Garmisch-Partenkirchen",
-       "fromLL": [
-        47.44,
-        11.2655
-       ],
-       "toLL": [
-        47.49145,
-        11.09701
-       ],
-       "dep": "07:36",
-       "arr": "07:57",
-       "depIso": "2026-09-30T05:36:00Z",
-       "arrIso": "2026-09-30T05:57:00Z",
-       "dur": 21,
-       "changes": 0,
-       "gaps": [],
-       "legs": [
-        {
-         "mode": "METRO",
-         "line": "S6",
-         "towards": "Garmisch-Partenkirchen",
-         "from": "Mittenwald",
-         "to": "Garmisch-Partenkirchen",
-         "dep": "07:36",
-         "arr": "07:57",
-         "depIso": "2026-09-30T05:36:00Z",
-         "arrIso": "2026-09-30T05:57:00Z",
-         "track": "3",
-         "tripId": "20260930_07:36_de-DELFI_3412767379"
-        }
-       ],
-       "wanted": "07:30",
-       "later": [
-        {
-         "dep": "07:46",
-         "arr": "08:17",
-         "dur": 31,
-         "changes": 0,
-         "lines": [
-          "328"
-         ]
-        },
-        {
-         "dep": "08:05",
-         "arr": "08:31",
-         "dur": 26,
-         "changes": 0,
-         "lines": [
-          "RB6"
-         ]
-        },
-        {
-         "dep": "08:36",
-         "arr": "09:00",
-         "dur": 24,
-         "changes": 0,
-         "lines": [
-          "RB6"
-         ]
-        }
-       ]
-      },
-      {
-       "kind": "move",
-       "from": "garmisch",
-       "to": "fussen",
-       "note": "Regional bus via Ettal and Oberammergau. Only a few runs a day — check the time the night before.",
-       "bus": true,
-       "fromStop": "Bahnhof Garmisch-Partenkirchen",
-       "toStop": "Bahnhof Füssen",
-       "fromLL": [
-        47.49145,
-        11.09701
-       ],
-       "toLL": [
-        47.57026,
-        10.69782
-       ],
-       "dep": "08:04",
-       "arr": "10:27",
-       "depIso": "2026-09-30T06:04:00Z",
-       "arrIso": "2026-09-30T08:27:00Z",
-       "dur": 143,
-       "changes": 2,
-       "gaps": [
-        10,
-        28
-       ],
-       "legs": [
-        {
-         "mode": "REGIONAL_RAIL",
-         "line": "RB60",
-         "towards": "Pfronten-Steinach",
-         "from": "Garmisch-Partenkirchen",
-         "to": "Pfronten-Steinach",
-         "dep": "08:04",
-         "arr": "09:24",
-         "depIso": "2026-09-30T06:04:00Z",
-         "arrIso": "2026-09-30T07:24:00Z",
-         "track": "3",
-         "tripId": "20260930_08:04_de-DELFI_3412767572"
-        },
-        {
-         "mode": "REGIONAL_RAIL",
-         "line": "RB73",
-         "towards": "Kempten (Allgäu) Hbf",
-         "from": "Pfronten-Steinach",
-         "to": "Pfronten-Ried",
-         "dep": "09:34",
-         "arr": "09:37",
-         "depIso": "2026-09-30T07:34:00Z",
-         "arrIso": "2026-09-30T07:37:00Z",
-         "track": "2",
-         "tripId": "20260930_09:34_de-DELFI_3412760561"
-        },
-        {
-         "mode": "BUS",
-         "line": "71",
-         "towards": "Füssen",
-         "from": "Pfronten-Ried",
-         "to": "Füssen",
-         "dep": "10:05",
-         "arr": "10:27",
-         "depIso": "2026-09-30T08:05:00Z",
-         "arrIso": "2026-09-30T08:27:00Z",
-         "track": "1",
-         "tripId": "20260930_09:48_de-DELFI_3374598447"
-        }
-       ],
-       "wanted": "07:57",
-       "later": [
-        {
-         "dep": "09:04",
-         "arr": "10:30",
-         "dur": 86,
-         "changes": 1,
-         "lines": [
-          "RB60",
-          "100"
-         ]
-        },
-        {
-         "dep": "09:40",
-         "arr": "12:00",
-         "dur": 140,
-         "changes": 0,
-         "lines": [
-          "326"
-         ]
-        },
-        {
-         "dep": "10:04",
-         "arr": "12:50",
-         "dur": 166,
-         "changes": 1,
-         "lines": [
-          "RB60",
-          "100"
-         ]
-        }
-       ]
-      },
-      {
-       "kind": "stop",
-       "place": "fussen",
-       "stn": "The station is right beside the old town; the castle bus leaves from outside it.",
-       "see": [
-        "Füssen old town",
-        "Hohes Schloss",
-        "St Mang's Abbey",
-        "Lechfall",
-        "Hohenschwangau",
-        "Neuschwanstein",
-        "Marienbrücke"
-       ],
-       "base": false,
-       "arrIso": "2026-09-30T08:27:00Z",
-       "want": 385,
-       "arr": "10:27",
-       "depIso": "2026-09-30T14:20:00Z",
-       "dep": "16:20",
-       "free": 353,
-       "route": {
-        "legs": [
-         {
-          "to": "Füssen old town",
-          "mins": 9,
-          "how": {
-           "mins": 9,
-           "mode": "walk"
-          },
-          "visit": 50,
-          "backFromHere": 9,
-          "backHow": {
-           "mins": 9,
-           "mode": "walk"
-          },
-          "must": false,
-          "lat": 47.56666667,
-          "lon": 10.7,
-          "kind": "street",
-          "note": "Lanes of pastel houses right beside the station.",
-          "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         },
-         {
-          "to": "Hohes Schloss",
-          "mins": 12,
-          "how": {
-           "mins": 12,
-           "mode": "walk"
-          },
-          "visit": 45,
-          "backFromHere": 12,
-          "backHow": {
-           "mins": 12,
-           "mode": "walk"
-          },
-          "must": false,
-          "lat": 47.567164,
-          "lon": 10.698151,
-          "kind": "palace",
-          "note": "Painted castle courtyard — trompe-l'œil windows on flat walls.",
-          "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         },
-         {
-          "to": "St Mang's Abbey",
-          "mins": 9,
-          "how": {
-           "mins": 9,
-           "mode": "walk"
-          },
-          "visit": 45,
-          "backFromHere": 9,
-          "backHow": {
-           "mins": 9,
-           "mode": "walk"
-          },
-          "must": false,
-          "lat": 47.56658611,
-          "lon": 10.6995,
-          "kind": "church",
-          "note": "Baroque abbey on the river with a painted Hall of Princes.",
-          "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         },
-         {
-          "to": "Lechfall",
-          "mins": 14,
-          "how": {
-           "mins": 14,
-           "mode": "ride",
-           "line": "100",
-           "vehicle": "BUS",
-           "from": "Füssen Bahnhof",
-           "to": "Füssen Tirolerstraße",
-           "walkInstead": 20
-          },
-          "visit": 30,
-          "backFromHere": 20,
-          "backHow": {
-           "mins": 20,
-           "mode": "walk"
-          },
-          "must": false,
-          "lat": 47.561815,
-          "lon": 10.694809,
-          "kind": "nature",
-          "note": "Waterfall and gorge, 10 min from the centre.",
-          "ticket": false,
-          "at": 14,
-          "leaveBy": 44,
-          "extra": false
-         },
-         {
-          "to": "Hohenschwangau",
-          "mins": 57,
-          "how": {
-           "mins": 57,
-           "mode": "ride",
-           "line": "71",
-           "vehicle": "BUS",
-           "from": "Füssen, Morisse",
-           "to": "Hohenschwangau, Neuschwanstein",
-           "walkInstead": null
-          },
-          "visit": 90,
-          "backFromHere": 20,
-          "backHow": {
-           "mins": 20,
-           "mode": "ride",
-           "line": "78",
-           "vehicle": "BUS",
-           "from": "Hohenschwangau, Neuschwanstein",
-           "to": "Füssen",
-           "walkInstead": null
-          },
-          "must": false,
-          "lat": 47.555654,
-          "lon": 10.736702,
-          "kind": "palace",
-          "note": "The yellow castle below — where Ludwig actually grew up.",
-          "ticket": true,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
-         },
-         {
-          "to": "Neuschwanstein",
-          "mins": 19,
-          "how": {
-           "mins": 19,
-           "mode": "go",
-           "approx": true
-          },
-          "visit": 180,
-          "backFromHere": 19,
-          "backHow": {
-           "mins": 19,
-           "mode": "go",
-           "approx": true
-          },
-          "must": true,
-          "lat": 47.557579,
-          "lon": 10.749704,
-          "kind": "palace",
-          "note": "Ludwig II's castle. Interior needs a timed ticket booked ahead.",
-          "ticket": true,
-          "at": 63,
-          "leaveBy": 243,
-          "extra": false
-         },
-         {
-          "to": "Marienbrücke",
-          "mins": 11,
-          "how": {
-           "mins": 11,
-           "mode": "walk"
-          },
-          "visit": 40,
-          "backFromHere": 19,
-          "backHow": {
-           "mins": 19,
-           "mode": "go",
-           "approx": true
-          },
-          "must": true,
-          "lat": 47.554938,
-          "lon": 10.749425,
-          "kind": "view",
-          "note": "The bridge over the gorge with the castle view everyone knows.",
-          "ticket": false,
-          "at": 254,
-          "leaveBy": 294,
-          "extra": false
-         }
-        ],
-        "back": 19,
-        "walkTotal": 63,
-        "visitTotal": 250,
-        "needs": 313,
-        "fitted": 3,
-        "dropped": 4,
-        "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20F%C3%BCssen&destination=Bahnhof%20F%C3%BCssen&waypoints=Lechfall%2C%20F%C3%BCssen%7CNeuschwanstein%2C%20F%C3%BCssen%7CMarienbr%C3%BCcke%2C%20F%C3%BCssen",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20F%C3%BCssen&destination=Bahnhof%20F%C3%BCssen&waypoints=F%C3%BCssen%20old%20town%2C%20F%C3%BCssen%7CHohes%20Schloss%2C%20F%C3%BCssen%7CSt%20Mang's%20Abbey%2C%20F%C3%BCssen%7CLechfall%2C%20F%C3%BCssen%7CHohenschwangau%2C%20F%C3%BCssen%7CNeuschwanstein%2C%20F%C3%BCssen%7CMarienbr%C3%BCcke%2C%20F%C3%BCssen",
-        "town": "Füssen, Germany"
-       }
-      },
-      {
-       "kind": "move",
-       "from": "fussen",
-       "to": "augsburg",
-       "note": "Change at Buchloe.",
-       "bus": false,
-       "fromStop": "Bahnhof Füssen",
-       "toStop": "Augsburg Hauptbahnhof",
-       "fromLL": [
-        47.57026,
-        10.69782
-       ],
-       "toLL": [
-        48.36556,
-        10.88639
-       ],
-       "dep": "16:20",
-       "arr": "18:09",
-       "depIso": "2026-09-30T14:20:00Z",
-       "arrIso": "2026-09-30T16:09:00Z",
-       "dur": 109,
-       "changes": 0,
-       "gaps": [],
-       "legs": [
-        {
-         "mode": "REGIONAL_RAIL",
-         "line": "RB77",
-         "towards": "Augsburg Hbf",
-         "from": "Füssen",
-         "to": "Augsburg Hbf",
-         "dep": "16:20",
-         "arr": "18:09",
-         "depIso": "2026-09-30T14:20:00Z",
-         "arrIso": "2026-09-30T16:09:00Z",
-         "track": "3",
-         "tripId": "20260930_16:20_de-DELFI_3412386142"
-        }
-       ],
-       "wanted": "16:52",
-       "later": [
-        {
-         "dep": "17:20",
-         "arr": "19:09",
-         "dur": 109,
-         "changes": 1,
-         "lines": [
-          "RB68",
-          "RB77"
-         ]
-        },
-        {
-         "dep": "18:20",
-         "arr": "20:09",
-         "dur": 109,
-         "changes": 0,
-         "lines": [
-          "RB77"
-         ]
-        },
-        {
-         "dep": "19:20",
-         "arr": "21:09",
-         "dur": 109,
-         "changes": 1,
-         "lines": [
-          "RB68",
-          "RB77"
-         ]
-        }
-       ]
-      },
-      {
-       "kind": "stop",
-       "place": "augsburg",
-       "stn": "Fifteen minutes east from the Hbf to Rathausplatz, or tram 2.",
-       "see": [
-        "Maximilianstraße",
-        "Rathausplatz",
-        "Augsburg Cathedral",
-        "Lechviertel canals"
-       ],
-       "base": true,
-       "arrIso": "2026-09-30T16:09:00Z",
-       "want": null,
-       "arr": "18:09",
-       "free": null,
-       "dep": null,
-       "route": {
-        "legs": [
-         {
-          "to": "Maximilianstraße",
-          "mins": 23,
-          "how": {
-           "mins": 23,
-           "mode": "walk"
-          },
-          "visit": 40,
-          "backFromHere": 23,
-          "backHow": {
-           "mins": 23,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 48.36527778,
-          "lon": 10.89944444,
-          "kind": "street",
-          "note": "The grand street, with the Hercules and Mercury fountains.",
-          "ticket": false,
-          "at": 23,
-          "leaveBy": 63,
-          "extra": false
-         },
-         {
-          "to": "Rathausplatz",
-          "mins": 11,
-          "how": {
-           "mins": 11,
-           "mode": "walk"
-          },
-          "visit": 40,
-          "backFromHere": 11,
-          "backHow": {
-           "mins": 11,
-           "mode": "ride",
-           "line": "32",
-           "vehicle": "BUS",
-           "from": "Augsburg, Moritzplatz",
-           "to": "Augsburg Hbf",
-           "walkInstead": 16
-          },
-          "must": true,
-          "lat": 48.36862,
-          "lon": 10.89858,
-          "kind": "square",
-          "note": "Renaissance town hall and the Perlachturm above it.",
-          "ticket": false,
-          "at": 74,
-          "leaveBy": 114,
-          "extra": false
-         },
-         {
-          "to": "Augsburg Cathedral",
-          "mins": 8,
-          "how": {
-           "mins": 8,
-           "mode": "walk"
-          },
-          "visit": 35,
-          "backFromHere": 21,
-          "backHow": {
-           "mins": 21,
-           "mode": "walk"
-          },
-          "must": true,
-          "lat": 48.37277778,
-          "lon": 10.89666667,
-          "kind": "church",
-          "note": "Has some of the oldest stained glass in the world, around 1100.",
-          "ticket": false,
-          "at": 122,
-          "leaveBy": 157,
-          "extra": false
-         },
-         {
-          "to": "Lechviertel canals",
-          "mins": 9,
-          "how": {
-           "mins": 9,
-           "mode": "walk"
-          },
-          "visit": 45,
-          "backFromHere": 20,
-          "backHow": {
-           "mins": 20,
-           "mode": "walk"
-          },
-          "must": false,
-          "lat": 48.37,
-          "lon": 10.90111111,
-          "kind": "street",
-          "note": "The old craftsmen's quarter, threaded with water channels.",
-          "ticket": false,
-          "at": 166,
-          "leaveBy": 211,
-          "extra": false
-         }
-        ],
-        "back": 20,
-        "walkTotal": 71,
-        "visitTotal": 160,
-        "needs": 231,
-        "fitted": 4,
-        "dropped": 0,
-        "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Augsburg%20Hauptbahnhof&destination=Augsburg%20Hauptbahnhof&waypoints=Maximilianstra%C3%9Fe%2C%20Augsburg%7CRathausplatz%2C%20Augsburg%7CAugsburg%20Cathedral%2C%20Augsburg%7CLechviertel%20canals%2C%20Augsburg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Augsburg%20Hauptbahnhof&destination=Augsburg%20Hauptbahnhof&waypoints=Maximilianstra%C3%9Fe%2C%20Augsburg%7CRathausplatz%2C%20Augsburg%7CAugsburg%20Cathedral%2C%20Augsburg%7CLechviertel%20canals%2C%20Augsburg",
-        "town": "Augsburg, Germany"
-       }
-      }
-     ],
-     "from": "mittenwald",
-     "to": "augsburg",
-     "title": null,
-     "intro": null,
-     "hero": null,
-     "bags": null,
-     "ride": 273,
-     "stops": 1,
-     "endArr": "18:09",
-     "startDep": "07:36",
-     "steps": [
-      {
-       "day": 2,
-       "path": "B",
-       "t": "07:36",
-       "kind": "ride",
-       "title": "Train to Garmisch",
-       "line": "S6",
-       "from": "Bahnhof Mittenwald",
-       "to": "Bahnhof Garmisch-Partenkirchen",
-       "dep": "07:36",
-       "arr": "07:57",
-       "dur": 21,
-       "changes": 0,
-       "track": "3",
-       "ll": [
-        47.44,
-        11.2655
-       ],
-       "toLL": [
-        47.49145,
-        11.09701
-       ],
-       "place": "mittenwald",
-       "toPlace": "garmisch",
-       "say": "21 minutes, straight through.",
-       "note": ""
-      },
-      {
-       "day": 2,
-       "path": "B",
-       "t": "08:04",
-       "kind": "ride",
-       "title": "Train to Füssen",
-       "line": "RB60",
-       "from": "Bahnhof Garmisch-Partenkirchen",
-       "to": "Bahnhof Füssen",
-       "dep": "08:04",
-       "arr": "10:27",
-       "dur": 143,
-       "changes": 2,
-       "track": "3",
-       "ll": [
-        47.49145,
-        11.09701
-       ],
-       "toLL": [
-        47.57026,
-        10.69782
-       ],
-       "place": "garmisch",
-       "toPlace": "fussen",
-       "say": "143 minutes and 2 changes — RB60, then RB73, then 71.",
-       "note": "Regional bus via Ettal and Oberammergau. Only a few runs a day — check the time the night before."
-      },
-      {
-       "day": 2,
-       "path": "B",
-       "t": "10:27",
-       "kind": "arrive",
-       "place": "fussen",
-       "title": "You are in Füssen",
-       "ll": [
-        47.57026,
-        10.69782
-       ],
-       "station": "Bahnhof Füssen",
-       "say": "5 h 53 min here, until the 16:20 on. The station is right beside the old town; the castle bus leaves from outside it.",
-       "free": 353,
-       "dep": "16:20"
-      },
-      {
-       "day": 2,
-       "path": "B",
-       "t": null,
        "kind": "see",
-       "place": "fussen",
-       "title": "Lechfall",
+       "place": "augsburg",
+       "title": "Augustusbrunnen",
        "ll": [
-        47.561815,
-        10.694809
+        48.369048,
+        10.897955
        ],
-       "sight": "fussen/Lechfall",
-       "move": "Take the 100 — 14 min, instead of 20 on foot.",
-       "rode": true,
-       "mins": 14,
-       "visit": 30,
-       "say": "Waterfall and gorge, 10 min from the centre.",
-       "offset": 14,
-       "until": 44,
+       "sight": "augsburg/Augustusbrunnen",
+       "move": "1 min walk.",
+       "rode": false,
+       "mins": 1,
+       "visit": 10,
+       "say": "The bronze fountain in front of the town hall.",
+       "offset": 115,
+       "until": 125,
        "ticket": false
       },
       {
        "day": 2,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "fussen",
-       "title": "Neuschwanstein",
-       "ll": [
-        47.557579,
-        10.749704
-       ],
-       "sight": "fussen/Neuschwanstein",
-       "move": "19 min walk.",
-       "rode": false,
-       "mins": 19,
-       "visit": 180,
-       "say": "Ludwig II's castle. Interior needs a timed ticket booked ahead.",
-       "offset": 63,
-       "until": 243,
-       "ticket": true
-      },
-      {
-       "day": 2,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "fussen",
-       "title": "Marienbrücke",
-       "ll": [
-        47.554938,
-        10.749425
-       ],
-       "sight": "fussen/Marienbrücke",
-       "move": "11 min walk.",
-       "rode": false,
-       "mins": 11,
-       "visit": 40,
-       "say": "The bridge over the gorge with the castle view everyone knows.",
-       "offset": 254,
-       "until": 294,
-       "ticket": false
-      },
-      {
-       "day": 2,
-       "path": "B",
-       "t": "16:20",
-       "kind": "back",
-       "place": "fussen",
-       "title": "Back to Bahnhof Füssen",
-       "ll": [
-        47.57026,
-        10.69782
-       ],
-       "mins": 19,
-       "say": "19 min back to the station. Aim to be on the platform by 16:20."
-      },
-      {
-       "day": 2,
-       "path": "B",
-       "t": "16:20",
-       "kind": "ride",
-       "title": "Train to Augsburg",
-       "line": "RB77",
-       "from": "Bahnhof Füssen",
-       "to": "Augsburg Hauptbahnhof",
-       "dep": "16:20",
-       "arr": "18:09",
-       "dur": 109,
-       "changes": 0,
-       "track": "3",
-       "ll": [
-        47.57026,
-        10.69782
-       ],
-       "toLL": [
-        48.36556,
-        10.88639
-       ],
-       "place": "fussen",
-       "toPlace": "augsburg",
-       "say": "109 minutes, straight through.",
-       "note": "Change at Buchloe."
-      },
-      {
-       "day": 2,
-       "path": "B",
-       "t": "18:09",
-       "kind": "arrive",
-       "place": "augsburg",
-       "title": "You are in Augsburg",
-       "ll": [
-        48.36556,
-        10.88639
-       ],
-       "station": "Augsburg Hauptbahnhof",
-       "say": "This is where you sleep tonight. Fifteen minutes east from the Hbf to Rathausplatz, or tram 2.",
-       "free": null,
-       "dep": null
-      },
-      {
-       "day": 2,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "augsburg",
-       "title": "Maximilianstraße",
-       "ll": [
-        48.36527778,
-        10.89944444
-       ],
-       "sight": "augsburg/Maximilianstraße",
-       "move": "23 min walk.",
-       "rode": false,
-       "mins": 23,
-       "visit": 40,
-       "say": "The grand street, with the Hercules and Mercury fountains.",
-       "offset": 23,
-       "until": 63,
-       "ticket": false
-      },
-      {
-       "day": 2,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "augsburg",
-       "title": "Rathausplatz",
-       "ll": [
-        48.36862,
-        10.89858
-       ],
-       "sight": "augsburg/Rathausplatz",
-       "move": "11 min walk.",
-       "rode": false,
-       "mins": 11,
-       "visit": 40,
-       "say": "Renaissance town hall and the Perlachturm above it.",
-       "offset": 74,
-       "until": 114,
-       "ticket": false
-      },
-      {
-       "day": 2,
-       "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "augsburg",
-       "title": "Augsburg Cathedral",
-       "ll": [
-        48.37277778,
-        10.89666667
-       ],
-       "sight": "augsburg/Augsburg Cathedral",
-       "move": "8 min walk.",
-       "rode": false,
-       "mins": 8,
-       "visit": 35,
-       "say": "Has some of the oldest stained glass in the world, around 1100.",
-       "offset": 122,
-       "until": 157,
-       "ticket": false
-      },
-      {
-       "day": 2,
-       "path": "B",
+       "path": "A",
        "t": null,
        "kind": "see",
        "place": "augsburg",
@@ -3108,18 +2698,18 @@
         10.90111111
        ],
        "sight": "augsburg/Lechviertel canals",
-       "move": "9 min walk.",
+       "move": "5 min walk.",
        "rode": false,
-       "mins": 9,
+       "mins": 5,
        "visit": 45,
        "say": "The old craftsmen's quarter, threaded with water channels.",
-       "offset": 166,
-       "until": 211,
+       "offset": 130,
+       "until": 175,
        "ticket": false
       },
       {
        "day": 2,
-       "path": "B",
+       "path": "A",
        "t": null,
        "kind": "sleep",
        "place": "augsburg",
@@ -5611,21 +5201,16 @@
           "kind": "street",
           "note": "A bridge with houses on it, lived in continuously since 1325.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 15,
+          "leaveBy": 60,
+          "extra": false
          },
          {
           "to": "Domplatz",
-          "mins": 13,
+          "mins": 8,
           "how": {
-           "mins": 13,
-           "mode": "ride",
-           "line": "3",
-           "vehicle": "TRAM",
-           "from": "Erfurt, Hauptbahnhof",
-           "to": "Erfurt, Domplatz Nord",
-           "walkInstead": 20
+           "mins": 8,
+           "mode": "walk"
           },
           "visit": 40,
           "backFromHere": 11,
@@ -5650,15 +5235,10 @@
          },
          {
           "to": "Erfurt Cathedral",
-          "mins": 17,
+          "mins": 12,
           "how": {
-           "mins": 17,
-           "mode": "ride",
-           "line": "3",
-           "vehicle": "TRAM",
-           "from": "Erfurt, Hauptbahnhof",
-           "to": "Erfurt, Domplatz Nord",
-           "walkInstead": 24
+           "mins": 12,
+           "mode": "walk"
           },
           "visit": 40,
           "backFromHere": 14,
@@ -5677,15 +5257,15 @@
           "kind": "church",
           "note": "Climb the steps. The Gloriosa bell inside is the largest medieval bell in the world.",
           "ticket": false,
-          "at": 17,
-          "leaveBy": 57,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Fischmarkt",
-          "mins": 10,
+          "mins": 3,
           "how": {
-           "mins": 10,
+           "mins": 3,
            "mode": "walk"
           },
           "visit": 45,
@@ -5705,14 +5285,14 @@
           "extra": true
          }
         ],
-        "back": 14,
-        "walkTotal": 31,
-        "visitTotal": 40,
-        "needs": 71,
+        "back": 15,
+        "walkTotal": 30,
+        "visitTotal": 45,
+        "needs": 75,
         "fitted": 1,
         "dropped": 3,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Erfurt%20Cathedral%2C%20Erfurt",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Kr%C3%A4merbr%C3%BCcke%2C%20Erfurt",
         "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Kr%C3%A4merbr%C3%BCcke%2C%20Erfurt%7CDomplatz%2C%20Erfurt%7CErfurt%20Cathedral%2C%20Erfurt%7CFischmarkt%2C%20Erfurt",
         "town": "Erfurt, Germany"
        }
@@ -5890,15 +5470,15 @@
           "kind": "square",
           "note": "The Goethe and Schiller statue stands in front of the theatre.",
           "ticket": false,
-          "at": 60,
-          "leaveBy": 80,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Cranach House",
-          "mins": 7,
+          "mins": 2,
           "how": {
-           "mins": 7,
+           "mins": 2,
            "mode": "walk"
           },
           "visit": 20,
@@ -5923,14 +5503,14 @@
           "extra": true
          }
         ],
-        "back": 20,
-        "walkTotal": 50,
-        "visitTotal": 50,
-        "needs": 100,
-        "fitted": 2,
-        "dropped": 2,
+        "back": 22,
+        "walkTotal": 45,
+        "visitTotal": 30,
+        "needs": 75,
+        "fitted": 1,
+        "dropped": 3,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CTheaterplatz%2C%20Weimar",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar",
         "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CGoethe's%20House%2C%20Weimar%7CTheaterplatz%2C%20Weimar%7CCranach%20House%2C%20Weimar",
         "town": "Weimar, Germany"
        }
@@ -6041,21 +5621,16 @@
           "kind": "church",
           "note": "UNESCO. The twelve founder statues — Uta especially — are extraordinary.",
           "ticket": true,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 17,
+          "leaveBy": 77,
+          "extra": false
          },
          {
           "to": "Marktplatz",
-          "mins": 17,
+          "mins": 9,
           "how": {
-           "mins": 17,
-           "mode": "ride",
-           "line": "4",
-           "vehicle": "TRAM",
-           "from": "Naumburg (Saale), Hauptbahnhof (Tram)",
-           "to": "Naumburg (Saale), Poststr./Postring",
-           "walkInstead": 26
+           "mins": 9,
+           "mode": "walk"
           },
           "visit": 30,
           "backFromHere": 17,
@@ -6074,15 +5649,15 @@
           "kind": "square",
           "note": "Late-Gothic town hall and burgher houses.",
           "ticket": false,
-          "at": 17,
-          "leaveBy": 47,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "St Wenceslas",
-          "mins": 2,
+          "mins": 10,
           "how": {
-           "mins": 2,
+           "mins": 10,
            "mode": "walk"
           },
           "visit": 30,
@@ -6109,12 +5684,12 @@
         ],
         "back": 17,
         "walkTotal": 34,
-        "visitTotal": 30,
-        "needs": 64,
+        "visitTotal": 60,
+        "needs": 94,
         "fitted": 1,
         "dropped": 2,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Naumburg%20(Saale)%20Hauptbahnhof&destination=Naumburg%20(Saale)%20Hauptbahnhof&waypoints=Marktplatz%2C%20Naumburg",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Naumburg%20(Saale)%20Hauptbahnhof&destination=Naumburg%20(Saale)%20Hauptbahnhof&waypoints=Naumburg%20Cathedral%2C%20Naumburg",
         "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Naumburg%20(Saale)%20Hauptbahnhof&destination=Naumburg%20(Saale)%20Hauptbahnhof&waypoints=Naumburg%20Cathedral%2C%20Naumburg%7CMarktplatz%2C%20Naumburg%7CSt%20Wenceslas%2C%20Naumburg",
         "town": "Naumburg, Germany"
        }
@@ -6470,21 +6045,16 @@
           "kind": "church",
           "note": "The door where the 95 theses went up in 1517. UNESCO, and the reason for the town.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 18,
+          "leaveBy": 68,
+          "extra": false
          },
          {
           "to": "Markt and the Cranach houses",
-          "mins": 20,
+          "mins": 7,
           "how": {
-           "mins": 20,
-           "mode": "ride",
-           "line": "RB51 (16166)",
-           "vehicle": "REGIONAL_RAIL",
-           "from": "Lutherstadt Wittenberg Hbf",
-           "to": "Lutherstadt Wittenberg Altstadt",
-           "walkInstead": 25
+           "mins": 7,
+           "mode": "walk"
           },
           "visit": 45,
           "backFromHere": 20,
@@ -6503,8 +6073,8 @@
           "kind": "square",
           "note": "Town hall, the two statues, and the painter's courtyards behind the square.",
           "ticket": false,
-          "at": 20,
-          "leaveBy": 65,
+          "at": 75,
+          "leaveBy": 120,
           "extra": false
          },
          {
@@ -6526,15 +6096,15 @@
           "kind": "church",
           "note": "Where Luther actually preached, with Cranach's altarpiece.",
           "ticket": false,
-          "at": 67,
-          "leaveBy": 107,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Luther House",
-          "mins": 9,
+          "mins": 11,
           "how": {
-           "mins": 9,
+           "mins": 11,
            "mode": "walk"
           },
           "visit": 90,
@@ -6554,14 +6124,14 @@
           "extra": true
          }
         ],
-        "back": 23,
+        "back": 20,
         "walkTotal": 45,
-        "visitTotal": 85,
-        "needs": 130,
+        "visitTotal": 95,
+        "needs": 140,
         "fitted": 2,
         "dropped": 2,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Lutherstadt%20Wittenberg&destination=Bahnhof%20Lutherstadt%20Wittenberg&waypoints=Markt%20and%20the%20Cranach%20houses%2C%20Wittenberg%7CTown%20Church%20of%20St%20Mary%2C%20Wittenberg",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Lutherstadt%20Wittenberg&destination=Bahnhof%20Lutherstadt%20Wittenberg&waypoints=Castle%20Church%2C%20Wittenberg%7CMarkt%20and%20the%20Cranach%20houses%2C%20Wittenberg",
         "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Lutherstadt%20Wittenberg&destination=Bahnhof%20Lutherstadt%20Wittenberg&waypoints=Castle%20Church%2C%20Wittenberg%7CMarkt%20and%20the%20Cranach%20houses%2C%20Wittenberg%7CTown%20Church%20of%20St%20Mary%2C%20Wittenberg%7CLuther%20House%2C%20Wittenberg",
         "town": "Wittenberg, Germany"
        }
@@ -6759,19 +6329,19 @@
        "t": null,
        "kind": "see",
        "place": "erfurt",
-       "title": "Erfurt Cathedral",
+       "title": "Krämerbrücke",
        "ll": [
-        50.97583,
-        11.02317
+        50.9787455,
+        11.0307747
        ],
-       "sight": "erfurt/Erfurt Cathedral",
-       "move": "Take the 3 — 17 min, instead of 24 on foot.",
-       "rode": true,
-       "mins": 17,
-       "visit": 40,
-       "say": "Climb the steps. The Gloriosa bell inside is the largest medieval bell in the world.",
-       "offset": 17,
-       "until": 57,
+       "sight": "erfurt/Krämerbrücke",
+       "move": "15 min walk.",
+       "rode": false,
+       "mins": 15,
+       "visit": 45,
+       "say": "A bridge with houses on it, lived in continuously since 1325.",
+       "offset": 15,
+       "until": 60,
        "ticket": false
       },
       {
@@ -6785,8 +6355,8 @@
         50.9723,
         11.038
        ],
-       "mins": 14,
-       "say": "14 min back to the station. Aim to be on the platform by 09:36."
+       "mins": 15,
+       "say": "15 min back to the station. Aim to be on the platform by 09:36."
       },
       {
        "day": 5,
@@ -6855,27 +6425,6 @@
       {
        "day": 5,
        "path": "A",
-       "t": null,
-       "kind": "see",
-       "place": "weimar",
-       "title": "Theaterplatz",
-       "ll": [
-        50.97956111,
-        11.32468333
-       ],
-       "sight": "weimar/Theaterplatz",
-       "move": "7 min walk.",
-       "rode": false,
-       "mins": 7,
-       "visit": 20,
-       "say": "The Goethe and Schiller statue stands in front of the theatre.",
-       "offset": 60,
-       "until": 80,
-       "ticket": false
-      },
-      {
-       "day": 5,
-       "path": "A",
        "t": "11:52",
        "kind": "back",
        "place": "weimar",
@@ -6884,8 +6433,8 @@
         50.993,
         11.3253
        ],
-       "mins": 20,
-       "say": "20 min back to the station. Aim to be on the platform by 11:52."
+       "mins": 22,
+       "say": "22 min back to the station. Aim to be on the platform by 11:52."
       },
       {
        "day": 5,
@@ -6936,20 +6485,20 @@
        "t": null,
        "kind": "see",
        "place": "naumburg",
-       "title": "Marktplatz",
+       "title": "Naumburg Cathedral",
        "ll": [
-        51.1525,
-        11.80999
+        51.15472222,
+        11.80388889
        ],
-       "sight": "naumburg/Marktplatz",
-       "move": "Take the 4 — 17 min, instead of 26 on foot.",
-       "rode": true,
+       "sight": "naumburg/Naumburg Cathedral",
+       "move": "17 min walk.",
+       "rode": false,
        "mins": 17,
-       "visit": 30,
-       "say": "Late-Gothic town hall and burgher houses.",
+       "visit": 60,
+       "say": "UNESCO. The twelve founder statues — Uta especially — are extraordinary.",
        "offset": 17,
-       "until": 47,
-       "ticket": false
+       "until": 77,
+       "ticket": true
       },
       {
        "day": 5,
@@ -7113,19 +6662,19 @@
        "t": null,
        "kind": "see",
        "place": "wittenberg",
-       "title": "Markt and the Cranach houses",
+       "title": "Castle Church",
        "ll": [
-        51.86644,
-        12.64351
+        51.866369,
+        12.637947
        ],
-       "sight": "wittenberg/Markt and the Cranach houses",
-       "move": "Take the RB51 (16166) — 20 min, instead of 25 on foot.",
+       "sight": "wittenberg/Castle Church",
+       "move": "Take the RB51 (16166) — 18 min, instead of 30 on foot.",
        "rode": true,
-       "mins": 20,
-       "visit": 45,
-       "say": "Town hall, the two statues, and the painter's courtyards behind the square.",
-       "offset": 20,
-       "until": 65,
+       "mins": 18,
+       "visit": 50,
+       "say": "The door where the 95 theses went up in 1517. UNESCO, and the reason for the town.",
+       "offset": 18,
+       "until": 68,
        "ticket": false
       },
       {
@@ -7134,19 +6683,19 @@
        "t": null,
        "kind": "see",
        "place": "wittenberg",
-       "title": "Town Church of St Mary",
+       "title": "Markt and the Cranach houses",
        "ll": [
-        51.86649722,
-        12.64479444
+        51.86644,
+        12.64351
        ],
-       "sight": "wittenberg/Town Church of St Mary",
-       "move": "2 min walk.",
+       "sight": "wittenberg/Markt and the Cranach houses",
+       "move": "7 min walk.",
        "rode": false,
-       "mins": 2,
-       "visit": 40,
-       "say": "Where Luther actually preached, with Cranach's altarpiece.",
-       "offset": 67,
-       "until": 107,
+       "mins": 7,
+       "visit": 45,
+       "say": "Town hall, the two statues, and the painter's courtyards behind the square.",
+       "offset": 75,
+       "until": 120,
        "ticket": false
       },
       {
@@ -7160,8 +6709,8 @@
         51.865,
         12.662
        ],
-       "mins": 23,
-       "say": "23 min back to the station. Aim to be on the platform by 20:52."
+       "mins": 20,
+       "say": "20 min back to the station. Aim to be on the platform by 20:52."
       },
       {
        "day": 5,
@@ -7331,15 +6880,15 @@
           "kind": "square",
           "note": "Renaissance houses and the town hall. Dinner here.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 15,
+          "leaveBy": 60,
+          "extra": false
          },
          {
           "to": "Krämerbrücke",
-          "mins": 15,
+          "mins": 3,
           "how": {
-           "mins": 15,
+           "mins": 3,
            "mode": "walk"
           },
           "visit": 45,
@@ -7354,21 +6903,16 @@
           "kind": "street",
           "note": "A bridge with houses on it, lived in continuously since 1325.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 63,
+          "leaveBy": 108,
+          "extra": false
          },
          {
           "to": "Domplatz",
-          "mins": 13,
+          "mins": 8,
           "how": {
-           "mins": 13,
-           "mode": "ride",
-           "line": "3",
-           "vehicle": "TRAM",
-           "from": "Erfurt, Hauptbahnhof",
-           "to": "Erfurt, Domplatz Nord",
-           "walkInstead": 20
+           "mins": 8,
+           "mode": "walk"
           },
           "visit": 40,
           "backFromHere": 11,
@@ -7387,15 +6931,15 @@
           "kind": "square",
           "note": "Cathedral and St Severi side by side above a huge open square.",
           "ticket": false,
-          "at": 13,
-          "leaveBy": 53,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Erfurt Cathedral",
-          "mins": 5,
+          "mins": 12,
           "how": {
-           "mins": 5,
+           "mins": 12,
            "mode": "walk"
           },
           "visit": 40,
@@ -7415,15 +6959,15 @@
           "kind": "church",
           "note": "Climb the steps. The Gloriosa bell inside is the largest medieval bell in the world.",
           "ticket": false,
-          "at": 58,
-          "leaveBy": 98,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Petersberg Citadel",
-          "mins": 11,
+          "mins": 15,
           "how": {
-           "mins": 11,
+           "mins": 15,
            "mode": "walk"
           },
           "visit": 60,
@@ -7448,14 +6992,14 @@
           "extra": true
          }
         ],
-        "back": 14,
-        "walkTotal": 32,
-        "visitTotal": 80,
-        "needs": 112,
+        "back": 15,
+        "walkTotal": 33,
+        "visitTotal": 90,
+        "needs": 123,
         "fitted": 2,
         "dropped": 4,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Domplatz%2C%20Erfurt%7CErfurt%20Cathedral%2C%20Erfurt",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Fischmarkt%2C%20Erfurt%7CKr%C3%A4merbr%C3%BCcke%2C%20Erfurt",
         "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Erfurt%20Hauptbahnhof&destination=Erfurt%20Hauptbahnhof&waypoints=Anger%2C%20Erfurt%7CFischmarkt%2C%20Erfurt%7CKr%C3%A4merbr%C3%BCcke%2C%20Erfurt%7CDomplatz%2C%20Erfurt%7CErfurt%20Cathedral%2C%20Erfurt%7CPetersberg%20Citadel%2C%20Erfurt",
         "town": "Erfurt, Germany"
        }
@@ -7633,15 +7177,15 @@
           "kind": "square",
           "note": "The Goethe and Schiller statue stands in front of the theatre.",
           "ticket": false,
-          "at": 60,
-          "leaveBy": 80,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Park an der Ilm",
-          "mins": 18,
+          "mins": 13,
           "how": {
-           "mins": 18,
+           "mins": 13,
            "mode": "walk"
           },
           "visit": 75,
@@ -7666,14 +7210,14 @@
           "extra": true
          }
         ],
-        "back": 20,
-        "walkTotal": 50,
-        "visitTotal": 50,
-        "needs": 100,
-        "fitted": 2,
-        "dropped": 2,
+        "back": 22,
+        "walkTotal": 45,
+        "visitTotal": 30,
+        "needs": 75,
+        "fitted": 1,
+        "dropped": 3,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CTheaterplatz%2C%20Weimar",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar",
         "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Weimar&destination=Bahnhof%20Weimar&waypoints=Marktplatz%2C%20Weimar%7CGoethe's%20House%2C%20Weimar%7CTheaterplatz%2C%20Weimar%7CPark%20an%20der%20Ilm%2C%20Weimar",
         "town": "Weimar, Germany"
        }
@@ -7972,19 +7516,19 @@
        "t": null,
        "kind": "see",
        "place": "erfurt",
-       "title": "Domplatz",
+       "title": "Fischmarkt",
        "ll": [
-        50.97694444,
-        11.02388889
+        50.97777778,
+        11.02888889
        ],
-       "sight": "erfurt/Domplatz",
-       "move": "Take the 3 — 13 min, instead of 20 on foot.",
-       "rode": true,
-       "mins": 13,
-       "visit": 40,
-       "say": "Cathedral and St Severi side by side above a huge open square.",
-       "offset": 13,
-       "until": 53,
+       "sight": "erfurt/Fischmarkt",
+       "move": "15 min walk.",
+       "rode": false,
+       "mins": 15,
+       "visit": 45,
+       "say": "Renaissance houses and the town hall. Dinner here.",
+       "offset": 15,
+       "until": 60,
        "ticket": false
       },
       {
@@ -7993,19 +7537,19 @@
        "t": null,
        "kind": "see",
        "place": "erfurt",
-       "title": "Erfurt Cathedral",
+       "title": "Krämerbrücke",
        "ll": [
-        50.97583,
-        11.02317
+        50.9787455,
+        11.0307747
        ],
-       "sight": "erfurt/Erfurt Cathedral",
-       "move": "5 min walk.",
+       "sight": "erfurt/Krämerbrücke",
+       "move": "3 min walk.",
        "rode": false,
-       "mins": 5,
-       "visit": 40,
-       "say": "Climb the steps. The Gloriosa bell inside is the largest medieval bell in the world.",
-       "offset": 58,
-       "until": 98,
+       "mins": 3,
+       "visit": 45,
+       "say": "A bridge with houses on it, lived in continuously since 1325.",
+       "offset": 63,
+       "until": 108,
        "ticket": false
       },
       {
@@ -8019,8 +7563,8 @@
         50.9723,
         11.038
        ],
-       "mins": 14,
-       "say": "14 min back to the station. Aim to be on the platform by 10:36."
+       "mins": 15,
+       "say": "15 min back to the station. Aim to be on the platform by 10:36."
       },
       {
        "day": 5,
@@ -8089,27 +7633,6 @@
       {
        "day": 5,
        "path": "B",
-       "t": null,
-       "kind": "see",
-       "place": "weimar",
-       "title": "Theaterplatz",
-       "ll": [
-        50.97956111,
-        11.32468333
-       ],
-       "sight": "weimar/Theaterplatz",
-       "move": "7 min walk.",
-       "rode": false,
-       "mins": 7,
-       "visit": 20,
-       "say": "The Goethe and Schiller statue stands in front of the theatre.",
-       "offset": 60,
-       "until": 80,
-       "ticket": false
-      },
-      {
-       "day": 5,
-       "path": "B",
        "t": "12:52",
        "kind": "back",
        "place": "weimar",
@@ -8118,8 +7641,8 @@
         50.993,
         11.3253
        ],
-       "mins": 20,
-       "say": "20 min back to the station. Aim to be on the platform by 12:52."
+       "mins": 22,
+       "say": "22 min back to the station. Aim to be on the platform by 12:52."
       },
       {
        "day": 5,
@@ -8378,22 +7901,6 @@
    "wiki": "https://de.wikipedia.org/wiki/Murnau_am_Staffelsee",
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Imperator_Ludovicus%2C_Murnau%2C_Bavaria%2C_Germany.jpg/1200px-Imperator_Ludovicus%2C_Murnau%2C_Bavaria%2C_Germany.jpg",
    "photoFile": "Imperator Ludovicus, Murnau, Bavaria, Germany.jpg",
-   "about": ""
-  },
-  "fussen": {
-   "n": "Füssen",
-   "q": "Füssen Bahnhof",
-   "w": "Füssen",
-   "stn": "Bahnhof Füssen",
-   "country": "DE",
-   "lat": 47.57026,
-   "lon": 10.69782,
-   "name": "Bahnhof Füssen",
-   "src": "pinned",
-   "km": 0.43,
-   "wiki": "https://de.wikipedia.org/wiki/F%C3%BCssen",
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/F%C3%BCssen_-_Altstadt.JPG/1200px-F%C3%BCssen_-_Altstadt.JPG",
-   "photoFile": "Füssen - Altstadt.JPG",
    "about": ""
   },
   "munich": {
@@ -9364,8 +8871,8 @@
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 47.5934,
+   "lon": 11.0698,
    "photo": "https://upload.wikimedia.org/wikipedia/commons/8/80/Gro%C3%9Fe_Laine-bjs110615-03.jpg",
    "photoBig": "https://upload.wikimedia.org/wikipedia/commons/8/80/Gro%C3%9Fe_Laine-bjs110615-03.jpg",
    "photoFile": "Große Laine-bjs110615-03.jpg",
@@ -9382,8 +8889,8 @@
    "indoor": false,
    "closed": null,
    "must": true,
-   "lat": null,
-   "lon": null,
+   "lat": 47.597,
+   "lon": 11.0666,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Oberammergau_Pilatushaus_Gartenfassade.jpg/640px-Oberammergau_Pilatushaus_Gartenfassade.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Oberammergau_Pilatushaus_Gartenfassade.jpg/1000px-Oberammergau_Pilatushaus_Gartenfassade.jpg",
    "photoFile": "Oberammergau Pilatushaus Gartenfassade.jpg",
@@ -9436,8 +8943,8 @@
    "indoor": false,
    "closed": null,
    "must": true,
-   "lat": null,
-   "lon": null,
+   "lat": 47.5961,
+   "lon": 11.0698,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Mittenwald_5_-_26.05.2006.JPG/640px-Mittenwald_5_-_26.05.2006.JPG",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Mittenwald_5_-_26.05.2006.JPG/1000px-Mittenwald_5_-_26.05.2006.JPG",
    "photoFile": "Mittenwald_5_-_26.05.2006.JPG",
@@ -9590,132 +9097,6 @@
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Schlo%C3%9Fmuseum_Murnau_Eingangsseite_August_2022.jpg/1000px-Schlo%C3%9Fmuseum_Murnau_Eingangsseite_August_2022.jpg",
    "photoFile": "Schloßmuseum_Murnau_Eingangsseite_August_2022.jpg",
    "wiki": "https://de.wikipedia.org/wiki/Schlo%C3%9Fmuseum_Murnau",
-   "about": ""
-  },
-  "fussen/Neuschwanstein": {
-   "place": "fussen",
-   "name": "Neuschwanstein",
-   "note": "Ludwig II's castle. Interior needs a timed ticket booked ahead.",
-   "mins": 180,
-   "kind": "palace",
-   "ticket": true,
-   "indoor": false,
-   "closed": null,
-   "must": true,
-   "lat": 47.557579,
-   "lon": 10.749704,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Neuschwanstein_Castle_2024-02.jpg/640px-Neuschwanstein_Castle_2024-02.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Neuschwanstein_Castle_2024-02.jpg/1000px-Neuschwanstein_Castle_2024-02.jpg",
-   "photoFile": "Neuschwanstein_Castle_2024-02.jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Schloss_Neuschwanstein",
-   "about": ""
-  },
-  "fussen/Marienbrücke": {
-   "place": "fussen",
-   "name": "Marienbrücke",
-   "note": "The bridge over the gorge with the castle view everyone knows.",
-   "mins": 40,
-   "kind": "view",
-   "ticket": false,
-   "indoor": false,
-   "closed": null,
-   "must": true,
-   "lat": 47.554938,
-   "lon": 10.749425,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/20050619_130750_Marienbruecke_Neuschwanstein.jpg/640px-20050619_130750_Marienbruecke_Neuschwanstein.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/20050619_130750_Marienbruecke_Neuschwanstein.jpg/1000px-20050619_130750_Marienbruecke_Neuschwanstein.jpg",
-   "photoFile": "20050619_130750_Marienbruecke_Neuschwanstein.jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Marienbr%C3%BCcke_(Neuschwanstein)",
-   "about": ""
-  },
-  "fussen/Hohenschwangau": {
-   "place": "fussen",
-   "name": "Hohenschwangau",
-   "note": "The yellow castle below — where Ludwig actually grew up.",
-   "mins": 90,
-   "kind": "palace",
-   "ticket": true,
-   "indoor": false,
-   "closed": null,
-   "must": false,
-   "lat": 47.555654,
-   "lon": 10.736702,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Hohenschwangau_%283383608894%29.jpg/640px-Hohenschwangau_%283383608894%29.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Hohenschwangau_%283383608894%29.jpg/1000px-Hohenschwangau_%283383608894%29.jpg",
-   "photoFile": "Hohenschwangau_(3383608894).jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Schloss_Hohenschwangau",
-   "about": ""
-  },
-  "fussen/Hohes Schloss": {
-   "place": "fussen",
-   "name": "Hohes Schloss",
-   "note": "Painted castle courtyard — trompe-l'œil windows on flat walls.",
-   "mins": 45,
-   "kind": "palace",
-   "ticket": false,
-   "indoor": false,
-   "closed": null,
-   "must": false,
-   "lat": 47.567164,
-   "lon": 10.698151,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Fuessen_hohes_schloss.jpg/640px-Fuessen_hohes_schloss.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Fuessen_hohes_schloss.jpg/1000px-Fuessen_hohes_schloss.jpg",
-   "photoFile": "Fuessen_hohes_schloss.jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Hohes_Schloss_F%C3%BCssen",
-   "about": ""
-  },
-  "fussen/Füssen old town": {
-   "place": "fussen",
-   "name": "Füssen old town",
-   "note": "Lanes of pastel houses right beside the station.",
-   "mins": 50,
-   "kind": "street",
-   "ticket": false,
-   "indoor": false,
-   "closed": null,
-   "must": false,
-   "lat": 47.56666667,
-   "lon": 10.7,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/F%C3%BCssen_-_Altstadt.JPG/640px-F%C3%BCssen_-_Altstadt.JPG",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/F%C3%BCssen_-_Altstadt.JPG/1000px-F%C3%BCssen_-_Altstadt.JPG",
-   "photoFile": "Füssen - Altstadt.JPG",
-   "wiki": "https://de.wikipedia.org/wiki/F%C3%BCssen",
-   "about": ""
-  },
-  "fussen/Lechfall": {
-   "place": "fussen",
-   "name": "Lechfall",
-   "note": "Waterfall and gorge, 10 min from the centre.",
-   "mins": 30,
-   "kind": "nature",
-   "ticket": false,
-   "indoor": false,
-   "closed": null,
-   "must": false,
-   "lat": 47.561815,
-   "lon": 10.694809,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/F%C3%BCssen_-_Lechfall.jpg/640px-F%C3%BCssen_-_Lechfall.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/F%C3%BCssen_-_Lechfall.jpg/1000px-F%C3%BCssen_-_Lechfall.jpg",
-   "photoFile": "Füssen_-_Lechfall.jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Lechfall",
-   "about": ""
-  },
-  "fussen/St Mang's Abbey": {
-   "place": "fussen",
-   "name": "St Mang's Abbey",
-   "note": "Baroque abbey on the river with a painted Hall of Princes.",
-   "mins": 45,
-   "kind": "church",
-   "ticket": false,
-   "indoor": true,
-   "closed": null,
-   "must": false,
-   "lat": 47.56658611,
-   "lon": 10.6995,
-   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg/640px-Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg",
-   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg/1000px-Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg",
-   "photoFile": "Aerial_image_of_the_Abbey_of_Saint_Mang_(view_from_the_southwest).jpg",
-   "wiki": "https://de.wikipedia.org/wiki/Kloster_St._Mang",
    "about": ""
   },
   "munich/Odeonsplatz": {
@@ -9926,8 +9307,8 @@
    "indoor": false,
    "closed": null,
    "must": true,
-   "lat": null,
-   "lon": null,
+   "lat": 48.1523,
+   "lon": 11.5934,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Prior_Park_Bath_Palladian_Bridge.jpg/640px-Prior_Park_Bath_Palladian_Bridge.jpg",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Prior_Park_Bath_Palladian_Bridge.jpg/1000px-Prior_Park_Bath_Palladian_Bridge.jpg",
    "photoFile": "Prior_Park_Bath_Palladian_Bridge.jpg",
@@ -10274,8 +9655,8 @@
    "indoor": false,
    "closed": null,
    "must": false,
-   "lat": null,
-   "lon": null,
+   "lat": 48.3642,
+   "lon": 10.8948,
    "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Am_Roten_Tor_1_Augsburg.JPG/640px-Am_Roten_Tor_1_Augsburg.JPG",
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Am_Roten_Tor_1_Augsburg.JPG/1000px-Am_Roten_Tor_1_Augsburg.JPG",
    "photoFile": "Am_Roten_Tor_1_Augsburg.JPG",
@@ -13356,6 +12737,10 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
+  "Lautersee, Mittenwald 04.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kritzolina"
+  },
   "Esslingen a.N. - Altstadt - Altes Rathaus - nördlicher Giebel und Glockenspiel mit Abendsonne.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Roman Eisele"
@@ -13388,14 +12773,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "H. Zell"
   },
-  "Füssen - Altstadt.JPG": {
-   "lic": "CC BY-SA 4.0",
-   "by": "C.Stadler/Bwag (talk / email)"
-  },
-  "20050619 130750 Marienbruecke Neuschwanstein.jpg": {
-   "lic": "CC BY-SA 2.0 de",
-   "by": "Robert Böck"
-  },
   "Seefeld chiesa barocca.jpg": {
    "lic": "CC BY-SA 2.5",
    "by": "unknown"
@@ -13404,9 +12781,17 @@
    "lic": "CC BY-SA 2.5",
    "by": "No machine-readable author provided. Elian assumed (based on copyright claims)."
   },
+  "20060416-Michaelskirche Muenchen.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Luidger"
+  },
   "Mittenwald 5 - 26.05.2006.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Hesse1309"
+  },
+  "Rathaus and Marienplatz from Peterskirche - August 2006.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Diliff"
   },
   "Murnauer Moos.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13415,10 +12800,6 @@
   "Ferchensee Lautersee Mittenwald.jpg": {
    "lic": "GFDL",
    "by": "Kogo"
-  },
-  "Fuessen hohes schloss.jpg": {
-   "lic": "Public domain",
-   "by": "Patrick Huebgen"
   },
   "Hoher Kranzberg.jpg": {
    "lic": "GFDL",
@@ -13452,10 +12833,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Bjs"
   },
-  "Füssen - Lechfall.jpg": {
-   "lic": "FAL",
-   "by": "Taxiarchos228"
-  },
   "Garmisch-Wohnhaus-Am-Kurpark6.JPG": {
    "lic": "CC0",
    "by": "Leitzsche"
@@ -13480,6 +12857,14 @@
    "lic": "CC0",
    "by": "Jebulon"
   },
+  "München, Alter Hof, spätgotischer Torturm und Erker am Affenturm (14282908665).jpg": {
+   "lic": "CC BY-SA 2.0",
+   "by": "Heribert Pohl --- Thanks for half a million clicks! from Germering bei München, Bayern"
+  },
+  "Stachus 2014-08-02 pseudo-pano.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Meister Eiskalt derivative work: MagentaGreen"
+  },
   "Partnachklamm 2014a.JPG": {
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo"
@@ -13496,9 +12881,9 @@
    "lic": "CC BY-SA 4.0",
    "by": "Renardo la vulpo"
   },
-  "Hohenschwangau (3383608894).jpg": {
-   "lic": "CC BY 2.0",
-   "by": "Pedro from Maia (Porto), Portugal"
+  "Odeonsplatz von der Feldherrnhalle.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Wolfgang Rieger"
   },
   "20180810 xl P1020841-Werkstatt-des-Holzschnitzers-Hans-Schmid.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13520,10 +12905,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Kritzolina"
   },
-  "Lautersee, Mittenwald 04.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Kritzolina"
-  },
   "Sankt Oswald (Seefeld in Tirol) v NO.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Ricardalovesmonuments"
@@ -13540,7 +12921,7 @@
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
   },
-  "Neuschwanstein Castle 2024-02.jpg": {
+  "Exterior of Theatinerkirche, Munich.jpg": {
    "lic": "CC0",
    "by": "Wilfredor"
   },
@@ -13564,13 +12945,13 @@
    "lic": "Public domain",
    "by": "No machine-readable author provided. Infilms assumed (based on copyright claims)."
   },
-  "20060416-Michaelskirche Muenchen.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Luidger"
-  },
   "Augsburg-Mozarthaus renoviert2006.jpg": {
    "lic": "CC BY 2.5",
    "by": "User:ReclaM"
+  },
+  "Nürnberg St. Sebald komplett v N.jpg": {
+   "lic": "CC BY-SA 2.0 de",
+   "by": "jailbird"
   },
   "Frauenkirche Munich - View from Peterskirche Tower.jpg": {
    "lic": "CC BY 2.5",
@@ -13584,13 +12965,13 @@
    "lic": "CC BY-SA 2.5",
    "by": "Stefan Weigel"
   },
-  "Rathaus and Marienplatz from Peterskirche - August 2006.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Diliff"
-  },
   "Hofbrauhaus.JPG": {
    "lic": "Public domain",
    "by": "Kiban"
+  },
+  "Nürnberg Burg ArM.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "ArtMechanic"
   },
   "Augsburg-Perlachkirche.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13604,9 +12985,21 @@
    "lic": "CC BY-SA 3.0",
    "by": "Peter Bubenik"
   },
+  "Nuernberg-schoener-Brunnen-gp.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "User:Kolossos"
+  },
   "Nürnberg Frauentormauer Turm rotes N und Spittlertorturm.jpg": {
    "lic": "CC BY 3.0",
    "by": "Photo: Andreas Praefcke"
+  },
+  "Nuremberg Aerial Hauptmarkt.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Nicohofmann"
+  },
+  "Heilig-Geist-Spital (Nürnberg).jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "– Wladyslaw [Disk.]"
   },
   "Der Hohe Dom zu AugsburgDSC 2136.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13636,14 +13029,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tilman2007"
   },
-  "München, Alter Hof, spätgotischer Torturm und Erker am Affenturm (14282908665).jpg": {
-   "lic": "CC BY-SA 2.0",
-   "by": "Heribert Pohl --- Thanks for half a million clicks! from Germering bei München, Bayern"
-  },
-  "Stachus 2014-08-02 pseudo-pano.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Meister Eiskalt derivative work: MagentaGreen"
-  },
   "Viktualienmarkt 2016.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Wikiolo"
@@ -13651,6 +13036,10 @@
   "St. Nepomuk retusche.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo, derivative work Lämpel"
+  },
+  "Nürnberg, Stadtbefestigung, Tiergärtnertorhaus-20160304-002.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Tilman2007"
   },
   "Innenstadt - St. Ulrich-Dom, Augsburg, Germany - panoramio.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13660,13 +13049,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "© Pierre André"
   },
-  "Odeonsplatz von der Feldherrnhalle.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Wolfgang Rieger"
-  },
   "Donauwörth-KätheKrusePuppenMuseum1-Asio.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Asio otus"
+  },
+  "Albrecht-Dürer-Haus - Tiergärtnerplatz - Nuremberg, Germany - DSC02033.jpg": {
+   "lic": "CC0",
+   "by": "Daderot"
   },
   "Insel Ried - geo.hlipp.de - 22193.jpg": {
    "lic": "CC BY-SA 2.0",
@@ -13692,10 +13081,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Diego Delso"
   },
-  "Aerial image of the Abbey of Saint Mang (view from the southwest).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Carsten Steger"
-  },
   "Augsburg Fuggerei Eingang 220326.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Hajotthu"
@@ -13703,10 +13088,6 @@
   "Deutsches Museum Portrait 4.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Burkhard Mücke"
-  },
-  "Exterior of Theatinerkirche, Munich.jpg": {
-   "lic": "CC0",
-   "by": "Wilfredor"
   },
   "Aerial image of Stadtpfarrkirche Mariä Himmelfahrt, Landsberg am Lech (view from the south).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13728,17 +13109,17 @@
    "lic": "Public domain",
    "by": "Immanuel Giel"
   },
-  "Nürnberg St. Sebald komplett v N.jpg": {
-   "lic": "CC BY-SA 2.0 de",
-   "by": "jailbird"
-  },
   "Neue Residenz auf domberg in Bamberg.png": {
    "lic": "Public domain",
    "by": "Immanuel Giel"
   },
-  "Nürnberg Burg ArM.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "ArtMechanic"
+  "Heidelberg 20060420 021.jpg": {
+   "lic": "CC BY 2.5",
+   "by": "No machine-readable author provided. Hlohning assumed (based on copyright claims)."
+  },
+  "Heidelberg Fussgaengerzone.JPG": {
+   "lic": "Public domain",
+   "by": "Rudolf Stricker"
   },
   "Alte Brücke Heidelberg.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -13760,10 +13141,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "User:Kolossos"
   },
-  "Nuernberg-schoener-Brunnen-gp.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "User:Kolossos"
-  },
   "Panorama Alte Mainbrücke Würzburg.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tors"
@@ -13776,10 +13153,6 @@
    "lic": "Public domain",
    "by": "Photo: Andreas Praefcke"
   },
-  "Nuremberg Aerial Hauptmarkt.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Nicohofmann"
-  },
   "Nuremberg Weißgerbergasse.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "UlrichAAB"
@@ -13788,9 +13161,9 @@
    "lic": "CC BY-SA 3.0",
    "by": "Schlaier"
   },
-  "Heilig-Geist-Spital (Nürnberg).jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "– Wladyslaw [Disk.]"
+  "Fischerviertel Ulm.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "MOs810"
   },
   "German Bratwürste.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13799,6 +13172,10 @@
   "Documentation center entrance nuernberg may2011.jpg": {
    "lic": "CC BY 3.0",
    "by": "KaterBegemot"
+  },
+  "Heidelberg Karzer 01.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Llez"
   },
   "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13820,9 +13197,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
   },
-  "Nürnberg, Stadtbefestigung, Tiergärtnertorhaus-20160304-002.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Tilman2007"
+  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Alexander Hoernigk"
+  },
+  "Ulmer Münster-Münsterplatz (cropped).jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Martin Kraft"
   },
   "Handwerkerhof an Weihnachten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13832,13 +13213,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "Ermell"
   },
-  "Albrecht-Dürer-Haus - Tiergärtnerplatz - Nuremberg, Germany - DSC02033.jpg": {
-   "lic": "CC0",
-   "by": "Daderot"
-  },
   "Würzburg, Residenz, Hofgarten -- 2018 -- 0181.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Dietmar Rabich"
+  },
+  "Ulm Schiefes Haus 03.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Uoaei1"
   },
   "50 000 Exponate aus 1000 Jahren Kriminalgeschichte zeigt das Kriminalmuseum Rothenburg ob der Tauber. 42.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13876,13 +13257,9 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Heidelberg 20060420 021.jpg": {
-   "lic": "CC BY 2.5",
-   "by": "No machine-readable author provided. Hlohning assumed (based on copyright claims)."
-  },
-  "Heidelberg Fussgaengerzone.JPG": {
-   "lic": "Public domain",
-   "by": "Rudolf Stricker"
+  "Schiller Weimar.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "Andreas Trepte"
   },
   "LuftbildPetersberg.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13895,6 +13272,14 @@
   "Weimar Wittumspalais.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Markv at Dutch Wikipedia"
+  },
+  "Naumburg Marientor.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Density"
+  },
+  "Ilmpark in Weimar - Blick zum Stern.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "© R.Möhler"
   },
   "Alte Synagoge Erfurt.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -13916,10 +13301,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Wikswat"
   },
-  "Fischerviertel Ulm.JPG": {
-   "lic": "CC BY-SA 4.0",
-   "by": "MOs810"
-  },
   "Goethe Gartenhaus Kraus.jpg": {
    "lic": "Public domain",
    "by": "The original uploader was Georg Jäger at German Wikipedia."
@@ -13931,10 +13312,6 @@
   "Egapark Erfurt Festplatz.jpg": {
    "lic": "CC BY 3.0",
    "by": "Grimba-Photo"
-  },
-  "Heidelberg Karzer 01.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Llez"
   },
   "2013-04-20 Krämerbrücke.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -13964,14 +13341,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Martin Kraft"
   },
-  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Alexander Hoernigk"
-  },
-  "Ulmer Münster-Münsterplatz (cropped).jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Martin Kraft"
-  },
   "J24 014 Hp Anger, ET 623.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Falk2"
@@ -13988,9 +13357,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "Uoaei1"
   },
-  "Ulm Schiefes Haus 03.jpg": {
+  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Uoaei1"
+   "by": "Steffen Schmitz (more photos)"
+  },
+  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
   },
   "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -13999,6 +13372,10 @@
   "Stadtschloss Fulda (Südwestansicht).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Jörg Braukmann"
+  },
+  "Goethe-Schiller-Denkmal 01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "H.Helmlechner"
   },
   "Thuringia Eisenach asv2020-07 img14 Bach Museum.jpg": {
    "lic": "FAL",
@@ -14028,6 +13405,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "GFreihalter"
   },
+  "BD Nitzsche Haus, Naumburg (1).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "ArthurMcGill"
+  },
   "Halberstadt St-Burchardi-Kirche.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
@@ -14036,21 +13417,9 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Schiller Weimar.jpg": {
-   "lic": "CC BY-SA 2.5",
-   "by": "Andreas Trepte"
-  },
   "Naumburg stwenzel.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Christian Bier"
-  },
-  "Naumburg Marientor.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Density"
-  },
-  "Ilmpark in Weimar - Blick zum Stern.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "© R.Möhler"
   },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -14063,6 +13432,10 @@
   "Halle Händelhaus 2012.jpg": {
    "lic": "CC BY 3.0",
    "by": "Photo: Andreas Praefcke"
+  },
+  "BerlinBrandenburgerTor1985.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joergsam"
   },
   "Wernigerode später Frühling im Lustgartens von Wernigerode im Harz Foto 2005 Wolfgang Pehlemann Wiesbaden PICT0037.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -14079,6 +13452,10 @@
   "Augusteum - Lutherhaus Wittenberg.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
+  },
+  "Luthereiche in Wittenberg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Markus Sturzbecher"
   },
   "Roter Turm Halle 2009.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -14120,21 +13497,13 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
-  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
-  },
-  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
-  },
   "Ein sonniger Anblick zum Hexentanzplatz vom Seilbahn in Thale (Naturschutzgebiet Bodetal).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Vadat, Hasanov"
   },
-  "Goethe-Schiller-Denkmal 01.jpg": {
+  "Magdeburger Dom Luftbild.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "H.Helmlechner"
+   "by": "Gregor Rom"
   },
   "Moritzburg Halle Hauptzuweg.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14143,6 +13512,14 @@
   "Schloss Wernigerode Luftbild 2.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
+  },
+  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Aerial view of Elbuferpromenade, Magdeburg.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Olivier Cleynen"
   },
   "Dom Halberstadt von Südosten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14160,9 +13537,13 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
-  "BD Nitzsche Haus, Naumburg (1).jpg": {
+  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "ArthurMcGill"
+   "by": "Barnos"
+  },
+  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Dguendel"
   },
   "Finkenherd 1 in Quedlinburg (2).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -14216,10 +13597,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Thomas Wolf, www.foto-tw.de"
   },
-  "BerlinBrandenburgerTor1985.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Joergsam"
-  },
   "PlanetariumJena01.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Selby"
@@ -14240,10 +13617,6 @@
    "lic": "CC BY 3.0 de",
    "by": "Ansgar Koreng"
   },
-  "Luthereiche in Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Markus Sturzbecher"
-  },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Alexander Blum"
@@ -14251,10 +13624,6 @@
   "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kora27"
-  },
-  "Magdeburger Dom Luftbild.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Gregor Rom"
   },
   "Hackesche höfe berlin.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -14268,14 +13637,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
   },
-  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
-  },
-  "Aerial view of Elbuferpromenade, Magdeburg.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Olivier Cleynen"
-  },
   "Jena-40-Marktplatz-2023-gje.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gerd Eichmann"
@@ -14287,14 +13648,6 @@
   "2023 Berliner Dom - Westfassade -- 01.jpg": {
    "lic": "CC BY 4.0",
    "by": "Chainwit."
-  },
-  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Barnos"
-  },
-  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
   },
   "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
    "lic": "Public domain",
@@ -14325,7 +13678,7 @@
      "n": 2,
      "pathId": "A",
      "name": "Abbey, woodcarvers, and Munich",
-     "endArr": "21:16"
+     "endArr": "21:46"
     },
     {
      "n": 3,
@@ -14357,7 +13710,7 @@
      "place": "augsburg",
      "nights": 1,
      "from": "2026-09-30",
-     "in": "21:16"
+     "in": "21:46"
     },
     {
      "place": "heidelberg",
@@ -14392,7 +13745,7 @@
     "wittenberg",
     "berlin"
    ],
-   "ride": 972,
+   "ride": 934,
    "stops": 16,
    "latest": "22:18",
    "arrive": "22:18"

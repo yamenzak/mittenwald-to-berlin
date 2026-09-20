@@ -630,111 +630,6 @@
    "file": "Schloßmuseum_Murnau_Eingangsseite_August_2022.jpg",
    "extract": "Das Schloßmuseum Murnau ist ein Museum im bayerischen Markt Murnau am Staffelsee. Es ist im Murnauer Schloss untergebracht."
   },
-  "fussen/Neuschwanstein": {
-   "ok": true,
-   "w": "Schloss Neuschwanstein",
-   "ct": null,
-   "lang": "de",
-   "title": "Schloss Neuschwanstein",
-   "url": "https://de.wikipedia.org/wiki/Schloss_Neuschwanstein",
-   "lat": 47.557579,
-   "lon": 10.749704,
-   "wd": "Q4152",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Neuschwanstein_Castle_2024-02.jpg/640px-Neuschwanstein_Castle_2024-02.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Neuschwanstein_Castle_2024-02.jpg/1000px-Neuschwanstein_Castle_2024-02.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Neuschwanstein_Castle_2024-02.jpg",
-   "extract": "Schloss Neuschwanstein ist ein Baudenkmal in der bayerischen Gemeinde Schwangau. Die Dreiflügelanlage wurde in den Jahren 1869 bis 1892 im Auftrag des Königs Ludwig II."
-  },
-  "fussen/Marienbrücke": {
-   "ok": true,
-   "w": "Marienbrücke (Neuschwanstein)",
-   "ct": null,
-   "lang": "de",
-   "title": "Marienbrücke (Neuschwanstein)",
-   "url": "https://de.wikipedia.org/wiki/Marienbr%C3%BCcke_(Neuschwanstein)",
-   "lat": 47.554938,
-   "lon": 10.749425,
-   "wd": "Q830803",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/20050619_130750_Marienbruecke_Neuschwanstein.jpg/640px-20050619_130750_Marienbruecke_Neuschwanstein.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/20050619_130750_Marienbruecke_Neuschwanstein.jpg/1000px-20050619_130750_Marienbruecke_Neuschwanstein.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "20050619_130750_Marienbruecke_Neuschwanstein.jpg",
-   "extract": "Die Marienbrücke in der Gemeinde Schwangau bei Füssen ist eine Brücke über die Pöllatschlucht unmittelbar hinter und direkt sichtbar vom Schloss Neuschwanstein. Die Brücke wurde benannt nach Königin Marie."
-  },
-  "fussen/Hohenschwangau": {
-   "ok": true,
-   "w": "Schloss Hohenschwangau",
-   "ct": null,
-   "lang": "de",
-   "title": "Schloss Hohenschwangau",
-   "url": "https://de.wikipedia.org/wiki/Schloss_Hohenschwangau",
-   "lat": 47.555654,
-   "lon": 10.736702,
-   "wd": "Q161988",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Hohenschwangau_%283383608894%29.jpg/640px-Hohenschwangau_%283383608894%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Hohenschwangau_%283383608894%29.jpg/1000px-Hohenschwangau_%283383608894%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Hohenschwangau_(3383608894).jpg",
-   "extract": "Schloss Hohenschwangau ist der Neugotik zuzuordnen. Ein Vorgängerbau „Schwanstein“ wurde 1397 erstmals urkundlich erwähnt."
-  },
-  "fussen/Hohes Schloss": {
-   "ok": true,
-   "w": "Hohes Schloss Füssen",
-   "ct": null,
-   "lang": "de",
-   "title": "Hohes Schloss Füssen",
-   "url": "https://de.wikipedia.org/wiki/Hohes_Schloss_F%C3%BCssen",
-   "lat": 47.567164,
-   "lon": 10.698151,
-   "wd": "Q1623988",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Fuessen_hohes_schloss.jpg/640px-Fuessen_hohes_schloss.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Fuessen_hohes_schloss.jpg/1000px-Fuessen_hohes_schloss.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Fuessen_hohes_schloss.jpg",
-   "extract": "Das gotische Hohe Schloss der Bischöfe von Augsburg liegt auf einem Hügel über der Altstadt von Füssen in Schwaben. Das große Burgschloss gilt als eine der am besten erhaltenen mittelalterlichen Burganlagen Bayerns."
-  },
-  "fussen/Füssen old town": {
-   "ok": true,
-   "w": "Füssen",
-   "ct": null,
-   "lang": "de",
-   "title": "Füssen",
-   "url": "https://de.wikipedia.org/wiki/F%C3%BCssen",
-   "lat": 47.56666667,
-   "lon": 10.7,
-   "wd": "Q262684",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/F%C3%BCssen_-_Altstadt.JPG/640px-F%C3%BCssen_-_Altstadt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/F%C3%BCssen_-_Altstadt.JPG/1000px-F%C3%BCssen_-_Altstadt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Füssen - Altstadt.JPG",
-   "extract": ""
-  },
-  "fussen/Lechfall": {
-   "ok": true,
-   "w": "Lechfall",
-   "ct": null,
-   "lang": "de",
-   "title": "Lechfall",
-   "url": "https://de.wikipedia.org/wiki/Lechfall",
-   "lat": 47.561815,
-   "lon": 10.694809,
-   "wd": "Q1811316",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/F%C3%BCssen_-_Lechfall.jpg/640px-F%C3%BCssen_-_Lechfall.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/F%C3%BCssen_-_Lechfall.jpg/1000px-F%C3%BCssen_-_Lechfall.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Füssen_-_Lechfall.jpg",
-   "extract": "Der Lechfall ist ein knapp 8 Meter hohes, in ganzer Breite überströmtes Stauwehr, über das der Lech beim Verlassen der Nördlichen Kalkalpen am südlichen Stadtrand von Füssen in eine kurze Klamm stürzt."
-  },
-  "fussen/St Mang's Abbey": {
-   "ok": true,
-   "w": "Kloster St. Mang",
-   "ct": null,
-   "lang": "de",
-   "title": "Kloster St. Mang",
-   "url": "https://de.wikipedia.org/wiki/Kloster_St._Mang",
-   "lat": 47.56658611,
-   "lon": 10.6995,
-   "wd": "Q1527304",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg/640px-Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg/1000px-Aerial_image_of_the_Abbey_of_Saint_Mang_%28view_from_the_southwest%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-   "file": "Aerial_image_of_the_Abbey_of_Saint_Mang_(view_from_the_southwest).jpg",
-   "extract": "Das Kloster St. Mang ist ein ehemaliges Kloster der Benediktiner in Füssen in Bayern in der Diözese Augsburg."
-  },
   "munich/Odeonsplatz": {
    "ok": true,
    "w": "Odeonsplatz",
@@ -3752,21 +3647,6 @@
    "file": "Imperator Ludovicus, Murnau, Bavaria, Germany.jpg",
    "extract": ""
   },
-  "fussen": {
-   "ok": true,
-   "w": "Füssen",
-   "ct": "Füssen Altstadt Lech",
-   "lang": "de",
-   "title": "Füssen",
-   "url": "https://de.wikipedia.org/wiki/F%C3%BCssen",
-   "lat": 47.56666667,
-   "lon": 10.7,
-   "wd": "Q262684",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/F%C3%BCssen_-_Altstadt.JPG/1200px-F%C3%BCssen_-_Altstadt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/F%C3%BCssen_-_Altstadt.JPG/1200px-F%C3%BCssen_-_Altstadt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Füssen - Altstadt.JPG",
-   "extract": ""
-  },
   "munich": {
    "ok": true,
    "w": "München",
@@ -4298,6 +4178,10 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
+  "Lautersee, Mittenwald 04.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kritzolina"
+  },
   "Esslingen a.N. - Altstadt - Altes Rathaus - nördlicher Giebel und Glockenspiel mit Abendsonne.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Roman Eisele"
@@ -4330,14 +4214,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "H. Zell"
   },
-  "Füssen - Altstadt.JPG": {
-   "lic": "CC BY-SA 4.0",
-   "by": "C.Stadler/Bwag (talk / email)"
-  },
-  "20050619 130750 Marienbruecke Neuschwanstein.jpg": {
-   "lic": "CC BY-SA 2.0 de",
-   "by": "Robert Böck"
-  },
   "Seefeld chiesa barocca.jpg": {
    "lic": "CC BY-SA 2.5",
    "by": "unknown"
@@ -4346,9 +4222,17 @@
    "lic": "CC BY-SA 2.5",
    "by": "No machine-readable author provided. Elian assumed (based on copyright claims)."
   },
+  "20060416-Michaelskirche Muenchen.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Luidger"
+  },
   "Mittenwald 5 - 26.05.2006.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Hesse1309"
+  },
+  "Rathaus and Marienplatz from Peterskirche - August 2006.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Diliff"
   },
   "Murnauer Moos.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4357,10 +4241,6 @@
   "Ferchensee Lautersee Mittenwald.jpg": {
    "lic": "GFDL",
    "by": "Kogo"
-  },
-  "Fuessen hohes schloss.jpg": {
-   "lic": "Public domain",
-   "by": "Patrick Huebgen"
   },
   "Hoher Kranzberg.jpg": {
    "lic": "GFDL",
@@ -4394,10 +4274,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Bjs"
   },
-  "Füssen - Lechfall.jpg": {
-   "lic": "FAL",
-   "by": "Taxiarchos228"
-  },
   "Garmisch-Wohnhaus-Am-Kurpark6.JPG": {
    "lic": "CC0",
    "by": "Leitzsche"
@@ -4422,6 +4298,14 @@
    "lic": "CC0",
    "by": "Jebulon"
   },
+  "München, Alter Hof, spätgotischer Torturm und Erker am Affenturm (14282908665).jpg": {
+   "lic": "CC BY-SA 2.0",
+   "by": "Heribert Pohl --- Thanks for half a million clicks! from Germering bei München, Bayern"
+  },
+  "Stachus 2014-08-02 pseudo-pano.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Meister Eiskalt derivative work: MagentaGreen"
+  },
   "Partnachklamm 2014a.JPG": {
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo"
@@ -4438,9 +4322,9 @@
    "lic": "CC BY-SA 4.0",
    "by": "Renardo la vulpo"
   },
-  "Hohenschwangau (3383608894).jpg": {
-   "lic": "CC BY 2.0",
-   "by": "Pedro from Maia (Porto), Portugal"
+  "Odeonsplatz von der Feldherrnhalle.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Wolfgang Rieger"
   },
   "20180810 xl P1020841-Werkstatt-des-Holzschnitzers-Hans-Schmid.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4462,10 +4346,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Kritzolina"
   },
-  "Lautersee, Mittenwald 04.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Kritzolina"
-  },
   "Sankt Oswald (Seefeld in Tirol) v NO.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Ricardalovesmonuments"
@@ -4482,7 +4362,7 @@
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
   },
-  "Neuschwanstein Castle 2024-02.jpg": {
+  "Exterior of Theatinerkirche, Munich.jpg": {
    "lic": "CC0",
    "by": "Wilfredor"
   },
@@ -4506,13 +4386,13 @@
    "lic": "Public domain",
    "by": "No machine-readable author provided. Infilms assumed (based on copyright claims)."
   },
-  "20060416-Michaelskirche Muenchen.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Luidger"
-  },
   "Augsburg-Mozarthaus renoviert2006.jpg": {
    "lic": "CC BY 2.5",
    "by": "User:ReclaM"
+  },
+  "Nürnberg St. Sebald komplett v N.jpg": {
+   "lic": "CC BY-SA 2.0 de",
+   "by": "jailbird"
   },
   "Frauenkirche Munich - View from Peterskirche Tower.jpg": {
    "lic": "CC BY 2.5",
@@ -4526,13 +4406,13 @@
    "lic": "CC BY-SA 2.5",
    "by": "Stefan Weigel"
   },
-  "Rathaus and Marienplatz from Peterskirche - August 2006.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Diliff"
-  },
   "Hofbrauhaus.JPG": {
    "lic": "Public domain",
    "by": "Kiban"
+  },
+  "Nürnberg Burg ArM.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "ArtMechanic"
   },
   "Augsburg-Perlachkirche.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4546,9 +4426,21 @@
    "lic": "CC BY-SA 3.0",
    "by": "Peter Bubenik"
   },
+  "Nuernberg-schoener-Brunnen-gp.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "User:Kolossos"
+  },
   "Nürnberg Frauentormauer Turm rotes N und Spittlertorturm.jpg": {
    "lic": "CC BY 3.0",
    "by": "Photo: Andreas Praefcke"
+  },
+  "Nuremberg Aerial Hauptmarkt.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Nicohofmann"
+  },
+  "Heilig-Geist-Spital (Nürnberg).jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "– Wladyslaw [Disk.]"
   },
   "Der Hohe Dom zu AugsburgDSC 2136.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4578,14 +4470,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tilman2007"
   },
-  "München, Alter Hof, spätgotischer Torturm und Erker am Affenturm (14282908665).jpg": {
-   "lic": "CC BY-SA 2.0",
-   "by": "Heribert Pohl --- Thanks for half a million clicks! from Germering bei München, Bayern"
-  },
-  "Stachus 2014-08-02 pseudo-pano.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Meister Eiskalt derivative work: MagentaGreen"
-  },
   "Viktualienmarkt 2016.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Wikiolo"
@@ -4593,6 +4477,10 @@
   "St. Nepomuk retusche.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo, derivative work Lämpel"
+  },
+  "Nürnberg, Stadtbefestigung, Tiergärtnertorhaus-20160304-002.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Tilman2007"
   },
   "Innenstadt - St. Ulrich-Dom, Augsburg, Germany - panoramio.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4602,13 +4490,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "© Pierre André"
   },
-  "Odeonsplatz von der Feldherrnhalle.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Wolfgang Rieger"
-  },
   "Donauwörth-KätheKrusePuppenMuseum1-Asio.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Asio otus"
+  },
+  "Albrecht-Dürer-Haus - Tiergärtnerplatz - Nuremberg, Germany - DSC02033.jpg": {
+   "lic": "CC0",
+   "by": "Daderot"
   },
   "Insel Ried - geo.hlipp.de - 22193.jpg": {
    "lic": "CC BY-SA 2.0",
@@ -4634,10 +4522,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Diego Delso"
   },
-  "Aerial image of the Abbey of Saint Mang (view from the southwest).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Carsten Steger"
-  },
   "Augsburg Fuggerei Eingang 220326.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Hajotthu"
@@ -4645,10 +4529,6 @@
   "Deutsches Museum Portrait 4.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Burkhard Mücke"
-  },
-  "Exterior of Theatinerkirche, Munich.jpg": {
-   "lic": "CC0",
-   "by": "Wilfredor"
   },
   "Aerial image of Stadtpfarrkirche Mariä Himmelfahrt, Landsberg am Lech (view from the south).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4670,17 +4550,17 @@
    "lic": "Public domain",
    "by": "Immanuel Giel"
   },
-  "Nürnberg St. Sebald komplett v N.jpg": {
-   "lic": "CC BY-SA 2.0 de",
-   "by": "jailbird"
-  },
   "Neue Residenz auf domberg in Bamberg.png": {
    "lic": "Public domain",
    "by": "Immanuel Giel"
   },
-  "Nürnberg Burg ArM.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "ArtMechanic"
+  "Heidelberg 20060420 021.jpg": {
+   "lic": "CC BY 2.5",
+   "by": "No machine-readable author provided. Hlohning assumed (based on copyright claims)."
+  },
+  "Heidelberg Fussgaengerzone.JPG": {
+   "lic": "Public domain",
+   "by": "Rudolf Stricker"
   },
   "Alte Brücke Heidelberg.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -4702,10 +4582,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "User:Kolossos"
   },
-  "Nuernberg-schoener-Brunnen-gp.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "User:Kolossos"
-  },
   "Panorama Alte Mainbrücke Würzburg.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tors"
@@ -4718,10 +4594,6 @@
    "lic": "Public domain",
    "by": "Photo: Andreas Praefcke"
   },
-  "Nuremberg Aerial Hauptmarkt.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Nicohofmann"
-  },
   "Nuremberg Weißgerbergasse.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "UlrichAAB"
@@ -4730,9 +4602,9 @@
    "lic": "CC BY-SA 3.0",
    "by": "Schlaier"
   },
-  "Heilig-Geist-Spital (Nürnberg).jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "– Wladyslaw [Disk.]"
+  "Fischerviertel Ulm.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "MOs810"
   },
   "German Bratwürste.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4741,6 +4613,10 @@
   "Documentation center entrance nuernberg may2011.jpg": {
    "lic": "CC BY 3.0",
    "by": "KaterBegemot"
+  },
+  "Heidelberg Karzer 01.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Llez"
   },
   "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4762,9 +4638,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
   },
-  "Nürnberg, Stadtbefestigung, Tiergärtnertorhaus-20160304-002.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Tilman2007"
+  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Alexander Hoernigk"
+  },
+  "Ulmer Münster-Münsterplatz (cropped).jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Martin Kraft"
   },
   "Handwerkerhof an Weihnachten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4774,13 +4654,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "Ermell"
   },
-  "Albrecht-Dürer-Haus - Tiergärtnerplatz - Nuremberg, Germany - DSC02033.jpg": {
-   "lic": "CC0",
-   "by": "Daderot"
-  },
   "Würzburg, Residenz, Hofgarten -- 2018 -- 0181.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Dietmar Rabich"
+  },
+  "Ulm Schiefes Haus 03.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Uoaei1"
   },
   "50 000 Exponate aus 1000 Jahren Kriminalgeschichte zeigt das Kriminalmuseum Rothenburg ob der Tauber. 42.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4818,13 +4698,9 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Heidelberg 20060420 021.jpg": {
-   "lic": "CC BY 2.5",
-   "by": "No machine-readable author provided. Hlohning assumed (based on copyright claims)."
-  },
-  "Heidelberg Fussgaengerzone.JPG": {
-   "lic": "Public domain",
-   "by": "Rudolf Stricker"
+  "Schiller Weimar.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "Andreas Trepte"
   },
   "LuftbildPetersberg.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4837,6 +4713,14 @@
   "Weimar Wittumspalais.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Markv at Dutch Wikipedia"
+  },
+  "Naumburg Marientor.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Density"
+  },
+  "Ilmpark in Weimar - Blick zum Stern.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "© R.Möhler"
   },
   "Alte Synagoge Erfurt.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -4858,10 +4742,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Wikswat"
   },
-  "Fischerviertel Ulm.JPG": {
-   "lic": "CC BY-SA 4.0",
-   "by": "MOs810"
-  },
   "Goethe Gartenhaus Kraus.jpg": {
    "lic": "Public domain",
    "by": "The original uploader was Georg Jäger at German Wikipedia."
@@ -4873,10 +4753,6 @@
   "Egapark Erfurt Festplatz.jpg": {
    "lic": "CC BY 3.0",
    "by": "Grimba-Photo"
-  },
-  "Heidelberg Karzer 01.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Llez"
   },
   "2013-04-20 Krämerbrücke.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4906,14 +4782,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Martin Kraft"
   },
-  "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Alexander Hoernigk"
-  },
-  "Ulmer Münster-Münsterplatz (cropped).jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Martin Kraft"
-  },
   "J24 014 Hp Anger, ET 623.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Falk2"
@@ -4930,9 +4798,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "Uoaei1"
   },
-  "Ulm Schiefes Haus 03.jpg": {
+  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Uoaei1"
+   "by": "Steffen Schmitz (more photos)"
+  },
+  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
   },
   "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4941,6 +4813,10 @@
   "Stadtschloss Fulda (Südwestansicht).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Jörg Braukmann"
+  },
+  "Goethe-Schiller-Denkmal 01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "H.Helmlechner"
   },
   "Thuringia Eisenach asv2020-07 img14 Bach Museum.jpg": {
    "lic": "FAL",
@@ -4970,6 +4846,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "GFreihalter"
   },
+  "BD Nitzsche Haus, Naumburg (1).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "ArthurMcGill"
+  },
   "Halberstadt St-Burchardi-Kirche.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
@@ -4978,21 +4858,9 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Schiller Weimar.jpg": {
-   "lic": "CC BY-SA 2.5",
-   "by": "Andreas Trepte"
-  },
   "Naumburg stwenzel.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Christian Bier"
-  },
-  "Naumburg Marientor.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Density"
-  },
-  "Ilmpark in Weimar - Blick zum Stern.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "© R.Möhler"
   },
   "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -5005,6 +4873,10 @@
   "Halle Händelhaus 2012.jpg": {
    "lic": "CC BY 3.0",
    "by": "Photo: Andreas Praefcke"
+  },
+  "BerlinBrandenburgerTor1985.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joergsam"
   },
   "Wernigerode später Frühling im Lustgartens von Wernigerode im Harz Foto 2005 Wolfgang Pehlemann Wiesbaden PICT0037.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -5021,6 +4893,10 @@
   "Augusteum - Lutherhaus Wittenberg.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Marcus Singer (shifted &amp; brightened by Rabanus Flavus)"
+  },
+  "Luthereiche in Wittenberg.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Markus Sturzbecher"
   },
   "Roter Turm Halle 2009.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -5062,21 +4938,13 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
-  "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
-  },
-  "Weimar, Herzogin Anna Amalia Bibliothek, 2019-09 CN-02.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
-  },
   "Ein sonniger Anblick zum Hexentanzplatz vom Seilbahn in Thale (Naturschutzgebiet Bodetal).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Vadat, Hasanov"
   },
-  "Goethe-Schiller-Denkmal 01.jpg": {
+  "Magdeburger Dom Luftbild.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "H.Helmlechner"
+   "by": "Gregor Rom"
   },
   "Moritzburg Halle Hauptzuweg.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5085,6 +4953,14 @@
   "Schloss Wernigerode Luftbild 2.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
+  },
+  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Aerial view of Elbuferpromenade, Magdeburg.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Olivier Cleynen"
   },
   "Dom Halberstadt von Südosten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5102,9 +4978,13 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
-  "BD Nitzsche Haus, Naumburg (1).jpg": {
+  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "ArthurMcGill"
+   "by": "Barnos"
+  },
+  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Dguendel"
   },
   "Finkenherd 1 in Quedlinburg (2).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -5158,10 +5038,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Thomas Wolf, www.foto-tw.de"
   },
-  "BerlinBrandenburgerTor1985.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Joergsam"
-  },
   "PlanetariumJena01.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Selby"
@@ -5182,10 +5058,6 @@
    "lic": "CC BY 3.0 de",
    "by": "Ansgar Koreng"
   },
-  "Luthereiche in Wittenberg.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Markus Sturzbecher"
-  },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Alexander Blum"
@@ -5193,10 +5065,6 @@
   "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kora27"
-  },
-  "Magdeburger Dom Luftbild.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Gregor Rom"
   },
   "Hackesche höfe berlin.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -5210,14 +5078,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
   },
-  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
-  },
-  "Aerial view of Elbuferpromenade, Magdeburg.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Olivier Cleynen"
-  },
   "Jena-40-Marktplatz-2023-gje.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gerd Eichmann"
@@ -5229,14 +5089,6 @@
   "2023 Berliner Dom - Westfassade -- 01.jpg": {
    "lic": "CC BY 4.0",
    "by": "Chainwit."
-  },
-  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Barnos"
-  },
-  "Lutherstadt Wittenberg, Marktplatz und Rathaus.jpg": {
-   "lic": "CC BY 4.0",
-   "by": "Dguendel"
   },
   "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
    "lic": "Public domain",

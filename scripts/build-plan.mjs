@@ -279,13 +279,19 @@ async function routeFor(stop, sightsIndex, free) {
   if (budget !== Infinity) {
     while (keep.length && cost(keep) > budget) {
       const droppable = keep.filter((x) => !x.must);
-      // Nothing left to give up: start on the marked ones, cheapest loss last.
-      const pool = droppable.length ? droppable : keep;
       const base = cost(keep);
-      let worst = pool[0], worstSave = -1;
-      for (const cand of pool) {
-        const save = base - cost(keep.filter((x) => x !== cand));
-        if (save > worstSave) { worstSave = save; worst = cand; }
+      const saving = (cand) => base - cost(keep.filter((x) => x !== cand));
+      let worst;
+      if (droppable.length) {
+        // Give up the one that buys back the most time.
+        worst = droppable.reduce((a, b) => (saving(b) > saving(a) ? b : a));
+      } else {
+        /* Only marked ones left, and there is no good way to choose between
+           them by size: dropping the biggest gave up Ludwigstraße for a
+           twenty-minute church, and dropping the smallest gave up Marienplatz.
+           So the walk is truncated instead — she turns back earlier, and what
+           she does see is the start of the route rather than a scatter of it. */
+        worst = keep[keep.length - 1];
       }
       keep = keep.filter((x) => x !== worst);
     }

@@ -48,13 +48,6 @@
   "src": "pinned",
   "km": 1.11
  },
- "fussen": {
-  "lat": 47.57026,
-  "lon": 10.69782,
-  "name": "Bahnhof Füssen",
-  "src": "pinned",
-  "km": 0.43
- },
  "munich": {
   "lat": 48.14044,
   "lon": 11.55772,
