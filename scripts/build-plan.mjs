@@ -16,7 +16,6 @@
    put her on an ICE she has no ticket for. */
 import { writeFileSync, readFileSync, existsSync } from "node:fs";
 import { DAYS, PLACES, PRESETS, SIGHTS, TRIP } from "../data/trip.mjs";
-import { AR } from "../data/ar.mjs";
 
 const API = "https://api.transitous.org/api/v1";
 const HERE = (f) => new URL("../data/" + f, import.meta.url).pathname;
@@ -594,14 +593,6 @@ out.presets = PRESETS.map((pre) => {
     arrive: days[days.length - 1].path.endArr,
   };
 });
-
-/* The Arabic edition travels with the plan rather than as a second page, so
-   there is one file, one link, and a switch inside it. */
-out.ar = AR;
-{
-  const missing = Object.keys(out.sights).filter((k) => !AR.sights[k]);
-  if (missing.length) console.log(`\n${missing.length} sight(s) not translated: ${missing.slice(0, 8).join(", ")}${missing.length > 8 ? " …" : ""}`);
-}
 
 writeFileSync(HERE(".plan-cache.json"), JSON.stringify(cache));
 writeFileSync(HERE(".walk-cache.json"), JSON.stringify(walkCache));

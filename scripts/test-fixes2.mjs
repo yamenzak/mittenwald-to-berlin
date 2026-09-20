@@ -1,7 +1,6 @@
-/* The six things reported: the indicator after changing an option, the page
-   jumping to the top, Arabic cards that were still left-to-right, a drawer
-   with no way out, pictures that vanished in Arabic, and a link that opens in
-   Arabic by itself. */
+/* The things reported from the phone: the live indicator after changing an
+   option, the page jumping to the top, a drawer with no way out, and pictures
+   that did not load. */
 import { chromium } from "playwright";
 const b = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
 const errs = [];
@@ -38,27 +37,22 @@ console.log("drawer has a close button:", hasX === 1);
 await p.locator(".sheetx").click(); await p.waitForTimeout(500);
 console.log(`scroll kept through the drawer: ${b2} -> ${await p.evaluate(() => Math.round(window.scrollY))}`);
 
-// 3 + 5: Arabic, straight from the link
-const q = await page("?lang=ar&at=2026-10-02T09:30:00%2B02:00");
-console.log("opens in Arabic from the link:", await q.evaluate(() => document.documentElement.getAttribute("dir")));
-await q.locator("[data-pick].route").first().click(); await q.waitForTimeout(700);
-const card = await q.evaluate(() => {
-  const el = document.querySelector("[data-pick].route");
-  return { align: getComputedStyle(el).textAlign, dir: getComputedStyle(el).direction };
-});
-console.log("preset card:", JSON.stringify(card));
-await q.click('[data-goto="when"]'); await q.waitForTimeout(500);
-await q.click('[data-goto="day"]'); await q.waitForTimeout(900);
+// Pictures, on a fresh phone
+const q = await page("?at=2026-10-02T09:30:00%2B02:00");
+await q.locator("[data-pick].route").first().click(); await q.waitForTimeout(600);
+await q.locator('.nextbar [data-goto="when"]').click(); await q.waitForTimeout(400);
+await q.locator('.nextbar [data-goto="day"]').click(); await q.waitForTimeout(900);
 const imgs = await q.evaluate(() => {
   const t = [...document.querySelectorAll(".wthumb img")], s = [...document.querySelectorAll(".sight img")];
-  return { thumbs: t.length, thumbsBroken: t.filter(i => i.complete && i.naturalWidth === 0).length,
-           cards: s.length, cardsBroken: s.filter(i => i.complete && i.naturalWidth === 0).length };
+  return { thumbs: t.length, thumbsBroken: t.filter((i) => i.complete && i.naturalWidth === 0).length,
+           cards: s.length, cardsBroken: s.filter((i) => i.complete && i.naturalWidth === 0).length };
 });
-console.log("arabic images:", JSON.stringify(imgs));
-await q.screenshot({ path: "shots/x1-ar-day.png" });
+console.log("images:", JSON.stringify(imgs));
+if (imgs.thumbsBroken || imgs.cardsBroken) errs.push("broken images on the day page");
+await q.screenshot({ path: "shots/x1-day.png" });
 await q.locator("#morebtn").click(); await q.waitForTimeout(400);
 await q.locator('#sheet [data-goto="pick"]').click(); await q.waitForTimeout(1400);
-console.log("arabic map draws:", await q.locator("#map path.leaflet-interactive").count());
-await q.screenshot({ path: "shots/x2-ar-trip.png" });
+console.log("map draws:", await q.locator("#map path.leaflet-interactive").count());
+await q.screenshot({ path: "shots/x2-pick.png" });
 await b.close();
 console.log(errs.length ? "\nERRORS:\n" + [...new Set(errs)].join("\n") : "\nno page errors");

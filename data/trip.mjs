@@ -37,6 +37,8 @@ export const PLACES = {
   rothenburg:   { n: "Rothenburg",      q: "Rothenburg ob der Tauber Bahnhof",   w: "Rothenburg ob der Tauber",      stn: "Bahnhof Rothenburg ob der Tauber", country: "DE" },
   wurzburg:     { n: "Würzburg",        q: "Würzburg Hauptbahnhof",              w: "Würzburg",                      stn: "Würzburg Hauptbahnhof",         country: "DE" },
   heidelberg:   { n: "Heidelberg",      q: "Heidelberg Hauptbahnhof",            w: "Heidelberg",                    stn: "Heidelberg Hauptbahnhof",       country: "DE" },
+  ulm:          { n: "Ulm",             q: "Ulm Hauptbahnhof",                   w: "Ulm",                           stn: "Ulm Hauptbahnhof",              country: "DE" },
+  esslingen:    { n: "Esslingen",       q: "Esslingen (Neckar) Bahnhof",         w: "Esslingen am Neckar",           stn: "Bahnhof Esslingen (Neckar)",    country: "DE" },
   fulda:        { n: "Fulda",           q: "Fulda Bahnhof",                      w: "Fulda",                         stn: "Bahnhof Fulda",                 country: "DE" },
   eisenach:     { n: "Eisenach",        q: "Eisenach Bahnhof",                   w: "Eisenach",                      stn: "Bahnhof Eisenach",              country: "DE" },
   erfurt:       { n: "Erfurt",          q: "Erfurt Hauptbahnhof",                w: "Erfurt",                        stn: "Erfurt Hauptbahnhof",           country: "DE" },
@@ -224,6 +226,23 @@ export const SIGHTS = {
     S("Student Prison", "Studentenkarzer", "Where misbehaving students were locked up — and covered the walls in graffiti.", { mins: 30, kind: "museum", indoor: 1, ticket: 1 }),
     S("Königstuhl funicular", "Heidelberger Bergbahn", "Continue past the castle to the top of the hill.", { mins: 90, kind: "view", ticket: 1 }),
   ],
+  ulm: [
+    S("Ulm Minster", "Ulmer Münster", "The tallest church steeple in the world, 161 m. 768 steps if you want the Alps from the top.", { must: 1, mins: 90, kind: "church", indoor: 1, ticket: 1 }),
+    S("Fishermen's Quarter", "Ulm", "Half-timbered lanes over the little Blau, two minutes from the Minster.", { must: 1, cimg: "Fischerviertel Ulm", mins: 60, kind: "street" }),
+    S("Crooked House", "Ulm", "A 1443 hotel leaning far enough that the beds are levelled with wedges.", { cimg: "Schiefes Haus Ulm", mins: 15, kind: "sight" }),
+    S("Ulm Town Hall", "Ulm", "Painted head to foot, with an astronomical clock from 1520.", { cimg: "Rathaus Ulm", mins: 25, kind: "sight" }),
+    S("Metzgerturm", "Metzgerturm", "The leaning butcher's tower on the old wall, above the Danube.", { cimg: "Metzgerturm Ulm", mins: 25, kind: "view" }),
+    S("Danube wall walk", "Ulm", "Along the top of the city wall beside the river. Flat, and the best light in the evening.", { cimg: "Stadtmauer Ulm Donau", mins: 40, kind: "nature" }),
+    S("Einstein's birthplace", "Albert Einstein", "He was born here in 1879; the house went in the war and a stone marks it.", { cimg: "Einstein Denkmal Ulm", mins: 15, kind: "sight" }),
+  ],
+  esslingen: [
+    S("Old Town Hall", "Esslingen am Neckar", "1430 timber front with an astronomical clock and a glockenspiel that still plays.", { cimg: "Altes Rathaus Esslingen Glockenspiel", must: 1, mins: 30, kind: "sight" }),
+    S("Esslingen Burg", "Esslinger Burg", "300 steps up through the vineyard to the fortress. The town and the Neckar below.", { must: 1, cimg: "Esslinger Burg Dicker Turm", mins: 60, kind: "view" }),
+    S("Innere Brücke", "Esslingen am Neckar", "A medieval bridge with a chapel standing on it.", { cimg: "Innere Brücke Esslingen", mins: 25, kind: "sight" }),
+    S("Frauenkirche", "Frauenkirche (Esslingen am Neckar)", "Gothic, with a filigree spire that took two centuries.", { mins: 30, kind: "church", indoor: 1 }),
+    S("The oldest timber houses", "Esslingen am Neckar", "The row on Webergasse dates from about 1267 — the oldest standing in Germany.", { cimg: "Webergasse Esslingen Fachwerk", must: 1, mins: 40, kind: "street" }),
+    S("Kessler Sekt", "Kessler Sekt", "Germany's first sparkling wine house, founded 1826, still in its vaulted cellar.", { cimg: "Kessler Sekt Esslingen", mins: 45, kind: "food", indoor: 1 }),
+  ],
   fulda: [
     S("Fulda Cathedral", "Fuldaer Dom", "Baroque, over the tomb of St Boniface.", { mins: 35, kind: "church", indoor: 1 }),
     S("St Michael's", "Michaelskirche (Fulda)", "9th century, one of the oldest churches in Germany, right beside the cathedral.", { mins: 25, kind: "church", indoor: 1 }),
@@ -405,6 +424,27 @@ export const DAYS = [
         { S: "augsburg", arr: "17:05", base: 1, stn: "Fifteen minutes east from the Hbf to Rathausplatz, or tram 2.",
           see: ["Maximilianstraße", "Rathausplatz", "Augsburg Cathedral"] },
       ]},
+      /* The western line leaves the Alps the same morning but turns down the
+         Danube instead of up to Franconia. Garmisch, Munich and Augsburg are
+         all still on it — short stops rather than none. */
+      { id: "W", name: "Down the Danube to Ulm",
+        title: "Out of the Alps, westward", hero: "munich",
+        intro: "The same road out of the mountains, cut short three times: Partenkirchen for an hour and a half, Munich for the middle of the day, Augsburg before the light goes, and a bed under the tallest church spire in the world.",
+        why: "Garmisch, Munich and Augsburg in one day, and then west along the Danube. Sleeps in Ulm.", bags: 1, seq: [
+        T("08:00", "08:27", "Garmisch", ["mittenwald", "garmisch"]),
+        { S: "garmisch", arr: "08:27", dep: "10:00", stn: "Ten minutes east from the station to Ludwigstraße — the Partenkirchen half, which is the pretty one.",
+          see: ["Ludwigstraße", "Mohrenplatz", "Old St Martin"] },
+        T("10:00", "11:26", "Munich", ["garmisch", "munich"], "Direct up the Loisach valley."),
+        { S: "munich", arr: "11:26", dep: "14:15", stn: "Twenty minutes on foot down Neuhauser Straße, or two stops on the S-Bahn.",
+          see: ["Karlsplatz and Neuhauser Straße", "Frauenkirche", "Marienplatz", "St Peter's tower", "Viktualienmarkt", "Asamkirche"] },
+        T("14:15", "15:02", "Augsburg", ["munich", "augsburg"]),
+        { S: "augsburg", arr: "15:02", dep: "17:00", stn: "Fifteen minutes east from the Hbf to Rathausplatz, or tram 2.",
+          see: ["Rathausplatz", "Augustusbrunnen", "Golden Hall", "Maximilianstraße"] },
+        T("17:00", "18:21", "Ulm", ["augsburg", "ulm"], "Direct along the Danube, an hour and twenty."),
+        { S: "ulm", arr: "18:21", base: 1, stn: "Out of the Hbf and straight down Bahnhofstraße — the Minster is five minutes and you cannot miss it.",
+          see: ["Ulm Minster", "Fishermen's Quarter", "Crooked House"] },
+      ]},
+
       { id: "Z", name: "The Zugspitze, and back to Mittenwald",
         title: "The Zugspitze", hero: "garmisch",
         intro: "Germany's highest point and then back to the same bed. Nothing to pack, nothing to catch at the end of it.",
@@ -477,6 +517,21 @@ export const DAYS = [
           see: ["Anger", "Fischmarkt", "Krämerbrücke", "Domplatz"] },
       ]},
 
+      /* The western line's one day that is entirely new ground. */
+      { id: "W", name: "Ulm, Esslingen, Heidelberg",
+        title: "West to the Neckar", hero: "heidelberg",
+        intro: "The Minster first thing while it is quiet, then a medieval town almost nobody outside Germany has heard of, and a castle above a river for the night.",
+        why: "Ulm's spire, Esslingen's timber houses — the oldest standing in Germany — and Heidelberg by the evening. Sleeps in Heidelberg.", seq: [
+        { S: "ulm", arr: "08:00", dep: "11:30", stn: "Five minutes from the Hbf down Bahnhofstraße to Münsterplatz.",
+          see: ["Ulm Minster", "Ulm Town Hall", "Fishermen's Quarter", "Crooked House", "Metzgerturm", "Danube wall walk", "Einstein's birthplace"] },
+        T("11:30", "12:34", "Esslingen", ["ulm", "esslingen"], "Direct on the RE5, an hour down the Fils and the Neckar."),
+        { S: "esslingen", arr: "12:34", dep: "15:30", stn: "Ten minutes from the station across the Neckar and you are in the old town.",
+          see: ["Old Town Hall", "The oldest timber houses", "Innere Brücke", "Frauenkirche", "Esslingen Burg", "Kessler Sekt"] },
+        T("15:30", "17:18", "Heidelberg", ["esslingen", "heidelberg"], "Two changes, usually Stuttgart and Mannheim."),
+        { S: "heidelberg", arr: "17:18", base: 1, stn: "The Hbf is out of the centre — bus 32 or tram 5 to Bismarckplatz, then the Hauptstraße is in front of you.",
+          see: ["Hauptstraße", "Marktplatz and Church of the Holy Spirit", "Old Bridge"] },
+      ]},
+
       /* The Alps line comes out of Mittenwald today instead of yesterday. */
       { id: "Z", name: "Down from the mountains, via Munich",
         title: "Mittenwald to Nuremberg", hero: "munich",
@@ -531,6 +586,22 @@ export const DAYS = [
           see: ["Maximiliansplatz", "Obere Brücke", "Old Town Hall", "Little Venice", "Bamberg Cathedral", "Alte Hofhaltung", "New Residence rose garden", "Schlenkerla"] },
         T("17:30", "19:05", "Erfurt", ["bamberg", "erfurt"], "Direct on the RE29."),
         { S: "erfurt", arr: "19:05", base: 1, stn: "Fifteen minutes up the Anger, or tram 3, 4 or 6.",
+          see: ["Anger", "Fischmarkt", "Krämerbrücke"] },
+      ]},
+
+      /* Back east, and the only day on the trip with five hours of train in it.
+         It is what the west costs. */
+      { id: "W", name: "Heidelberg, then east to Würzburg",
+        title: "Heidelberg, then back east", hero: "heidelberg",
+        intro: "The castle and the Philosophers' Walk in the morning, and then the long run east with the Würzburg Residence in the middle of it.",
+        why: "Heidelberg's morning is the reason for this week. The afternoon buys Würzburg and the evening gets you back on the line to Berlin. Five hours riding — the most of any day here.", seq: [
+        { S: "heidelberg", arr: "08:00", dep: "11:45", stn: "Bus 33 to the castle, or the funicular from Kornmarkt. The Philosophers' Walk is over the Old Bridge.",
+          see: ["Heidelberg Castle", "Old Bridge", "Philosophers' Walk", "Marktplatz and Church of the Holy Spirit", "Hauptstraße", "Student Prison"] },
+        T("11:45", "14:14", "Würzburg", ["heidelberg", "wurzburg"], "Change at Mannheim or Osterburken. Buy something to eat before you board."),
+        { S: "wurzburg", arr: "14:14", dep: "17:00", stn: "Ten minutes down Kaiserstraße from the Hbf, or tram 1 to Dom.",
+          see: ["Würzburg Residence", "Court Garden", "Marktplatz and Marienkapelle", "Old Main Bridge", "Franconian wine"] },
+        T("17:00", "19:31", "Erfurt", ["wurzburg", "erfurt"], "Change at Bamberg or Schweinfurt."),
+        { S: "erfurt", arr: "19:31", base: 1, stn: "Fifteen minutes from the station up the Anger to the old town, or tram 3, 4 or 6.",
           see: ["Anger", "Fischmarkt", "Krämerbrücke"] },
       ]},
 
@@ -676,6 +747,12 @@ export const PRESETS = [
     sub: "Nuremberg · Wernigerode · Quedlinburg",
     why: "Gets the long ride north done on Thursday so that Friday can be spent in the mountains: Wernigerode under its castle, a night inside Quedlinburg's 1300 half-timbered houses, and the shortest run into Berlin of the four.",
     pick: { 1: "A", 2: "A", 3: "H", 4: "H", 5: "H" },
+  },
+  {
+    id: "west", name: "West to Heidelberg",
+    sub: "Ulm · Esslingen · Heidelberg",
+    why: "The only line that leaves the south–north road. Out of the Alps down the Danube to Ulm, west along the Neckar, a night under Heidelberg castle, and back east through Würzburg. Garmisch, Munich, Augsburg, Würzburg and Erfurt are all still on it, as shorter stops. The most riding of the five, and the least like the others.",
+    pick: { 1: "A", 2: "W", 3: "W", 4: "W", 5: "C" },
   },
   {
     id: "alps", name: "Two nights in the mountains",

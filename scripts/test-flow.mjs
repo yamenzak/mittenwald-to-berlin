@@ -37,7 +37,7 @@ const meals = async () => p.evaluate(() => [...document.querySelectorAll(".mealc
 
 // Every itinerary, end to end: the options a day offers have to start where
 // the day before slept, or she is being shown a train from a town she is not in.
-for (const id of ["classic", "romantic", "harz", "alps"]) {
+for (const id of ["classic", "romantic", "harz", "west", "alps"]) {
   await p.evaluate((x) => {
     localStorage.setItem("mb-preset", JSON.stringify(x));
     localStorage.setItem("mb-setup", "1");

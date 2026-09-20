@@ -1980,6 +1980,201 @@
    "file": "Heidelberg_Bergbahn_2016-02-27-16-17-19.jpg",
    "extract": "Die Heidelberger Bergbahn, auch Heidelberger Bergbahnen, ist eine Kombination von zwei Standseilbahnen in Heidelberg. Die „Molkenkurbahn“ führt vom Kornmarkt am Rand der Altstadt vorbei am Heidelberger Schloss zur Molkenkur."
   },
+  "ulm/Ulm Minster": {
+   "ok": true,
+   "w": "Ulmer Münster",
+   "ct": null,
+   "lang": "de",
+   "title": "Ulmer Münster",
+   "url": "https://de.wikipedia.org/wiki/Ulmer_M%C3%BCnster",
+   "lat": 48.39861111,
+   "lon": 9.9925,
+   "wd": "Q44562",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Ulmer_M%C3%BCnster-M%C3%BCnsterplatz_%28cropped%29.jpg/640px-Ulmer_M%C3%BCnster-M%C3%BCnsterplatz_%28cropped%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Ulmer_M%C3%BCnster-M%C3%BCnsterplatz_%28cropped%29.jpg/1000px-Ulmer_M%C3%BCnster-M%C3%BCnsterplatz_%28cropped%29.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Ulmer_Münster-Münsterplatz_(cropped).jpg",
+   "extract": ""
+  },
+  "ulm/Fishermen's Quarter": {
+   "ok": true,
+   "w": "Ulm",
+   "ct": "Fischerviertel Ulm",
+   "lang": "de",
+   "title": "Ulm",
+   "url": "https://de.wikipedia.org/wiki/Ulm",
+   "lat": 48.40083333,
+   "lon": 9.98722222,
+   "wd": "Q3012",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Fischerviertel_Ulm.JPG/640px-Fischerviertel_Ulm.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Fischerviertel_Ulm.JPG/1000px-Fischerviertel_Ulm.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Fischerviertel Ulm.JPG",
+   "extract": ""
+  },
+  "ulm/Crooked House": {
+   "ok": true,
+   "w": "Ulm",
+   "ct": "Schiefes Haus Ulm",
+   "lang": "de",
+   "title": "Ulm",
+   "url": "https://de.wikipedia.org/wiki/Ulm",
+   "lat": 48.40083333,
+   "lon": 9.98722222,
+   "wd": "Q3012",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Ulm_Schiefes_Haus_03.jpg/640px-Ulm_Schiefes_Haus_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Ulm_Schiefes_Haus_03.jpg/1000px-Ulm_Schiefes_Haus_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Ulm Schiefes Haus 03.jpg",
+   "extract": ""
+  },
+  "ulm/Ulm Town Hall": {
+   "ok": true,
+   "w": "Ulm",
+   "ct": "Rathaus Ulm",
+   "lang": "de",
+   "title": "Ulm",
+   "url": "https://de.wikipedia.org/wiki/Ulm",
+   "lat": 48.40083333,
+   "lon": 9.98722222,
+   "wd": "Q3012",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Rathaus_Ulm.jpg/640px-Rathaus_Ulm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Rathaus_Ulm.jpg/1000px-Rathaus_Ulm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Rathaus Ulm.jpg",
+   "extract": ""
+  },
+  "ulm/Metzgerturm": {
+   "ok": true,
+   "w": "Metzgerturm",
+   "ct": "Metzgerturm Ulm",
+   "lang": "de",
+   "title": "Metzgerturm",
+   "url": "https://de.wikipedia.org/wiki/Metzgerturm",
+   "lat": null,
+   "lon": null,
+   "wd": "Q1588994",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Ulm_Metzgerturm_04.jpg/640px-Ulm_Metzgerturm_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Ulm_Metzgerturm_04.jpg/1000px-Ulm_Metzgerturm_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Ulm Metzgerturm 04.jpg",
+   "extract": ""
+  },
+  "ulm/Danube wall walk": {
+   "ok": true,
+   "w": "Ulm",
+   "ct": "Stadtmauer Ulm Donau",
+   "lang": "de",
+   "title": "Ulm",
+   "url": "https://de.wikipedia.org/wiki/Ulm",
+   "lat": 48.40083333,
+   "lon": 9.98722222,
+   "wd": "Q3012",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ulm_-_Stadtmauer_an_der_Donau_02.JPG/640px-Ulm_-_Stadtmauer_an_der_Donau_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ulm_-_Stadtmauer_an_der_Donau_02.JPG/1000px-Ulm_-_Stadtmauer_an_der_Donau_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Ulm - Stadtmauer an der Donau 02.JPG",
+   "extract": ""
+  },
+  "ulm/Einstein's birthplace": {
+   "ok": true,
+   "w": "Albert Einstein",
+   "ct": "Einstein Denkmal Ulm",
+   "lang": "de",
+   "title": "Albert Einstein",
+   "url": "https://de.wikipedia.org/wiki/Albert_Einstein",
+   "lat": null,
+   "lon": null,
+   "wd": "Q937",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ulm_Einstein-2.jpg/640px-Ulm_Einstein-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ulm_Einstein-2.jpg/1000px-Ulm_Einstein-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Ulm Einstein-2.jpg",
+   "extract": ""
+  },
+  "esslingen/Old Town Hall": {
+   "ok": true,
+   "w": "Esslingen am Neckar",
+   "ct": "Altes Rathaus Esslingen Glockenspiel",
+   "lang": "de",
+   "title": "Esslingen am Neckar",
+   "url": "https://de.wikipedia.org/wiki/Esslingen_am_Neckar",
+   "lat": 48.74055556,
+   "lon": 9.31083333,
+   "wd": "Q3786",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Esslingen_a.N._-_Altstadt_-_Altes_Rathaus_-_n%C3%B6rdlicher_Giebel_und_Glockenspiel_mit_Abendsonne.jpg/640px-Esslingen_a.N._-_Altstadt_-_Altes_Rathaus_-_n%C3%B6rdlicher_Giebel_und_Glockenspiel_mit_Abendsonne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Esslingen_a.N._-_Altstadt_-_Altes_Rathaus_-_n%C3%B6rdlicher_Giebel_und_Glockenspiel_mit_Abendsonne.jpg/1000px-Esslingen_a.N._-_Altstadt_-_Altes_Rathaus_-_n%C3%B6rdlicher_Giebel_und_Glockenspiel_mit_Abendsonne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Esslingen a.N. - Altstadt - Altes Rathaus - nördlicher Giebel und Glockenspiel mit Abendsonne.jpg",
+   "extract": ""
+  },
+  "esslingen/Esslingen Burg": {
+   "ok": true,
+   "w": "Esslinger Burg",
+   "ct": "Esslinger Burg Dicker Turm",
+   "lang": "de",
+   "title": "Esslinger Burg",
+   "url": "https://de.wikipedia.org/wiki/Esslinger_Burg",
+   "lat": 48.744948,
+   "lon": 9.309325,
+   "wd": "Q1368927",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Esslinger_Burg_mit_Dickem_Turm_im_Fr%C3%BChjahr.jpg/640px-Esslinger_Burg_mit_Dickem_Turm_im_Fr%C3%BChjahr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Esslinger_Burg_mit_Dickem_Turm_im_Fr%C3%BChjahr.jpg/1000px-Esslinger_Burg_mit_Dickem_Turm_im_Fr%C3%BChjahr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Esslinger Burg mit Dickem Turm im Frühjahr.jpg",
+   "extract": ""
+  },
+  "esslingen/Innere Brücke": {
+   "ok": true,
+   "w": "Esslingen am Neckar",
+   "ct": "Innere Brücke Esslingen",
+   "lang": "de",
+   "title": "Esslingen am Neckar",
+   "url": "https://de.wikipedia.org/wiki/Esslingen_am_Neckar",
+   "lat": 48.74055556,
+   "lon": 9.31083333,
+   "wd": "Q3786",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Esslingen_a.N._-_Altstadt_-_Innere_Br%C3%BCcke_-_Ansicht_aus_SO_von_Maille_%281%29.jpg/640px-Esslingen_a.N._-_Altstadt_-_Innere_Br%C3%BCcke_-_Ansicht_aus_SO_von_Maille_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Esslingen_a.N._-_Altstadt_-_Innere_Br%C3%BCcke_-_Ansicht_aus_SO_von_Maille_%281%29.jpg/1000px-Esslingen_a.N._-_Altstadt_-_Innere_Br%C3%BCcke_-_Ansicht_aus_SO_von_Maille_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Esslingen a.N. - Altstadt - Innere Brücke - Ansicht aus SO von Maille (1).jpg",
+   "extract": ""
+  },
+  "esslingen/Frauenkirche": {
+   "ok": true,
+   "w": "Frauenkirche (Esslingen am Neckar)",
+   "ct": null,
+   "lang": "de",
+   "title": "Frauenkirche (Esslingen am Neckar)",
+   "url": "https://de.wikipedia.org/wiki/Frauenkirche_(Esslingen_am_Neckar)",
+   "lat": 48.743736,
+   "lon": 9.305296,
+   "wd": "Q28779345",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Esslingen_Kirche_Unserer_Lieben_Frauen.jpg/640px-Esslingen_Kirche_Unserer_Lieben_Frauen.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Esslingen_Kirche_Unserer_Lieben_Frauen.jpg/1000px-Esslingen_Kirche_Unserer_Lieben_Frauen.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Esslingen_Kirche_Unserer_Lieben_Frauen.jpg",
+   "extract": ""
+  },
+  "esslingen/The oldest timber houses": {
+   "ok": true,
+   "w": "Esslingen am Neckar",
+   "ct": "Webergasse Esslingen Fachwerk",
+   "lang": "de",
+   "title": "Esslingen am Neckar",
+   "url": "https://de.wikipedia.org/wiki/Esslingen_am_Neckar",
+   "lat": 48.74055556,
+   "lon": 9.31083333,
+   "wd": "Q3786",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Esslingen_am_Neckar_Webergasse_8a_Fachwerk_992.jpg/640px-Esslingen_am_Neckar_Webergasse_8a_Fachwerk_992.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Esslingen_am_Neckar_Webergasse_8a_Fachwerk_992.jpg/1000px-Esslingen_am_Neckar_Webergasse_8a_Fachwerk_992.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Esslingen am Neckar Webergasse 8a Fachwerk 992.jpg",
+   "extract": ""
+  },
+  "esslingen/Kessler Sekt": {
+   "ok": true,
+   "w": "Kessler Sekt",
+   "ct": "Kessler Sekt Esslingen",
+   "lang": "de",
+   "title": "Kessler Sekt",
+   "url": "https://de.wikipedia.org/wiki/Kessler_Sekt",
+   "lat": null,
+   "lon": null,
+   "wd": "Q1739827",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Eslebt_esslingen_speyrer_zehnthof_kessler.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imgBig": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Eslebt_esslingen_speyrer_zehnthof_kessler.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "file": "Eslebt esslingen speyrer zehnthof kessler.jpg",
+   "extract": ""
+  },
   "fulda/Fulda Cathedral": {
    "ok": true,
    "w": "Fuldaer Dom",
@@ -3282,9 +3477,9 @@
    "lat": 47.55916667,
    "lon": 11.13888889,
    "wd": "Q505979",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Loisachtal südlich von Oberau Juni 2020 1.jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Loisachtal südlich von Oberau Juni 2020 2.jpg",
    "extract": ""
   },
   "ettal": {
@@ -3482,6 +3677,36 @@
    "file": "Heidelberg Altstadt Schloss Luftbild.JPG",
    "extract": ""
   },
+  "ulm": {
+   "ok": true,
+   "w": "Ulm",
+   "ct": null,
+   "lang": "de",
+   "title": "Ulm",
+   "url": "https://de.wikipedia.org/wiki/Ulm",
+   "lat": 48.40083333,
+   "lon": 9.98722222,
+   "wd": "Q3012",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Ulm_-_Altstadt_-_Ulmer_M%C3%BCnster_-_S%C3%BCdschiff_-_Ansicht_aus_OG_des_SO-Turms_%282%29.jpg/1200px-Ulm_-_Altstadt_-_Ulmer_M%C3%BCnster_-_S%C3%BCdschiff_-_Ansicht_aus_OG_des_SO-Turms_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Ulm_-_Altstadt_-_Ulmer_M%C3%BCnster_-_S%C3%BCdschiff_-_Ansicht_aus_OG_des_SO-Turms_%282%29.jpg/1200px-Ulm_-_Altstadt_-_Ulmer_M%C3%BCnster_-_S%C3%BCdschiff_-_Ansicht_aus_OG_des_SO-Turms_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Ulm - Altstadt - Ulmer Münster - Südschiff - Ansicht aus OG des SO-Turms (2).jpg",
+   "extract": ""
+  },
+  "esslingen": {
+   "ok": true,
+   "w": "Esslingen am Neckar",
+   "ct": null,
+   "lang": "de",
+   "title": "Esslingen am Neckar",
+   "url": "https://de.wikipedia.org/wiki/Esslingen_am_Neckar",
+   "lat": 48.74055556,
+   "lon": 9.31083333,
+   "wd": "Q3786",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Esslingen_a.N._-_Altstadt_-_Altes_Rathaus_-_n%C3%B6rdlicher_Giebel_und_Glockenspiel_mit_Abendsonne.jpg/1200px-Esslingen_a.N._-_Altstadt_-_Altes_Rathaus_-_n%C3%B6rdlicher_Giebel_und_Glockenspiel_mit_Abendsonne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Esslingen_a.N._-_Altstadt_-_Altes_Rathaus_-_n%C3%B6rdlicher_Giebel_und_Glockenspiel_mit_Abendsonne.jpg/1200px-Esslingen_a.N._-_Altstadt_-_Altes_Rathaus_-_n%C3%B6rdlicher_Giebel_und_Glockenspiel_mit_Abendsonne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Esslingen a.N. - Altstadt - Altes Rathaus - nördlicher Giebel und Glockenspiel mit Abendsonne.jpg",
+   "extract": ""
+  },
   "fulda": {
    "ok": true,
    "w": "Fulda",
@@ -3537,9 +3762,9 @@
    "lat": 50.97944444,
    "lon": 11.32972222,
    "wd": "Q3955",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Marktplatz_in_Weimar_03.jpg/1200px-Marktplatz_in_Weimar_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Marktplatz_in_Weimar_03.jpg/1200px-Marktplatz_in_Weimar_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Marktplatz in Weimar 03.jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Marktplatz_in_Weimar_04.jpg/1200px-Marktplatz_in_Weimar_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Marktplatz_in_Weimar_04.jpg/1200px-Marktplatz_in_Weimar_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Marktplatz in Weimar 04.jpg",
    "extract": ""
   },
   "naumburg": {
@@ -3722,6 +3947,10 @@
    "lic": "CC BY 3.0",
    "by": "Photo: Andreas Praefcke"
   },
+  "Ulm - Altstadt - Ulmer Münster - Südschiff - Ansicht aus OG des SO-Turms (2).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Roman Eisele"
+  },
   "Seefeld 8.JPG": {
    "lic": "CC BY 3.0",
    "by": "Piergiuliano Chesi (Chesipiero)"
@@ -3741,10 +3970,6 @@
   "Mittenwald Ballenhausgasse 14-16 6455.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Pelz"
-  },
-  "Leutaschklamm (Marius Hoch) 27.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Marius Hoch"
   },
   "Imperator Ludovicus, Murnau, Bavaria, Germany.jpg": {
    "lic": "CC0",
@@ -3798,7 +4023,7 @@
    "lic": "CC BY-SA 4.0",
    "by": "Krzysztof Golik"
   },
-  "Marktplatz in Weimar 03.jpg": {
+  "Marktplatz in Weimar 04.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Krzysztof Golik"
   },
@@ -3806,7 +4031,7 @@
    "lic": "CC0",
    "by": "Christoph Braun"
   },
-  "Loisachtal südlich von Oberau Juni 2020 1.jpg": {
+  "Loisachtal südlich von Oberau Juni 2020 2.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kajebi II."
   },
@@ -3818,13 +4043,13 @@
    "lic": "FAL",
    "by": "A.Savin"
   },
-  "Nördliche Karwendelkette, Blick von Mittenwald 05.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Kritzolina"
-  },
   "Lautersee, Mittenwald 04.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kritzolina"
+  },
+  "Esslingen a.N. - Altstadt - Altes Rathaus - nördlicher Giebel und Glockenspiel mit Abendsonne.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Roman Eisele"
   },
   "Hauptplatz 147, Landsberg am Lech.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -3873,10 +4098,6 @@
   "Mittenwald 5 - 26.05.2006.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Hesse1309"
-  },
-  "Rathaus and Marienplatz from Peterskirche - August 2006.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Diliff"
   },
   "Murnauer Moos.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -3934,6 +4155,10 @@
    "lic": "CC BY-SA 1.0",
    "by": "Bbb"
   },
+  "Leutaschklamm (Marius Hoch) 27.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Marius Hoch"
+  },
   "Cafe sign, Murnau, Bavaria, Germany.jpg": {
    "lic": "CC0",
    "by": "Jebulon"
@@ -3941,10 +4166,6 @@
   "Dorfstrasse 20, Oberammergau, Bavaria, Germany.jpg": {
    "lic": "CC0",
    "by": "Jebulon"
-  },
-  "München, Alter Hof, spätgotischer Torturm und Erker am Affenturm (14282908665).jpg": {
-   "lic": "CC BY-SA 2.0",
-   "by": "Heribert Pohl --- Thanks for half a million clicks! from Germering bei München, Bayern"
   },
   "Stachus 2014-08-02 pseudo-pano.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -3977,6 +4198,10 @@
   "Ettal, Linderhof 21.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "LBM1948"
+  },
+  "Nördliche Karwendelkette, Blick von Mittenwald 05.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kritzolina"
   },
   "Aerial image of the Abbey of Saint Mang (view from the southwest).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4046,6 +4271,10 @@
    "lic": "CC BY-SA 2.5",
    "by": "Stefan Weigel"
   },
+  "Rathaus and Marienplatz from Peterskirche - August 2006.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Diliff"
+  },
   "Hofbrauhaus.JPG": {
    "lic": "Public domain",
    "by": "Kiban"
@@ -4073,10 +4302,6 @@
   "Nürnberg Frauentormauer Turm rotes N und Spittlertorturm.jpg": {
    "lic": "CC BY 3.0",
    "by": "Photo: Andreas Praefcke"
-  },
-  "Nuremberg Aerial Hauptmarkt.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Nicohofmann"
   },
   "Heilig-Geist-Spital (Nürnberg).jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4110,6 +4335,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tilman2007"
   },
+  "München, Alter Hof, spätgotischer Torturm und Erker am Affenturm (14282908665).jpg": {
+   "lic": "CC BY-SA 2.0",
+   "by": "Heribert Pohl --- Thanks for half a million clicks! from Germering bei München, Bayern"
+  },
   "Viktualienmarkt 2016.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Wikiolo"
@@ -4133,10 +4362,6 @@
   "Donauwörth-KätheKrusePuppenMuseum1-Asio.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Asio otus"
-  },
-  "Albrecht-Dürer-Haus - Tiergärtnerplatz - Nuremberg, Germany - DSC02033.jpg": {
-   "lic": "CC0",
-   "by": "Daderot"
   },
   "Insel Ried - geo.hlipp.de - 22193.jpg": {
    "lic": "CC BY-SA 2.0",
@@ -4234,6 +4459,10 @@
    "lic": "Public domain",
    "by": "Photo: Andreas Praefcke"
   },
+  "Nuremberg Aerial Hauptmarkt.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Nicohofmann"
+  },
   "Nuremberg Weißgerbergasse.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "UlrichAAB"
@@ -4270,10 +4499,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "DXR"
   },
-  "140519 Dom Fulda Frontansicht.jpg": {
-   "lic": "CC BY-SA 3.0 de",
-   "by": "Ansgar Koreng"
-  },
   "St. Jakob Kirche Rothenburg 2014.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
@@ -4281,6 +4506,10 @@
   "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
    "lic": "CC BY 3.0",
    "by": "Alexander Hoernigk"
+  },
+  "Ulmer Münster-Münsterplatz (cropped).jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Martin Kraft"
   },
   "Handwerkerhof an Weihnachten.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4290,17 +4519,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "Ermell"
   },
+  "Albrecht-Dürer-Haus - Tiergärtnerplatz - Nuremberg, Germany - DSC02033.jpg": {
+   "lic": "CC0",
+   "by": "Daderot"
+  },
   "Würzburg, Residenz, Hofgarten -- 2018 -- 0181.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Dietmar Rabich"
-  },
-  "MK56776 Michaelskirche (Fulda) .jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Martin Kraft"
-  },
-  "Stadtschloss Fulda (Südwestansicht).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Jörg Braukmann"
   },
   "50 000 Exponate aus 1000 Jahren Kriminalgeschichte zeigt das Kriminalmuseum Rothenburg ob der Tauber. 42.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4338,10 +4563,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Quedlinburg Ständerbau.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "unknown"
-  },
   "Schiller Weimar.jpg": {
    "lic": "CC BY-SA 2.5",
    "by": "Andreas Trepte"
@@ -4358,14 +4579,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Markv at Dutch Wikipedia"
   },
-  "Naumburg stwenzel.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Christian Bier"
-  },
-  "Naumburg Marientor.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "Density"
-  },
   "Ilmpark in Weimar - Blick zum Stern.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "© R.Möhler"
@@ -4378,13 +4591,21 @@
    "lic": "CC BY-SA 3.0",
    "by": "Most Curious"
   },
-  "Weinstrasse Unstrut.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Denkhenk"
+  "Eslebt esslingen speyrer zehnthof kessler.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Bild von Michael Hoffmann, DE-73669 Lichtenwald (Benutzer:Micha_Es)"
+  },
+  "Ulm Einstein-2.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Memorino"
   },
   "2010 03 13 kauf sev chr 007.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Wikswat"
+  },
+  "Fischerviertel Ulm.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "MOs810"
   },
   "Goethe Gartenhaus Kraus.jpg": {
    "lic": "Public domain",
@@ -4402,9 +4623,25 @@
    "lic": "CC BY-SA 3.0",
    "by": "J. Strauß"
   },
+  "Ulm - Stadtmauer an der Donau 02.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Franzfoto"
+  },
+  "140519 Dom Fulda Frontansicht.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Ansgar Koreng"
+  },
   "Erfurter Dom von Oben 01.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Eremeev"
+  },
+  "Esslinger Burg mit Dickem Turm im Frühjahr.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "R.kaelcke"
+  },
+  "Rathaus Ulm.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Christian Wolf (www.c-w-design.de)"
   },
   "MK38365-69 Fischmarkt (Erfurt).jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4414,33 +4651,21 @@
    "lic": "CC BY-SA 4.0",
    "by": "Falk2"
   },
-  "Quedlinburg Marktplatz 2018a.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Olaf Meister"
-  },
   "Weimar Dom Goethego.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Andrzej Otrębski"
   },
-  "Naumburger Dom Ostseite.jpg": {
+  "MK56776 Michaelskirche (Fulda) .jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Martin Kraft"
+  },
+  "Ulm Metzgerturm 04.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Kirschgaertner"
+   "by": "Uoaei1"
   },
-  "Marktplatz in Naumburg 01.jpg": {
+  "Ulm Schiefes Haus 03.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Krzysztof Golik"
-  },
-  "Marktplatz in Weimar 04.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Krzysztof Golik"
-  },
-  "Quedlinburg asv2018-10 img03 Castle.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
-  },
-  "Quedlinburg asv2018-10 img04 pano from Muenzenberg.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
+   "by": "Uoaei1"
   },
   "Weimar, Bauhaus-Museum, 2019-09 CN-01.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4453,6 +4678,10 @@
   "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
+  },
+  "Stadtschloss Fulda (Südwestansicht).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Jörg Braukmann"
   },
   "Goethe-Schiller-Denkmal 01.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4474,27 +4703,23 @@
    "lic": "CC BY-SA 4.0",
    "by": "Neozoon"
   },
-  "BD Nitzsche Haus, Naumburg (1).jpg": {
+  "Esslingen a.N. - Altstadt - Innere Brücke - Ansicht aus SO von Maille (1).jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "ArthurMcGill"
+   "by": "Roman Eisele"
   },
-  "Finkenherd 1 in Quedlinburg (2).jpg": {
+  "Esslingen Kirche Unserer Lieben Frauen.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Tournasol7"
+   "by": "Andrzej Otrębski (changes by Rabanus Flavus)"
   },
-  "Wernigerode - Breite Straße 72 - Krummelsches Haus.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "H. Zell"
-  },
-  "Wernigerode - Marktplatz - Wohltäterbrunnen 02.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "H. Zell"
+  "Esslingen am Neckar Webergasse 8a Fachwerk 992.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "GFreihalter"
   },
   "Halberstadt St-Burchardi-Kirche.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
-  "Botanischer-garten-jena-rs-786x512.jpg": {
+  "Quedlinburg Ständerbau.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
   },
@@ -4506,17 +4731,25 @@
    "lic": "CC BY-SA 3.0",
    "by": "Times"
   },
+  "Naumburg stwenzel.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Christian Bier"
+  },
   "Checkpoint Charlie1.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Lyricmac at en.wikipedia"
+  },
+  "Naumburg Marientor.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Density"
   },
   "Bundesarchiv B 145 Bild-F088809-0038, Berlin, East Side Gallery.jpg": {
    "lic": "CC BY-SA 3.0 de",
    "by": "Joachim F. Thurn"
   },
-  "Stadtkirche St. Michael in Jena 2008-05-24.jpg": {
+  "Weinstrasse Unstrut.jpg": {
    "lic": "CC BY-SA 3.0",
-   "by": "Henry Mühlpfordt"
+   "by": "Denkhenk"
   },
   "Bodetal Blick Hexentanzplatz.jpg": {
    "lic": "Public domain",
@@ -4530,10 +4763,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Joergsam"
   },
-  "PlanetariumJena01.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Selby"
-  },
   "Berlin - Berliner Fernsehturm - Fensterreinigung.jpg": {
    "lic": "FAL",
    "by": "Taxiarchos228"
@@ -4541,14 +4770,6 @@
   "Wernigerode später Frühling im Lustgartens von Wernigerode im Harz Foto 2005 Wolfgang Pehlemann Wiesbaden PICT0037.jpg": {
    "lic": "CC BY-SA 3.0 de",
    "by": "Wolfgang Pehlemann Wiesbaden Germany"
-  },
-  "140823 Märchendom Saalfelder Feengrotten.jpg": {
-   "lic": "CC BY 3.0 de",
-   "by": "Ansgar Koreng"
-  },
-  "Saalfeld Obere Torgasse 29 Sachteil Stadtmauer Bestandteil Denkmalensemble \"Stadtkern Saalfeld-Saale\".jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "NoRud"
   },
   "Damnatz Elbe.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4570,29 +4791,37 @@
    "lic": "CC BY-SA 4.0",
    "by": "Philipp Guttmann"
   },
+  "Quedlinburg Marktplatz 2018a.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Olaf Meister"
+  },
+  "Naumburger Dom Ostseite.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kirschgaertner"
+  },
+  "Marktplatz in Naumburg 01.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Krzysztof Golik"
+  },
+  "Quedlinburg asv2018-10 img03 Castle.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
+  "Quedlinburg asv2018-10 img04 pano from Muenzenberg.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
   "Ein sonniger Anblick zum Hexentanzplatz vom Seilbahn in Thale (Naturschutzgebiet Bodetal).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Vadat, Hasanov"
-  },
-  "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Kora27"
   },
   "Magdeburger Dom Luftbild.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gregor Rom"
   },
-  "Hackesche höfe berlin.jpg": {
-   "lic": "CC BY-SA 3.0 de",
-   "by": "Arne Müseler"
-  },
   "Reichstagsgebäude von Westen.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Jörg Braukmann"
-  },
-  "Aerial image of the Schloss Friedberg (view from the south).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Carsten Steger"
   },
   "Schloss Wernigerode Luftbild 2.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4601,14 +4830,6 @@
   "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
    "lic": "FAL",
    "by": "A.Savin"
-  },
-  "Jena-40-Marktplatz-2023-gje.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Gerd Eichmann"
-  },
-  "JenTower, Jena 2023-1.jpg": {
-   "lic": "CC0",
-   "by": "Catatine"
   },
   "2023 Berliner Dom - Westfassade -- 01.jpg": {
    "lic": "CC BY 4.0",
@@ -4626,9 +4847,17 @@
    "lic": "CC BY-SA 4.0",
    "by": "Barnos"
   },
-  "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
-   "lic": "Public domain",
-   "by": "Władysław Skoczylas"
+  "BD Nitzsche Haus, Naumburg (1).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "ArthurMcGill"
+  },
+  "Finkenherd 1 in Quedlinburg (2).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Tournasol7"
+  },
+  "Wernigerode - Breite Straße 72 - Krummelsches Haus.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "H. Zell"
   },
   "Wernigerode - Kochstraße 43 - Kleinstes Haus 02.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4638,9 +4867,57 @@
    "lic": "CC BY-SA 3.0",
    "by": "H. Zell"
   },
+  "Wernigerode - Marktplatz - Wohltäterbrunnen 02.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "H. Zell"
+  },
   "Halberstadt, Domplatz (März 2024).jpg": {
    "lic": "CC0",
    "by": "Romzig"
+  },
+  "Botanischer-garten-jena-rs-786x512.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "unknown"
+  },
+  "Stadtkirche St. Michael in Jena 2008-05-24.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Henry Mühlpfordt"
+  },
+  "PlanetariumJena01.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Selby"
+  },
+  "140823 Märchendom Saalfelder Feengrotten.jpg": {
+   "lic": "CC BY 3.0 de",
+   "by": "Ansgar Koreng"
+  },
+  "Saalfeld Obere Torgasse 29 Sachteil Stadtmauer Bestandteil Denkmalensemble \"Stadtkern Saalfeld-Saale\".jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "NoRud"
+  },
+  "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Kora27"
+  },
+  "Hackesche höfe berlin.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Arne Müseler"
+  },
+  "Aerial image of the Schloss Friedberg (view from the south).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Carsten Steger"
+  },
+  "Jena-40-Marktplatz-2023-gje.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gerd Eichmann"
+  },
+  "JenTower, Jena 2023-1.jpg": {
+   "lic": "CC0",
+   "by": "Catatine"
+  },
+  "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
+   "lic": "Public domain",
+   "by": "Władysław Skoczylas"
   }
  }
 }

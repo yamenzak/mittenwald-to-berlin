@@ -65,6 +65,8 @@ const PINNED = {
   wernigerode:  [51.83394, 10.79358, "Wernigerode Hauptbahnhof"],
   thale:        [51.74889, 11.04389, "Thale Hauptbahnhof"],
   halberstadt:  [51.89306, 11.05917, "Bahnhof Halberstadt"],
+  ulm:          [48.39930,  9.98240, "Ulm Hauptbahnhof"],
+  esslingen:    [48.74253,  9.30470, "Bahnhof Esslingen (Neckar)"],
 };
 
 const out = {};

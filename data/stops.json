@@ -118,6 +118,20 @@
   "src": "pinned",
   "km": 1.73
  },
+ "ulm": {
+  "lat": 48.3993,
+  "lon": 9.9824,
+  "name": "Ulm Hauptbahnhof",
+  "src": "pinned",
+  "km": 0.39
+ },
+ "esslingen": {
+  "lat": 48.74253,
+  "lon": 9.3047,
+  "name": "Bahnhof Esslingen (Neckar)",
+  "src": "pinned",
+  "km": 0.5
+ },
  "fulda": {
   "lat": 50.5544,
   "lon": 9.6836,

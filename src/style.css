@@ -323,7 +323,6 @@ body.setup #map { height: min(38vh, 330px); }
 .foot { color: var(--soft-ink); font-size: 13px; line-height: 1.6; padding: 26px 2px 40px; }
 .foot a { color: var(--accent); }
 
-
 /* ---------- the walk through a town ---------- */
 .walkplan { padding: 2px 16px 14px; }
 .wrow { display: grid; grid-template-columns: 30px 1fr; gap: 11px; align-items: start; }
@@ -369,33 +368,6 @@ body.setup #map { height: min(38vh, 330px); }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: 13px; color: var(--soft-ink); }
 .legend span { display: inline-flex; align-items: center; gap: 6px; }
 
-
-[dir="rtl"] body {
-  font-family: "IBM Plex Sans Arabic", "SF Arabic", "Geeza Pro", "Noto Sans Arabic", ui-rounded, system-ui, sans-serif;
-  font-size: 16.5px; line-height: 1.7;
-}
-[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { letter-spacing: 0; line-height: 1.35; }
-[dir="rtl"] .headline .big { font-size: 27px; line-height: 1.35; }
-[dir="rtl"] .label { letter-spacing: 0; }
-[dir="rtl"] .hero .cap .kicker, [dir="rtl"] .wt .kind, [dir="rtl"] .headline .what,
-[dir="rtl"] .plat span, [dir="rtl"] .free span, [dir="rtl"] #tour .step { letter-spacing: 0; }
-[dir="rtl"] .tl { padding-left: 0; padding-right: 26px; }
-[dir="rtl"] .tl::before { left: auto; right: 7px; }
-[dir="rtl"] .ev::before { left: auto; right: -26px; }
-[dir="rtl"] .route::after { right: auto; left: 15px; }
-[dir="rtl"] .route .rn { padding-right: 0; padding-left: 34px; }
-[dir="rtl"] .whop { margin-left: 0; margin-right: 41px; }
-[dir="rtl"] .wextra-head { margin-left: 0; margin-right: 41px; }
-[dir="rtl"] .wtime { text-align: start; }
-[dir="rtl"] .hero .cap, [dir="rtl"] .wt .badge { direction: rtl; }
-[dir="rtl"] .rail { direction: rtl; }
-/* Times and line numbers stay left-to-right inside Arabic sentences. */
-[dir="rtl"] .train .t, [dir="rtl"] .move .leg .lt, [dir="rtl"] .plat b,
-[dir="rtl"] .line, [dir="rtl"] .countdown .n, [dir="rtl"] .free b,
-[dir="rtl"] .stophead .when, [dir="rtl"] .wtbar .num { direction: ltr; unicode-bidi: isolate; }
-[dir="rtl"] .tt { direction: ltr; unicode-bidi: isolate; display: inline-block; }
-
-
 /* ---------- step 3: two ways of answering ---------- */
 .seg {
   display: flex; background: var(--hair); border-radius: 14px; padding: 4px; margin: 14px 0 4px;
@@ -415,16 +387,9 @@ body.setup #map { height: min(38vh, 330px); }
 }
 .wthumb img { width: 100%; height: 100%; object-fit: cover; }
 
-[dir="rtl"] .wthumb { align-self: center; }
-[dir="rtl"] .seg { direction: rtl; }
-[dir="rtl"] .steps span { font-family: system-ui; }
-
 /* Anything that lays out along an axis has to follow the reading direction,
    not a hard-coded side. */
 .mlist li button, .ov li button, .kv, .stophead, .train, .mrow, .change, .howto { text-align: start; }
-[dir="rtl"] .route .rs, [dir="rtl"] .beds, [dir="rtl"] .meta, [dir="rtl"] .days,
-[dir="rtl"] .mfoot, [dir="rtl"] .rail, [dir="rtl"] .legend { direction: rtl; }
-[dir="rtl"] .ov li button, [dir="rtl"] .mlist li button { border-left: 0; border-right: 6px solid var(--c); }
 
 /* A visible way out of the drawer. The handle is a hint; this is a button. */
 .sheetx {
@@ -489,10 +454,9 @@ body.setup { padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
 }
 .mealcard .mwhen {
   font-variant-numeric: tabular-nums; font-weight: 700; font-size: 15px;
-  color: var(--accent); unicode-bidi: isolate;
+  color: var(--accent);
 }
 .mealcard .mtxt { font-size: 15px; line-height: 1.4; text-align: start; }
 .mealcard .chip { grid-column: 2; justify-self: start; margin-top: 4px; }
 .mealcard .mtxt small { display: block; color: var(--soft-ink); font-size: 13.5px; margin-top: 2px; }
 .mealcard .chip { flex: none; }
-[dir="rtl"] .mealcard { direction: rtl; }

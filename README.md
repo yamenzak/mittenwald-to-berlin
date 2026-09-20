@@ -6,7 +6,6 @@ never has to work anything out.
 
 Open `out/mittenwald-to-berlin.html`. That is the whole product — one file, no
 server, no install. It works with no signal, and gets better when there is one.
-It reads in English or Arabic; `?lang=ar` opens straight into Arabic.
 
 ## What it does
 
@@ -16,14 +15,16 @@ sleep in so the hotels can be booked — and which day it starts. After that
 there is no navigation at all: the app is the day, and the strip along the top
 moves between days. There is no tour, because there is nothing left to explain.
 
-**Four lines, not four ways of spending the same day.** The classic run through
+**Five lines, not five ways of spending the same day.** The classic run through
 Augsburg, Nuremberg and Erfurt; the Romantic Road, which turns north-west for
 Rothenburg and sleeps in Würzburg; the Harz, which gets the northward ride done
-early to buy a day for Wernigerode and a night inside Quedlinburg; and two
-nights in Mittenwald with the Zugspitze between them. They sleep in different
-towns, so the choice is the one that has to be made before leaving home. A day's
-options are filtered to the ones that start where the night before ended — you
-are never offered a train out of a town you are not in.
+early to buy a day for Wernigerode and a night inside Quedlinburg; the west,
+which leaves the south–north road entirely for Ulm, Esslingen and a night under
+Heidelberg castle; and two nights in Mittenwald with the Zugspitze between them.
+They sleep in different towns, so the choice is the one that has to be made
+before leaving home. A day's options are filtered to the ones that start where
+the night before ended — you are never offered a train out of a town you are
+not in.
 
 **Says where there is time to eat.** Lunch and dinner are placed where there is
 genuinely room for them — the part of the day with the longest overlap with the
@@ -81,17 +82,14 @@ node scripts/build-images.mjs    # download, resize, inline
 node scripts/bundle.mjs          # one file into out/
 ```
 
-Only `bundle.mjs` is needed after a change to `src/` or to `data/ar.mjs`; it
-reads the Arabic edition straight from the source rather than from the planner's
-output, so a wording fix costs a second rather than a rebuild.
+Only `bundle.mjs` is needed after a change to `src/`.
 
 The checks:
 
 ```
-node scripts/check-strings.mjs   # every T("…") resolves in both languages
-node scripts/check-arabic.mjs    # every screen swept in Arabic for English
-node scripts/test-flow.mjs       # the two questions, then the day
-node scripts/test-ar.mjs  scripts/test-fixes2.mjs  scripts/test-live.mjs
+node scripts/test-flow.mjs       # the two questions, then the day, every line
+node scripts/test-fixes2.mjs     # scroll, drawers, images
+node scripts/test-live.mjs       # delays, platform changes, cancellations
 ```
 
 `data/trip.mjs` is the only file written by hand: the days, the route options,
@@ -101,14 +99,21 @@ inventing it.
 
 ## Three things worth knowing
 
-**Heidelberg does not fit, and it was measured rather than guessed.** On the
-regional ticket it is 4 h 49 from Augsburg and 10 h 27 back out to Berlin —
-there is no five-day version of this week that affords it. Rothenburg, which
-looks like the same kind of detour on a map, is 2 h 29 from Augsburg and 1 h 11
-from Würzburg, so it earns its place easily. The Harz turned out to be nearer
-Berlin than Thuringia is: Quedlinburg to Berlin is 3 h 44 against Erfurt's
-4 h 46. `scripts/build-plan.mjs` prints every leg it chooses, and every claim
-here came off that output.
+**Heidelberg fits as a line of its own and not as a detour, which took two
+measurements to learn.** Hung off the normal route it is hopeless — 4 h 49 out
+from Augsburg and 10 h 27 back to Berlin, paid twice because nothing on the
+return is new. Given its own week it works, because the way back east through
+Würzburg is all new ground: Augsburg → Ulm 1 h 21 direct, Ulm → Esslingen 1 h 04
+direct, Esslingen → Heidelberg 1 h 48, Heidelberg → Würzburg 2 h 29, Würzburg →
+Erfurt 2 h 31. That is 16 h 38 over the week, the heaviest of the five, and it
+is the price of the only line that leaves the south–north road.
+
+Esslingen is there because Stuttgart is not worth a stop and Esslingen is: it
+costs 1 h 04 from Ulm against 1 h 16 to Stuttgart, and Webergasse has the oldest
+standing timber houses in Germany. The Harz turned out to be nearer Berlin than
+Thuringia is — Quedlinburg to Berlin is 3 h 44 against Erfurt's 4 h 46.
+`scripts/build-plan.mjs` prints every leg it chooses, and every number here came
+off that output.
 
 ## Two things worth knowing
 
