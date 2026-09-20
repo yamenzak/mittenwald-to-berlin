@@ -160,6 +160,27 @@
   "src": "pinned",
   "km": 0.52
  },
+ "wernigerode": {
+  "lat": 51.83394,
+  "lon": 10.79358,
+  "name": "Wernigerode Hauptbahnhof",
+  "src": "pinned",
+  "km": 1.18
+ },
+ "thale": {
+  "lat": 51.74889,
+  "lon": 11.04389,
+  "name": "Thale Hauptbahnhof",
+  "src": "pinned",
+  "km": 0.44
+ },
+ "halberstadt": {
+  "lat": 51.89306,
+  "lon": 11.05917,
+  "name": "Bahnhof Halberstadt",
+  "src": "pinned",
+  "km": 0.52
+ },
  "magdeburg": {
   "lat": 52.1301,
   "lon": 11.627,

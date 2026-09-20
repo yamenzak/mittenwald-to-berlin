@@ -2595,6 +2595,216 @@
    "file": "Quedlinburg_Ständerbau.JPG",
    "extract": "Das Fachwerkmuseum Ständerbau der Städtischen Museen Quedlinburg ist ein Fachwerkmuseum und denkmalgeschütztes Fachwerkhaus in Quedlinburg."
   },
+  "wernigerode/Marktplatz": {
+   "ok": true,
+   "w": "Wernigerode",
+   "ct": null,
+   "lang": "de",
+   "title": "Wernigerode",
+   "url": "https://de.wikipedia.org/wiki/Wernigerode",
+   "lat": 51.83583333,
+   "lon": 10.77666667,
+   "wd": "Q15982",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Wernigerode_-_Marktplatz_-_Wohlt%C3%A4terbrunnen_02.jpg/640px-Wernigerode_-_Marktplatz_-_Wohlt%C3%A4terbrunnen_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Wernigerode_-_Marktplatz_-_Wohlt%C3%A4terbrunnen_02.jpg/1000px-Wernigerode_-_Marktplatz_-_Wohlt%C3%A4terbrunnen_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Wernigerode - Marktplatz - Wohltäterbrunnen 02.jpg",
+   "extract": ""
+  },
+  "wernigerode/Breite Straße": {
+   "ok": true,
+   "w": "Wernigerode",
+   "ct": "Breite Straße Wernigerode",
+   "lang": "de",
+   "title": "Wernigerode",
+   "url": "https://de.wikipedia.org/wiki/Wernigerode",
+   "lat": 51.83583333,
+   "lon": 10.77666667,
+   "wd": "Q15982",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Wernigerode_-_Breite_Stra%C3%9Fe_72_-_Krummelsches_Haus.jpg/640px-Wernigerode_-_Breite_Stra%C3%9Fe_72_-_Krummelsches_Haus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Wernigerode_-_Breite_Stra%C3%9Fe_72_-_Krummelsches_Haus.jpg/1000px-Wernigerode_-_Breite_Stra%C3%9Fe_72_-_Krummelsches_Haus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Wernigerode - Breite Straße 72 - Krummelsches Haus.jpg",
+   "extract": ""
+  },
+  "wernigerode/Wernigerode Castle": {
+   "ok": true,
+   "w": "Schloss Wernigerode",
+   "ct": null,
+   "lang": "de",
+   "title": "Schloss Wernigerode",
+   "url": "https://de.wikipedia.org/wiki/Schloss_Wernigerode",
+   "lat": 51.83053,
+   "lon": 10.79499,
+   "wd": "Q538989",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Schloss_Wernigerode_Luftbild_2.jpg/640px-Schloss_Wernigerode_Luftbild_2.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Schloss_Wernigerode_Luftbild_2.jpg/1000px-Schloss_Wernigerode_Luftbild_2.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Schloss_Wernigerode_Luftbild_2.jpg",
+   "extract": ""
+  },
+  "wernigerode/Kleinstes Haus": {
+   "ok": true,
+   "w": "Wernigerode",
+   "ct": "Kleinstes Haus Wernigerode",
+   "lang": "de",
+   "title": "Wernigerode",
+   "url": "https://de.wikipedia.org/wiki/Wernigerode",
+   "lat": 51.83583333,
+   "lon": 10.77666667,
+   "wd": "Q15982",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Wernigerode_-_Kochstra%C3%9Fe_43_-_Kleinstes_Haus_02.jpg/640px-Wernigerode_-_Kochstra%C3%9Fe_43_-_Kleinstes_Haus_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Wernigerode_-_Kochstra%C3%9Fe_43_-_Kleinstes_Haus_02.jpg/1000px-Wernigerode_-_Kochstra%C3%9Fe_43_-_Kleinstes_Haus_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Wernigerode - Kochstraße 43 - Kleinstes Haus 02.jpg",
+   "extract": ""
+  },
+  "wernigerode/Harzquerbahn": {
+   "ok": true,
+   "w": "Harzer Schmalspurbahnen",
+   "ct": "Harzquerbahn Wernigerode Dampflokomotive",
+   "lang": "de",
+   "title": "Harzer Schmalspurbahnen",
+   "url": "https://de.wikipedia.org/wiki/Harzer_Schmalspurbahnen",
+   "lat": null,
+   "lon": null,
+   "wd": "Q481535",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/00_4092_Wernigerode_-_Harzquerbahn.jpg/640px-00_4092_Wernigerode_-_Harzquerbahn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/00_4092_Wernigerode_-_Harzquerbahn.jpg/1000px-00_4092_Wernigerode_-_Harzquerbahn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "00 4092 Wernigerode - Harzquerbahn.jpg",
+   "extract": ""
+  },
+  "wernigerode/Schiefes Haus": {
+   "ok": true,
+   "w": "Wernigerode",
+   "ct": "Schiefes Haus Wernigerode",
+   "lang": "de",
+   "title": "Wernigerode",
+   "url": "https://de.wikipedia.org/wiki/Wernigerode",
+   "lat": 51.83583333,
+   "lon": 10.77666667,
+   "wd": "Q15982",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Wernigerode_-_Klintgasse_5_-_Museum_Schiefes_Haus_02.jpg/640px-Wernigerode_-_Klintgasse_5_-_Museum_Schiefes_Haus_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Wernigerode_-_Klintgasse_5_-_Museum_Schiefes_Haus_02.jpg/1000px-Wernigerode_-_Klintgasse_5_-_Museum_Schiefes_Haus_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Wernigerode - Klintgasse 5 - Museum Schiefes Haus 02.jpg",
+   "extract": ""
+  },
+  "wernigerode/Lustgarten": {
+   "ok": true,
+   "w": "Schloss Wernigerode",
+   "ct": "Lustgarten Wernigerode",
+   "lang": "de",
+   "title": "Schloss Wernigerode",
+   "url": "https://de.wikipedia.org/wiki/Schloss_Wernigerode",
+   "lat": 51.83053,
+   "lon": 10.79499,
+   "wd": "Q538989",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Wernigerode_sp%C3%A4ter_Fr%C3%BChling_im_Lustgartens_von_Wernigerode_im_Harz_Foto_2005_Wolfgang_Pehlemann_Wiesbaden_PICT0037.jpg/640px-Wernigerode_sp%C3%A4ter_Fr%C3%BChling_im_Lustgartens_von_Wernigerode_im_Harz_Foto_2005_Wolfgang_Pehlemann_Wiesbaden_PICT0037.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Wernigerode_sp%C3%A4ter_Fr%C3%BChling_im_Lustgartens_von_Wernigerode_im_Harz_Foto_2005_Wolfgang_Pehlemann_Wiesbaden_PICT0037.jpg/1000px-Wernigerode_sp%C3%A4ter_Fr%C3%BChling_im_Lustgartens_von_Wernigerode_im_Harz_Foto_2005_Wolfgang_Pehlemann_Wiesbaden_PICT0037.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Wernigerode später Frühling im Lustgartens von Wernigerode im Harz Foto 2005 Wolfgang Pehlemann Wiesbaden PICT0037.jpg",
+   "extract": ""
+  },
+  "thale/Bodetal": {
+   "ok": true,
+   "w": "Bodetal",
+   "ct": null,
+   "lang": "de",
+   "title": "Bodetal",
+   "url": "https://de.wikipedia.org/wiki/Bodetal",
+   "lat": 51.73555556,
+   "lon": 11.00972222,
+   "wd": "Q889810",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Bodetal_Blick_Hexentanzplatz.jpg/640px-Bodetal_Blick_Hexentanzplatz.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Bodetal_Blick_Hexentanzplatz.jpg/1000px-Bodetal_Blick_Hexentanzplatz.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Bodetal_Blick_Hexentanzplatz.jpg",
+   "extract": ""
+  },
+  "thale/Hexentanzplatz": {
+   "ok": true,
+   "w": "Hexentanzplatz",
+   "ct": "Hexentanzplatz Thale Bodetal",
+   "lang": "de",
+   "title": "Hexentanzplatz",
+   "url": "https://de.wikipedia.org/wiki/Hexentanzplatz",
+   "lat": null,
+   "lon": null,
+   "wd": "Q1616834",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Ein_sonniger_Anblick_zum_Hexentanzplatz_vom_Seilbahn_in_Thale_%28Naturschutzgebiet_Bodetal%29.jpg/640px-Ein_sonniger_Anblick_zum_Hexentanzplatz_vom_Seilbahn_in_Thale_%28Naturschutzgebiet_Bodetal%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Ein_sonniger_Anblick_zum_Hexentanzplatz_vom_Seilbahn_in_Thale_%28Naturschutzgebiet_Bodetal%29.jpg/1000px-Ein_sonniger_Anblick_zum_Hexentanzplatz_vom_Seilbahn_in_Thale_%28Naturschutzgebiet_Bodetal%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Ein sonniger Anblick zum Hexentanzplatz vom Seilbahn in Thale (Naturschutzgebiet Bodetal).jpg",
+   "extract": ""
+  },
+  "thale/Rosstrappe": {
+   "ok": true,
+   "w": "Rosstrappe",
+   "ct": null,
+   "lang": "de",
+   "title": "Roßtrappe",
+   "url": "https://de.wikipedia.org/wiki/Ro%C3%9Ftrappe",
+   "lat": 51.735,
+   "lon": 11.01777778,
+   "wd": "Q2171383",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ro%C3%9Ftrappe_Harz.jpg/640px-Ro%C3%9Ftrappe_Harz.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ro%C3%9Ftrappe_Harz.jpg/1000px-Ro%C3%9Ftrappe_Harz.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Roßtrappe_Harz.jpg",
+   "extract": ""
+  },
+  "halberstadt/Halberstadt Cathedral": {
+   "ok": true,
+   "w": "Halberstädter Dom",
+   "ct": null,
+   "lang": "de",
+   "title": "Dom zu Halberstadt",
+   "url": "https://de.wikipedia.org/wiki/Dom_zu_Halberstadt",
+   "lat": 51.89626944,
+   "lon": 11.04873611,
+   "wd": "Q316414",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Dom_Halberstadt_von_S%C3%BCdosten.jpg/640px-Dom_Halberstadt_von_S%C3%BCdosten.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Dom_Halberstadt_von_S%C3%BCdosten.jpg/1000px-Dom_Halberstadt_von_S%C3%BCdosten.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Dom_Halberstadt_von_Südosten.jpg",
+   "extract": ""
+  },
+  "halberstadt/Domplatz": {
+   "ok": true,
+   "w": "Halberstädter Dom",
+   "ct": "Domplatz Halberstadt",
+   "lang": "de",
+   "title": "Dom zu Halberstadt",
+   "url": "https://de.wikipedia.org/wiki/Dom_zu_Halberstadt",
+   "lat": 51.89626944,
+   "lon": 11.04873611,
+   "wd": "Q316414",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Halberstadt%2C_Domplatz_%28M%C3%A4rz_2024%29.jpg/640px-Halberstadt%2C_Domplatz_%28M%C3%A4rz_2024%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Halberstadt%2C_Domplatz_%28M%C3%A4rz_2024%29.jpg/1000px-Halberstadt%2C_Domplatz_%28M%C3%A4rz_2024%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Halberstadt, Domplatz (März 2024).jpg",
+   "extract": ""
+  },
+  "halberstadt/Fischmarkt": {
+   "ok": true,
+   "w": "Halberstadt",
+   "ct": null,
+   "lang": "de",
+   "title": "Halberstadt",
+   "url": "https://de.wikipedia.org/wiki/Halberstadt",
+   "lat": 51.89504,
+   "lon": 11.05226,
+   "wd": "Q7072",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Halberstadt%2C_Fischmarkt_und_Rathaus_%28R%C3%BCckseite%29.jpg/640px-Halberstadt%2C_Fischmarkt_und_Rathaus_%28R%C3%BCckseite%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Halberstadt%2C_Fischmarkt_und_Rathaus_%28R%C3%BCckseite%29.jpg/1000px-Halberstadt%2C_Fischmarkt_und_Rathaus_%28R%C3%BCckseite%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Halberstadt, Fischmarkt und Rathaus (Rückseite).jpg",
+   "extract": ""
+  },
+  "halberstadt/As Slow as Possible": {
+   "ok": true,
+   "w": "As Slow as Possible",
+   "ct": null,
+   "lang": "en",
+   "title": "As Slow as Possible",
+   "url": "https://en.wikipedia.org/wiki/As_Slow_as_Possible",
+   "lat": null,
+   "lon": null,
+   "wd": "Q655393",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Halberstadt_St-Burchardi-Kirche.jpg/640px-Halberstadt_St-Burchardi-Kirche.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Halberstadt_St-Burchardi-Kirche.jpg/1000px-Halberstadt_St-Burchardi-Kirche.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Halberstadt_St-Burchardi-Kirche.jpg",
+   "extract": "Organ²/ASLSP is a musical piece by John Cage and the subject of the second-longest-lasting musical performance yet undertaken. Cage wrote it in 1987 for organ, as an adaptation of his 1985 composition ASLSP for piano."
+  },
   "magdeburg/Magdeburg Cathedral": {
    "ok": true,
    "w": "Magdeburger Dom",
@@ -3072,9 +3282,9 @@
    "lat": 47.55916667,
    "lon": 11.13888889,
    "wd": "Q505979",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Loisachtal südlich von Oberau Juni 2020 2.jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg/1200px-Loisachtal_s%C3%BCdlich_von_Oberau_Juni_2020_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Loisachtal südlich von Oberau Juni 2020 1.jpg",
    "extract": ""
   },
   "ettal": {
@@ -3192,9 +3402,9 @@
    "lat": 48.71888889,
    "lon": 10.77777778,
    "wd": "Q53742",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg/1200px-Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg/1200px-Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_1%2C_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Donauwörth, Reichsstraße 1, 001.jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_2%2C_006.jpg/1200px-Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_2%2C_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_2%2C_006.jpg/1200px-Donauw%C3%B6rth%2C_Reichsstra%C3%9Fe_2%2C_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Donauwörth, Reichsstraße 2, 006.jpg",
    "extract": ""
   },
   "nuremberg": {
@@ -3327,9 +3537,9 @@
    "lat": 50.97944444,
    "lon": 11.32972222,
    "wd": "Q3955",
-   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Marktplatz_in_Weimar_04.jpg/1200px-Marktplatz_in_Weimar_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Marktplatz_in_Weimar_04.jpg/1200px-Marktplatz_in_Weimar_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "file": "Marktplatz in Weimar 04.jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Marktplatz_in_Weimar_03.jpg/1200px-Marktplatz_in_Weimar_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Marktplatz_in_Weimar_03.jpg/1200px-Marktplatz_in_Weimar_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Marktplatz in Weimar 03.jpg",
    "extract": ""
   },
   "naumburg": {
@@ -3360,6 +3570,51 @@
    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Quedlinburg_-_Fachwerk_am_Marktplatz.jpg/1200px-Quedlinburg_-_Fachwerk_am_Marktplatz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Quedlinburg_-_Fachwerk_am_Marktplatz.jpg/1200px-Quedlinburg_-_Fachwerk_am_Marktplatz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "file": "Quedlinburg - Fachwerk am Marktplatz.jpg",
+   "extract": ""
+  },
+  "wernigerode": {
+   "ok": true,
+   "w": "Wernigerode",
+   "ct": "Wernigerode Rathaus",
+   "lang": "de",
+   "title": "Wernigerode",
+   "url": "https://de.wikipedia.org/wiki/Wernigerode",
+   "lat": 51.83583333,
+   "lon": 10.77666667,
+   "wd": "Q15982",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Wernigerode_%282013-06-03%29%2C_by_Klugschnacker_in_Wikipedia_%2814%29.JPG/1200px-Wernigerode_%282013-06-03%29%2C_by_Klugschnacker_in_Wikipedia_%2814%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Wernigerode_%282013-06-03%29%2C_by_Klugschnacker_in_Wikipedia_%2814%29.JPG/1200px-Wernigerode_%282013-06-03%29%2C_by_Klugschnacker_in_Wikipedia_%2814%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Wernigerode (2013-06-03), by Klugschnacker in Wikipedia (14).JPG",
+   "extract": ""
+  },
+  "thale": {
+   "ok": true,
+   "w": "Thale",
+   "ct": "Roßtrappe Bodetal Blick",
+   "lang": "de",
+   "title": "Thale",
+   "url": "https://de.wikipedia.org/wiki/Thale",
+   "lat": 51.75,
+   "lon": 11.05,
+   "wd": "Q506460",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Blick_vom_Hexentanzplatz_%C3%BCber_das_Bodetal_zur_Ro%C3%9Ftrappe_-_panoramio.jpg/1200px-Blick_vom_Hexentanzplatz_%C3%BCber_das_Bodetal_zur_Ro%C3%9Ftrappe_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Blick_vom_Hexentanzplatz_%C3%BCber_das_Bodetal_zur_Ro%C3%9Ftrappe_-_panoramio.jpg/1200px-Blick_vom_Hexentanzplatz_%C3%BCber_das_Bodetal_zur_Ro%C3%9Ftrappe_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Blick vom Hexentanzplatz über das Bodetal zur Roßtrappe - panoramio.jpg",
+   "extract": ""
+  },
+  "halberstadt": {
+   "ok": true,
+   "w": "Halberstadt",
+   "ct": "Halberstadt Fachwerk Altstadt",
+   "lang": "de",
+   "title": "Halberstadt",
+   "url": "https://de.wikipedia.org/wiki/Halberstadt",
+   "lat": 51.89504,
+   "lon": 11.05226,
+   "wd": "Q7072",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Halberstadt_Altstadt_03.jpg/1200px-Halberstadt_Altstadt_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Halberstadt_Altstadt_03.jpg/1200px-Halberstadt_Altstadt_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Halberstadt Altstadt 03.jpg",
    "extract": ""
   },
   "magdeburg": {
@@ -3451,10 +3706,6 @@
    "lic": "Public domain",
    "by": "Berthold Werner"
   },
-  "Seefeld in Tirol im Bezirk IL.png": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Joschi Täubler"
-  },
   "Augsburg Perlachturm am Rathausplatz.jpg": {
    "lic": "Public domain",
    "by": "Bagratun"
@@ -3479,13 +3730,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "Thomas Wolf, www.foto-tw.de"
   },
-  "Georgenstein Ostufer.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Richard Bartz"
-  },
   "Mittenwald St Peter u Paul.JPG": {
    "lic": "CC BY-SA 1.0",
    "by": "Bbb"
+  },
+  "Wernigerode (2013-06-03), by Klugschnacker in Wikipedia (14).JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Klugschnacker"
   },
   "Mittenwald Ballenhausgasse 14-16 6455.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -3507,7 +3758,7 @@
    "lic": "CC BY-SA 3.0",
    "by": "Reinhardhauke"
   },
-  "Donauwörth, Reichsstraße 1, 001.jpg": {
+  "Donauwörth, Reichsstraße 2, 006.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tilman2007"
   },
@@ -3522,6 +3773,10 @@
   "Heidelberg Altstadt Schloss Luftbild.JPG": {
    "lic": "CC BY 4.0",
    "by": "Schlurcher"
+  },
+  "Blick vom Hexentanzplatz über das Bodetal zur Roßtrappe - panoramio.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "Gottfried Hoffmann -…"
   },
   "Blick aufs verregnete Mittenwald (2) (16499351081).jpg": {
    "lic": "CC BY 2.0",
@@ -3543,7 +3798,7 @@
    "lic": "CC BY-SA 4.0",
    "by": "Krzysztof Golik"
   },
-  "Marktplatz in Weimar 04.jpg": {
+  "Marktplatz in Weimar 03.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Krzysztof Golik"
   },
@@ -3551,9 +3806,13 @@
    "lic": "CC0",
    "by": "Christoph Braun"
   },
-  "Loisachtal südlich von Oberau Juni 2020 2.jpg": {
+  "Loisachtal südlich von Oberau Juni 2020 1.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kajebi II."
+  },
+  "Halberstadt Altstadt 03.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "ErwinMeier"
   },
   "Thuringia Eisenach asv2020-07 img23 Wartburg Castle.jpg": {
    "lic": "FAL",
@@ -3587,10 +3846,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Ursula Jaeger"
   },
-  "Wildsee (46303).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Reustli"
-  },
   "Erfurt - Krämerbrücke 2 - 8.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "H. Zell"
@@ -3619,10 +3874,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Hesse1309"
   },
-  "Frauenkirche Munich - View from Peterskirche Tower.jpg": {
-   "lic": "CC BY 2.5",
-   "by": "Diliff"
-  },
   "Rathaus and Marienplatz from Peterskirche - August 2006.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Diliff"
@@ -3638,6 +3889,10 @@
   "Olympiaschanze St. Moritz.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Garry Furrer"
+  },
+  "Seefeld in Tirol im Bezirk IL.png": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joschi Täubler"
   },
   "Oberammergau Pilatushaus Gartenfassade.jpg": {
    "lic": "CC BY 3.0",
@@ -3671,13 +3926,13 @@
    "lic": "CC0",
    "by": "Leitzsche"
   },
+  "Georgenstein Ostufer.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Richard Bartz"
+  },
   "Kloster Ettal Klosteranlage.JPG": {
    "lic": "CC BY-SA 1.0",
    "by": "Bbb"
-  },
-  "Munich - The Alter Peter tower - 7411.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Jorge Royan"
   },
   "Cafe sign, Murnau, Bavaria, Germany.jpg": {
    "lic": "CC0",
@@ -3697,10 +3952,6 @@
   },
   "Partnachklamm 2014a.JPG": {
    "lic": "CC BY-SA 4.0",
-   "by": "Wikiolo"
-  },
-  "Viktualienmarkt 2016.jpg": {
-   "lic": "CC BY-SA 3.0",
    "by": "Wikiolo"
   },
   "AltePfarrkircheStMartinGarmischPartenkirchenTurmL1050993 (3).jpg": {
@@ -3759,13 +4010,13 @@
    "lic": "CC BY-SA 4.0",
    "by": "Tuxyso"
   },
+  "Wildsee (46303).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Reustli"
+  },
   "Landsberg-bayertor.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "unknown"
-  },
-  "Nürnberg St. Lorenz Türme Totale.jpg": {
-   "lic": "CC BY-SA 2.0 de",
-   "by": "jailbird"
   },
   "München Hofgartentempel.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -3782,6 +4033,10 @@
   "Nürnberg St. Sebald komplett v N.jpg": {
    "lic": "CC BY-SA 2.0 de",
    "by": "jailbird"
+  },
+  "Frauenkirche Munich - View from Peterskirche Tower.jpg": {
+   "lic": "CC BY 2.5",
+   "by": "Diliff"
   },
   "Munich English Gardens - Chinese Tower Beer Garden - August 2006.jpg": {
    "lic": "CC BY 2.5",
@@ -3811,10 +4066,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Peter Bubenik"
   },
-  "Nuernberg-Frauenkirche-gp.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "User:Kolossos"
-  },
   "Nuernberg-schoener-Brunnen-gp.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "User:Kolossos"
@@ -3826,14 +4077,6 @@
   "Nuremberg Aerial Hauptmarkt.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Nicohofmann"
-  },
-  "Nuremberg Weißgerbergasse.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "UlrichAAB"
-  },
-  "Henkersteg in Nürnberg.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Schlaier"
   },
   "Heilig-Geist-Spital (Nürnberg).jpg": {
    "lic": "CC BY-SA 3.0",
@@ -3851,6 +4094,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Rufus46"
   },
+  "Munich - The Alter Peter tower - 7411.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Jorge Royan"
+  },
   "Am Roten Tor 1 Augsburg.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Gliwi"
@@ -3858,6 +4105,14 @@
   "Donauwörth, Münster zu Unserer Lieben Frau, 005.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tilman2007"
+  },
+  "Donauwörth, Reichsstraße 1, 001.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Tilman2007"
+  },
+  "Viktualienmarkt 2016.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Wikiolo"
   },
   "St. Nepomuk retusche.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -3923,6 +4178,10 @@
    "lic": "CC BY-SA 2.0",
    "by": "User:Justinc"
   },
+  "Nürnberg St. Lorenz Türme Totale.jpg": {
+   "lic": "CC BY-SA 2.0 de",
+   "by": "jailbird"
+  },
   "Bamberg-Schlenkerla1-Asio.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "No machine-readable author provided. Asio otus assumed (based on copyright claims)."
@@ -3959,6 +4218,10 @@
    "lic": "Public domain",
    "by": "Berthold Werner"
   },
+  "Nuernberg-Frauenkirche-gp.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "User:Kolossos"
+  },
   "Panorama Alte Mainbrücke Würzburg.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Tors"
@@ -3970,6 +4233,14 @@
   "Bamberg Käthe Wohlfahrt Schaufenster Weihnachten.jpg": {
    "lic": "Public domain",
    "by": "Photo: Andreas Praefcke"
+  },
+  "Nuremberg Weißgerbergasse.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "UlrichAAB"
+  },
+  "Henkersteg in Nürnberg.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Schlaier"
   },
   "German Bratwürste.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4027,10 +4298,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Martin Kraft"
   },
-  "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Steffen Schmitz (more photos)"
-  },
   "Stadtschloss Fulda (Südwestansicht).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Jörg Braukmann"
@@ -4038,14 +4305,6 @@
   "50 000 Exponate aus 1000 Jahren Kriminalgeschichte zeigt das Kriminalmuseum Rothenburg ob der Tauber. 42.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Holger Uwe Schmitt"
-  },
-  "Thuringia Eisenach asv2020-07 img14 Bach Museum.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
-  },
-  "Thuringia Eisenach asv2020-07 img28 Market Square.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
   },
   "Bamberger Dom BW 6h.JPG": {
    "lic": "Public domain",
@@ -4139,14 +4398,6 @@
    "lic": "CC BY 3.0",
    "by": "Grimba-Photo"
   },
-  "Berlin Museumsinsel Fernsehturm.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Thomas Wolf, www.foto-tw.de"
-  },
-  "BerlinBrandenburgerTor1985.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Joergsam"
-  },
   "2013-04-20 Krämerbrücke.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "J. Strauß"
@@ -4154,14 +4405,6 @@
   "Erfurter Dom von Oben 01.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Eremeev"
-  },
-  "Damnatz Elbe.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Christian Fischer"
-  },
-  "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
-   "lic": "CC BY 3.0 de",
-   "by": "Ansgar Koreng"
   },
   "MK38365-69 Fischmarkt (Erfurt).jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4187,6 +4430,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Krzysztof Golik"
   },
+  "Marktplatz in Weimar 04.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Krzysztof Golik"
+  },
   "Quedlinburg asv2018-10 img03 Castle.jpg": {
    "lic": "FAL",
    "by": "A.Savin"
@@ -4203,29 +4450,29 @@
    "lic": "CC BY-SA 4.0",
    "by": "Steffen Schmitz (more photos)"
   },
+  "Fulda, Schlossgarten, Orangerie, 2019-10 CN-02.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Steffen Schmitz (more photos)"
+  },
   "Goethe-Schiller-Denkmal 01.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "H.Helmlechner"
+  },
+  "Thuringia Eisenach asv2020-07 img14 Bach Museum.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
   },
   "Thuringia Eisenach asv2020-07 img17 Luther's House.jpg": {
    "lic": "FAL",
    "by": "A.Savin"
   },
-  "Magdeburger Dom Luftbild.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Gregor Rom"
+  "Thuringia Eisenach asv2020-07 img28 Market Square.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
   },
   "Auslage Geschäft Krämerbrücke Erfurt.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Neozoon"
-  },
-  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
-   "lic": "FAL",
-   "by": "A.Savin"
-  },
-  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Barnos"
   },
   "BD Nitzsche Haus, Naumburg (1).jpg": {
    "lic": "CC BY-SA 4.0",
@@ -4234,6 +4481,18 @@
   "Finkenherd 1 in Quedlinburg (2).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Tournasol7"
+  },
+  "Wernigerode - Breite Straße 72 - Krummelsches Haus.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "H. Zell"
+  },
+  "Wernigerode - Marktplatz - Wohltäterbrunnen 02.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "H. Zell"
+  },
+  "Halberstadt St-Burchardi-Kirche.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "unknown"
   },
   "Botanischer-garten-jena-rs-786x512.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -4259,6 +4518,18 @@
    "lic": "CC BY-SA 3.0",
    "by": "Henry Mühlpfordt"
   },
+  "Bodetal Blick Hexentanzplatz.jpg": {
+   "lic": "Public domain",
+   "by": "Axel Hindemith"
+  },
+  "Berlin Museumsinsel Fernsehturm.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Thomas Wolf, www.foto-tw.de"
+  },
+  "BerlinBrandenburgerTor1985.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joergsam"
+  },
   "PlanetariumJena01.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Selby"
@@ -4266,6 +4537,10 @@
   "Berlin - Berliner Fernsehturm - Fensterreinigung.jpg": {
    "lic": "FAL",
    "by": "Taxiarchos228"
+  },
+  "Wernigerode später Frühling im Lustgartens von Wernigerode im Harz Foto 2005 Wolfgang Pehlemann Wiesbaden PICT0037.jpg": {
+   "lic": "CC BY-SA 3.0 de",
+   "by": "Wolfgang Pehlemann Wiesbaden Germany"
   },
   "140823 Märchendom Saalfelder Feengrotten.jpg": {
    "lic": "CC BY 3.0 de",
@@ -4275,13 +4550,37 @@
    "lic": "CC BY-SA 4.0",
    "by": "NoRud"
   },
+  "Damnatz Elbe.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Christian Fischer"
+  },
+  "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
+   "lic": "CC BY 3.0 de",
+   "by": "Ansgar Koreng"
+  },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Alexander Blum"
   },
+  "00 4092 Wernigerode - Harzquerbahn.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "W. Bulach"
+  },
+  "Roßtrappe Harz.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Philipp Guttmann"
+  },
+  "Ein sonniger Anblick zum Hexentanzplatz vom Seilbahn in Thale (Naturschutzgebiet Bodetal).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Vadat, Hasanov"
+  },
   "Johanneskirche Saalfeld. 2H1A5024WI.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Kora27"
+  },
+  "Magdeburger Dom Luftbild.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gregor Rom"
   },
   "Hackesche höfe berlin.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -4295,6 +4594,14 @@
    "lic": "CC BY-SA 4.0",
    "by": "Carsten Steger"
   },
+  "Schloss Wernigerode Luftbild 2.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gregor Rom"
+  },
+  "Magdeburg asv2022-08 img26 Grüne Zitadelle.jpg": {
+   "lic": "FAL",
+   "by": "A.Savin"
+  },
   "Jena-40-Marktplatz-2023-gje.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gerd Eichmann"
@@ -4307,9 +4614,33 @@
    "lic": "CC BY 4.0",
    "by": "Chainwit."
   },
+  "Dom Halberstadt von Südosten.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Barnos"
+  },
+  "Halberstadt, Fischmarkt und Rathaus (Rückseite).jpg": {
+   "lic": "CC BY 4.0",
+   "by": "Dguendel"
+  },
+  "Südostansicht Unser Lieben Frauen mit Skulpturenpark.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Barnos"
+  },
   "Chrystu frasobliwy - Wladyslaw Skoczylas (29880879).jpg": {
    "lic": "Public domain",
    "by": "Władysław Skoczylas"
+  },
+  "Wernigerode - Kochstraße 43 - Kleinstes Haus 02.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "H. Zell"
+  },
+  "Wernigerode - Klintgasse 5 - Museum Schiefes Haus 02.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "H. Zell"
+  },
+  "Halberstadt, Domplatz (März 2024).jpg": {
+   "lic": "CC0",
+   "by": "Romzig"
   }
  }
 }

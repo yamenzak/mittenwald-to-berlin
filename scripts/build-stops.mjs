@@ -62,6 +62,9 @@ const PINNED = {
   friedberg:    [48.35306, 10.97556, "Bahnhof Friedberg (Bayern)"],
   jena:         [50.92417, 11.59139, "Bahnhof Jena Paradies"],
   saalfeld:     [50.65028, 11.36889, "Bahnhof Saalfeld (Saale)"],
+  wernigerode:  [51.83394, 10.79358, "Wernigerode Hauptbahnhof"],
+  thale:        [51.74889, 11.04389, "Thale Hauptbahnhof"],
+  halberstadt:  [51.89306, 11.05917, "Bahnhof Halberstadt"],
 };
 
 const out = {};

@@ -9,7 +9,7 @@ async function page(q) {
   const ctx = await b.newContext({ viewport: { width: 390, height: 880 }, deviceScaleFactor: 2, ignoreHTTPSErrors: true });
   const p = await ctx.newPage();
   p.on("pageerror", (e) => errs.push("PAGEERROR " + e.message));
-  await p.addInitScript(() => { try { localStorage.clear(); } catch (e) {} });
+  await p.addInitScript(() => { try { if (!sessionStorage.getItem("wiped")) { localStorage.clear(); sessionStorage.setItem("wiped", "1"); } } catch (e) {} });
   await p.goto("file:///home/user/trip/out/mittenwald-to-berlin.html" + q, { waitUntil: "load" });
   await p.waitForTimeout(700);
   return p;

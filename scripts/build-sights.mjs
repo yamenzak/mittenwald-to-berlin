@@ -82,7 +82,10 @@ async function licences(files) {
 
 /* A German town article leads with the town's coat of arms, not a photograph of
    it, so the lead image has to be judged before it is trusted. */
-const NOT_A_PHOTO = /wappen|coat.?of.?arms|[-_ ]coa[-_. ]|logo|karte$|[-_ ]karte|lageplan|locator|siegel|flagge|flag[-_ ]of|grundriss|stadtplan|emblem|\.svg$/i;
+/* "Karte_Harzer_Schmalspurbahnen.png" is a map of a railway, and it slipped
+   through because the old test only looked for "karte" at the end or after a
+   separator — never at the start of the filename. */
+const NOT_A_PHOTO = /wappen|coat.?of.?arms|[-_ ]coa[-_. ]|logo|(^|[-_ ])karte([-_. ]|$)|lageplan|locator|siegel|flagge|flag[-_ ]of|grundriss|stadtplan|emblem|guide[-_ ]through|\.svg$/i;
 const isPhoto = (file) => !!file && !NOT_A_PHOTO.test(file);
 
 /* When the article has no usable photo, search Commons directly. Still real,
@@ -123,6 +126,8 @@ const TOWNWORD = {
   quedlinburg: "Quedlinburg Fachwerk Markt", magdeburg: "Magdeburg Dom Elbe",
   fulda: "Fulda Dom Stadtschloss", eisenach: "Wartburg Eisenach",
   landsberg: "Landsberg am Lech Hauptplatz", fussen: "Füssen Altstadt Lech",
+  wernigerode: "Wernigerode Rathaus", thale: "Roßtrappe Bodetal Blick",
+  halberstadt: "Halberstadt Fachwerk Altstadt",
   garmisch: "Partenkirchen Ludwigstraße", mittenwald: "Mittenwald Obermarkt Karwendel",
   seefeld: "Seefeld in Tirol Ortszentrum", oberau: "Oberau Loisachtal",
 };

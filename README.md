@@ -16,6 +16,15 @@ sleep in so the hotels can be booked — and which day it starts. After that
 there is no navigation at all: the app is the day, and the strip along the top
 moves between days. There is no tour, because there is nothing left to explain.
 
+**Four lines, not four ways of spending the same day.** The classic run through
+Augsburg, Nuremberg and Erfurt; the Romantic Road, which turns north-west for
+Rothenburg and sleeps in Würzburg; the Harz, which gets the northward ride done
+early to buy a day for Wernigerode and a night inside Quedlinburg; and two
+nights in Mittenwald with the Zugspitze between them. They sleep in different
+towns, so the choice is the one that has to be made before leaving home. A day's
+options are filtered to the ones that start where the night before ended — you
+are never offered a train out of a town you are not in.
+
 **Says where there is time to eat.** Lunch and dinner are placed where there is
 genuinely room for them — the part of the day with the longest overlap with the
 hour people eat in — and appear in the timeline with the town, the minutes, and
@@ -30,7 +39,12 @@ durations.
 
 **Cannot put her on a train she has no ticket for.** The ticket covers regional
 services only. Every query is filtered to those modes and every returned
-itinerary is checked again before it is accepted, at build time and live.
+itinerary is checked again before it is accepted, at build time and live — and
+the mode filter alone is not enough, because the Brocken steam railway comes
+back from the feed as `REGIONAL_RAIL` and is a private line with its own fares.
+It routed itself into the Harz day once; it is now refused by name. Changes
+under four minutes are refused too, except onto something that runs every few
+minutes anyway.
 
 **Tracks delays while she travels.** Every 90 seconds it re-checks the next
 three moves and shows only what has changed: a delay, a platform change, a
@@ -84,6 +98,17 @@ node scripts/test-ar.mjs  scripts/test-fixes2.mjs  scripts/test-live.mjs
 the sights, and what is worth saying about each. Everything else is derived, and
 every script reports loudly when something does not resolve rather than quietly
 inventing it.
+
+## Three things worth knowing
+
+**Heidelberg does not fit, and it was measured rather than guessed.** On the
+regional ticket it is 4 h 49 from Augsburg and 10 h 27 back out to Berlin —
+there is no five-day version of this week that affords it. Rothenburg, which
+looks like the same kind of detour on a map, is 2 h 29 from Augsburg and 1 h 11
+from Würzburg, so it earns its place easily. The Harz turned out to be nearer
+Berlin than Thuringia is: Quedlinburg to Berlin is 3 h 44 against Erfurt's
+4 h 46. `scripts/build-plan.mjs` prints every leg it chooses, and every claim
+here came off that output.
 
 ## Two things worth knowing
 

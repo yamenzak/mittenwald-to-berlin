@@ -64,7 +64,38 @@ const between = (a, b) => Math.round((new Date(b) - new Date(a)) / 60000);
 
 /* --- itineraries --------------------------------------------------------- */
 const TRANSIT = (l) => l.mode && l.mode !== "WALK";
-const covered = (it) => it.legs.filter(TRANSIT).every((l) => COVERED.has(l.mode));
+
+/* The mode filter is necessary and not sufficient. The Harzer
+   Schmalspurbahnen — the Brocken steam railway — comes back from the feed as
+   REGIONAL_RAIL, and it is a private railway with its own fares that the
+   Deutschland-Ticket does not touch. It got itself routed into the Harz day
+   and would have put her on a train she had no ticket for, which is the one
+   thing this plan promises never to do. Anything on this list is refused
+   whatever mode the feed calls it. */
+const NOT_ON_THIS_TICKET = /^(HSB|WEG|BSB|SWEG-Bergbahn|Zugspitzbahn|ZSB|Wendelsteinbahn|Bayerische Zugspitzbahn)$/i;
+const privateRail = (l) =>
+  NOT_ON_THIS_TICKET.test((l.routeShortName || "").trim()) ||
+  /schmalspurbahn|brockenbahn|harzquerbahn|zugspitzbahn/i.test(l.routeLongName || l.agencyName || "");
+
+/* A change the feed prints as zero minutes is not a change a person makes.
+   Four minutes is the floor — enough to get off, read a board and walk —
+   except onto something that runs every few minutes anyway. Two minutes for
+   an S-Bahn at Berlin Hbf is fine, and refusing it cost the Harz line its
+   afternoon train and put her into Berlin two hours later. */
+const MIN_CHANGE = 4, MIN_CHANGE_FREQUENT = 2;
+const FREQUENT = new Set(["METRO", "SUBWAY", "TRAM"]);
+const tooTight = (it) => {
+  const legs = it.legs.filter(TRANSIT);
+  return legs.slice(1).some((l, i) => {
+    const gap = (new Date(l.scheduledStartTime || l.startTime) - new Date(legs[i].scheduledEndTime || legs[i].endTime)) / 60000;
+    return gap < (FREQUENT.has(l.mode) ? MIN_CHANGE_FREQUENT : MIN_CHANGE);
+  });
+};
+
+const covered = (it) => {
+  const legs = it.legs.filter(TRANSIT);
+  return legs.every((l) => COVERED.has(l.mode)) && !legs.some(privateRail) && !tooTight(it);
+};
 
 function shape(it) {
   const legs = it.legs.filter(TRANSIT).map((l) => ({
@@ -413,7 +444,22 @@ for (const day of DAYS) {
 
     const stopsHere = seq.filter((s) => s.kind === "stop" && !s.base && s.free);
     const end = seq.filter((s) => s.kind === "stop").pop();
+    /* Where the day starts and where it sleeps. The four itineraries no longer
+       share their beds, so a day's options are not interchangeable: one that
+       begins in Würzburg is nonsense to a week that slept in Nuremberg. These
+       two fields are what the page filters on. */
+    // Where the day *leaves* from, which is not the first stop when the day
+    // opens with a train: day two starts in Mittenwald and its first stop is
+    // Garmisch.
+    const from = seq[0] && seq[0].kind === "move"
+      ? seq[0].from
+      : (seq.find((s) => s.kind === "stop")?.place || null);
     dOut.paths.push({ id: path.id, name: path.name, why: path.why, seq,
+      from, to: end ? end.place : null,
+      /* A path may rename the day it belongs to — "Up the Romantic Road" and
+         "The Harz" are the same date and nothing else. */
+      title: path.title || null, intro: path.intro || null, hero: path.hero || null,
+      bags: path.bags != null ? !!path.bags : null,
       ride, stops: stopsHere.length, endArr: end ? end.arr : null,
       startDep: seq.find((s) => s.kind === "move")?.dep || seq[0]?.arr || null });
 
@@ -515,7 +561,14 @@ for (const day of out.days) {
 out.presets = PRESETS.map((pre) => {
   const days = out.days.map((d) => {
     const path = d.paths.find((p) => p.id === pre.pick[d.n]) || d.paths[0];
-    return { n: d.n, iso: d.iso, title: d.title, pathId: path.id, path };
+    return { n: d.n, iso: d.iso, title: path.title || d.title, pathId: path.id, path };
+  });
+  /* A preset that does not chain is a preset that strands somebody in a town
+     with no onward day. Better to fail the build than to ship it. */
+  days.forEach((d, i) => {
+    if (i && days[i - 1].path.to !== d.path.from) {
+      warn.push(`preset ${pre.id}: day ${d.n} starts in ${d.path.from} but day ${days[i - 1].n} sleeps in ${days[i - 1].path.to}`);
+    }
   });
   const nights = days.slice(0, -1).map((d) => {
     const last = d.path.seq.filter((s) => s.kind === "stop").pop();

@@ -15,6 +15,14 @@
   const TZ = D.trip.tz;
   const API = "https://api.transitous.org/api/v1";
   const MODES = D.trip.ticket.modes.join(",");
+  /* The mode filter is necessary and not sufficient. The Brocken steam railway
+     comes back from the feed as REGIONAL_RAIL and is a private line with its
+     own fares, and the Zugspitze rack railway is the same. Everything here
+     that suggests a train refuses them by name as well as by mode. */
+  const TICKET_MODES = new Set(D.trip.ticket.modes);
+  const PRIVATE_RAIL = /^(HSB|WEG|BSB|ZSB|Zugspitzbahn|Wendelsteinbahn)$/i;
+  const onTicket = (legs) => legs.length > 0 && legs.every((l) =>
+    TICKET_MODES.has(l.mode) && !PRIVATE_RAIL.test((l.routeShortName || "").trim()));
 
   /* ---------- storage ---------- */
   const store = {
@@ -48,7 +56,8 @@
     "plan-hint": "Each one is a different way to spend the same day. The trains are real either way.",
     "hour-hint": "Everything today, in the order it happens. Tap a photograph to read about a place.",
     "trouble-hint": "Tell me what happened and I will rebuild the rest of the day from the real timetable — and say honestly what has to give.",
-    "swapped-note": "You have changed this day, which can move where you sleep. Check the hotel list under “Change the trip”.",
+    "swapped-note": "You have changed this day, which can move where you sleep — and the days after it. Check the hotel list under “Change the dates”.",
+    "swapped-beds": "You have changed a day since picking this itinerary, so a hotel town has moved. This list is the one to book.",
     "shift-live": "Times are being checked against the dates you are actually travelling.",
     "cancelled-note": "Tap “Find me another way” — it only ever suggests trains your ticket covers.",
     "ticket-note": "Your ticket does not cover ICE, IC or EC trains. Nothing in this plan will ever put you on one.",
@@ -196,10 +205,51 @@
     if (!p) return { n: k };
     return ar() && AR.places[k] ? { ...p, n: AR.places[k] } : p;
   };
-  const dayText = (d) => (ar() && AR.days[d.n]) || d;
+  /* A day's name and opening line belong to the day unless the option
+     renames it — "Up the Romantic Road" and "The Harz" are the same date and
+     nothing else about them is the same. */
+  const dayText = (d, p) => {
+    const path = p || pathOf(d);
+    const base = (ar() && AR.days[d.n]) || d;
+    const over = path && (path.title || path.intro)
+      ? ((ar() && AR.paths[`${d.n}${path.id}`]) || path) : null;
+    return {
+      title: (over && over.title) || base.title,
+      intro: (over && over.intro) || base.intro,
+    };
+  };
+  const heroOf = (d, p) => ((p || pathOf(d)).hero) || d.hero;
+  const bagsOf = (d, p) => { const x = (p || pathOf(d)).bags; return x == null ? !!d.bags : x; };
   const pathText = (d, p) => (ar() && AR.paths[`${d.n}${p.id}`]) || p;
   const presetText = (p) => (ar() && AR.presets[p.id]) || p;
-  const pathOf = (day) => day.paths.find((p) => p.id === chosen[day.n]) || day.paths[0];
+
+  /* The four itineraries no longer share their beds, so a day's options are
+     not all available: one that starts in Würzburg is nonsense to a week that
+     slept in Nuremberg. Each day offers only the options that begin where
+     yesterday ended. */
+  function pathsFor(day) {
+    const i = D.days.indexOf(day);
+    if (i <= 0) return day.paths;
+    const prev = pathOf(D.days[i - 1]);
+    const fits = day.paths.filter((p) => !p.from || !prev.to || p.from === prev.to);
+    return fits.length ? fits : day.paths;
+  }
+  /* The itinerary is the source of truth and a per-day choice is an override
+     on top of it. Reading `chosen` alone meant that a page opened with an
+     itinerary stored but no overrides — a fresh phone, or cleared routes —
+     quietly showed the classic days under the Harz's name. */
+  const pickId = (day) => chosen[day.n] ||
+    ((presetOf(preset) || { pickDays: [] }).pickDays.find((x) => x.n === day.n) || {}).pathId;
+  function pathOf(day) {
+    const i = D.days.indexOf(day);
+    const here = day.paths.find((p) => p.id === pickId(day));
+    if (i <= 0) return here || day.paths[0];
+    // Resolved back to front, so a change on Wednesday re-decides Thursday.
+    const prev = pathOf(D.days[i - 1]);
+    const fits = day.paths.filter((p) => !p.from || !prev.to || p.from === prev.to);
+    if (!fits.length) return here || day.paths[0];
+    return (here && fits.includes(here)) ? here : fits[0];
+  }
   const sightOf = (pk, name) => {
     const s = D.sights[pk + "/" + name];
     if (!s) return null;
@@ -631,10 +681,11 @@
   }
   const ticketNote = () => note("calm", ar() ? T("ticket-note") : D.trip.ticket.excluded);
 
-  function heroCard(day, kicker, title) {
-    const img = photo("place:" + day.hero);
+  function heroCard(day, kicker, title, heroKey) {
+    const key = heroKey || day.hero;
+    const img = photo("place:" + key);
     return `<div class="card hero">
-      ${img ? `<img src="${img}" alt="${esc(place(day.hero).n)}">` : `<div style="height:190px;background:var(--hair)"></div>`}
+      ${img ? `<img src="${img}" alt="${esc(place(key).n)}">` : `<div style="height:190px;background:var(--hair)"></div>`}
       <div class="veil"></div>
       <div class="cap"><div class="kicker">${esc(kicker)}</div><h2>${esc(title)}</h2></div>
     </div>`;
@@ -672,11 +723,17 @@
 
     const pre = presetOf(preset);
     const onPreset = pre ? (pre.pickDays.find((x) => x.n === day.n) || {}).pathId : null;
-    const choose = day.paths.length < 2 ? "" : `
+    const opts = pathsFor(day);
+    /* Some days have no choice left once the itinerary is picked — only one
+       option starts in Würzburg. Say what today is rather than showing an
+       empty space where the others were. */
+    const choose = opts.length < 2 ? (opts.length === 1 ? `
+      <div class="label">${T("Today's plan")}</div>
+      <p class="hint">${esc(pathText(day, opts[0]).why)}</p>` : "") : `
       <div class="label">${T("Plan your day")}</div>
       <p class="hint">${T("plan-hint")}</p>
       ${pre && onPreset && path.id !== onPreset ? note("calm", T("swapped-note")) : ""}
-      <div class="routes">${day.paths.map((p) => `
+      <div class="routes">${opts.map((p) => `
         <button class="route" data-route="${day.n}:${p.id}" aria-pressed="${p.id === path.id}">
           <span class="rn">${esc(pathText(day, p).name)}</span>
           <span class="rw">${esc(pathText(day, p).why)}</span>
@@ -684,6 +741,7 @@
             <span class="tag${p.stops > 2 ? " hot" : ""}">${p.stops} ${T("stops")}</span>
             <span class="tag">${dur(p.ride) || T("no")} ${T("on trains")}</span>
             <span class="tag">${T("in by")} ${esc(p.endArr)}</span>
+            ${p.to && p.to !== path.to ? `<span class="tag hot">${T("sleeps in")} ${esc(place(p.to).n)}</span>` : ""}
           </span>
         </button>`).join("")}</div>`;
 
@@ -698,11 +756,11 @@
 
     return `<div class="wrap">
       ${dayStrip(day.n, "goday")}
-      ${heroCard(day, `${T("Day")} ${day.n} · ${weekday(day.iso)} ${dateShort(day.iso)}`, dayText(day).title)}
-      <div class="card pad"><p class="lead" style="margin:0">${esc(dayText(day).intro)}</p></div>
+      ${heroCard(day, `${T("Day")} ${day.n} · ${weekday(day.iso)} ${dateShort(day.iso)}`, dayText(day, path).title, heroOf(day, path))}
+      <div class="card pad"><p class="lead" style="margin:0">${esc(dayText(day, path).intro)}</p></div>
       ${shiftNote()}
       ${day.holiday ? note("warn", holidayText(day)) : ""}
-      ${day.bags ? note("calm", T("bags-note")) : ""}
+      ${bagsOf(day, path) ? note("calm", T("bags-note")) : ""}
       ${choose}
       <div class="label">${T("Your day, hour by hour")}</div>
       <p class="hint">${T("hour-hint")}</p>
@@ -802,7 +860,7 @@
           ${s.route && s.route.maps ? `<a class="chip go" href="${esc(s.route.maps)}" target="_blank" rel="noopener">${svg("route")} ${T("Walk this route")}</a>` : ""}
           <a class="chip" href="${gmaps(p.name || p.n)}" target="_blank" rel="noopener">${svg("pin")} ${T("Station")}</a>
           <a class="chip" href="${gmaps(p.n + ", " + (p.country === "AT" ? "Austria" : "Germany"))}" target="_blank" rel="noopener">${svg("map")} ${T("Town")}</a>
-          ${day.bags && !s.base && s.free ? `<a class="chip" href="${gmaps("Gepäckschließfächer " + (p.name || p.n))}" target="_blank" rel="noopener">${T("Lockers")}</a>` : ""}
+          ${bagsOf(day) && !s.base && s.free ? `<a class="chip" href="${gmaps("Gepäckschließfächer " + (p.name || p.n))}" target="_blank" rel="noopener">${T("Lockers")}</a>` : ""}
         </div>
       </div></div>`;
   }
@@ -1019,10 +1077,9 @@
         time: from, numItineraries: 9, transitModes: MODES, arriveBy: "false",
         maxPreTransitTime: 1200, pedestrianProfile: "FOOT",
       }, 16000);
-      const cov = new Set(D.trip.ticket.modes);
       const live = (res.itineraries || []).map((it) => {
         const legs = (it.legs || []).filter((l) => l.mode && l.mode !== "WALK");
-        if (!legs.length || !legs.every((l) => cov.has(l.mode))) return null;
+        if (!onTicket(legs)) return null;
         return { dep: hhmm(legs[0].startTime), arr: hhmm(legs[legs.length - 1].endTime),
                  lines: legs.map((l) => l.routeShortName || l.mode), changes: legs.length - 1,
                  now: Math.abs(mins(when, legs[0].scheduledStartTime || legs[0].startTime)) < 3 };
@@ -1043,16 +1100,34 @@
 
   /* The hotel list, which is the thing that has to be booked before anything
      else and is otherwise buried inside five days of timetable. */
+  /* Read off the days she has actually chosen rather than off the preset,
+     because swapping one day can now move a hotel to a different town — the
+     Romantic Road sleeps in Würzburg and the Harz in Quedlinburg, and a stale
+     list here is a booking in the wrong place. Consecutive nights in one town
+     are one booking. */
+  function bedsNow() {
+    const out = [];
+    D.days.forEach((d, i) => {
+      const p = pathOf(d);
+      const last = p.seq.filter((x) => x.kind === "stop").pop();
+      if (!last) return;
+      const prev = out[out.length - 1];
+      if (prev && prev.place === last.place) prev.nights++;
+      else out.push({ place: last.place, nights: 1, from: d.iso, in: last.arr, last: i === D.days.length - 1 });
+    });
+    return out;
+  }
   function bedsCard() {
     const p = presetOf(preset);
     if (!p) return "";
+    const beds = bedsNow();
     return `<div class="label">${T("Where you sleep")}</div>
       <div class="card"><div class="pad">
-        ${p.beds.map((b) => `<div class="kv"><b>${esc(place(b.place).n)}</b>
-          <span>${b.nights} ${T(b.nights > 1 ? "nights" : "night")} ${T("from")} ${esc(dateShort(b.from))}${b.in ? ` · ${T("in about")} ${esc(b.in)}` : ""}</span></div>`).join("")}
-        <div class="kv"><b>${esc(place("berlin").n)}</b><span>${T("from")} ${esc(dateShort(D.days[D.days.length - 1].iso))}</span></div>
+        ${beds.map((b) => `<div class="kv"><b>${esc(place(b.place).n)}</b>
+          <span>${b.last ? T("from") + " " + esc(dateShort(b.from))
+            : `${b.nights} ${T(b.nights > 1 ? "nights" : "night")} ${T("from")} ${esc(dateShort(b.from))}${b.in ? ` · ${T("in about")} ${esc(b.in)}` : ""}`}</span></div>`).join("")}
       </div>
-      ${offPreset() ? `<div class="note">${svg("info")}<span>You have changed a day since picking “${esc(p.name)}”, so a hotel town may have moved. Check the list above against your bookings.</span></div>` : ""}
+      ${offPreset() ? note("calm", T("swapped-beds")) : ""}
       </div>`;
   }
 
@@ -1215,10 +1290,9 @@
         numItineraries: 3, transitModes: MODES, arriveBy: "false",
         maxPreTransitTime: 1500, pedestrianProfile: "FOOT",
       }, 16000);
-      const cov = new Set(D.trip.ticket.modes);
       for (const it of res.itineraries || []) {
         const legs = (it.legs || []).filter((l) => l.mode && l.mode !== "WALK");
-        if (!legs.length || !legs.every((l) => cov.has(l.mode))) continue;
+        if (!onTicket(legs)) continue;
         const f = legs[0], last = legs[legs.length - 1];
         replanCache[key] = {
           dep: hhmm(f.startTime), arr: hhmm(last.endTime),
@@ -1268,9 +1342,8 @@
         time: new Date(now().getTime() + 4 * 60000).toISOString(),
         numItineraries: 4, transitModes: MODES, arriveBy: "false", maxPreTransitTime: 1800, pedestrianProfile: "FOOT",
       }, 20000);
-      const cov = new Set(D.trip.ticket.modes);
       const opts = (res.itineraries || [])
-        .filter((it) => it.legs.filter((l) => l.mode !== "WALK").every((l) => cov.has(l.mode)))
+        .filter((it) => onTicket(it.legs.filter((l) => l.mode !== "WALK")))
         .slice(0, 4);
       if (!opts.length) { sheet.querySelector(".about").textContent = T("no-regional"); return; }
       sheet.innerHTML = `<div class="grab"></div><div class="sbody">
@@ -1422,7 +1495,11 @@
     }
     if (t.dataset.route) {
       const [n, id] = t.dataset.route.split(":");
-      chosen[n] = id; store.set("routes", chosen);
+      chosen[n] = id;
+      // A later day may no longer start where this one now sleeps. Resolve the
+      // whole chain and keep what it settled on, so nothing stale is stored.
+      D.days.forEach((d) => { chosen[d.n] = pathOf(d).id; });
+      store.set("routes", chosen);
       liveGen++; liveState = { at: 0, status: navigator.onLine ? "idle" : "off" };
       liveCache = {}; store.set("live", {});
       render(); refreshLive(true);
