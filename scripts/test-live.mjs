@@ -15,7 +15,7 @@ async function shot(name, live) {
     try {
       localStorage.clear();
       // Straight into the app, past the two setup questions.
-      localStorage.setItem("mb-preset", JSON.stringify("castles"));
+      localStorage.setItem("mb-preset", JSON.stringify("classic"));
       localStorage.setItem("mb-setup", "1");
       localStorage.setItem("mb-live", JSON.stringify(l));
     } catch (e) {}
