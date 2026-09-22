@@ -210,6 +210,51 @@
    "file": "12 Genua Aquarium mit Biosphäre (7776538902) (cropped).jpg",
    "extract": ""
   },
+  "genoa/Palazzo Ducale": {
+   "ok": true,
+   "w": "Palazzo Ducale (Genua)",
+   "ct": null,
+   "lang": "de",
+   "title": "Palazzo Ducale (Genua)",
+   "url": "https://de.wikipedia.org/wiki/Palazzo_Ducale_(Genua)",
+   "lat": 44.40752778,
+   "lon": 8.93341667,
+   "wd": "Q2047566",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Palazzo_Ducale_piazza_Matteotti_2.JPG/640px-Palazzo_Ducale_piazza_Matteotti_2.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Palazzo_Ducale_piazza_Matteotti_2.JPG/1000px-Palazzo_Ducale_piazza_Matteotti_2.JPG?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Palazzo_Ducale_piazza_Matteotti_2.JPG",
+   "extract": ""
+  },
+  "genoa/Focaccia": {
+   "ok": true,
+   "w": "Focaccia",
+   "ct": "Focaccia genovese",
+   "lang": "de",
+   "title": "Focaccia",
+   "url": "https://de.wikipedia.org/wiki/Focaccia",
+   "lat": null,
+   "lon": null,
+   "wd": "Q832791",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Focaccia_Genovese_02.jpg/640px-Focaccia_Genovese_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Focaccia_Genovese_02.jpg/1000px-Focaccia_Genovese_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Focaccia Genovese 02.jpg",
+   "extract": ""
+  },
+  "genoa/Piazza delle Erbe at night": {
+   "ok": true,
+   "w": "Genua",
+   "ct": "Piazza delle Erbe Genova",
+   "lang": "de",
+   "title": "Genua",
+   "url": "https://de.wikipedia.org/wiki/Genua",
+   "lat": 44.41666667,
+   "lon": 8.93333333,
+   "wd": "Q1449",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Piazza_delle_Erbe_Genova_04.jpg/640px-Piazza_delle_Erbe_Genova_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Piazza_delle_Erbe_Genova_04.jpg/1000px-Piazza_delle_Erbe_Genova_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Piazza delle Erbe Genova 04.jpg",
+   "extract": ""
+  },
   "genoa/Boccadasse": {
    "ok": true,
    "w": "Boccadasse",
@@ -1170,6 +1215,36 @@
    "file": "Kloster_Ettal_Klosteranlage.JPG",
    "extract": "Das Kloster Ettal ist eine Benediktinerabtei im Dorf Ettal in Oberbayern und gehört der Bayerischen Benediktinerkongregation an."
   },
+  "ettal/The abbey brewery": {
+   "ok": true,
+   "w": "Kloster Ettal",
+   "ct": "Klosterbrauerei Ettal",
+   "lang": "de",
+   "title": "Kloster Ettal",
+   "url": "https://de.wikipedia.org/wiki/Kloster_Ettal",
+   "lat": 47.56925833,
+   "lon": 11.09456111,
+   "wd": "Q253359",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/GER_%E2%80%93_BY_%E2%80%93_OBB_%E2%80%94_Lkr._Garmisch-Partenkirchen_%E2%80%94_Gde._Ettal_%E2%80%94_Ettal_Ort_%E2%80%94_Kaiser-Ludwig-Platz_1_%28Ettaler_Klosterbrauerei_%C2%B7_Schaufenster%29_2025-09-19_Mattes.jpg/640px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/GER_%E2%80%93_BY_%E2%80%93_OBB_%E2%80%94_Lkr._Garmisch-Partenkirchen_%E2%80%94_Gde._Ettal_%E2%80%94_Ettal_Ort_%E2%80%94_Kaiser-Ludwig-Platz_1_%28Ettaler_Klosterbrauerei_%C2%B7_Schaufenster%29_2025-09-19_Mattes.jpg/1000px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "GER – BY – OBB — Lkr. Garmisch-Partenkirchen — Gde. Ettal — Ettal Ort — Kaiser-Ludwig-Platz 1 (Ettaler Klosterbrauerei · Schaufenster) 2025-09-19 Mattes.jpg",
+   "extract": ""
+  },
+  "ettal/Graswangtal meadows": {
+   "ok": true,
+   "w": "Graswangtal",
+   "ct": null,
+   "lang": "de",
+   "title": "Graswangtal",
+   "url": "https://de.wikipedia.org/wiki/Graswangtal",
+   "lat": 47.5742,
+   "lon": 10.9898,
+   "wd": "Q67088098",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Graswangtal_bjs0507-02.jpg/640px-Graswangtal_bjs0507-02.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Graswangtal_bjs0507-02.jpg/1000px-Graswangtal_bjs0507-02.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Graswangtal_bjs0507-02.jpg",
+   "extract": ""
+  },
   "ettal/Schloss Linderhof": {
    "ok": true,
    "w": "Schloss Linderhof",
@@ -1664,6 +1739,36 @@
    "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Sankt_Bartholom%C3%A4_Ort_3.jpg/1000px-Sankt_Bartholom%C3%A4_Ort_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
    "file": "Sankt_Bartholomä_Ort_3.jpg",
    "extract": "Sankt Bartholomä is a municipality in the district of Graz-Umgebung in the Austrian state of Styria."
+  },
+  "konigssee/Obersee": {
+   "ok": true,
+   "w": "Obersee (Königssee)",
+   "ct": null,
+   "lang": "de",
+   "title": "Obersee (Königssee)",
+   "url": "https://de.wikipedia.org/wiki/Obersee_(K%C3%B6nigssee)",
+   "lat": 47.51611111,
+   "lon": 12.98833333,
+   "wd": "Q2010974",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Obersee_9.jpg/640px-Obersee_9.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Obersee_9.jpg/1000px-Obersee_9.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "file": "Obersee_9.jpg",
+   "extract": ""
+  },
+  "konigssee/The echo": {
+   "ok": true,
+   "w": "Königssee",
+   "ct": "Königssee Elektroboot",
+   "lang": "de",
+   "title": "Königssee",
+   "url": "https://de.wikipedia.org/wiki/K%C3%B6nigssee",
+   "lat": 47.55388889,
+   "lon": 12.97777778,
+   "wd": "Q156715",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Elektroboot_der_Schifffahrt_K%C3%B6nigssee_.JPG/640px-Elektroboot_der_Schifffahrt_K%C3%B6nigssee_.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Elektroboot_der_Schifffahrt_K%C3%B6nigssee_.JPG/1000px-Elektroboot_der_Schifffahrt_K%C3%B6nigssee_.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Elektroboot der Schifffahrt Königssee .JPG",
+   "extract": ""
   },
   "konigssee/Malerwinkel": {
    "ok": true,
@@ -2892,9 +2997,9 @@
    "lat": 44.41666667,
    "lon": 8.93333333,
    "wd": "Q1449",
-   "img": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Panorama_di_Genova_%28porto_commerciale_e_porto_antico%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "imgBig": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Panorama_di_Genova_%28porto_commerciale_e_porto_antico%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "file": "Panorama di Genova (porto commerciale e porto antico).jpg",
+   "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Panorama_Calata_Bettolo_-_Genova_Porto_Antico_-_02_06_2019.jpg/1200px-Panorama_Calata_Bettolo_-_Genova_Porto_Antico_-_02_06_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imgBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Panorama_Calata_Bettolo_-_Genova_Porto_Antico_-_02_06_2019.jpg/1200px-Panorama_Calata_Bettolo_-_Genova_Porto_Antico_-_02_06_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "file": "Panorama Calata Bettolo - Genova Porto Antico - 02 06 2019.jpg",
    "extract": ""
   },
   "smargherita": {
@@ -3229,10 +3334,6 @@
   }
  },
  "credits": {
-  "Panorama di Genova (porto commerciale e porto antico).jpg": {
-   "lic": "Public domain",
-   "by": "Oliver"
-  },
   "Porto antico genova 1.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "w:it:Utente:Racchets"
@@ -3269,6 +3370,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Laurent Jerry"
   },
+  "Focaccia Genovese 02.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Alessio Sbarbaro User_talk:Yoggysot"
+  },
   "Portofino, Liguria (8859767966).jpg": {
    "lic": "CC BY 2.0",
    "by": "Michal Osmenda from Brussels, Belgium"
@@ -3284,6 +3389,10 @@
   "Urtijëi ududa da Bula ju.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention m"
+  },
+  "Palazzo Ducale piazza Matteotti 2.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Piergiulio90"
   },
   "Heidelberg Altstadt Schloss Luftbild.JPG": {
    "lic": "CC BY 4.0",
@@ -3325,9 +3434,9 @@
    "lic": "CC BY-SA 4.0",
    "by": "Didier Descouens"
   },
-  "Boccadasse e Portofino all'Alba.jpg": {
+  "Panorama Calata Bettolo - Genova Porto Antico - 02 06 2019.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Frabckpckr96"
+   "by": "Sidvics"
   },
   "12 Genua Aquarium mit Biosphäre (7776538902) (cropped).jpg": {
    "lic": "CC BY-SA 2.0",
@@ -3352,10 +3461,6 @@
   "Waltherplatz Bozen Luftansicht.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Aciarium"
-  },
-  "Villa Durazzo Centurione (Santa Margherita Ligure) - facciata a mare 1 2023-04-27.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Parma1983"
   },
   "20221020 Leuchtturm Lindau 05.jpg": {
    "lic": "CC BY 4.0",
@@ -3405,6 +3510,10 @@
    "lic": "CC BY 2.0",
    "by": "suedtirol-altoadige"
   },
+  "Piazza delle Erbe Genova 04.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Alessio Sbarbaro User_talk:Yoggysot"
+  },
   "Dominican Church (Bolzano).jpg": {
    "lic": "Public domain",
    "by": "User:Mattes"
@@ -3420,10 +3529,6 @@
   "Franz Demetz und Florian Mussner bei Kirrchtag in St. Ulrich.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Wolfgang Moroder"
-  },
-  "Mittenwald Ballenhausgasse 14-16 6455.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Pelz"
   },
   "Geisler and Secëda from Resciesa.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -3449,10 +3554,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
   },
-  "Mittenwald Kalvarienberg 1404.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Pelz"
-  },
   "Arche scaligere (Verona).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Didier Descouens"
@@ -3477,13 +3578,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention m"
   },
-  "Innsbruck (25038759325).jpg": {
-   "lic": "CC BY 2.0",
-   "by": "Bernd Thaller from Graz, Austria"
-  },
   "Seiser Alm im Herbst ©Manfred Kostner.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Sammerci"
+  },
+  "Boccadasse e Portofino all'Alba.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Frabckpckr96"
   },
   "Arpizadëur ziplà tl lën da Batista Walpoth Urtijëi.jpg": {
    "lic": "Public domain",
@@ -3529,6 +3630,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Parma1983"
   },
+  "Villa Durazzo Centurione (Santa Margherita Ligure) - facciata a mare 1 2023-04-27.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Parma1983"
+  },
   "ArchmuseumBozen 2023.jpeg": {
    "lic": "CC BY-SA 4.0",
    "by": "Adrian Michael"
@@ -3569,10 +3674,6 @@
    "lic": "CC BY 2.5",
    "by": "Diliff"
   },
-  "Wiesn2006 Luftaufnahme.jpg": {
-   "lic": "CC BY-SA 2.5",
-   "by": "Stefan Weigel"
-  },
   "Rathaus and Marienplatz from Peterskirche - August 2006.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Diliff"
@@ -3589,10 +3690,6 @@
    "lic": "GFDL",
    "by": "Kogo"
   },
-  "Rosenheim mittertor.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "G.Piezinger (Gerhard Piezinger) at de.wikipedia"
-  },
   "Olympiaschanze St. Moritz.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Garry Furrer"
@@ -3600,14 +3697,6 @@
   "Eibsee und Ammergauer Alpen.jpg": {
    "lic": "CC BY 3.0",
    "by": "Octagon"
-  },
-  "Ludwigsplatz 10 Rosenheim-1.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Rufus46"
-  },
-  "Exterior del Palacio de Nymphenburg, Múnich, Alemania61.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Diego Delso"
   },
   "Garmisch-Wohnhaus-Am-Kurpark6.JPG": {
    "lic": "CC0",
@@ -3629,6 +3718,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Jorge Royan"
   },
+  "Mittenwald Ballenhausgasse 14-16 6455.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Pelz"
+  },
   "Leutaschklamm (Marius Hoch) 27.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Marius Hoch"
@@ -3644,6 +3737,10 @@
   "Partnachklamm 2014a.JPG": {
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo"
+  },
+  "Mittenwald Kalvarienberg 1404.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Pelz"
   },
   "Mittenwald Lüftlmalerei Im Gries 53 318.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -3669,6 +3766,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Ricardalovesmonuments"
   },
+  "Graswangtal bjs0507-02.jpg": {
+   "lic": "CC0",
+   "by": "Bjs"
+  },
   "Mittenwald - Obermarkt (08) - Matthias-Klotz-Denkmal.jpg": {
    "lic": "CC BY 2.0",
    "by": "Pixelteufel"
@@ -3676,6 +3777,10 @@
   "Ettal, Linderhof 21.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "LBM1948"
+  },
+  "Innsbruck (25038759325).jpg": {
+   "lic": "CC BY 2.0",
+   "by": "Bernd Thaller from Graz, Austria"
   },
   "Isar valley near Mittenwald (SM sg1313z).png": {
    "lic": "PDM-owner",
@@ -3693,10 +3798,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Kritzolina"
   },
-  "Deutsches Museum Portrait 4.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Burkhard Mücke"
-  },
   "Exterior of Theatinerkirche, Munich.jpg": {
    "lic": "CC0",
    "by": "Wilfredor"
@@ -3708,6 +3809,10 @@
   "Geigenbaumuseum in (Mittenwald) Garmisch-Partenkirchen.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Ursula Jaeger"
+  },
+  "GER – BY – OBB — Lkr. Garmisch-Partenkirchen — Gde. Ettal — Ettal Ort — Kaiser-Ludwig-Platz 1 (Ettaler Klosterbrauerei · Schaufenster) 2025-09-19 Mattes.jpg": {
+   "lic": "CC BY 3.0 de",
+   "by": "User:Mateus2019"
   },
   "Kleber (statue).jpg": {
    "lic": "CC BY-SA 3.0",
@@ -3721,9 +3826,9 @@
    "lic": "CC BY-SA 3.0",
    "by": "Oberth"
   },
-  "Cathedrale-de-Strasbourg-IMG 1331.jpg": {
-   "lic": "CC BY-SA 2.0 fr",
-   "by": "Rama."
+  "Wiesn2006 Luftaufnahme.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "Stefan Weigel"
   },
   "Stift St Peter2.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -3733,6 +3838,10 @@
    "lic": "CC BY-SA 2.5",
    "by": "Andrew Bossi"
   },
+  "Rosenheim mittertor.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "G.Piezinger (Gerhard Piezinger) at de.wikipedia"
+  },
   "Schlossplatz 180 Grad-Tag.jpg": {
    "lic": "Public domain",
    "by": "Rosephantom"
@@ -3740,10 +3849,6 @@
   "Salzbergwerk-Berchtesgaden.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Nize | Nicolai Schäfer"
-  },
-  "Espace vert de la Place de la République, Strasbourg.jpg": {
-   "lic": "CC BY-SA 2.0",
-   "by": "Javier Kohen from Kraków, Poland"
   },
   "Schwabentor1936.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -3757,6 +3862,18 @@
    "lic": "CC BY-SA 3.0",
    "by": "Snotty"
   },
+  "Ludwigsplatz 10 Rosenheim-1.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Rufus46"
+  },
+  "Exterior del Palacio de Nymphenburg, Múnich, Alemania61.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Diego Delso"
+  },
+  "Obersee 9.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Alupus"
+  },
   "Lokschuppen Rosenheim.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Bernhard Müller"
@@ -3764,10 +3881,6 @@
   "Salzburg, Getreidegasse 9, Mozarts Geburtshaus.jpg": {
    "lic": "CC BY-SA 3.0 at",
    "by": "Andreas Stiasny"
-  },
-  "Strasbourg Barrage Vauban après restauration 2012-01.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Claude TRUONG-NGOC"
   },
   "Augustiner Museum (Freiburg) jm9384.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -3777,21 +3890,17 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tilman2007"
   },
-  "Straßburg (Frankreich), Petite France -- 2011 -- 1759.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Dietmar Rabich"
-  },
   "St Martin (Freiburg) 3034 (cropped).jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "joergens.mi"
   },
-  "Strasbourg Cathedral Astronomical Clock - Diliff.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Diliff"
-  },
   "Rosenheim — Brücke über den Inn (Innstrasse).JPG": {
    "lic": "CC BY-SA 2.0",
    "by": "User:Mattes"
+  },
+  "Elektroboot der Schifffahrt Königssee .JPG": {
+   "lic": "CC BY 3.0",
+   "by": "Benreis"
   },
   "Salzburg- Schloss Mirabell - Nordost-Ansicht.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -3825,13 +3934,9 @@
    "lic": "CC BY-SA 4.0",
    "by": "Mtt1734"
   },
-  "Strassburg-Muenster-132-Westfassade-2017-gje.jpg": {
+  "Deutsches Museum Portrait 4.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Gerd Eichmann"
-  },
-  "Ponts couverts (Strasbourg) (1).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Gzen92"
+   "by": "Burkhard Mücke"
   },
   "Salzburg Marko-Feingold-Steg Mönchsberg-8100.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -3889,6 +3994,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Reinhard Wolf, Talstraße 13, 63128 Dietzenbach. (selbst fotografiert); User Pumuckel42 on "
   },
+  "Cathedrale-de-Strasbourg-IMG 1331.jpg": {
+   "lic": "CC BY-SA 2.0 fr",
+   "by": "Rama."
+  },
   "Heidelberg Fussgaengerzone.JPG": {
    "lic": "Public domain",
    "by": "Rudolf Stricker"
@@ -3941,6 +4050,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "UlrichAAB"
   },
+  "Espace vert de la Place de la République, Strasbourg.jpg": {
+   "lic": "CC BY-SA 2.0",
+   "by": "Javier Kohen from Kraków, Poland"
+  },
   "Henkersteg in Nürnberg.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Schlaier"
@@ -3953,41 +4066,29 @@
    "lic": "CC BY-SA 3.0",
    "by": "– Wladyslaw [Disk.]"
   },
-  "German Bratwürste.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Gerbis"
-  },
   "Maison Pfister Colmar 2011-04.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Eric Gaba (Sting - fr:Sting)"
-  },
-  "Documentation center entrance nuernberg may2011.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "KaterBegemot"
   },
   "Colmar Koïfhus, ancienne douane (29 Grand'Rue).JPG": {
    "lic": "CC BY-SA 4.0",
    "by": "Gzen92"
   },
-  "Berlin Museumsinsel Fernsehturm.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Thomas Wolf, www.foto-tw.de"
-  },
   "Heidelberg Karzer 01.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Llez"
   },
-  "BerlinBrandenburgerTor1985.jpg": {
+  "Strasbourg Barrage Vauban après restauration 2012-01.jpg": {
    "lic": "CC BY-SA 3.0",
-   "by": "Joergsam"
+   "by": "Claude TRUONG-NGOC"
   },
-  "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
+  "Straßburg (Frankreich), Petite France -- 2011 -- 1759.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Dietmar Rabich"
+  },
+  "Strasbourg Cathedral Astronomical Clock - Diliff.jpg": {
    "lic": "CC BY-SA 3.0",
-   "by": "Tuxyso"
-  },
-  "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
-   "lic": "CC BY 3.0 de",
-   "by": "Ansgar Koreng"
+   "by": "Diliff"
   },
   "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
    "lic": "CC BY 3.0",
@@ -4001,10 +4102,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Tilman2007"
   },
-  "Handwerkerhof an Weihnachten.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Dumbo1401"
-  },
   "Albrecht-Dürer-Haus - Tiergärtnerplatz - Nuremberg, Germany - DSC02033.jpg": {
    "lic": "CC0",
    "by": "Daderot"
@@ -4017,7 +4114,15 @@
    "lic": "CC BY-SA 4.0",
    "by": "Renardo la vulpo"
   },
+  "Strassburg-Muenster-132-Westfassade-2017-gje.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gerd Eichmann"
+  },
   "Petite Venise depuis le pont de la rue des Écoles (Colmar) (8).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gzen92"
+  },
+  "Ponts couverts (Strasbourg) (1).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gzen92"
   },
@@ -4045,13 +4150,41 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "Joachim F. Thurn"
   },
+  "German Bratwürste.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Gerbis"
+  },
+  "Documentation center entrance nuernberg may2011.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "KaterBegemot"
+  },
+  "Berlin Museumsinsel Fernsehturm.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Thomas Wolf, www.foto-tw.de"
+  },
+  "BerlinBrandenburgerTor1985.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joergsam"
+  },
+  "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Tuxyso"
+  },
   "Berlin - Berliner Fernsehturm - Fensterreinigung.jpg": {
    "lic": "FAL",
    "by": "Taxiarchos228"
   },
+  "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
+   "lic": "CC BY 3.0 de",
+   "by": "Ansgar Koreng"
+  },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Alexander Blum"
+  },
+  "Handwerkerhof an Weihnachten.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Dumbo1401"
   },
   "Hackesche höfe berlin.jpg": {
    "lic": "CC BY-SA 3.0 de",

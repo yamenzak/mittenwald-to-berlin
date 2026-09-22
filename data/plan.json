@@ -29,7 +29,7 @@
    "c": "#3E6E8E",
    "hero": "milan",
    "bags": 1,
-   "intro": "Land at two, and the booked train out of Milan is not until five to seven. That is an afternoon at the Duomo, three metro stops from Centrale.",
+   "intro": "Straight through to Genoa. The booked train is IC 685 at 18:55, so Milan is a change of station — with two and a half hours in it, if you want them.",
    "paths": [
     {
      "id": "A",
@@ -101,7 +101,7 @@
       {
        "kind": "stop",
        "place": "milan",
-       "stn": "Metro M3, the yellow line, straight down from Centrale. Three stops to Duomo, ten minutes. Leave the bags in the left luggage at Centrale.",
+       "stn": "Nothing here is compulsory — the seats are booked and the train goes at 18:55 either way. If you want the Duomo it is three stops on metro M3 and ten minutes, and the bag drop at Centrale is on the ground floor by platform 21.",
        "see": [
         "Piazza del Duomo",
         "Milan Cathedral",
@@ -378,11 +378,13 @@
       {
        "kind": "stop",
        "place": "genoa",
-       "stn": "Piazza Principe. The old town starts at the bottom of the station steps.",
+       "stn": "Piazza Principe. The old town starts at the bottom of the station steps, and it is still awake.",
        "see": [
-        "Via Garibaldi",
+        "Focaccia",
         "Piazza De Ferrari",
-        "The caruggi"
+        "The caruggi",
+        "Piazza delle Erbe at night",
+        "Palazzo Ducale"
        ],
        "base": true,
        "arrIso": "2026-09-26T18:44:00.000Z",
@@ -393,38 +395,43 @@
        "route": {
         "legs": [
          {
-          "to": "Via Garibaldi",
-          "mins": 19,
+          "to": "Focaccia",
+          "mins": 13,
           "how": {
-           "mins": 19,
-           "mode": "walk"
-          },
-          "visit": 40,
-          "backFromHere": 14,
-          "backHow": {
-           "mins": 14,
+           "mins": 13,
            "mode": "ride",
-           "line": "34",
-           "vehicle": "BUS",
-           "from": "ZECCA/CARMINE",
-           "to": "PRINCIPE FS/CAPOLINEA",
-           "walkInstead": 19
+           "line": "MM",
+           "vehicle": "SUBWAY",
+           "from": "PRINCIPE/METRO",
+           "to": "SAN GIORGIO/METRO",
+           "walkInstead": 20
+          },
+          "visit": 25,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "ride",
+           "line": "MM",
+           "vehicle": "SUBWAY",
+           "from": "SAN GIORGIO/METRO",
+           "to": "PRINCIPE/METRO",
+           "walkInstead": 20
           },
           "must": true,
-          "lat": 44.41222222,
-          "lon": 8.93111111,
-          "kind": "street",
-          "note": "A street of palaces, all UNESCO, ten minutes uphill from the station.",
+          "lat": 44.4095,
+          "lon": 8.932,
+          "kind": "food",
+          "note": "Genoa's is thin, salty and wet with oil, sold by weight. Eat it standing up.",
           "ticket": false,
-          "at": 19,
-          "leaveBy": 59,
+          "at": 13,
+          "leaveBy": 38,
           "extra": false
          },
          {
           "to": "Piazza De Ferrari",
-          "mins": 11,
+          "mins": 5,
           "how": {
-           "mins": 11,
+           "mins": 5,
            "mode": "walk"
           },
           "visit": 20,
@@ -444,8 +451,8 @@
           "kind": "square",
           "note": "The big fountain. Everything in the centre runs off this square.",
           "ticket": false,
-          "at": 70,
-          "leaveBy": 90,
+          "at": 43,
+          "leaveBy": 63,
           "extra": false
          },
          {
@@ -472,20 +479,76 @@
           "kind": "street",
           "note": "The old town lanes — the densest medieval quarter in Europe, and dark at noon.",
           "ticket": false,
-          "at": 96,
-          "leaveBy": 141,
+          "at": 69,
+          "leaveBy": 114,
+          "extra": false
+         },
+         {
+          "to": "Piazza delle Erbe at night",
+          "mins": 3,
+          "how": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "visit": 45,
+          "backFromHere": 14,
+          "backHow": {
+           "mins": 14,
+           "mode": "ride",
+           "line": "MM",
+           "vehicle": "SUBWAY",
+           "from": "DE FERRARI/METRO",
+           "to": "PRINCIPE/METRO",
+           "walkInstead": 23
+          },
+          "must": false,
+          "lat": 44.4076,
+          "lon": 8.932,
+          "kind": "food",
+          "note": "The little square behind the cathedral where the old town eats and drinks.",
+          "ticket": false,
+          "at": 117,
+          "leaveBy": 162,
+          "extra": false
+         },
+         {
+          "to": "Palazzo Ducale",
+          "mins": 2,
+          "how": {
+           "mins": 2,
+           "mode": "walk"
+          },
+          "visit": 35,
+          "backFromHere": 12,
+          "backHow": {
+           "mins": 12,
+           "mode": "ride",
+           "line": "MM",
+           "vehicle": "SUBWAY",
+           "from": "DE FERRARI/METRO",
+           "to": "PRINCIPE/METRO",
+           "walkInstead": 24
+          },
+          "must": false,
+          "lat": 44.40752778,
+          "lon": 8.93341667,
+          "kind": "palace",
+          "note": "The doges' palace on Piazza De Ferrari. The courtyard is open late and free.",
+          "ticket": false,
+          "at": 164,
+          "leaveBy": 199,
           "extra": false
          }
         ],
         "back": 12,
-        "walkTotal": 48,
-        "visitTotal": 105,
-        "needs": 153,
-        "fitted": 3,
+        "walkTotal": 41,
+        "visitTotal": 170,
+        "needs": 211,
+        "fitted": 5,
         "dropped": 0,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Genova%20Piazza%20Principe&destination=Genova%20Piazza%20Principe&waypoints=Via%20Garibaldi%2C%20Genoa%7CPiazza%20De%20Ferrari%2C%20Genoa%7CThe%20caruggi%2C%20Genoa",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Genova%20Piazza%20Principe&destination=Genova%20Piazza%20Principe&waypoints=Via%20Garibaldi%2C%20Genoa%7CPiazza%20De%20Ferrari%2C%20Genoa%7CThe%20caruggi%2C%20Genoa",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Genova%20Piazza%20Principe&destination=Genova%20Piazza%20Principe&waypoints=Focaccia%2C%20Genoa%7CPiazza%20De%20Ferrari%2C%20Genoa%7CThe%20caruggi%2C%20Genoa%7CPiazza%20delle%20Erbe%20at%20night%2C%20Genoa%7CPalazzo%20Ducale%2C%20Genoa",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Genova%20Piazza%20Principe&destination=Genova%20Piazza%20Principe&waypoints=Focaccia%2C%20Genoa%7CPiazza%20De%20Ferrari%2C%20Genoa%7CThe%20caruggi%2C%20Genoa%7CPiazza%20delle%20Erbe%20at%20night%2C%20Genoa%7CPalazzo%20Ducale%2C%20Genoa",
         "town": "Genoa, Germany"
        }
       }
@@ -556,7 +619,7 @@
         9.205
        ],
        "station": "Milano Centrale",
-       "say": "2 h 42 min here, until the 18:55 on. Metro M3, the yellow line, straight down from Centrale. Three stops to Duomo, ten minutes. Leave the bags in the left luggage at Centrale.",
+       "say": "2 h 42 min here, until the 18:55 on. Nothing here is compulsory — the seats are booked and the train goes at 18:55 either way. If you want the Duomo it is three stops on metro M3 and ten minutes, and the bag drop at Centrale is on the ground floor by platform 21.",
        "free": 162,
        "dep": "18:55"
       },
@@ -676,7 +739,7 @@
         8.92
        ],
        "station": "Genova Piazza Principe",
-       "say": "This is where you sleep tonight. Piazza Principe. The old town starts at the bottom of the station steps.",
+       "say": "This is where you sleep tonight. Piazza Principe. The old town starts at the bottom of the station steps, and it is still awake.",
        "free": null,
        "dep": null
       },
@@ -686,19 +749,19 @@
        "t": null,
        "kind": "see",
        "place": "genoa",
-       "title": "Via Garibaldi",
+       "title": "Focaccia",
        "ll": [
-        44.41222222,
-        8.93111111
+        44.4095,
+        8.932
        ],
-       "sight": "genoa/Via Garibaldi",
-       "move": "19 min walk.",
-       "rode": false,
-       "mins": 19,
-       "visit": 40,
-       "say": "A street of palaces, all UNESCO, ten minutes uphill from the station.",
-       "offset": 19,
-       "until": 59,
+       "sight": "genoa/Focaccia",
+       "move": "Take the MM — 13 min, instead of 20 on foot.",
+       "rode": true,
+       "mins": 13,
+       "visit": 25,
+       "say": "Genoa's is thin, salty and wet with oil, sold by weight. Eat it standing up.",
+       "offset": 13,
+       "until": 38,
        "ticket": false
       },
       {
@@ -713,13 +776,13 @@
         8.93416667
        ],
        "sight": "genoa/Piazza De Ferrari",
-       "move": "11 min walk.",
+       "move": "5 min walk.",
        "rode": false,
-       "mins": 11,
+       "mins": 5,
        "visit": 20,
        "say": "The big fountain. Everything in the centre runs off this square.",
-       "offset": 70,
-       "until": 90,
+       "offset": 43,
+       "until": 63,
        "ticket": false
       },
       {
@@ -739,8 +802,50 @@
        "mins": 6,
        "visit": 45,
        "say": "The old town lanes — the densest medieval quarter in Europe, and dark at noon.",
-       "offset": 96,
-       "until": 141,
+       "offset": 69,
+       "until": 114,
+       "ticket": false
+      },
+      {
+       "day": 1,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "genoa",
+       "title": "Piazza delle Erbe at night",
+       "ll": [
+        44.4076,
+        8.932
+       ],
+       "sight": "genoa/Piazza delle Erbe at night",
+       "move": "3 min walk.",
+       "rode": false,
+       "mins": 3,
+       "visit": 45,
+       "say": "The little square behind the cathedral where the old town eats and drinks.",
+       "offset": 117,
+       "until": 162,
+       "ticket": false
+      },
+      {
+       "day": 1,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "genoa",
+       "title": "Palazzo Ducale",
+       "ll": [
+        44.40752778,
+        8.93341667
+       ],
+       "sight": "genoa/Palazzo Ducale",
+       "move": "2 min walk.",
+       "rode": false,
+       "mins": 2,
+       "visit": 35,
+       "say": "The doges' palace on Piazza De Ferrari. The courtyard is open late and free.",
+       "offset": 164,
+       "until": 199,
        "ticket": false
       },
       {
@@ -777,7 +882,7 @@
       {
        "kind": "stop",
        "place": "genoa",
-       "stn": "Back up to Piazza Principe.",
+       "stn": "Back up to Piazza Principe. Take the bags — you do not come back to this hotel.",
        "see": [],
        "base": false,
        "arrIso": "2026-09-27T05:40:00.000Z",
@@ -850,22 +955,22 @@
          ]
         },
         {
-         "dep": "08:53",
-         "arr": "09:53",
-         "dur": 60,
+         "dep": "09:29",
+         "arr": "10:27",
+         "dur": 58,
          "changes": 1,
          "lines": [
-          "IC 505",
-          "REG 12354"
+          "REG 12027",
+          "REG 12345"
          ]
         },
         {
-         "dep": "09:47",
-         "arr": "10:14",
-         "dur": 27,
+         "dep": "09:58",
+         "arr": "10:44",
+         "dur": 46,
          "changes": 0,
          "lines": [
-          "IC 657"
+          "REG 22979"
          ]
         }
        ]
@@ -875,7 +980,8 @@
        "place": "smargherita",
        "stn": "Down to the harbour, five minutes. The Portofino bus (782) leaves from the front.",
        "see": [
-        "The harbour front"
+        "The harbour front",
+        "Basilica di Santa Margherita"
        ],
        "base": false,
        "arrIso": "2026-09-27T06:59:00Z",
@@ -908,6 +1014,29 @@
           "at": 6,
           "leaveBy": 28,
           "extra": false
+         },
+         {
+          "to": "Basilica di Santa Margherita",
+          "mins": 3,
+          "how": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 9,
+          "backHow": {
+           "mins": 9,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 44.3317,
+          "lon": 9.2123,
+          "kind": "church",
+          "note": "Gold and chandeliers, and open when everything else is shut.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
         "back": 6,
@@ -915,10 +1044,10 @@
         "visitTotal": 22,
         "needs": 34,
         "fitted": 1,
-        "dropped": 0,
+        "dropped": 1,
         "noCoords": [],
         "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=S.%20Margherita%20Ligure-Portofino&destination=S.%20Margherita%20Ligure-Portofino&waypoints=The%20harbour%20front%2C%20Santa%20Margherita",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=S.%20Margherita%20Ligure-Portofino&destination=S.%20Margherita%20Ligure-Portofino&waypoints=The%20harbour%20front%2C%20Santa%20Margherita",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=S.%20Margherita%20Ligure-Portofino&destination=S.%20Margherita%20Ligure-Portofino&waypoints=The%20harbour%20front%2C%20Santa%20Margherita%7CBasilica%20di%20Santa%20Margherita%2C%20Santa%20Margherita",
         "town": "Santa Margherita, Germany"
        }
       },
@@ -1147,15 +1276,17 @@
        "place": "smargherita",
        "stn": "Ten minutes back up to the station.",
        "see": [
-        "Basilica di Santa Margherita"
+        "Basilica di Santa Margherita",
+        "The harbour front",
+        "Villa Durazzo"
        ],
        "base": false,
        "arrIso": "2026-09-27T11:05:00.000Z",
        "want": 27,
        "arr": "13:05",
-       "depIso": "2026-09-27T11:46:00Z",
-       "dep": "13:46",
-       "free": 41,
+       "depIso": "2026-09-27T11:58:00Z",
+       "dep": "13:58",
+       "free": 53,
        "route": {
         "legs": [
          {
@@ -1177,20 +1308,66 @@
           "kind": "church",
           "note": "Gold and chandeliers, and open when everything else is shut.",
           "ticket": false,
-          "at": 9,
-          "leaveBy": 29,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "The harbour front",
+          "mins": 6,
+          "how": {
+           "mins": 6,
+           "mode": "walk"
+          },
+          "visit": 22,
+          "backFromHere": 6,
+          "backHow": {
+           "mins": 6,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 44.3323,
+          "lon": 9.2116,
+          "kind": "nature",
+          "note": "Palms, painted houses and the boats. Five minutes down from the station.",
+          "ticket": false,
+          "at": 6,
+          "leaveBy": 28,
           "extra": false
+         },
+         {
+          "to": "Villa Durazzo",
+          "mins": 7,
+          "how": {
+           "mins": 7,
+           "mode": "walk"
+          },
+          "visit": 40,
+          "backFromHere": 9,
+          "backHow": {
+           "mins": 9,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 44.3343,
+          "lon": 9.2158,
+          "kind": "nature",
+          "note": "Terraced gardens above the town, free to walk into.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
-        "back": 9,
-        "walkTotal": 18,
-        "visitTotal": 20,
-        "needs": 38,
+        "back": 6,
+        "walkTotal": 12,
+        "visitTotal": 22,
+        "needs": 34,
         "fitted": 1,
-        "dropped": 0,
+        "dropped": 2,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=S.%20Margherita%20Ligure-Portofino&destination=S.%20Margherita%20Ligure-Portofino&waypoints=Basilica%20di%20Santa%20Margherita%2C%20Santa%20Margherita",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=S.%20Margherita%20Ligure-Portofino&destination=S.%20Margherita%20Ligure-Portofino&waypoints=Basilica%20di%20Santa%20Margherita%2C%20Santa%20Margherita",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=S.%20Margherita%20Ligure-Portofino&destination=S.%20Margherita%20Ligure-Portofino&waypoints=The%20harbour%20front%2C%20Santa%20Margherita",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=S.%20Margherita%20Ligure-Portofino&destination=S.%20Margherita%20Ligure-Portofino&waypoints=Basilica%20di%20Santa%20Margherita%2C%20Santa%20Margherita%7CThe%20harbour%20front%2C%20Santa%20Margherita%7CVilla%20Durazzo%2C%20Santa%20Margherita",
         "town": "Santa Margherita, Germany"
        }
       },
@@ -1198,7 +1375,7 @@
        "kind": "move",
        "from": "smargherita",
        "to": "genoa",
-       "note": "",
+       "note": "Regionale — the InterCity on this stretch wants a paid seat and saves nothing.",
        "bus": false,
        "fromStop": "S. Margherita Ligure-Portofino",
        "toStop": "Genova Piazza Principe",
@@ -1210,39 +1387,30 @@
         44.417,
         8.92
        ],
-       "dep": "13:46",
-       "arr": "14:16",
-       "depIso": "2026-09-27T11:46:00Z",
-       "arrIso": "2026-09-27T12:16:00Z",
-       "dur": 30,
+       "dep": "13:58",
+       "arr": "14:46",
+       "depIso": "2026-09-27T11:58:00Z",
+       "arrIso": "2026-09-27T12:46:00Z",
+       "dur": 48,
        "changes": 0,
        "gaps": [],
        "legs": [
         {
-         "mode": "LONG_DISTANCE",
-         "line": "IC 670",
+         "mode": "REGIONAL_RAIL",
+         "line": "REG 12394",
          "towards": "GENOVA PIAZZA PRINCIPE",
          "from": "S.MARGHERITA LIGURE PORTOFINO",
          "to": "GENOVA PIAZZA PRINCIPE",
-         "dep": "13:46",
-         "arr": "14:16",
-         "depIso": "2026-09-27T11:46:00Z",
-         "arrIso": "2026-09-27T12:16:00Z",
+         "dep": "13:58",
+         "arr": "14:46",
+         "depIso": "2026-09-27T11:58:00Z",
+         "arrIso": "2026-09-27T12:46:00Z",
          "track": null,
-         "tripId": "20260927_11:24_it-trenitalia_IT::VehicleJourney:railTRENITALIA:50083_0_5-670-7479-0083_5-670-7479-0083"
+         "tripId": "20260927_13:32_it-trenitalia_IT::VehicleJourney:railTRENITALIA:10083_0_1-12394-393F-0083_1-12394-393F-0083"
         }
        ],
        "wanted": "13:32",
        "later": [
-        {
-         "dep": "13:58",
-         "arr": "14:46",
-         "dur": 48,
-         "changes": 0,
-         "lines": [
-          "REG 12394"
-         ]
-        },
         {
          "dep": "14:14",
          "arr": "15:11",
@@ -1261,6 +1429,15 @@
           "03270",
           "REG 12052"
          ]
+        },
+        {
+         "dep": "14:55",
+         "arr": "15:46",
+         "dur": 51,
+         "changes": 0,
+         "lines": [
+          "REG 12404"
+         ]
         }
        ]
       },
@@ -1276,12 +1453,12 @@
         "Porto Antico"
        ],
        "base": false,
-       "arrIso": "2026-09-27T12:16:00Z",
+       "arrIso": "2026-09-27T12:46:00Z",
        "want": 85,
-       "arr": "14:16",
+       "arr": "14:46",
        "depIso": "2026-09-27T13:44:00.000Z",
        "dep": "15:44",
-       "free": 88,
+       "free": 58,
        "route": {
         "legs": [
          {
@@ -1308,16 +1485,21 @@
           "kind": "street",
           "note": "A street of palaces, all UNESCO, ten minutes uphill from the station.",
           "ticket": false,
-          "at": 19,
-          "leaveBy": 59,
-          "extra": false
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "San Lorenzo Cathedral",
-          "mins": 9,
+          "mins": 13,
           "how": {
-           "mins": 9,
-           "mode": "walk"
+           "mins": 13,
+           "mode": "ride",
+           "line": "MM",
+           "vehicle": "SUBWAY",
+           "from": "PRINCIPE/METRO",
+           "to": "SAN GIORGIO/METRO",
+           "walkInstead": 23
           },
           "visit": 30,
           "backFromHere": 13,
@@ -1342,10 +1524,15 @@
          },
          {
           "to": "Piazza De Ferrari",
-          "mins": 11,
+          "mins": 14,
           "how": {
-           "mins": 11,
-           "mode": "walk"
+           "mins": 14,
+           "mode": "ride",
+           "line": "MM",
+           "vehicle": "SUBWAY",
+           "from": "PRINCIPE/METRO",
+           "to": "DE FERRARI/METRO",
+           "walkInstead": 25
           },
           "visit": 20,
           "backFromHere": 13,
@@ -1364,15 +1551,15 @@
           "kind": "square",
           "note": "The big fountain. Everything in the centre runs off this square.",
           "ticket": false,
-          "at": null,
-          "leaveBy": null,
-          "extra": true
+          "at": 14,
+          "leaveBy": 34,
+          "extra": false
          },
          {
           "to": "The caruggi",
-          "mins": 7,
+          "mins": 6,
           "how": {
-           "mins": 7,
+           "mins": 6,
            "mode": "walk"
           },
           "visit": 45,
@@ -1425,14 +1612,14 @@
           "extra": true
          }
         ],
-        "back": 14,
-        "walkTotal": 33,
-        "visitTotal": 40,
-        "needs": 73,
+        "back": 13,
+        "walkTotal": 27,
+        "visitTotal": 20,
+        "needs": 47,
         "fitted": 1,
         "dropped": 4,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Genova%20Piazza%20Principe&destination=Genova%20Piazza%20Principe&waypoints=Via%20Garibaldi%2C%20Genoa",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Genova%20Piazza%20Principe&destination=Genova%20Piazza%20Principe&waypoints=Piazza%20De%20Ferrari%2C%20Genoa",
         "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Genova%20Piazza%20Principe&destination=Genova%20Piazza%20Principe&waypoints=Via%20Garibaldi%2C%20Genoa%7CSan%20Lorenzo%20Cathedral%2C%20Genoa%7CPiazza%20De%20Ferrari%2C%20Genoa%7CThe%20caruggi%2C%20Genoa%7CPorto%20Antico%2C%20Genoa",
         "town": "Genoa, Germany"
        }
@@ -1630,7 +1817,7 @@
      "intro": null,
      "hero": null,
      "bags": null,
-     "ride": 333,
+     "ride": 351,
      "stops": 5,
      "endArr": "19:17",
      "startDep": "08:14",
@@ -1647,7 +1834,7 @@
         8.92
        ],
        "station": "Genova Piazza Principe",
-       "say": "34 min here, until the 08:14 on. Back up to Piazza Principe.",
+       "say": "34 min here, until the 08:14 on. Back up to Piazza Principe. Take the bags — you do not come back to this hotel.",
        "free": 34,
        "dep": "08:14"
       },
@@ -1888,9 +2075,9 @@
         9.2093
        ],
        "station": "S. Margherita Ligure-Portofino",
-       "say": "41 min here, until the 13:46 on. Ten minutes back up to the station.",
-       "free": 41,
-       "dep": "13:46"
+       "say": "53 min here, until the 13:58 on. Ten minutes back up to the station.",
+       "free": 53,
+       "dep": "13:58"
       },
       {
        "day": 2,
@@ -1898,25 +2085,25 @@
        "t": null,
        "kind": "see",
        "place": "smargherita",
-       "title": "Basilica di Santa Margherita",
+       "title": "The harbour front",
        "ll": [
-        44.3317,
-        9.2123
+        44.3323,
+        9.2116
        ],
-       "sight": "smargherita/Basilica di Santa Margherita",
-       "move": "9 min walk.",
+       "sight": "smargherita/The harbour front",
+       "move": "6 min walk.",
        "rode": false,
-       "mins": 9,
-       "visit": 20,
-       "say": "Gold and chandeliers, and open when everything else is shut.",
-       "offset": 9,
-       "until": 29,
+       "mins": 6,
+       "visit": 22,
+       "say": "Palms, painted houses and the boats. Five minutes down from the station.",
+       "offset": 6,
+       "until": 28,
        "ticket": false
       },
       {
        "day": 2,
        "path": "A",
-       "t": "13:46",
+       "t": "13:58",
        "kind": "back",
        "place": "smargherita",
        "title": "Back to S. Margherita Ligure-Portofino",
@@ -1924,21 +2111,21 @@
         44.3345,
         9.2093
        ],
-       "mins": 9,
-       "say": "9 min back to the station. Aim to be on the platform by 13:46."
+       "mins": 6,
+       "say": "6 min back to the station. Aim to be on the platform by 13:58."
       },
       {
        "day": 2,
        "path": "A",
-       "t": "13:46",
+       "t": "13:58",
        "kind": "ride",
        "title": "Train to Genoa",
-       "line": "IC 670",
+       "line": "REG 12394",
        "from": "S. Margherita Ligure-Portofino",
        "to": "Genova Piazza Principe",
-       "dep": "13:46",
-       "arr": "14:16",
-       "dur": 30,
+       "dep": "13:58",
+       "arr": "14:46",
+       "dur": 48,
        "changes": 0,
        "track": null,
        "ll": [
@@ -1951,13 +2138,13 @@
        ],
        "place": "smargherita",
        "toPlace": "genoa",
-       "say": "30 minutes, straight through.",
-       "note": ""
+       "say": "48 minutes, straight through.",
+       "note": "Regionale — the InterCity on this stretch wants a paid seat and saves nothing."
       },
       {
        "day": 2,
        "path": "A",
-       "t": "14:16",
+       "t": "14:46",
        "kind": "arrive",
        "place": "genoa",
        "title": "You are in Genoa",
@@ -1966,8 +2153,8 @@
         8.92
        ],
        "station": "Genova Piazza Principe",
-       "say": "1 h 28 min here, until the 15:44 on. You have an hour and a quarter and the bags. Via Garibaldi is ten minutes uphill from the station.",
-       "free": 88,
+       "say": "58 min here, until the 15:44 on. You have an hour and a quarter and the bags. Via Garibaldi is ten minutes uphill from the station.",
+       "free": 58,
        "dep": "15:44"
       },
       {
@@ -1976,19 +2163,19 @@
        "t": null,
        "kind": "see",
        "place": "genoa",
-       "title": "Via Garibaldi",
+       "title": "Piazza De Ferrari",
        "ll": [
-        44.41222222,
-        8.93111111
+        44.40722222,
+        8.93416667
        ],
-       "sight": "genoa/Via Garibaldi",
-       "move": "19 min walk.",
-       "rode": false,
-       "mins": 19,
-       "visit": 40,
-       "say": "A street of palaces, all UNESCO, ten minutes uphill from the station.",
-       "offset": 19,
-       "until": 59,
+       "sight": "genoa/Piazza De Ferrari",
+       "move": "Take the MM — 14 min, instead of 25 on foot.",
+       "rode": true,
+       "mins": 14,
+       "visit": 20,
+       "say": "The big fountain. Everything in the centre runs off this square.",
+       "offset": 14,
+       "until": 34,
        "ticket": false
       },
       {
@@ -2002,8 +2189,8 @@
         44.417,
         8.92
        ],
-       "mins": 14,
-       "say": "14 min back to the station. Aim to be on the platform by 15:44."
+       "mins": 13,
+       "say": "13 min back to the station. Aim to be on the platform by 15:44."
       },
       {
        "day": 2,
@@ -2187,7 +2374,7 @@
       {
        "kind": "stop",
        "place": "verona",
-       "stn": "Back down to Porta Nuova.",
+       "stn": "Back down to Porta Nuova — fifteen minutes on foot, or bus 11, 12 or 13 from Piazza Bra.",
        "see": [],
        "base": false,
        "arrIso": "2026-09-28T06:00:00.000Z",
@@ -2253,7 +2440,10 @@
        "see": [
         "Ötzi",
         "Waltherplatz",
-        "Bolzano Cathedral"
+        "Bolzano Cathedral",
+        "The Laubengasse",
+        "Obstmarkt",
+        "Dominikanerkirche"
        ],
        "base": false,
        "arrIso": "2026-09-28T08:43:00.000Z",
@@ -2337,17 +2527,86 @@
           "at": 39,
           "leaveBy": 64,
           "extra": false
+         },
+         {
+          "to": "The Laubengasse",
+          "mins": 4,
+          "how": {
+           "mins": 4,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 46.4987,
+          "lon": 11.353,
+          "kind": "street",
+          "note": "Eight hundred years of arcades, the medieval merchant street.",
+          "ticket": false,
+          "at": 68,
+          "leaveBy": 98,
+          "extra": false
+         },
+         {
+          "to": "Obstmarkt",
+          "mins": 2,
+          "how": {
+           "mins": 2,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 46.4991,
+          "lon": 11.3544,
+          "kind": "food",
+          "note": "The fruit market at the end of the arcades, open six days a week.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Dominikanerkirche",
+          "mins": 3,
+          "how": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 46.497554,
+          "lon": 11.352051,
+          "kind": "church",
+          "note": "Giotto-school frescoes in the cloister, and almost nobody in it.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
-        "back": 11,
-        "walkTotal": 25,
-        "visitTotal": 50,
-        "needs": 75,
-        "fitted": 2,
-        "dropped": 1,
+        "back": 13,
+        "walkTotal": 31,
+        "visitTotal": 80,
+        "needs": 111,
+        "fitted": 3,
+        "dropped": 3,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bolzano%2FBozen&destination=Bolzano%2FBozen&waypoints=Waltherplatz%2C%20Bolzano%7CBolzano%20Cathedral%2C%20Bolzano",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bolzano%2FBozen&destination=Bolzano%2FBozen&waypoints=%C3%96tzi%2C%20Bolzano%7CWaltherplatz%2C%20Bolzano%7CBolzano%20Cathedral%2C%20Bolzano",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bolzano%2FBozen&destination=Bolzano%2FBozen&waypoints=Waltherplatz%2C%20Bolzano%7CBolzano%20Cathedral%2C%20Bolzano%7CThe%20Laubengasse%2C%20Bolzano",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bolzano%2FBozen&destination=Bolzano%2FBozen&waypoints=%C3%96tzi%2C%20Bolzano%7CWaltherplatz%2C%20Bolzano%7CBolzano%20Cathedral%2C%20Bolzano%7CThe%20Laubengasse%2C%20Bolzano%7CObstmarkt%2C%20Bolzano%7CDominikanerkirche%2C%20Bolzano",
         "town": "Bolzano, Germany"
        }
       },
@@ -2999,7 +3258,7 @@
         10.982
        ],
        "station": "Verona Porta Nuova",
-       "say": "49 min here, until the 08:49 on. Back down to Porta Nuova.",
+       "say": "49 min here, until the 08:49 on. Back down to Porta Nuova — fifteen minutes on foot, or bus 11, 12 or 13 from Piazza Bra.",
        "free": 49,
        "dep": "08:49"
       },
@@ -3091,6 +3350,27 @@
       {
        "day": 3,
        "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "bolzano",
+       "title": "The Laubengasse",
+       "ll": [
+        46.4987,
+        11.353
+       ],
+       "sight": "bolzano/The Laubengasse",
+       "move": "4 min walk.",
+       "rode": false,
+       "mins": 4,
+       "visit": 30,
+       "say": "Eight hundred years of arcades, the medieval merchant street.",
+       "offset": 68,
+       "until": 98,
+       "ticket": false
+      },
+      {
+       "day": 3,
+       "path": "A",
        "t": "12:28",
        "kind": "back",
        "place": "bolzano",
@@ -3099,8 +3379,8 @@
         46.495,
         11.356
        ],
-       "mins": 11,
-       "say": "11 min back to the station. Aim to be on the platform by 12:28."
+       "mins": 13,
+       "say": "13 min back to the station. Aim to be on the platform by 12:28."
       },
       {
        "day": 3,
@@ -3482,8 +3762,12 @@
       {
        "kind": "stop",
        "place": "bolzano",
-       "stn": "",
-       "see": [],
+       "stn": "An hour before the train, and the arcades are two minutes from the platform.",
+       "see": [
+        "The Laubengasse",
+        "Waltherplatz",
+        "Obstmarkt"
+       ],
        "base": false,
        "arrIso": "2026-09-29T05:45:00.000Z",
        "want": 67,
@@ -3492,16 +3776,86 @@
        "dep": "09:02",
        "free": 77,
        "route": {
-        "legs": [],
-        "back": null,
-        "walkTotal": 0,
-        "visitTotal": 0,
-        "needs": 0,
-        "fitted": 0,
-        "dropped": 0,
+        "legs": [
+         {
+          "to": "The Laubengasse",
+          "mins": 13,
+          "how": {
+           "mins": 13,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 46.4987,
+          "lon": 11.353,
+          "kind": "street",
+          "note": "Eight hundred years of arcades, the medieval merchant street.",
+          "ticket": false,
+          "at": 13,
+          "leaveBy": 43,
+          "extra": false
+         },
+         {
+          "to": "Waltherplatz",
+          "mins": 2,
+          "how": {
+           "mins": 2,
+           "mode": "walk"
+          },
+          "visit": 25,
+          "backFromHere": 11,
+          "backHow": {
+           "mins": 11,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 46.498411,
+          "lon": 11.354638,
+          "kind": "square",
+          "note": "The main square, with the cathedral on the corner and cafés all round.",
+          "ticket": false,
+          "at": 45,
+          "leaveBy": 70,
+          "extra": false
+         },
+         {
+          "to": "Obstmarkt",
+          "mins": 1,
+          "how": {
+           "mins": 1,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 46.4991,
+          "lon": 11.3544,
+          "kind": "food",
+          "note": "The fruit market at the end of the arcades, open six days a week.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         }
+        ],
+        "back": 11,
+        "walkTotal": 26,
+        "visitTotal": 55,
+        "needs": 81,
+        "fitted": 2,
+        "dropped": 1,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bolzano%2FBozen&destination=Bolzano%2FBozen",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bolzano%2FBozen&destination=Bolzano%2FBozen",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bolzano%2FBozen&destination=Bolzano%2FBozen&waypoints=The%20Laubengasse%2C%20Bolzano%7CWaltherplatz%2C%20Bolzano",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bolzano%2FBozen&destination=Bolzano%2FBozen&waypoints=The%20Laubengasse%2C%20Bolzano%7CWaltherplatz%2C%20Bolzano%7CObstmarkt%2C%20Bolzano",
         "town": "Bolzano, Germany"
        }
       },
@@ -4139,7 +4493,9 @@
        "stn": "The bus stops at the abbey gate.",
        "see": [
         "Ettal Abbey church",
-        "Abbey shop and distillery"
+        "Abbey shop and distillery",
+        "The abbey brewery",
+        "Graswangtal meadows"
        ],
        "base": false,
        "arrIso": "2026-09-29T14:25:00Z",
@@ -4195,17 +4551,65 @@
           "at": 46,
           "leaveBy": 61,
           "extra": false
+         },
+         {
+          "to": "The abbey brewery",
+          "mins": 2,
+          "how": {
+           "mins": 2,
+           "mode": "walk"
+          },
+          "visit": 50,
+          "backFromHere": 5,
+          "backHow": {
+           "mins": 5,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.5688,
+          "lon": 11.0937,
+          "kind": "food",
+          "note": "They have brewed here since 1609. The Braustüberl is across the road from the gate.",
+          "ticket": false,
+          "at": 63,
+          "leaveBy": 113,
+          "extra": false
+         },
+         {
+          "to": "Graswangtal meadows",
+          "mins": 27,
+          "how": {
+           "mins": 27,
+           "mode": "go",
+           "approx": true
+          },
+          "visit": 40,
+          "backFromHere": 27,
+          "backHow": {
+           "mins": 27,
+           "mode": "go",
+           "approx": true
+          },
+          "must": false,
+          "lat": 47.5742,
+          "lon": 10.9898,
+          "kind": "nature",
+          "note": "The flat valley behind the abbey, with the Ammergau Alps standing round it.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
         "back": 5,
-        "walkTotal": 11,
-        "visitTotal": 55,
-        "needs": 66,
-        "fitted": 2,
-        "dropped": 0,
+        "walkTotal": 13,
+        "visitTotal": 105,
+        "needs": 118,
+        "fitted": 3,
+        "dropped": 1,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ettal%2C%20Kloster%20(bus)&destination=Ettal%2C%20Kloster%20(bus)&waypoints=Ettal%20Abbey%20church%2C%20Ettal%7CAbbey%20shop%20and%20distillery%2C%20Ettal",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ettal%2C%20Kloster%20(bus)&destination=Ettal%2C%20Kloster%20(bus)&waypoints=Ettal%20Abbey%20church%2C%20Ettal%7CAbbey%20shop%20and%20distillery%2C%20Ettal",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ettal%2C%20Kloster%20(bus)&destination=Ettal%2C%20Kloster%20(bus)&waypoints=Ettal%20Abbey%20church%2C%20Ettal%7CAbbey%20shop%20and%20distillery%2C%20Ettal%7CThe%20abbey%20brewery%2C%20Ettal",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Ettal%2C%20Kloster%20(bus)&destination=Ettal%2C%20Kloster%20(bus)&waypoints=Ettal%20Abbey%20church%2C%20Ettal%7CAbbey%20shop%20and%20distillery%2C%20Ettal%7CThe%20abbey%20brewery%2C%20Ettal%7CGraswangtal%20meadows%2C%20Ettal",
         "town": "Ettal, Germany"
        }
       },
@@ -4419,9 +4823,65 @@
         11.356
        ],
        "station": "Bolzano/Bozen",
-       "say": "1 h 17 min here, until the 09:02 on.",
+       "say": "1 h 17 min here, until the 09:02 on. An hour before the train, and the arcades are two minutes from the platform.",
        "free": 77,
        "dep": "09:02"
+      },
+      {
+       "day": 4,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "bolzano",
+       "title": "The Laubengasse",
+       "ll": [
+        46.4987,
+        11.353
+       ],
+       "sight": "bolzano/The Laubengasse",
+       "move": "13 min walk.",
+       "rode": false,
+       "mins": 13,
+       "visit": 30,
+       "say": "Eight hundred years of arcades, the medieval merchant street.",
+       "offset": 13,
+       "until": 43,
+       "ticket": false
+      },
+      {
+       "day": 4,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "bolzano",
+       "title": "Waltherplatz",
+       "ll": [
+        46.498411,
+        11.354638
+       ],
+       "sight": "bolzano/Waltherplatz",
+       "move": "2 min walk.",
+       "rode": false,
+       "mins": 2,
+       "visit": 25,
+       "say": "The main square, with the cathedral on the corner and cafés all round.",
+       "offset": 45,
+       "until": 70,
+       "ticket": false
+      },
+      {
+       "day": 4,
+       "path": "A",
+       "t": "09:02",
+       "kind": "back",
+       "place": "bolzano",
+       "title": "Back to Bolzano/Bozen",
+       "ll": [
+        46.495,
+        11.356
+       ],
+       "mins": 11,
+       "say": "11 min back to the station. Aim to be on the platform by 09:02."
       },
       {
        "day": 4,
@@ -4761,6 +5221,27 @@
        "say": "The monks' liqueur, beer and cheese, sold at the gate.",
        "offset": 46,
        "until": 61,
+       "ticket": false
+      },
+      {
+       "day": 4,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "ettal",
+       "title": "The abbey brewery",
+       "ll": [
+        47.5688,
+        11.0937
+       ],
+       "sight": "ettal/The abbey brewery",
+       "move": "2 min walk.",
+       "rode": false,
+       "mins": 2,
+       "visit": 50,
+       "say": "They have brewed here since 1609. The Braustüberl is across the road from the gate.",
+       "offset": 63,
+       "until": 113,
        "ticket": false
       },
       {
@@ -5523,10 +6004,12 @@
       {
        "kind": "stop",
        "place": "rosenheim",
-       "stn": "Ten minutes from the station to Max-Josefs-Platz.",
+       "stn": "Ten minutes from the station to Max-Josefs-Platz, and it is a Wednesday night in Bavaria — things are open.",
        "see": [
         "Max-Josefs-Platz",
-        "Ludwigsplatz"
+        "Ludwigsplatz",
+        "The Inn riverside",
+        "St Nikolaus"
        ],
        "base": true,
        "arrIso": "2026-09-30T18:27:00Z",
@@ -5581,17 +6064,63 @@
           "at": 45,
           "leaveBy": 65,
           "extra": false
+         },
+         {
+          "to": "The Inn riverside",
+          "mins": 13,
+          "how": {
+           "mins": 13,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 9,
+          "backHow": {
+           "mins": 9,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.8521,
+          "lon": 12.1156,
+          "kind": "nature",
+          "note": "Ten minutes out of the centre to the green river and the bridge.",
+          "ticket": false,
+          "at": 78,
+          "leaveBy": 108,
+          "extra": false
+         },
+         {
+          "to": "St Nikolaus",
+          "mins": 16,
+          "how": {
+           "mins": 16,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 12,
+          "backHow": {
+           "mins": 12,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.85568333,
+          "lon": 12.12812222,
+          "kind": "church",
+          "note": "Gothic, with a baroque interior and a tall brick tower.",
+          "ticket": false,
+          "at": 124,
+          "leaveBy": 144,
+          "extra": false
          }
         ],
-        "back": 10,
-        "walkTotal": 25,
-        "visitTotal": 50,
-        "needs": 75,
-        "fitted": 2,
+        "back": 12,
+        "walkTotal": 56,
+        "visitTotal": 100,
+        "needs": 156,
+        "fitted": 4,
         "dropped": 0,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Rosenheim&destination=Bahnhof%20Rosenheim&waypoints=Max-Josefs-Platz%2C%20Rosenheim%7CLudwigsplatz%2C%20Rosenheim",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Rosenheim&destination=Bahnhof%20Rosenheim&waypoints=Max-Josefs-Platz%2C%20Rosenheim%7CLudwigsplatz%2C%20Rosenheim",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Rosenheim&destination=Bahnhof%20Rosenheim&waypoints=Max-Josefs-Platz%2C%20Rosenheim%7CLudwigsplatz%2C%20Rosenheim%7CThe%20Inn%20riverside%2C%20Rosenheim%7CSt%20Nikolaus%2C%20Rosenheim",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Rosenheim&destination=Bahnhof%20Rosenheim&waypoints=Max-Josefs-Platz%2C%20Rosenheim%7CLudwigsplatz%2C%20Rosenheim%7CThe%20Inn%20riverside%2C%20Rosenheim%7CSt%20Nikolaus%2C%20Rosenheim",
         "town": "Rosenheim, Germany"
        }
       }
@@ -5964,7 +6493,7 @@
         12.1222
        ],
        "station": "Bahnhof Rosenheim",
-       "say": "This is where you sleep tonight. Ten minutes from the station to Max-Josefs-Platz.",
+       "say": "This is where you sleep tonight. Ten minutes from the station to Max-Josefs-Platz, and it is a Wednesday night in Bavaria — things are open.",
        "free": null,
        "dep": null
       },
@@ -6014,6 +6543,48 @@
        "day": 5,
        "path": "A",
        "t": null,
+       "kind": "see",
+       "place": "rosenheim",
+       "title": "The Inn riverside",
+       "ll": [
+        47.8521,
+        12.1156
+       ],
+       "sight": "rosenheim/The Inn riverside",
+       "move": "13 min walk.",
+       "rode": false,
+       "mins": 13,
+       "visit": 30,
+       "say": "Ten minutes out of the centre to the green river and the bridge.",
+       "offset": 78,
+       "until": 108,
+       "ticket": false
+      },
+      {
+       "day": 5,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "rosenheim",
+       "title": "St Nikolaus",
+       "ll": [
+        47.85568333,
+        12.12812222
+       ],
+       "sight": "rosenheim/St Nikolaus",
+       "move": "16 min walk.",
+       "rode": false,
+       "mins": 16,
+       "visit": 20,
+       "say": "Gothic, with a baroque interior and a tall brick tower.",
+       "offset": 124,
+       "until": 144,
+       "ticket": false
+      },
+      {
+       "day": 5,
+       "path": "A",
+       "t": null,
        "kind": "sleep",
        "place": "rosenheim",
        "title": "Goodnight, Rosenheim",
@@ -6043,7 +6614,7 @@
       {
        "kind": "stop",
        "place": "rosenheim",
-       "stn": "",
+       "stn": "Early. Coffee at the station and go.",
        "see": [],
        "base": false,
        "arrIso": "2026-10-01T05:00:00.000Z",
@@ -6159,7 +6730,8 @@
        "stn": "Steep up to the Schlossplatz, or the bus. The Königssee buses go from outside the station.",
        "see": [
         "Schlossplatz",
-        "Stiftskirche"
+        "Stiftskirche",
+        "The Royal Palace"
        ],
        "base": false,
        "arrIso": "2026-10-01T07:38:00Z",
@@ -6215,6 +6787,29 @@
           "at": null,
           "leaveBy": null,
           "extra": true
+         },
+         {
+          "to": "The Royal Palace",
+          "mins": 8,
+          "how": {
+           "mins": 8,
+           "mode": "walk"
+          },
+          "visit": 60,
+          "backFromHere": 10,
+          "backHow": {
+           "mins": 10,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.63326944,
+          "lon": 13.00306111,
+          "kind": "palace",
+          "note": "The Wittelsbachs' last private house, still furnished as they left it.",
+          "ticket": true,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          }
         ],
         "back": 6,
@@ -6222,10 +6817,10 @@
         "visitTotal": 25,
         "needs": 37,
         "fitted": 1,
-        "dropped": 1,
+        "dropped": 2,
         "noCoords": [],
         "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Berchtesgaden%20Hauptbahnhof&destination=Berchtesgaden%20Hauptbahnhof&waypoints=Schlossplatz%2C%20Berchtesgaden",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Berchtesgaden%20Hauptbahnhof&destination=Berchtesgaden%20Hauptbahnhof&waypoints=Schlossplatz%2C%20Berchtesgaden%7CStiftskirche%2C%20Berchtesgaden",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Berchtesgaden%20Hauptbahnhof&destination=Berchtesgaden%20Hauptbahnhof&waypoints=Schlossplatz%2C%20Berchtesgaden%7CStiftskirche%2C%20Berchtesgaden%7CThe%20Royal%20Palace%2C%20Berchtesgaden",
         "town": "Berchtesgaden, Germany"
        }
       },
@@ -6301,10 +6896,12 @@
       {
        "kind": "stop",
        "place": "konigssee",
-       "stn": "Five minutes down to the jetty. The boats are electric and have been since 1909.",
+       "stn": "Five minutes down to the jetty. The boats are electric and have been since 1909 — buy the return to St Bartholomä.",
        "see": [
         "The lakeshore",
+        "The echo",
         "St Bartholomä",
+        "Obersee",
         "Malerwinkel"
        ],
        "base": false,
@@ -6342,6 +6939,34 @@
           "extra": false
          },
          {
+          "to": "The echo",
+          "mins": 23,
+          "how": {
+           "mins": 23,
+           "mode": "walk"
+          },
+          "visit": 15,
+          "backFromHere": 42,
+          "backHow": {
+           "mins": 42,
+           "mode": "ride",
+           "line": "Königssee-Schifffahrt",
+           "vehicle": "FERRY",
+           "from": "Königssee, Kessel",
+           "to": "Seelände",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 47.559,
+          "lon": 12.988,
+          "kind": "sight",
+          "note": "Halfway down, the boatman cuts the motor and plays a flugelhorn at the cliff. It comes back four times.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
           "to": "St Bartholomä",
           "mins": 20,
           "how": {
@@ -6364,6 +6989,31 @@
           "at": 78,
           "leaveBy": 228,
           "extra": false
+         },
+         {
+          "to": "Obersee",
+          "mins": 19,
+          "how": {
+           "mins": 19,
+           "mode": "go",
+           "approx": true
+          },
+          "visit": 75,
+          "backFromHere": 27,
+          "backHow": {
+           "mins": 27,
+           "mode": "go",
+           "approx": true
+          },
+          "must": true,
+          "lat": 47.51611111,
+          "lon": 12.98833333,
+          "kind": "nature",
+          "note": "A second, smaller lake fifteen minutes on foot beyond the far jetty. Almost nobody walks it.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
          },
          {
           "to": "Malerwinkel",
@@ -6395,10 +7045,10 @@
         "visitTotal": 190,
         "needs": 246,
         "fitted": 2,
-        "dropped": 1,
+        "dropped": 3,
         "noCoords": [],
         "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=K%C3%B6nigssee%2C%20Seel%C3%A4nde%20(bus)&destination=K%C3%B6nigssee%2C%20Seel%C3%A4nde%20(bus)&waypoints=The%20lakeshore%2C%20K%C3%B6nigssee%7CSt%20Bartholom%C3%A4%2C%20K%C3%B6nigssee",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=K%C3%B6nigssee%2C%20Seel%C3%A4nde%20(bus)&destination=K%C3%B6nigssee%2C%20Seel%C3%A4nde%20(bus)&waypoints=The%20lakeshore%2C%20K%C3%B6nigssee%7CSt%20Bartholom%C3%A4%2C%20K%C3%B6nigssee%7CMalerwinkel%2C%20K%C3%B6nigssee",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=K%C3%B6nigssee%2C%20Seel%C3%A4nde%20(bus)&destination=K%C3%B6nigssee%2C%20Seel%C3%A4nde%20(bus)&waypoints=The%20lakeshore%2C%20K%C3%B6nigssee%7CThe%20echo%2C%20K%C3%B6nigssee%7CSt%20Bartholom%C3%A4%2C%20K%C3%B6nigssee%7CObersee%2C%20K%C3%B6nigssee%7CMalerwinkel%2C%20K%C3%B6nigssee",
         "town": "Königssee, Germany"
        }
       },
@@ -6850,7 +7500,7 @@
         12.1222
        ],
        "station": "Bahnhof Rosenheim",
-       "say": "35 min here, until the 07:35 on.",
+       "say": "35 min here, until the 07:35 on. Early. Coffee at the station and go.",
        "free": 35,
        "dep": "07:35"
       },
@@ -6971,7 +7621,7 @@
         12.988
        ],
        "station": "Königssee, Seelände (bus)",
-       "say": "4 h here, until the 14:56 on. Five minutes down to the jetty. The boats are electric and have been since 1909.",
+       "say": "4 h here, until the 14:56 on. Five minutes down to the jetty. The boats are electric and have been since 1909 — buy the return to St Bartholomä.",
        "free": 240,
        "dep": "14:56"
       },
@@ -7270,8 +7920,12 @@
       {
        "kind": "stop",
        "place": "rosenheim",
-       "stn": "",
-       "see": [],
+       "stn": "An hour before the long day starts. The square is ten minutes away and the bakeries are open.",
+       "see": [
+        "Max-Josefs-Platz",
+        "Mittertor",
+        "Ludwigsplatz"
+       ],
        "base": false,
        "arrIso": "2026-10-02T05:30:00.000Z",
        "want": 63,
@@ -7280,16 +7934,86 @@
        "dep": "08:33",
        "free": 63,
        "route": {
-        "legs": [],
-        "back": null,
-        "walkTotal": 0,
-        "visitTotal": 0,
-        "needs": 0,
-        "fitted": 0,
-        "dropped": 0,
+        "legs": [
+         {
+          "to": "Max-Josefs-Platz",
+          "mins": 12,
+          "how": {
+           "mins": 12,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 12,
+          "backHow": {
+           "mins": 12,
+           "mode": "walk"
+          },
+          "must": true,
+          "lat": 47.8558,
+          "lon": 12.128,
+          "kind": "square",
+          "note": "The arcaded main square, painted in colours.",
+          "ticket": false,
+          "at": 12,
+          "leaveBy": 42,
+          "extra": false
+         },
+         {
+          "to": "Mittertor",
+          "mins": 1,
+          "how": {
+           "mins": 1,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 13,
+          "backHow": {
+           "mins": 13,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.856408,
+          "lon": 12.128319,
+          "kind": "sight",
+          "note": "The last of the town gates, with the town museum inside it.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         },
+         {
+          "to": "Ludwigsplatz",
+          "mins": 3,
+          "how": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "visit": 20,
+          "backFromHere": 10,
+          "backHow": {
+           "mins": 10,
+           "mode": "walk"
+          },
+          "must": false,
+          "lat": 47.8548,
+          "lon": 12.1261,
+          "kind": "square",
+          "note": "Runs on from Max-Josefs-Platz. Cafés and the evening crowd.",
+          "ticket": false,
+          "at": null,
+          "leaveBy": null,
+          "extra": true
+         }
+        ],
+        "back": 12,
+        "walkTotal": 24,
+        "visitTotal": 30,
+        "needs": 54,
+        "fitted": 1,
+        "dropped": 2,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Rosenheim&destination=Bahnhof%20Rosenheim",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Rosenheim&destination=Bahnhof%20Rosenheim",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Rosenheim&destination=Bahnhof%20Rosenheim&waypoints=Max-Josefs-Platz%2C%20Rosenheim",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Bahnhof%20Rosenheim&destination=Bahnhof%20Rosenheim&waypoints=Max-Josefs-Platz%2C%20Rosenheim%7CMittertor%2C%20Rosenheim%7CLudwigsplatz%2C%20Rosenheim",
         "town": "Rosenheim, Germany"
        }
       },
@@ -8086,9 +8810,44 @@
         12.1222
        ],
        "station": "Bahnhof Rosenheim",
-       "say": "1 h 3 min here, until the 08:33 on.",
+       "say": "1 h 3 min here, until the 08:33 on. An hour before the long day starts. The square is ten minutes away and the bakeries are open.",
        "free": 63,
        "dep": "08:33"
+      },
+      {
+       "day": 7,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "rosenheim",
+       "title": "Max-Josefs-Platz",
+       "ll": [
+        47.8558,
+        12.128
+       ],
+       "sight": "rosenheim/Max-Josefs-Platz",
+       "move": "12 min walk.",
+       "rode": false,
+       "mins": 12,
+       "visit": 30,
+       "say": "The arcaded main square, painted in colours.",
+       "offset": 12,
+       "until": 42,
+       "ticket": false
+      },
+      {
+       "day": 7,
+       "path": "A",
+       "t": "08:33",
+       "kind": "back",
+       "place": "rosenheim",
+       "title": "Back to Bahnhof Rosenheim",
+       "ll": [
+        47.8506,
+        12.1222
+       ],
+       "mins": 12,
+       "say": "12 min back to the station. Aim to be on the platform by 08:33."
       },
       {
        "day": 7,
@@ -9084,7 +9843,8 @@
        "stn": "Bus 32 or tram 5 from the Hauptbahnhof into the old town — it is a long walk otherwise.",
        "see": [
         "Hauptstraße",
-        "Marktplatz and Church of the Holy Spirit"
+        "Marktplatz and Church of the Holy Spirit",
+        "Old Bridge"
        ],
        "base": true,
        "arrIso": "2026-10-03T18:46:00Z",
@@ -9154,17 +9914,45 @@
           "at": 83,
           "leaveBy": 113,
           "extra": false
+         },
+         {
+          "to": "Old Bridge",
+          "mins": 3,
+          "how": {
+           "mins": 3,
+           "mode": "walk"
+          },
+          "visit": 30,
+          "backFromHere": 19,
+          "backHow": {
+           "mins": 19,
+           "mode": "ride",
+           "line": "RNV 35",
+           "vehicle": "BUS",
+           "from": "Heidelberg, Marstallstraße",
+           "to": "Heidelberg, Hauptbahnhof",
+           "walkInstead": null
+          },
+          "must": false,
+          "lat": 49.41425278,
+          "lon": 8.70954722,
+          "kind": "sight",
+          "note": "1788. The bronze monkey at the end is for holding, and for luck.",
+          "ticket": false,
+          "at": 116,
+          "leaveBy": 146,
+          "extra": false
          }
         ],
-        "back": 17,
-        "walkTotal": 40,
-        "visitTotal": 90,
-        "needs": 130,
-        "fitted": 2,
+        "back": 19,
+        "walkTotal": 45,
+        "visitTotal": 120,
+        "needs": 165,
+        "fitted": 3,
         "dropped": 0,
         "noCoords": [],
-        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Hauptstra%C3%9Fe%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg",
-        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Hauptstra%C3%9Fe%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg",
+        "maps": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Hauptstra%C3%9Fe%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7COld%20Bridge%2C%20Heidelberg",
+        "mapsAll": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=Heidelberg%20Hauptbahnhof&destination=Heidelberg%20Hauptbahnhof&waypoints=Hauptstra%C3%9Fe%2C%20Heidelberg%7CMarktplatz%20and%20Church%20of%20the%20Holy%20Spirit%2C%20Heidelberg%7COld%20Bridge%2C%20Heidelberg",
         "town": "Heidelberg, Germany"
        }
       }
@@ -9560,6 +10348,27 @@
        "say": "Market square church with shops built into its outer walls.",
        "offset": 83,
        "until": 113,
+       "ticket": false
+      },
+      {
+       "day": 8,
+       "path": "A",
+       "t": null,
+       "kind": "see",
+       "place": "heidelberg",
+       "title": "Old Bridge",
+       "ll": [
+        49.41425278,
+        8.70954722
+       ],
+       "sight": "heidelberg/Old Bridge",
+       "move": "3 min walk.",
+       "rode": false,
+       "mins": 3,
+       "visit": 30,
+       "say": "1788. The bronze monkey at the end is for holding, and for luck.",
+       "offset": 116,
+       "until": 146,
        "ticket": false
       },
       {
@@ -10784,8 +11593,8 @@
    "src": "pinned",
    "km": 1.06,
    "wiki": "https://de.wikipedia.org/wiki/Genua",
-   "photo": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Panorama_di_Genova_%28porto_commerciale_e_porto_antico%29.jpg",
-   "photoFile": "Panorama di Genova (porto commerciale e porto antico).jpg",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Panorama_Calata_Bettolo_-_Genova_Porto_Antico_-_02_06_2019.jpg/1200px-Panorama_Calata_Bettolo_-_Genova_Porto_Antico_-_02_06_2019.jpg",
+   "photoFile": "Panorama Calata Bettolo - Genova Porto Antico - 02 06 2019.jpg",
    "about": ""
   },
   "smargherita": {
@@ -11395,6 +12204,60 @@
    "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/12_Genua_Aquarium_mit_Biosph%C3%A4re_%287776538902%29_%28cropped%29.jpg/1000px-12_Genua_Aquarium_mit_Biosph%C3%A4re_%287776538902%29_%28cropped%29.jpg",
    "photoFile": "12 Genua Aquarium mit Biosphäre (7776538902) (cropped).jpg",
    "wiki": "https://de.wikipedia.org/wiki/Aquarium_Genua",
+   "about": ""
+  },
+  "genoa/Palazzo Ducale": {
+   "place": "genoa",
+   "name": "Palazzo Ducale",
+   "note": "The doges' palace on Piazza De Ferrari. The courtyard is open late and free.",
+   "mins": 35,
+   "kind": "palace",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 44.40752778,
+   "lon": 8.93341667,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Palazzo_Ducale_piazza_Matteotti_2.JPG/640px-Palazzo_Ducale_piazza_Matteotti_2.JPG",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Palazzo_Ducale_piazza_Matteotti_2.JPG/1000px-Palazzo_Ducale_piazza_Matteotti_2.JPG",
+   "photoFile": "Palazzo_Ducale_piazza_Matteotti_2.JPG",
+   "wiki": "https://de.wikipedia.org/wiki/Palazzo_Ducale_(Genua)",
+   "about": ""
+  },
+  "genoa/Focaccia": {
+   "place": "genoa",
+   "name": "Focaccia",
+   "note": "Genoa's is thin, salty and wet with oil, sold by weight. Eat it standing up.",
+   "mins": 25,
+   "kind": "food",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": true,
+   "lat": 44.4095,
+   "lon": 8.932,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Focaccia_Genovese_02.jpg/640px-Focaccia_Genovese_02.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Focaccia_Genovese_02.jpg/1000px-Focaccia_Genovese_02.jpg",
+   "photoFile": "Focaccia Genovese 02.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Focaccia",
+   "about": ""
+  },
+  "genoa/Piazza delle Erbe at night": {
+   "place": "genoa",
+   "name": "Piazza delle Erbe at night",
+   "note": "The little square behind the cathedral where the old town eats and drinks.",
+   "mins": 45,
+   "kind": "food",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 44.4076,
+   "lon": 8.932,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Piazza_delle_Erbe_Genova_04.jpg/640px-Piazza_delle_Erbe_Genova_04.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Piazza_delle_Erbe_Genova_04.jpg/1000px-Piazza_delle_Erbe_Genova_04.jpg",
+   "photoFile": "Piazza delle Erbe Genova 04.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Genua",
    "about": ""
   },
   "genoa/Boccadasse": {
@@ -12557,6 +13420,42 @@
    "wiki": "https://de.wikipedia.org/wiki/Kloster_Ettal",
    "about": ""
   },
+  "ettal/The abbey brewery": {
+   "place": "ettal",
+   "name": "The abbey brewery",
+   "note": "They have brewed here since 1609. The Braustüberl is across the road from the gate.",
+   "mins": 50,
+   "kind": "food",
+   "ticket": false,
+   "indoor": true,
+   "closed": null,
+   "must": false,
+   "lat": 47.5688,
+   "lon": 11.0937,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/GER_%E2%80%93_BY_%E2%80%93_OBB_%E2%80%94_Lkr._Garmisch-Partenkirchen_%E2%80%94_Gde._Ettal_%E2%80%94_Ettal_Ort_%E2%80%94_Kaiser-Ludwig-Platz_1_%28Ettaler_Klosterbrauerei_%C2%B7_Schaufenster%29_2025-09-19_Mattes.jpg/640px-thumbnail.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/GER_%E2%80%93_BY_%E2%80%93_OBB_%E2%80%94_Lkr._Garmisch-Partenkirchen_%E2%80%94_Gde._Ettal_%E2%80%94_Ettal_Ort_%E2%80%94_Kaiser-Ludwig-Platz_1_%28Ettaler_Klosterbrauerei_%C2%B7_Schaufenster%29_2025-09-19_Mattes.jpg/1000px-thumbnail.jpg",
+   "photoFile": "GER – BY – OBB — Lkr. Garmisch-Partenkirchen — Gde. Ettal — Ettal Ort — Kaiser-Ludwig-Platz 1 (Ettaler Klosterbrauerei · Schaufenster) 2025-09-19 Mattes.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Kloster_Ettal",
+   "about": ""
+  },
+  "ettal/Graswangtal meadows": {
+   "place": "ettal",
+   "name": "Graswangtal meadows",
+   "note": "The flat valley behind the abbey, with the Ammergau Alps standing round it.",
+   "mins": 40,
+   "kind": "nature",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 47.5742,
+   "lon": 10.9898,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Graswangtal_bjs0507-02.jpg/640px-Graswangtal_bjs0507-02.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Graswangtal_bjs0507-02.jpg/1000px-Graswangtal_bjs0507-02.jpg",
+   "photoFile": "Graswangtal_bjs0507-02.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Graswangtal",
+   "about": ""
+  },
   "ettal/Schloss Linderhof": {
    "place": "ettal",
    "name": "Schloss Linderhof",
@@ -13152,6 +14051,42 @@
    "photoFile": "Sankt_Bartholomä_Ort_3.jpg",
    "wiki": "https://en.wikipedia.org/wiki/Sankt_Bartholom%C3%A4",
    "about": "Sankt Bartholomä is a municipality in the district of Graz-Umgebung in the Austrian state of Styria."
+  },
+  "konigssee/Obersee": {
+   "place": "konigssee",
+   "name": "Obersee",
+   "note": "A second, smaller lake fifteen minutes on foot beyond the far jetty. Almost nobody walks it.",
+   "mins": 75,
+   "kind": "nature",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": true,
+   "lat": 47.51611111,
+   "lon": 12.98833333,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Obersee_9.jpg/640px-Obersee_9.jpg",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Obersee_9.jpg/1000px-Obersee_9.jpg",
+   "photoFile": "Obersee_9.jpg",
+   "wiki": "https://de.wikipedia.org/wiki/Obersee_(K%C3%B6nigssee)",
+   "about": ""
+  },
+  "konigssee/The echo": {
+   "place": "konigssee",
+   "name": "The echo",
+   "note": "Halfway down, the boatman cuts the motor and plays a flugelhorn at the cliff. It comes back four times.",
+   "mins": 15,
+   "kind": "sight",
+   "ticket": false,
+   "indoor": false,
+   "closed": null,
+   "must": false,
+   "lat": 47.559,
+   "lon": 12.988,
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Elektroboot_der_Schifffahrt_K%C3%B6nigssee_.JPG/640px-Elektroboot_der_Schifffahrt_K%C3%B6nigssee_.JPG",
+   "photoBig": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Elektroboot_der_Schifffahrt_K%C3%B6nigssee_.JPG/1000px-Elektroboot_der_Schifffahrt_K%C3%B6nigssee_.JPG",
+   "photoFile": "Elektroboot der Schifffahrt Königssee .JPG",
+   "wiki": "https://de.wikipedia.org/wiki/K%C3%B6nigssee",
+   "about": ""
   },
   "konigssee/Malerwinkel": {
    "place": "konigssee",
@@ -14589,10 +15524,6 @@
   }
  },
  "credits": {
-  "Panorama di Genova (porto commerciale e porto antico).jpg": {
-   "lic": "Public domain",
-   "by": "Oliver"
-  },
   "Porto antico genova 1.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "w:it:Utente:Racchets"
@@ -14629,6 +15560,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Laurent Jerry"
   },
+  "Focaccia Genovese 02.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Alessio Sbarbaro User_talk:Yoggysot"
+  },
   "Portofino, Liguria (8859767966).jpg": {
    "lic": "CC BY 2.0",
    "by": "Michal Osmenda from Brussels, Belgium"
@@ -14644,6 +15579,10 @@
   "Urtijëi ududa da Bula ju.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention m"
+  },
+  "Palazzo Ducale piazza Matteotti 2.JPG": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Piergiulio90"
   },
   "Heidelberg Altstadt Schloss Luftbild.JPG": {
    "lic": "CC BY 4.0",
@@ -14685,9 +15624,9 @@
    "lic": "CC BY-SA 4.0",
    "by": "Didier Descouens"
   },
-  "Boccadasse e Portofino all'Alba.jpg": {
+  "Panorama Calata Bettolo - Genova Porto Antico - 02 06 2019.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Frabckpckr96"
+   "by": "Sidvics"
   },
   "12 Genua Aquarium mit Biosphäre (7776538902) (cropped).jpg": {
    "lic": "CC BY-SA 2.0",
@@ -14712,10 +15651,6 @@
   "Waltherplatz Bozen Luftansicht.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Aciarium"
-  },
-  "Villa Durazzo Centurione (Santa Margherita Ligure) - facciata a mare 1 2023-04-27.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Parma1983"
   },
   "20221020 Leuchtturm Lindau 05.jpg": {
    "lic": "CC BY 4.0",
@@ -14765,6 +15700,10 @@
    "lic": "CC BY 2.0",
    "by": "suedtirol-altoadige"
   },
+  "Piazza delle Erbe Genova 04.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Alessio Sbarbaro User_talk:Yoggysot"
+  },
   "Dominican Church (Bolzano).jpg": {
    "lic": "Public domain",
    "by": "User:Mattes"
@@ -14780,10 +15719,6 @@
   "Franz Demetz und Florian Mussner bei Kirrchtag in St. Ulrich.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Wolfgang Moroder"
-  },
-  "Mittenwald Ballenhausgasse 14-16 6455.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Pelz"
   },
   "Geisler and Secëda from Resciesa.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -14809,10 +15744,6 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tuxyso"
   },
-  "Mittenwald Kalvarienberg 1404.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Pelz"
-  },
   "Arche scaligere (Verona).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Didier Descouens"
@@ -14837,13 +15768,13 @@
    "lic": "CC BY-SA 3.0",
    "by": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention m"
   },
-  "Innsbruck (25038759325).jpg": {
-   "lic": "CC BY 2.0",
-   "by": "Bernd Thaller from Graz, Austria"
-  },
   "Seiser Alm im Herbst ©Manfred Kostner.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Sammerci"
+  },
+  "Boccadasse e Portofino all'Alba.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Frabckpckr96"
   },
   "Arpizadëur ziplà tl lën da Batista Walpoth Urtijëi.jpg": {
    "lic": "Public domain",
@@ -14889,6 +15820,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Parma1983"
   },
+  "Villa Durazzo Centurione (Santa Margherita Ligure) - facciata a mare 1 2023-04-27.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Parma1983"
+  },
   "ArchmuseumBozen 2023.jpeg": {
    "lic": "CC BY-SA 4.0",
    "by": "Adrian Michael"
@@ -14929,10 +15864,6 @@
    "lic": "CC BY 2.5",
    "by": "Diliff"
   },
-  "Wiesn2006 Luftaufnahme.jpg": {
-   "lic": "CC BY-SA 2.5",
-   "by": "Stefan Weigel"
-  },
   "Rathaus and Marienplatz from Peterskirche - August 2006.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Diliff"
@@ -14949,10 +15880,6 @@
    "lic": "GFDL",
    "by": "Kogo"
   },
-  "Rosenheim mittertor.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "G.Piezinger (Gerhard Piezinger) at de.wikipedia"
-  },
   "Olympiaschanze St. Moritz.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Garry Furrer"
@@ -14960,14 +15887,6 @@
   "Eibsee und Ammergauer Alpen.jpg": {
    "lic": "CC BY 3.0",
    "by": "Octagon"
-  },
-  "Ludwigsplatz 10 Rosenheim-1.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Rufus46"
-  },
-  "Exterior del Palacio de Nymphenburg, Múnich, Alemania61.JPG": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Diego Delso"
   },
   "Garmisch-Wohnhaus-Am-Kurpark6.JPG": {
    "lic": "CC0",
@@ -14989,6 +15908,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Jorge Royan"
   },
+  "Mittenwald Ballenhausgasse 14-16 6455.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Pelz"
+  },
   "Leutaschklamm (Marius Hoch) 27.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Marius Hoch"
@@ -15004,6 +15927,10 @@
   "Partnachklamm 2014a.JPG": {
    "lic": "CC BY-SA 4.0",
    "by": "Wikiolo"
+  },
+  "Mittenwald Kalvarienberg 1404.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Pelz"
   },
   "Mittenwald Lüftlmalerei Im Gries 53 318.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -15029,6 +15956,10 @@
    "lic": "CC BY-SA 4.0",
    "by": "Ricardalovesmonuments"
   },
+  "Graswangtal bjs0507-02.jpg": {
+   "lic": "CC0",
+   "by": "Bjs"
+  },
   "Mittenwald - Obermarkt (08) - Matthias-Klotz-Denkmal.jpg": {
    "lic": "CC BY 2.0",
    "by": "Pixelteufel"
@@ -15036,6 +15967,10 @@
   "Ettal, Linderhof 21.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "LBM1948"
+  },
+  "Innsbruck (25038759325).jpg": {
+   "lic": "CC BY 2.0",
+   "by": "Bernd Thaller from Graz, Austria"
   },
   "Isar valley near Mittenwald (SM sg1313z).png": {
    "lic": "PDM-owner",
@@ -15053,10 +15988,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Kritzolina"
   },
-  "Deutsches Museum Portrait 4.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Burkhard Mücke"
-  },
   "Exterior of Theatinerkirche, Munich.jpg": {
    "lic": "CC0",
    "by": "Wilfredor"
@@ -15068,6 +15999,10 @@
   "Geigenbaumuseum in (Mittenwald) Garmisch-Partenkirchen.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Ursula Jaeger"
+  },
+  "GER – BY – OBB — Lkr. Garmisch-Partenkirchen — Gde. Ettal — Ettal Ort — Kaiser-Ludwig-Platz 1 (Ettaler Klosterbrauerei · Schaufenster) 2025-09-19 Mattes.jpg": {
+   "lic": "CC BY 3.0 de",
+   "by": "User:Mateus2019"
   },
   "Kleber (statue).jpg": {
    "lic": "CC BY-SA 3.0",
@@ -15081,9 +16016,9 @@
    "lic": "CC BY-SA 3.0",
    "by": "Oberth"
   },
-  "Cathedrale-de-Strasbourg-IMG 1331.jpg": {
-   "lic": "CC BY-SA 2.0 fr",
-   "by": "Rama."
+  "Wiesn2006 Luftaufnahme.jpg": {
+   "lic": "CC BY-SA 2.5",
+   "by": "Stefan Weigel"
   },
   "Stift St Peter2.JPG": {
    "lic": "CC BY-SA 3.0",
@@ -15093,6 +16028,10 @@
    "lic": "CC BY-SA 2.5",
    "by": "Andrew Bossi"
   },
+  "Rosenheim mittertor.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "G.Piezinger (Gerhard Piezinger) at de.wikipedia"
+  },
   "Schlossplatz 180 Grad-Tag.jpg": {
    "lic": "Public domain",
    "by": "Rosephantom"
@@ -15100,10 +16039,6 @@
   "Salzbergwerk-Berchtesgaden.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Nize | Nicolai Schäfer"
-  },
-  "Espace vert de la Place de la République, Strasbourg.jpg": {
-   "lic": "CC BY-SA 2.0",
-   "by": "Javier Kohen from Kraków, Poland"
   },
   "Schwabentor1936.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -15117,6 +16052,18 @@
    "lic": "CC BY-SA 3.0",
    "by": "Snotty"
   },
+  "Ludwigsplatz 10 Rosenheim-1.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Rufus46"
+  },
+  "Exterior del Palacio de Nymphenburg, Múnich, Alemania61.JPG": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Diego Delso"
+  },
+  "Obersee 9.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Alupus"
+  },
   "Lokschuppen Rosenheim.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Bernhard Müller"
@@ -15124,10 +16071,6 @@
   "Salzburg, Getreidegasse 9, Mozarts Geburtshaus.jpg": {
    "lic": "CC BY-SA 3.0 at",
    "by": "Andreas Stiasny"
-  },
-  "Strasbourg Barrage Vauban après restauration 2012-01.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Claude TRUONG-NGOC"
   },
   "Augustiner Museum (Freiburg) jm9384.jpg": {
    "lic": "CC BY-SA 3.0",
@@ -15137,21 +16080,17 @@
    "lic": "CC BY-SA 3.0",
    "by": "Tilman2007"
   },
-  "Straßburg (Frankreich), Petite France -- 2011 -- 1759.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Dietmar Rabich"
-  },
   "St Martin (Freiburg) 3034 (cropped).jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "joergens.mi"
   },
-  "Strasbourg Cathedral Astronomical Clock - Diliff.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Diliff"
-  },
   "Rosenheim — Brücke über den Inn (Innstrasse).JPG": {
    "lic": "CC BY-SA 2.0",
    "by": "User:Mattes"
+  },
+  "Elektroboot der Schifffahrt Königssee .JPG": {
+   "lic": "CC BY 3.0",
+   "by": "Benreis"
   },
   "Salzburg- Schloss Mirabell - Nordost-Ansicht.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -15185,13 +16124,9 @@
    "lic": "CC BY-SA 4.0",
    "by": "Mtt1734"
   },
-  "Strassburg-Muenster-132-Westfassade-2017-gje.jpg": {
+  "Deutsches Museum Portrait 4.jpg": {
    "lic": "CC BY-SA 4.0",
-   "by": "Gerd Eichmann"
-  },
-  "Ponts couverts (Strasbourg) (1).jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Gzen92"
+   "by": "Burkhard Mücke"
   },
   "Salzburg Marko-Feingold-Steg Mönchsberg-8100.jpg": {
    "lic": "CC BY-SA 4.0",
@@ -15249,6 +16184,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "Reinhard Wolf, Talstraße 13, 63128 Dietzenbach. (selbst fotografiert); User Pumuckel42 on "
   },
+  "Cathedrale-de-Strasbourg-IMG 1331.jpg": {
+   "lic": "CC BY-SA 2.0 fr",
+   "by": "Rama."
+  },
   "Heidelberg Fussgaengerzone.JPG": {
    "lic": "Public domain",
    "by": "Rudolf Stricker"
@@ -15301,6 +16240,10 @@
    "lic": "CC BY-SA 3.0",
    "by": "UlrichAAB"
   },
+  "Espace vert de la Place de la République, Strasbourg.jpg": {
+   "lic": "CC BY-SA 2.0",
+   "by": "Javier Kohen from Kraków, Poland"
+  },
   "Henkersteg in Nürnberg.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Schlaier"
@@ -15313,41 +16256,29 @@
    "lic": "CC BY-SA 3.0",
    "by": "– Wladyslaw [Disk.]"
   },
-  "German Bratwürste.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Gerbis"
-  },
   "Maison Pfister Colmar 2011-04.jpg": {
    "lic": "CC BY-SA 3.0",
    "by": "Eric Gaba (Sting - fr:Sting)"
-  },
-  "Documentation center entrance nuernberg may2011.jpg": {
-   "lic": "CC BY 3.0",
-   "by": "KaterBegemot"
   },
   "Colmar Koïfhus, ancienne douane (29 Grand'Rue).JPG": {
    "lic": "CC BY-SA 4.0",
    "by": "Gzen92"
   },
-  "Berlin Museumsinsel Fernsehturm.jpg": {
-   "lic": "CC BY-SA 3.0",
-   "by": "Thomas Wolf, www.foto-tw.de"
-  },
   "Heidelberg Karzer 01.JPG": {
    "lic": "CC BY-SA 3.0",
    "by": "Llez"
   },
-  "BerlinBrandenburgerTor1985.jpg": {
+  "Strasbourg Barrage Vauban après restauration 2012-01.jpg": {
    "lic": "CC BY-SA 3.0",
-   "by": "Joergsam"
+   "by": "Claude TRUONG-NGOC"
   },
-  "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
+  "Straßburg (Frankreich), Petite France -- 2011 -- 1759.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Dietmar Rabich"
+  },
+  "Strasbourg Cathedral Astronomical Clock - Diliff.jpg": {
    "lic": "CC BY-SA 3.0",
-   "by": "Tuxyso"
-  },
-  "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
-   "lic": "CC BY 3.0 de",
-   "by": "Ansgar Koreng"
+   "by": "Diliff"
   },
   "Heidelberg Bergbahn 2016-02-27-16-17-19.jpg": {
    "lic": "CC BY 3.0",
@@ -15361,10 +16292,6 @@
    "lic": "CC BY-SA 4.0",
    "by": "Tilman2007"
   },
-  "Handwerkerhof an Weihnachten.jpg": {
-   "lic": "CC BY-SA 4.0",
-   "by": "Dumbo1401"
-  },
   "Albrecht-Dürer-Haus - Tiergärtnerplatz - Nuremberg, Germany - DSC02033.jpg": {
    "lic": "CC0",
    "by": "Daderot"
@@ -15377,7 +16304,15 @@
    "lic": "CC BY-SA 4.0",
    "by": "Renardo la vulpo"
   },
+  "Strassburg-Muenster-132-Westfassade-2017-gje.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gerd Eichmann"
+  },
   "Petite Venise depuis le pont de la rue des Écoles (Colmar) (8).jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Gzen92"
+  },
+  "Ponts couverts (Strasbourg) (1).jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Gzen92"
   },
@@ -15405,13 +16340,41 @@
    "lic": "CC BY-SA 3.0 de",
    "by": "Joachim F. Thurn"
   },
+  "German Bratwürste.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Gerbis"
+  },
+  "Documentation center entrance nuernberg may2011.jpg": {
+   "lic": "CC BY 3.0",
+   "by": "KaterBegemot"
+  },
+  "Berlin Museumsinsel Fernsehturm.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Thomas Wolf, www.foto-tw.de"
+  },
+  "BerlinBrandenburgerTor1985.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Joergsam"
+  },
+  "Germanisches-Nationalmuseum-Nuernberg-2012.jpg": {
+   "lic": "CC BY-SA 3.0",
+   "by": "Tuxyso"
+  },
   "Berlin - Berliner Fernsehturm - Fensterreinigung.jpg": {
    "lic": "FAL",
    "by": "Taxiarchos228"
   },
+  "150418 Konzerthaus Berlin Gendarmenmarkt.jpg": {
+   "lic": "CC BY 3.0 de",
+   "by": "Ansgar Koreng"
+  },
   "Memorial to the Murdered Jews of Europeabove.jpg": {
    "lic": "CC BY-SA 4.0",
    "by": "Alexander Blum"
+  },
+  "Handwerkerhof an Weihnachten.jpg": {
+   "lic": "CC BY-SA 4.0",
+   "by": "Dumbo1401"
   },
   "Hackesche höfe berlin.jpg": {
    "lic": "CC BY-SA 3.0 de",
@@ -15570,7 +16533,7 @@
     "nuremberg",
     "berlin"
    ],
-   "ride": 2726,
+   "ride": 2744,
    "stops": 29,
    "latest": "22:34",
    "arrive": "20:24"

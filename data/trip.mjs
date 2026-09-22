@@ -115,6 +115,9 @@ export const SIGHTS = {
     S("The caruggi", "Genua", "The old town lanes — the densest medieval quarter in Europe, and dark at noon.", { at: [44.40860, 8.93080], cimg: "Vicoli di Genova", must: 1, mins: 45, kind: "street" }),
     S("Porto Antico", "Porto Antico (Genua)", "Renzo Piano's rebuilt old harbour, five minutes down from the lanes.", { mins: 40, kind: "nature" }),
     S("Genoa Aquarium", "Acquario di Genova", "The biggest in Italy. Half a day if you let it be.", { mins: 120, kind: "museum", indoor: 1, ticket: 1 }),
+    S("Palazzo Ducale", "Palazzo Ducale (Genua)", "The doges' palace on Piazza De Ferrari. The courtyard is open late and free.", { mins: 35, kind: "palace" }),
+    S("Focaccia", "Focaccia", "Genoa's is thin, salty and wet with oil, sold by weight. Eat it standing up.", { at: [44.40950, 8.93200], cimg: "Focaccia genovese", must: 1, mins: 25, kind: "food" }),
+    S("Piazza delle Erbe at night", "Genua", "The little square behind the cathedral where the old town eats and drinks.", { at: [44.40760, 8.93200], cimg: "Piazza delle Erbe Genova", mins: 45, kind: "food" }),
     S("Boccadasse", "Boccadasse", "A fishing village swallowed by the city, still painted, 20 min by bus 31.", { mins: 60, kind: "nature" }),
   ],
   smargherita: [
@@ -199,6 +202,8 @@ export const SIGHTS = {
   ettal: [
     S("Ettal Abbey church", "Kloster Ettal", "Benedictine abbey from 1330. The dome fresco is the thing to look up at.", { must: 1, mins: 40, kind: "church", indoor: 1 }),
     S("Abbey shop and distillery", "Kloster Ettal", "The monks' liqueur, beer and cheese, sold at the gate.", { mins: 15, kind: "food", indoor: 1 }),
+    S("The abbey brewery", "Kloster Ettal", "They have brewed here since 1609. The Braustüberl is across the road from the gate.", { at: [47.56880, 11.09370], cimg: "Klosterbrauerei Ettal", mins: 50, kind: "food", indoor: 1 }),
+    S("Graswangtal meadows", "Graswangtal", "The flat valley behind the abbey, with the Ammergau Alps standing round it.", { mins: 40, kind: "nature" }),
     S("Schloss Linderhof", "Schloss Linderhof", "Ludwig II's small palace with the golden bedroom. Bus from Ettal.", { mins: 150, kind: "palace", ticket: 1 }),
   ],
   munich: [
@@ -240,6 +245,8 @@ export const SIGHTS = {
   konigssee: [
     S("The lakeshore", "Königssee", "Walled in by the Watzmann. The water is green and completely still.", { must: 1, mins: 40, kind: "nature" }),
     S("St Bartholomä", "St. Bartholomä", "The red onion domes on the far shore, reached only by the electric boat.", { at: [47.55280, 12.98420], must: 1, mins: 150, kind: "church", ticket: 1 }),
+    S("Obersee", "Obersee (Königssee)", "A second, smaller lake fifteen minutes on foot beyond the far jetty. Almost nobody walks it.", { must: 1, mins: 75, kind: "nature" }),
+    S("The echo", "Königssee", "Halfway down, the boatman cuts the motor and plays a flugelhorn at the cliff. It comes back four times.", { at: [47.55900, 12.98800], cimg: "Königssee Elektroboot", mins: 15, kind: "sight" }),
     S("Malerwinkel", "Königssee", "A short marked loop to the painters' corner, for the view back down the lake.", { at: [47.59230, 12.98350], cimg: "Malerwinkel Königssee", mins: 60, kind: "nature" }),
   ],
   salzburg: [
@@ -351,18 +358,18 @@ export const DAYS = [
   {
     n: 1, iso: "2026-09-26", title: "Landing, and down to the sea", c: "#3E6E8E",
     hero: "milan", bags: 1,
-    intro: "Land at two, and the booked train out of Milan is not until five to seven. That is an afternoon at the Duomo, three metro stops from Centrale.",
+    intro: "Straight through to Genoa. The booked train is IC 685 at 18:55, so Milan is a change of station — with two and a half hours in it, if you want them.",
     paths: [
       { id: "A", name: "Malpensa, Milan, Genoa", why: "", seq: [
         { S: "mxp", arr: "14:00", dep: "15:20", stn: "Through passports and baggage, then down one level inside Terminal 1 — the Malpensa Express platform is in the building.",
           see: [] },
         B("15:20", "16:13", "Milan", ["mxp", "milan"], "Malpensa Express", "Fifty minutes into Milano Centrale. Buy at the machine on the platform."),
-        { S: "milan", arr: "16:13", dep: "18:55", stn: "Metro M3, the yellow line, straight down from Centrale. Three stops to Duomo, ten minutes. Leave the bags in the left luggage at Centrale.",
+        { S: "milan", arr: "16:13", dep: "18:55", stn: "Nothing here is compulsory — the seats are booked and the train goes at 18:55 either way. If you want the Duomo it is three stops on metro M3 and ten minutes, and the bag drop at Centrale is on the ground floor by platform 21.",
           see: ["Piazza del Duomo", "Milan Cathedral", "Galleria Vittorio Emanuele II", "La Scala",
                 "The cathedral roof", "Sforza Castle", "Santa Maria delle Grazie"] },
         B("18:55", "20:44", "Genoa", ["milan", "genoa"], "IC 685", "Booked. Direct, 1h49. Carriage 3, seats 5C and 5D."),
-        { S: "genoa", arr: "20:44", base: 1, stn: "Piazza Principe. The old town starts at the bottom of the station steps.",
-          see: ["Via Garibaldi", "Piazza De Ferrari", "The caruggi"] },
+        { S: "genoa", arr: "20:44", base: 1, stn: "Piazza Principe. The old town starts at the bottom of the station steps, and it is still awake.",
+          see: ["Focaccia", "Piazza De Ferrari", "The caruggi", "Piazza delle Erbe at night", "Palazzo Ducale"] },
       ]},
     ],
   },
@@ -372,17 +379,17 @@ export const DAYS = [
     intro: "Out early down the coast, the morning in Portofino, and back through Genoa for the booked train to Verona at 15:44.",
     paths: [
       { id: "A", name: "The Ligurian coast", why: "", seq: [
-        { S: "genoa", arr: "07:40", dep: "08:11", stn: "Back up to Piazza Principe.", see: [] },
-        T("08:11", "09:13", "Santa Margherita", ["genoa", "smargherita"], "An hour along the cliffs. Sit on the left."),
+        { S: "genoa", arr: "07:40", dep: "08:11", stn: "Back up to Piazza Principe. Take the bags — you do not come back to this hotel.", see: [] },
+        T("08:11", "09:13", "Santa Margherita", ["genoa", "smargherita"], "An hour along the cliffs. Sit on the left.", 0, 1),
         { S: "smargherita", arr: "09:13", dep: "09:40", stn: "Down to the harbour, five minutes. The Portofino bus (782) leaves from the front.",
-          see: ["The harbour front"] },
+          see: ["The harbour front", "Basilica di Santa Margherita"] },
         B("09:40", "10:00", "Portofino", ["smargherita", "portofino"], "Bus 782", "Round the headland, twenty minutes, roughly every twenty. The boat leaves the same quay, takes fifteen, and is the better ride.", 1),
         { S: "portofino", arr: "10:00", dep: "12:40", stn: "The bus puts you at the top of the village. Walk down to the water.",
           see: ["The Piazzetta", "The harbour", "Chiesa di San Giorgio", "Castello Brown", "The lighthouse walk"] },
         B("12:40", "13:05", "Santa Margherita", ["portofino", "smargherita"], "Bus 782", "Back round the headland.", 1),
         { S: "smargherita", arr: "13:05", dep: "13:32", stn: "Ten minutes back up to the station.",
-          see: ["Basilica di Santa Margherita"] },
-        T("13:32", "14:19", "Genoa", ["smargherita", "genoa"]),
+          see: ["Basilica di Santa Margherita", "The harbour front", "Villa Durazzo"] },
+        T("13:32", "14:19", "Genoa", ["smargherita", "genoa"], "Regionale — the InterCity on this stretch wants a paid seat and saves nothing.", 0, 1),
         { S: "genoa", arr: "14:19", dep: "15:44", stn: "You have an hour and a quarter and the bags. Via Garibaldi is ten minutes uphill from the station.",
           see: ["Via Garibaldi", "San Lorenzo Cathedral", "Piazza De Ferrari", "The caruggi", "Porto Antico"] },
         B("15:44", "19:17", "Verona", ["genoa", "verona"], "RV 3075", "Booked. 3h33, one change. Seats reserved."),
@@ -397,10 +404,10 @@ export const DAYS = [
     intro: "The booked train at 08:49 gets you to Bolzano before eleven — time for the iceman, then the bus up Val Gardena.",
     paths: [
       { id: "A", name: "Bolzano and Val Gardena", why: "", seq: [
-        { S: "verona", arr: "08:00", dep: "08:49", stn: "Back down to Porta Nuova.", see: [] },
+        { S: "verona", arr: "08:00", dep: "08:49", stn: "Back down to Porta Nuova — fifteen minutes on foot, or bus 11, 12 or 13 from Piazza Bra.", see: [] },
         B("08:49", "10:43", "Bolzano", ["verona", "bolzano"], "RE 16638", "Booked. Direct, 1h54. Ordinaria with reservation."),
         { S: "bolzano", arr: "10:43", dep: "12:16", stn: "The bus station is right beside the trains. Everything here is ten minutes on foot.",
-          see: ["Ötzi", "Waltherplatz", "Bolzano Cathedral"] },
+          see: ["Ötzi", "Waltherplatz", "Bolzano Cathedral", "The Laubengasse", "Obstmarkt", "Dominikanerkirche"] },
         T("12:16", "13:30", "Ortisei", ["bolzano", "ortisei"], "Bus 350, an hour and a quarter up into the mountains.", 1),
         { S: "ortisei", arr: "13:30", dep: "15:20", stn: "The bus stops in the middle of the village.",
           see: ["The village centre", "The woodcarvers", "Luis Trenker promenade", "St Ulrich parish church", "Seceda"] },
@@ -419,7 +426,8 @@ export const DAYS = [
     intro: "Three countries before lunch. Change at Brennero and again at Innsbruck, where you get an hour, and the last hour into Mittenwald is the best railway on this trip.",
     paths: [
       { id: "A", name: "Bolzano to Mittenwald, then Ettal", why: "", seq: [
-        { S: "bolzano", arr: "07:45", dep: "08:52", stn: "", see: [] },
+        { S: "bolzano", arr: "07:45", dep: "08:52", stn: "An hour before the train, and the arcades are two minutes from the platform.",
+          see: ["The Laubengasse", "Waltherplatz", "Obstmarkt"] },
         T("08:52", "11:14", "Innsbruck", ["bolzano", "innsbruck"], "Up the Adige and over the Brenner Pass. Change at Brennero."),
         { S: "innsbruck", arr: "11:14", dep: "12:37", stn: "Ten minutes down Museumstraße and you are in the old town.",
           see: ["Maria-Theresien-Straße", "Golden Roof", "Innsbruck Cathedral", "Hofkirche"] },
@@ -431,7 +439,7 @@ export const DAYS = [
           see: ["Ludwigstraße", "Old St Martin", "Mohrenplatz"] },
         T("15:56", "16:31", "Ettal", ["garmisch", "ettal"], "Bus 326, thirty-five minutes.", 1, 1),
         { S: "ettal", arr: "16:31", dep: "18:49", stn: "The bus stops at the abbey gate.",
-          see: ["Ettal Abbey church", "Abbey shop and distillery"] },
+          see: ["Ettal Abbey church", "Abbey shop and distillery", "The abbey brewery", "Graswangtal meadows"] },
         T("18:49", "19:54", "Mittenwald", ["ettal", "mittenwald"], "Bus back down to Oberammergau, then the train.", 0, 1),
         { S: "mittenwald", arr: "19:54", base: 1, stn: "",
           see: ["Obermarkt", "St Peter and Paul", "Ballenhausgasse"] },
@@ -452,8 +460,8 @@ export const DAYS = [
           see: ["Marienplatz", "Frauenkirche", "Viktualienmarkt", "St Peter's tower", "Odeonsplatz",
                 "Asamkirche", "Hofbräuhaus", "Residenz", "English Garden"] },
         T("19:40", "20:34", "Rosenheim", ["munich", "rosenheim"], "", 0, 1),
-        { S: "rosenheim", arr: "20:34", base: 1, stn: "Ten minutes from the station to Max-Josefs-Platz.",
-          see: ["Max-Josefs-Platz", "Ludwigsplatz"] },
+        { S: "rosenheim", arr: "20:34", base: 1, stn: "Ten minutes from the station to Max-Josefs-Platz, and it is a Wednesday night in Bavaria — things are open.",
+          see: ["Max-Josefs-Platz", "Ludwigsplatz", "The Inn riverside", "St Nikolaus"] },
       ]},
     ],
   },
@@ -463,13 +471,13 @@ export const DAYS = [
     intro: "The longest single day and the best one. Out at half seven, the green lake at eleven, and Salzburg from four until eight.",
     paths: [
       { id: "A", name: "Königssee and Salzburg", why: "", seq: [
-        { S: "rosenheim", arr: "07:00", dep: "07:30", stn: "", see: [] },
+        { S: "rosenheim", arr: "07:00", dep: "07:30", stn: "Early. Coffee at the station and go.", see: [] },
         T("07:30", "09:49", "Berchtesgaden", ["rosenheim", "berchtesgaden"], "Change at Freilassing.", 0, 1),
         { S: "berchtesgaden", arr: "09:49", dep: "10:34", stn: "Steep up to the Schlossplatz, or the bus. The Königssee buses go from outside the station.",
-          see: ["Schlossplatz", "Stiftskirche"] },
+          see: ["Schlossplatz", "Stiftskirche", "The Royal Palace"] },
         T("10:34", "11:10", "Königssee", ["berchtesgaden", "konigssee"], "Bus 841, half an hour.", 1, 1),
-        { S: "konigssee", arr: "11:10", dep: "14:42", stn: "Five minutes down to the jetty. The boats are electric and have been since 1909.",
-          see: ["The lakeshore", "St Bartholomä", "Malerwinkel"] },
+        { S: "konigssee", arr: "11:10", dep: "14:42", stn: "Five minutes down to the jetty. The boats are electric and have been since 1909 — buy the return to St Bartholomä.",
+          see: ["The lakeshore", "The echo", "St Bartholomä", "Obersee", "Malerwinkel"] },
         T("14:42", "16:07", "Salzburg", ["konigssee", "salzburg"], "Bus 840 straight through and over the border. The Deutschland-Ticket only covers it as far as Zollhäuser — buy the rest from the driver.", 1, 1),
         { S: "salzburg", arr: "16:07", dep: "20:03", stn: "The Mirabell gardens are ten minutes from the Hauptbahnhof and the old town is just over the river from them.",
           see: ["Mirabell Gardens", "Makartsteg", "Getreidegasse", "Mozart's birthplace", "Residenzplatz",
@@ -485,7 +493,8 @@ export const DAYS = [
     intro: "The one transfer day, and it is a real one: ten hours of train across the whole width of Germany, broken by an hour and a half on the Bodensee and two in Freiburg.",
     paths: [
       { id: "A", name: "Lindau, Freiburg, Strasbourg", why: "", seq: [
-        { S: "rosenheim", arr: "07:30", dep: "08:33", stn: "", see: [] },
+        { S: "rosenheim", arr: "07:30", dep: "08:33", stn: "An hour before the long day starts. The square is ten minutes away and the bakeries are open.",
+          see: ["Max-Josefs-Platz", "Mittertor", "Ludwigsplatz"] },
         T("08:33", "12:15", "Lindau", ["rosenheim", "lindau"], "Through Munich and Memmingen. Nearly four hours — this is the long day.", 0, 1),
         { S: "lindau", arr: "11:07", dep: "12:33", stn: "The station is on the island, two minutes from the harbour.",
           see: ["The harbour", "Mangturm", "Maximilianstraße", "Altes Rathaus", "St Peter and the Diebsturm"] },
@@ -515,7 +524,7 @@ export const DAYS = [
                 "Collégiale Saint-Martin", "Unterlinden Museum", "Bartholdi Museum"] },
         T("17:02", "20:44", "Heidelberg", ["colmar", "heidelberg"], "Back over the Rhine. Three changes, and the last one is the long one.", 0, 1),
         { S: "heidelberg", arr: "20:44", base: 1, stn: "Bus 32 or tram 5 from the Hauptbahnhof into the old town — it is a long walk otherwise.",
-          see: ["Hauptstraße", "Marktplatz and Church of the Holy Spirit"] },
+          see: ["Hauptstraße", "Marktplatz and Church of the Holy Spirit", "Old Bridge"] },
       ]},
     ],
   },
