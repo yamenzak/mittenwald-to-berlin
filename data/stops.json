@@ -1,17 +1,80 @@
 {
+ "mxp": {
+  "lat": 45.6306,
+  "lon": 8.7281,
+  "name": "Malpensa Aeroporto Terminal 1",
+  "src": "pinned",
+  "km": 0
+ },
+ "milan": {
+  "lat": 45.4862,
+  "lon": 9.205,
+  "name": "Milano Centrale",
+  "src": "pinned",
+  "km": 3.01
+ },
+ "genoa": {
+  "lat": 44.417,
+  "lon": 8.92,
+  "name": "Genova Piazza Principe",
+  "src": "pinned",
+  "km": 1.06
+ },
+ "smargherita": {
+  "lat": 44.3345,
+  "lon": 9.2093,
+  "name": "S. Margherita Ligure-Portofino",
+  "src": "pinned",
+  "km": 0.6
+ },
+ "portofino": {
+  "lat": 44.3034,
+  "lon": 9.2097,
+  "name": "Portofino, Piazzetta (bus)",
+  "src": "pinned",
+  "km": 0.02
+ },
+ "verona": {
+  "lat": 45.4288,
+  "lon": 10.982,
+  "name": "Verona Porta Nuova",
+  "src": "pinned",
+  "km": 1.41
+ },
+ "bolzano": {
+  "lat": 46.495,
+  "lon": 11.356,
+  "name": "Bolzano/Bozen",
+  "src": "pinned",
+  "km": 0.48
+ },
+ "ortisei": {
+  "lat": 46.576,
+  "lon": 11.672,
+  "name": "Ortisei/St. Ulrich, bus station",
+  "src": "pinned",
+  "km": 0.17
+ },
+ "scristina": {
+  "lat": 46.559,
+  "lon": 11.72,
+  "name": "S. Cristina Valgardena, bus station",
+  "src": "pinned",
+  "km": 0.1
+ },
+ "innsbruck": {
+  "lat": 47.2632,
+  "lon": 11.401,
+  "name": "Innsbruck Hauptbahnhof",
+  "src": "pinned",
+  "km": 0.76
+ },
  "mittenwald": {
   "lat": 47.44,
   "lon": 11.2655,
   "name": "Bahnhof Mittenwald",
   "src": "pinned",
   "km": 0.45
- },
- "seefeld": {
-  "lat": 47.32887,
-  "lon": 11.18933,
-  "name": "Bahnhof Seefeld in Tirol",
-  "src": "pinned",
-  "km": 0.1
  },
  "garmisch": {
   "lat": 47.49145,
@@ -20,33 +83,12 @@
   "src": "pinned",
   "km": 0.68
  },
- "oberau": {
-  "lat": 47.5616,
-  "lon": 11.1318,
-  "name": "Bahnhof Oberau",
-  "src": "pinned",
-  "km": 0.36
- },
  "ettal": {
   "lat": 47.5695,
   "lon": 11.0949,
   "name": "Ettal, Kloster (bus)",
   "src": "pinned",
   "km": 0.04
- },
- "oberammergau": {
-  "lat": 47.5983,
-  "lon": 11.0663,
-  "name": "Bahnhof Oberammergau",
-  "src": "pinned",
-  "km": 0.15
- },
- "murnau": {
-  "lat": 47.6823,
-  "lon": 11.193,
-  "name": "Bahnhof Murnau",
-  "src": "pinned",
-  "km": 1.11
  },
  "munich": {
   "lat": 48.14044,
@@ -55,54 +97,61 @@
   "src": "pinned",
   "km": 1.24
  },
- "augsburg": {
-  "lat": 48.36556,
-  "lon": 10.88639,
-  "name": "Augsburg Hauptbahnhof",
+ "rosenheim": {
+  "lat": 47.8506,
+  "lon": 12.1222,
+  "name": "Bahnhof Rosenheim",
   "src": "pinned",
-  "km": 1.11
+  "km": 0.79
  },
- "landsberg": {
-  "lat": 48.04727,
-  "lon": 10.8717,
-  "name": "Bahnhof Landsberg (Lech)",
+ "berchtesgaden": {
+  "lat": 47.629,
+  "lon": 13,
+  "name": "Berchtesgaden Hauptbahnhof",
   "src": "pinned",
-  "km": 0.51
+  "km": 0.41
  },
- "donauworth": {
-  "lat": 48.7155,
-  "lon": 10.7713,
-  "name": "Bahnhof Donauwörth",
+ "konigssee": {
+  "lat": 47.587,
+  "lon": 12.988,
+  "name": "Königssee, Seelände (bus)",
   "src": "pinned",
-  "km": 0.61
+  "km": 3.76
  },
- "nuremberg": {
-  "lat": 49.4455,
-  "lon": 11.0823,
-  "name": "Nürnberg Hauptbahnhof",
+ "salzburg": {
+  "lat": 47.813,
+  "lon": 13.046,
+  "name": "Salzburg Hauptbahnhof",
   "src": "pinned",
-  "km": 1.15
+  "km": 1.73
  },
- "bamberg": {
-  "lat": 49.9007,
-  "lon": 10.9019,
-  "name": "Bahnhof Bamberg",
+ "lindau": {
+  "lat": 47.545,
+  "lon": 9.681,
+  "name": "Lindau-Insel",
   "src": "pinned",
-  "km": 1.24
+  "km": 0.24
  },
- "rothenburg": {
-  "lat": 49.376,
-  "lon": 10.1934,
-  "name": "Bahnhof Rothenburg ob der Tauber",
+ "freiburg": {
+  "lat": 47.997,
+  "lon": 7.841,
+  "name": "Freiburg (Breisgau) Hauptbahnhof",
   "src": "pinned",
-  "km": 1.06
+  "km": 0.7
  },
- "wurzburg": {
-  "lat": 49.8017,
-  "lon": 9.9356,
-  "name": "Würzburg Hauptbahnhof",
+ "strasbourg": {
+  "lat": 48.585,
+  "lon": 7.734,
+  "name": "Strasbourg Gare Centrale",
   "src": "pinned",
-  "km": 0.93
+  "km": 1.05
+ },
+ "colmar": {
+  "lat": 48.073,
+  "lon": 7.346,
+  "name": "Gare de Colmar",
+  "src": "pinned",
+  "km": 1.12
  },
  "heidelberg": {
   "lat": 49.4037,
@@ -111,103 +160,12 @@
   "src": "pinned",
   "km": 1.73
  },
- "ulm": {
-  "lat": 48.3993,
-  "lon": 9.9824,
-  "name": "Ulm Hauptbahnhof",
+ "nuremberg": {
+  "lat": 49.4455,
+  "lon": 11.0823,
+  "name": "Nürnberg Hauptbahnhof",
   "src": "pinned",
-  "km": 0.39
- },
- "esslingen": {
-  "lat": 48.74253,
-  "lon": 9.3047,
-  "name": "Bahnhof Esslingen (Neckar)",
-  "src": "pinned",
-  "km": 0.5
- },
- "halle": {
-  "lat": 51.4775,
-  "lon": 11.9872,
-  "name": "Halle (Saale) Hauptbahnhof",
-  "src": "pinned",
-  "km": 1.33
- },
- "leipzig": {
-  "lat": 51.345,
-  "lon": 12.381,
-  "name": "Leipzig Hauptbahnhof",
-  "src": "pinned",
-  "km": 0.68
- },
- "fulda": {
-  "lat": 50.5544,
-  "lon": 9.6836,
-  "name": "Bahnhof Fulda",
-  "src": "pinned",
-  "km": 0.23
- },
- "eisenach": {
-  "lat": 50.9744,
-  "lon": 10.3268,
-  "name": "Eisenach Hauptbahnhof",
-  "src": "pinned",
-  "km": 1.24
- },
- "erfurt": {
-  "lat": 50.9723,
-  "lon": 11.038,
-  "name": "Erfurt Hauptbahnhof",
-  "src": "pinned",
-  "km": 0.89
- },
- "weimar": {
-  "lat": 50.993,
-  "lon": 11.3253,
-  "name": "Bahnhof Weimar",
-  "src": "pinned",
-  "km": 1.54
- },
- "naumburg": {
-  "lat": 51.162,
-  "lon": 11.7962,
-  "name": "Naumburg (Saale) Hauptbahnhof",
-  "src": "pinned",
-  "km": 1.43
- },
- "quedlinburg": {
-  "lat": 51.7903,
-  "lon": 11.1444,
-  "name": "Bahnhof Quedlinburg",
-  "src": "pinned",
-  "km": 0.52
- },
- "wernigerode": {
-  "lat": 51.83394,
-  "lon": 10.79358,
-  "name": "Wernigerode Hauptbahnhof",
-  "src": "pinned",
-  "km": 1.18
- },
- "thale": {
-  "lat": 51.74889,
-  "lon": 11.04389,
-  "name": "Thale Hauptbahnhof",
-  "src": "pinned",
-  "km": 0.44
- },
- "halberstadt": {
-  "lat": 51.89306,
-  "lon": 11.05917,
-  "name": "Bahnhof Halberstadt",
-  "src": "pinned",
-  "km": 0.52
- },
- "magdeburg": {
-  "lat": 52.1301,
-  "lon": 11.627,
-  "name": "Magdeburg Hauptbahnhof",
-  "src": "pinned",
-  "km": 0.79
+  "km": 1.15
  },
  "berlin": {
   "lat": 52.525,
@@ -215,26 +173,5 @@
   "name": "Berlin Hauptbahnhof",
   "src": "pinned",
   "km": 2.73
- },
- "friedberg": {
-  "lat": 48.35306,
-  "lon": 10.97556,
-  "name": "Bahnhof Friedberg (Bayern)",
-  "src": "pinned",
-  "km": 0.67
- },
- "jena": {
-  "lat": 50.92417,
-  "lon": 11.59139,
-  "name": "Bahnhof Jena Paradies",
-  "src": "pinned",
-  "km": 0.49
- },
- "saalfeld": {
-  "lat": 50.65028,
-  "lon": 11.36889,
-  "name": "Bahnhof Saalfeld (Saale)",
-  "src": "pinned",
-  "km": 1.03
  }
 }

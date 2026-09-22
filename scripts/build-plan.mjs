@@ -15,7 +15,7 @@
    itinerary is checked again before it is accepted. Nothing in this file can
    put her on an ICE she has no ticket for. */
 import { writeFileSync, readFileSync, existsSync } from "node:fs";
-import { DAYS, PLACES, PRESETS, SIGHTS, TRIP } from "../data/trip.mjs";
+import { DAYS, PLACES, PRESETS, SIGHTS, TICKETS, TRIP } from "../data/trip.mjs";
 
 const API = "https://api.transitous.org/api/v1";
 const HERE = (f) => new URL("../data/" + f, import.meta.url).pathname;
@@ -71,7 +71,10 @@ const TRANSIT = (l) => l.mode && l.mode !== "WALK";
    and would have put her on a train she had no ticket for, which is the one
    thing this plan promises never to do. Anything on this list is refused
    whatever mode the feed calls it. */
-const NOT_ON_THIS_TICKET = /^(HSB|WEG|BSB|SWEG-Bergbahn|Zugspitzbahn|ZSB|Wendelsteinbahn|Bayerische Zugspitzbahn)$/i;
+/* Private operators that sell their own seats. Westbahn runs Salzburg–Munich
+   and reports as regional; no German or Austrian regional ticket is valid on
+   it, so it must not turn up on a leg the Deutschland-Ticket is paying for. */
+const NOT_ON_THIS_TICKET = /^(HSB|WEG|BSB|SWEG-Bergbahn|Zugspitzbahn|ZSB|Wendelsteinbahn|Bayerische Zugspitzbahn|WB|WESTbahn)( ?\d+)?$/i;
 const privateRail = (l) =>
   NOT_ON_THIS_TICKET.test((l.routeShortName || "").trim()) ||
   /schmalspurbahn|brockenbahn|harzquerbahn|zugspitzbahn/i.test(l.routeLongName || l.agencyName || "");
@@ -91,9 +94,10 @@ const tooTight = (it) => {
   });
 };
 
-const covered = (it) => {
+const covered = (it, only) => {
   const legs = it.legs.filter(TRANSIT);
-  return legs.every((l) => COVERED.has(l.mode)) && !legs.some(privateRail) && !tooTight(it);
+  const ok = only ? new Set(only) : COVERED;
+  return legs.every((l) => ok.has(l.mode)) && !legs.some(privateRail) && !tooTight(it);
 };
 
 function shape(it) {
@@ -121,17 +125,18 @@ function shape(it) {
   };
 }
 
-async function connections(fromKey, toKey, whenIso) {
+async function connections(fromKey, toKey, whenIso, only) {
   const a = stops[fromKey], b = stops[toKey];
-  const ck = `${fromKey}|${toKey}|${whenIso}`;
+  const modes = (only || TRIP.ticket.modes).join(",");
+  const ck = `${fromKey}|${toKey}|${whenIso}|${modes}`;
   if (cache[ck]) return cache[ck];
   const res = await api("/plan", {
     fromPlace: `${a.lat},${a.lon}`, toPlace: `${b.lat},${b.lon}`,
-    time: whenIso, numItineraries: 8, transitModes: MODES,
+    time: whenIso, numItineraries: 8, transitModes: modes,
     arriveBy: "false", maxPreTransitTime: 1200, pedestrianProfile: "FOOT",
   });
   await sleep(350);
-  const list = (res.itineraries || []).filter(covered).map(shape).filter(Boolean)
+  const list = (res.itineraries || []).filter((it) => covered(it, only)).map(shape).filter(Boolean)
     .sort((x, y) => new Date(x.depIso) - new Date(y.depIso));
   cache[ck] = list;
   return list;
@@ -409,6 +414,27 @@ for (const day of DAYS) {
       }
 
       const from = step.via[0], to = step.via[step.via.length - 1];
+
+      /* A train that is already paid for. There is nothing to search: the
+         times are printed on a ticket and the plan has to fit round them. */
+      if (step.book) {
+        const depIso = at(day.iso, step.dep).toISOString();
+        const arrIso = at(day.iso, step.arr).toISOString();
+        const d = between(depIso, arrIso);
+        ride += d;
+        seq.push({
+          kind: "move", from, to, note: step.x || "", bus: step.M === "Bus", booked: step.book,
+          fromStop: stops[from].name, toStop: stops[to].name,
+          fromLL: [stops[from].lat, stops[from].lon], toLL: [stops[to].lat, stops[to].lon],
+          dep: step.dep, arr: step.arr, depIso, arrIso, dur: d, changes: 0,
+          legs: [{ line: step.book, mode: "BOOKED", dep: step.dep, arr: step.arr,
+                   from: stops[from].name, to: stops[to].name }],
+          gaps: [], later: [],
+        });
+        clock = arrIso;
+        continue;
+      }
+
       const prev = [...seq].reverse().find((x) => x.kind === "stop");
       // Waiting for the departure she wrote down can cost two hours when the
       // line is two-hourly, so the search starts a little earlier and then takes
@@ -425,7 +451,7 @@ for (const day of DAYS) {
       const searchFrom = new Date(Math.max(+earliest, +wantedDep - 75 * 60000));
 
       let list = [];
-      try { list = await connections(from, to, searchFrom.toISOString()); }
+      try { list = await connections(from, to, searchFrom.toISOString(), step.only); }
       catch (e) { warn.push(`day ${day.n}${path.id}: ${from}→${to} — ${e.message}`); }
 
       let usable = list.filter((c) => new Date(c.depIso) >= earliest);
@@ -633,6 +659,7 @@ out.presets = PRESETS.map((pre) => {
 
 writeFileSync(HERE(".plan-cache.json"), JSON.stringify(cache));
 writeFileSync(HERE(".walk-cache.json"), JSON.stringify(walkCache));
+out.tickets = TICKETS;
 writeFileSync(HERE("plan.json"), JSON.stringify(out, null, 1));
 console.log(`\nwrote data/plan.json`);
 if (warn.length) { console.log(`\n${warn.length} thing(s) worth knowing:`); warn.forEach((w) => console.log("  " + w)); }

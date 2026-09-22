@@ -20,7 +20,7 @@
      own fares, and the Zugspitze rack railway is the same. Everything here
      that suggests a train refuses them by name as well as by mode. */
   const TICKET_MODES = new Set(D.trip.ticket.modes);
-  const PRIVATE_RAIL = /^(HSB|WEG|BSB|ZSB|Zugspitzbahn|Wendelsteinbahn)$/i;
+  const PRIVATE_RAIL = /^(HSB|WEG|BSB|ZSB|Zugspitzbahn|Wendelsteinbahn|WB|WESTbahn)( ?\d+)?$/i;
   const onTicket = (legs) => legs.length > 0 && legs.every((l) =>
     TICKET_MODES.has(l.mode) && !PRIVATE_RAIL.test((l.routeShortName || "").trim()));
 
@@ -406,12 +406,12 @@
 
   function render() {
     const y = window.scrollY;
-    app.innerHTML = viewDay(openDay || (todayDay() || D.days[0]).n);
+    app.innerHTML = viewAll();
     if (keepScroll && y) window.scrollTo(0, y);
     paintDates();
     const tc = document.querySelector('meta[name="theme-color"]');
     if (tc) tc.setAttribute("content", getComputedStyle(document.documentElement).getPropertyValue("--chrome").trim() || "#16211C");
-    drawMap();
+    drawMaps();
     paintPulse();
   }
 
@@ -422,7 +422,7 @@
     const l = liveFor(m);
     if (!l) return "";
     const out = [];
-    if (l.cancelled) out.push(note("bad", `${(isBus(m) ? "This bus is cancelled" : "This train is cancelled")}. Tap “Find me another way” — it only ever suggests trains your ticket covers.`));
+    if (l.cancelled) out.push(note("bad", `${(isBus(m) ? "This bus is cancelled" : "This train is cancelled")}. Tap “Find me another way”.`));
     else if (l.depDelay >= 5) out.push(note("warn", `Running ${l.depDelay} minutes late — leaves ${hhmm(l.realDep)}, in at ${hhmm(l.realArr)}.`));
     if (l.trackChanged) out.push(note("warn", `${(isBus(m) ? "Stop changed to" : "Platform changed to")} ${l.track}. Check the board when you get there.`));
     const tight = (l.gaps || []).filter((g) => g < 6);
@@ -464,12 +464,16 @@
   /* ---------- a day ---------- */
   /* The same day strip the walkthrough has. Reading Thursday and wanting
      Friday should not mean going back to the front page. */
-  function dayStrip(cur, attr) {
-    return `<div class="days">${D.days.map((d) => `<button class="dchip${dayDate(d) === dayKey(now()) ? " today" : ""}"
-      data-${attr}="${d.n}" aria-pressed="${d.n === cur}">Day ${d.n}<small>${dateShort(d.iso)}</small></button>`).join("")}</div>`;
+  /* Nine days on one page, so this scrolls rather than switches. It stays at
+     the top of the screen because the thing you want on day six is day six,
+     not a trip back to the front. */
+  function dayStrip() {
+    const today = D.days.find((d) => dayDate(d) === dayKey(now()));
+    return `<div class="days" id="daynav">${D.days.map((d) => `<button class="dchip${today && d.n === today.n ? " today" : ""}"
+      data-goday="${d.n}">Day ${d.n}<small>${dateShort(d.iso)}</small></button>`).join("")}</div>`;
   }
 
-  function viewDay(n) {
+  function daySection(n) {
     const day = D.days.find((d) => d.n === n) || D.days[0];
     const path = pathOf(day);
     // The plan can be moved onto other dates, so "today" is the shifted date,
@@ -503,18 +507,77 @@
     }).join("");
 
     const last = path.seq.filter((x) => x.kind === "stop").pop();
-    return `<div class="wrap">
-      ${dayStrip(day.n, "goday")}
+    return `<section class="day" id="day-${day.n}">
       ${heroCard(day, `Day ${day.n} · ${weekday(day.iso)} ${dateShort(day.iso)}`, dayText(day, path).title, heroOf(day, path))}
       <div class="card pad"><p class="lead" style="margin:0">${esc(dayText(day, path).intro)}</p></div>
       ${day.holiday ? note("warn", holidayText(day)) : ""}
       ${bagsOf(day, path) ? note("calm", `Bags with you today. Tonight is ${esc(place(last.place).n)}.`) : ""}
+      ${ticketsForDay(day.n)}
       ${choose}
       <div class="label">The day, in order</div>
       <div class="tl">${body}</div>
-      <div class="card"><div id="map"></div></div>
+      <div class="card"><div class="daymap" id="map-${day.n}" data-day="${day.n}"></div></div>
+    </section>`;
+  }
+
+  /* ---------- the whole trip, in one scroll ---------- */
+  function viewAll() {
+    const P = TRIP;
+    /* Eight beds to book, which is the thing you need before you leave and
+       the thing the day pages cannot tell you because each only knows its own
+       night. */
+    const beds = bedsNow().filter((b) => !b.last);
+    return `<div class="wrap">
+      ${dayStrip()}
+      <div class="card pad">
+        <div class="kicker">${esc(span(D.days[0].iso, D.days[D.days.length - 1].iso))}</div>
+        <h2 style="margin:.2em 0 .35em">${esc(P.name || D.trip.title)}</h2>
+        <p class="lead" style="margin:0 0 .6em">${esc(P.sub || "")}</p>
+        <div class="mfoot">
+          <span class="chip">${D.days.length} days</span>
+          <span class="chip">${(P.towns || []).length} towns</span>
+          <span class="chip">${dur(P.ride || 0)} on trains</span>
+        </div>
+      </div>
+      ${beds.length ? `<div class="label">Where you sleep</div>
+        <div class="card pad"><div class="walkplan">${beds.map((b) => `
+          <div class="wbody tk"><div class="wname">${esc(place(b.place).n)}${b.nights > 1 ? `<span class="star">${b.nights} nights</span>` : ""}</div>
+          <div class="wsay">${esc(weekday(b.from))} ${esc(dateShort(b.from))}${b.nights > 1 ? " onwards" : ""} · in by ${esc(b.in)}</div></div>`).join("")}</div></div>` : ""}
+      ${ticketsCard()}
+      ${D.days.map((d) => daySection(d.n)).join("")}
       ${troubleCard()}
       ${footer()}</div>`;
+  }
+
+  /* ---------- what to buy ---------- */
+  /* Three trains are already paid for and the rest are not, and the difference
+     matters most at a ticket machine in a country whose language you do not
+     read. Everything bookable is here once, at the top, and again on the day
+     it is used. */
+  function ticketsCard() {
+    const t = D.tickets || [];
+    if (!t.length) return "";
+    const booked = t.filter((x) => x.booked);
+    const pre = t.filter((x) => !x.booked && x.pre);
+    const onDay = t.filter((x) => !x.booked && !x.pre);
+    const row = (x) => `<div class="wbody tk">
+        <div class="wname">${esc(x.name)}${x.cost ? `<span class="star">${esc(x.cost)}</span>` : ""}</div>
+        <div class="wsay">Day ${x.day} · ${esc(x.detail)}</div>
+      </div>`;
+    const group = (label, list) => list.length
+      ? `<div class="label">${label}</div><div class="walkplan">${list.map(row).join("")}</div>` : "";
+    return `<div class="card pad" id="tickets">
+      ${group("Already booked", booked)}
+      ${group("Book before you go", pre)}
+      ${group("Buy on the day", onDay)}
+    </div>`;
+  }
+
+  function ticketsForDay(n) {
+    const t = (D.tickets || []).filter((x) => x.day === n);
+    if (!t.length) return "";
+    return t.map((x) => note(x.booked ? "calm" : "warn",
+      `${x.booked ? "Booked" : "Ticket"} — ${x.name}. ${x.detail}`)).join("");
   }
 
   /* ---------- where there is time to eat ---------- */
@@ -586,6 +649,18 @@
     return at < 0 ? null : seq.slice(at + 1).find((x) => x.kind === "move" && !x.missing) || null;
   };
 
+  const COUNTRY = { DE: "Germany", AT: "Austria", IT: "Italy", FR: "France" };
+  const countryOf = (p) => COUNTRY[p.country] || "Germany";
+  const MONTH = ["January", "February", "March", "April", "May", "June",
+                 "July", "August", "September", "October", "November", "December"];
+  const monthName = (iso) => MONTH[+iso.slice(5, 7) - 1];
+  /* The trip runs over the end of September, so "26–04 September" is wrong in
+     a way nobody would read twice. */
+  const span = (a, b) => {
+    const d = (iso) => +iso.slice(8) + " " + monthName(iso);
+    return (a.slice(5, 7) === b.slice(5, 7) ? `${+a.slice(8)}–${d(b)}` : `${d(a)} – ${d(b)}`) + " " + a.slice(0, 4);
+  };
+
   function stopBlock(day, s, i, isToday) {
     const p = place(s.place);
     const t = now();
@@ -607,7 +682,7 @@
         <div class="mfoot">
           ${s.route && s.route.maps ? `<a class="chip go" href="${esc(s.route.maps)}" target="_blank" rel="noopener">${svg("route")} Walk this route</a>` : ""}
           <a class="chip" href="${gmaps(p.name || p.n)}" target="_blank" rel="noopener">${svg("pin")} Station</a>
-          <a class="chip" href="${gmaps(p.n + ", " + (p.country === "AT" ? "Austria" : "Germany"))}" target="_blank" rel="noopener">${svg("map")} Town</a>
+          <a class="chip" href="${gmaps(p.n + ", " + countryOf(p))}" target="_blank" rel="noopener">${svg("map")} Town</a>
           ${bagsOf(day) && !s.base && s.free ? `<a class="chip" href="${gmaps("Gepäckschließfächer " + (p.name || p.n))}" target="_blank" rel="noopener">Lockers</a>` : ""}
         </div>
       </div></div>`;
@@ -669,8 +744,8 @@
       const gap = i > 0 ? m.gaps[i - 1] : null;
       return (gap != null ? `<div class="change${gap < 8 ? " tight" : ""}">${svg("walk")} ${gap} min to change at ${esc(m.legs[i - 1].to)}${gap < 8 ? " — " + "be ready by the door" : ""}</div>` : "") +
         `<div class="mrow">
-          <span class="line${leg.mode === "BUS" ? " bus" : ""}">${esc(leg.line)}</span>
-          <span class="leg"><span class="lt">${i === 0 ? timeBtn(leg.dep, m.from, m.to, m.depIso) : esc(leg.dep)} → ${esc(leg.arr)}</span>
+          <span class="line${leg.mode === "BUS" || (m.booked && m.bus) ? " bus" : ""}">${esc(leg.line)}</span>
+          <span class="leg"><span class="lt">${i === 0 && !m.booked ? timeBtn(leg.dep, m.from, m.to, m.depIso) : esc(leg.dep)} → ${esc(leg.arr)}</span>
           <span class="lp">${esc(leg.from.replace(/^Bahnhof[,\s]+/i, ""))} → ${esc(leg.to.replace(/^Bahnhof[,\s]+/i, ""))}</span></span>
           ${leg.track ? `<span class="plat"><b>${esc(leg.track)}</b><span>plat</span></span>` : ""}
         </div>`;
@@ -682,6 +757,7 @@
         ${m.note ? `<div class="change">${svg("info")} ${esc(moveNote(day, m))}</div>` : ""}
         <div class="mfoot">
           <span class="chip">${dur(m.dur)} · ${m.changes ? m.changes + " " + (m.changes > 1 ? "changes" : "change") : "direct"}</span>
+          ${m.booked ? `<span class="chip book">Booked</span>` : ""}
           <a class="chip" href="${gdir(m.fromStop, m.toStop, "transit")}" target="_blank" rel="noopener">Open in Maps</a>
         </div>
       </div>${isToday ? liveAlerts(m) : ""}</div>`;
@@ -691,15 +767,36 @@
   /* One day at a time, which is the only scale that is useful once the line is
      fixed: the towns in order, numbered, with the sights as small dots so the
      map shows what there is to see and not only where the platforms are. */
-  let map = null, layer = null;
-  function drawMap() {
-    const el = document.getElementById("map");
-    if (!el) return;
+  const maps = new Map();
+  let mapWatch = null;
+
+  /* Nine maps on one page is nine Leaflet instances and 200-odd tiles, so none
+     of them is built until it is nearly on screen. Scrolling past day two must
+     not pay for day nine. */
+  function drawMaps() {
+    maps.forEach((m) => m.remove());
+    maps.clear();
+    if (mapWatch) { mapWatch.disconnect(); mapWatch = null; }
+    const els = [...document.querySelectorAll(".daymap")];
+    if (!els.length) return;
+    if (!window.IntersectionObserver) { els.forEach(drawDayMap); return; }
+    mapWatch = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        mapWatch.unobserve(en.target);
+        drawDayMap(en.target);
+      });
+    }, { rootMargin: "400px 0px" });
+    els.forEach((el) => mapWatch.observe(el));
+  }
+
+  function drawDayMap(el) {
+    if (!el || maps.has(el.id)) return;
     if (!window.L) {
       el.innerHTML = `<div class="mapfall"><p>The map needs a connection. Every stop still opens in Google Maps.</p></div>`;
       return;
     }
-    const day = D.days.find((d) => d.n === (openDay || (todayDay() || D.days[0]).n)) || D.days[0];
+    const day = D.days.find((d) => d.n === +el.dataset.day) || D.days[0];
     const path = pathOf(day);
     const pts = [];
     path.seq.forEach((st) => {
@@ -708,15 +805,13 @@
       if (p.lat != null) pts.push({ ll: [p.lat, p.lon], n: p.n, night: st.base, stop: st });
     });
 
-    if (map) { map.remove(); map = null; }
-    // The offline notice may have been painted here a moment ago, before the
-    // map script finished loading. Leaflet builds around it rather than over it.
     el.innerHTML = "";
-    map = L.map(el, { scrollWheelZoom: false, attributionControl: true });
+    const map = L.map(el, { scrollWheelZoom: false, attributionControl: true });
+    maps.set(el.id, map);
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
-    layer = L.layerGroup().addTo(map);
+    const layer = L.layerGroup().addTo(map);
 
     if (pts.length > 1) L.polyline(pts.map((p) => p.ll), { color: day.c, weight: 4, opacity: .85 }).addTo(layer);
     pts.forEach((p, i) => {
@@ -734,13 +829,10 @@
       });
     });
 
-    // The container is still being laid out on the first paint, so the first
-    // fit is against the wrong height. Fit again once the browser has settled.
     const fit = () => {
-      if (!map) return;
       map.invalidateSize();
       if (pts.length) map.fitBounds(L.latLngBounds(pts.map((p) => p.ll)).pad(0.22));
-      else map.setView([50.5, 11], 6);
+      else map.setView([48, 10], 5);
     };
     fit();
     setTimeout(fit, 60);
@@ -833,7 +925,7 @@
   }
 
 
-  const footer = () => `<div class="foot">Real times from the German timetable, regional trains only — never ICE, IC or EC.
+  const footer = () => `<div class="foot">Real times from the European timetable — Italy, Austria, Germany and France.
     Platforms still change on the day, so glance at the board.
     Emergencies anywhere in Europe: <a href="tel:112">112</a>.
     Photographs from Wikimedia Commons, credited on each card; maps © OpenStreetMap.</div>`;
@@ -1015,7 +1107,7 @@
     const dest = place(target.place);
 
     sheet.innerHTML = `<div class="grab"></div><div class="sbody"><h2>Finding another way</h2>
-      <p class="about">Looking for the next trains to ${esc(dest.n)} that your ticket covers…</p></div>`;
+      <p class="about">Looking for the next trains to ${esc(dest.n)}…</p></div>`;
     scrim.hidden = false; sheet.hidden = false;
     requestAnimationFrame(() => { scrim.classList.add("on"); sheet.classList.add("on"); });
 
@@ -1040,10 +1132,10 @@
       const opts = (res.itineraries || [])
         .filter((it) => onTicket(it.legs.filter((l) => l.mode !== "WALK")))
         .slice(0, 4);
-      if (!opts.length) { sheet.querySelector(".about").textContent = "Nothing regional comes up from here right now. Ask at the ticket desk — say “Ich habe meinen Anschluss verpasst.”"; return; }
+      if (!opts.length) { sheet.querySelector(".about").textContent = "Nothing comes up from here right now. Ask at the ticket desk."; return; }
       sheet.innerHTML = `<div class="grab"></div><div class="sbody">
         <h2>Ways to ${esc(dest.n)}</h2>
-        <p class="about">From where you are now. Only trains and buses your ticket covers.</p>
+        <p class="about">From where you are now.</p>
         ${opts.map((it) => {
           const L2 = it.legs.filter((l) => l.mode !== "WALK");
           if (!L2.length) return "";
@@ -1056,7 +1148,7 @@
         }).join("")}
         <div class="btns" style="padding-left:0;padding-right:0"><button class="btn ghost" data-close="1">Close</button></div></div>`;
     } catch (e) {
-      sheet.querySelector(".about").textContent = "I could not reach the timetable. Your ticket is valid on the next regional train either way — ask at the desk and say “Ich habe meinen Anschluss verpasst.”";
+      sheet.querySelector(".about").textContent = "I could not reach the timetable. Ask at the desk — a missed connection is normally re-routed free.";
     }
   }
 
@@ -1072,7 +1164,7 @@
 
     if (!r || !r.legs) {
       sheet.querySelector(".about").textContent =
-        "I could not reach the timetable. Your ticket is valid on the next regional train either way — ask at the desk and say “Ich habe meinen Anschluss verpasst.”";
+        "I could not reach the timetable. Ask at the desk — a missed connection is normally re-routed free.";
       return;
     }
 
@@ -1165,7 +1257,11 @@
       const [f, to, iso] = t.dataset.freq.split("|");
       return showFreq(f, to, iso || null);
     }
-    if (t.dataset.goday) { push(); openDay = +t.dataset.goday; return go(() => { window.scrollTo(0, 0); render(); }); }
+    if (t.dataset.goday) {
+      const el = document.getElementById("day-" + t.dataset.goday);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
     if (t.dataset.sight) return openSight(t.dataset.sight);
     if (t.dataset.tick) {
       const k = t.dataset.tick;
@@ -1187,7 +1283,7 @@
   window.addEventListener("popstate", () => { window.history.pushState({ mb: 1 }, ""); goBack(); });
   window.history.pushState({ mb: 1 }, "");
   // The map script is deferred, so the first paint can happen without it.
-  window.addEventListener("load", () => drawMap());
+  window.addEventListener("load", () => drawMaps());
   window.addEventListener("online", () => { online = true; refreshLive(true); });
   window.addEventListener("offline", () => { online = false; liveState.status = "off"; paintPulse(); });
   document.addEventListener("visibilitychange", () => { if (!document.hidden) { render(); refreshLive(); } });

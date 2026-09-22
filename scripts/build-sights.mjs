@@ -39,9 +39,16 @@ async function summary(title) {
     if (!d.thumbnail) continue; // no photo here; try the other language
     return { lang, d };
   }
-  // last resort: accept a German article with no photo, so at least the link works
-  const d = await getJSON(`https://de.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g, "_"))}`);
-  return d && d.title ? { lang: "de", d } : null;
+  /* Last resort: an article with no photo of its own, so the link and the
+     coordinates still work and `cimg` supplies the picture. Both languages get
+     the second chance — checking only German meant an English-only subject
+     with no thumbnail could never resolve at all. */
+  for (const lang of ["de", "en"]) {
+    const d = await getJSON(`https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g, "_"))}`);
+    await sleep(120);
+    if (d && d.title && d.type !== "disambiguation") return { lang, d };
+  }
+  return null;
 }
 
 /* Wikimedia thumbnails are resizable by rewriting the width in the path. */
@@ -130,6 +137,15 @@ const TOWNWORD = {
   wittenberg: "Schlosskirche Wittenberg Turm", halle: "Halle Saale Marktplatz Roter Turm",
   halberstadt: "Halberstadt Fachwerk Altstadt",
   garmisch: "Partenkirchen Ludwigstraße", mittenwald: "Mittenwald Obermarkt Karwendel",
+  milan: "Milano Duomo piazza", genoa: "Genova porto antico panorama",
+  smargherita: "Santa Margherita Ligure porto", portofino: "Portofino",
+  verona: "Verona Arena piazza Bra", bolzano: "Bozen Waltherplatz Bolzano",
+  ortisei: "Ortisei Urtijei Val Gardena panorama", scristina: "Santa Cristina Valgardena panorama",
+  innsbruck: "Innsbruck Goldenes Dachl Altstadt", rosenheim: "Rosenheim Max-Josefs-Platz",
+  berchtesgaden: "Berchtesgaden Watzmann Ort", konigssee: "Königssee St. Bartholomä",
+  salzburg: "Salzburg Altstadt Festung Salzach", lindau: "Lindau Hafen Löwe Leuchtturm",
+  freiburg: "Freiburg Münster Münsterplatz", strasbourg: "Strasbourg Petite France cathédrale",
+  colmar: "Colmar Petite Venise maisons", mxp: "Aeroporto Milano Malpensa Terminal 1",
   seefeld: "Seefeld in Tirol Ortszentrum", oberau: "Oberau Loisachtal",
 };
 function fallbackTerm(key, title) {

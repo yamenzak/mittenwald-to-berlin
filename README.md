@@ -1,117 +1,49 @@
-# Mittenwald to Berlin
+# Abu Dhabi to Berlin
 
-A one-file trip planner for one traveller: five days of regional trains across
-Germany, 29 September to 3 October 2026, built so that the person carrying it
-never has to work anything out.
+A one-file trip planner for two travellers: nine days by train from Milan to
+Berlin by way of Liguria, the Dolomites, Bavaria, Salzburg and Alsace,
+26 September to 4 October 2026. Built so that nobody has to work anything out
+on a platform.
 
-Open `out/mittenwald-to-berlin.html`. That is the whole product — one file, no
-server, no install. It works with no signal, and gets better when there is one.
+Open `out/mittenwald-to-berlin.html` — that is the whole product. One file, no
+server, no install. It works with no signal and gets better when there is one.
+(The filename is the repository's, and the repository is older than the trip.)
 
 ## What it does
 
-**One trip, one screen.** Mittenwald to Berlin, 29 September to 3 October,
-eighteen towns, fixed. There is nothing to choose before you start and nothing
-to set up: it opens on the day you are in, and the strip along the top moves
-between days. Two of the five days offer a real alternative — Seefeld or the
-lakes on the first, four stops or one on the last — and those are the only
-decisions in the app.
+**One trip, one scroll.** Nine days end to end on a single page, newest idea
+first: the day strip at the top jumps, it does not switch. There is nothing to
+choose before you start and nothing to set up.
 
-**Uses the real timetable.** Every journey was planned against the German
-timetable for the actual dates, through [Transitous](https://transitous.org) —
-MOTIS over the official DELFI/DB feeds with GTFS-Realtime. Real line numbers,
-real platforms, real changes, real durations. The build prints every leg it
-chose, and the plan is rewritten from what actually runs rather than from what
-was typed.
+**Uses the real timetable.** Every journey was planned against the live
+European timetable for the actual dates, through
+[Transitous](https://transitous.org) — open GTFS from Italy, Austria, Germany
+and France, with the same real-time feeds the operators publish. Nothing on
+screen is a guess at when a train runs.
 
-**Cannot put her on a train she has no ticket for.** The ticket covers regional
-services only. Every query is filtered to those modes and every returned
-itinerary is checked again before it is accepted, at build time and live — and
-the mode filter alone is not enough, because the Brocken steam railway comes
-back from the feed as `REGIONAL_RAIL` and is a private line with its own fares.
-It is refused by name. Changes under four minutes are refused too, except onto
-something that runs every few minutes anyway.
+**Knows what each leg costs.** Four countries means four tickets and no single
+pass that covers them. Three trains are already booked and say so, with their
+seats; everything else is listed once at the top — what to buy before leaving,
+and what to buy on the day — and again on the day it is used.
 
-**Tracks delays while she travels.** Every 90 seconds it re-checks the next
-three moves and shows only what has changed: a delay, a platform change, a
-connection realtime has eaten into. If a train is cancelled or badly late,
-"Find me another way" plans from her actual GPS position to that night's hotel,
-still regional-only — and "I missed my train" rebuilds the rest of the day from
-the real timetable, saying honestly what has to be given up and never giving up
-the bed.
+**Says what there is to see.** 190 sights across 25 towns, each with a real
+photograph from Wikimedia Commons, a real description, and real coordinates.
+Each stop is turned into a walk in the order you would actually do it, measured
+with pedestrian routing, fitted to the minutes the trains leave you.
 
-**Walks each town in order.** Every stop carries the route through it with a
-running clock — arrive here, twelve minutes to there, forty minutes inside, back
-to the station by — routed for real against pedestrian and transit directions,
-with a thumbnail of each place beside it.
-
-**Says where there is time to eat.** Lunch and dinner are placed where there is
-genuinely room for them, and appear in the timeline with the town, the minutes,
-and somewhere to look. When the answer is a train, it says so and says to buy
-something before boarding.
-
-**Shows real photographs.** Every sight and town carries a real photo from
-Wikimedia Commons, with the photographer and licence recorded and shown. German
-town articles lead with a coat of arms rather than a photograph, so lead images
-are checked and a Commons photo search is used instead where needed.
-
-**Works on a train in the Alps.** All 275 photographs are re-encoded as small
-WebP and inlined, so the page is complete the moment it loads and stays complete
-with no signal. The live layer only ever refines what is already readable.
+**Warns rather than pretends.** Private operators that look like regional
+trains but sell their own seats (Westbahn, the Harz narrow-gauge) are refused
+by name. Connections under four minutes are refused. A sight whose coordinates
+are missing or a hundred kilometres wrong fails the build instead of quietly
+vanishing from the page.
 
 ## Building it
 
-```
-npm install
-node scripts/build-sights.mjs    # photos, coordinates, licences from Wikipedia/Commons
-node scripts/build-stops.mjs     # station coordinates
-node scripts/build-plan.mjs      # every journey against the real timetable
-node scripts/build-images.mjs    # download, resize, inline
-node scripts/bundle.mjs          # one file into out/
-```
+    node scripts/build-sights.mjs    # Wikipedia + Commons: photos, notes, coordinates
+    node scripts/build-stops.mjs     # one station per town, pinned by hand
+    node scripts/build-plan.mjs      # the real trains, and the walk through each town
+    node scripts/build-images.mjs    # fetch, re-encode to WebP, inline as data URIs
+    node scripts/bundle.mjs          # one HTML file
 
-Only `bundle.mjs` is needed after a change to `src/`.
-
-The checks:
-
-```
-node scripts/test-flow.mjs       # the two questions, then the day, every line
-node scripts/test-fixes2.mjs     # scroll, drawers, images
-node scripts/test-live.mjs       # delays, platform changes, cancellations
-```
-
-`data/trip.mjs` is the only file written by hand: the days, the route options,
-the sights, and what is worth saying about each. Everything else is derived, and
-every script reports loudly when something does not resolve rather than quietly
-inventing it.
-
-## Three things worth knowing
-
-**Heidelberg works as a line of its own and not as a detour, which took two
-measurements to learn.** Hung off the normal south–north road it is hopeless —
-4 h 49 out from Augsburg and 10 h 27 back to Berlin, paid twice because nothing
-on the return is new. Given its own week it works, because the way back east
-through Würzburg is all new ground: Augsburg → Ulm 1 h 21 direct, Ulm →
-Esslingen 1 h 04 direct, Esslingen → Heidelberg 1 h 48, Heidelberg → Würzburg
-2 h 29, Würzburg → Erfurt 2 h 31.
-
-**More stops made the week shorter, not longer.** Breaking the last day into
-four — Weimar, Naumburg, Halle, Wittenberg — rides 3 h 44, where going Erfurt to
-Berlin with one stop rides 4 h 39: the direct routing takes a slower path than
-the string of regional hops does. Bamberg is the same trick: Würzburg → Bamberg
-→ Erfurt is 2 h 14 against 2 h 32 direct, so the town is free and then some.
-Murnau costs nothing at all, being a stop on the train already being ridden. The
-week went from eleven towns and 16 h 38 to eighteen towns and 16 h 12.
-
-**Some trains stop running before the day does.** The fast RE29 from Bamberg to
-Erfurt takes 1 h 12; after about seven in the evening the same journey is 2 h 58
-with two changes, and later still it is four and a half hours. A day that looks
-fine on paper can lose two hours to leaving a town twenty minutes late, so day
-four is pulled forward to catch that train. `scripts/build-plan.mjs` prints
-every leg it chose and every alternative it rejected, and every number here came
-off that output.
-
-## Sources
-
-Timetables and live data from Deutsche Bahn via Transitous. Photographs and
-descriptions from Wikipedia and Wikimedia Commons, each credited in the page.
-Places and map tiles from OpenStreetMap.
+`data/trip.mjs` is the only file written by hand. Everything else is derived
+from it, and the build refuses to finish quietly when something does not add up.
